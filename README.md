@@ -20,7 +20,7 @@ WordPress plugins have been security nightmare and are usually implemented in fi
 
 Exclusion: rules that caused or can cause false positive and rarely seen plugins such that used by less than 100 sites according to themesinfo.com
 
-[^1]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule have no security or privacy value.
+[^1]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security or privacy value.
 
 ## /medium_mode/medium-mode-plus-backup.txt
 
