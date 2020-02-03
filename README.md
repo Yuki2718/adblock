@@ -9,11 +9,9 @@ A whitelist for medium mode of uBlock Origin, meant for English user. The purpos
 
 ### ublock-dynamic-rules-plus.txt
 
-`* localhost * block`
-
-`file-scheme * 1p-script block`
-
-`file-scheme * inline-script block`
+- `* localhost * block`
+- `file-scheme * 1p-script block`
+- `file-scheme * inline-script block`
 
 in addition to ublock-dynamic-rules.txt
 
@@ -22,9 +20,9 @@ in addition to ublock-dynamic-rules.txt
 WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules[^1] and also occasionally cause false positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on the Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.
 
 Exclusion:
-rules that caused or can cause false positive
-rarely seen plugins such that used by less than 100 sites according to themesinfo.com
-CSS-only plugins; those generic rules can have performance impact so I guess blocking CSS-only plugins does not pay enough.
+- rules that caused or can cause false positive
+- rarely seen plugins such that used by less than 100 sites according to themesinfo.com
+- CSS-only plugins; those generic rules can have performance impact so I guess blocking CSS-only plugins does not pay enough.
 
 [^1]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security or privacy value.
 
