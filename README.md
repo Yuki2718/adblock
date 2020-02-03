@@ -1,6 +1,6 @@
 # adblock
 
-<details>
+<details open>
 <summary><strong>medium_mode</strong></summary>
   
 ### ublock-dynamic-rules.txt
@@ -33,10 +33,10 @@ CSS-only plugins; those generic rules can have performance impact so I guess blo
 uBlock Origin backup file that incorporates all the above rules on top of default settings + AdGaurd Social meddia filter
 </details>
 
-<details>
+<details open>
 <summary><strong>no_gen_cosm</strong></summary>
   
 ### ublock-cosmetic-rules.txt
 
-`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice broken layout of many websites once you enabled this option. This filter adds two semi-generic cosmetic rules to mitigate the layout issue. Those TLD in the list are what I've confirmed the rule is useful on 2+ sites under the domain. I highly recommend you to add AdGuard Base in uBlock Origin default filters not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list.
+`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice broken layout of many websites once you enabled this option. This filter adds two semi-generic cosmetic rules to mitigate the layout issue. Those TLD in the list are what I've confirmed the rule is useful on 2+ sites under the domain. If you browse non-English sites too, add your local domains accordingly. I also highly recommend you to add AdGuard Base in uBlock Origin default filters not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list.
 </details>
