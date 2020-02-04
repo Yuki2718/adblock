@@ -2,6 +2,32 @@
 
 <details open>
 <summary><strong>medium_mode</strong></summary>
+
+### tpl_plus.txt
+
+AdGuard Tracking Protection filter is probably the least false positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical.
+
+Inclusion criteria:
+- Didn't and less likely to cause false positive
+- Useful to English user
+
+### soc_plus.txt
+
+AdGuard Social media filter tend to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter.
+- `||connect.facebook.net/en_US/sdk.js`
+- `||platform.twitter.com/widgets.js`
+- `||static.evernote.com^$3p`
+are commented out as some people will need them. Those who are sure don't need them can add them to User Rules without the initial `!`.
+
+
+</details>
+
+<details open>
+<summary><strong>medium_mode</strong></summary>
+
+### medium-mode-plus-backup.txt
+
+uBlock Origin backup file that incorporates all the below rules on top of default settings + AdGuard Social media filter
   
 ### ublock-dynamic-rules.txt
 
@@ -24,11 +50,7 @@ Exclusion:
 - rarely seen plugins such that used by less than 100 sites according to themesinfo.com
 - CSS-only plugins; those generic rules can have performance impact so I guess blocking CSS-only plugins does not pay enough.
 
-[^1]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security or privacy value.
-
-### medium-mode-plus-backup.txt
-
-uBlock Origin backup file that incorporates all the above rules on top of default settings + AdGaurd Social meddia filter
+[^1]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.
 </details>
 
 <details open>
