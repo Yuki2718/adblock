@@ -1,7 +1,7 @@
 # adblock
 
 <details open>
-<summary><strong>medium_mode</strong></summary>
+<summary><strong>adguard</strong></summary>
 
 ### tpl_plus.txt
 
