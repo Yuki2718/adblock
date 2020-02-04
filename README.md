@@ -8,7 +8,7 @@
 AdGuard Social media filter tends to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter.
 - `||connect.facebook.net/en_US/sdk.js`
 - `||platform.twitter.com/widgets.js`
-- `||static.evernote.com^$3p`
+- `||static.evernote.com^$third-party`
 
 are commented out as some people will need them. Those who are sure don't need them can add them to User Rules without the initial `!`.
 
