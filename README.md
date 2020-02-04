@@ -3,7 +3,7 @@
 <details open>
 <summary><strong>adguard</strong></summary>
 
-### soc_plus.txt
+### adguard-social-plus.txt
 
 AdGuard Social media filter tends to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter.
 - `||connect.facebook.net/en_US/sdk.js`
@@ -12,7 +12,7 @@ AdGuard Social media filter tends to rely too much on cosmetic filters IMHO. Thi
 
 are commented out as some people will need them. Those who are sure don't need them can add them to User Rules without the initial `!`.
 
-### tpl_plus.txt
+### adguard-tracking-plus.txt
 
 AdGuard Tracking Protection filter is probably the least false positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical. Bug reports are commented out but you can add them to User Rules without the initial `!`.
 
