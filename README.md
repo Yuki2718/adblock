@@ -14,7 +14,7 @@ are commented out as some people will need them. Those who are sure don't need t
 
 ### tpl_plus.txt
 
-AdGuard Tracking Protection filter is probably the least false positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical.
+AdGuard Tracking Protection filter is probably the least false positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical. Bug reports are commented out but you can add them to User Rules without the initial `!`.
 
 Inclusion criteria:
 - Didn't and less likely to cause false positive
