@@ -5,7 +5,7 @@
 
 ### soc_plus.txt
 
-AdGuard Social media filter tend to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter.
+AdGuard Social media filter tends to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter.
 - `||connect.facebook.net/en_US/sdk.js`
 - `||platform.twitter.com/widgets.js`
 - `||static.evernote.com^$3p`
