@@ -19,6 +19,7 @@ AdGuard Tracking Protection filter is probably the least false positive prone an
 Inclusion criteria:
 - Didn't and less likely to cause false positive
 - Useful to English user
+- Useful to default-deny script settings such as uBlock Origin medium mode
 
 </details>
 
