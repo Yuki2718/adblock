@@ -1,5 +1,7 @@
 # adblock
 
+I can't guarantee these filers won't cause problems. If you found problems such as broken layout, report it by the same style as official uBlock filters issue tracker; otherwise reports can be ignored.
+
 <details open>
 <summary><strong>adguard</strong></summary>
 
@@ -32,7 +34,7 @@ uBlock Origin backup file that incorporates all the below rules on top of defaul
   
 ### ublock-dynamic-rules.txt
 
-A whitelist for medium mode of uBlock Origin, meant for English user. The purpose is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. This is not a list I myself use so won't be updated frequently.
+A whitelist for medium mode of uBlock Origin for English user. The purpose is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. This is not a list I myself use so won't be updated frequently.
 
 ### ublock-dynamic-rules-plus.txt
 
@@ -51,6 +53,8 @@ Exclusion:
 - rarely seen plugins such that used by less than 100 sites according to themesinfo.com
 - CSS-only plugins; those generic rules can have performance impact so I guess blocking CSS-only plugins does not pay enough.
 
+Click on the Raw button of the page and copy & paste the code to your uBlock Origin's My filters pane.
+
 [^1]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.
 </details>
 
@@ -59,5 +63,5 @@ Exclusion:
   
 ### ublock-cosmetic-rules.txt
 
-`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice broken layout of many websites once you enabled this option. This filter adds two semi-generic cosmetic rules to mitigate the layout issue. Those TLD in the list are what I've confirmed the rule is useful on 2+ sites under the domain. If you browse non-English sites too, add your local domains accordingly. I also highly recommend you to add AdGuard Base in uBlock Origin default filters not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list.
+`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice broken layout of many websites once you enabled this option. This filter adds two semi-generic cosmetic rules to mitigate the layout issue. Those TLD in the list are what I've confirmed the rule is useful on 2+ sites under the domain. If you browse non-English sites too, add your local domains accordingly. I also highly recommend you to add AdGuard Base in uBlock Origin default set of filters not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list.
 </details>
