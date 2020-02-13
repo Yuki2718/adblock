@@ -16,16 +16,38 @@ are commented out as some people will need them. Those who are sure don't need t
 
 ### adguard-tracking-plus.txt
 
-AdGuard Tracking Protection filter is probably the least false positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical. Bug reports are commented out but you can add them to User Rules without the initial `!`.
+AdGuard Tracking Protection filter is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical. Bug reports are commented out but you can add them to User Rules without the initial `!`.
 
 Inclusion criteria:
-- Didn't and less likely to cause false positive
+- Didn't and less likely to cause false-positive
 - Useful to English user
 - Useful to default-deny script settings such as uBlock Origin medium mode
 
 </details>
 
-<details open>
+<details>
+<summary><strong>japanese</strong></summary>
+
+### blog-parts.txt
+
+This removes blog parts and ranking buttons on Japanese websites.
+
+Exclusion:
+- Potentially useful parts or buttons
+- Buttons for simple search sites without ranking function
+- Buttons on adult sites except for some common ones (see below)
+
+### blog-parts-adult.txt
+
+Removes ranking buttons on adult sites.
+
+### sable-filters2.txt
+
+Inspired by Sable filter (http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main focuses are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org, uk-cookie-consent plugin).
+
+</details>
+
+<details>
 <summary><strong>medium_mode</strong></summary>
 
 ### medium-mode-plus-backup.txt
@@ -46,10 +68,10 @@ in addition to ublock-dynamic-rules.txt
 
 ### ublock-static-rules.txt
 
-WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules[^1] and also occasionally cause false positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on the Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.
+WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules[^1] and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on the Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.
 
 Exclusion:
-- rules that caused or can cause false positive
+- rules that caused or can cause false-positive
 - rarely seen plugins such that used by less than 100 sites according to themesinfo.com
 - CSS-only plugins; those generic rules can have performance impact so I guess blocking CSS-only plugins does not pay enough.
 
@@ -58,7 +80,7 @@ Click on the Raw button of the page and copy & paste the code to your uBlock Ori
 [^1]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.
 </details>
 
-<details open>
+<details>
 <summary><strong>no_gen_cosm</strong></summary>
   
 ### ublock-cosmetic-rules.txt
