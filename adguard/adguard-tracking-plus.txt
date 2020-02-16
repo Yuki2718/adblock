@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 (https://creativecommons.org/choose/zero/)
-! Last updated: 2020-02-12
+! Last updated: 2020-02-16
 
 ! General tracker
 /?dm=*&blogid=*$script,domain=~wordpress.org
@@ -33,6 +33,7 @@
 /lib/tracking/adobe/*$script
 /lib/tracking/mux.js|
 /logImpressions?id=$xmlhttprequest
+/matomo.js|$domain=~github.com
 /mms/get_loaders?$xmlhttprequest
 /mrliteLogger.js|
 /mtiFontTrackingCode.js|
@@ -73,6 +74,7 @@
 ||assets.adobedtm.com/extensions/*/AppMeasurement.min.js|
 ||assets.squarespace.com/universal/scripts-compressed/performance
 ||cdn.ampproject.org/v0/amp-geo-
+||cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js|
 ||cdn.shopify.com/shopifycloud/boomerang/boomerang-latest.min.js|
 ||clients1.google.com/generate_204|
 ||cloudfront.net/*/keen.min.js
@@ -175,6 +177,7 @@
 ||s.update.dailymotion.com/*/analytics.js
 ||saa.cbsi.com/id?d_visid_ver=
 ||services.fastcompany.com/v1/comscore_ping|
+||sites.google.com/u/0/_/logImpressions
 ||smetrics.aem.playstation.com^
 ||smetrics.cnn.com^
 ||smetrics.consumerreports.org^
@@ -225,11 +228,17 @@
 ||www.ghacks.net/wp-content/plugins/geoip-detect/
 ||www.google.com/gen_204
 ||www.howtogeek.com/wp-content/uploads/px/*/blank.gif
-||www.instagram.com/logging/falco$xmlhttprequest
+||www.instagram.com/ajax/bz|
+||www.instagram.com/logging/falco
 ||www.instagram.com/static/bundles/es6/EmbedAsyncLogger.js
 ||www.nike.com/assets/measure/data-capture/cic-main/dcm.js|
 ||www.paypalobjects.com/gajs/analytics.js|
 ||www.paypalobjects.com/pa/mi/3p/gtag/gtag.js|
+||www.pinterest.jp/resource/ContextLogResource/
+||www.pinterest.jp/resource/InviteSocialTrackingParamNonInviteResource/
+||www.pinterest.jp/resource/StatsLogResource/
+||www.pinterest.jp/resource/UserRegisterTrackActionResource/
+||www.pinterest.jp/_/_/report/error/|
 ||www.reddit.com/error|
 ||www.reddit.com/timings/clientPerf|
 ||www.slant.co/js/track.min.js|
@@ -249,6 +258,8 @@
 ||zdnet1.cbsistatic.com/fly/js/libs/mpulse
 
 ! Bug report
+! /bugsnag.min.js|
+!||clouderrorreporting.googleapis.com^
 !||gate.hockeyapp.net^
 !||notify.bugsnag.com^
 !||sdk.hockeyapp.net^

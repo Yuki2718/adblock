@@ -2,7 +2,7 @@
 
 I can't guarantee these filers won't cause problems. If you found problems such as broken layout, report it by the same style as official uBlock filters issue tracker; otherwise reports can be ignored.
 
-<details open>
+<details>
 <summary><strong>adguard</strong></summary>
 
 ### adguard-social-plus.txt
@@ -16,7 +16,7 @@ are commented out as some people will need them. Those who are sure don't need t
 
 ### adguard-tracking-plus.txt
 
-AdGuard Tracking Protection filter is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical. Bug reports are commented out but you can add them to User Rules without the initial `!`.
+AdGuard Tracking Protection filter is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical. Some of bug reports are commented out but you can add them to User Rules without the initial `!`.
 
 Inclusion criteria:
 - Didn't and less likely to cause false-positive
@@ -28,6 +28,10 @@ Inclusion criteria:
 <details>
 <summary><strong>japanese</strong></summary>
 
+### blog-parts-adult.txt
+
+Removes ranking buttons on adult sites. See below.
+
 ### blog-parts.txt
 
 This removes blog parts and ranking buttons on Japanese websites.
@@ -36,10 +40,6 @@ Exclusion:
 - Potentially useful parts or buttons
 - Buttons for simple search sites without ranking function
 - Buttons on adult sites except for some common ones (see below)
-
-### blog-parts-adult.txt
-
-Removes ranking buttons on adult sites.
 
 ### sable-filters2.txt
 
@@ -50,10 +50,6 @@ Inspired by Sable filter (http://meetingwords.com/RK2njtyC7k), this removes cook
 <details>
 <summary><strong>medium_mode</strong></summary>
 
-### medium-mode-plus-backup.txt
-
-uBlock Origin backup file that incorporates all the below rules on top of default settings + AdGuard Social media filter
-  
 ### ublock-dynamic-rules.txt
 
 A whitelist for medium mode of uBlock Origin for English user. The purpose is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. This is not a list I myself use so won't be updated frequently.
