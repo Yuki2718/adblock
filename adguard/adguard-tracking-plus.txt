@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 (https://creativecommons.org/choose/zero/)
-! Last updated: 2020-02-17
+! Last updated: 2020-02-18
 
 ! General tracker
 /?dm=*&blogid=*$script,domain=~wordpress.org
@@ -39,6 +39,7 @@
 /mtiFontTrackingCode.js|
 /pv?fe=$image
 /rollbar.min.js|
+/s.gif?t=$xmlhttprequest
 /stat?event=pixel.$image
 /streamsense.min.js?
 /VideoAnalytics.js
@@ -81,6 +82,7 @@
 ||cloudfront.net/*/keen.min.js
 ||cloudfront.net/grumi-ip.js|
 ||cloudfront.net/player/comscore-min.js|
+||cisco-tags.cisco.com^
 ||counter.wox.cc^
 ||d41.co^$third-party
 ||ec.editmysite.com/com.snowplowanalytics.snowplow/
@@ -160,6 +162,7 @@
 ||log.gifmagazine.net^
 ||logitech.zendesk.com/embeddable_blip?type=pageView&
 ||maps.googleapis.com/maps/api/js/QuotaService.RecordEvent
+||mcc-tags.cisco.com^
 ||metrics-logger.spot.im^
 ||mint.macobserver.com/?js|
 ||mspoweruser.disqus.com/count.js|
@@ -195,13 +198,16 @@
 ||stats.newsweek.com/counter/article?$script
 ||storage.googleapis.com/workbox-cdn/releases/*/workbox-offline-ga.prod.js|
 ||subscribe.washingtonpost.com/acquisition/views/tracking/
-||tags.tiqcdn.com/utag/cbsi/cnetglobalsite/prod/utag.js$script,redirect=noopjs
-||tags.tiqcdn.com/utag/cbsi/techrepublicsite/prod/utag.js|
-||tags.tiqcdn.com/utag/cbsi/zdnetglobalsite/prod/utag.js|
-||tags.tiqcdn.com/utag/ea/answerseacom/prod/utag.js|
-||tags.tiqcdn.com/utag/logitech/main/prod/utag
-||tags.tiqcdn.com/utag/vmware/aem/prod/utag.sync.js|
-||tags.tiqcdn.com/utag/vmware/myvmware/prod/utag.sync.js|
+||tags.tiqcdn.com/utag/cbsi/cnetglobalsite/prod/utag.js$script,redirect=noopjs,domain=www.cnet.com
+||tags.tiqcdn.com/utag/cbsi/downloadcomsite/prod/utag.js$script,redirect=noopjs,domain=download.cnet.com
+||tags.tiqcdn.com/utag/cisco/cdc/prod/utag.js|$domain=cisco.com
+||tags.tiqcdn.com/utag/cisco/home/prod/utag.js|$domain=www.cisco.com
+||tags.tiqcdn.com/utag/cbsi/techrepublicsite/prod/utag.js|$domain=www.techrepublic.com
+||tags.tiqcdn.com/utag/cbsi/zdnetglobalsite/prod/utag.js|$domain=www.zdnet.com
+||tags.tiqcdn.com/utag/ea/answerseacom/prod/utag.js|$domain=answers.ea.com
+||tags.tiqcdn.com/utag/logitech/main/prod/utag$domain=wwwlogicool.co.jp|www.logitech.com
+||tags.tiqcdn.com/utag/vmware/aem/prod/utag.sync.js|$domain=www.vmware.com
+||tags.tiqcdn.com/utag/vmware/myvmware/prod/utag.sync.js|$domain=my.vmware.com
 ||targetemsecure.blob.core.windows.net^$script
 ||targeting.washpost.nile.works^
 ||techcommunity.microsoft.com/beacon/
@@ -223,6 +229,7 @@
 ||www.darkreading.com/client_pathlog.asp
 ||www.deccanherald.com/pv.xml
 ||www.deccanherald.com/updatestats
+||www.dropbox.com/2/client_metrics/record|
 ||www.dropbox.com/alternate_$xmlhttprequest
 ||www.dropbox.com/log/
 ||www.dropbox.com/log_js_sw_data|
