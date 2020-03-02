@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/deed.en)
-! Last updated: 2020-02-29
+! Last updated: 2020-03-02
 
 ! General tracker
 /?dm=*&blogid=*$script,domain=~wordpress.org
@@ -21,6 +21,7 @@
 /facebook-tracking/*
 /fingerprint.js|
 /fingerprint2.js|
+/ga.js|
 /get_site_data?account_id=$xmlhttprequest
 /google-tracking/*
 /google_analytics_config$xmlhttprequest
@@ -109,6 +110,7 @@
 ! Tracker on individual sites
 ||a.nytimes.com/svc/nyt/data-layer$xmlhttprequest
 ||abeagle-public.buzzfeed.com^
+||acm-prod.disqus.com/count.js|
 ||acronymsandslang.com/libs/add_click.php
 ||adobe.com/etc/beagle/public/globalnav/privacy-files/sitenotice/evidon-sitenotice-tag.js|
 ||analytics.agoda.com^
@@ -170,6 +172,7 @@
 ||mspoweruser.disqus.com/count.js|
 ||my.vmware.com/web/vmware/assets/analytics.lib.js|
 ||nav.files.bbci.co.uk/*/istats-1.js|
+||netdna-ssl.com/wp-content/themes/Hax/js/analytics$domain=hacks.mozilla.org
 ||news.google.com/_/DotsSplashUi/browserinfo
 ||news.google.com/_/DotsSplashUi/gen204/
 ||news.google.com/_/DotsSplashUi/jserror
