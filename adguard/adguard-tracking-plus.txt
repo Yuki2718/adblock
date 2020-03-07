@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 (https://creativecommons.org/publicdomain/zero/1.0/deed.en)
-! Last updated: 2020-03-02
+! Last updated: 2020-03-07
 
 ! General tracker
 /?dm=*&blogid=*$script,domain=~wordpress.org
@@ -15,6 +15,7 @@
 /api/census/RecordHit$xmlhttprequest
 /art/stats/common/tracker.js|
 /bin/ll?
+/bugsnag.min.js|
 /criteo_cookie_issue.js
 /dwanalytics-$script
 /event_logger|$xmlhttprequest
@@ -24,6 +25,7 @@
 /ga.js|
 /get_site_data?account_id=$xmlhttprequest
 /google-tracking/*
+/googleanalytics/*
 /google_analytics_config$xmlhttprequest
 /hc/tracking/events?$xmlhttprequest
 /hit.png?
@@ -146,12 +148,13 @@
 ||combo.staticflickr.com/ap/build/images/pxl.gif
 ||delishkitchen.tv/api/events|
 ||drive.google.com/drive/logImpressions|
-||easeus.com/default/js/ga.js|
+||f.vimeocdn.com/js_opt/vendor/siftscience/
 ||feedbackws.icloud.com/reportStats|
 ||ferret-one.akamaized.net/assets/mktr.js|
 ||fls-fe.amazon.co.jp/1/batch/1/OE/
 ||fortune.com/comscore.json
 ||forum.vivaldi.net/*/error.
+||fresnel-events.vimeocdn.com^
 ||gc.newsweek.com/front/js/counter.js|
 ||genius.com/api/ab_tests|
 ||genius.com/api/songs/*/count_view|
@@ -161,6 +164,7 @@
 ||i.cdn.cnn.com/.a/bundles/usabilla
 ||ieeexplore.ieee.org/assets/js/analytics/tealium
 ||imgur.com/lumbar.gif?
+||insight.jw-api.org^
 ||kinja.com/api/kala/t/event.js$xmlhttprequest
 ||levchinprize.com/api/countview/
 ||log.gifmagazine.net^
@@ -244,6 +248,7 @@
 ||www.instagram.com/ajax/bz|
 ||www.instagram.com/logging/falco
 ||www.instagram.com/static/bundles/es6/EmbedAsyncLogger.
+||www.newyorker.com/user-context
 ||www.nike.com/assets/measure/data-capture/cic-main/dcm.js|
 ||www.paypalobjects.com/gajs/analytics.js|
 ||www.paypalobjects.com/pa/mi/3p/gtag/gtag.js|
@@ -271,12 +276,9 @@
 ||zdnet1.cbsistatic.com/fly/js/libs/mpulse
 
 ! Bug report
-! /bugsnag.min.js|
 !||clouderrorreporting.googleapis.com^
 !||gate.hockeyapp.net^
-!||notify.bugsnag.com^
 !||sdk.hockeyapp.net^
-!||sessions.bugsnag.com^
 
 ! Miner plugins not in Base filter
 /wp-content/plugins/wp-monero-miner
