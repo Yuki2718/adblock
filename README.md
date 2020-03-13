@@ -23,6 +23,10 @@ Inclusion criteria:
 - Useful to English user
 - Useful to default-deny script settings such as uBlock Origin medium mode
 
+Exclusion:
+- Trackers covered by Simplified domain names filter
+- Trackers blocked by uBlock Origin medium mode with /medium_mode/ublock-dynamic-rules.txt 
+
 </details>
 
 <details>
