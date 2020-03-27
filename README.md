@@ -16,7 +16,7 @@ I can't guarantee these filers won't cause problems. If you found problems such 
 
 are commented out as some people will need them. Those who are sure don't need them can add them to User Rules without the initial `!`.
 
-<a href="abp:subscribe?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-social-plus.txt&title=AdGuard%20Social%20media%20Plus">Subscribe</a>
+<a href="abp://subscribe/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-social-plus.txt&title=AdGuard%20Social%20media%20Plus">Subscribe</a>
 
 ### AdGuard Tracking Protection Plus (adguard-tracking-plus.txt)
 
@@ -31,7 +31,7 @@ Exclusion:
 - Trackers covered by Simplified domain names filter or Firefox tracking protection
 - Trackers blocked by uBlock Origin medium mode with /medium_mode/ublock-dynamic-rules.txt minus EasyPrivacy
 
-<a href="abp:subscribe?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-tracking-plus.txt&title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a>
+<a href="abp://subscribe/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-tracking-plus.txt&title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a>
 
 </details>
 
@@ -55,7 +55,7 @@ Exclusion:
 
 Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main focuses are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org, uk-cookie-consent plugin).
 
-<a href="abp:subscribe?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe</a>
+<a href="abp://subscribe/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe</a>
 
 </details>
 
@@ -94,12 +94,12 @@ Click on the Raw button of the page and copy & paste the code to your uBlock Ori
 Exclusion:
 - Small place holder (e.g. *##.ad-space or *##.ad-area hides placeholders on various WordPress sites but won't be added for the reason.)
 
-<a href="abp:subscribe?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a>
+<a href="abp://subscribe/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a>
 
 ### Placeholder Hider with no generic hiding for mobile (phhider-nogen-mob.txt)
 
 The mobile version of the above filter. This filter will not get updated often due to maintenance cost. Rules covered by AdGuard Mobile ads filter won't be added.
 
-<a href="abp:subscribe?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen-mob.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a>
+<a href="abp://subscribe/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen-mob.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a>
 
 </details>
