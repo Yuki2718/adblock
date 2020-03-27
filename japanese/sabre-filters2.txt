@@ -1,12 +1,12 @@
 ! Title: Sabre filters 2
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
-! Licence: CC BY-NC 4.0 (https://creativecommons.org/publicdomain/zero/1.0/deed.en)
-! Last updated: 2020-03-13
+! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+! Last updated: 2020-03-27
 
 ! Generic network rules
 /cookiealert.js
-/jquery.ihavecookies.min.js?
+/jquery.ihavecookies.
 /wp-content/plugins/cc-cookie-consent/*
 /wp-content/plugins/cookie-bar/*
 /wp-content/plugins/cookie-compliance/*
@@ -15,6 +15,7 @@
 /wp-content/plugins/cookie-warning/*
 /wp-content/plugins/easy-cookies-policy/*
 /wp-content/plugins/eu-cookie-law
+/wp-content/plugins/gdpr/*
 /wp-content/plugins/gdpr-cookie-compliance/*
 /wp-content/plugins/jetpack/_inc/build/widgets/eu-cookie-law/*
 /wp-content/plugins/responsive-cookie-consent/*
@@ -23,9 +24,9 @@
 /wp-content/plugins/webtoffee-gdpr-cookie-consent/*
 /wp-content/plugins/wf-cookie-consent/*
 /wp-content/plugins/wp-cookie-allow/*
-||assets.jimstatic.com/ckies.js
+||assets.jimstatic.com/ckies.
 ||assets2.jiveon.com/*/cookieConsent.js|
-||cdn.ampproject.org/rtv/*/v0/amp-user-notification-0.1.js|
+||cdn.ampproject.org^*/amp-user-notification-
 ||cdn.jsdelivr.net/npm/cookie-bar/
 ||cdn.jsdelivr.net/npm/cookieconsent
 ||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/$domain=~www.ehftv.com
@@ -36,12 +37,12 @@
 ###gdpr-banner
 
 ! Rules for individual sites
-||adblockplus.org/js/cookie-prompt.js?
+||adblockplus.org/js/cookie-prompt.
 ||assets.threatpost.com/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies
 ||blog.kaspersky.co.jp/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies
-||cdn.reverso.net/*/cookiescript
+||cdn.reverso.net^*/cookiescript
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
-||nav.files.bbci.co.uk/orbit-webmodules/*/cookie-banner//cookie-prompt/
+||nav.files.bbci.co.uk^*/cookie-banner//cookie-prompt/
 ||ox.ac.uk/portal_javascripts/Turnkey%20Theme/resourcecollective.cookielawcookielaw_init
 ||rbth.com/rbth/view/cookies
 ||s3-ap-northeast-1.amazonaws.com/the-japan-news-public/cookieconsent
@@ -51,13 +52,15 @@
 ||static.fc2.com/share/js/gdpr/pp_agreement
 ||transcend-info.com/dist/scripts/cookiegotop.js|
 ||webwhois.verisign.com/webwhois-ui/js/jquery/cookieconsent.js|
-||www.acronis.com/*/cookies-note-v2.html
-||www.av-comparatives.org/wp-content/themes/avc/js/cookie/jquery.cookie.js
+||www.acronis.com^*/cookies-note-v2.
+||www.av-comparatives.org/wp-content/themes/avc/js/cookie/jquery.cookie.
 ||www.gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar.v2.js|
 ||www.netgear.com/js/jquery-cookie/jquery.cookiecuttr
 ||www.speedcheckercdn.com/lib/cookieconsent/
-||www.ucl.ac.uk/*/sites/all/modules/contrib/eu_cookie_compliance/js/eu_cookie_compliance.js
+||www.ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
 aiasahi.jp,japan.cnet.com,japan.techrepublic.com,japan.zdnet.com,www.cnn.co.jp###gdpr_area
+airvpn.org###cookieLaw
+answers.ea.com##.cookie_content
 askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com###js-gdpr-consent-banner
 avast.com,avast.co.jp##.cookie-bar
 bethesda.net##cookie-policy
@@ -65,21 +68,29 @@ dl.acm.org##.cookiePolicy-popup
 elifesciences.org##.opt-in-message-bar
 ereg.ets.org,sukebei.nyaa.net###cookie-warning
 excesssecurity.com###webarx-cookie-notice
+figshare.com###ck-banner
 heroku.com###heroku-cookie-banner
+m.phys.org,m.techxplore.com###modal-cookie
+malwaretips.com##.notice-content
 monosnap.com##.cookie
+nikkei.com##.k-privacy
 osdn.net###cookie-bar
 pubs.acs.org###gdpr-message-modal
 softpedia.com###cookienotif
+style.nikkei.com###ccpa-block
 transcend-info.com###legal_notice
 this.kiji.is##.page__gdpr
 wordpress.com##.custom-cookie-banner
 wordpress.com##.widget_eu_cookie_law_widget
+www.accuweather.com##.privacy-policy-banner
 www.android.com,www.ft.com##.cookie-banner
 www.cdrinfo.com,www.usenix.org###sliding-popup
 www.dailymotion.com##.CookiePopup__popup___3bblb
+www.internetsociety.org##.widget_eu_cookie_law_widget
+www.investors.com###investors-policy-terms-consent-dialog
 www.nikkan.co.jp###c-modal
-www.nikkei.com##.k-privacy
 www.nikkei-r.co.jp##.c-cookiePolicy
+www.ox.ac.uk###cookie-notice
 www.paragon-software.com###cookies_msg
 www.paypal-community.com##.lia-cookie-banner-alert
 www.pcloud.com##.cookie_consent_holder
@@ -90,3 +101,5 @@ www.searchenginejournal.com###cooknote-div
 www.theguardian.com###cmpContainer
 www.thurrott.com##.gdpr-cookie-banner
 www.urbandictionary.com##.cc-window
+www.wilderssecurity.com##.noticeContent
+www.york.ac.uk##.c-cookie-banner
