@@ -1,6 +1,6 @@
 # adblock
 
-## Personal filters and rules for AdGuard/uBlock Origin
+<strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
 
 I can't guarantee these filers won't cause problems. If you found problems such as broken layout, report it by the same style as official uBlock filters' issue tracker; otherwise reports can be ignored. Anyone who uses any of my filters/codes published here shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted into My Filters (uBlock Origin) or User Rules (AdGuard).
 
@@ -93,8 +93,6 @@ Click on the Raw button of the page and copy & paste the code to your uBlock Ori
 
 Exclusion:
 - Small place holder (e.g. *##.ad-space or *##.ad-area hides placeholders on various WordPress sites but won't be added for the reason.)
-
-</details>
 
 ### Placeholder Hider with no generic hiding for mobile (phhider-nogen-mob.txt)
 
