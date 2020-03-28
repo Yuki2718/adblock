@@ -2,7 +2,9 @@
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
 
-I can't guarantee these filers won't cause problems. If you found problems such as broken layout, report it by the same style as official uBlock filters' issue tracker; otherwise reports can be ignored. Anyone who uses any of my filters/codes published here shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted into My Filters (uBlock Origin) or User Rules (AdGuard).
+I can't guarantee these filers won't cause problems. If you found problems such as broken layout, report it by the same style as official uBlock filters' issue tracker; otherwise reports can be ignored. Anyone who uses any of my filters/codes published here shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted into My filters/rules (uBlock Origin) or User Rules (AdGuard).
+
+Note: currently Subscribe button doesn't work for uBlock Origin. This is a known [issue](https://github.com/uBlockOrigin/uBlock-issues/issues/763).
 
 <details>
 <summary><strong>adguard</strong></summary>
@@ -10,7 +12,7 @@ I can't guarantee these filers won't cause problems. If you found problems such 
 ### AdGuard Social media Plus (adguard-social-plus.txt)
 
 [AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social) tends to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter. Particularly useful on browser extensions and contents blocker, not as much on other AdGuard platforms where it can remove contents specified by cosmetic filters.
-- `||connect.facebook.net/en_US/sdk.js`
+- `||connect.facebook.net^*/sdk.js`
 - `||platform.twitter.com/widgets.js`
 - `||static.evernote.com^$third-party`
 
@@ -72,12 +74,12 @@ A whitelist for medium mode of uBlock Origin for English user. The purpose is to
 
 ### ublock-static-rules.txt
 
-WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules<sup>1</sup> and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on the Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.
+WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules<sup>1</sup> and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.
 
 Exclusion:
 - rules that caused or can cause false-positive
 - rarely seen plugins such that used by less than 100 sites according to themesinfo.com or plugins used only on specific websites
-- CSS-only plugins; those generic rules can have performance impact so I guess blocking CSS-only plugins does not pay enough.
+- CSS-only plugins; those generic rules can have performance impact, though negligible, so I guess blocking CSS-only plugins does not pay enough.
 
 Click on the Raw button of the page and copy & paste the code to your uBlock Origin's My filters pane.
 
@@ -86,20 +88,20 @@ Click on the Raw button of the page and copy & paste the code to your uBlock Ori
 
 <details>
 <summary><strong>no_gen_cosm</strong></summary>
+
+### Placeholder Hider with no generic hiding for mobile (phhider-nogen-mob.txt)
+
+See below, it's a mobile version of that filter. This filter will not get updated often due to maintenance cost. Rules covered by AdGuard Mobile ads filter won't be added.
+
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen-mob.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a>
   
 ### Placeholder Hider with no generic hiding (phhider-nogen.txt)
 
-`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters. Useful to those who replaced EasyList with its "without element hiding" version for even better performance too. The name is inspired by [Placeholder Buster](https://github.com/NanoAdblockerLab/NanoContrib) but the list is independent and can be used together. I also highly recommend you to add AdGuard Base in uBlock Origin default set of filters not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list. This would probably be a first public list utilizing [specific generic filter](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic)
+`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters. Useful to those who replaced EasyList with its "without element hiding" version for even better performance too. The name is inspired by [Placeholder Buster](https://github.com/NanoAdblockerLab/NanoContrib) but the list is independent and can be used together. I also highly recommend you to add AdGuard Base in uBlock Origin's stack lists not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list. This would probably be the first public list utilizing [specific generic filter](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic)
 
 Exclusion:
 - Small place holder (e.g. *##.ad-space or *##.ad-area hides placeholders on various WordPress sites but won't be added for the reason.)
 
 <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a>
-
-### Placeholder Hider with no generic hiding for mobile (phhider-nogen-mob.txt)
-
-The mobile version of the above filter. This filter will not get updated often due to maintenance cost. Rules covered by AdGuard Mobile ads filter won't be added.
-
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen-mob.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a>
 
 </details>
