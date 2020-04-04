@@ -2,7 +2,7 @@
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
 
-I can't guarantee these filers won't cause problems. If you found problems such as broken layout, report it by the same style as official uBlock filters' issue tracker; otherwise reports can be ignored. Anyone who uses any of my filters/codes published here shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted into My filters/rules (uBlock Origin) or User Rules (AdGuard).
+I can't guarantee these filers won't cause problems. If you found problems such as broken layout, report it by the same style as official uBlock filters' issue tracker; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard).
 
 Note: currently Subscribe button doesn't work for uBlock Origin. This is a known [issue](https://github.com/uBlockOrigin/uBlock-issues/issues/763).
 
@@ -18,6 +18,9 @@ Note: currently Subscribe button doesn't work for uBlock Origin. This is a known
 
 are commented out as some people will need them. Those who are sure don't need them can add them to User Rules without the initial `!`.
 
+Exclusion:
+- Follow buttons - they can be useful to some people and often Social media filter doesn't block them.
+
 <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-social-plus.txt&amp;title=AdGuard%20Social%20media%20Plus">Subscribe</a>
 
 ### AdGuard Tracking Protection Plus (adguard-tracking-plus.txt)
@@ -32,6 +35,8 @@ Inclusion criteria:
 Exclusion:
 - Trackers covered by Simplified domain names filter or Firefox tracking protection
 - Trackers blocked by uBlock Origin medium mode with /medium_mode/ublock-dynamic-rules.txt minus EasyPrivacy
+
+Acknowledgement: some of its rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
 
 <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-tracking-plus.txt&amp;title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a>
 
@@ -55,7 +60,7 @@ Exclusion:
 
 ### Sable filters 2 (sable-filters2.txt)
 
-Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main focuses are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org, uk-cookie-consent plugin).
+Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org, uk-cookie-consent plugin).
 
 <a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fjapanese%2Fsabre-filters2.txt&amp;title=Sabre%20filters%202">Subscribe</a>
 
@@ -64,9 +69,13 @@ Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes co
 <details>
 <summary><strong>medium_mode</strong></summary>
 
+### ublock-dynamic-rules-mob.txt
+
+See below, it's a mobile version of ublock-dynamic-rules.txt.
+
 ### ublock-dynamic-rules.txt
 
-A whitelist for medium mode of uBlock Origin for English user. The purpose is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. In addition, following rules are included:
+Whitelists for medium mode of uBlock Origin dedicated for English user. The purpose is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. In addition, following rules are included:
 
 - `* localhost * block`
 - `file-scheme * 1p-script block`
@@ -97,7 +106,7 @@ See below, it's a mobile version of that filter. This filter will not get update
   
 ### Placeholder Hider with no generic hiding (phhider-nogen.txt)
 
-`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters. Useful to those who replaced EasyList with its "without element hiding" version for even better performance too. The name is inspired by [Placeholder Buster](https://github.com/NanoAdblockerLab/NanoContrib) but the list is independent and can be used together. I also highly recommend you to add AdGuard Base in uBlock Origin's stack lists not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list. This would probably be the first public list utilizing [specific generic filter](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic)
+`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters. Useful to those who replaced EasyList with its "without element hiding" version for even better performance too. The name is inspired by [Placeholder Buster](https://github.com/NanoAdblockerLab/NanoContrib) but the list is independent and can be used together. I also highly recommend you to add AdGuard Base in uBlock Origin's stack lists not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list. This would probably be the first public list utilizing [specific generic filter](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic).
 
 Exclusion:
 - Small place holder (e.g. *##.ad-space or *##.ad-area hides placeholders on various WordPress sites but won't be added for the reason.)

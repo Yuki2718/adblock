@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-03-28
+! Last updated: 2020-04-04
 
 ! General tracker
 /?dm=*&blogid=*$script,domain=~wordpress.org
@@ -19,6 +19,7 @@
 /art/stats/common/tracker.js|
 /bin/ll?
 /bugsnag.min.js|
+/chartbeat_
 /criteo_cookie_issue.js
 /dwanalytics-$script
 /event_logger|$xmlhttprequest
@@ -43,6 +44,7 @@
 /matomo.js|$domain=~github.com
 /meta-analytics/*
 /mms/get_loaders?$xmlhttprequest
+/monetate.js
 /mrliteLogger.js|
 /mtiFontTrackingCode.js|
 /omniture-app-measurement.
@@ -89,13 +91,14 @@
 ||assets.adobedtm.com^*/AppMeasurement.min.js|
 ||assets.genius.com/javascripts/compiled/reactMixpanel
 ||assets.squarespace.com/universal/scripts-compressed/performance
+||automate-frontend.linksynergy.com^
 ||c2shb.ssp.yahoo.com^
 ||cdn.ampproject.org/v0/amp-geo-
-||cdn.btimesonline.com/common/js/stat/counter.js|
-||cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js|
+||cdn.btimesonline.com/common/js/stat/
+||cdn.jsdelivr.net/npm/ga-lite@2/
 ||cdn.nxakpj4ac8gkd53.info^
 ||cdn.q20jqurls0y7gk8.info^
-||cdn.shopify.com/shopifycloud/boomerang/boomerang-latest.min.js|
+||cdn.shopify.com/shopifycloud/boomerang/
 ||clients1.google.com/generate_204|
 ||cloudfront.net^*/keen.min.js
 ||cloudfront.net/grumi-ip.js|
@@ -107,14 +110,17 @@
 ||cv.gunosy.com^
 ||d41.co^$third-party
 ||ec.editmysite.com/com.snowplowanalytics.
+||embed.share-videos.se/hit*$xmlhttprequest
 ||events.browsiprod.com^
 ||fp-cdn.azureedge.net^
 ||ganon.yahoo.com^
 ||includemodal.global.ssl.fastly.net/sp.js|
+||location.bloomberg.com^
 ||mautic.net/mtracking.
 ||metrics-logger.spot.im^
 ||nqs.nice264.com/data?
 ||ok.ru/dk?cmd=videoStatNew|
+||personalization.bloomberg.com^
 ||pr-bh.ybp.yahoo.com^
 ||prod-mng-proxy-connext.azurewebsites.net/api/views
 ||public.slidesharecdn.com/images/1x1.gif?
@@ -132,7 +138,7 @@
 ||ssl.p.jwpcdn.com^*/inference.js|
 ||static.parastorage.com/services/promote-analytics-adapter/
 ||stmg-prod.mirror.co.uk/analytics.
-||tags.tiqcdn.com^*/utag$script,redirect=noopjs
+||tags.tiqcdn.com^$script,redirect=noopjs
 ||targeting.perso.aws.arc.pub^
 ||tn.alphonso.tv/ad/
 ||tr.gunosy.com^
@@ -176,6 +182,7 @@
 ||bbstatic.pcmag.com/js/krux-coretag.js|
 ||bbstatic.pcmag.com/js/zd-core-olt.
 ||c.prod.theintercept.com/a
+||c5.rgstatic.net^*/logger.js|
 ||cbsistatic.com/fly/js/libs/mpulse
 ||cdn.cr.org/etc/designs/cr/shared-resources/monetate/monetate.js|
 ||cdnen.rt.com/static/js/libs/counters
@@ -214,8 +221,9 @@
 ||maps.googleapis.com/maps/api/js/QuotaService.RecordEvent
 ||mcc-tags.cisco.com^
 ||media.miamiherald.com/miamiherald/products/escenic_s_code.js|
+||mon-va.byteoversea.com/log/
 ||www.metacritic.com/js/mpulse/
-||www.metacritic.com/js/omniture/uuid.js|
+||www.metacritic.com/js/omniture/
 ||m.youtube.com/mac_204
 ||mint.macobserver.com/?js|
 ||mspoweruser.disqus.com/count.js|
@@ -228,12 +236,13 @@
 ||news.google.com/_/DotsSplashUi/jserror
 ||news.google.com/_/v
 ||news.google.com/dssw.js
-||o.prod.theintercept.com/api/v3/composer/logExecutionStats
+||o.prod.theintercept.com^*/logExecutionStats
 ||o.prod.theintercept.com/api/v3/conversion/
 ||onlinelibrary.wiley.com/action/analytics
 ||pages-stats.rbl.ms^
 ||play.google.com/_/PlayStoreUi/browserinfo
 ||play.google.com/_/PlayStoreUi/jserror
+||public-api.wordpress.com/geo/
 ||px.srvcs.tumblr.com/impixu?
 ||quora.com/ajax/batched_log_POST|
 ||rediff.com^*^rkey=
@@ -254,7 +263,9 @@
 ||ssl.gstatic.com/docs/common/cleardot.gif$image,redirect=1x1-transparent.gif
 ||sstats.adobe.com^
 ||sstats.bitdefender.com^
+||static3.avast.com^*/detect-device.js|
 ||stats.digg.com^
+||stats.streamhub.io/api/playerevent/
 ||storage.googleapis.com^*/workbox-offline-ga.prod.js|
 ||subscribe.washingtonpost.com/acquisition/views/tracking/
 ||targetemsecure.blob.core.windows.net^$script
@@ -267,7 +278,6 @@
 ||vimeo.com/log/js_error
 ||weather.com^*/assets/comscore.
 ||web.vortex.data.msn.com/collect/
-||webstats.arxiv.org/matomo.js|
 ||wikipedia.org/beacon/
 ||wt.o.nytimes.com^*/wtid.js
 ||www.afpbb.com/oo/afp/l.js|
@@ -287,7 +297,7 @@
 ||www.dictionary.com/assets/standalone-analytics-
 ||www.digitaltrends.com/SIQk$image,subdocument
 ||www.digitaltrends.com/wp-content/themes/dt-stardust/ajax-actions.php?action=dt_get_user_data
-||www.dropbox.com/2/client_metrics/record|
+||www.dropbox.com/2/client_metrics/
 ||www.dropbox.com/alternate_$xmlhttprequest
 ||www.dropbox.com/log/
 ||www.dropbox.com/log_js_sw_data|
@@ -308,11 +318,12 @@
 ||www.instagram.com/logging/
 ||www.instagram.com^*/EmbedAsyncLogger.
 ||www.msn.com/pv.xml|
+||www.nature.com/platform/track/
 ||www.neowin.net/js/mdn.neowin.js|
-||www.newsbreak.com/_api/stat/online-log|
+||www.newsbreak.com/_api/stat/
 ||www.newyorker.com/user-context
-||www.paypalobjects.com/gajs/analytics.js|
-||www.paypalobjects.com/pa/mi/3p/gtag/gtag.js|
+||www.paypalobjects.com/gajs/
+||www.paypalobjects.com/pa/mi/3p/gtag/
 ||www.pinterest.*/resource/ContextLogResource/
 ||www.pinterest.*/resource/InviteSocialTrackingParamNonInviteResource/
 ||www.pinterest.*/resource/StatsLogResource/
@@ -320,7 +331,7 @@
 ||www.pinterest.*/_/_/report/error/|
 ||www.reddit.com/error|
 ||www.reddit.com/timings/clientPerf|
-||www.slant.co/js/track.min.js|
+||www.slant.co/js/track.
 ||www.tampabay.com/pf/resources/js/analytics/
 ||www.tampabay.com/pf/resources/js/resonate/dynamic-site-tag.
 ||www.tampabay.com/pf/resources/vendor/mg2_tagging.
@@ -329,8 +340,8 @@
 ||www.theverge.com/services/entry_stats
 ||www.thurrott.com/api/user/page-visit/
 ||www.vmware.com/etc/clientlibs/vmwaredevapp/clientlib-geoip
-||www.vmware.com/etc/clientlibs/vmwaredevapp/clientlib-utag.min.js|
-||www.vmware.com/files/templates/inc/utag_data.js|
+||www.vmware.com/etc/clientlibs/vmwaredevapp/clientlib-utag.
+||www.vmware.com/files/templates/inc/utag_
 ||www.vox.com/services/entry_stats
 ||www.vox.com/services/user_context|
 ||www.washingtonpost.com/subscribe/logging/logInfo|
@@ -346,6 +357,7 @@
 !||clouderrorreporting.googleapis.com^
 !||gate.hockeyapp.net^
 !||sdk.hockeyapp.net^
+!||sentry.io^
 
 ! Miner plugins not in Base filter
 /wp-content/plugins/wp-monero-miner
