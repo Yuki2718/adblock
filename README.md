@@ -19,9 +19,9 @@ Note: currently Subscribe button doesn't work for uBlock Origin. This is a known
 are commented out as some people will need them. Those who are sure don't need them can add them to User Rules without the initial `!`.
 
 Exclusion:
-- Follow buttons - they can be useful to some people and often Social media filter doesn't block them.
+- Follow buttons & comment widgets - they can be useful to some people and often Social media filter doesn't block them.
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-social-plus.txt&amp;title=AdGuard%20Social%20media%20Plus">Subscribe</a>
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-social-plus.txt&amp;title=AdGuard%20Social%20media%20Plus">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-social-plus.txt)
 
 ### AdGuard Tracking Protection Plus (adguard-tracking-plus.txt)
 
@@ -34,11 +34,11 @@ Inclusion criteria:
 
 Exclusion:
 - Trackers covered by Simplified domain names filter or Firefox tracking protection
-- Trackers blocked by uBlock Origin medium mode with /medium_mode/ublock-dynamic-rules.txt minus EasyPrivacy
+- Trackers blocked by uBlock Origin medium mode with /medium_mode/ublock-dynamic-rules.txt minus EasyPrivacy & Peter Lowe
 
 Acknowledgement: some of its rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-tracking-plus.txt&amp;title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a>
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-tracking-plus.txt&amp;title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-tracking-plus.txt)
 
 </details>
 
@@ -60,14 +60,18 @@ Exclusion:
 
 ### Sable filters 2 (sable-filters2.txt)
 
-Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org, uk-cookie-consent plugin).
+Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org).
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fjapanese%2Fsabre-filters2.txt&amp;title=Sabre%20filters%202">Subscribe</a>
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fjapanese%2Fsabre-filters2.txt&amp;title=Sabre%20filters%202">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
 
 </details>
 
 <details>
 <summary><strong>medium_mode</strong></summary>
+
+### ublock-anti-whitelist.txt
+
+This is to counter unnecessary or too generic whitelists which were not addressed or won't be addressed by the maintainer. Only for advanced user as it can cause problems.
 
 ### ublock-dynamic-rules-mob.txt
 
@@ -100,17 +104,19 @@ Click on the Raw button of the page and copy & paste the code to your uBlock Ori
 
 ### Placeholder Hider with no generic hiding for mobile (phhider-nogen-mob.txt)
 
-See below, it's a mobile version of that filter. This filter will not get updated often due to maintenance cost. Rules covered by AdGuard Mobile ads filter won't be added.
+See below, it's a mobile version of phhider-nogen.txt. This filter may not get updated often due to maintenance cost. Rules covered by AdGuard Mobile ads filter won't be added.
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen-mob.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a>
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen-mob.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen-mob.txt)
   
 ### Placeholder Hider with no generic hiding (phhider-nogen.txt)
 
-`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters. Useful to those who replaced EasyList with its "without element hiding" version for even better performance too. The name is inspired by [Placeholder Buster](https://github.com/NanoAdblockerLab/NanoContrib) but the list is independent and can be used together. I also highly recommend you to add AdGuard Base in uBlock Origin's stack lists not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list. This would probably be the first public list utilizing [specific generic filter](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic).
+`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option<sup>1</sup>. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters. Useful to those who replaced EasyList with its "without element hiding" version for even better performance too. The name is inspired by [Placeholder Buster](https://github.com/NanoAdblockerLab/NanoContrib) but the list is independent and can be used together. I also highly recommend you to add AdGuard Base in uBlock Origin's stack lists not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list. This would probably be the first public list utilizing [specific generic filter](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic).
 
 Exclusion:
 - Small place holder (e.g. *##.ad-space or *##.ad-area hides placeholders on various WordPress sites but won't be added for the reason.)
+- Placeholders covered by AdGuard Base List
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a>
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen.txt)
 
+[1]: Another side effect is any filter list that heavily depend on generic cosmetic filters don't work well. An example of such list is Fanboy Annoyances List.
 </details>
