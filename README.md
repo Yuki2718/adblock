@@ -2,12 +2,15 @@
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
 
-I can't guarantee these filers won't cause problems. If you found problems such as broken layout, report it by the same style as official uBlock filters' issue tracker; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard).
+I can't guarantee these filers won't cause problems. If you found problems, report it by the same style as official AdGuard or uBlock filters' issue tracker; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard). They are not what I use and shared solely for others' sake, so please don't blame me if I haven't updated for a while.
 
-Note: currently Subscribe button doesn't work for uBlock Origin. This is a known [issue](https://github.com/uBlockOrigin/uBlock-issues/issues/763).
+Note: currently Subscribe button doesn't work for uBlock Origin. This is a known [issue](https://github.com/uBlockOrigin/uBlock-issues/issues/763). View List and copy the URL, and then paste into Filter lists > Custom > Import.
 
 <details>
 <summary><strong>adguard</strong></summary>
+
+<strong>Do NOT check the "Trusted" box if you subscribe these!</strong>
+Because not needed. Trusted filters can inject javascript into pages and thus can potentially be risky. Of course I'm not going to do anything nasty with any of my filters, but imagine what if my Github account was hacked. I'd like to encourage a basic security practice.
 
 ### AdGuard Social media Plus (adguard-social-plus.txt)
 
@@ -21,11 +24,11 @@ are commented out as some people will need them. Those who are sure don't need t
 Exclusion:
 - Follow buttons & comment widgets - they can be useful to some people and often Social media filter doesn't block them.
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-social-plus.txt&amp;title=AdGuard%20Social%20media%20Plus">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-social-plus.txt)
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-social-plus.txt&amp;title=AdGuard%20Social%20media%20Plus">Subscribe</a>  [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-social-plus.txt)
 
 ### AdGuard Tracking Protection Plus (adguard-tracking-plus.txt)
 
-[AdGuard Tracking Protection filter](https://kb.adguard.com/en/general/adguard-ad-filters#privacy) is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage. This filter aims to complement that and was extracted from my mobile filters but not identical. Some of bug reports are commented out but you can add them to User Rules without the initial `!`.
+[AdGuard Tracking Protection filter](https://kb.adguard.com/en/general/adguard-ad-filters#privacy) is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage which this filter aims to complement. Some of bug reports are commented out but you can add them to User Rules without the initial `!`.
 
 Inclusion criteria:
 - Didn't and less likely to cause false-positive
@@ -38,7 +41,7 @@ Exclusion:
 
 Acknowledgement: some of its rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-tracking-plus.txt&amp;title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-tracking-plus.txt)
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fadguard-tracking-plus.txt&amp;title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a>  [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/adguard-tracking-plus.txt)
 
 </details>
 
@@ -60,9 +63,9 @@ Exclusion:
 
 ### Sable filters 2 (sable-filters2.txt)
 
-Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people will visit. False-positive prone rules won't be added (e.g. cookielaw.org).
+Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added (e.g. cookielaw.org).
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fjapanese%2Fsabre-filters2.txt&amp;title=Sabre%20filters%202">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fjapanese%2Fsabre-filters2.txt&amp;title=Sabre%20filters%202">Subscribe</a>  [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
 
 </details>
 
@@ -85,9 +88,12 @@ Whitelists for medium mode of uBlock Origin dedicated for English user. The purp
 - `file-scheme * 1p-script block`
 - `file-scheme * inline-script block`
 
+Q: Why X is nooped, it's bad!
+A: See the purpose, this list is built to make as few breakage as possible for as many English user. This doesn't mean it should be used 'as is' - still each user should train their rules. Even with lax rules medium mode is much better than easy mode in terms of blocking.
+
 ### ublock-static-rules.txt
 
-WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules<sup>1</sup> and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.
+WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea<sup>1</sup>. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules<sup>2</sup> and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter which is relatively small in size and rarely breaks pages; however, it only blocks minimal set of the plugins. This list includes 1) rules for the plugins not on Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer, and 3) a regex rule focused only on the latest survey scam campaign.
 
 Exclusion:
 - rules that caused or can cause false-positive
@@ -96,7 +102,9 @@ Exclusion:
 
 Click on the Raw button of the page and copy & paste the code to your uBlock Origin's My filters pane.
 
-[1]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.
+[1]: It doesn't make sense if the site was fully compromised, but still protect you from malwarized plugins and some vulnerabilities.
+
+[2]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.
 </details>
 
 <details>
@@ -104,9 +112,9 @@ Click on the Raw button of the page and copy & paste the code to your uBlock Ori
 
 ### Placeholder Hider with no generic hiding for mobile (phhider-nogen-mob.txt)
 
-See below, it's a mobile version of phhider-nogen.txt. This filter may not get updated often due to maintenance cost. Rules covered by AdGuard Mobile ads filter won't be added.
+See below, it's a mobile version of phhider-nogen.txt. Rules covered by AdGuard Mobile ads filter won't be added.
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen-mob.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen-mob.txt)
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen-mob.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a>  [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen-mob.txt)
   
 ### Placeholder Hider with no generic hiding (phhider-nogen.txt)
 
@@ -116,7 +124,7 @@ Exclusion:
 - Small place holder (e.g. *##.ad-space or *##.ad-area hides placeholders on various WordPress sites but won't be added for the reason.)
 - Placeholders covered by AdGuard Base List
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a> [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen.txt)
+<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fno_gen_cosm%2Fphhider-nogen.txt&amp;title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a>  [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-nogen.txt)
 
 [1]: Another side effect is any filter list that heavily depend on generic cosmetic filters don't work well. An example of such list is Fanboy Annoyances List.
 </details>

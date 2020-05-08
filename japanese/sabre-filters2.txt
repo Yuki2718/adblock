@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-04-17
+! Last updated: 2020-05-09
 
 ! Generic network rules
 /cookiealert.js
@@ -27,6 +27,7 @@
 /wp-content/plugins/wp-cookie-allow/*
 ||assets.jimstatic.com/ckies.
 ||assets2.jiveon.com/*/cookieConsent.js|
+||c0.wp.com^*/eu-cookie-law.min.js|$important
 ||cdn.ampproject.org^*/amp-user-notification-
 ||cdn.jsdelivr.net/npm/cookie-bar/
 ||cdn.jsdelivr.net/npm/cookieconsent
@@ -38,11 +39,13 @@
 ###gdpr-banner
 
 ! Rules for individual sites
-/wp-content/plugins/uk-cookie-consent/*$domain=siliconangle.com
+/wp-content/plugins/uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
 ||adblockplus.org/js/cookie-prompt.
 ||assets.threatpost.com/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies
 ||blog.kaspersky.co.jp/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies
+||bookwalker.jp/shared/gdpr/
 ||bt.com/consumer/cookie/
+||business.twitter.com^*-data-protection-notice.min.js|
 ||cdn.reverso.net^*/cookiescript
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
@@ -56,14 +59,18 @@
 ||smp.sankei.co.jp/js/privacy/cookieconsent
 ||static.fc2.com/js/blogranking/pp_agreement
 ||static.fc2.com/share/js/gdpr/pp_agreement
+||staticcontent.fxstreet.com/website/mustache/alerts/cookiesalert_
 ||transcend-info.com/dist/scripts/cookiegotop.js|
 ||webwhois.verisign.com/webwhois-ui/js/jquery/cookieconsent.js|
 ||www.acronis.com^*/cookies-note-v2.
 ||www.av-comparatives.org/wp-content/themes/avc/js/cookie/jquery.cookie.
+||www.europol.europa.eu/sites/default/files/js/js_X*
 ||www.finnishdesignshop.com/app/dist/cookie-notice-bar.
 ||www.gotogate.jp^*/CookieBannerApplication.js|
 ||www.gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar.v2.js|
-||www.europol.europa.eu/sites/default/files/js/js_X*
+||www.ikea.com/ext/gateway/assets/js/cookie-notification.
+||www.jaguar.co.jp/resources//public/js/components/NotificationBar.
+||www.jsps.go.jp/js/analytics_
 ||www.netgear.com/js/jquery-cookie/jquery.cookiecuttr
 ||www.researchgate.net/javascript/cookie-consent/
 ||www.speedcheckercdn.com/lib/cookieconsent/
@@ -88,24 +95,28 @@ malwaretips.com##.notice-content
 monosnap.com##.cookie
 nikkei.com##.k-privacy
 osdn.net###cookie-bar
+pastebin.com###float-box-frame
 pubs.acs.org###gdpr-message-modal
 softpedia.com###cookienotif
 style.nikkei.com###ccpa-block
+techwave.jp,wordpress.com,www.internetsociety.org##.widget_eu_cookie_law_widget
 techxplore.com###modal-cookie
 transcend-info.com###legal_notice
 this.kiji.is##.page__gdpr
-wordpress.com##.custom-cookie-banner, .widget_eu_cookie_law_widget
+wordpress.com##.custom-cookie-banner
+wp-kyoto.net##.cookieConsent
 www.accuweather.com##.privacy-policy-banner
 www.android.com,www.britishairways.com,www.ft.com##.cookie-banner
 www.cdrinfo.com,www.usenix.org###sliding-popup
 www.china-airlines.com###cookieInfoDetails, .top-bar
 www.dailymotion.com##.CookiePopup__popup___3bblb
 www.edreams.jp###cookie-disclaimer
+www.fxstreet.com##[id^=cookiesalert_]
 www.gotogate.jp##.etiCookieBanner
 www.hwinfo.com##.cookie-agree-with-use
 www.icann.org##.cookie-notification
-www.internetsociety.org##.widget_eu_cookie_law_widget
 www.investors.com###investors-policy-terms-consent-dialog
+www.newser.com###divCM
 www.nikkan.co.jp###c-modal
 www.nikkei-r.co.jp##.c-cookiePolicy
 www.ox.ac.uk###cookie-notice

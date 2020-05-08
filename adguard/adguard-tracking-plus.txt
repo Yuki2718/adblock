@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-04-17
+! Last updated: 2020-05-09
 
 ! General tracker
 .gif?log=$image
@@ -46,6 +46,7 @@
 /id?d_visid_ver=
 /index.php?action=track_visitor
 /instart.js
+/jquery.iframetracker.js|
 /js/ganalytics.js|
 /js/targeting.js|
 /js/tealium/*
@@ -64,6 +65,7 @@
 /omniture-visitorapi.
 /optimizelyjs/*
 /pv?fe=$image
+/renderTimingPixel.
 /resxclsa.
 /rollbar.min.js|
 /rum_analytics/*
@@ -145,6 +147,7 @@
 ||embed.share-videos.se/hit*$xmlhttprequest
 ||events.browsiprod.com^
 ||fp-cdn.azureedge.net^
+||fp.techinasia.com^
 ||ganon.yahoo.com^
 ||includemodal.global.ssl.fastly.net/sp.js|
 ||mautic.net/mtracking.
@@ -196,9 +199,9 @@
 ||a.nytimes.com/svc/nyt/data-layer$xmlhttprequest
 ||abeagle-public.buzzfeed.com^
 ||accu-web-raine.azurewebsites.net^
-||acm-prod.disqus.com/count.js|
 ||acronymsandslang.com/libs/add_click.
 ||adobe.com/etc/beagle/public/globalnav/privacy-files/sitenotice/evidon-sitenotice-tag.js|
+||adblockplus.org/js/tracking
 ||analytics.agoda.com^
 ||analytics.cathaypacific.com^
 ||analytics.eip.telegraph.co.uk^
@@ -275,17 +278,17 @@
 ||imgur.com/lumbar.gif?
 ||insight.jw-api.org^
 ||kinja.com/api/kala/t/event.
+||kotaku.com^*~trackers.
 ||levchinprize.com/api/countview/
 ||location.bloomberg.com^
 ||log.gifmagazine.net^
 ||logg.kiwi.com^
 ||logitech.zendesk.com/embeddable_blip?type=pageView&
+||m.imgur.com/js/error.
 ||maps.googleapis.com/maps/api/js/QuotaService.RecordEvent
 ||mcc-tags.cisco.com^
 ||media.miamiherald.com/miamiherald/products/escenic_s_code.js|
 ||mon-va.byteoversea.com/log/
-||www.metacritic.com/js/mpulse/
-||www.metacritic.com/js/omniture/
 ||m.youtube.com/mac_204
 ||mint.macobserver.com/?js|
 ||mspoweruser.disqus.com/count.js|
@@ -353,6 +356,7 @@
 ||threadreaderapp.com/stats|$xmlhttprequest
 ||trip.com/flightapi/x24Log|
 ||ttauri.space.com^$script,~third-party
+||unagi.amazon.*/1/events/
 ||vent.qz.com/log|
 ||vimeo.com/log/js_error
 ||weather.com^*/assets/comscore.
@@ -361,6 +365,7 @@
 ||wt.o.nytimes.com^*/wtid.js
 ||weblog.flyasiana.com^
 ||webresource.english.c-ctrip.com/resaresenglish/ibu/tracker/
+||webtracker.newzenler.com^
 ||www.aa.com/fingerprint/
 ||www.afpbb.com/oo/afp/l.js|
 ||www.ana.co.jp/behavior/
@@ -428,6 +433,8 @@
 ||www.klm.*/beacon/
 ||www.landsend.com/pps/static/assets/js/tag-manager.js|
 ||www.littletikes.com/mas_assets/store/universal_analytics.
+||www.metacritic.com/js/mpulse/
+||www.metacritic.com/js/omniture/
 ||www.msn.com/pv.xml|
 ||www.nature.com/platform/track/
 ||www.neowin.net/js/mdn.neowin.js|
@@ -441,7 +448,8 @@
 ||www.pinterest.*/resource/UserRegisterTrackActionResource/
 ||www.pinterest.*/_/_/report/error/|
 ||www.reddit.com/error|
-||www.reddit.com/timings/clientPerf|
+||www.reddit.com/timings/
+||www.s2member.com/s-badges/
 ||www.slant.co/js/track.
 ||www.tampabay.com/pf/resources/js/analytics/
 ||www.tampabay.com/pf/resources/js/resonate/dynamic-site-tag.
@@ -461,6 +469,7 @@
 ||www.windowscentral.com/_gap/
 ||www.windowscentral.com/sites/wpcentral.com/files/gap/
 ||www.wired.com/user-context
+||www.wordfence.com/wp-content/plugins/wordfence-metrics/
 ||wwwcache.wral.com/presentation/v3/scripts/providers/analytics/
 ||x.kinja-static.com/assets/packaged-js/trackers
 ||youtube.com/api/stats/atr$xmlhttprequest
