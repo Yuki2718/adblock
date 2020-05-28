@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-05-09
+! Last updated: 2020-05-28
 
 ! Generic network rules
 /cookiealert.js
@@ -37,11 +37,15 @@
 ! Generic cosmetic rules
 ###cc-cookie-law
 ###gdpr-banner
+##.widget_eu_cookie_law_widget
 
 ! Rules for individual sites
 /wp-content/plugins/uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
+||acronis.com^*/cookies-note-v2.
 ||adblockplus.org/js/cookie-prompt.
+||assets.kasperskydaily.com/blog/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies-notification/
 ||assets.threatpost.com/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies
+||av-comparatives.org/wp-content/themes/avc/js/cookie/jquery.cookie.
 ||blog.kaspersky.co.jp/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies
 ||bookwalker.jp/shared/gdpr/
 ||bt.com/consumer/cookie/
@@ -49,87 +53,87 @@
 ||cdn.reverso.net^*/cookiescript
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
+||europol.europa.eu/sites/default/files/js/js_X*
+||finnishdesignshop.com/app/dist/cookie-notice-bar.
+||gotogate.jp^*/CookieBannerApplication.js|
+||gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar
+||ikea.com/ext/gateway/assets/js/cookie-notification.
 ||img01.bt.co.uk^*/bt.cookies.js|
+||jaguar.co.jp/resources//public/js/components/NotificationBar.
+||jsps.go.jp/js/analytics_
 ||mytrip.com^*/CookieBannerApplication.js|
 ||nav.files.bbci.co.uk^*/cookie-prompt/
+||netgear.com/js/jquery-cookie/jquery.cookiecuttr
 ||ox.ac.uk/portal_javascripts/Turnkey%20Theme/resourcecollective.cookielawcookielaw_init
 ||rbth.com/rbth/view/cookies
+||researchgate.net/javascript/cookie-consent/
 ||s3-ap-northeast-1.amazonaws.com/the-japan-news-public/cookieconsent$domain=the-japan-news.com​
 ||sei.asia/common_n/js/gdpr.js|
 ||smp.sankei.co.jp/js/privacy/cookieconsent
+||speedcheckercdn.com/lib/cookieconsent/
 ||static.fc2.com/js/blogranking/pp_agreement
 ||static.fc2.com/share/js/gdpr/pp_agreement
 ||staticcontent.fxstreet.com/website/mustache/alerts/cookiesalert_
 ||transcend-info.com/dist/scripts/cookiegotop.js|
+||ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
 ||webwhois.verisign.com/webwhois-ui/js/jquery/cookieconsent.js|
-||www.acronis.com^*/cookies-note-v2.
-||www.av-comparatives.org/wp-content/themes/avc/js/cookie/jquery.cookie.
-||www.europol.europa.eu/sites/default/files/js/js_X*
-||www.finnishdesignshop.com/app/dist/cookie-notice-bar.
-||www.gotogate.jp^*/CookieBannerApplication.js|
-||www.gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar.v2.js|
-||www.ikea.com/ext/gateway/assets/js/cookie-notification.
-||www.jaguar.co.jp/resources//public/js/components/NotificationBar.
-||www.jsps.go.jp/js/analytics_
-||www.netgear.com/js/jquery-cookie/jquery.cookiecuttr
-||www.researchgate.net/javascript/cookie-consent/
-||www.speedcheckercdn.com/lib/cookieconsent/
-||www.ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
+accuweather.com##.privacy-policy-banner
 aiasahi.jp,japan.cnet.com,japan.techrepublic.com,japan.zdnet.com,www.cnn.co.jp###gdpr_area
 airvpn.org###cookieLaw
+android.com,britishairways.com,ft.com##.cookie-banner
 answers.ea.com##.cookie_content
 askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com###js-gdpr-consent-banner
 avast.com,avast.co.jp##.cookie-bar
 bethesda.net##cookie-policy
+businesswire.com,healthitsecurity.com###cookie-consent
+cdrinfo.com,usenix.org###sliding-popup
+china-airlines.com###cookieInfoDetails, .top-bar
+dailymotion.com##.CookiePopup__popup___3bblb
+deepl.com###dl_cookie_footer
 delta.com##ngc-cookie-banner
 dl.acm.org##.cookiePolicy-popup
+edreams.jp###cookie-disclaimer
 elifesciences.org##.opt-in-message-bar
 ereg.ets.org,sukebei.nyaa.net###cookie-warning
 excesssecurity.com###webarx-cookie-notice
 figshare.com###ck-banner
-healthitsecurity.com,www.businesswire.com###cookie-consent
+foreignaffairs.com##.messages--container--bottom
+flyasiana.com###cookieNotice
+fxstreet.com##[id^=cookiesalert_]
+gotogate.jp##.etiCookieBanner
 heroku.com###heroku-cookie-banner
-m.flyasiana.com###cookieNotice
+hwinfo.com##.cookie-agree-with-use
+icann.org##.cookie-notification
+investors.com###investors-policy-terms-consent-dialog
 m.phys.org,m.techxplore.com###modal-cookie
 malwaretips.com##.notice-content
 monosnap.com##.cookie
+nikkan.co.jp###c-modal
+nikkei-r.co.jp##.c-cookiePolicy
 nikkei.com##.k-privacy
+newser.com###divCM
 osdn.net###cookie-bar
+pacsun.com###pptou-sticky
+paragon-software.com###cookies_msg
 pastebin.com###float-box-frame
+paypal-community.com##.lia-cookie-banner-alert
+pcloud.com##.cookie_consent_holder
+perfect-privacy.com###cookiebar
 pubs.acs.org###gdpr-message-modal
+rt.com##.cookies__banner
+searchenginejournal.com###cooknote-div
+shorten.sh###cookie-pop
 softpedia.com###cookienotif
 style.nikkei.com###ccpa-block
-techwave.jp,wordpress.com,www.internetsociety.org##.widget_eu_cookie_law_widget
 techxplore.com###modal-cookie
 transcend-info.com###legal_notice
+theguardian.com###cmpContainer
 this.kiji.is##.page__gdpr
+thurrott.com##.gdpr-cookie-banner
+urbandictionary.com##.cc-window
+wilderssecurity.com##.noticeContent
 wordpress.com##.custom-cookie-banner
 wp-kyoto.net##.cookieConsent
-www.accuweather.com##.privacy-policy-banner
-www.android.com,www.britishairways.com,www.ft.com##.cookie-banner
-www.cdrinfo.com,www.usenix.org###sliding-popup
-www.china-airlines.com###cookieInfoDetails, .top-bar
-www.dailymotion.com##.CookiePopup__popup___3bblb
-www.edreams.jp###cookie-disclaimer
-www.fxstreet.com##[id^=cookiesalert_]
-www.gotogate.jp##.etiCookieBanner
-www.hwinfo.com##.cookie-agree-with-use
-www.icann.org##.cookie-notification
-www.investors.com###investors-policy-terms-consent-dialog
-www.newser.com###divCM
-www.nikkan.co.jp###c-modal
-www.nikkei-r.co.jp##.c-cookiePolicy
 www.ox.ac.uk###cookie-notice
-www.pacsun.com###pptou-sticky
-www.paragon-software.com###cookies_msg
-www.paypal-community.com##.lia-cookie-banner-alert
-www.pcloud.com##.cookie_consent_holder
-www.perfect-privacy.com###cookiebar
 www.pixiv.net##._gdpr-notify-header
-www.rt.com##.cookies__banner
-www.searchenginejournal.com###cooknote-div
-www.theguardian.com###cmpContainer
-www.thurrott.com##.gdpr-cookie-banner
-www.urbandictionary.com##.cc-window
-www.wilderssecurity.com##.noticeContent
-www.york.ac.uk##.c-cookie-banner
+york.ac.uk##.c-cookie-banner
