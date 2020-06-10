@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-06-07
+! Last updated: 2020-06-10
 
 ! Generic network rules
 /cookiealert.js
@@ -13,6 +13,7 @@
 /wp-content/plugins/cookie-law-info/*
 /wp-content/plugins/cookie-notice/*
 /wp-content/plugins/cookie-warning/*
+/wp-content/plugins/creare-eu-cookie-law-banner/*
 /wp-content/plugins/easy-cookies-policy/*
 /wp-content/plugins/eu-cookie-law
 /wp-content/plugins/gdpr/*
@@ -37,6 +38,7 @@
 ! Generic cosmetic rules
 ###cc-cookie-law
 ###gdpr-banner
+##.popup_confirmation_bar
 ##.widget_eu_cookie_law_widget
 
 ! Rules for individual sites
@@ -67,6 +69,7 @@
 ||mytrip.com^*/CookieBannerApplication.js|
 ||nav.files.bbci.co.uk^*/cookie-prompt/
 ||netgear.com/js/jquery-cookie/jquery.cookiecuttr
+||ocnk.net/js/confirmation-bar.js|
 ||ox.ac.uk/portal_javascripts/Turnkey%20Theme/resourcecollective.cookielawcookielaw_init
 ||rbth.com/rbth/view/cookies
 ||researchgate.net/javascript/cookie-consent/
@@ -112,6 +115,8 @@ investors.com###investors-policy-terms-consent-dialog
 m.phys.org,m.techxplore.com###modal-cookie
 malwaretips.com##.notice-content
 monosnap.com##.cookie
+moodle.org##.eupopup-container
+nhl.com##.btm-nhl-announcement-modal
 nikkan.co.jp###c-modal
 nikkei-r.co.jp##.c-cookiePolicy
 nikkei.com##.k-privacy
