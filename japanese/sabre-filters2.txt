@@ -2,10 +2,12 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-06-10
+! Last updated: 2020-06-19
 
 ! Generic network rules
 /cookiealert.js
+/didomi.js
+/evidon-sitenotice-tag.
 /jquery.ihavecookies.
 /wp-content/plugins/cc-cookie-consent/*
 /wp-content/plugins/cookie-bar/*
@@ -34,12 +36,17 @@
 ||cdn.jsdelivr.net/npm/cookieconsent
 ||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/$domain=~www.ehftv.com
 ||consent.cookiebot.com^$third-party,domain=~www.refinery29.com
+||cookielaw.org^$domain=hp.com
 
 ! Generic cosmetic rules
+!#if false
 ###cc-cookie-law
 ###gdpr-banner
+!#endif
 ##.popup_confirmation_bar
 ##.widget_eu_cookie_law_widget
+*###cc-cookie-law
+*###gdpr-banner
 
 ! Rules for individual sites
 /wp-content/plugins/uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
@@ -71,6 +78,7 @@
 ||netgear.com/js/jquery-cookie/jquery.cookiecuttr
 ||ocnk.net/js/confirmation-bar.js|
 ||ox.ac.uk/portal_javascripts/Turnkey%20Theme/resourcecollective.cookielawcookielaw_init
+||radiko.jp/rg/policy/
 ||rbth.com/rbth/view/cookies
 ||researchgate.net/javascript/cookie-consent/
 ||sei.asia/common_n/js/gdpr.js|
@@ -90,6 +98,7 @@ android.com,britishairways.com,ft.com##.cookie-banner
 answers.ea.com##.cookie_content
 askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com###js-gdpr-consent-banner
 avast.com,avast.co.jp##.cookie-bar
+bbc.com##[class^=Wrapper-sc-]
 bethesda.net##cookie-policy
 blog.hatena.ne.jp###header-cookie-notify
 businesswire.com,healthitsecurity.com###cookie-consent
@@ -102,6 +111,7 @@ dl.acm.org##.cookiePolicy-popup
 edreams.jp###cookie-disclaimer
 elifesciences.org##.opt-in-message-bar
 ereg.ets.org,sukebei.nyaa.net###cookie-warning
+evaair.com###cboxOverlay, #colorbox
 excesssecurity.com###webarx-cookie-notice
 figshare.com###ck-banner
 foreignaffairs.com##.messages--container--bottom
@@ -122,14 +132,16 @@ nikkei-r.co.jp##.c-cookiePolicy
 nikkei.com##.k-privacy
 newser.com###divCM
 osdn.net###cookie-bar
+osf.io##[class^=__cookie-banner__]
 pacsun.com###pptou-sticky
 paragon-software.com###cookies_msg
 pastebin.com###float-box-frame
 paypal-community.com##.lia-cookie-banner-alert
-pcloud.com##.cookie_consent_holder
+pcloud.com,pcloud.link##.cookie_consent_holder
 perfect-privacy.com###cookiebar
 pictame2.com##.cc-banner
 pubs.acs.org###gdpr-message-modal
+radiko.jp###cboxOverlay, #colorbox.policy
 rt.com##.cookies__banner
 searchenginejournal.com###cooknote-div
 shorten.sh###cookie-pop
@@ -138,6 +150,7 @@ style.nikkei.com###ccpa-block
 techxplore.com###modal-cookie
 telegraph.co.uk###_evidon_banner
 transcend-info.com###legal_notice
+travel2be.com###alertCookies
 trivago.jp###onetrust-consent-sdk
 theguardian.com###cmpContainer
 this.kiji.is##.page__gdpr
