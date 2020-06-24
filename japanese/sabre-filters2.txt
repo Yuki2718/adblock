@@ -2,11 +2,12 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-06-19
+! Last updated: 2020-06-24
 
 ! Generic network rules
 /cookiealert.js
 /didomi.js
+/gdpr.js|$domain=nippon.com|sei.asia
 /evidon-sitenotice-tag.
 /jquery.ihavecookies.
 /wp-content/plugins/cc-cookie-consent/*
@@ -34,9 +35,10 @@
 ||cdn.ampproject.org^*/amp-user-notification-
 ||cdn.jsdelivr.net/npm/cookie-bar/
 ||cdn.jsdelivr.net/npm/cookieconsent
-||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/$domain=~www.ehftv.com
-||consent.cookiebot.com^$third-party,domain=~www.refinery29.com
-||cookielaw.org^$domain=hp.com
+||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/$domain=~ehftv.com
+||consent.cmp.oath.com^
+||consent.cookiebot.com^$third-party,domain=~refinery29.com
+||cookielaw.org^$domain=gqjapan.jp|hp.com
 
 ! Generic cosmetic rules
 !#if false
@@ -81,7 +83,6 @@
 ||radiko.jp/rg/policy/
 ||rbth.com/rbth/view/cookies
 ||researchgate.net/javascript/cookie-consent/
-||sei.asia/common_n/js/gdpr.js|
 ||smp.sankei.co.jp/js/privacy/cookieconsent
 ||speedcheckercdn.com/lib/cookieconsent/
 ||static.fc2.com/js/blogranking/pp_agreement
@@ -120,6 +121,7 @@ fxstreet.com##[id^=cookiesalert_]
 gotogate.jp##.etiCookieBanner
 heroku.com###heroku-cookie-banner
 hwinfo.com##.cookie-agree-with-use
+hybrid-analysis.com###cookie-message-container
 icann.org##.cookie-notification
 investors.com###investors-policy-terms-consent-dialog
 m.phys.org,m.techxplore.com###modal-cookie
