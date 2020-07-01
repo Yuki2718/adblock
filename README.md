@@ -70,7 +70,7 @@ Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes co
 <details>
 <summary><strong>medium_mode</strong></summary>
 
-### ublock-anti-whitelist.txt
+### ublock-anti-allowlist.txt
 
 This is to counter unnecessary or too generic allowlists which were not addressed or won't be addressed by the maintainer. Only for advanced user as it can cause problems.
 

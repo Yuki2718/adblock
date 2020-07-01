@@ -1,3 +1,7 @@
+! uBlock - Unbreak
+@@||scdn.co/cdn/js/gtag.$script,domain=spotify.com,badfilter
+@@||spclient.wg.spotify.com/$xhr,domain=spotify.com,badfilter
+
 ! EasyList
 /prebid1.$important,domain=9to5google.com|9to5mac.com|9to5toys.com|electrek.co|dronedj.com
 ||accuweather.com/bundles/prebid.$important
@@ -16,9 +20,15 @@
 
 ! AdGuard Base
 @@||2mdn.net/instream/$badfilter
+@@||ads.exoclick.com/ads.js$domain=sss.xxx|hdzog.com|hclips.com,badfilter
 ! no breakage on my end but if you get, add speedtest.net##+js(set, apstag.init, noopFunc)
 @@||b.cdnst.net/javascript/amazon.js$domain=speedtest.net,badfilter
 @@||imasdk.googleapis.com/js/core/bridge*.html$domain=~spotify.com,badfilter
 @@||krebsonsecurity.com^$badfilter
+@@||kts.visitstats.com/in^$domain=txxx.com,badfilter
 @@||s1.wp.com^$badfilter
+@@||syndication.exosrv.com/splash.php$domain=kissjav.com|russkoepornotube.com,badfilter
 @@||wp.com/p/jetpack^$badfilter
+
+! Fanboy's Enhanced Tracking
+@@/js/ads.js$script,badfilter

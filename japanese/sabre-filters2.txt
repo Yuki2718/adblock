@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-06-24
+! Last updated: 2020-07-01
 
 ! Generic network rules
 /cookiealert.js
@@ -38,7 +38,7 @@
 ||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/$domain=~ehftv.com
 ||consent.cmp.oath.com^
 ||consent.cookiebot.com^$third-party,domain=~refinery29.com
-||cookielaw.org^$domain=gqjapan.jp|hp.com
+||cookielaw.org^$domain=gqjapan.jp|hp.com|nature.com
 
 ! Generic cosmetic rules
 !#if false
@@ -68,6 +68,7 @@
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||europol.europa.eu/sites/default/files/js/js_X*
 ||finnishdesignshop.com/app/dist/cookie-notice-bar.
+||geo-assets.tedcdn.com/cookie-notice/
 ||global.oup.com/cookiealert/
 ||gotogate.jp^*/CookieBannerApplication.js|
 ||gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar
@@ -91,6 +92,7 @@
 ||transcend-info.com/dist/scripts/cookiegotop.js|
 ||ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
 ||webwhois.verisign.com/webwhois-ui/js/jquery/cookieconsent.js|
+||wolframcdn.com/consent/cookie-consent.php|
 accuweather.com##.privacy-policy-banner
 aiasahi.jp,japan.cnet.com,japan.techrepublic.com,japan.zdnet.com,www.cnn.co.jp###gdpr_area
 airvpn.org###cookieLaw
@@ -101,6 +103,7 @@ askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com#
 avast.com,avast.co.jp##.cookie-bar
 bbc.com##[class^=Wrapper-sc-]
 bethesda.net##cookie-policy
+bitstarz.com##.cookie-wrapper
 blog.hatena.ne.jp###header-cookie-notify
 businesswire.com,healthitsecurity.com###cookie-consent
 cdrinfo.com,usenix.org###sliding-popup
@@ -116,6 +119,7 @@ evaair.com###cboxOverlay, #colorbox
 excesssecurity.com###webarx-cookie-notice
 figshare.com###ck-banner
 foreignaffairs.com##.messages--container--bottom
+forum.thegradcafe.com###elGuestTerms
 flyasiana.com###cookieNotice
 fxstreet.com##[id^=cookiesalert_]
 gotogate.jp##.etiCookieBanner
@@ -126,6 +130,7 @@ icann.org##.cookie-notification
 investors.com###investors-policy-terms-consent-dialog
 m.phys.org,m.techxplore.com###modal-cookie
 malwaretips.com##.notice-content
+matcha-jp.com##.cookie-info
 monosnap.com##.cookie
 moodle.org##.eupopup-container
 nhl.com##.btm-nhl-announcement-modal
@@ -133,8 +138,9 @@ nikkan.co.jp###c-modal
 nikkei-r.co.jp##.c-cookiePolicy
 nikkei.com##.k-privacy
 newser.com###divCM
+open.spotify.com##section[data-testid=cookie-notice]
 osdn.net###cookie-bar
-osf.io##[class^=__cookie-banner__]
+osf.io##[class^=_CookieBanner]
 pacsun.com###pptou-sticky
 paragon-software.com###cookies_msg
 pastebin.com###float-box-frame
@@ -142,11 +148,14 @@ paypal-community.com##.lia-cookie-banner-alert
 pcloud.com,pcloud.link##.cookie_consent_holder
 perfect-privacy.com###cookiebar
 pictame2.com##.cc-banner
+plus.nhk.jp##.bottom_optout_announce
 pubs.acs.org###gdpr-message-modal
 radiko.jp###cboxOverlay, #colorbox.policy
 rt.com##.cookies__banner
+rutube.ru##.cookie-consent, .eu-cookie-popup
 searchenginejournal.com###cooknote-div
 shorten.sh###cookie-pop
+softbankrobotics.com##.cookie-confirm
 softpedia.com###cookienotif
 style.nikkei.com###ccpa-block
 techxplore.com###modal-cookie
@@ -160,10 +169,13 @@ thurrott.com##.gdpr-cookie-banner
 urbandictionary.com##.cc-window
 weibo.com##.cookie-disclaimer
 wilderssecurity.com##.noticeContent
+wolframalpha.com##.oaDry
 wordpress.com##.custom-cookie-banner
 wp-kyoto.net##.cookieConsent
 www.dazn.com##.w-cookie-banner, [class^=cookieDisclaimer___container]
+www.foxnews.com##.notification-banner
 www.latimes.com###ensNotifyBanner
 www.ox.ac.uk###cookie-notice
 www.pixiv.net##._gdpr-notify-header
+www.semanticscholar.org##.copyright-banner
 york.ac.uk##.c-cookie-banner

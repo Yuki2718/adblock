@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-06-24
+! Last updated: 2020-07-01
 
 ! General tracker
 .gif?Log=$~xmlhttprequest
@@ -164,6 +164,7 @@
 ||px-cdn.net/b/s|
 ||q.stripe.com/?event=$image
 ||r.mail.ru^
+||redhat.com/dtm.js|
 ||s.yimg.com/aaq/wf/wf-beacon-
 ||s.yimg.com/ss/rapid3$script,domain=~techcrunch.com
 ||s.yimg.com/ss/vops.js|
@@ -189,6 +190,7 @@
 ||widget.trustpilot.com/stats/
 
 ! Tracker on individual sites
+/^https://s3\.amazonaws\.com/[0-9a-f]{58}/[0-9a-f]{10}$/$xmlhttprequest,domain=kissanime.nz
 ||a.c-dn.net^*/clientlibs_tagmanager.
 ||a.espncdn.com/prod/scripts/analytics/
 ||a.espncdn.com/prod/scripts/yield_
@@ -283,6 +285,7 @@
 ||edreams.*/travel/service/jslogger/
 ||edreams.*/travel/service/multitest/report|
 ||ef.com/common/ef-services/SeoServices/$xmlhttprequest
+||error-collector.ted.com^
 ||etsy.com/bcn/
 ||extremetech.com/cszn/js/z0WVjCBSEeGLoxIxOQVEwQ.min.js|
 ||extremetech.com/wgac/js/analytics.js|
@@ -379,6 +382,8 @@
 ||news.google.com/_/DotsSplashUi/browserinfo
 ||news.google.com/_/DotsSplashUi/gen204/
 ||news.google.com/_/DotsSplashUi/jserror
+||news.google.com/_/SubscribewithgoogleClientUi/gen204/
+||news.google.com/_/SubscribewithgoogleClientUi/browserinfo
 ||news.google.com/_/v
 ||news.google.com/dssw.js
 ||newsbreak.com/_api/stat/
@@ -437,6 +442,7 @@
 ||storage.googleapis.com^*/workbox-offline-ga.prod.js|
 ||store.moncler.com/yTos/api/Plugins/LoggerApi/
 ||subscribe.washingtonpost.com/acquisition/views/tracking/
+||supportmetrics.apple.com/content/services/stats|
 ||surpricenow.com/js/s_code_
 ||sweetwater.com/p2TBVNJZ/
 ||taglocker.target.com^
@@ -464,7 +470,12 @@
 ||vmware.com/etc/clientlibs/vmwaredevapp/clientlib-utag.
 ||vmware.com/files/templates/inc/utag_
 ||vent.qz.com/log|
+||veoh.com/increment-view-count-by-id|
+||vimeo.com/*?action=log_$xmlhttprequest
 ||vimeo.com/log/js_error
+||vimeocdn.com/js_opt/ablincoln_combined.min.js
+||vimeocdn.com/js_opt/logging_combined.
+||vimeocdn.com/js_opt/vendor/siftscience/
 ||vox.com/services/entry_stats
 ||vox.com/services/user_context|
 ||walmart.com^*/logger^$xmlhttprequest
