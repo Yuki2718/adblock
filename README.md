@@ -128,7 +128,6 @@ Exclusion:
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt)
 
 [1]: Another side effect is any filter lists that heavily depend on generic cosmetic filters don't work well. An example of such list is Fanboy Annoyances List.
-</details>
 
 ### Placeholder Hider with no generic hiding for mobile (phhider-mob.txt)
 
@@ -136,3 +135,5 @@ See above, it's a mobile version of phhider-nogen.txt. Rules covered by AdGuard 
 
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe (uBlock Origin)</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt)
+
+</details>
