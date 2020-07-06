@@ -2,12 +2,12 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-07-04
+! Last updated: 2020-07-07
 
 ! Generic network rules
 /cookiealert.js
 /didomi.js
-/gdpr.js|$domain=nippon.com|sei.asia
+/gdpr.js|$domain=bitly.com|nippon.com|sei.asia
 /evidon-sitenotice-tag.
 /jquery.ihavecookies.
 /um-gdpr.
@@ -29,7 +29,8 @@
 /wp-content/plugins/smart-cookie-kit/*
 /wp-content/plugins/webtoffee-gdpr-cookie-consent/*
 /wp-content/plugins/wf-cookie-consent/*
-/wp-content/plugins/wp-cookie-allow/*
+/wp-cookie-allow/*
+/wp-modal-popup-with-cookie-integration/*
 ||assets.jimstatic.com/ckies.
 ||assets2.jiveon.com/*/cookieConsent.js|
 ||c0.wp.com^*/eu-cookie-law.min.js|$important
@@ -53,23 +54,26 @@
 
 ! Rules for individual sites
 -cookie-law-popup.$domain=waaw.tv
+/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies$domain=blog.kaspersky.co.jp|kasperskydaily.com|threatpost.com
 /wp-content/plugins/uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
+||acm.org/js/cookieconsent.js|
 ||acronis.com^*/cookies-note-v2.
 ||adblockplus.org/js/cookie-prompt.
 ||amazonaws.com/the-japan-news-public/cookieconsent$domain=the-japan-news.com
-||assets.kasperskydaily.com/blog/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies-notification/
-||assets.threatpost.com/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies
+||amiunique.org/cookie-notice.js|
 ||av-comparatives.org/wp-content/themes/avc/js/cookie/jquery.cookie.
-||blog.kaspersky.co.jp/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies
 ||bookwalker.jp/shared/gdpr/
 ||bt.com/consumer/cookie/
 ||business.twitter.com^*-data-protection-notice.min.js|
+||c.s-microsoft.com/mscc/
 ||cdn.reverso.net^*/cookiescript
 ||cloud.xm-cdn.com/assets/js/custom/cookie_popup.
+||cloudfront.net^*/cookieconsent.$domain=crowdin.com
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||europol.europa.eu/sites/default/files/js/js_X*
 ||finnishdesignshop.com/app/dist/cookie-notice-bar.
+||gdpr.fc2.com/share/js/gdpr/
 ||geo-assets.tedcdn.com/cookie-notice/
 ||global.oup.com/cookiealert/
 ||gotogate.jp^*/CookieBannerApplication.js|
@@ -96,7 +100,7 @@
 ||webwhois.verisign.com/webwhois-ui/js/jquery/cookieconsent.js|
 ||wolframcdn.com/consent/cookie-consent.php|
 accuweather.com##.privacy-policy-banner
-aiasahi.jp,japan.cnet.com,japan.techrepublic.com,japan.zdnet.com,www.cnn.co.jp###gdpr_area
+aiasahi.jp,japan.cnet.com,cnn.co.jp,japan.techrepublic.com,japan.zdnet.com###gdpr_area
 airvpn.org###cookieLaw
 amada.co.jp###cookie-bar
 android.com,britishairways.com,ft.com##.cookie-banner
@@ -135,6 +139,7 @@ investors.com###investors-policy-terms-consent-dialog
 m.phys.org,m.techxplore.com###modal-cookie
 malwaretips.com##.notice-content
 matcha-jp.com##.cookie-info
+microsoft.com###uhfCookieAlert
 monosnap.com##.cookie
 moodle.org##.eupopup-container
 nhl.com##.btm-nhl-announcement-modal
