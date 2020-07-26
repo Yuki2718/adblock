@@ -2,45 +2,46 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-07-07
+! Last updated: 2020-07-27
 
 ! Generic network rules
+/amp-user-notification-
+/cc-cookie-consent/*
+/cookie-bar/*
+/cookie-notice/*$~stylesheet
 /cookiealert.js
 /didomi.js
-/gdpr.js|$domain=bitly.com|nippon.com|sei.asia
+/gdpr-cookie-compliance/*
+/gdpr.js$domain=bitly.com|iccworld.co.jp|nippon.com|search.goo.ne.jp|sei.asia
 /evidon-sitenotice-tag.
+/jetpack/_inc/build/widgets/eu-cookie-law/*
 /jquery.ihavecookies.
-/um-gdpr.
-/wp-content/plugins/cc-cookie-consent/*
-/wp-content/plugins/cookie-bar/*
-/wp-content/plugins/cookie-compliance/*
-/wp-content/plugins/cookie-law-info/*
-/wp-content/plugins/cookie-notice/*
-/wp-content/plugins/cookie-warning/*
-/wp-content/plugins/creare-eu-cookie-law-banner/*
+/plugins/cookie-compliance/*
+/plugins/cookie-law-info/*
+/plugins/cookie-warning/*
+/plugins/creare-eu-cookie-law-banner/*
+/plugins/eu-cookie-law
+/plugins/gdpr/*
+/plugins/osm-cookie-consent/*
+/plugins/responsive-cookie-consent/*
+/plugins/simple-cookie-notification-bar/*
+/plugins/smart-cookie-kit/*
+/plugins/webtoffee-gdpr-cookie-consent/*
+/plugins/wf-cookie-consent/*
+/plugins/wp-modal-popup-with-cookie-integration/*
 /wp-content/plugins/easy-cookies-policy/*
-/wp-content/plugins/eu-cookie-law
-/wp-content/plugins/gdpr/*
-/wp-content/plugins/gdpr-cookie-compliance/*
-/wp-content/plugins/jetpack/_inc/build/widgets/eu-cookie-law/*
-/wp-content/plugins/osm-cookie-consent/*
-/wp-content/plugins/responsive-cookie-consent/*
-/wp-content/plugins/simple-cookie-notification-bar/*
-/wp-content/plugins/smart-cookie-kit/*
-/wp-content/plugins/webtoffee-gdpr-cookie-consent/*
-/wp-content/plugins/wf-cookie-consent/*
-/wp-cookie-allow/*
-/wp-modal-popup-with-cookie-integration/*
-||assets.jimstatic.com/ckies.
+/wp-cookie-allow/*$script,stylesheet
+/um-gdpr.
 ||assets2.jiveon.com/*/cookieConsent.js|
 ||c0.wp.com^*/eu-cookie-law.min.js|$important
-||cdn.ampproject.org^*/amp-user-notification-
-||cdn.jsdelivr.net/npm/cookie-bar/
-||cdn.jsdelivr.net/npm/cookieconsent
 ||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/$domain=~ehftv.com
+||consensu.org^$domain=theguardian.com
 ||consent.cmp.oath.com^
 ||consent.cookiebot.com^$third-party,domain=~refinery29.com
-||cookielaw.org^$domain=gqjapan.jp|hp.com|nature.com
+||cookielaw.org^$domain=biomedcentral.com|gqjapan.jp|hp.com|nature.com|natureasia.com|springer.com|springeropen.com|telerik.com
+||jimstatic.com/ckies.
+||jimstatic.com/cookieControl.
+||jsdelivr.net/npm/cookieconsent
 
 ! Generic cosmetic rules
 !#if false
@@ -54,72 +55,86 @@
 
 ! Rules for individual sites
 -cookie-law-popup.$domain=waaw.tv
+/CookieBannerApplication.$script,domain=gotogate.jp|mytrip.com
+/cookie-banner$domain=sugarsync.jp
 /wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies$domain=blog.kaspersky.co.jp|kasperskydaily.com|threatpost.com
-/wp-content/plugins/uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
-||acm.org/js/cookieconsent.js|
+/uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
+||a-port.asahi.com/js/gdpr/
+||acm.org/js/cookieconsent.
 ||acronis.com^*/cookies-note-v2.
 ||adblockplus.org/js/cookie-prompt.
 ||amazonaws.com/the-japan-news-public/cookieconsent$domain=the-japan-news.com
 ||amiunique.org/cookie-notice.js|
 ||av-comparatives.org/wp-content/themes/avc/js/cookie/jquery.cookie.
 ||bookwalker.jp/shared/gdpr/
+||bosch.io/wp-content/themes/dhsv_theme/resources/vendor/rb/cookiemanager/
 ||bt.com/consumer/cookie/
-||business.twitter.com^*-data-protection-notice.min.js|
-||c.s-microsoft.com/mscc/
-||cdn.reverso.net^*/cookiescript
+||business.twitter.com^*-data-protection-notice.$script,~third-party
+||civiccomputing.com^*/cookieControl-$domain=msi.com
 ||cloud.xm-cdn.com/assets/js/custom/cookie_popup.
 ||cloudfront.net^*/cookieconsent.$domain=crowdin.com
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
+||consent.trustarc.com^$third-party
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||europol.europa.eu/sites/default/files/js/js_X*
+||fc2.com/js/blogranking/pp_agreement
+||fc2.com/share/js/gdpr/pp_agreement
 ||finnishdesignshop.com/app/dist/cookie-notice-bar.
 ||gdpr.fc2.com/share/js/gdpr/
 ||geo-assets.tedcdn.com/cookie-notice/
 ||global.oup.com/cookiealert/
-||gotogate.jp^*/CookieBannerApplication.js|
 ||gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar
 ||ikea.com/ext/gateway/assets/js/cookie-notification.
 ||img01.bt.co.uk^*/bt.cookies.js|
 ||jaguar.co.jp/resources//public/js/components/NotificationBar.
 ||jsps.go.jp/js/analytics_
-||mytrip.com^*/CookieBannerApplication.js|
+||lac.co.jp/common/js/gdpr_consensus.
 ||nav.files.bbci.co.uk^*/cookie-prompt/
 ||netgear.com/js/jquery-cookie/jquery.cookiecuttr
-||ocnk.net/js/confirmation-bar.js|
+||ocnk.net/js/confirmation-bar.
 ||ox.ac.uk/portal_javascripts/Turnkey%20Theme/resourcecollective.cookielawcookielaw_init
 ||radiko.jp/rg/policy/
 ||rbth.com/rbth/view/cookies
 ||researchgate.net/javascript/cookie-consent/
+||reverso.net^*/cookiescript
+||s-microsoft.com/mscc/
 ||smp.sankei.co.jp/js/privacy/cookieconsent
+||spain.info/export/system/modules/*/cookie.js
 ||speedcheckercdn.com/lib/cookieconsent/
-||static.fc2.com/js/blogranking/pp_agreement
-||static.fc2.com/share/js/gdpr/pp_agreement
 ||staticcontent.fxstreet.com/website/mustache/alerts/cookiesalert_
 ||transcend-info.com/dist/scripts/cookiegotop.js|
 ||ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
-||webwhois.verisign.com/webwhois-ui/js/jquery/cookieconsent.js|
-||wolframcdn.com/consent/cookie-consent.php|
+||webwhois.verisign.com/webwhois-ui/js/jquery/cookieconsent.
+||wolframcdn.com/consent/cookie-consent.
+accounts.crowdin.com##.cc-window
 accuweather.com##.privacy-policy-banner
 aiasahi.jp,japan.cnet.com,cnn.co.jp,japan.techrepublic.com,japan.zdnet.com###gdpr_area
 airvpn.org###cookieLaw
-amada.co.jp###cookie-bar
-android.com,britishairways.com,ft.com##.cookie-banner
+amada.co.jp,ambafrance.org,osdn.net###cookie-bar
+anaconda.com##.gdpr-banner
+analog.com#$##cookie-consent-container { display:none !important }
+analog.com#$#.modal-backdrop { display:none !important }
+analog.com#$#body.modal-open { overflow:auto !important }
 answers.ea.com##.cookie_content
+apkpure.com###policy-info
 askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com###js-gdpr-consent-banner
 avast.com,avast.co.jp##.cookie-bar
 bbc.com##[class^=Wrapper-sc-]
 bethesda.net##cookie-policy
 bitstarz.com##.cookie-wrapper
 blog.hatena.ne.jp###header-cookie-notify
+board.perfect-privacy.com##.notice--cookie
 businesswire.com,healthitsecurity.com###cookie-consent
-cdrinfo.com,usenix.org###sliding-popup
-china-airlines.com###cookieInfoDetails, .top-bar
 cointelegraph.com##.bottom-zone
-dailymotion.com##.CookiePopup__popup___3bblb
+copyright.com##.site-wide-notice--gdpr
+dailymotion.com##div[class^="CookiePopup_"]
 deepl.com###dl_cookie_footer
 delta.com##ngc-cookie-banner
+depositfiles.com###cookie_popup
+diplo.de##.c-cookie-banner--default
 dl.acm.org##.cookiePolicy-popup
 doujinblog.org###cookie-law-info-bar
+easeus.com##.usernotice_pop
 edreams.jp###cookie-disclaimer
 elifesciences.org##.opt-in-message-bar
 ereg.ets.org,sukebei.nyaa.net###cookie-warning
@@ -128,35 +143,43 @@ excesssecurity.com###webarx-cookie-notice
 figshare.com###ck-banner
 foreignaffairs.com##.messages--container--bottom
 forum.thegradcafe.com###elGuestTerms
+france.fr##.cookies-banner
 flyasiana.com###cookieNotice
 fxstreet.com##[id^=cookiesalert_]
+germany.travel#$#.consent { display:none !important }
+germany.travel#$#body.consent-overlay { overflow:auto !important }
+get.videolan.org###uecookies
+goodpatch.com##.CookieConsent
 gotogate.jp##.etiCookieBanner
 heroku.com###heroku-cookie-banner
-hwinfo.com##.cookie-agree-with-use
 hybrid-analysis.com###cookie-message-container
+ibexa.co###cookie-consent-banner
+ibispaint.com###agreementPane
 icann.org##.cookie-notification
 investors.com###investors-policy-terms-consent-dialog
+juken-mikata.net###cookieAlt
+latimes.com###ensNotifyBanner
 m.phys.org,m.techxplore.com###modal-cookie
+malavida.com,monosnap.com##.cookie
 malwaretips.com##.notice-content
 matcha-jp.com##.cookie-info
 microsoft.com###uhfCookieAlert
-monosnap.com##.cookie
 moodle.org##.eupopup-container
 nhl.com##.btm-nhl-announcement-modal
-nikkan.co.jp###c-modal
 nikkei-r.co.jp##.c-cookiePolicy
 nikkei.com##.k-privacy
 newser.com###divCM
 open.spotify.com##section[data-testid=cookie-notice]
-osdn.net###cookie-bar
 osf.io##[class^=_CookieBanner]
+otsukai.com##.Cookie
 pacsun.com###pptou-sticky
 paragon-software.com###cookies_msg
+parisinfo.com##.CookieNotice
 pastebin.com###float-box-frame
 paypal-community.com##.lia-cookie-banner-alert
 pcloud.com,pcloud.link##.cookie_consent_holder
-perfect-privacy.com###cookiebar
 pictame2.com##.cc-banner
+pixivision.net,www.pixiv.net##._gdpr-notify-header
 plus.nhk.jp##.bottom_optout_announce
 pubs.acs.org###gdpr-message-modal
 radiko.jp###cboxOverlay, #colorbox.policy
@@ -172,19 +195,28 @@ telegraph.co.uk###_evidon_banner
 transcend-info.com###legal_notice
 travel2be.com###alertCookies
 trivago.jp###onetrust-consent-sdk
-theguardian.com###cmpContainer
 this.kiji.is##.page__gdpr
 thurrott.com##.gdpr-cookie-banner
+ubuntu.com##.cookie-policy
 urbandictionary.com##.cc-window
+usenix.org,www.biorxiv.org,www.cdrinfo.com,www.jneurosci.org,www.pnas.org###sliding-popup
+userstyles.org##.NotificationLine
 weibo.com##.cookie-disclaimer
 wilderssecurity.com##.noticeContent
 wolframalpha.com##.oaDry
 wordpress.com##.custom-cookie-banner
 wp-kyoto.net##.cookieConsent
+www.android.com,www.britishairways.com,www.ft.com##.cookie-banner
+www.arm.com##.c-policies
+www.china-airlines.com###cookieInfoDetails, .top-bar
 www.dazn.com##.w-cookie-banner, [class^=cookieDisclaimer___container]
+www.foxitsoftware.com###cookie-policy
 www.foxnews.com##.notification-banner
-www.latimes.com###ensNotifyBanner
+www.hwinfo.com##.cookie-agree-with-use
+www.nikkan.co.jp###c-modal
+www.nvidia.com###cookiePolicy-layer
 www.ox.ac.uk###cookie-notice
-www.pixiv.net##._gdpr-notify-header
+www.perfect-privacy.com###cookiebar
+www.pixiv.net###root > div:has(a[href="/terms?page=privacy"])
 www.semanticscholar.org##.copyright-banner
 york.ac.uk##.c-cookie-banner

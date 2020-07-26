@@ -24,8 +24,7 @@ are commented out as some people will need them. Those who are sure don't need t
 Exclusion:
 - Follow buttons & comment widgets - they can be useful to some people and often Social media filter doesn't block them.
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Fsocial-plus.txt&amp;title=AdGuard%20Social%20media%20Plus">Subscribe (AdGuard)</a>
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt&title=AdGuard%20Social%20media%20Plus">Subscribe (uBlock Origin)</a>
+<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt&title=AdGuard%20Social%20media%20Plus">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt)
 
 ### AdGuard Tracking Protection Plus (tracking-plus.txt)
@@ -43,8 +42,7 @@ Exclusion:
 
 Acknowledgement: some of its rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fadguard%2Ftracking-plus.txt&amp;title=AdGuard%20Tracking%20Protection%20Plus">Subscribe (AdGuard)</a>
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt&title=AdGuard%20Tracking%20Protection%20Plus">Subscribe (uBlock Origin)</a>
+<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt&title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt)
 
 </details>
@@ -52,13 +50,48 @@ Acknowledgement: some of its rules are taken from [EasyPrivacy](https://easylist
 <details>
 <summary><strong>japanese</strong></summary>
 
+[日本語](/japanese/README-JP.md)
+
+<strong>If you are a non-Japanese seeking for a good Japanese filter, my first recommendation is [AdGuard Japanese filter](https://kb.adguard.com/en/general/adguard-ad-filters#japanese)</strong>. My filters include some aggressive rules not well-tested outside Japanese sites and likely to cause false positive on your local sites. They are made to address a peculiar situation among Japanese ad-block user that many of them unsubscribe default lists and keep only a Japanese filter. If you proceed, you shall be deemed to have read the [Japanese README](/japanese/README-JP.md) which gives more details, because those who need my filters should be able to read it.
+
+### uBlock Japanese filters
+
+The most comprehensive, block-first, and efficient Japanese list for uBlock Origin that removes ads and analytics on desktop, designed for advanced user. Some of its rules are taken from - or rather intentionally made to be identical with - [EasyList, EasyPrivacy,](https://easylist.to/) [AdGuard Base, AdGuard Tracking Protection, ](https://kb.adguard.com/en/general/adguard-ad-filters) [uBlock Built-in lists,](https://github.com/uBlockOrigin/uAssets/) [Peter Lowe's list,](https://pgl.yoyo.org/adservers/) [Fanboy's Enhanced Trackers List, ](https://www.fanboy.co.nz/filters.html) [EasyList China,](http://abpchina.org/forum/forum.php) [RU AdList](https://forums.lanik.us/viewforum.php?f=102) and [280blocker domain list](https://280blocker.net/files/280blocker_domain_ag.txt)sup>1</sup>. This way even if an user added any of those lists (which is uncommon in Japanese adblock user) along with my list, those duplicates will be discarded and can do no harm. This list is also strongly influenced by [Tofu filter](http://tofukko.r.ribbon.to/abp.html) though rules are not directly taken for copy right problems.
+
+1: Only uBlock Built-in and 280blocker domain list are out of CC BY-SA license. I hope and believe rules taken from them are within a range of what filter authors can generally think of.
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=uBlock%20Japanese%20filters">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt)
+
+### uBlock Japanese filters - Paranoid
+
+This can be added to uBlock Japanese filters for enhanced blocking. Use at your own risk. Some rules are taken from or influenced by [EasyPrivacy,](https://easylist.to/) and [Fanboy's Enhanced Trackers List, ](https://www.fanboy.co.nz/filters.html).
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Paranoid">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
+
+### uBlock Japanese filters - Social
+
+Removes share buttons mainly on Japanese sites. Some rules are taken from [AdGuard Social media](https://kb.adguard.com/en/general/adguard-ad-filters#social).
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Social">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt)
+
+### uBlock Japanese filters - Annoyances
+
+Removes annoyances mainly on Japanese sites. Some rules are taken from or influenced by [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter) and [Fanboy Annoyances](https://www.fanboy.co.nz/index.html).
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Annoyances">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
+
+
 ### blog-parts-adult.txt
 
-Removes ranking buttons on adult sites. See below.
+See below, this is a variant of blog-parts.txt for adult sites. Included in uBlock Japanese filters - Annoyances
 
 ### blog-parts.txt
 
-This removes blog parts and ranking buttons on Japanese websites.
+This removes blog parts and ranking buttons on Japanese websites. Included in uBlock Japanese filters - Annoyances
 
 Exclusion:
 - Potentially useful parts or buttons
@@ -67,10 +100,9 @@ Exclusion:
 
 ### Sable filters 2 (sable-filters2.txt)
 
-Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added.
+Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in uBlock Japanese filters - Annoyances
 
-<a href="https://subscribe.adblockplus.org?location=https%3A%2F%2Fraw.githubusercontent.com%2FYuki2718%2Fadblock%2Fmaster%2Fjapanese%2Fsabre-filters2.txt&amp;title=Sable%20filters%202">Subscribe (AdGuard)</a>
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe (uBlock Origin)</a>
+<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
 
 </details>
@@ -108,9 +140,9 @@ Exclusion:
 - rarely seen plugins such that used by less than 100 sites according to themesinfo.com or plugins used only on specific websites
 - CSS-only plugins
 
-[1]: It doesn't make sense if the site was fully compromised, but is some other cases may protect you from malwarized plugins and some vulnerabilities.
+1: It doesn't make sense if the site was fully compromised, but is some other cases may protect you from malwarized plugins and some vulnerabilities.
 
-[2]: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.
+2: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.
 </details>
 
 <details>
@@ -124,16 +156,22 @@ Exclusion:
 - Small place holder (e.g. *##.ad-space or *##.ad-area hides placeholders on various WordPress sites but won't be added for the reason.)
 - Placeholders covered by AdGuard Base
 
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe (uBlock Origin)</a>
+<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt)
 
-[1]: Another side effect is any filter lists that heavily depend on generic cosmetic filters don't work well. An example of such list is Fanboy Annoyances List.
+1: Another side effect is any filter lists that heavily depend on generic cosmetic filters don't work well. An example of such list is Fanboy Annoyances List.
 
 ### Placeholder Hider with no generic hiding for mobile (phhider-mob.txt)
 
 See above, it's a mobile version of phhider-nogen.txt. Rules covered by AdGuard Mobile ads filter won't be added.
 
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe (uBlock Origin)</a>
+<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt)
 
 </details>
+
+#### Notable users of my lists
+
+[dbl.oisd.nl | Internet's #1 domain blocklist](https://oisd.nl/)
+
+[spirillen's uBlockOrigin Rules](https://gitlab.com/AnonymousPoster/ublockorigin-rules)

@@ -7,7 +7,7 @@
 ||accuweather.com/bundles/prebid.$important
 ||g.doubleclick.net/tag/js/gpt.js$important,domain=accuweather.com
 ||kissanime.ru/ads/$frame,important
-||www.networkworld.com/www/js/ads/$important
+||networkworld.com/www/js/ads/$important
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=gounlimited.to,badfilter
 @@||clients*.google.com/adsense/*?key=$domain=~calcalist.co.il|~gaytube.com|~mako.co.il|~pornhub.com|~pornhubthbh7ap3u.onion|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~walla.co.il|~xtu,badfilter
 
@@ -15,7 +15,7 @@
 ||omtrdc.net/rest/$important
 ||play.google.com/log$important,domain=~myaccount.google.com
 ||smetrics.aem.playstation.com^$important
-||www.walmart.com^*/logger^$xhr,important
+||walmart.com^*/logger^$xhr,important
 @@||s.yimg.com^*/advertisement/sponsor/promo/ad.png$image,domain=news.yahoo.com,badfilter
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com,badfilter
 
@@ -31,5 +31,15 @@
 @@||syndication.exosrv.com/splash.php$domain=kissjav.com|russkoepornotube.com,badfilter
 @@||wp.com/p/jetpack^$badfilter
 
+! AdGuard Tracking
+@@||google-analytics.com/analytics.js$domain=reuters.com,badfilter
+@@||google-analytics.com/gtm/js?id=$domain=reuters.com,badfilter
+@@||google-analytics.com/plugins/ua/linkid.js$domain=reuters.com,badfilter
+@@||googletagmanager.com/gtm.js$domain=reuters.com,badfilter
+
 ! Fanboy's Enhanced Tracking
+! These allows too many ad scripts not related to blocker detection.
+@@.com/ads.js$script,1p,badfilter
+@@/js/advertisement.$script,badfilter
 @@/js/ads.js$script,badfilter
+@@||i-mobile.co.jp/script/ad$script,badfilter

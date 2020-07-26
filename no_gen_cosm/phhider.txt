@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-07-01
+! Last updated: 2020-07-27
 
 ! Generic and semi-generic rules
 *##.adsbygoogle
@@ -14,6 +14,7 @@ cnn.com,statescoop.com,wired.com,www.btimesonline.com,www.businessinsider.com,ww
 abcnews.go.com,www.elle.com,www.esquire.com##.leaderboard-ad
 answers.ea.com##.cookie_content
 appleinsider.com##.ad-mrec
+archive.vn##center > div[style^="padding:200px 0;"]
 asia.nikkei.com##.ad-card--sized, .advertorial
 boards.4chan.org##.adg-rects
 btimesonline.com##.block:has(> .ad)
@@ -28,7 +29,8 @@ conjugator.reverso.net##.top-horizontal
 conjugator.reverso.net##.verticalbox
 cracked.com##.bannerAd
 desmoinesregister.com##[id^=ad-position]
-dictionary.cambridge.org##[id^=ad_]
+dictionary.cambridge.org###ad_houseslot_a, #ad_houseslot_b, #ad_rightslot
+dictionary.cambridge.org##div:has(> #ad_topslot_b)
 dictionary.com###dcomHomeTop-728x90
 dictionary.com,thesaurus.com##.wide-ad-new-layout
 dictionary.reverso.net##.bottom-rca
@@ -56,6 +58,7 @@ joe.ie##.posts-container > div:has(> div[id^=div-gpt])
 journals.plos.org###topslot
 kotaku.com##.ad-left-top
 madison.com##.ad-col, .tnt-ads-container
+mangazuki.online##.c-top-sidebar
 nhentai.net##.advt
 nypost.com##.outbrain-enabled, .recirc
 onlinelibrary.wiley.com##.pb-ad
@@ -63,7 +66,8 @@ osdn.net###ad-leaderboard
 people.com##.ad-title, .desktop-ad
 phys.org##.embed-responsive
 raymond.cc###snhb-incontent_2-0, #snhb-sidebar_3-0, .adslot_1
-researchgate.net##.lite-page-ad--layout-header
+researchgate.net##.lite-page-ad
+researchgate.net##.lite-page__content > div[class^=nova-l-flex__item]:has(div[id^=ntv-])
 reverso.net###rca
 rtsak.com##AMP-AD
 securityweek.com###banner
@@ -109,6 +113,7 @@ www.nippon.com##.c-wrap:has([id^=popular])
 www.nippon.com##section:has(#recommend_top_title)
 www.pcmag.com###pcmedia, .container-right-rail, .zmgad-full-width
 www.salon.com##.proper-ad-unit
+www.scmagazine.com##.widget_ads
 www.scmagazineuk.com,yahoo.com##[id$=Ad]
 www.searchenginejournal.com##.mh-90, .mh250
 www.techinasia.com##.artad
