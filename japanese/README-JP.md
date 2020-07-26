@@ -84,7 +84,7 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 
 uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。自己責任で使用してください。
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Paranoid">購読する</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt&title=uBlock%20Japanese%20filters%20-%20Paranoid">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
 
 ### uBlock Japanese filters - Social
