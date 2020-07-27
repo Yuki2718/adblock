@@ -89,7 +89,7 @@ uBlock Japanese filtersに追加できるフィルタで、多少の不具合を
 
 ### uBlock Japanese filters - Social
 
-ソーシャル要素をブロックするフィルタです。一部、[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social)と重複するルールがあります。ブロック優先主義のため、非表示にしかできないものは迷惑度が高いものを除き無視します。また、ブロックできても他の要素まで巻き込んでしまう場合はブロックしません。これらも非表示にしたい方や、海外のサイトもご覧になる方はAdGuard Social mediaなどを併用してください。
+ソーシャル要素をブロックするフィルタです。一部、[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social)と共通のルールがあります。ブロック優先主義のため、非表示にしかできないものは迷惑度が高いものを除き無視します。また、ブロックできても他の要素まで巻き込んでしまう場合はブロックしません。これらも非表示にしたい方や、海外のサイトもご覧になる方はAdGuard Social mediaなどを併用してください。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Social">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt)
@@ -118,7 +118,7 @@ uBlock Japanese filtersに追加できるフィルタで、多少の不具合を
 
 ### uBlock Japanese filters - Annoyances
 
-広告以外の迷惑要素をブロックするフィルタで、uBlock Japanese filtersとの併用を前提とします。ごく一部ですが、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt)や[AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances)から取られたルールもあります。
+広告以外の迷惑要素をブロックするフィルタで、uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt)や[AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances)から取られたルールもあります。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=uBlock%20Japanese%20filters%20-%20Annoyances">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
@@ -145,11 +145,10 @@ uBlock Japanese filtersに追加できるフィルタで、多少の不具合を
 - ペイウォール（クッキーを参照して「無料で読める記事はあと〇〇」と警告するタイプのものは対応する場合もあります）
 - ポップアップやクッキーバナーの内、クリックが必須のもの（セキュリティ上の理由により、uBlock Originではあえて対応するスクリプトを採用していません）
 - モバイルブラウザチェックとiPhone, Android用スクリプト（モバイルも限定的にサポートするため）
-- ソーシャルネットワーク関連（一部のRSSアイコンはブロック）
 - レーティングウィジェット
 - ブログ以外のブックマークボタン、クリップ系
 - チャットウィジェット
-- コロナウイルス関係で、一般的な通知ブロックで防げないもの
+- コロナウイルス関係で、一般的な通知ブロックで防げないもの（一時的なものなので）
 
 モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください。迷惑度のとくに高いものはuBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
 
