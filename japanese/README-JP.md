@@ -1,4 +1,4 @@
-### uBlock Japanese filters
+### Yuki's uBlock Japanese filters
 
 <strong>Youtubeの動画内広告について：2020年7月現在、誰にも不具合を起こさず広告だけを確実にブロックする方法は知られていません（[参考](https://www.reddit.com/r/uBlockOrigin/comments/ht4o9h/youtube_adserrors_solutions/)）。当フィルタでは不具合を起こしにくそうなルールのみ採用し、リスクのあるルールはParanoidに入れています。また、この広告は特定のアカウントでのみ表示され、対象の動画やログインしているか否か、さらに閲覧方法によっても違うようです。広告が出てしまった場合、Paranoidを有効にしてみてください。</strong>
 
@@ -27,7 +27,7 @@
 <details>
 <summary><strong>ブロック優先</strong></summary>
 
-ブロック可能な対象はできる限りブロックします。これは当然のことではなく、他のフィルタではブロック可能でも非表示で済ましているケースが多数あります<sup>3,4</sup>。ブロックが困難な場合、Firefox上ではHTMLフィルタリングにより除去を試みています（不可能な場合もあります）。ブロックさえできればよいという方は「汎用的な要素隠蔽フィルターを無視する」にチェックを入れてください。表示崩れや多少の広告漏れと引き換えに、パフォーマンスを高めることができます。uBlock Japanese filtersファミリーは、その場合でもある程度の性能を維持できます<sup>5</sup>。
+ブロック可能な対象はできる限りブロックします。これは当然のことではなく、他のフィルタではブロック可能でも非表示で済ましているケースが多数あります<sup>3,4</sup>。ブロックが困難な場合、Firefox上ではHTMLフィルタリングにより除去を試みています（不可能な場合もあります）。ブロックさえできればよいという方は「汎用的な要素隠蔽フィルターを無視する」にチェックを入れてください。表示崩れや多少の広告漏れと引き換えに、パフォーマンスを高めることができます。Yuki's uBlock Japanese filtersファミリーは、その場合でもある程度の性能を維持できます<sup>5</sup>。
 
 3: 「要素をブロック」機能でMyフィルターを作っている人も同様です。画像についてはブロックしてくれることもありますが、イニシエイターとなるスクリプトまではお手上げです。非表示についても質の低いルールが多いです。同機能は[あくまで補助であり](https://github.com/uBlockOrigin/uBlock-issues/issues/1058#issuecomment-631459847)、過剰に頼るべきではありません。
 
@@ -57,7 +57,7 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 
 9: 当フィルタはCC BY-SA 4.0のもとに配布しており、こればuBlock 内製フィルターと280blocker以外を正しく継承（デュアルライセンス、バージョン違い）しています。uBlock内製フィルターはGPLv3ですが、AdGuardなどと比較して癖のないルールであり、一般的なフィルタ作者が思いつく範囲だと思います（スクリプトレットルールを比較していただくとわかるように、実際に有効なルール以外は採用していません。古いスクリプトルールは不要になったものが多く、適宜報告しています）。280blockerはCC BY-NC-NDですが、参考にしているのはドメインリストのみであり、これは書き方がほぼ一意に決まってしまうため問題ないと考えます。また一部、[EasyList China](http://abpchina.org/forum/forum.php)および[RU AdList](https://forums.lanik.us/viewforum.php?f=102)からとられたルールがある他、[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)を参考にしたルールが少なからずあります（著作権上、そのままの使用はなるべく避けましたが、どうしても同じになってしまったものもあります）。
 
-10: 有効数には優先順位がありませんので、uBlock Japanese filtersの内どれだけ使われているか知りたい場合、一度uBlock Japanese filtersのチェックを外して他のフィルタを更新し、再度チェックを入れてください。
+10: 有効数には優先順位がありませんので、Yuki's uBlock Japanese filtersの内どれだけ使われているか知りたい場合、一度Yuki's uBlock Japanese filtersのチェックを外して他のフィルタを更新し、再度チェックを入れてください。
 
 </details>
 
@@ -80,14 +80,14 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 - 画像を伴わないアフィリエイトリンクの一般非表示（個別に対応）
 - ファーストパーティーの単純なCGI/SSIアクセスカウンターで、広範に使われているもの以外
 
-### uBlock Japanese filters - Paranoid
+### Yuki's uBlock Japanese filters - Paranoid
 
-uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。自己責任で使用してください。
+Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。自己責任で使用してください。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt&title=uBlock%20Japanese%20filters%20-%20Paranoid">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
 
-### uBlock Japanese filters - Social
+### Yuki's uBlock Japanese filters - Social
 
 ソーシャル要素をブロックするフィルタです。一部、[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social)と共通のルールがあります。ブロック優先主義のため、非表示にしかできないものは迷惑度が高いものを除き無視します。また、ブロックできても他の要素まで巻き込んでしまう場合はブロックしません。これらも非表示にしたい方や、海外のサイトもご覧になる方はAdGuard Social mediaなどを併用してください。
 
@@ -116,9 +116,9 @@ uBlock Japanese filtersに追加できるフィルタで、多少の不具合を
 - 対象に入るが、非表示にしかできず、かつ一定の基準を満たさないもの
 
 
-### uBlock Japanese filters - Annoyances
+### Yuki's uBlock Japanese filters - Annoyances
 
-広告以外の迷惑要素をブロックするフィルタで、uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt)や[AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances)から取られたルールもあります。
+広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt)や[AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances)から取られたルールもあります。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=uBlock%20Japanese%20filters%20-%20Annoyances">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
@@ -150,12 +150,12 @@ uBlock Japanese filtersに追加できるフィルタで、多少の不具合を
 - チャットウィジェット
 - コロナウイルス関係で、一般的な通知ブロックで防げないもの（一時的なものなので）
 
-モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください。迷惑度のとくに高いものはuBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
+モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
 
 
 ### Sable filters 2
 
-当サイトで以前から公開しているフィルタで、クッキーの同意バナーを除去します。<strong>uBlock Japanese filters - Annoyancesに含まれており、これを購読しているなら必要ありません</strong>。一方でuBlock Japanese filters - Annoyancesと異なり、AdGuardなど他のプラットフォームでもSable filters 2は使うことができます。
+当サイトで以前から公開しているフィルタで、クッキーの同意バナーを除去します。<strong>Yuki's uBlock Japanese filters - Annoyancesに含まれており、これを購読しているなら必要ありません</strong>。一方でYuki's uBlock Japanese filters - Annoyancesと異なり、AdGuardなど他のプラットフォームでもSable filters 2は使うことができます。
 
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">購読 する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
@@ -163,7 +163,7 @@ uBlock Japanese filtersに追加できるフィルタで、多少の不具合を
 
 ### blog-parts.txt
 
-Sable filters 2と同じく、以前から公開しているuBlock Japanese filters - Annoyancesのサブフィルタで、ランキングボタン等のブログパーツをブロックします。こちらも他のプラットフォームでご利用可能です。
+Sable filters 2と同じく、以前から公開しているYuki's uBlock Japanese filters - Annoyancesのサブフィルタで、ランキングボタン等のブログパーツをブロックします。こちらも他のプラットフォームでご利用可能です。
 
 ### blog-parts-adult.txt
 
@@ -172,7 +172,7 @@ blog-parts.txtのアダルトサイト版です。
 
 ## 不具合、ブロック漏れの報告
 
-原則としてGithubのIssueを通してのみ受けつけます。報告前に一度、<strong>新しいブラウザプロファイルを作り、uBlock OriginをクリーンインストールしてuBlock Japanese filters (+ Annoyances)のみを購読した状態で問題が再現できるか</strong>を確認してください。また、ネットワークの別の部分でブロックしていないか（例: AdGuard Home, 280blocker DNS）も確かめてください。テンプレートは用意していませんが、報告される方は、<strong>必ず以下の項目をすべて記入してください。</strong>海外サイトの不具合は、AdGuard Japaneseを除くuBlock Origin標準のフィルタを併用しても再現する場合のみ対応いたします。
+原則としてGithubのIssueを通してのみ受けつけます。報告前に一度、<strong>新しいブラウザプロファイルを作り、uBlock OriginをクリーンインストールしてYuki's uBlock Japanese filters (+ Paranoid/Social/Annoyances)のみを購読した状態で問題が再現できるか</strong>を確認してください。また、ネットワークの別の部分でブロックしていないか（例: AdGuard Home, 280blocker DNS）も確かめてください。テンプレートは用意していませんが、報告される方は、<strong>必ず以下の項目をすべて記入してください。</strong>海外サイトの不具合は、AdGuard Japaneseを除くuBlock Origin標準のフィルタを併用しても再現する場合のみ対応いたします。
 
 1. 問題が起こるサイトの完全なURL（URLの前後に`をつけてください）: 検索エンジンの場合は検索語もお願いします。
 2. 現象の説明: 言葉による説明とスクリーンショットを両方含めてください。

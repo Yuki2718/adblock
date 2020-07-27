@@ -54,7 +54,7 @@ Acknowledgement: some of its rules are taken from [EasyPrivacy](https://easylist
 
 <strong>If you are a non-Japanese seeking for a good Japanese filter, my first recommendation is [AdGuard Japanese filter](https://kb.adguard.com/en/general/adguard-ad-filters#japanese)</strong>. My filters include some aggressive rules not well-tested outside Japanese sites and likely to cause false positive on your local sites. They are made to address a peculiar situation among Japanese ad-block user that many of them unsubscribe default lists and keep only a Japanese filter. If you proceed, you shall be deemed to have read the [Japanese README](/japanese/README-JP.md) which gives more details, because those who need my filters should be able to read it.
 
-### uBlock Japanese filters
+### Yuki's uBlock Japanese filters
 
 The most comprehensive, block-first, and efficient Japanese list for uBlock Origin that removes ads and analytics on desktop, designed for advanced user. Some of its rules are taken from - or rather intentionally made to be identical with - [EasyList, EasyPrivacy,](https://easylist.to/) [AdGuard Base, AdGuard Tracking Protection, ](https://kb.adguard.com/en/general/adguard-ad-filters) [uBlock Built-in lists,](https://github.com/uBlockOrigin/uAssets/) [Peter Lowe's list,](https://pgl.yoyo.org/adservers/) [Fanboy's Enhanced Trackers List, ](https://www.fanboy.co.nz/filters.html) [EasyList China,](http://abpchina.org/forum/forum.php) [RU AdList](https://forums.lanik.us/viewforum.php?f=102) and [280blocker domain list](https://280blocker.net/files/280blocker_domain_ag.txt)<sup>1</sup>. This way even if an user added any of those lists (which is uncommon in Japanese adblock user) along with my list, those duplicates will be discarded and can do no harm. This list is also strongly influenced by [Tofu filter](http://tofukko.r.ribbon.to/abp.html) though rules are not directly taken for copy right problems.
 
@@ -63,21 +63,21 @@ The most comprehensive, block-first, and efficient Japanese list for uBlock Orig
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=uBlock%20Japanese%20filters">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt)
 
-### uBlock Japanese filters - Paranoid
+### Yuki's uBlock Japanese filters - Paranoid
 
-This can be added to uBlock Japanese filters for enhanced blocking. Use at your own risk. Some rules are taken from or influenced by [EasyPrivacy](https://easylist.to/) and [Fanboy's Enhanced Trackers List, ](https://www.fanboy.co.nz/filters.html).
+This can be added to Yuki's uBlock Japanese filters for enhanced blocking. Use at your own risk. Some rules are taken from or influenced by [EasyPrivacy](https://easylist.to/) and [Fanboy's Enhanced Trackers List, ](https://www.fanboy.co.nz/filters.html).
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Paranoid">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
 
-### uBlock Japanese filters - Social
+### Yuki's uBlock Japanese filters - Social
 
 Removes share buttons mainly on Japanese sites. Some rules are taken from [AdGuard Social media](https://kb.adguard.com/en/general/adguard-ad-filters#social).
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Social">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt)
 
-### uBlock Japanese filters - Annoyances
+### Yuki's uBlock Japanese filters - Annoyances
 
 Removes annoyances mainly on Japanese sites. Some rules are taken from or influenced by [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter) and [Fanboy Annoyances](https://www.fanboy.co.nz/index.html).
 
@@ -87,11 +87,11 @@ Removes annoyances mainly on Japanese sites. Some rules are taken from or influe
 
 ### blog-parts-adult.txt
 
-See below, this is a variant of blog-parts.txt for adult sites. Included in uBlock Japanese filters - Annoyances
+See below, this is a variant of blog-parts.txt for adult sites. Included in Yuki's uBlock Japanese filters - Annoyances
 
 ### blog-parts.txt
 
-This removes blog parts and ranking buttons on Japanese websites. Included in uBlock Japanese filters - Annoyances
+This removes blog parts and ranking buttons on Japanese websites. Included in Yuki's uBlock Japanese filters - Annoyances
 
 Exclusion:
 - Potentially useful parts or buttons
@@ -100,7 +100,7 @@ Exclusion:
 
 ### Sable filters 2 (sable-filters2.txt)
 
-Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in uBlock Japanese filters - Annoyances
+Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in Yuki's uBlock Japanese filters - Annoyances
 
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
