@@ -60,28 +60,28 @@ The most comprehensive, block-first, and efficient Japanese list for uBlock Orig
 
 1: Only uBlock Built-in and 280blocker domain list are out of CC BY-SA license. I hope and believe rules taken from them are within a range of what filter authors can generally think of.
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=uBlock%20Japanese%20filters">Subscribe</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt)
 
 ### Yuki's uBlock Japanese filters - Paranoid
 
 This can be added to Yuki's uBlock Japanese filters for enhanced blocking. Use at your own risk. Some rules are taken from or influenced by [EasyPrivacy](https://easylist.to/) and [Fanboy's Enhanced Trackers List, ](https://www.fanboy.co.nz/filters.html).
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Paranoid">Subscribe</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Paranoid">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
 
 ### Yuki's uBlock Japanese filters - Social
 
 Removes share buttons mainly on Japanese sites. Some rules are taken from [AdGuard Social media](https://kb.adguard.com/en/general/adguard-ad-filters#social).
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Social">Subscribe</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Social">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt)
 
 ### Yuki's uBlock Japanese filters - Annoyances
 
 Removes annoyances mainly on Japanese sites. Some rules are taken from or influenced by [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter) and [Fanboy Annoyances](https://www.fanboy.co.nz/index.html).
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=uBlock%20Japanese%20filters%20-%20Annoyances">Subscribe</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
 
 
