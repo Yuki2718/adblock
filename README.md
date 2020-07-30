@@ -42,6 +42,8 @@ Exclusion:
 
 Acknowledgement: some of its rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
 
+About CNAME tracker: I really don't understand why it's so special to some people. Apparently they still believe subscribing a dedicated anti CNAME tracker list on Chromium is mandatory to block them if a DNS-level blocker is not deployed on other layer. The fact is EasyPrivacy alone, or the combination of AdGuard Tracking Protection and my list, blocks 99% of CNAME tracker while DEFINITELY many other analytics and trackers have slipped whatever your lists through, as long as you visit many sites. You prefer to double-lock a window and keep the door open?
+
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt&title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt)
 
@@ -52,7 +54,7 @@ Acknowledgement: some of its rules are taken from [EasyPrivacy](https://easylist
 
 [日本語](/japanese/README-JP.md)
 
-<strong>If you are a non-Japanese seeking for a good Japanese filter, my first recommendation is [AdGuard Japanese filter](https://kb.adguard.com/en/general/adguard-ad-filters#japanese)</strong>. My filters include some aggressive rules not well-tested outside Japanese sites and likely to cause false positive on your local sites. They are made to address a peculiar situation among Japanese ad-block user that many of them unsubscribe default lists and keep only a Japanese filter. If you proceed, you shall be deemed to have read the [Japanese README](/japanese/README-JP.md) which gives more details, because those who need my filters should be able to read it.
+<strong>If you are a non-native Japanese speaker seeking for a good Japanese list, my first recommendation is [AdGuard Japanese filter](https://kb.adguard.com/en/general/adguard-ad-filters#japanese)</strong>. My lists include some aggressive rules not well-tested outside Japanese sites and likely to cause false positive on your local sites. These lists are made to address a peculiar situation among Japanese ad-block user that many of them unsubscribe default lists and keep only a Japanese one. If you proceed, you shall be deemed to have read the [Japanese README](/japanese/README-JP.md) which gives more details, because those who need my lists should be able to read it.
 
 ### Yuki's uBlock Japanese filters
 
