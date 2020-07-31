@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-07-30
+! Last updated: 2020-07-31
 
 ! Generic network rules
 /amp-user-notification-
@@ -10,6 +10,7 @@
 /cookie-bar/*
 /cookie-notice/*$~stylesheet
 /cookiealert.js
+/cookiecontrol.js
 /didomi.js
 /gdpr-cookie-compliance/*
 /gdpr.js
@@ -35,12 +36,12 @@
 ||assets2.jiveon.com/*/cookieConsent.js|
 ||c0.wp.com^*/eu-cookie-law.min.js|$important
 ||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/$domain=~ehftv.com
+||cookieinfoscript.com^$third-party
 ||consensu.org^$domain=theguardian.com
 ||consent.cmp.oath.com^
 ||consent.cookiebot.com^$third-party,domain=~refinery29.com
 ||cookielaw.org^$domain=biomedcentral.com|gqjapan.jp|hp.com|nature.com|natureasia.com|springer.com|springeropen.com|telerik.com
 ||jimstatic.com/ckies.
-||jimstatic.com/cookieControl.
 ||jsdelivr.net/npm/cookieconsent
 
 ! Generic cosmetic rules
@@ -89,6 +90,7 @@
 ||jaguar.co.jp/resources//public/js/components/NotificationBar.
 ||jsps.go.jp/js/analytics_
 ||lac.co.jp/common/js/gdpr_consensus.
+||muscache.com/airbnb/static/packages/user_consent-$script,domain=airbnb.jp
 ||nav.files.bbci.co.uk^*/cookie-prompt/
 ||netgear.com/js/jquery-cookie/jquery.cookiecuttr
 ||ocnk.net/js/confirmation-bar.
@@ -128,6 +130,7 @@ businesswire.com,healthitsecurity.com###cookie-consent
 cointelegraph.com##.bottom-zone
 copyright.com##.site-wide-notice--gdpr
 dailymotion.com##div[class^="CookiePopup_"]
+deepfakeporn.net##.cookie-notice-container
 deepl.com###dl_cookie_footer
 delta.com##ngc-cookie-banner
 depositfiles.com###cookie_popup
@@ -217,6 +220,7 @@ www.foxnews.com##.notification-banner
 www.hwinfo.com##.cookie-agree-with-use
 www.nikkan.co.jp###c-modal
 www.nvidia.com###cookiePolicy-layer
+www.opera.com###cookie-consent
 www.ox.ac.uk###cookie-notice
 www.perfect-privacy.com###cookiebar
 www.pixiv.net###root > div:has(a[href="/terms?page=privacy"])
