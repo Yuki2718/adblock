@@ -8,17 +8,24 @@
 - モバイルサイトは対象外です。280blockerさんの[フィルタ](https://280blocker.net/download/)やもちおさんの[たまごフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/tamago.html)など、モバイル用のフィルタを使用してください。
 - ログインが必要なサイトは原則、対象外です。これらのサイトでの不具合や広告漏れにつきましては、ログや開発者ツールのスクリーンショット等、こちらがログインせずとも現象や解決を確認できる手段の提供をお願いすることがあります。
 
+ガイドライン：広告ブロック初心者の方は、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)をまず試してみることをお勧めします。もしそれで十分でないと感じられた場合、同サイト内で提供されているサブフィルタ（[もち拡張フィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi_extended.html)等、目的に応じて）を追加するか、あるいは長年日本の広告ブロックを代表されてきた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法があります。もちフィルタより誤爆は増えるかもしれませんが、2020年7月末より大幅な改修がなされており、十分お勧めできると思います。雪フィルタ系が適しているのは以下のような方です：
+
+- とにかく徹底的にブロックしたい、多少の不具合は構わない/自己対処できる（大前提）
+- オンラインのアクセス解析、行動追跡が気になる
+- 既にEasyListなど海外用のフィルタを購読している
+- 広告ばかりでなくソーシャルボタンやページ内ポップアップなどの迷惑要素もブロックしたいが、既存のソーシャル/迷惑系フィルタでは満足できない/誤爆が多い
+
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt)
 
-1: AdGuardで使用する場合、最大の問題となるのはspecific-genericとdenyallowでしょう。前者は簡単に対応できますが、後者は大幅な書き直しが必要なため私はやりません。
+1: AdGuardで使用する場合、最大の問題となるのはspecific-genericとdenyallowでしょう。前者は簡単に対応できますが、後者は大幅な書き直しが必要なため私はやりません。PCでAdGuardをご利用の場合、もちフィルタか豆腐フィルタを使用するか、あるいは海外サイトも閲覧するのであればAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。
 
 #### 特徴
 
 <details>
 <summary><strong>網羅性</strong></summary>
 
-日本語サイト<sup>2</sup>のPC用公開フィルタとして、2020年7月現在メンテナンスされているものの中で最高のブロック性能（非表示ではない）を持ちます。とくにアクセス解析については他の日本用フィルタではおまけ程度にしか扱われていませんが、当フィルタはできるだけブロックします。そのため不具合（誤爆と呼ばれる）も多いと思われ<sup>3</sup>、例外フィルタの扱いに長けた上級者向けのフィルタです。広告ブロック初心者の方は、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)も検討してみてください。
+日本語サイト<sup>2</sup>のPC用公開フィルタとして、2020年7月現在メンテナンスされているものの中で最高のブロック性能（非表示ではない）を持ちます。とくにアクセス解析については他の日本用フィルタではおまけ程度にしか扱われていませんが、当フィルタはできるだけブロックします。そのため不具合（誤爆と呼ばれる）も多いと思われ<sup>3</sup>、例外フィルタの扱いに長けた上級者向けのフィルタです。
 
 2: いくつかの日本用フィルタと同様、日本語話者がよく利用すると思われる海外サイトにも対応しています。
 
@@ -81,6 +88,7 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 
 #### 対象外
 - サイトの内容と強く関連しており（例：具体的な商品のレビュー）、かつ量が過剰でなくユーザーに不利益・不快感を与えない広告（「ゲームのブログだからゲームの広告」程度では強く関連しているとみなしません）
+- 運営母体の系列サイトへのリンクバナーで、それほど不快でないもの
 - 画像を伴わないアフィリエイトリンクの一般非表示（個別に対応）
 - ファーストパーティーの単純なCGI/SSIアクセスカウンターで、広範に使われているもの以外
 
@@ -154,12 +162,14 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 - チャットウィジェット
 - コロナウイルス関係で、一般的な通知ブロックで防げないもの（一時的なものなので）
 
-モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください（この場合、Yuki's uBlock Japanese filtersの併用は不要です。モバイル用のフィルタと併用してください）。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
+モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください（この場合、Yuki's uBlock Japanese filtersの併用は不要です。モバイル用のフィルタと併用してください）<sup>14</sup>。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
+
+14: Yuki's uBlock Japanese filtersと比べてAdGuardで機能しないルールは減っています。uBlock Originでの使用を推奨しますが、このフィルタについてはAdGuardでの使用も今のところ許容範囲です。
 
 
 ### Sable filters 2
 
-当サイトで以前から公開しているフィルタで、クッキーの同意バナーを除去します。<strong>Yuki's uBlock Japanese filters - Annoyancesに含まれており、これを購読しているなら必要ありません</strong>。一方でYuki's uBlock Japanese filters - Annoyancesと異なり、AdGuardなど他のプラットフォームでもSable filters 2は使うことができます。
+当サイトで以前から公開しているフィルタで、クッキーの同意バナーを除去します。<strong>Yuki's uBlock Japanese filters - Annoyancesに含まれており、これを購読しているなら必要ありません</strong>。一方でYuki's uBlock Japanese filters - Annoyancesと異なり、AdGuardとも完全な互換性があります。
 
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">購読 する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
