@@ -49,7 +49,7 @@
 <details>
 <summary><strong>高効率</strong></summary>
 
-uBlock Originはトークン化という仕組みにより高速処理を実現しています<sup>7</sup>。ルールがトークン化可能なら、ルール数は処理時間に[影響しません](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)<sup>8</sup>。当フィルタはできるだけトークン化を意識したルールを心がけており（例外あり）<sup>9</sup>、また非表示フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないセレクタを使うよう心がけているつもりです。
+uBlock Originはトークン化という仕組みにより高速処理を実現しています<sup>7</sup>。ルールがトークン化可能なら、ルール数は[処理時間に](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)[影響しません](https://twitter.com/i/web/status/1289255976198123520)<sup>8</sup>。当フィルタはできるだけトークン化を意識したルールを心がけており（例外あり）<sup>9</sup>、また非表示フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないセレクタを使うよう心がけているつもりです。
 
 7: 簡単に言うと、リクエストとルールそれぞれから抽出したトークンを使ってマッチする見込みがありそうなルールを絞り込んでいます。一般的なリクエストに対して大部分のルールは無いも同然であり、計算量のオーダーはルール数に依存しません。検索エンジンの転置インデックスに近いです。
 
@@ -164,7 +164,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください（この場合、Yuki's uBlock Japanese filtersの併用は不要です。モバイル用のフィルタと併用してください）<sup>14</sup>。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
 
-14: Yuki's uBlock Japanese filtersと比べてAdGuardで機能しないルールは減っています。uBlock Originでの使用を推奨しますが、このフィルタについてはAdGuardでの使用も今のところ許容範囲です。
+14: Yuki's uBlock Japanese filtersと比べてAdGuardで機能しないルールは減っています。uBlock Originでの使用を推奨しますが、このフィルタについてはAdGuardでの使用も今のところ許容範囲です。ただしAdGuard for Androidでご利用の場合、Sabre filters2などのサブフィルタを別途購読してください。AdGuardブラウザ拡張機能ではその必要はなさそうです。AdGuradコンテンツブロッカーでの使用はお勧めしません。
 
 
 ### Sable filters 2
@@ -175,14 +175,19 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
 
 
-### blog-parts.txt
+### Yuki's Blog parts filters
 
 Sable filters 2と同じく、以前から公開しているYuki's uBlock Japanese filters - Annoyancesのサブフィルタで、ランキングボタン等のブログパーツをブロックします。こちらも他のプラットフォームでご利用可能です。
 
-### blog-parts-adult.txt
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt&title=Yuki's%20Blog%20parts%20filters">購読する</a>
+[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt)
+
+### Yuki's Blog parts filters - Adult
 
 blog-parts.txtのアダルトサイト版です。
 
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">購読する</a>
+[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
 
 ## 不具合、ブロック漏れの報告
 

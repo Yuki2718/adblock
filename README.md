@@ -87,11 +87,14 @@ Removes annoyances mainly on Japanese sites. Some rules are taken from or influe
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
 
 
-### blog-parts-adult.txt
+### Yuki's Blog parts filters - Adult
 
-See below, this is a variant of blog-parts.txt for adult sites. Included in Yuki's uBlock Japanese filters - Annoyances
+See below, this is a variant of Yuki's Blog parts filters for adult sites. Included in Yuki's uBlock Japanese filters - Annoyances
 
-### blog-parts.txt
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
+
+### Yuki's Blog parts filters
 
 This removes blog parts and ranking buttons on Japanese websites. Included in Yuki's uBlock Japanese filters - Annoyances
 
@@ -99,6 +102,9 @@ Exclusion:
 - Potentially useful parts or buttons
 - Buttons for simple search sites without ranking function
 - Buttons on adult sites except for some common ones (see above)
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt&title=Yuki's%20Blog%20parts%20filters">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt)
 
 ### Sable filters 2 (sable-filters2.txt)
 
