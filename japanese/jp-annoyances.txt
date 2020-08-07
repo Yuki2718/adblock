@@ -341,6 +341,7 @@ forbesjapan.com###boxer-overlay, .pop2
 froggy.smbcnikko.co.jp##.floatingBanner
 fuzoku.sod.co.jp##.top_webyoyaku
 galleria.emotionflow.com,tegaki.pipa.jp###AboutFrame
+gesoten.com###cboxOverlay
 h-navi.jp###ModalContent, #ModalOverlay
 hikkoshi-sakai.co.jp##.fixed.fix-info
 hiroba.dpoint.jp###gtm-promotionModal-overlay, #js-floating, .js-modal-promotion-banner
@@ -445,10 +446,12 @@ yahoo.com###mega-banner-wrapper
 yandex.com##.zalogin-smart
 
 !#if !env_firefox
+gesoten.com###colorbox:has(#modal-game-recommend-pc)
 tamashii.jp##.overlay
 !#endif
 
 !#if env_firefox
+gesoten.com##^#colorbox:has(#modal-game-recommend-pc)
 tamashii.jp##^.overlay
 !#endif
 
@@ -525,6 +528,7 @@ folk-media.com###app-banner-pc-footer
 ||fuzokudx.com/uploads/cfiles/dx/img/freeTicket_
 fuzokudx.com##+js(aopw, DLlink)
 fuzokudx.com###PRnavi_bottom
+||gesoten.com/geso/pc/img/core/common/bnr-geso-sp-
 ||ggm-contents.bangumi.org/bangumi/assets/download_iphone2-
 bangumi.org###section_download_link
 ||goobike.com/motocle/web_pc/common/img/banner_motocle_app.
@@ -1122,6 +1126,7 @@ ec.line.me##+js(nano-stb, goOutlink, 2800)
 ironna.jp###side-theme-list
 katfile.com,sourceforge.net##+js(nano-stb)
 live2.nicovideo.jp##[class^=___player-display-header___]
+mixdrop.*##+js(nano-stb, DOWNLOAD, 1000)
 ponta.abstractpainting.work##+js(nano-stb, visibility, 4000)
 ponta.abstractpainting.work##+js(nano-stb, [native code], 2000, 0.3)
 ponta.abstractpainting.work##+js(nano-stb, [native code], 3000, 0.25)
@@ -1131,6 +1136,7 @@ ponta.abstractpainting.work##+js(set, NEXT_DELAY, 0)
 shorten.sh##+js(nano-sib, ti--)
 techcrunch.com##.homepage__event-promo, .upcoming-events
 topics.smt.docomo.ne.jp##.m-tickerArea
+twitter.com##div[data-testid="DMDrawer"]
 upfile.us##+js(nano-sib)
 
 !#if !env_firefox

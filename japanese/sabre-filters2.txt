@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-06
+! Last updated: 2020-08-07
 
 ! Generic network rules
 /amp-user-notification-
@@ -10,6 +10,7 @@
 /cookie-bar/*
 /cookie-notice/*$~stylesheet
 /cookiealert.js
+/cookieconsent.$domain=acm.org|clove.co.uk|crowdin.com|support.malwarebytes.com|webwhois.verisign.com
 /cookiecontrol.js
 /didomi.js
 /gdpr-cookie-compliance/*
@@ -33,7 +34,6 @@
 /wp-content/plugins/easy-cookies-policy/*
 /wp-cookie-allow/*$script,stylesheet
 /um-gdpr.
-||assets2.jiveon.com/*/cookieConsent.js|
 ||c0.wp.com^*/eu-cookie-law.min.js|$important
 ||cdnjs.cloudflare.com/ajax/libs/cookieconsent2/$domain=~ehftv.com
 ||cookieinfoscript.com^$third-party
@@ -59,7 +59,6 @@
 /wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies$domain=blog.kaspersky.co.jp|kasperskydaily.com|threatpost.com
 /uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
 ||a-port.asahi.com/js/gdpr/
-||acm.org/js/cookieconsent.
 ||acronis.com^*/cookies-note-v2.
 ||adblockplus.org/js/cookie-prompt.
 ||amazonaws.com/the-japan-news-public/cookieconsent$domain=the-japan-news.com
@@ -71,7 +70,6 @@
 ||business.twitter.com^*-data-protection-notice.$script,~third-party
 ||civiccomputing.com^*/cookieControl-$domain=msi.com
 ||cloud.xm-cdn.com/assets/js/custom/cookie_popup.
-||cloudfront.net^*/cookieconsent.$domain=crowdin.com
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||consent.trustarc.com^$third-party
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
@@ -104,7 +102,6 @@
 ||staticcontent.fxstreet.com/website/mustache/alerts/cookiesalert_
 ||transcend-info.com/dist/scripts/cookiegotop.js|
 ||ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
-||webwhois.verisign.com/webwhois-ui/js/jquery/cookieconsent.
 ||wolframcdn.com/consent/cookie-consent.
 accounts.crowdin.com##.cc-window
 accuweather.com##.privacy-policy-banner
@@ -150,6 +147,7 @@ fxstreet.com##[id^=cookiesalert_]
 germany.travel#$#.consent { display:none !important }
 germany.travel#$#body.consent-overlay { overflow:auto !important }
 get.videolan.org###uecookies
+gfycat.com###cookiePopupContainer
 goodpatch.com##.CookieConsent
 gotogate.jp##.etiCookieBanner
 heroku.com###heroku-cookie-banner
