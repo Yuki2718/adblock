@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-07
+! Last updated: 2020-08-08
 
 ! Temporal
 ! YT
@@ -2152,6 +2152,7 @@ _bn634.$domain=minnano-anime.com|minnano-av.com
 ||vitamine.jp/img/banner.
 ||vividred.net/banner/
 ||vps-on.net/wp-content/uploads/2013/01/banner.
+||windows.net/rent-type1/img/cp/bnr/bnr_$domain=rent.toyota.co.jp
 ||wing-auctions.c.yimg.jp/sim$domain=aucfan.com|kakaku.com|minkara.carview.co.jp
 ||wakudoki.ne.jp/ec/images/LS/
 ||wanchan.jp/c/wanchan.jp/pro/resize/300x300/
@@ -3559,7 +3560,6 @@ cgi-bin/counter
 ||marketing.dropbox.com^
 ||marketo.com^$3p
 ||maropost.com^$3p
-||marsflag.com^$3p
 ||matheranalytics.com^
 ||mathtag.com^
 ||maxymiser.net^$3p
@@ -4281,6 +4281,7 @@ _webtrends/$domain=zurichlife-jp.force.com
 ||map.baidu.com/newmap_test/static/common/images/transparent.gif
 ||mapcamera.com/ec/api/genpinviewcount?
 ||maps.googleapis.com/maps/api/js/QuotaService.RecordEvent
+||marsflag.com/mf2file/site/ext/tr.js
 ||maxmind.com/geoip/$3p
 ||maxmind.com^*/geoip2.js
 ||mcc-tags.cisco.com^
@@ -4413,6 +4414,8 @@ _webtrends/$domain=zurichlife-jp.force.com
 ||reddit.com/web/log/
 ||redditmedia.com/gtm/jail?
 ||redhat.com/dtm.js|
+||rent.toyota.co.jp/js/s_webbeacon.
+||rent.toyota.co.jp/js/sc_click.
 ||retty.me/gen204.php
 ||retty.me/javascripts/common/logging.js
 ||retty.me/theme/gen204.
@@ -7332,7 +7335,7 @@ youporn.com##+js(nostif, jQuery)
 @@||epicgames.com/id/api/analytics$1p,xhr
 @@||facebook.com/ads/profile/advertisers/$xhr,1p
 @@||facebook.com/ads/profile/interests/$xhr,1p
-@@||facebook.com/common/referer_frame.php$subdocument,domain=facebook.com
+@@||facebook.com/common/referer_frame.php$frame,domain=facebook.com
 @@||fncstatic.com^*/visitorapi.js$script,domain=foxbusiness.com|foxnews.com
 @@||foxnewsplayer-a.akamaihd.net^*/amp/prebid/$script,domain=foxbusiness.com|foxnews.com
 @@||g.alicdn.com/alilog/$script,domain=tudou.com|youku.com
@@ -7477,6 +7480,8 @@ youporn.com##+js(nostif, jQuery)
 ||uliza.jp/Player/js/*-google-analytics$script,redirect=noop.js,domain=kobe-np.co.jp|tv-tokyo.co.jp
 ||uliza.jp^*/ulizahtml5-google-analytics.min.js|$script,redirect-rule=noop.js,domain=yomiuri.co.jp
 
+||marsflag.com^$3p,badfilter
+
 ! Chromium
 !#if env_chromium
 @@||o.advg.jp/ojs$script,domain=www.shiseido.co.jp
@@ -7485,7 +7490,6 @@ youporn.com##+js(nostif, jQuery)
 
 ! CNAME
 !#if env_firefox
-@@||familymart.cd.marsflag.com^$domain=find.family.co.jp
 @@||onelink-translations.com^$domain=delta.com
 @@||takeda.com.dxcloud.episerver.net^$domain=takeda.com
 !#endif
