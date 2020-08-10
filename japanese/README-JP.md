@@ -1,7 +1,5 @@
 ### Yuki's uBlock Japanese filters （雪フィルタ）
 
-<strong>Youtubeの動画内広告について：2020年7月現在、誰にも不具合を起こさず広告だけを確実にブロックする方法は知られていません（[参考](https://www.reddit.com/r/uBlockOrigin/comments/ht4o9h/youtube_adserrors_solutions/)）。当フィルタでは不具合を起こしにくそうなルールのみ採用し、リスクのあるルールはParanoidに入れています。また、この広告は特定のアカウントでのみ表示され、対象の動画やログインしているか否か、さらに閲覧方法によっても違うようです。広告が出てしまった場合、Paranoidを有効にしてみてください。</strong>
-
 日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、uBlock Origin用<sup>1</sup>フィルタです（上級者向け）。
 
 - AdGuardなど他のプラットフォームでは機能しないルールがあるため、使用はお勧めしません<sup>2</sup>。uBlock-for-firefox-legacyもサポートしません。
