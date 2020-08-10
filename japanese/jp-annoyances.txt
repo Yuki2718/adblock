@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-09
+! Last updated: 2020-08-10
 
 !#include blog-parts.txt
 !#include blog-parts-adult.txt
@@ -94,7 +94,8 @@ japancred.com##.timeline-header
 lmaga.jp##.header_headline
 mail.google.com##span:has-text(Gmail のデスクトップ通知):upward(1)
 mrs.living.jp###floating-max
-youtube.com###movie_player > .ytp-ce-bottom-right-quad, .ytp-cards-teaser
+w3q.jp###news-ticker-wrapper
+youtube-nocookie.com,youtube.com###movie_player > .ytp-ce-bottom-right-quad, .ytp-cards-teaser
 
 !#if env_mobile
 m.youtube.com##ytm-item-section-renderer > lazy-list > .item:has(.watch-metadata-app-promo-content)
@@ -293,7 +294,7 @@ t21.nikkei.co.jp##.campaign-area
 tamashii.jp##[id$=_bra_bnr_area]
 ||the0123.com^*_floating_$image,1p
 the0123.com###floating-estimate
-||topcard.co.jp/images/address_pop01.
+||topcard.co.jp/images/address_pop*$image,1p
 ||travel.navitime.com/*_app$image,1p
 travel.navitime.com##.screen-width-border:has(.app-banner-container)
 ||whotwi.com/whotwi_web/img/common/socialdog_modal.
@@ -367,6 +368,7 @@ kayak.*##[id$=-afterclickdialog]
 kin8tengoku.com##.active.timesale
 kissanime.nz###upgrade_pop
 kiwi.com##[class^=Modal__ModalBody]
+kwm.co.jp##.is-fixed.book_link
 lec.medilink-study.com###newsDialogWrapper
 linkedin.com##.cta-modal
 liskul.com###xeory-fixed-banner
@@ -437,6 +439,7 @@ wizcase.com###bio_ep, #bio_ep_bg
 wizcase.com##body[style="overflow: hidden;"]:style(overflow:auto !important)
 www.askul.co.jp##.stickyFooter
 www.carsensor.net###tm_ftr
+www.daiwa.jp##.mnyl-contact-btn
 www.elecom.co.jp###js-business-panel
 www.houyhnhnm.jp##.js-skip-content
 www.icloud.com##.notice-view-container
@@ -557,6 +560,8 @@ kiwi.com##[class^=AppPromoBannercommonstyled__]
 ||kumanichi.com/assets/img/top/side_kumaview.
 ||kurashiru.com/production/assets/pc_footer-
 www.kurashiru.com##.FooterAppPc-adsWrapper
+||lifecard.co.jp/WebDesk/images/www/new/ap_$image,1p
+www3.lifecard.co.jp##td > table[width="680"]:has(a[href^="https://play."])
 ||limia.jp/api/v1/template/include/sp/download_from_
 ||limia.jp/assets/img/device/AppsDownloadBadge-
 ||limia.jp/assets/img/device/new_device_footer_
@@ -629,6 +634,7 @@ qoo10.jp##.app
 news.tbs.co.jp##.ls--app
 ||tenki.jp/images/banner/
 tenki.jp##.ft-app
+||thxyoutube.com/images/thxyoutube_banner720x280.
 ||townwork.net/img/sidebar/bnr_app.
 ||travel.navitime.com/*_app$image
 travel.navitime.com##div.screen-width-border:has(.app-banner-container)
@@ -1023,6 +1029,7 @@ assion.co.jp###sidebar > .affix
 bamp.media##.mailMagazine
 bunshun.jp##.mail-mag
 globe.asahi.com##.module-article-mailmag
+hivelocity.co.jp##.hvc-information
 jafmate.jp##.go_mailmagazine
 japan.cnet.com###article_under_nllink
 japan.zdnet.com##.article-mailmagizine
