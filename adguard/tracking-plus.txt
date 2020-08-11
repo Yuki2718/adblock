@@ -2,13 +2,14 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-07-30
+! Last updated: 2020-08-11
 
 ! General tracker
 .gif?Log=$~xmlhttprequest
 /?dm=*&blogid=*$script,domain=~wordpress.org
 /?essb_counter_cache=$xmlhttprequest
 /GARecord^
+/EndpointTracker/*
 /VideoAnalytics.js
 /_/lite/performance/*$xmlhttprequest
 /__ssobj/ard.png?
@@ -26,6 +27,7 @@
 /bf.gif?ac=
 /bin/ll?
 /bugsnag.min.js|
+/cdn-cgi/apps/head/*$script,~third-party
 /chartbeat.js
 /chartbeat_
 /cls_report?
@@ -43,7 +45,7 @@
 /fingerprint.js
 /fingerprint2.js
 /fpv2.js
-/ga.js|
+/ga.js
 /ganalytics.
 /generate_204$image,other,ping,script
 /get_site_data?account_id=$xmlhttprequest
@@ -68,7 +70,7 @@
 /lib/tracking/adobe/*$script
 /lib/tracking/mux.js|
 /logImpressions?id=$xmlhttprequest
-/matomo.js|$domain=~github.com
+/matomo/*$domain=~github.com|~matomo.org|~wordpress.org
 /meta-analytics/*
 /mms/get_loaders?$xmlhttprequest
 /monetate.js
@@ -100,6 +102,7 @@
 /service/metrics/*
 /service/tracking/*
 /stat?event=pixel.$image
+/stats/count.
 /streamsense.min.js?
 /tealeaf.min.js
 /track-internal-links.
@@ -115,8 +118,10 @@
 /wordpress-popular-posts/public/js/tracking.
 /wpdiscuz/assets/third-party/wpdcookiejs/*
 /wpstatistics/*$xmlhttprequest
+/wwwcount.cgi?
 /xhr/b/s|
 =googleanalytics_get_script
+?action=log_promo_impression
 ||akamaihd.net^*.gif?e=
 ||amazonaws.com/ai-img/1x1.gif
 ||amazonaws.com/ai-img/aia.js|
@@ -192,7 +197,7 @@
 
 ! Tracker on individual sites
 -google-tag-manager/$domain=https://www.techtarget.com/
-/^https://s3\.amazonaws\.com/[0-9a-f]{58}/[0-9a-f]{10}$/$xmlhttprequest,domain=kissanime.nz
+/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{54,57}\/[a-f,0-9]{8,10}$/$xhr,3p,domain=kissanime.nz|rawdevart.com
 ||a.c-dn.net^*/clientlibs_tagmanager.
 ||a.espncdn.com/prod/scripts/analytics/
 ||a.espncdn.com/prod/scripts/yield_
@@ -243,6 +248,7 @@
 ||cbsnews.com/fly/bundles/cbsnewscore/js-build/uvp/lib/tracking/
 ||cdn-ssl.img.shopdisney.com/content/tealium/
 ||cdnen.rt.com/static/js/libs/counters
+||cdnweb.aoscdn.com/hawkeye.js
 ||ceair.com/analysize/
 ||cf.eip.telegraph.co.uk/particle-CMS/particles/analytics.
 ||cisco-tags.cisco.com^
@@ -267,6 +273,7 @@
 ||diffchecker-api-production.herokuapp.com^
 ||digitaltrends.com/SIQk$image,subdocument
 ||digitaltrends.com^*/ajax-actions.php?action=dt_get_user_data
+||download.amd.com/js/analytics/
 ||drive.google.com/drive/logImpressions|
 ||dropbox.com/2/client_metrics/
 ||dropbox.com/alternate_$xmlhttprequest
@@ -284,6 +291,7 @@
 ||extremetech.com/wgac/js/analytics.
 ||f.vimeocdn.com/js_opt/vendor/siftscience/
 ||facebook.com/platform/plugin/page/logging/
+||facebook.com/xti.php?
 ||feedbackws.icloud.com/reportStats|
 ||ferret-one.akamaized.net/assets/mktr.js|
 ||finnishdesignshop.com/personalize.php|
@@ -345,6 +353,7 @@
 ||lc.ch.com^
 ||levchinprize.com/api/countview/
 ||littletikes.com/mas_assets/store/universal_analytics.
+||linkedin.com^*/collect
 ||live365.com/geocheck|
 ||location.bloomberg.com^
 ||log.gifmagazine.net^
@@ -476,6 +485,7 @@
 ||vent.qz.com/log|
 ||veoh.com/increment-view-count-by-id|
 ||vimeo.com/*?action=log_$xmlhttprequest
+||vimeo.com/ablincoln/
 ||vimeo.com/log/js_error
 ||vimeocdn.com/js_opt/ablincoln_combined.min.js
 ||vimeocdn.com/js_opt/logging_combined.

@@ -196,6 +196,25 @@ blog-parts.txtのアダルトサイト版です。
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
 
+### 280blocker AdblockPlus形式 悪質サイト対策強化パッチ（暫定版：AdGuard for AndroidおよびuBlock Origin専用）
+
+280blockerさんは2020年8月2日の更新で悪質サイト対策のルールを大幅に追加されました。できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、280blocker AdblockPlus形式フィルタは正規表現などの高度な文法を避け、互換性の高い記法で書かれています。一方で、AdGuardやuBlock Originなど高度な文法をサポートするモダンブロッカーにとっては、この記法による悪質サイト対策にはいくつかの限界があります。
+
+1. 実例を確認したわけではないものの、誤爆の恐れが高まります
+2. AdGuardでは悪質サイトへのアクセス自体はブロックされません
+3. uBlock Originではパフォーマンスが悪いです（`live`という質の低いトークンしか引き出せないため）
+また、重要ではないですが
+4. これらのブロッカーの機能を使えばサイトそのものをブロックしなくて済む場合でも、ブロックされています
+
+当パッチは280blocker AdblockPlus形式のビジターアンケート詐欺用ルールを、iOSの280blockerで使われているものにより近い（厳密に同じではありません。このあたりどうするかは様子を見て決めたいと思います）正規表現に置き換え、適切なオプションを指定することで上記1-3を解決しています。4については安全性をとるならサイトごとブロックするに越したことはないため、ルールの置き換えまではしていません。また雪フィルタから悪質サイト用のルールをさらに追加しています（これらが280blocker AdblockPlus形式に採用された場合、取り除く予定です）。本来ならこうしたことは[なんj改修フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%94%B9%E4%BF%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)・[なんJ拡張フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%8B%A1%E5%BC%B5%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)で行われるべきなのかもしれません。ただ、多数のデッドルールが放置されるなどメンテナンスが続いているのか怪しい状態ですし、私がそれをやるなら自分のレポで公開したほうが今後の調整がはるかに楽なため、そのようにさせていただきました。
+
+<strong>2020年8月現在、「信頼するフィルタ」のチェックは必須ではありません（上記4でサイトのブロックを置き換えていないため）。ただ、今後信頼するフィルタ用の機能を使う可能性はあるので、チェックを推奨しておきます</strong>
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">購読する</a>
+[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
+
+公益の観点から、このフィルタのみ[CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja)で提供しています。
+
 ## 不具合、ブロック漏れの報告
 
 原則としてGithubのIssueを通してのみ受けつけます。報告前に一度、<strong>新しいブラウザプロファイルを作り、uBlock OriginをクリーンインストールしてYuki's uBlock Japanese filters (+ Paranoid/Social/Annoyances）のみを購読した状態で問題が再現できるか</strong>を確認してください。また、ネットワークの別の部分でブロックしていないか（例: AdGuard Home, 280blocker DNS）も確かめてください。テンプレートは用意していませんが、報告される方は、<strong>必ず以下の項目をすべて記入してください。</strong>海外サイトの不具合は、AdGuard Japaneseを除くuBlock Origin標準のフィルタ（+ 英語以外の場合、その言語の標準フィルタ）を併用しても再現する場合のみ対応いたします。
