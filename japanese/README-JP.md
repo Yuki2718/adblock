@@ -172,7 +172,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください（この場合、Yuki's uBlock Japanese filtersの併用は不要です。モバイル用のフィルタと併用してください）<sup>17</sup>。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
 
-<sub>17: Yuki's uBlock Japanese filtersと比べてAdGuardで機能しないルールは減っています。uBlock Originでの使用を推奨しますが、このフィルタについてはAdGuardでの使用も今のところ許容範囲です。ただしAdGuard for Androidでご利用の場合、Sabre filters2などのサブフィルタを別途購読してください。AdGuardブラウザ拡張機能ではその必要はなさそうです。AdGuradコンテンツブロッカーでの使用はお勧めしません。</sub>
+<sub>17: Yuki's uBlock Japanese filtersと比べてAdGuardで機能しないルールは減っています。uBlock Originでの使用を推奨しますが、このフィルタについてはAdGuardでの使用も今のところ許容範囲です。ただしAdGuard for Androidでご利用の場合、Sabre filters2などのサブフィルタを別途購読してください。AdGuardブラウザ拡張機能ではその必要はなさそうです。AdGuardコンテンツブロッカーでの使用はお勧めしません。</sub>
 
 ### Sable filters 2
 
@@ -191,7 +191,7 @@ Sable filters 2と同じく、以前から公開しているYuki's uBlock Japane
 
 ### Yuki's Blog parts filters - Adult
 
-blog-parts.txtのアダルトサイト版です。
+Yuki's Blog parts filtersのアダルトサイト版です。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
@@ -208,9 +208,9 @@ blog-parts.txtのアダルトサイト版です。
 
 4. これらのブロッカーの機能を使えばサイトそのものをブロックしなくて済む場合でも、ブロックされています
 
-当パッチは280blocker AdblockPlus形式のビジターアンケート詐欺用ルールを、iOSの280blockerで使われているものにより近い（厳密に同じではありません。このあたりどうするかは様子を見て決めたいと思います）正規表現に置き換え、適切なオプションを指定することで上記1-3を解決しています。4については安全性をとるならサイトごとブロックするに越したことはないため、ルールの置き換えまではしていません。また雪フィルタから悪質サイト用のルールをさらに追加しています（これらが280blocker AdblockPlus形式に採用された場合、取り除く予定です）。本来ならこうしたことは[なんj改修フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%94%B9%E4%BF%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)・[なんJ拡張フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%8B%A1%E5%BC%B5%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)で行われるべきなのかもしれません。ただ、多数のデッドルールが放置されるなどメンテナンスが続いているのか怪しい状態ですし、私がそれをやるなら自分のレポで公開したほうが今後の調整がはるかに楽なため、そのようにさせていただきました。
+当パッチは280blocker AdblockPlus形式のビジターアンケート詐欺用ルールを、iOSの280blockerで使われているものにより近い（厳密に同じではありません。このあたりどうするかは様子を見て決めたいと思います）正規表現に置き換え、適切なオプションを指定することで上記1-3を解決しています。4については安全性をとるならサイトごとブロックするに越したことはないため、ルールの置き換えまではしていません。また雪フィルタから悪質サイト用のルールをさらに追加しています（これらが280blocker AdblockPlus形式に採用された場合、取り除く予定です）。本来ならこうしたことは[なんj改修フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%94%B9%E4%BF%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)・[なんJ拡張フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%8B%A1%E5%BC%B5%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)で行われるべきなのかもしれません。ただ、多数のデッドルールが放置されるなどメンテナンスが続いているのか怪しい状態ですし、私がそれをやるなら自分のレポジトリで公開したほうが今後の調整がはるかに楽なため、そのようにさせていただきました。
 
-<strong>2020年8月現在、「信頼するフィルタ」のチェックは必須ではありません（上記4でサイトのブロックを置き換えていないため）。ただ、今後信頼するフィルタ用の機能を使う可能性はあるので、チェックを推奨しておきます</strong>
+<strong>2020年8月現在、「信頼するフィルタ」のチェックは必須ではありません（上記4でサイトのブロックを置き換えていないため。前掲2.によりAdGuardでは完全にブロックされないものの、実害はほぼなくなります）。ただ、今後信頼するフィルタ用の機能を使う可能性はあるので、チェックを推奨しておきます。</strong>
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
