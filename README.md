@@ -2,8 +2,6 @@
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
 
-<strong>Some filters/rules are renamed for better management. If you've subscribed them you'll need to update the URL. Thank you for your understanding.</strong>
-
 I can't guarantee these filers won't cause problems. If you found problems, report it by the same style as official AdGuard or uBlock filters' issue tracker; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard). They are not what I use and shared solely for others' sake, so please don't blame me if I haven't updated for a while.
 
 <details>
@@ -29,7 +27,7 @@ Exclusion:
 
 ### AdGuard Tracking Protection Plus (tracking-plus.txt)
 
-[AdGuard Tracking Protection filter](https://kb.adguard.com/en/general/adguard-ad-filters#privacy) is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage which this filter aims to complement. Some of bug reports are commented out but you can add them to User Rules without the initial `!`.
+[AdGuard Tracking Protection filter](https://kb.adguard.com/en/general/adguard-ad-filters#privacy) is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage which this filter aims to complement. Some of bug reports are commented out but you can add them to User Rules without the initial `!`. Some rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
 
 Inclusion criteria:
 - Didn't and less likely to cause false-positive
@@ -38,9 +36,7 @@ Inclusion criteria:
 
 Exclusion:
 - Trackers covered by Simplified domain names filter or Firefox tracking protection
-- Trackers blocked by uBlock Origin medium mode with /medium_mode/ublock-dynamic-rules.txt minus EasyPrivacy & Peter Lowe
-
-Acknowledgement: some of its rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
+- Trackers blocked by uBlock Origin medium mode with /medium_mode/ublock-dynamic-rules.txt minus EasyPrivacy & Peter Lowe's list
 
 About CNAME tracker: I really don't understand why it's so special to some people. Apparently they still believe subscribing a dedicated anti CNAME tracker list on Chromium is mandatory to block them if a DNS-level blocker is not deployed on other layer. The fact is EasyPrivacy alone, or the combination of AdGuard Tracking Protection and my list, blocks 99% of CNAME tracker while DEFINITELY many other analytics and trackers have slipped whatever your lists through, as long as you visit many sites. You prefer to double-lock a window and keep the door open?
 
@@ -54,27 +50,27 @@ About CNAME tracker: I really don't understand why it's so special to some peopl
 
 [日本語](/japanese/README-JP.md)
 
-<strong>If you are a non-native Japanese speaker seeking for a good Japanese list, my first recommendation is [AdGuard Japanese filter](https://kb.adguard.com/en/general/adguard-ad-filters#japanese)</strong>. My lists include some aggressive rules not well-tested outside Japanese sites and likely to cause false positive on your local sites. These lists are made to address a peculiar situation among Japanese ad-block user that many of them unsubscribe default lists and keep only a Japanese one. If you proceed, you shall be deemed to have read the [Japanese README](/japanese/README-JP.md) which gives more details, because those who need my lists should be able to read it.
+<strong>If you are a non-native Japanese speaker seeking for a good Japanese list, my first recommendation is [AdGuard Japanese filter](https://kb.adguard.com/en/general/adguard-ad-filters#japanese)</strong>. My lists include some aggressive rules not well-tested outside Japanese sites and likely to cause false positive on your local sites. There are also many duplicate rules of uBlock Origin's default lists. These lists are made to address a peculiar situation among Japanese ad-block user that many of them unsubscribe default lists and keep only a Japanese one. If you proceed, you shall be deemed to have read the [Japanese README](/japanese/README-JP.md) which gives more details, because those who need my lists should be able to read it.
 
 ### Yuki's uBlock Japanese filters
 
-The most comprehensive, block-first, and efficient Japanese list for uBlock Origin that removes ads and analytics on desktop, designed for advanced user. Some of its rules are taken from - or rather intentionally made to be identical with - [EasyList, EasyPrivacy,](https://easylist.to/) [AdGuard Base, AdGuard Tracking Protection, ](https://kb.adguard.com/en/general/adguard-ad-filters) [uBlock Built-in lists,](https://github.com/uBlockOrigin/uAssets/) [Peter Lowe's list,](https://pgl.yoyo.org/adservers/) [Fanboy's Enhanced Trackers List, ](https://www.fanboy.co.nz/filters.html) [EasyList China,](http://abpchina.org/forum/forum.php) [RU AdList](https://forums.lanik.us/viewforum.php?f=102) and [280blocker domain list](https://280blocker.net/files/280blocker_domain_ag.txt)<sup>1</sup>. This way even if an user added any of those lists (which is uncommon in Japanese adblock user) along with my list, those duplicates will be discarded and can do no harm. This list is also strongly influenced by [Tofu filter](http://tofukko.r.ribbon.to/abp.html) though rules are not directly taken for copy right problems.
+The most comprehensive, block-first, and efficient Japanese list for uBlock Origin that removes ads and analytics on desktop, designed for advanced user. Some of its rules are taken from - or rather intentionally made to be identical with - [EasyList, EasyPrivacy,](https://easylist.to/) [AdGuard Base, AdGuard Tracking Protection, ](https://kb.adguard.com/en/general/adguard-ad-filters) [uBlock Built-in lists,](https://github.com/uBlockOrigin/uAssets/) [Peter Lowe's list,](https://pgl.yoyo.org/adservers/) [Fanboy's Enhanced Trackers List, ](https://www.fanboy.co.nz/filters.html) [EasyList China,](http://abpchina.org/forum/forum.php) [RU AdList, ](https://forums.lanik.us/viewforum.php?f=102) and [280blocker domain list](https://280blocker.net/files/280blocker_domain_ag.txt)<sup>1</sup>. This way even if an user added any of those lists (which is uncommon in Japanese adblock user) along with my list, those duplicates will be discarded and can do no harm. This list is also strongly influenced by [Tofu filter](http://tofukko.r.ribbon.to/abp.html) though rules are not directly taken for copy right problems.
 
-1: Only uBlock Built-in and 280blocker domain list are out of CC BY-SA license. I hope and believe rules taken from them are within a range of what filter authors can generally think of.
+<sub>1: Only uBlock Built-in and 280blocker domain list are out of CC BY-SA license. I hope and believe rules taken from them are within a range of what filter authors can generally think of.</sub>
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt)
 
 ### Yuki's uBlock Japanese filters - Paranoid
 
-This can be added to Yuki's uBlock Japanese filters for enhanced blocking. Use at your own risk. Some rules are taken from or influenced by [EasyPrivacy](https://easylist.to/) and [Fanboy's Enhanced Trackers List, ](https://www.fanboy.co.nz/filters.html).
+This can be added to Yuki's uBlock Japanese filters for enhanced blocking. Use at your own risk. Some rules are taken from or influenced by [EasyPrivacy](https://easylist.to/) and [Fanboy's Enhanced Trackers List](https://www.fanboy.co.nz/filters.html).
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Paranoid">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
 
 ### Yuki's uBlock Japanese filters - Social
 
-Removes share buttons mainly on Japanese sites. Some rules are taken from [AdGuard Social media](https://kb.adguard.com/en/general/adguard-ad-filters#social).
+Removes some social elements such as share buttons mainly on Japanese sites. Some rules are taken from [AdGuard Social media](https://kb.adguard.com/en/general/adguard-ad-filters#social).
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Social">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt)
@@ -85,14 +81,6 @@ Removes annoyances mainly on Japanese sites. Some rules are taken from or influe
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
-
-
-### Yuki's Blog parts filters - Adult
-
-See below, this is a variant of Yuki's Blog parts filters for adult sites. Included in Yuki's uBlock Japanese filters - Annoyances
-
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">Subscribe</a>
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
 
 ### Yuki's Blog parts filters
 
@@ -105,6 +93,13 @@ Exclusion:
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt&title=Yuki's%20Blog%20parts%20filters">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt)
+
+### Yuki's Blog parts filters - Adult
+
+This is a variant of Yuki's Blog parts filters for adult sites. Included in Yuki's uBlock Japanese filters - Annoyances
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
 
 ### Sable filters 2 (sable-filters2.txt)
 
@@ -148,9 +143,9 @@ Exclusion:
 - rarely seen plugins such that used by less than 100 sites according to themesinfo.com or plugins used only on specific websites
 - CSS-only plugins
 
-1: It doesn't make sense if the site was fully compromised, but is some other cases may protect you from malwarized plugins and some vulnerabilities.
+<sub>1: It doesn't make sense if the site was fully compromised, but is some other cases may protect you from malwarized plugins and some vulnerabilities.</sub>
 
-2: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.
+<sub>2: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.</sub>
 </details>
 
 <details>
@@ -167,7 +162,7 @@ Exclusion:
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt)
 
-1: Another side effect is any filter lists that heavily depend on generic cosmetic filters don't work well. An example of such list is Fanboy Annoyances List.
+<sub>1: Another side effect is any filter lists that heavily depend on generic cosmetic filters don't work well. An example of such lists is Fanboy Annoyances List.</sub>
 
 ### Placeholder Hider with no generic hiding for mobile (phhider-mob.txt)
 
