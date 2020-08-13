@@ -137,7 +137,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 ### Yuki's uBlock Japanese filters - Annoyances　（みぞれフィルタ）
 
-広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt)や[AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances)から取られたルールもあります。
+広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt), [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances), および[Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances)から取られたルールもあります。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)

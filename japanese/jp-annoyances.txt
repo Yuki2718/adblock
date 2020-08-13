@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-12
+! Last updated: 2020-08-13
 
 !#include blog-parts.txt
 !#include blog-parts-adult.txt
@@ -358,8 +358,7 @@ hiroba.dpoint.jp##body[data-modal-overlay=open] > div#wrapper:style(position:sta
 hitohana.tokyo###cta
 hypebeast.com###newsletter-popup-fixed
 ig.com###sticky-footer
-! github.com/uBlockOrigin/uAssets/issues/7758
-!instagram.com###react-root ~ div[class*=" "][class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
+instagram.com###react-root ~ div[class*=" "][class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > div > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
 instagram.com##.ZUqME:has(a[href^="/accounts/emailsignup/"])
 instagram.com##body[style*="overflow: hidden;"]:style(overflow-y: scroll !important;)
 jp.techcrunch.com##.toaster
@@ -598,6 +597,9 @@ myreco.me##.footer__head
 ||netkeiba.com/img.db/common/image/bg_spinfo.
 ||news.nifty.com/img/store_
 news.nifty.com##.widget_official_full_app
+||next.rikunabi.com/rnc/contents/pub/mtp_assets/top/img/pc/app_
+||next.rikunabi.com/rnc/contents/pub/mtp_assets/top/img/pc/banner_app_
+next.rikunabi.com##[class^=mtp-AppAppeal__wrapper--]
 db.netkeiba.com##.SpInfo_Box
 ||nic-english.com/wp-content/uploads/2018/07/nic_english-gim_app-
 ||nimg.jp/nicochannel/chfront/img/channel/blog/item/banner/to_niconico_ch_lp.$domain=ch.nicovideo.jp
@@ -731,6 +733,7 @@ _rss3.$frame
 ||zenback.jp^
 
 *$3p,image,domain=hdouga.com
+/rss_slide.js$domain=majikichi.com
 ||2ch-matomenews.com/*headline|$frame
 ||2ch-matomenews.com/headermenurss$frame
 2ch-matomenews.com##.bottom_matomeRss, .postTopRss
@@ -1158,6 +1161,7 @@ otapol.com###balloonText
 ||scdn.line-apps.com/stf/line-news/js/thirdparty/banner2.
 ||sm-miracle.com/js/warning.
 ||stjp.image-qoo10.jp^*/ic_bookmark.v_
+||suruga-ya.jp/drupal/themes/surugaya/images/02_blue.
 ||tnc.co.jp/img/common/body_illust
 ||uta-net.com/reverse/image/get_flash_
 ||video.tv-tokyo.co.jp/common/js/pc/ddrating.
