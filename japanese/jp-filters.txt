@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-13
+! Last updated: 2020-08-14
 
 ! Temporal
 ! YT
@@ -2318,6 +2318,7 @@ _bn634.$domain=minnano-anime.com|minnano-av.com
 /kok/*$domain=movie.eroterest.net
 /newpop*.$script,3p,domain=marumie55.com
 /pick1/(?:DX-01|FC0[1-2]|FC2-\d{4}|MGS0[1-2]|TORYU-\d{4}[a-c]?|XXX-\d{4})\.jpg$/$image,1p,domain=imgs.a.la9.jp
+/uploads/(?:n\d{1,2}|vrconk[1-9]|[1-9])\.(?:jpg|png)$/$image,domain=hentaifreak.org
 /xn--kck2cc2e1dve\.jp/(?:stevia|\d{7})\.(?:gif|jpg)$/$image,domain=xn--kck2cc2e1dve.jp
 /xn--u8jm6cyd8028a\.net/(?:ani_|stevia|\d{7}(_[a-c])?)\.(?:gif|jpg)$/$image,domain=xn--u8jm6cyd8028a.net
 |http://$script,3p,xhr,domain=gounlimited.to|hdzog.com|rule34hentai.net|tazmovies.com|txxx.com
@@ -3197,7 +3198,7 @@ _beacon?
 _event_tracking.
 _fpn.gif?
 _googleanalytics.
-_loghuman=
+_logHuman=
 _pixel_test/?
 _setAnalyticsFields&
 _tracker.js?
@@ -5887,6 +5888,7 @@ naturum.ne.jp##.counter
 navi.shinkibus.jp##.noz_banner_2
 navi.z0i.net##.adsbygoogle:remove()
 navitime.co.jp###st-epark-infeed-sp, .ad-frame, .advertising_list_frame, [id^=crt]
+nazology.net##.side-adblock
 nekomemo.com##.plugin-memo:has(.amazon-title)
 nendai-blog.zerone.jp##table:has(script)
 nendai-blog.zerone.jp##table:has-text(スポンサードリンク)
@@ -6832,6 +6834,7 @@ hentai-anime-xxx.com,hentai-cosplays.com,hentai-gif-anime.com,hentai-img.com,lan
 hentai-anime-xxx.com,hentai-cosplays.com,hentai-img.com,porn-images-xxx.com##.left_sideber_body:has(#side_link)
 hentai-cosplays.com,hentai-img.com,porn-images-xxx.com###display_image_detail > span
 hentai-foundry.com##main > center
+hentaifreak.org##.used > .destroy:has-text(AD):upward(3)
 hentaimama.io##.video_alert
 hentaiplay.net###video_overlays
 hentaiplay.net##.sidebarad
@@ -7458,6 +7461,8 @@ gigaho.com,manga1001.com##+js(aopr, onload)
 hclips.com,vjav.com##+js(aeld, , window.open)
 hclips.com,txxx.com,vjav.com##+js(set, adver, noopFunc)
 hdzog.com##+js(aopw, UuR2wyuON)
+hentaifreak.org##+js(aopw, onpopstate)
+hentaifreak.org##+js(nostif, popState)
 hentaistream.com##+js(aeld, load, script)
 hitomi.la##+js(aopr, pops)
 hotpress.info##+js(nostif, nextFunction, 2000)
