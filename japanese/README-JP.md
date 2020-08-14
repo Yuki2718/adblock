@@ -59,7 +59,7 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 
 <sub>10: 実測するのが早いです（レイテンシの影響が大きいのでキャッシュは維持してください）。[こちら](https://brave.com/improved-ad-blocker-performance/)はBraveがuBlock Originの方式を導入した時の記事ですが、16,000個ルールを追加しても個々のリクエスト処理にかかる時間は1μsも変わらないことがわかります。メモリ消費はルール数に応じて増えますが、PCで問題になる量ではありません。逆にいうと非効率なルールが増えるほど遅くなるため、そうしたルールは対象を絞り込む必要があります。</sub>
 
-<sub>11: ABP文法と異なり、[単語境界を意識](https://github.com/gorhill/uBlock/issues/1065)する必要があります。たとえば`/example`というルールは、（他の部分でトークンマッチが起きない限り）`/example1`というリクエストをブロックしません。明示的に`*`を追加するとブロックするようになりますが（`/example*`）、これは`example`のトークン化を妨げます。主要な[bad token](https://github.com/gorhill/uBlock/blob/381498daa2a9ce089a69d044760190b1dd14b5ac/src/js/static-net-filtering.js#L2062)（トークン化されない文字列）も覚えた方がよいでしょう。</sub>
+<sub>11: ABP文法と異なり、[単語境界を意識](https://github.com/gorhill/uBlock/issues/1065)する必要があります。たとえば`/example`というルールは、（他の部分でトークンマッチが起きない限り）`/example1`というリクエストをブロックしません。明示的に`*`を追加するとブロックするようになりますが（`/example*`）、これは`example`のトークン化を妨げます。主要な[bad token](https://github.com/gorhill/uBlock/blob/381498daa2a9ce089a69d044760190b1dd14b5ac/src/js/static-net-filtering.js#L2062)（トークン化されない文字列）も覚えた方がよいでしょう。一般に遅いとされる正規表現ルールも[条件](https://github.com/gwarser/filter-lists/blob/master/lan-block.txt#L8)を満たせばトークン化可能なので、とくに正規表現ルールの作り方は大事です。</sub>
 
 </details>
 
@@ -216,6 +216,10 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
 
 公益の観点から、このフィルタのみ[CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja)で提供しています。
+
+#### 対象外
+
+- Google Safe Browsingで既にブロックされているもの（AdGuardのブラウジングセキュリティはGoogle Safe Browsingをソースの一部としており、またuBlock Originが利用可能なモバイルブラウザもGoogle Safe Browsingをサポートしているものが多いため）
 
 ## 不具合、ブロック漏れの報告
 
