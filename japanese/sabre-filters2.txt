@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-14
+! Last updated: 2020-08-15
 
 ! Generic network rules
 /amp-user-notification-
@@ -43,12 +43,13 @@
 ||consensu.org^$domain=theguardian.com
 ||consent.cmp.oath.com^
 ||consent.cookiebot.com^$third-party,domain=~refinery29.com
-||cookielaw.org^$domain=biomedcentral.com|gqjapan.jp|hp.com|mastercard.co.jp|nature.com|natureasia.com|springer.com|springeropen.com|telerik.com
+||cookielaw.org^$domain=biomedcentral.com|collegeboard.org|gqjapan.jp|hp.com|mastercard.co.jp|nature.com|natureasia.com|springer.com|springeropen.com|telerik.com
 ||jimstatic.com/ckies.
 ||jsdelivr.net/npm/cookieconsent
 
 ! Generic cosmetic rules
 ###cc-cookie-law
+###cookie-notice
 ###gdpr-banner
 ##.popup_confirmation_bar
 ##.widget_eu_cookie_law_widget
@@ -110,6 +111,7 @@ accounts.crowdin.com##.cc-window
 accuweather.com##.privacy-policy-banner
 aiasahi.jp,japan.cnet.com,cnn.co.jp,japan.techrepublic.com,japan.zdnet.com###gdpr_area
 airvpn.org###cookieLaw
+alphacoders.com###cookie_consent
 amada.co.jp,ambafrance.org,osdn.net###cookie-bar
 anaconda.com##.gdpr-banner
 analog.com#$##cookie-consent-container { display:none !important }
@@ -227,7 +229,6 @@ www.hwinfo.com##.cookie-agree-with-use
 www.nikkan.co.jp###c-modal
 www.nvidia.com###cookiePolicy-layer
 www.opera.com###cookie-consent
-www.ox.ac.uk###cookie-notice
 www.perfect-privacy.com###cookiebar
 www.pixiv.net###root > div:has(a[href="/terms?page=privacy"])
 www.seikowatches.com##.blk-Disclaimer

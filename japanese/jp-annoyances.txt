@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-14
+! Last updated: 2020-08-15
 
 !#include blog-parts.txt
 !#include blog-parts-adult.txt
@@ -107,6 +107,7 @@ m.youtube.com##ytm-item-section-renderer > lazy-list > .item:has(.watch-metadata
 ! ---------- Popup/Banner ----------
 /iziModal.min
 /jquery.magnific-popup.$domain=storia.takeshobo.co.jp
+/modal.js$domain=journal.botanistofficial.com
 /npm.micromodal-
 /plugins/optin-monster/*
 /plugins/optinmonster/*
@@ -235,6 +236,8 @@ lec-jp.com###floating
 lifepepper.co.jp##.footer-hidden_box
 ||lionbridge.ai^*/resources_hero.$image,1p
 lionbridge.ai##.newsletter-popover
+||llnwd.net/e113/lib/tm/pc/img/common/btnEntry.$domain=tenshoku.mynavi.jp
+tenshoku.mynavi.jp##.fixedEntryBtn
 ||llnwd.net^*/house_ad_on_load_modal_$script,domain=uwl.weblio.jp
 ||logitech.com^*/popup-email-capture.png|
 www.logicool.co.jp###wrapper
@@ -420,6 +423,7 @@ skyscanner.jp##body[style^="overflow: hidden;"]:style(overflow:auto !important)
 sourceforge.net###newsletter-floating
 suwila.com##.ikusei-banner
 t.pia.jp##.Y15-follow-btn__block
+tabroid.jp##.pursue_header
 taotao-ex.com###modal
 tbs.co.jp##+js(set, NS_TVER_EQ.checkEndEQ, trueFunc)
 tech-camp.in##.BottomFixedBannerContainer
@@ -468,12 +472,14 @@ yandex.com##.zalogin-smart
 !#if !env_firefox
 gesoten.com###colorbox:has(#modal-game-recommend-pc)
 goukashugi.jp###c-modal
+journal.botanistofficial.com##.modal
 tamashii.jp##.overlay
 !#endif
 
 !#if env_firefox
 gesoten.com##^#colorbox:has(#modal-game-recommend-pc)
 goukashugi.jp##^#c-modal
+journal.botanistofficial.com##^.modal
 tamashii.jp##^.overlay
 !#endif
 
