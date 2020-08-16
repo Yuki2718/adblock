@@ -108,6 +108,13 @@ Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes co
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
 
+### Anti-scam enhancer for 280blocker ABP format list（only for AdGuard for Android and uBlock Origin）
+
+Enhance anti-scam capability of [280blocker for Japanese mobile site (ABP format)](https://280blocker.net/files/280blocker_adblock.txt) by utilizing advanced capability of AdGuard/uBlock Origin.
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
+
 </details>
 
 <details>
