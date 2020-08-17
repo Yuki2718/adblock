@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-16
+! Last updated: 2020-08-17
 
 !#include blog-parts.txt
 !#include blog-parts-adult.txt
@@ -226,6 +226,8 @@ l-tike.com###popup
 ||inbound-pro.com/assets/toastr-
 ||industrial.panasonic.com/content/data/common/ss-files/banner-
 industrial.panasonic.com##.fix-menu.banner
+||kaitoricollector.com/devlop/wp-content/themes/nhc001/common/images/top/footer_
+kaitoricollector.com##.footer_contact
 ||knowledgewing.com/kw/blog/img/bnr_mm.
 knowledgewing.com##.m_linkBox
 ||kracie.co.jp/kampo/kampofullife/wp-content/themes/kampofullife/common/img/side/float_
@@ -342,7 +344,7 @@ detail.chiebukuro.yahoo.co.jp###fuwa
 developer.android.com##devsite-snackbar
 dhbr.net##.tool-box
 dora-world.com###layer_board_area
-duckduckgo.com##.badge-link
+duckduckgo.com##.badge-link.ddg-extension-hide
 e-aidem.com##.relation_entry
 edreams.jp###sessionAboutToExpireAlert
 en-ambi.com###indexFixedBar
@@ -351,7 +353,7 @@ engineer-lab.findy-code.io##.popup
 facebook.com##._5hn6
 fantia.jp##.popup-bar
 findpro.jp###js-stickyFooter
-finnishdesignshop.com,hoihoi.whotwi.com,kadoebi.co.jp,lec.medilink-study.com,rebates.jp##.modal-backdrop
+finnishdesignshop.com,hoihoi.whotwi.com,kadoebi.co.jp,lec.medilink-study.com,rebates.jp,service-safari.com##.modal-backdrop
 forbesjapan.com###boxer-overlay, .pop2
 froggy.smbcnikko.co.jp##.floatingBanner
 fuzoku.sod.co.jp##.top_webyoyaku
@@ -388,7 +390,6 @@ medilink-study.com##.style-newsDialog
 mensfashion.cc##.add_line_link
 mobile.twitter.com##body:style(overflow: auto !important; margin: 0 !important;)
 mobile.twitter.com##div[data-testid="sidebarColumn"] section[aria-label][role="region"]:upward(1)
-mobile.twitter.com##span:has-text(Twitterを最大):upward(6)
 monosnap.com##.modalSide
 movie-times.tv###newContactBanner
 naitopi.com###age_check
@@ -410,7 +411,7 @@ pinterest.*##div[data-test-id="giftWrap"]
 pinterest.*##div[style="visibility: visible; top: 80px; left: 99px;"]:has-text(探したい)
 quora.com##body > div[id]:has(.modal_signup_dialog)
 quora.com##body:style(overflow: auto !important)
-quora.com##.signup_wall_prevent_scroll .SiteHeader,.signup_wall_prevent_scroll .LoggedOutFooter,.signup_wall_prevent_scroll .ContentWrapper:style(filter: none !important;)
+quora.com##.signup_wall_prevent_scroll .SiteHeader, .signup_wall_prevent_scroll .LoggedOutFooter,.signup_wall_prevent_scroll .ContentWrapper:style(filter: none !important;)
 reddit.com##.happening-now-wrap
 repeat-drama.info###bfb_content_pc
 researchgate.net###exit-modal
@@ -418,6 +419,8 @@ rurubu.travel##.BackToSearch--show
 sakigake.jp##.footer-news
 sbbit.jp###fixedbaner
 scribd.com##+js(aeld, /^(mouseout|mouseleave)$/)
+service-safari.com###SignupRecommendationModal
+service-safari.com##body.modal-open:style(overflow:auto !important)
 shingakunet.com##.l-footerFix
 shopping.yahoo.co.jp##.elSticky > .elBanner
 skyscanner.jp###modal-container:has(#pqs-form)
@@ -487,12 +490,22 @@ tamashii.jp##^.overlay
 !#endif
 
 !#if env_mobile
-jp.quora.com##div[class*=position__Absolute]:has-text(アプリで)
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
 m.youtube.com##.mealbar-promo-renderer
+mobile.twitter.com###layers div[dir=ltr] > span:has-text(Twitterアプリをおすすめ):upward(5)
 pinterest.*##.Hsu.iyn.zI7.FNs
 qiita.com##.apm-Content, .is-open, [id^=logly-lift]
+quora.com##.q-box > div[class^="CssComponent-"][style*="height: 50px;"]
 reddit.com##.XPromoInFeed, .xPromoChoiceBanner
+!#endif
+
+!#if adguard
+drive.google.com#?#a[data-target=clientDownload]:nth-ancestor(3)
+mail.google.com#?#span:contains(Gmail のデスクトップ通知):nth-ancestor(1)
+mobile.twitter.com#?#div[data-testid="sidebarColumn"] section[aria-label][role="region"]:nth-ancestor(1)
+mobile.twitter.com#?##layers div[dir=ltr] > span:contains(Twitterアプリをおすすめ):nth-ancestor(5)
+outlook.live.com#?#button.ms-Link:contains(Edge):nth-ancestor(3)
+twitter.com#?#div[dir=auto] > span:contains(Twitterなら、「いま」):nth-ancestor(5)
 !#endif
 
 ! ---------- App ----------
@@ -1139,8 +1152,6 @@ www.nicovideo.jp##.FeedbackLink
 ! Dead
 /gred_checker.js$3p
 /google-funding-choices.js|$domain=foxnews.com|foxbusiness.com
-/hrjobinfo.$script,domain=nikkei.com
-nikkei.com###hrJobInfo
 /plugins/copycontentdetector/*
 ||apester.com^$3p
 ||as.datasign.co^
