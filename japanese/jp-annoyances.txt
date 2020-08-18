@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-17
+! Last updated: 2020-08-18
 
 !#include blog-parts.txt
 !#include blog-parts-adult.txt
@@ -38,6 +38,7 @@ games.yahoo-net.jp###yse-footer-btn
 ||gstatic.com^*/firebase-messaging.js|
 ||ismcdn.jp^*/webpush_dialog.
 ||noticious.jp^$3p
+||notify.solutions^$3p
 ||onesignal.com^$3p
 ||pt.appirits.com^$3p
 ||push7.jp^
@@ -154,6 +155,7 @@ www.acecook.co.jp###Content > article:has(a[href^="/campaign"])
 www.acfun.cn##.app-guide
 ||akamaized.net/campaign/member/*/modal_$domain=buyma.com
 buyma.com##.fab-cp-overlay
+||akamaized.net/img/dpoint/pc/follow_btn_$domain=shift.games
 ||amazonaws.com/flipdesk/chat/images/1de113cc*$image,domain=flipdesk.jp
 flipdesk.jp###flipdesk-trigger
 ||amp.assets.huffpost.com^*/newsletter-toaster.
@@ -771,6 +773,10 @@ absurd.blogo.jp###comment-form > b, .article-footer
 ||anicobin.ldblog.jp/rss*$frame
 ||aqua2ch.net/*.html|$frame
 aqua2ch.net##.menu_outline3, .menu_title3
+||asianews2ch.jp/images/popular_
+||asianews2ch.jp/images/rtcm_
+||asianews2ch.jp/js/crank_
+||asianews2ch.livedoor.biz/images/category_
 ||baiku-sokuho.info/pickup-$frame
 ||baiku-sokuho.info/top-$frame
 ||blog.livedoor.jp/goldennews/js/$frame
@@ -849,6 +855,7 @@ okkisokuho.com##[class^=syokai]
 ||squallchannel.com^$frame,1p
 ||sugirl.info/link/video.js|
 ||toralucky.fun^$frame,1p
+||toua2chdqn.livedoor.blog/js/rrank_asia
 ||toushichannel.net^$frame,1p
 ||tr.twipple.jp/common/img/news_icons.
 ||tumanude.com/nude/$frame,1p
@@ -860,11 +867,12 @@ okkisokuho.com##[class^=syokai]
 
 ##[class^=blogroll-wrapper]
 ##[class^=blogroll_wrapper]
+##[id^=ldblog_related_articles_]
 1000mg.jp,mylife.2chblog.jp,travel2ch.com##[class$=rss]
+2chmatome.bloggeek.jp,addchannel.net,dechisoku.com,gensen2ch.com,heartlife-matome.com,honsoku.com,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,matmebae.net,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-short.net,nanj-world.blog.jp,orufemorufenz.com,oumaga-times.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,ronsoku.com,shumi-nikki.xyz##.rss-blogroll
 aatyu.livedoor.blog##.logbox
 absurd.blogo.jp##.headlinerss
 addchannel.net##.Header__contentsParts
-addchannel.net,dechisoku.com,gensen2ch.com,heartlife-matome.com,honsoku.com,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,matmebae.net,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-short.net,nanj-world.blog.jp,orufemorufenz.com,oumaga-times.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,ronsoku.com,shumi-nikki.xyz##.rss-blogroll
 airlinehonpo.blog.fc2.com,akb48glabo.com,geinoujin-blog.net,itaishinja.com,kyousoku.net,military38.com,nanjde.blog.jp,otakumix.doorblog.jp##[id^=rss]
 akb48matomemory.com,anicobin.ldblog.jp,aramame.net,au2chblog.blog.fc2.com,checkmate-blog.com,girlsvip-matome.com,gahalog.2chblog.jp,hattatu-matome.ldblog.jp,keyaki.tech,kokopyon.net,kijomatomelog.com,mojomojo-licarca.com,morikinoko.com,netamesi.com,okusama-kijyo.com,saikyo-jump.com,seiyufan.livedoor.biz,squallchannel.com,uwakitaiken.com##[class^=rss]
 aqua2ch.net,blogo.jp,fesoku.net,ldblog.jp,livedoor.biz##.related-articles
@@ -940,6 +948,7 @@ punyu.com###content > .box_title[style="width:700px;"], #content > .box_title[st
 momoniji.com###content-top-in > .widget-content-top:first-child
 mudainodocument.com##.menu_cont3, .menu_title3
 rabitsokuhou.2chblog.jp,yamakamu.com###rss
+rangeriishoppingu.blog.fc2.com##.plugin_right:has(script):not(:has(iframe)):not(:has(.plugin-myimage))
 scienceplus2ch.com###rss-roll-01
 shiropro.net##.Article > .Module__heading
 sshouko.net##blockquote
