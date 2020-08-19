@@ -2,13 +2,14 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
-! Last updated: 2020-08-18
+! Last updated: 2020-08-19
 
 &prvtof=*&poru=
 /?r=*&a=*&icode=*$document,~third-party
 /^https:\/\/[a-z]{7,16}\d{1,2}\.live/$document,domain=live
 /^https:\/\/www\.namejp0[1-9]\.xyz/$document,popup,domain=xyz
-/^https?:\/\/[-0-9a-z]{15}\.fun/kjasdjhqwud\.php.*/$document,domain=fun
+/^https?:\/\/([a-z]{2}\d){3}[a-z]{2}\.com/$document,domain=com
+/^https?:\/\/[-0-9a-z]{15}\.fun/[a-z]{10,11}\.php.*/$document,domain=fun
 /ck_winAlert.js|
 /glp?r=*&rw=*&rh=*&ww=*&wh=$script,~third-party
 ||ad-score.com^$all
@@ -19,15 +20,17 @@
 ||cbist.com^$all
 ||click.expmediadirect.com^$all
 ||dolohen.com^$document
+!||ek8jt7jy9ku.com^$document
 ||fj9k6yh6hp7t.com^$document
 ||geniusdexchange.com^$all
 ||hugedomains.com^$subdocument,third-party
 ||iyfnzgb.com^$document,popup
 ||kabooo.net^$all
+||mediamodern.biz^$all
 ||mksarahf499.cocolog-nifty.com^$inline-script
 ||newmode.biz^$document
 ||otakarablog.com^$document
-||pw6fu3hs8mv.com^$document
+!||pw6fu3hs8mv.com^$document
 ||quick-downloads.com^$all
 ||reimageplus.com^$document
 ||rsalcau.com^$all
@@ -39,8 +42,9 @@
 ||soafov.ru^$all
 ||trellian.com^$document
 ||usa.engel-eva.com^$all
+||useurmind.com^$document
 ||xxxrevpushclcdu.com^$document
-||yh5mf6sr4pk.com^$document
+!||yh5mf6sr4pk.com^$document
 podcast.svenskafans.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'error.php')
 
 ||*0.live^$badfilter
