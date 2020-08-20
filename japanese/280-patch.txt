@@ -2,10 +2,11 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
-! Last updated: 2020-08-20
+! Last updated: 2020-08-21
 
 &prvtof=*&poru=
 /?r=*&a=*&icode=*$document,~third-party
+/^http://[a-z]{10}\.duckdns$document,domain=duckdns.org
 /^https:\/\/[a-z]{7,16}\d{1,2}\.live/$document,domain=live
 /^https:\/\/www\.namejp0[1-9]\.xyz/$document,popup,domain=xyz
 /^https?:\/\/([a-z]{2}\d){3}[a-z]{2}\.com/$document,domain=com
@@ -27,8 +28,10 @@
 ||itn3pg5wrv.com^$document
 ||iyfnzgb.com^$document,popup
 ||kabooo.net^$all
+||kgtdthfn2y4n.com^$document
 ||mediamodern.biz^$all
 ||mksarahf499.cocolog-nifty.com^$inline-script
+||new-message.live^$document
 ||newmode.biz^$document
 ||otakarablog.com^$document
 !||pw6fu3hs8mv.com^$document
@@ -41,12 +44,24 @@
 ||sedo.cachefly.net^$all,domain=~sedoparking.com
 ||shotoku-zei-haito-kojo-ore.over-blog.com^$inline-script
 ||soafov.ru^$all
+||thebestgame2020.com^$document
 ||trellian.com^$document
 ||usa.engel-eva.com^$all
 ||useurmind.com^$document
+||win-gift.net^$document
+||wwwcdn.iihs.org^$document
 ||xxxrevpushclcdu.com^$document
 !||yh5mf6sr4pk.com^$document
 podcast.svenskafans.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'error.php')
+
+! Fu Chao
+||betterthing.top^$document
+||biggershop.top^$document
+||buyworths.top^$document
+||enjoyshop.xyz^$document
+||hotproduct.top^$document
+||placetop.xyz^$document
+||resvalues.top^$document
 
 ||*0.live^$badfilter
 ||*1.live^$badfilter

@@ -146,11 +146,11 @@ A: See the purpose, this list is built to make as few breakage as possible for a
 WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea<sup>1</sup>. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules<sup>2</sup> and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter and uBlock filters - Annoyances which are relatively small in size and rarely break pages; however, they only block minimal set of the plugins. This list includes 1) rules for the plugins not on Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer (thanks to @gwarser), and 3) a regex rule focused only on the latest survey scam campaign.
 
 Exclusion:
-- rules that caused or can cause false-positive
-- rarely seen plugins such that used by less than 100 sites according to themesinfo.com or plugins used only on specific websites
+- Rules that caused or can cause false-positive
+- Rarely seen plugins such that used by less than 100 sites according to themesinfo.com or plugins used only on specific websites
 - CSS-only plugins
 
-<sub>1: It doesn't make sense if the site was fully compromised, but is some other cases may protect you from malwarized plugins and some vulnerabilities.</sub>
+<sub>1: It doesn't make sense if the site was fully compromised, but in some other cases may protect you from malwarized plugins and some vulnerabilities.</sub>
 
 <sub>2: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.</sub>
 </details>
@@ -160,7 +160,7 @@ Exclusion:
 
 ### Placeholder Hider with no generic hiding (phhider.txt)
 
-`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option<sup>1</sup>. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters. Useful to those who replaced EasyList with its "without element hiding" version too. The name is inspired by [Placeholder Buster](https://github.com/NanoAdblockerLab/NanoContrib) but the list is independent and can be used together. I also highly recommend you to add AdGuard Base in uBlock Origin's stock lists not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed by the list. This would probably be the first public list utilizing [specific generic filter](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic).
+`Ignore generic cosmetic filters` is recommended if you want better performance without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option<sup>1</sup>. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters. Useful to those who replaced EasyList with its "without element hiding" version too. The name is inspired by [Placeholder Buster](https://github.com/NanoAdblockerLab/NanoContrib) but the list is independent and can be used together. I also highly recommend you to add AdGuard Base in uBlock Origin's stock lists not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed in the list. This would probably be the first public list utilizing [specific generic filter](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic).
 
 Exclusion:
 - Small place holder (e.g. *##.ad-space or *##.ad-area hides placeholders on various WordPress sites but won't be added for the reason.)
