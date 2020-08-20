@@ -5,7 +5,7 @@
 - AdGuardなど他のプラットフォームでは機能しないルールがあるため、使用はお勧めしません<sup>2</sup>。uBlock-for-firefox-legacyもサポートしません。
 - モバイルサイトは対象外です。280blockerさんの[フィルタ](https://280blocker.net/download/)やもちおさんの[たまごフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/tamago.html)など、モバイル用のフィルタを使用してください。
 
-<strong>ガイドライン：</strong>広告ブロック初心者の方は、まずuBlock Origin（[Firefox用](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)/[Chrome用](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)）をインストールしてください（名前の似たまがいものに注意！）。豆腐フィルタやもちフィルタなど、<strong>主要な日本用のフィルタが性能をフルに発揮できるのは、uBlock Origin（とその派生であるNano Adblocker）だけです</strong><sup>3</sup>。その上でまず、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)を試してみることをお勧めします。<strong>もし</strong>それで十分でないと感じられた場合、同サイトで提供されているサブフィルタを追加するか、あるいは長年日本の広告ブロックを代表されてきた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法があります。もちフィルタよりやや不具合（誤爆と呼ばれる）が増えたり、パフォーマンスが落ちたりするかもしれませんが<sup>4</sup>、2020年7月末より大幅な改修がなされており、十分お勧めできると思います。雪フィルタ系が適しているのは以下のような方です。
+<strong>ガイドライン：</strong>広告ブロック初心者の方は、まずuBlock Origin（[Firefox用](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)/[Chrome用](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)）をインストールしてください（名前の似たまがいものに注意！）。豆腐フィルタやもちフィルタなど、<strong>主要な日本用のフィルタが性能をフルに発揮できるのは、uBlock Origin（とその派生であるNano Adblocker）だけです</strong><sup>3</sup>。その上でまず、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)を試してみることをお勧めします。もしそれで十分でないと感じられた場合、同サイトで提供されているサブフィルタを追加するか、あるいは長年、日本の広告ブロックを代表されてきた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法があります。もちフィルタよりやや不具合（誤爆と呼ばれる）が増えたり、パフォーマンスが落ちたりするかもしれませんが<sup>4</sup>、2020年7月末より大幅な改修がなされており、十分お勧めできると思います。雪フィルタ系が適しているのは以下のような方です。
 
 - とにかく徹底的にブロックしたい、多少の不具合は自己対処できる、または報告して対処を待てる
 - オンラインのアクセス解析、行動追跡が気になる
@@ -28,7 +28,7 @@
 <details>
 <summary><strong>ブロック優先</strong></summary>
 
-ブロック可能な対象はできる限りブロックします。これは当然のことではなく、他のフィルタではブロック可能でも非表示で済ましているケースが多数あります<sup>7,8</sup>。ブロックが困難な場合、Firefox上ではHTMLフィルタリングにより除去を試みています（不可能な場合もあります）。ブロックさえできればよいという方は「汎用的な要素隠蔽フィルターを無視する」にチェックを入れてください。表示崩れや多少の広告漏れと引き換えに、パフォーマンスを高めることができます。Yuki's uBlock Japanese filtersファミリーは、その場合でもある程度の性能を維持できます<sup>9</sup>。
+ブロック可能な対象はできる限りブロックします。これは当然のことではなく、他のフィルタではブロック可能でも非表示で済ましているケースが多数あります<sup>7,8</sup>。ブロックが困難な場合、Firefox上ではHTMLフィルタリングにより除去を試みています。ブロックさえできればよいという方は「汎用的な要素隠蔽フィルターを無視する」にチェックを入れてください。表示崩れや多少の広告漏れと引き換えに、パフォーマンスを高めることができます。Yuki's uBlock Japanese filtersファミリーは、その場合でもある程度の性能を維持できます<sup>9</sup>。
 
 </details>
 
@@ -164,21 +164,21 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 </details>
 
-### 280blocker AdblockPlus形式 悪質サイト対策強化パッチ（暫定版：AdGuard for AndroidおよびuBlock Origin専用）
+### 280blocker AdblockPlus形式 悪質サイト対策強化パッチ（AdGuard for AndroidおよびuBlock Origin専用）
 
-280blockerさんは2020年8月2日の更新で悪質サイト対策のルールを大幅に追加されました。できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、280blocker AdblockPlus形式フィルタは正規表現などの高度な文法を避け、互換性の高い記法で書かれています。一方で、AdGuardやuBlock Originなど高度な文法をサポートするモダンブロッカーにとっては、この記法による悪質サイト対策にはいくつかの限界があります。
+280blockerさんは、2020年8月2日の更新で悪質サイト対策のルールを大幅に追加されました。できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、280blocker AdblockPlus形式フィルタは正規表現などの高度な文法を避け、互換性の高い記法で書かれています。一方で、AdGuardやuBlock Originなど高度な文法をサポートするモダンブロッカーにとっては、この記法による悪質サイト対策にはいくつかの限界があります。
 
 1. 実例を確認したわけではないものの、誤爆の恐れが高まります
 2. AdGuardでは悪質サイトへのアクセス自体はブロックされません
-3. uBlock Originではパフォーマンスが悪いです（`live`という質の低いトークンしか引き出せないため）
+3. uBlock Originではパフォーマンスが悪いです（質の低いトークンしか引き出せないため）
 
 また、重要ではないですが
 
 4. これらのブロッカーの機能を使えばサイトそのものをブロックしなくて済む場合でも、ブロックされています
 
-当パッチは280blocker AdblockPlus形式のビジターアンケート詐欺用ルールを、iOSの280blockerで使われているものにより近い（厳密に同じではありません。このあたりどうするかは様子を見て決めたいと思います）正規表現に置き換え、適切なオプションを指定することで上記1-3を解決しています。4については安全性をとるならサイトごとブロックするに越したことはないため、ルールの置き換えまではしていません。またYuki's uBlock Japanese filtersから悪質サイト用のルールをさらに追加しています（これらが280blocker AdblockPlus形式に採用された場合、取り除く予定です）。本来ならこうしたことは[なんj改修フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%94%B9%E4%BF%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)・[なんJ拡張フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%8B%A1%E5%BC%B5%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)で行われるべきなのかもしれません。ただ、多数のデッドルールが放置されるなどメンテナンスが続いているのか怪しい状態ですし、私がそれをやるなら自分のレポジトリで公開したほうが今後の調整がはるかに楽なため、そのようにさせていただきました。
+当パッチは280blocker AdblockPlus形式のビジターアンケート詐欺用ルールを、iOSの280blockerで使われているものにより近い（厳密に同じではありません）正規表現に置き換え、適切なオプションを指定することで上記1-3を解決しています。4については安全性をとるならサイトごとブロックするに越したことはないため、ルールの置き換えまではしていません。また、Yuki's uBlock Japanese filtersから悪質サイト用のルールをさらに追加しています（これらが280blocker AdblockPlus形式に採用された場合、取り除く予定です）。本来ならこうしたことは[なんj改修フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%94%B9%E4%BF%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)・[なんJ拡張フィルター](https://wikiwiki.jp/nanj-adguard/%E3%81%AA%E3%82%93J%E6%8B%A1%E5%BC%B5%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC)で行われるべきなのかもしれません。ただ、多数のデッドルールが放置されるなどメンテナンスが続いているのか怪しい状態ですし、私がそれをやるなら自分のレポジトリで公開したほうが今後の調整が楽なため、そのようにさせていただきました。
 
-<strong>2020年8月現在、「信頼するフィルタ」のチェックは必須ではありません。ただ、今後信頼するフィルタ用の機能を使う可能性はあるので、チェックを推奨しておきます。</strong>
+<strong>2020年8月現在、「信頼するフィルタ」のチェックは必須ではありません。ただ、今後信頼するフィルタ用の機能を使う可能性はあるので、チェックを推奨します。</strong>
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
