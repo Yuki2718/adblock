@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-19
+! Last updated: 2020-08-20
 
 !#include blog-parts.txt
 !#include blog-parts-adult.txt
@@ -99,6 +99,7 @@ lmaga.jp##.header_headline
 mail.google.com##span:has-text(Gmail のデスクトップ通知):upward(1)
 mrs.living.jp###floating-max
 w3q.jp###news-ticker-wrapper
+www.nicovideo.jp##.MylistContainer-premiumBanner
 youtube-nocookie.com,youtube.com###movie_player > .ytp-ce-bottom-right-quad, .ytp-cards-teaser
 
 !#if env_mobile
@@ -342,6 +343,8 @@ cbnews.jp###kp-survey-modal, #kp-survey-modal-overlay
 city.living.jp###area-select
 cnn.com##.sibling
 context.reverso.net###register-popup-bottom
+cookpad.com###colorbox
+cookpad.com,gesoten.com###cboxOverlay
 creativecommons.org###deed-donate-slide
 detail.chiebukuro.yahoo.co.jp###fuwa
 developer.android.com##devsite-snackbar
@@ -361,7 +364,6 @@ forbesjapan.com###boxer-overlay, .pop2
 froggy.smbcnikko.co.jp##.floatingBanner
 fuzoku.sod.co.jp##.top_webyoyaku
 galleria.emotionflow.com,tegaki.pipa.jp###AboutFrame
-gesoten.com###cboxOverlay
 goukashugi.jp###c-modal_bg
 h-navi.jp###ModalContent, #ModalOverlay
 hikkoshi-sakai.co.jp##.fixed.fix-info
@@ -475,6 +477,7 @@ www.sejuku.net###ft-banner
 www.techinasia.com###email-signup-reminder, #paywall-reminder
 www.ted.com###activity-feed
 www.yahoo.co.jp###Perorin
+y2mate.com##.is-rolledUp
 yahoo-mbga.jp###js-entry-fix
 yahoo.com###mega-banner-wrapper
 yandex.com##.zalogin-smart
@@ -594,6 +597,10 @@ howcollect.jp##.footer-app
 ||img08.magaseek.com^*/img_app
 magaseek.com###appArea
 ||jalan.net/assets/img/pages/top/*-app.png|
+||kidsna.com/assets/img/app_
+||kidsna.com/assets/img/app/lp/*-btn-
+||kidsna.com^*-app_phone_$image
+kidsna.com###store-link, .kidsna-app-banner-on-article-bottom
 ||kinarino.k-img.com/assets/webpage/download-app/$domain=kinarino.jp
 kinarino.jp##.p-download-app
 ||kiwi.com/images/qr/download_app_
@@ -822,7 +829,6 @@ hdouga.com##.content_title:has-text(/RSS|PICK/)
 ||itmedia.co.jp/js/top/rss_channelArt_
 ||itmedia.co.jp/json/top/rss_
 ||j3kywvch.xsrv.jp/antenna_link_generator/
-||javym.net/video.js|
 ||jin115.com/js/rtrank_
 ||jin115.com^$frame,1p
 ||joqr.co.jp/modalbanner/
@@ -860,7 +866,6 @@ okkisokuho.com##[class^=syokai]
 ||seesaa.net/common/kiji*$script,domain=beasoku.com|scienceplus2ch.com
 ||seesaa.net/common/pick_feed.$domain=mindhack2ch.com
 ||squallchannel.com^$frame,1p
-||sugirl.info/link/video.js|
 ||toralucky.fun^$frame,1p
 ||toua2chdqn.livedoor.blog/js/rrank_asia
 ||toushichannel.net^$frame,1p

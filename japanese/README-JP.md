@@ -137,6 +137,9 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください（この場合、Yuki's uBlock Japanese filtersの併用は不要です。モバイル用のフィルタと併用してください）<sup>18</sup>。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
 
+<details>
+<summary><strong>みぞれフィルタのサブフィルタ</strong></summary>
+
 ### Sable filters 2
 
 当サイトで以前から公開しているフィルタで、クッキーの同意バナーを除去します。<strong>Yuki's uBlock Japanese filters - Annoyancesに含まれており、これを購読しているなら必要ありません（AdGuard for Androidを除く）</strong>。一方でYuki's uBlock Japanese filters - Annoyancesと異なり、AdGuardとも完全な互換性があります。
@@ -158,6 +161,8 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
+
+</details>
 
 ### 280blocker AdblockPlus形式 悪質サイト対策強化パッチ（暫定版：AdGuard for AndroidおよびuBlock Origin専用）
 
@@ -213,7 +218,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 <details>
 <summary>註</summary>
-<sub>1: Nano Adblockerでもご利用いただけますが、当フィルタでuBlock Originの最新機能を利用した場合、一時的にその機能が利用できない可能性があります。Nanoの本質的な違いは、専用のスクリプトレットによりある種の迷惑要素に対処できるという点です。よくいわれるアンチ広告ブロックについては、ほとんどの日本人にとって差がありません。</sub>
+<sub>1: Nano Adblockerでもご利用いただけますが、当フィルタでuBlock Originの最新機能を利用した場合、一時的にその機能が利用できない可能性があります。Nanoの本質的な違いは、専用のスクリプトレットによりある種の迷惑要素に対処できるという点です。よくいわれるアンチ広告ブロックについては、差がありません。</sub>
 
 <sub>2: AdGuardで使用する場合、最大の問題はspecific-genericとdenyallowでしょう。とくに後者は大幅な書き直しが必要です。PCでAdGuardをご利用の場合、もちフィルタを使用するか、あるいは海外サイトも閲覧するのであればAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。豆腐フィルタはAdGuardで機能しないルールが増えてきたため、お勧めできません。</sub>
 
