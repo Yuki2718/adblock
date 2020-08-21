@@ -185,3 +185,7 @@ See above, it's a mobile version of phhider-nogen.txt. Rules covered by AdGuard 
 [dbl.oisd.nl | Internet's #1 domain blocklist](https://oisd.nl/)
 
 [spirillen's uBlockOrigin Rules](https://gitlab.com/AnonymousPoster/ublockorigin-rules)
+
+#### Acknowledgements
+
+I use [PyFunceble](https://github.com/funilrys/PyFunceble) to screen potential dead domains.

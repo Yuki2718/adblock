@@ -5,7 +5,7 @@
 - AdGuardなど他のプラットフォームでは機能しないルールがあるため、使用はお勧めしません<sup>2</sup>。uBlock-for-firefox-legacyもサポートしません。
 - モバイルサイトは対象外です。280blockerさんの[フィルタ](https://280blocker.net/download/)やもちおさんの[たまごフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/tamago.html)など、モバイル用のフィルタを使用してください。
 
-<strong>ガイドライン：</strong>広告ブロック初心者の方は、まずuBlock Origin（[Firefox用](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)/[Chrome用](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)）をインストールしてください（名前の似たまがいものに注意！）。豆腐フィルタやもちフィルタなど、<strong>主要な日本用のフィルタが性能をフルに発揮できるのは、uBlock Origin（とその派生であるNano Adblocker）だけです</strong><sup>3</sup>。その上でまず、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)を試してみることをお勧めします。もしそれで十分でないと感じられた場合、同サイトで提供されているサブフィルタを追加するか、あるいは長年、日本の広告ブロックを代表されてきた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法があります。もちフィルタよりやや不具合（誤爆と呼ばれる）が増えたり、パフォーマンスが落ちたりするかもしれませんが<sup>4</sup>、2020年7月末より大幅な改修がなされており、十分お勧めできると思います。雪フィルタ系が適しているのは以下のような方です。
+<strong>ガイドライン（PC広告）：</strong>広告ブロック初心者の方は、まずuBlock Origin（[Firefox用](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)/[Chrome用](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)）をインストールしてください（名前の似たまがいものに注意！）。豆腐フィルタやもちフィルタなど、<strong>主要な日本用のフィルタが性能をフルに発揮できるのは、uBlock Origin（とその派生であるNano Adblocker）だけです</strong><sup>3</sup>。その上でまず、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)を試してみることをお勧めします。もしそれで十分でないと感じられた場合、同サイトで提供されているサブフィルタを追加するか、あるいは長年、日本の広告ブロックを代表されてきた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法があります。もちフィルタよりやや不具合（誤爆と呼ばれる）が増えたり、パフォーマンスが落ちたりするかもしれませんが<sup>4</sup>、2020年7月末より大幅な改修がなされており、十分お勧めできると思います。雪フィルタ系が適しているのは以下のような方です。
 
 - とにかく徹底的にブロックしたい、多少の不具合は自己対処できる、または報告して対処を待てる
 - オンラインのアクセス解析、行動追跡が気になる
@@ -222,7 +222,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 <sub>2: AdGuardで使用する場合、最大の問題はspecific-genericとdenyallowでしょう。とくに後者は大幅な書き直しが必要です。PCでAdGuardをご利用の場合、もちフィルタを使用するか、あるいは海外サイトも閲覧するのであればAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。豆腐フィルタはAdGuardで機能しないルールが増えてきたため、お勧めできません。</sub>
 
-<sub>3: AdGuardならスクリプトレットに互換性があるので許容範囲といえます。</sub>
+<sub>3: AdGuardならスクリプトレットに互換性があるので許容範囲です。</sub>
 
 <sub>4: 主に処理負荷の高いprocedural cosmetic filtersとspecific-genericの組合せによるものですが、よほどの低スペック端末でない限り体感に影響するほどではないと思います（[参考1](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters) [参考2](https://github.com/uBlockOrigin/uBlock-issues/issues/803#issuecomment-586712831)）。
 </sub>
