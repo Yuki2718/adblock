@@ -57,7 +57,6 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 - アンチ広告ブロック
 - 迷惑・有害なポップアップ、ポップアンダー、リダイレクト
 - 一部の悪質サイト
-- トラッキングパラメータを含むリンクからの移動<sup>17</sup>
 
 #### 対象外
 - サイトの内容と強く関連しており（例：具体的な商品のレビュー）、かつ量が過剰でなくユーザーに不利益・不快感を与えない広告（「ゲームのブログだからゲームの広告」程度では強く関連しているとみなしません。ただしあるテーマのまとめサイトなどで潜在的な有用性がある場合、画像のみブロックしリンクは残すことがあります）
@@ -67,7 +66,7 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 
 ### Yuki's uBlock Japanese filters - Paranoid　（大雪フィルタ）
 
-Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。自己責任で使用してください。
+Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。自己責任で使用してください。トラッキングパラメータを含むリンクからの移動もブロックします。この場合、<strong>「uBlock Origin は、このページの読み込みをブロックしました」画面で右側の虫眼鏡アイコンをクリックすると、トラッキングパラメータを除いたURLが（場合によってはいくつか）表示され、そのままクリックできます。</strong>ただし、ブロックするとあまりに煩雑になる場合はブロックしません（例：記事の大部分にトラッキングパラメータを付与しているサイト、utm_sourceなど広範に使われるパラメータの一般ブロック）。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Paranoid">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
@@ -102,7 +101,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 ### Yuki's uBlock Japanese filters - Annoyances　（みぞれフィルタ）
 
-広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt), [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances), および[Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances)から取られたルールもあります。
+広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt), [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances), [uBlock filters – Annoyances](https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt), および[Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances)から取られたルールもあります。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
@@ -135,7 +134,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 - チャットウィジェット
 - コロナウイルス関係で、一般的な通知ブロックで防げないもの（一時的なものなので）
 
-モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください（この場合、Yuki's uBlock Japanese filtersの併用は不要です。モバイル用のフィルタと併用してください）<sup>18</sup>。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
+モバイルサイトは対象外にしたかったのですが、当サイトで以前より公開しているサブフィルタがモバイルに対応してしまっているため、限定的な対応ということにします（メインはあくまでPCです）。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください（この場合、Yuki's uBlock Japanese filtersの併用は不要です。モバイル用のフィルタと併用してください）<sup>17</sup>。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
 
 <details>
 <summary><strong>みぞれフィルタのサブフィルタ</strong></summary>
@@ -250,8 +249,6 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 <sub>15: これらのフィルタによる誤爆をより網羅的に修正していることもあり、既にEasyList等を併用されている方にはもっともおすすめできる日本用フィルタと言ってよいでしょう。逆に、既存の日本用フィルタとこれらの併用は無駄が多く、Braveの日本用フィルタに採用されなかった[一因](https://github.com/brave/adblock-lists/issues/355#issuecomment-609680337)となっています。</sub>
 
 <sub>16: 有用性などを鑑み、すべてはブロックしません。大まかには、記事リストの間に挿入されるもの、ネイティブ広告としての性質が強いものなどを中心にブロックしています。</sub>
-
-<sub>17: <strong>「uBlock Origin は、このページの読み込みをブロックしました」画面で右側の虫眼鏡アイコンをクリックすると、トラッキングパラメータを除いたURLが（場合によってはいくつか）表示され、そのままクリックできます。</strong>ただし、ブロックするとあまりに煩雑になる場合はブロックしません（例：記事の大部分にトラッキングパラメータを付与しているサイト、utm_sourceなど広範に使われるパラメータの一般ブロック）。これらも除去したい場合、専用のアドオンを使用してください。</sub>
 
 <sub>17: Yuki's uBlock Japanese filtersと比べてAdGuardで機能しないルールは減っています。uBlock Originでの使用を推奨しますが、このフィルタについてはAdGuardでの使用も今のところ許容範囲です。<strong>ただしAdGuard for Androidでご利用の場合、Sabre filters2などのサブフィルタを別途購読してください</strong>。AdGuardブラウザ拡張機能ではその必要はなさそうです。AdGuardコンテンツブロッカーでの使用はお勧めしません。</sub>
 

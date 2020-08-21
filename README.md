@@ -77,7 +77,7 @@ Removes some social elements such as share buttons mainly on Japanese sites. Som
 
 ### Yuki's uBlock Japanese filters - Annoyances
 
-Removes annoyances mainly on Japanese sites. Some rules are taken from or influenced by [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter), [Fanboy Annoyances](https://www.fanboy.co.nz/index.html), and [Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances).
+Removes annoyances mainly on Japanese sites. Some rules are taken from or influenced by [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances-filter), [Fanboy Annoyances](https://www.fanboy.co.nz/index.html), [uBlock filters – Annoyances](https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt), and [Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances).
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)

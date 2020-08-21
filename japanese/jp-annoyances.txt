@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-21
+! Last updated: 2020-08-22
 
 !#include blog-parts.txt
 !#include blog-parts-adult.txt
@@ -488,6 +488,8 @@ yahoo-mbga.jp###js-entry-fix
 yahoo.com###mega-banner-wrapper
 yandex.com##.zalogin-smart
 yoriso.com##.footer-cta
+youtube.com##body > .opened[opened][style^="z-index"]
+youtube.com##ytd-popup-container > .ytd-popup-container[role="dialog"]:has(a[href="https://support.google.com/youtube/?p=sign_in"])
 
 !#if !env_firefox
 gesoten.com###colorbox:has(#modal-game-recommend-pc)
