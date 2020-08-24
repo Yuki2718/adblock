@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-23
+! Last updated: 2020-08-24
 
 !#include blog-parts.txt
 !#include blog-parts-adult.txt
@@ -762,6 +762,7 @@ _rss1.$frame
 _rss2.$frame
 _rss3.$frame
 
+@@||rss.solty.biz^$script,3p,badfilter
 ||adult-rss.com^
 ||antennash.com^
 ||antennasync.me^
@@ -825,6 +826,9 @@ enoge.org###body-in-0
 ||fesoku.net/sozai/$frame
 fesoku.net###container > table:has(.toprss)
 fesoku.net##.titlehl
+||figsoku.net^*/figrss.$frame,1p
+figsoku.net###recentEntry, #relatedEntry + .entry_KIJI, .ama, .rssarea, script + .entry_KIJI
+figsoku.net##aside:style(height:auto !important)
 ||file.buhidoh.net/uploads/setting/$frame
 ||freshnews.blog.jp^$frame,1p
 ||g-n-ipponmichi.xxxblog.jp^$frame,1p
