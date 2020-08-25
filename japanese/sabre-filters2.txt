@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-23
+! Last updated: 2020-08-25
 
 ! Generic network rules
 /amp-user-notification-
@@ -111,6 +111,7 @@
 ||wolframcdn.com/consent/cookie-consent.
 accounts.crowdin.com##.cc-window
 accuweather.com##.privacy-policy-banner
+adsh.cc,linkdrop.net,shorten.sh,shrinkme.io###cookie-pop
 aiasahi.jp,japan.cnet.com,cnn.co.jp,japan.techrepublic.com,japan.zdnet.com###gdpr_area
 airvpn.org###cookieLaw
 alphacoders.com###cookie_consent
@@ -168,7 +169,6 @@ inoreader.com##.landing_promo_banner_top
 investors.com###investors-policy-terms-consent-dialog
 juken-mikata.net###cookieAlt
 latimes.com###ensNotifyBanner
-linkdrop.net,shorten.sh,shrinkme.io###cookie-pop
 lukia.seikowatches.com##.disclaimer
 m.phys.org,m.techxplore.com###modal-cookie
 malwaretips.com##.notice-content
@@ -235,7 +235,7 @@ www.nikkan.co.jp###c-modal
 www.nvidia.com###cookiePolicy-layer
 www.opera.com###cookie-consent
 www.perfect-privacy.com###cookiebar
-www.pixiv.net###root > div:has(a[href="/terms?page=privacy"])
+www.pixiv.net##a[href="/terms?page=privacy"]:upward(2)
 www.seikowatches.com##.blk-Disclaimer
 www.semanticscholar.org##.copyright-banner
 xhamster.*##.cookie-announce
