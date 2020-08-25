@@ -190,7 +190,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 ## 不具合、ブロック漏れの報告
 
-原則としてGithubのIssueを通してのみ受けつけます。報告前に一度、<strong>新しいブラウザプロファイルを作り、uBlock OriginをクリーンインストールしてYuki's uBlock Japanese filters (+ Paranoid/Social/Annoyances）のみを購読した状態で問題が再現できるか</strong>を確認してください。また、ネットワークの別の部分でブロックしていないか（例: AdGuard Home, 280blocker DNS）も確かめてください。テンプレートは用意していませんが、報告される方は、<strong>必ず以下の項目をすべて記入してください。</strong>海外サイトの不具合は、AdGuard Japaneseを除くuBlock Origin標準のフィルタ（+ 英語以外の場合、その言語の標準フィルタ）を併用しても再現する場合のみ対応いたします。
+原則としてGithubのIssueを通してのみ受けつけます。どうしてもアカウント作成が手間だという方用に[掲示板](https://jbbs.shitaraba.net/internet/25463/)も用意しましたが、報告基準はここと同じです。URLも環境も示さない報告は大きな負担となりますので、絶対にやめてください。報告前に一度、<strong>新しいブラウザプロファイルを作り、uBlock OriginをクリーンインストールしてYuki's uBlock Japanese filters (+ Paranoid/Social/Annoyances）のみを購読した状態で問題が再現できるか</strong>を確認してください。また、ネットワークの別の部分でブロックしていないか（例: AdGuard Home, 280blocker DNS）も確かめてください。テンプレートは用意していませんが、報告される方は、<strong>必ず以下の項目をすべて記入してください。</strong>海外サイトの不具合は、AdGuard Japaneseを除くuBlock Origin標準のフィルタ（+ 英語以外の場合、その言語の標準フィルタ）を併用しても再現する場合のみ対応いたします。
 
 1. 問題が起こるサイトの完全なURL（URLの前後に`をつけてください）: 検索エンジンの場合は検索語もお願いします。
 2. 現象の説明: 言葉による説明とスクリーンショットを両方含めてください。
