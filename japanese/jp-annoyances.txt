@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-26
+! Last updated: 2020-08-27
 
 !#include blog-parts.txt
 !#include blog-parts-adult.txt
@@ -140,6 +140,7 @@ m.youtube.com##ytm-item-section-renderer > lazy-list > .item:has(.watch-metadata
 ||jsdelivr.net/npm/micromodal/
 ||lb.benchmarkemail.com^
 ||ocnk-popup.net^$xhr
+||pop.unitedgate.co.jp^
 ||reproio.com^
 ||s3.amazonaws.com/downloads.mailchimp.com/
 
@@ -509,7 +510,7 @@ tamashii.jp##^.overlay
 !#if env_mobile
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
 m.youtube.com##.mealbar-promo-renderer
-mobile.twitter.com###layers div[dir=ltr] > span:has-text(Twitterアプリをおすすめ):upward(5)
+mobile.twitter.com##span:has-text(Twitterアプリをおすすめ):upward(5)
 pinterest.*##.Hsu.iyn.zI7.FNs
 qiita.com##.apm-Content, .is-open, [id^=logly-lift]
 quora.com##.q-box > div[class^="CssComponent-"][style*="height: 50px;"]
@@ -520,7 +521,7 @@ reddit.com##.XPromoInFeed, .xPromoChoiceBanner
 drive.google.com#?#a[data-target=clientDownload]:nth-ancestor(3)
 mail.google.com#?#span:contains(Gmail のデスクトップ通知):nth-ancestor(1)
 mobile.twitter.com#?#div[data-testid="sidebarColumn"] section[aria-label][role="region"]:nth-ancestor(1)
-mobile.twitter.com#?##layers div[dir=ltr] > span:contains(Twitterアプリをおすすめ):nth-ancestor(5)
+mobile.twitter.com#?#span:contains(Twitterアプリをおすすめ):nth-ancestor(5)
 outlook.live.com#?#button.ms-Link:contains(Edge):nth-ancestor(3)
 twitter.com#?#div[dir=auto] > span:contains(Twitterなら、「いま」):nth-ancestor(5)
 !#endif
