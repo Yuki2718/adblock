@@ -2,13 +2,13 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-25
+! Last updated: 2020-08-28
 
 ! Generic and semi-generic rules
 *##.adsbygoogle
 *##div[id^=div-gpt-ad]
 biomedcentral.com,nature.com,springer.com,springeropen.com,threatpost.com##.c-ad
-btimesonline.com,businessinsider.com,cnn.com,msn.com,statescoop.com,wired.com,wfaa.com,wral.com,www.iis.net,www.neowin.net##.ad
+btimesonline.com,businessinsider.com,cnn.com,msn.com,statescoop.com,webmd.com,wfaa.com,wired.com,wral.com,www.iis.net,www.neowin.net##.ad
 
 ! Specific rules
 9to5google.com,9to5mac.com,9to5toys.com,electrek.co,dronedj.com##.ad-container, .adsense
@@ -70,6 +70,13 @@ onlinelibrary.wiley.com##.pb-ad
 osdn.net###ad-leaderboard
 people.com##.ad-title, .desktop-ad
 phys.org##.embed-responsive
+pixiv.net###root > div > div > div:has(iframe[name="footer"]):not(:has(img))
+pixiv.net##.ad-footer
+pixiv.net##.ui-layout-west > .area_new:has(#ads-illust_manage_rectangle)
+pixiv.net##div[class^=sc-]:has(> div[style] > iframe[width="728"][height="90"])
+pixiv.net##div[span="1"]:has(> div > div > iframe[name=dashboard_home])
+pixiv.net##li:has(> iframe[name=infeed])
+pixiv.net##li[size]:has(> div > iframe[name=topbranding_rectangle])
 raymond.cc###snhb-incontent_2-0, #snhb-sidebar_3-0, .adslot_1
 redtube.com##.adsbytrafficjunky
 researchgate.net##.is-sticky:style(top:0 !important)

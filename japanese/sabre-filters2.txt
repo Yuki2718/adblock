@@ -2,9 +2,10 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-08-27
+! Last updated: 2020-08-28
 
 ! Generic network rules
+/CookieInfo.
 /amp-user-notification-
 /cc-cookie-consent/*
 /cookie-bar/*
@@ -51,13 +52,18 @@
 ||jsdelivr.net/npm/cookieconsent
 
 ! Generic cosmetic rules
-###cc-cookie-law
 ###cookie-notice
-###gdpr-banner
 ##.popup_confirmation_bar
 ##.widget_eu_cookie_law_widget
+
+!#if !ext_ublock
+###cc-cookie-law
+###gdpr-banner
+!#endif
+!#if ext_ublock
 *###cc-cookie-law
 *###gdpr-banner
+!#endif
 
 ! Rules for individual sites
 -cookie-law-popup.$domain=waaw.tv
