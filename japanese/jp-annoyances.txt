@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-09-02
+! Last updated: 2020-09-03
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -142,6 +142,7 @@ m.youtube.com##ytm-item-section-renderer > lazy-list > .item:has(.watch-metadata
 ||go.pardot.com^$frame,3p
 ||hsleadflows.net^$3p
 ||jsdelivr.net/npm/micromodal/
+||jspop.s3-website-ap-northeast-1.amazonaws.com/pu.js
 ||lb.benchmarkemail.com^
 ||ocnk-popup.net^$xhr
 ||pop.unitedgate.co.jp^
@@ -260,6 +261,8 @@ tenshoku.mynavi.jp##.fixedEntryBtn
 www.logicool.co.jp###wrapper
 ||marketing-campus.jp/script/mailbnr.
 ||mens-qzin.jp/assets/*/common/footer/link-$image,1p
+||mikihouse.jp/layout/ciao/assets/ciao/img/common/popup_min/
+mikihouse.jp###popupWrap
 ||minglass.jp/images/scroll/
 ||minglass.jp/images/scroll_layer/
 minglass.jp##.scroll-flow
@@ -783,7 +786,7 @@ _rss3.$frame
 ||antennasync.me^
 ||blogroll.livedoor.net^
 ||chatbot.ds-ai.net^
-||feed.mikle.com^$domain=blog.livedoor.jp|gadgetlife2ch.blomaga.jp|gtoys.blog48.fc2.com|h1g.jp|hdouga.com|ibarakinews.jp|obutu.com|xn--bckadddb2a0d4dnc8dwhngdtb58aya0l4a2om843g5npczp7dwh5g.com|xn--cckea5a6cidcbh6ce7ghug17a2ge3aht3nwigef51658aw7kd.com
+||feed.mikle.com^$domain=blog.livedoor.jp|fate-rpg.jp|gadgetlife2ch.blomaga.jp|gtoys.blog48.fc2.com|h1g.jp|hdouga.com|ibarakinews.jp|obutu.com|xn--bckadddb2a0d4dnc8dwhngdtb58aya0l4a2om843g5npczp7dwh5g.com|xn--cckea5a6cidcbh6ce7ghug17a2ge3aht3nwigef51658aw7kd.com
 ||feed.mobeek.net^
 ||feedburner.com^$image,3p
 ||fukugan.com^$3p
@@ -836,6 +839,8 @@ aqua2ch.net##.menu_outline3, .menu_title3
 enoge.org###body-in-0
 ||erry.one/video$script,3p
 ||ertk.net/imgs/feed/
+||fate-rpg.jp/img/rss_
+fate-rpg.jp##.rss-box
 ||fc2.com/b/a/n/bandai11/$frame,domain=bandai11.blog.fc2.com
 ||fc2.com/erodoujininfo/$frame,domain=erodoujinjohoukan.com
 ||fc2.com/n/a/n/nantuka/$frame,domain=nantuka.blog119.fc2.com
@@ -914,7 +919,7 @@ okkisokuho.com##[class^=syokai]
 ##[class^=blogroll_wrapper]
 ##[id^=ldblog_related_articles_]
 1000mg.jp,mylife.2chblog.jp,travel2ch.com##[class$=rss]
-2chmatome.bloggeek.jp,addchannel.net,dechisoku.com,gensen2ch.com,heartlife-matome.com,honsoku.com,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,matmebae.net,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-short.net,nanj-world.blog.jp,orufemorufenz.com,oumaga-times.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,ronsoku.com,shumi-nikki.xyz##.rss-blogroll
+2chmatome.bloggeek.jp,addchannel.net,dechisoku.com,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,gensen2ch.com,heartlife-matome.com,honsoku.com,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,matmebae.net,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-short.net,nanj-world.blog.jp,orufemorufenz.com,oumaga-times.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,ronsoku.com,shumi-nikki.xyz##.rss-blogroll
 aatyu.livedoor.blog##.logbox
 absurd.blogo.jp##.headlinerss
 addchannel.net##.Header__contentsParts
@@ -939,6 +944,7 @@ doujin-eromanga.com##.rss_box
 doujinzone.com##.blogroll
 eromangacafe.com##.loop-single-widget
 f1jouhou2.blog.fc2.com##.more_link > .p3-box, .rankings, .top-rss-under
+fate-grandorder-go.blog.jp##.rss-blogroll2
 fesoku.net###right, #touter, .cls, .plugin-recent_comments
 ffnews2016matome.blog.fc2.com##.plugin1_outline:has(.plugin-blogranking)
 flashff-blog.com##.rsswaku
@@ -1286,3 +1292,6 @@ nytimes.com##+js(set, navigator.storage.estimate, undefined)
 ampmedia.jp##^.yarpp-related
 nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 !#endif
+
+! Exception
+@@||popin.cc/searchbox/action_$script,3p
