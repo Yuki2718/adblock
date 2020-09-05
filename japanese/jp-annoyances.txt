@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-09-04
+! Last updated: 2020-09-05
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -240,6 +240,8 @@ l-tike.com###popup
 ||inbound-pro.com/assets/toastr-
 ||industrial.panasonic.com/content/data/common/ss-files/banner-
 industrial.panasonic.com##.fix-menu.banner
+||jsco-cpg.jp/enqueteform/
+jsco-cpg.jp##.popmake-overlay
 ||kaitoricollector.com/devlop/wp-content/themes/nhc001/common/images/top/footer_
 kaitoricollector.com##.footer_contact
 ||knowledgewing.com/kw/blog/img/bnr_mm.
@@ -351,7 +353,7 @@ blog.codecamp.jp##.l-recommendFooter
 books.rakuten.co.jp###js-rMessageFloating
 bsearchtech.com##.model_wrap_border
 business.nikkei.com###slideIn
-cbn.co.jp,ryu-blo.jp,us-lighthouse.com##.afc_popup
+cbn.co.jp,ryu-blo.jp,sanei-ad.jp,us-lighthouse.com##.afc_popup
 cbnews.jp###kp-survey-modal, #kp-survey-modal-overlay
 city.living.jp###area-select
 cnn.com##.sibling
@@ -519,7 +521,7 @@ tamashii.jp##^.overlay
 !#if env_mobile
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
 m.youtube.com##.mealbar-promo-renderer
-mobile.twitter.com##span:has-text(Twitterアプリをおすすめ):upward(5)
+mobile.twitter.com##span:has-text(/better on the app|Twitterアプリをおすすめ/):upward(5)
 pinterest.*##.Hsu.iyn.zI7.FNs
 qiita.com##.apm-Content, .is-open, [id^=logly-lift]
 quora.com##.q-box > div[class^="CssComponent-"][style*="height: 50px;"]
@@ -530,7 +532,7 @@ reddit.com##.XPromoInFeed, .xPromoChoiceBanner
 drive.google.com#?#a[data-target=clientDownload]:nth-ancestor(3)
 mail.google.com#?#span:contains(Gmail のデスクトップ通知):nth-ancestor(1)
 mobile.twitter.com#?#div[data-testid="sidebarColumn"] section[aria-label][role="region"]:nth-ancestor(1)
-mobile.twitter.com#?#span:contains(Twitterアプリをおすすめ):nth-ancestor(5)
+mobile.twitter.com#?#span:contains(/better on the app|Twitterアプリをおすすめ/):nth-ancestor(5)
 outlook.live.com#?#button.ms-Link:contains(Edge):nth-ancestor(3)
 twitter.com#?#div[dir=auto] > span:contains(Twitterなら、「いま」):nth-ancestor(5)
 !#endif
@@ -960,6 +962,11 @@ himanatokiniyaruo.com###main > .plugin-title
 himanatokiniyaruo.com###plugin1
 himasoku.com##.himajin-headline
 i2chmeijin.blog.fc2.com##.rssBox
+idol-blog.com###content:style(margin-top:80px !important)
+idol-blog.com###nav2:style(top:210px; !important)
+idol-blog.com##.box2:has(img[src$="/title_new_ichioshi.png"])
+idol-blog.com##.rssbox02
+idol-blog.com##ul > .sidebartitle:has(img[alt=オススメサイト])
 ikuji-news.com,kekkonch.com,kichimama.com,kijobibouroku.com,kijojikenbo.com###ifram
 iqoo.me,nukistream.com##.update_list
 jin115.com###other_news_website
@@ -1000,6 +1007,7 @@ momoniji.com###content-top-in > .widget-content-top:first-child
 mudainodocument.com##.menu_cont3, .menu_title3
 rabitsokuhou.2chblog.jp,yamakamu.com###rss
 rangeriishoppingu.blog.fc2.com##.plugin_right:has(script):not(:has(iframe)):not(:has(.plugin-myimage))
+russianbeauties.jp##+js(aopr, document.write)
 scienceplus2ch.com###rss-roll-01
 shiropro.net##.Article > .Module__heading
 sshouko.net##blockquote

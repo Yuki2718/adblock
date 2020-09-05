@@ -219,11 +219,11 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 <details>
 <summary>註</summary>
-<sub>1: Nano Adblockerでもご利用いただけますが、当フィルタでuBlock Originの最新機能を利用した場合、一時的にその機能が利用できない可能性があります。Nanoの本質的な違いは、専用のスクリプトレットによりある種の迷惑要素に対処できるという点です。よくいわれるアンチ広告ブロックについては、差がありません。</sub>
+<sub>1: Nano Adblockerでもご利用いただけますが、当フィルタでuBlock Originの最新機能を利用した場合、一時的にその機能が利用できない可能性があります。Nanoの本質的な違いは、専用のスクリプトレットによりある種の迷惑要素に対処できるという点です。アンチ広告ブロックについては、Nano Defenderも不要です。強いて言えばuBlock OriginではuBlock filters - Annoyancesの購読が必要な「控えめな」アンチブロック（×ボタンで消せるか、コンテンツを妨害しないもの）が、Nanoではデフォルトでブロックされているくらいの違いです。ただ、Quick reporterはフィルタ作者としてありがたい機能なのですが。</sub>
 
 <sub>2: AdGuardで使用する場合、最大の問題はspecific-genericとdenyallowでしょう。とくに後者は大幅な書き直しが必要です。PCでAdGuardをご利用の場合、もちフィルタを使用するか、あるいは海外サイトも閲覧するのであればAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。豆腐フィルタはAdGuardで機能しないルールが増えてきたため、お勧めできません。</sub>
 
-<sub>3: AdGuardならスクリプトレットに互換性があるので許容範囲です。</sub>
+<sub>3: AdGuardならスクリプトレットに互換性があるので許容範囲です。困ったことに、IT関係者の方でAdBlockやAdblock Plusを勧められる方がおられます。これらでも大体の広告は消えますが、フィルタ設定の如何にかかわらず不具合や広告漏れの確率が格段に高まります。</sub>
 
 <sub>4: 主に処理負荷の高いprocedural cosmetic filtersとspecific-genericの組合せによるものですが、よほどの低スペック端末でない限り体感に影響するほどではないと思います（[参考1](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters) [参考2](https://github.com/uBlockOrigin/uBlock-issues/issues/803#issuecomment-586712831)）。
 </sub>
