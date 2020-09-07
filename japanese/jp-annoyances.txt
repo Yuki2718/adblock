@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-09-07
+! Last updated: 2020-09-08
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -81,6 +81,7 @@ games.yahoo-net.jp###yse-footer-btn
 ||script1.kakaku.k-img.com/script/push.
 ||shikiho.jp/notice/
 ||shukatsu-mirai.com/notifications.
+||ticker.teacup.com/rss2/
 ||tinami.com/js/jquery/tipsy/notify.
 ||townwork.net/js/register_sw.js
 ||tr.twipple.jp/common/js/webpush_
@@ -496,6 +497,7 @@ www.sejuku.net###ft-banner
 www.techinasia.com###email-signup-reminder, #paywall-reminder
 www.ted.com###activity-feed
 www.yahoo.co.jp###Perorin
+www.zurich.co.jp###fixed-popup-cta, #floatnav
 y2mate.com##.is-rolledUp
 yahoo-mbga.jp###js-entry-fix
 yahoo.com###mega-banner-wrapper
@@ -745,9 +747,11 @@ instagram.com##.xZ2Xk:has-text(/App/)
 ! ---------- Feed & Widgets ----------
 -rss.html|
 -rss2.html|
+/headline.htm|
 /headline.html|
 /headline1.htm|
 /headline2.htm|
+/headline3.htm|
 /inlink_main12.js|
 /inlink_mainlast.js|
 /kijinaka.js|$script
@@ -788,7 +792,7 @@ _rss3.$frame
 ||antennasync.me^
 ||blogroll.livedoor.net^
 ||chatbot.ds-ai.net^
-||feed.mikle.com^$domain=blog.livedoor.jp|fate-rpg.jp|gadgetlife2ch.blomaga.jp|gtoys.blog48.fc2.com|h1g.jp|hdouga.com|ibarakinews.jp|obutu.com|xn--bckadddb2a0d4dnc8dwhngdtb58aya0l4a2om843g5npczp7dwh5g.com|xn--cckea5a6cidcbh6ce7ghug17a2ge3aht3nwigef51658aw7kd.com
+||feed.mikle.com^$domain=blog.livedoor.jp|crx7601.com|fate-rpg.jp|gadgetlife2ch.blomaga.jp|gtoys.blog48.fc2.com|h1g.jp|hdouga.com|ibarakinews.jp|obutu.com|xn--bckadddb2a0d4dnc8dwhngdtb58aya0l4a2om843g5npczp7dwh5g.com|xn--cckea5a6cidcbh6ce7ghug17a2ge3aht3nwigef51658aw7kd.com
 ||feed.mobeek.net^
 ||feedburner.com^$image,3p
 ||fukugan.com^$3p
@@ -808,6 +812,10 @@ _rss3.$frame
 ||2ch-matomenews.com/*headline|$frame
 ||2ch-matomenews.com/headermenurss$frame
 2ch-matomenews.com##.bottom_matomeRss, .postTopRss
+||2ch-matomenews.com^*_linkimages/$image,1p
+2ch-matomenews.com###container > div[style] > div[style^="width:1280px; height:474px;"], #sidebar > div[style]:first-child, #the-content > #Comment_multiple-slide-container, .UnderCommentRss, .bottom_antenaRss, .postUnderRss, .rightside_fixed_title:first-child, .rightside_fixed_title:first-child + .Rss_rightsideBottom, .rss_menu
+||2chmeshi.net^$frame,1p
+2chmeshi.net###custom_html-2
 ||aaieba.livedoor.biz/*.html|$frame
 aaieba.livedoor.biz###container > div:first-child
 aaieba.livedoor.biz##.aaieba-a, .aaieba-b
@@ -841,6 +849,8 @@ aqua2ch.net##.menu_outline3, .menu_title3
 enoge.org###body-in-0
 ||erry.one/video$script,3p
 ||ertk.net/imgs/feed/
+||exawarosu.net^$frame,1p
+exawarosu.net##.img-links, .l-popular-bottom, .l-rss-top
 ||fate-rpg.jp/img/rss_
 fate-rpg.jp##.rss-box
 ||fc2.com/b/a/n/bandai11/$frame,domain=bandai11.blog.fc2.com
@@ -871,13 +881,18 @@ hdouga.com##.content_title:has-text(/RSS|PICK/)
 ||joqr.co.jp/modalbanner/
 ||joqr.co.jp/top/common/img/radiko_btn_
 ||kijorabu.com/js/headerlink.
+||kijyomita.com/js/link.
+||kijyomita.com/js/link2.
+kijyomita.com##.plugin-memo:first-child
 ||kininatta2chmatome.doorblog.jp^$frame,1p
+||kitizawa.com/js/kitizawa_link
 ||kotaro269.com^$frame,1p
 ||lhscans.blogspot.com/feeds/
 ||link.idol-blog.com^$frame,1p
-||livedoor.jp/karukan123/rss1vip.html|$domain=karukantimes.com
 idol-blog.com###leftcol > ul > .post-list + li, #leftcol div[style^="width:205px;"], #rightcol
+||livedoor.jp/karukan123/rss1vip.html|$domain=karukantimes.com
 ||manga-mill.com/blog/feed/
+||mashlife.doorblog.jp^$frame,1p
 ||matacoco.com/javascript/feed.
 ||matacoco.com/javascript/ticker.
 matacoco.com##.blog-rss
@@ -901,6 +916,8 @@ okkisokuho.com##[class^=syokai]
 ||oumaga-times.com/link-kiji.js
 ||oumaga-times.com/middle-link.js
 ||parusoku.com$frame,1p
+||pict-navi.net/img/title_lovegala.
+idol-blog.com##.box2:has(img[src$="/title_lovegala.png"]) + .post
 ||rastaneko-blog.com/wp-content/themes/catseye/js/feed.
 ||seesaa.net/common/kiji*$script,domain=beasoku.com|scienceplus2ch.com
 ||seesaa.net/common/pick_feed.$domain=mindhack2ch.com
@@ -916,13 +933,17 @@ okkisokuho.com##[class^=syokai]
 ||vipsister23.com^$frame,1p
 ||zsaz.blog.jp^$frame,1p
 
+##.plugin-popular_articles
 ##.plugin-popular_articles_with_image
 ##.plugin-recent_comments
+##.plugin-rss
 ##[class^=blogroll-wrapper]
 ##[class^=blogroll_wrapper]
 ##[id^=ldblog_related_articles_]
 1000mg.jp,mylife.2chblog.jp,travel2ch.com##[class$=rss]
-2chmatome.bloggeek.jp,addchannel.net,dechisoku.com,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,gensen2ch.com,heartlife-matome.com,honsoku.com,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,labradorsokuho.net,matmebae.net,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-short.net,nanj-world.blog.jp,orufemorufenz.com,oumaga-times.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,ronsoku.com,shumi-nikki.xyz##.rss-blogroll
+2ch-matomenews.com##.switch
+2chmatome.bloggeek.jp,addchannel.net,dechisoku.com,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,gensen2ch.com,heartlife-matome.com,honsoku.com,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,labradorsokuho.net,mashlife.doorblog.jp,matmebae.net,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-short.net,nanj-world.blog.jp,orufemorufenz.com,oumaga-times.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,ronsoku.com,shumi-nikki.xyz##.rss-blogroll
+2chmeshi.net##div[id^=diver_widget_pcsp-2]
 aatyu.livedoor.blog##.logbox
 absurd.blogo.jp##.headlinerss
 addchannel.net##.Header__contentsParts
@@ -932,13 +953,17 @@ aqua2ch.net,blogo.jp,fesoku.net,ldblog.jp,livedoor.biz##.related-articles
 ashi-fechi.com###main > .widget:has(.immoral_parts)
 beasoku.com##.code-block
 beasoku.com##.custom-html-widget:has(.l-rss-header)
-bigbangchannel.net,matometre.net,majimanjisokuhou.com,nanj-hero.com,paripinews.net,yabatanichannel.net###RSS001
+bigbangchannel.net,blog.livedoor.jp,matometre.net,majimanjisokuhou.com,nanj-hero.com,paripinews.net,yabatanichannel.net###RSS001
 blog.esuteru.com##.siteAside
-blog.esuteru.com,ertk.net,exawarosu.net,giantskyojin2chmatome.blog.jp,kijyomatome.com,kuzu-soku.com,oniyomech.livedoor.biz,otakomu.jp,vip.blomaga.jp##.rss
+blog.esuteru.com,ertk.net,exawarosu.net,giantskyojin2chmatome.blog.jp,kijyomatome.com,kijyomita.com,kuzu-soku.com,oniyomech.livedoor.biz,otakomu.jp,vip.blomaga.jp##.rss
 college2ch.blomaga.jp,f1jouhou2.blog.fc2.com,hosyusokuhou.jp,jpsoku.blog.jp,kanasoku.info,lifehack2ch.livedoor.biz,news4vip.livedoor.biz,openworldnews.net,ryusoku.com###headline
-blog.livedoor.jp###footline, #hokanokiji, #kijisaikabu, .headrss, .naka_rss, .plugin-popular_articles_with_image, [class^=footrss], [class^=shitarss_], [id^=shitarss_title_]
+blog.livedoor.jp###footline, #hokanokiji, #kijisaikabu, .headrss, .linkh, .naka_rss, .rtcm, [class^=footrss], [class^=shitarss_], [id^=shitarss_title_]
 blog.livedoor.jp###articles-outer > .top-right:style(margin-top:0 !important)
 blog.livedoor.jp###blog-body-outer > #left-t:style(margin-top:0 !important)
+blog.livedoor.jp###hdline, #main > .h2-sub, #tab-wp, .rss-sub, .side-tp, section.clearfix > .h2-sub
+blog.livedoor.jp###main.column > #headline
+blog.livedoor.jp###single-footer-buzz, #single-rss-01
+blog.livedoor.jp##.column-inner-2 > .headline
 blog.livedoor.jp##.column-inner-2 > table[summary="<%blog_name>"][width="728"]
 blog.livedoor.jp##.rsslist
 blog.livedoor.jp##div[class^=toprss]
@@ -946,6 +971,7 @@ chansoku.com###blogroll-rss
 doujin-eromanga.com##.rss_box
 doujinzone.com##.blogroll
 eromangacafe.com##.loop-single-widget
+ertk.net###widgetFix-left, .widget-rightTopad
 f1jouhou2.blog.fc2.com##.more_link > .p3-box, .rankings, .top-rss-under
 fate-grandorder-go.blog.jp##.rss-blogroll2
 fesoku.net###right, #touter, .cls, .plugin-recent_comments
@@ -954,6 +980,7 @@ flashff-blog.com##.rsswaku
 game-tm.com##.section:has(.textBody2)
 gamedaradara.doorblog.jp,keyaki.tech##[id$=rss]
 ge-mag.net##.rss-feed
+geinoukame.blog.fc2.com###main_body > div[style^="width:100%;height:400px;"], .article > script + hr, table[summary=contents] td[style] div[style^="border-style: solid ;"]
 gossip1.net##.rss_wrapper
 gtoys.blog48.fc2.com###outline > table
 h-ken.net##.mainColumn > div > .sidebarList, .mainColumn > div > p.midashiPink
@@ -963,12 +990,13 @@ himanatokiniyaruo.com###main > .plugin-title
 himanatokiniyaruo.com###plugin1
 himasoku.com##.himajin-headline
 i2chmeijin.blog.fc2.com##.rssBox
+idol-blog.com###maincol > .box[style="padding-left:25px;"], #nav2, .rssbox02
 idol-blog.com###content:style(margin-top:80px !important)
-idol-blog.com###nav2:style(top:210px; !important)
 idol-blog.com##.box2:has(img[src$="/title_new_ichioshi.png"])
-idol-blog.com##.rssbox02
 idol-blog.com##ul > .sidebartitle:has(img[alt=オススメサイト])
 ikuji-news.com,kekkonch.com,kichimama.com,kijobibouroku.com,kijojikenbo.com###ifram
+insyoku.livedoor.biz##.plugin-memo
+inutomo11.com###more > b, .article-body-inner > div[style^="background-color: white;"]
 iqoo.me,nukistream.com##.update_list
 jin115.com###other_news_website
 jishin-yogen.com##.entry_text > .pickup, .kiji_rss, .rss_body02
@@ -976,17 +1004,27 @@ jishin-yogen.com##.kanren:has(script) > .pickup
 kanasoku.info###headrank2:has-text(/Pickup|オススメ/)
 kanasoku.info##.cent_top, .headline_middle
 kandatasokuho.blog.fc2.com###center > .page_navi, div[style$="background-color: lavender;"]
+kazokuchannel.doorblog.jp###more > ol, #more > span[style^="font-size: medium"], #more > ul, .first-article > font[size="5"], .plugin-memo:first-child, .plugin-memo:last-child
+kichimama.com##.ifram, .pickup
 kijobibouroku.com,kijojikenbo.com##.chumoku
+kitizawa.com##.article-body-more > div[style^="border:1px solid"]
+kitizawa.com,syurabahazard.com##.plugin-memo:has(script[src$="/blogroll.js"])
 kokopyon.net##.osusume:first-of-type
 kosodatech.blog133.fc2.com,repsoku.net##.headline
 kotaro269.com###content-top-news
+kyuukaiou.ldblog.jp###urss, #urssbox, .plugin-memo, .rssbox
 magsoku.blomaga.jp###comrss, #pick3
 magsoku.blomaga.jp##.msen:has-text(NEWS 3)
 mamekichimameko.blog.jp##.particlesArea
+mashlife.doorblog.jp##.first-article > b
 matmebae.net,nanj-short.net##.article__footer > .module__heading
+matome-tarou.ldblog.jp###j_rss
+matome-tarou.ldblog.jp##.plugin-memo:has(iframe[src$="_rss.html"])
+matometanews.com###container > div[style^="width:1218px; "]
 matometanews.com##.related-articles
 mindhack2ch.com##.article-rss, .article__footer > .section-title, .blogroll-channel-wrapper
 mindhack2ch.com,pokemon-goh.doorblog.jp##.rss-blogroll4
+moeruasia.net###middlerss
 mudasure.com##.entry-body > b:has-text(新着記事)
 mudasure.com##.footerrss
 mudasure.com,nadarenews.com##.blogroll-top
@@ -995,8 +1033,12 @@ nantuka.blog119.fc2.com###header > center, font > center
 newresu1.blog.fc2.com###blogroll
 news4wide.net##.box-antenna
 nofootynolife.blog.fc2.com##.blogroll_content2
+oniyomediary.com###footer-rss
+openworldnews.net##.t_b:has(a[onclick])
+openworldnews.net##.t_h[style]
 oumaga-times.com##.popular-list
 papipu2ch.blomaga.jp###RssBlogroll
+pokemon-goh.doorblog.jp##.plugin-memo:has(script)
 pokemon-matome.net###content11, #wrap-main:style(padding-top:0 !important)
 pokemon-matome.net###header_rssbox, .basehtml3, .basehtml8, .basehtml_side, .bbslink2, .inner
 pokemon-matome.net##.comment11 > h4:has-text(今)
@@ -1026,13 +1068,25 @@ yaruonichijou.blog.fc2.com##.plugin2_outline:has(script[src^="https://blogroll."
 yaruonichijou.blog.fc2.com##.plugin3_outline:has(script[src^="https://blogroll."])
 
 !#if !env_firefox
+crx7601.com##.plugin-memo:has(.onmouse)
 ||hdouga.com/dmmprshia*$image,domain=hdouga.com
 hdouga.com##.feed, .headline, .pic_link_box
+mashlife.doorblog.jp###gad-fixed-extra, #gad-fixed-sub, .koteigazo1
+mashlife.doorblog.jp##.plugin-memo:has(.koteigazoleft)
+moeruasia.net##.sidewrapper:has(.pickupbox)
+po-kaki-to.com##.top-site-andander
+pokemon-goh.doorblog.jp##.plugin-memo:has(a[title=imgres])
 punyu.com##.tblmain[cellspacing="2"][cellpadding="0"]
 !#endif
 
 !#if env_firefox
+crx7601.com##^.plugin-memo:has(.onmouse)
 hdouga.com##^.feed, .headline, .pic_link_box
+mashlife.doorblog.jp##^#gad-fixed-extra, #gad-fixed-sub, .koteigazo1
+mashlife.doorblog.jp##^.plugin-memo:has(.koteigazoleft)
+moeruasia.net##^.sidewrapper:has(.pickupbox)
+po-kaki-to.com##^.top-site-andander
+pokemon-goh.doorblog.jp##^.plugin-memo:has(a[title=imgres])
 punyu.com##^.tblmain[cellspacing="2"][cellpadding="0"]
 !#endif
 
