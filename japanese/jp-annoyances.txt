@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-09-12
+! Last updated: 2020-09-14
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -25,6 +25,7 @@ games.yahoo-net.jp###yse-footer-btn
 /plugins/wp-notification-bars/*
 /plugins/wpfront-notification-bar/*
 /push-notifications/*
+/push_app.js
 /push_notification.
 /pushes/notification.
 /pushnotification.
@@ -56,6 +57,7 @@ games.yahoo-net.jp###yse-footer-btn
 ||subscribers.com^$3p
 ||urbanairship.com^$3p
 ||webpush.jp^$3p
+||webpushr.com^$3p
 
 ||3ple.jp/js/notification.
 ||4travel.jp/ssl_api/user/notifications
@@ -66,7 +68,6 @@ games.yahoo-net.jp###yse-footer-btn
 ||eximg.jp/exblog/user2/js/exblog-push.
 ||fspark-ap.com/js/sw.js
 ||fileone.tv/js/notify.
-||forbesjapan.com/push_app.
 ||glassdoor.com/getSiteNotificationsAjax.
 ||i.imgur.com/E166mgm.
 imgur.com##.Transformation-tooltip--hovering
@@ -214,7 +215,8 @@ finnishdesignshop.com##body.modal-open:style(overflow:auto !important)
 hanesbrandsinc.jp,suntory-kenko.com###flipdesk-trigger
 ! potentially useful
 !cuoca.com,ionic.co.jp,my-nature.jp,tomiz.com###flipdesk-trigger
-||forbesjapan.media/public/user/gb/
+||forbesjapan.media/goodbye_banners/
+forbesjapan.com###boxer-overlay, .pop2
 ||foreignaffairs.com^*/newsletter-overlay$image
 foreignaffairs.com##.newsletter-backdrop
 foreignaffairs.com##body.no-scroll:style(overflow:auto !important)
@@ -389,10 +391,10 @@ fantia.jp##.popup-bar
 faq.support.biglobe.ne.jp###suMiniEnqueteWrapper
 findpro.jp###js-stickyFooter
 finnishdesignshop.com,hoihoi.whotwi.com,kadoebi.co.jp,lec.medilink-study.com,rebates.jp,service-safari.com##.modal-backdrop
-forbesjapan.com###boxer-overlay, .pop2
 froggy.smbcnikko.co.jp##.floatingBanner
 fuzoku.sod.co.jp##.top_webyoyaku
 galleria.emotionflow.com,tegaki.pipa.jp###AboutFrame
+gazoo.com##.footer-floatbanner-area
 goukashugi.jp###c-modal_bg
 h-navi.jp###ModalContent, #ModalOverlay
 hikkoshi-sakai.co.jp##.fixed.fix-info
@@ -600,6 +602,7 @@ dayout.today##.get_app_container
 ||delishkitchen.tv/s/images/footer/google_
 ||dietclub.jp/images/apps-
 ||durasite.net/images/netkeiba/*banner01.$domain=netkeiba.com
+||e-nenpi.com/common/images/banner/sp_app_
 ||ehime-np.co.jp/media/images/bnr/egao_apri_bnr_
 ||ehime-np.co.jp/media/images/img/ftr-app_
 ehime-np.co.jp##.ftr-app_box
@@ -1036,6 +1039,7 @@ kijonikki.net###rss2
 kitizawa.com##.article-body-more > div[style^="border:1px solid"]
 kitizawa.com,syurabahazard.com##.plugin-memo:has(script[src$="/blogroll.js"])
 kojikisokuhou.com##.headline, .main > .post
+kijonotakuhaibin.com##.plugin-memo:has(#nyuuresu)
 kokopyon.net##.osusume:first-of-type
 kosodatech.blog133.fc2.com,repsoku.net##.headline
 kotaro269.com###content-top-news
@@ -1237,6 +1241,7 @@ assion.co.jp###sidebar > .affix
 bamp.media##.mailMagazine
 bunshun.jp##.mail-mag
 cinci.jp###mc_embed_signup
+gazoo.com##.mailmag_link
 globe.asahi.com##.module-article-mailmag
 hivelocity.co.jp##.hvc-information
 jafmate.jp##.go_mailmagazine
@@ -1277,6 +1282,7 @@ zdnet.com##div[data-component="newsletterWidget"]
 ||gravityrd-services.com^$3p
 ||i.popincdn.com^
 ||linkwithin.com^$3p
+||recommend.tws.toyota.jp^
 ||recommendations.data.tm-awx.com^
 ||snva.jp^
 ||surveymonkey.com^$script,3p,domain=~surverymonkey.co.uk|~surveymonkey.co.uk|~surveymonkey.de
