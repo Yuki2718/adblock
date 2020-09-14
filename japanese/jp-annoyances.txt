@@ -110,6 +110,7 @@ news.yahoo.co.jp##li.newsFeed_item > div:has-text(あなたの興味や関心)
 translate.google.co.jp,translate.google.com##.tlid-notification-container
 w3q.jp###news-ticker-wrapper
 www.nicovideo.jp##.MylistContainer-premiumBanner
+www.sony.jp##.s5-frontLogin__notificationItem--favorite
 youtube-nocookie.com,youtube.com###movie_player > .ytp-ce-bottom-right-quad
 youtube-nocookie.com,youtube.com##.annotation.iv-branding
 youtube-nocookie.com,youtube.com##.ytp-cards-teaser
@@ -168,8 +169,6 @@ naturum.co.jp###js-popup
 ||a-port.asahi.com/top/image/new-start-btn.
 ||acecook.co.jp/brand/mocchicchi/images/bt_top_
 www.acecook.co.jp###Content > article:has(a[href^="/campaign"])
-||aixifan.com/acfun-pc/*/img/acimg.
-www.acfun.cn##.app-guide
 ||akamaized.net/campaign/member/*/modal_$domain=buyma.com
 buyma.com##.fab-cp-overlay
 ||akamaized.net/img/dpoint/pc/follow_btn_$domain=shift.games
@@ -762,6 +761,8 @@ instagram.com##.xZ2Xk:has-text(/App/)
 -rss2.html|
 /TOPRSS.html|
 /TOPRSS3.html|
+/anntena.html|
+/antena_$frame
 /bottomrss3.html|
 /headline.htm|
 /headline.html|
@@ -795,10 +796,10 @@ instagram.com##.xZ2Xk:has-text(/App/)
 /rss6.html|
 /rssa.html|
 /rsstop2.html|
-/top-rss.html|
 /top-rssnews1.html|
 /widget_momu.html|
 /wp-content/plugins/tab-slide/*
+_anntena.html|
 _rss.html|
 _rss01.html|
 _rss02.html|
@@ -870,10 +871,16 @@ aqua2ch.net##.menu_outline3, .menu_title3
 ||comusume.net/den.html|
 ||digital-thread.com^$frame,1p
 ||dosv.jp/common/js/feeds.
+||dougle.one/outlink/
+dougle.one##.ad-box
+||dougle.one^$image,3p
 ||ds-ai.net/zxiywu/webroot/widgets/
 ||eegg.fun/rssline*$frame,1p
 ||enoge.org/js/blogroll_
 enoge.org###body-in-0
+||eromanganomori.com/pick/
+||eromangram.com/link/
+eromangram.com##.pc_area.link
 ||erry.one/video$script,3p
 ||ertk.net/imgs/feed/
 ||exawarosu.net^$frame,1p
@@ -898,6 +905,10 @@ figsoku.net##aside:style(height:auto !important)
 ||hdouga.com/dmmprshia*$image,1p
 hdouga.com##.content_title:has-text(/RSS|PICK/)
 ||himasoku.com^$frame,1p
+||hime-book.net/html/$frame,1p
+||himebook.net/pickup/
+hime-book.net##.contents_bottom_pickup, .contents_pikcup_label, .header_big_pickup
+hime-book.net##.single_block_label:has-text(ピックアップ)
 ||ikinuki2ch.blog.jp^$frame,1p
 ||imgs.a.la9.jp/up3-html/
 ||inutomo11.com^$frame,1p
@@ -920,6 +931,7 @@ kijyomita.com##.plugin-memo:first-child
 ||link.idol-blog.com^$frame,1p
 idol-blog.com###leftcol > ul > .post-list + li, #leftcol div[style^="width:205px;"], #rightcol
 ||livedoor.jp/karukan123/rss1vip.html|$domain=karukantimes.com
+||mandou.info^$image,3p
 ||manga-mill.com/blog/feed/
 ||mashlife.doorblog.jp^$frame,1p
 ||matacoco.com/javascript/feed.
@@ -941,6 +953,10 @@ moeimg.net##.pickup-random-header
 ||nyu-susokusokusokuhou.blog.jp^$frame,1p
 ||okkisokuho.com/wp-content/picture/introduction/
 okkisokuho.com##[class^=syokai]
+||onapple.jp/wp-content/image/pickup.
+||onapple.jp^*/Sidebar_out_$image,1p
+||onapple.jp^*/footer_out_$image,1p
+onapple.jp##.pc-sidebar-out-link
 ||onecall2ch.com^$frame,1p
 ||otanew.jp^$frame,1p
 ||oumaga-times.com/link-kiji.js
@@ -985,7 +1001,7 @@ akb48matomemory.com##.antenna-text-list, .article_body_more > span
 akb48matomemory.com##.article_body_more > span + div:has(a[target=_blank])
 akb48rompen.com###more > span[style^="font-weight: bold; "] + ul, .pickuptitle
 aqua2ch.net##.menu_title111
-aqua2ch.net,blogo.jp,fesoku.net,ldblog.jp,livedoor.biz##.related-articles
+aqua2ch.net,blogo.jp,fesoku.net,ldblog.jp,livedoor.biz,matometanews.com##.related-articles
 ashi-fechi.com###main > .widget:has(.immoral_parts)
 au2chblog.blog.fc2.com##article:has(> .top_link_box)
 au2chblog.blog.fc2.com##article:has(> .under_link_box)
@@ -1076,12 +1092,11 @@ magical-news.blog.jp,mindhack2ch.com##.article-rss
 magsoku.blomaga.jp###comrss, #pick3
 magsoku.blomaga.jp##.msen:has-text(NEWS 3)
 mamekichimameko.blog.jp##.particlesArea
-mashlife.doorblog.jp##.first-article > b
+mashlife.doorblog.jp##.article-body-inner > a[target=_blank], .article-body-inner > a[target=_blank] ~ br, .article-body-inner > table[summary=ad], .first-article > b
 matmebae.net,nanj-short.net##.article__footer > .module__heading
-matome-tarou.ldblog.jp###j_rss
+matome-tarou.ldblog.jp###acc, #j_rss
 matome-tarou.ldblog.jp##.plugin-memo:has(iframe[src$="_rss.html"])
-matometanews.com###container > div[style^="width:1218px; "]
-matometanews.com##.related-articles
+matometanews.com###bottom-links, #bottom-links2, #container > div[style^="width:1218px; "]
 mindhack2ch.com##.article__footer > .section-title, .blogroll-channel-wrapper
 mindhack2ch.com,pokemon-goh.doorblog.jp##.rss-blogroll4
 moeruasia.net###middlerss
@@ -1132,11 +1147,12 @@ yaruonichijou.blog.fc2.com##.plugin3_outline:has(script[src^="https://blogroll."
 !#if !env_firefox
 crx7601.com##.plugin-memo:has(.onmouse)
 drdinl.com###my_sidebar_widget, #rss-box, .footer-test, .img-rink, .side-rss-box, .st-widgets-box, .widget-more
+erogazopple.com###content_top_ad, .post_content_btm_ad
 eropasture.com##.widget-above-single-content-title, .widget-index-top
 ||hdouga.com/dmmprshia*$image,domain=hdouga.com
 hdouga.com##.feed, .headline, .pic_link_box
-magical-news.blog.jp##^.scroll
-mashlife.doorblog.jp###gad-fixed-extra, #gad-fixed-sub, .koteigazo1
+magical-news.blog.jp##.scroll
+mashlife.doorblog.jp###gad-fixed-extra, #gad-fixed-sub, .koteigazo1, .koteigazo2
 mashlife.doorblog.jp##.plugin-memo:has(.koteigazoleft)
 moeruasia.net##.sidewrapper:has(.pickupbox)
 pioncoo.net###body-in > .sample4, #sidebar-scroll > .widget-last, #widget-under-related-entries, #widget-under-sns-buttons, .widget-10, .widget-in-article, .widget-over-article, .widget-over-breadcrumbs, .widget-over-sns-buttons, .widget_pc_text, [id^=widget-index-]
@@ -1148,10 +1164,11 @@ punyu.com##.tblmain[cellspacing="2"][cellpadding="0"]
 !#if env_firefox
 crx7601.com##^.plugin-memo:has(.onmouse)
 drdinl.com##^#my_sidebar_widget, #rss-box, .footer-test, .img-rink, .side-rss-box, .st-widgets-box, .widget-more
+erogazopple.com##^#content_top_ad, .post_content_btm_ad
 eropasture.com##^.widget-above-single-content-title, .widget-index-top
 hdouga.com##^.feed, .headline, .pic_link_box
 magical-news.blog.jp##^.scroll
-mashlife.doorblog.jp##^#gad-fixed-extra, #gad-fixed-sub, .koteigazo1
+mashlife.doorblog.jp##^#gad-fixed-extra, #gad-fixed-sub, .koteigazo1, .koteigazo2
 mashlife.doorblog.jp##^.plugin-memo:has(.koteigazoleft)
 moeruasia.net##^.sidewrapper:has(.pickupbox)
 pioncoo.net##^#body-in > .sample4, #sidebar-scroll > .widget-last, #widget-under-related-entries, #widget-under-sns-buttons, .widget-10, .widget-in-article, .widget-over-article, .widget-over-breadcrumbs, .widget-over-sns-buttons, .widget_pc_text, [id^=widget-index-]

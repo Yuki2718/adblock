@@ -2,7 +2,7 @@
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
 
-I can't guarantee these filers won't cause problems. If you found problems, report it by the same style as official AdGuard or uBlock filters' issue tracker; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard). They are not what I use and shared solely for others' sake, so please don't blame me if I haven't updated for a while.
+I can't guarantee these filers won't cause problems. If you found problems, report it by filling in all the mandatory items in Issue template; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard). They are not what I use and shared solely for others' sake, so please don't blame me if I haven't updated for a while.
 
 <details>
 <summary><strong>adguard</strong></summary>

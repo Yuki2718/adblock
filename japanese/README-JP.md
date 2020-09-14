@@ -4,6 +4,7 @@
 
 - AdGuardなど他のプラットフォームでは機能しないルールがあるため、使用はお勧めしません<sup>2</sup>。uBlock-for-firefox-legacyもサポートしません。
 - モバイルサイトは対象外です。280blockerさんの[フィルタ](https://280blocker.net/download/)やもちおさんの[たまごフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/tamago.html)など、モバイル用のフィルタを使用してください。
+- 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。たとえば、AdGuard日本語フィルタがブロックするブログロール系、uBlock filtersがカットする不要な待ち時間などです。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
 
 <strong>ガイドライン（PC広告）：</strong>広告ブロック初心者の方は、まずuBlock Origin（[Firefox用](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)/[Chrome用](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)）をインストールしてください（名前の似たまがいものに注意！）。豆腐フィルタやもちフィルタなど、<strong>主要な日本用のフィルタが性能をフルに発揮できるのは、uBlock Origin（とその派生であるNano Adblocker）だけです</strong><sup>3</sup>。その上でまず、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)を試してみることをお勧めします。もしそれで十分でないと感じられた場合、同サイトで提供されているサブフィルタを追加するか、あるいは長年、日本の広告ブロックを代表されてきた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法があります。もちフィルタよりやや不具合（誤爆と呼ばれる）が増えたり、パフォーマンスが落ちたりするかもしれませんが<sup>4</sup>、2020年7月末より大幅な改修がなされており、十分お勧めできると思います。雪フィルタ系が適しているのは以下のような方です。
 
@@ -194,7 +195,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 ## 不具合、ブロック漏れの報告
 
-原則としてGithubのIssueを通してのみ受けつけます。どうしてもアカウント作成が手間だという方用に[掲示板](https://jbbs.shitaraba.net/internet/25463/)も用意しましたが、報告基準はここと同じです。URLも環境も示さない報告は大きな負担となりますので、絶対にやめてください。報告前に一度、<strong>新しいブラウザプロファイルを作り、uBlock OriginをクリーンインストールしてYuki's uBlock Japanese filters (+ Paranoid/Social/Annoyances）のみを購読した状態で問題が再現できるか</strong>を確認してください。また、ネットワークの別の部分でブロックしていないか（例: AdGuard Home, 280blocker DNS）も確かめてください。テンプレートは用意していませんが、報告される方は、<strong>必ず以下の項目をすべて記入してください。</strong>海外サイトの不具合は、AdGuard Japaneseを除くuBlock Origin標準のフィルタ（+ 英語以外の場合、その言語の標準フィルタ）を併用しても再現する場合のみ対応いたします。
+原則としてGithubのIssueを通してのみ受けつけます。どうしてもアカウント作成が手間だという方用に[掲示板](https://jbbs.shitaraba.net/internet/25463/)も用意しましたが、報告基準はここと同じです。URLも環境も示さない報告は大きな負担となりますので、絶対にやめてください。報告前に一度、<strong>新しいブラウザプロファイルを作り、uBlock OriginをクリーンインストールしてYuki's uBlock Japanese filters (+ Paranoid/Social/Annoyances）のみを購読した状態で問題が再現できるか</strong>を確認してください。また、ネットワークの別の部分でブロックしていないか（例: AdGuard Home, 280blocker DNS）も確かめてください。報告される方は、<strong>必ず以下の項目をすべて記入してください（テンプレートを用意してありますのでご利用ください）。</strong>海外サイトの不具合は、AdGuard Japaneseを除くuBlock Origin標準のフィルタ（+ 英語以外の場合、その言語の標準フィルタ）を併用しても再現する場合のみ対応いたします。
 
 1. 問題が起こるサイトの完全なURL（URLの前後に`をつけてください）: 検索エンジンの場合は検索語もお願いします。
 2. 現象の説明: 言葉による説明とスクリーンショットを両方含めてください。
