@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-09-15
+! Last updated: 2020-09-16
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -762,8 +762,10 @@ instagram.com##.xZ2Xk:has-text(/App/)
 -rss2.html|
 /TOPRSS.html|
 /TOPRSS3.html|
+/ad_wp/*$script,domain=news30over.com
 /anntena.html|
 /antena_$frame
+/blogroll_rss.js|
 /bottomrss3.html|
 /headline.htm|
 /headline.html|
@@ -1024,6 +1026,7 @@ blog.livedoor.jp###RSSbox
 blog.livedoor.jp###articles-outer > .top-right:style(margin-top:0 !important)
 blog.livedoor.jp###blog-body-outer > #left-t:style(margin-top:0 !important)
 blog.livedoor.jp###container > .blog-title-outer + div[class^=entry_box_left], #container > div[class^=entry_box_left] + div[class^=entry_box_right], #main > .column-inner > .column-inner-2 > div[class^=entry_box102], .article-body-more > div[style^="padding: 1px; margin-top: 0px; margin-bottom: 20px; overflow:hidden;"]
+blog.livedoor.jp###container > .rss-blogroll:first-child, #rss3
 blog.livedoor.jp###content.hfeed > div[style="margin:0px;padding:0px;"][align=center]:first-of-type, .article-body-inner > .t_h + div[style="margin:0px;padding:0px;"][align=center], .entry-content.article-body > div[style^="margin-top"] + div[style="margin:0px;padding:0px;"][align=center]
 blog.livedoor.jp###hdline, #main > .h2-sub, #tab-wp, .rss-sub, .side-tp, section.clearfix > .h2-sub
 blog.livedoor.jp###main.column > #headline
@@ -1078,7 +1081,7 @@ kanasoku.info###headrank2:has-text(/Pickup|オススメ/)
 kanasoku.info##.cent_top, .headline_middle
 kandatasokuho.blog.fc2.com###center > .page_navi, div[style$="background-color: lavender;"]
 kazokuchannel.doorblog.jp###more > ol, #more > span[style^="font-size: medium"], #more > ul, .first-article > font[size="5"], .plugin-memo:last-child
-kazokuchannel.doorblog.jp,magical-news.blog.jp##.plugin-memo:first-child
+kazokuchannel.doorblog.jp,magical-news.blog.jp,minnanohimatubushi.2chblog.jp##.plugin-memo:first-child
 keyakizaka46matomemory.net##div[style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;"]
 kichimama.com##.ifram, .pickup
 kijobibouroku.com,kijojikenbo.com##.chumoku
@@ -1103,15 +1106,20 @@ matometanews.com###bottom-links, #bottom-links2, #container > div[style^="width:
 megatron-v.site###sidebar-2
 mindhack2ch.com##.article__footer > .section-title, .blogroll-channel-wrapper
 mindhack2ch.com,pokemon-goh.doorblog.jp##.rss-blogroll4
+minnanohimatubushi.2chblog.jp##.PR, .RSS1, .article-body-inner div[style^="border: solid 1px "], .article-body-more > span[style="font-size: large;"] ~ a + br, .article-body-more > span[style="font-size: large;"] ~ a[target=_blank], [id^=RSS-top]
 moeruasia.net###middlerss
 mudasure.com##.entry-body > b:has-text(新着記事)
 mudasure.com##.footerrss
 mudasure.com,nadarenews.com##.blogroll-top
 nadarenews.com##.blogroll-sitasita, .blogroll-wow, .check, .itiuebar1, .uebar1, [class^=sitabar]
+nanj-world.blog.jp###permalink
 nantuka.blog119.fc2.com###header > center, font > center
 netatama.net##.article-outer-3 > center:nth-of-type(n+3)
 newresu1.blog.fc2.com###blogroll
+news30over.com##.plugin-memo:has(script[src^="http://x5"])
+news30over.com##.topbox, .topbox2, .toptitle
 news4wide.net##.box-antenna
+newsoku.blog###widget-under-sns-buttons, .header-widget, .widget_execphp.widget-under-article
 nofootynolife.blog.fc2.com##.blogroll_content2
 oniyomediary.com###footer-rss
 openworldnews.net##.t_b:has(a[onclick])
@@ -1160,7 +1168,7 @@ mashlife.doorblog.jp###gad-fixed-extra, #gad-fixed-sub, .koteigazo1, .koteigazo2
 mashlife.doorblog.jp##.plugin-memo:has(.koteigazoleft)
 moeruasia.net##.sidewrapper:has(.pickupbox)
 pioncoo.net###body-in > .sample4, #sidebar-scroll > .widget-last, #widget-under-related-entries, #widget-under-sns-buttons, .widget-10, .widget-in-article, .widget-over-article, .widget-over-breadcrumbs, .widget-over-sns-buttons, .widget_pc_text, [id^=widget-index-]
-po-kaki-to.com##.top-site-andander
+po-kaki-to.com###text-4 .site-Introduction > a[target=_blank], #text-5 .site-Introduction, .top-site-andander
 pokemon-goh.doorblog.jp##.plugin-memo:has(a[title=imgres])
 punyu.com##.tblmain[cellspacing="2"][cellpadding="0"]
 !#endif
@@ -1176,7 +1184,7 @@ mashlife.doorblog.jp##^#gad-fixed-extra, #gad-fixed-sub, .koteigazo1, .koteigazo
 mashlife.doorblog.jp##^.plugin-memo:has(.koteigazoleft)
 moeruasia.net##^.sidewrapper:has(.pickupbox)
 pioncoo.net##^#body-in > .sample4, #sidebar-scroll > .widget-last, #widget-under-related-entries, #widget-under-sns-buttons, .widget-10, .widget-in-article, .widget-over-article, .widget-over-breadcrumbs, .widget-over-sns-buttons, .widget_pc_text, [id^=widget-index-]
-po-kaki-to.com##^.top-site-andander
+po-kaki-to.com##^#text-4 .site-Introduction > a[target=_blank], #text-5 .site-Introduction, .top-site-andander
 pokemon-goh.doorblog.jp##^.plugin-memo:has(a[title=imgres])
 punyu.com##^.tblmain[cellspacing="2"][cellpadding="0"]
 !#endif
