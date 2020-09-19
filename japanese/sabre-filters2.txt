@@ -2,9 +2,9 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-09-18
+! Last updated: 2020-09-20
 
-! Generic network rules
+! General blocking
 /CookieInfo.
 /amp-user-notification-
 /cc-cookie-consent/*
@@ -13,6 +13,7 @@
 /cookie-notification.
 /cookiealert.js
 /cookiebanner.
+/cookiebar.$domain=astonmartin.com
 /cookieconsent.$domain=acm.org|clove.co.uk|crowdin.com|imgtagram.com|millisecond.com|support.malwarebytes.com|webwhois.verisign.com
 /cookieconsent/*$domain=portapps.io
 /cookieconsent_
@@ -47,16 +48,16 @@
 ||consensu.org^$domain=theguardian.com
 ||consent.cmp.oath.com^
 ||consent.cookiebot.com^$third-party,domain=~refinery29.com
-||cookielaw.org^$domain=biomedcentral.com|collegeboard.org|gqjapan.jp|hp.com|mastercard.co.jp|nature.com|natureasia.com|springer.com|springeropen.com|telerik.com|tokyo2020.org
+||cookielaw.org^$domain=biomedcentral.com|collegeboard.org|deloitte.com|gqjapan.jp|hp.com|mastercard.co.jp|nature.com|natureasia.com|springer.com|springeropen.com|telerik.com|tokyo2020.org
 ||jimstatic.com/ckies.
 ||jsdelivr.net/npm/cookieconsent
 
-! Generic cosmetic rules
+! General hiding
 ###cookie-notice
 ##.popup_confirmation_bar
 ##.widget_eu_cookie_law_widget
 
-!#if !ext_ublock
+!#if adguard
 ###cc-cookie-law
 ###gdpr-banner
 !#endif
@@ -65,7 +66,7 @@
 *###gdpr-banner
 !#endif
 
-! Rules for individual sites
+! Individual sites
 -cookie-law-popup.$domain=waaw.tv
 /CookieBannerApplication.$script,domain=gotogate.jp|mytrip.com
 /cookie-banner$domain=sedo.com|sugarsync.jp
@@ -87,6 +88,7 @@
 ||consent.trustarc.com^$third-party
 ||cookie-script.com^$third-party
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
+||daijob.com/javascripts/gdpr/
 ||europol.europa.eu/sites/default/files/js/js_X*
 ||fc2.com/js/blogranking/pp_agreement
 ||fc2.com/share/js/gdpr/pp_agreement
@@ -119,6 +121,7 @@
 4cash.me,adsh.cc,apksvip.com,earnload.*,linkdrop.net,pkr.pw,shorten.sh,shortenbuddy.com,shrinkbtc.cc,shrinkme.*,rubtech.xyz,zlink.xyz###cookie-pop
 accounts.crowdin.com##.cc-window
 accuweather.com##.privacy-policy-banner
+adlittle.jp##.eu-cookie-compliance-banner
 aiasahi.jp,japan.cnet.com,cnn.co.jp,japan.techrepublic.com,japan.zdnet.com###gdpr_area
 airvpn.org###cookieLaw
 alphacoders.com###cookie_consent
@@ -132,6 +135,7 @@ answers.ea.com##.cookie_content
 apkpure.com###policy-info
 askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com###js-gdpr-consent-banner
 avast.com,avast.co.jp##.cookie-bar
+bain.com###cooky_policy
 bbc.com##[class^=Wrapper-sc-]
 bethesda.net##cookie-policy
 bitstarz.com##.cookie-wrapper
@@ -140,6 +144,7 @@ board.perfect-privacy.com##.notice--cookie
 boyfriendtv.com##.eu-cookies
 businesswire.com,healthitsecurity.com###cookie-consent
 cam4.com###promptArea, div[class^="CookieConsent"]
+cars.mclaren.com##.n040-cookie-alert
 cointelegraph.com##.bottom-zone
 copyright.com##.site-wide-notice--gdpr
 coron.tech###notice
@@ -158,6 +163,7 @@ elifesciences.org##.opt-in-message-bar
 ereg.ets.org,sukebei.nyaa.net###cookie-warning
 evaair.com###cboxOverlay, #colorbox
 excesssecurity.com###webarx-cookie-notice
+ferrari.com##div[class^="CookieBanner__banner"]
 figshare.com###ck-banner
 foreignaffairs.com##.messages--container--bottom
 foreignaffairs.com,novel.pixiv.net##.gdpr
@@ -184,12 +190,16 @@ inoreader.com##.landing_promo_banner_top
 investors.com###investors-policy-terms-consent-dialog
 jti.co.jp##.p-top_cookie-agreement
 juken-mikata.net###cookieAlt
+kearney.com###cookie-banner
 kolombox.com###gdpr-cookie-notice
+lamborghini.com###disclaimer-cookie
+landrover.co.jp##.NotificationBar[data-expires="30"]
 latimes.com###ensNotifyBanner
 linuxsecurity.com###cadre_alert_cookies
 lukia.seikowatches.com##.disclaimer
 m.phys.org,m.techxplore.com###modal-cookie
 malwaretips.com##.notice-content
+manga-raw.club###gdpr-cookie-message
 matcha-jp.com##.cookie-info
 microsoft.com###uhfCookieAlert
 moodle.org##.eupopup-container
@@ -243,6 +253,7 @@ ubuntu.com##.cookie-policy
 urbandictionary.com##.cc-window
 usenix.org,www.biorxiv.org,www.cdrinfo.com,www.jneurosci.org,www.pnas.org###sliding-popup
 userstyles.org##.NotificationLine
+volkswagen.co.jp###cookiemgmt
 weibo.com##.cookie-disclaimer
 wilderssecurity.com##.noticeContent
 wolframalpha.com##.oaDry
