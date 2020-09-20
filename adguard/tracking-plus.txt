@@ -5,6 +5,7 @@
 ! Last updated: 2020-09-20
 
 ! General tracker
+&visitor=*&referrer=
 -appanalytics-
 .gif?Log=$~xmlhttprequest
 .net/s.gif?
@@ -14,6 +15,7 @@
 /?essb_counter_cache=$xmlhttprequest
 /GARecord^
 /EndpointTracker/*
+/Statistics/Log.svc/*
 /VideoAnalytics.js
 /_/lite/performance/*$xmlhttprequest
 /__ssobj/ard.png?
@@ -23,6 +25,8 @@
 /ahoy/visits|$xmlhttprequest
 /akam/11/*
 /analytics/?event=$image
+/analytics/timeme.
+/analytics/track.
 /analyticsjs.
 /api/census/RecordHit$xmlhttprequest
 /api/v1/collector
@@ -115,6 +119,7 @@
 /stats/count.
 /streamsense.min.js?
 /tealeaf.min.js
+/tms/metrics.
 /track-internal-links.
 /trackPageView/*
 /trackingDTM.js
@@ -125,6 +130,7 @@
 /unbxdAnalytics.
 /videojs.ga.js|
 /vip-analytics.
+/vwFiles/analytics/*
 /w_js.php|
 /web_analytics/*
 /wordpress-popular-posts/public/js/tracking.
@@ -212,7 +218,7 @@
 
 ! Tracker on individual sites
 -google-tag-manager/$domain=https://www.techtarget.com/
-/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{54,57}\/[a-f,0-9]{8,10}$/$xhr,3p,domain=kissanime.nz|rawdevart.com
+/^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{54,57}\/[a-f,0-9]{8,10}$/$xmlhttprequest,third-party,domain=~amazon.com
 ||a.c-dn.net^*/clientlibs_tagmanager.
 ||a.espncdn.com/prod/scripts/analytics/
 ||a.espncdn.com/prod/scripts/yield_
@@ -425,6 +431,7 @@
 ||pinterest.*/resource/StatsLogResource/
 ||pinterest.*/resource/UserRegisterTrackActionResource/
 ||pinterest.*/_/_/report/error/|
+||platform.twitter.com/impressions.js$third-party
 ||play.google.com/_/PlayStoreUi/browserinfo
 ||play.google.com/_/PlayStoreUi/jserror
 ||play.google.com/play/log?
