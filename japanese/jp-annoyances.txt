@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-09-22
+! Last updated: 2020-09-23
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -371,6 +371,7 @@ business.nikkei.com###slideIn
 cbn.co.jp,ryu-blo.jp,sanei-ad.jp,us-lighthouse.com##.afc_popup
 cbnews.jp###kp-survey-modal, #kp-survey-modal-overlay
 chobirich.com###footer_adtxt_wrap
+cinemacafe.net###danglingList
 city.living.jp###area-select
 cnn.com##.sibling
 community.norton.com###block-norton-exit-poll-norton-poll-footer
@@ -803,6 +804,7 @@ instagram.com##.xZ2Xk:has-text(/App/)
 /left_randomlink.js|
 /middlelink.js|
 /pcr_randomlink.js|
+/pickup.htm|
 /plugins/feedzy-rss-feeds/*
 /rss-$frame
 /rss.$frame,object
@@ -994,6 +996,8 @@ okkisokuho.com##[class^=syokai]
 onapple.jp##.pc-sidebar-out-link
 ||onecall2ch.com^$frame,1p
 ||otanew.jp^$frame,1p
+||ouchinews.doorblog.jp^$frame,1p
+ouchinews.doorblog.jp##center > div[style="padding-top:5px;"]
 ||oumaga-times.com/link-kiji.js
 ||oumaga-times.com/middle-link.js
 ||parusoku.com$frame,1p
@@ -1057,6 +1061,8 @@ bigbangchannel.net,blog.livedoor.jp,matometre.net,majimanjisokuhou.com,nanj-hero
 bipblog.com###entry + .ent_sub_block, .main_center_block:first-child
 blog.esuteru.com##.siteAside
 blog.esuteru.com,ertk.net,exawarosu.net,giantskyojin2chmatome.blog.jp,kijyomatome.com,kijyomita.com,kuzu-soku.com,oniyomech.livedoor.biz,otakomu.jp,vip.blomaga.jp##.rss
+blog.game084.com##.right-container[style^="position: fixed"]:style(position: absolute !important)
+blog.game084.com##[class^=rss-blogroll]
 bnewg.sokuho.org##.yad_billboard
 chomanga.org##.hdrWidget, .widgetPage
 college2ch.blomaga.jp,dechamore.net,f1jouhou2.blog.fc2.com,hosyusokuhou.jp,jpsoku.blog.jp,kanasoku.info,lifehack2ch.livedoor.biz,news4vip.livedoor.biz,openworldnews.net,ryusoku.com###headline
@@ -1085,6 +1091,7 @@ burusoku-vip.com##.article-body-more > .t_b:has(a[target=_blank])
 burusoku-vip.com##.article-body-more > div[style^="background-color: white; padding: 5px; "]
 burusoku-vip.com,kojikisokuhou.com,kosodatech.blog133.fc2.com,repsoku.net##.headline
 carp-matome.blog.jp##.bw_outbox
+channelz.blog.fc2.com###main > table[style="WIDTH: 100%; HEIGHT: 30px"], .headlline1
 chansoku.com###blogroll-rss
 cherio199.blog120.fc2.com###mainBlock > center:nth-of-type(n+4), .free_space_body
 cherio199.blog120.fc2.com##.menu1BlockBase:has(img[src^="https://baseball-"])
@@ -1129,10 +1136,13 @@ jin115.com###other_news_website
 jishin-yogen.com##.entry_text > .pickup, .kiji_rss, .rss_body02
 jishin-yogen.com##.kanren:has(script) > .pickup
 jiwachan.net##.foot_rss
+jpsoku.blog.jp###headline-outer, #more > a, #more > a ~ br, .footer_rss_box
+jpsoku.blog.jp,kazokuchannel.doorblog.jp##.first-article > font[size="5"]
+jpsoku.blog.jp,mashlife.doorblog.jp##.first-article > b
 kanasoku.info###headrank2:has-text(/Pickup|オススメ/)
 kanasoku.info##.cent_top, .headline_middle
 kandatasokuho.blog.fc2.com###center > .page_navi, div[style$="background-color: lavender;"]
-kazokuchannel.doorblog.jp###more > ol, #more > span[style^="font-size: medium"], #more > ul, .first-article > font[size="5"]
+kazokuchannel.doorblog.jp###more > ol, #more > span[style^="font-size: medium"], #more > ul
 kazokuchannel.doorblog.jp,recosoku.com##.plugin-memo:last-child
 kazokuchannel.doorblog.jp,magical-news.blog.jp,minnanohimatubushi.2chblog.jp,vippers.jp##.plugin-memo:first-child
 keyakizaka46matomemory.net##div[style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;"]
@@ -1145,13 +1155,15 @@ kijonotakuhaibin.com##.plugin-memo:has(#nyuuresu)
 kokopyon.net##.osusume:first-of-type
 kosodatech.blog133.fc2.com##.plugin3:not(:has(.relate_list-1))
 kotaro269.com###content-top-news
+kuromacyo.livedoor.biz##div.freearea
 kyuukaiou.ldblog.jp###urss, #urssbox, .plugin-memo, .rssbox
+l-o-l.net##.live-rss, .live-rss2
 magical-news.blog.jp###more > .t_h > b
 magical-news.blog.jp,mindhack2ch.com##.article-rss
 magsoku.blomaga.jp###comrss, #pick3
 magsoku.blomaga.jp##.msen:has-text(NEWS 3)
 mamekichimameko.blog.jp##.particlesArea
-mashlife.doorblog.jp##.article-body-inner > a[target=_blank], .article-body-inner > a[target=_blank] ~ br, .article-body-inner > table[summary=ad], .first-article > b
+mashlife.doorblog.jp##.article-body-inner > a[target=_blank], .article-body-inner > a[target=_blank] ~ br, .article-body-inner > table[summary=ad]
 matmebae.net,nanj-short.net##.article__footer > .module__heading
 matome-tarou.ldblog.jp###acc, #j_rss
 matome-tarou.ldblog.jp##.plugin-memo:has(iframe[src$="_rss.html"])
@@ -1160,6 +1172,9 @@ megatron-v.site###sidebar-2
 mindhack2ch.com##.article__footer > .section-title, .blogroll-channel-wrapper
 mindhack2ch.com,pokemon-goh.doorblog.jp##.rss-blogroll4
 minnanohimatubushi.2chblog.jp##.PR, .RSS1, .article-body-inner div[style^="border: solid 1px "], .article-body-more > span[style="font-size: large;"] ~ a + br, .article-body-more > span[style="font-size: large;"] ~ a[target=_blank], [id^=RSS-top]
+mizuhonokuni2ch.com##.ad-rss, .rss-text
+mizuhonokuni2ch.com##.article-wrapper:style(margin-top:auto !important)
+mizuhonokuni2ch.com##.section-title-wrapper:has-text(他サイト)
 moeruasia.net,syurabahazard.com###middlerss
 mudasure.com##.entry-body > b:has-text(新着記事)
 mudasure.com##.footerrss
@@ -1180,10 +1195,12 @@ nofootynolife.blog.fc2.com##.plugin2:has(img[src^="http://image.with2"])
 nogizaka-46bunno1.blog.jp##.plugin-memo:has(a[href^="http://blog."])
 nogizaka-46bunno1.blog.jp###more > div[style^="font-size: 16px; font-weight: bold; border-width: 2px"], #more > div[style^="font-size: 16px; ntrblog.com##.header_cm
 font-weight: bold; border-width: 2px"] ~ br
+oboega-01.blog.jp##.article-body-more > div[style="border-style: solid ; border-width: 1px;"]:first-child
 okashinahitobito.net##.logbox, [class^=sample-box-]
 oniyomediary.com###footer-rss
 openworldnews.net##.t_b:has(a[onclick])
 openworldnews.net##.t_h[style]
+otameshivip.com###container > div[style$="width:1170px;height:460px;"], .article-sub-popular, .blogroll_rapper
 otonarisoku.com###custom_html-2
 otonarisoku.com###main-contents > #comment-title, #main-contents > div[style="height:360px; overflow:hidden;"]
 oumaga-times.com##.popular-list
@@ -1533,6 +1550,7 @@ otapol.com###balloonText
 ||washingtonpost.com/wp-stat/pwapi/
 1ink.cc,cpmlink.net,underhentai.net,upfile.us##+js(nano-sib)
 ampmedia.jp##.article-vote-area
+aylink.co##+js(nano-sib, timer, 0.02)
 bdupload.*,coolrom.com.au,hubfiles.ws,indishare.*,katfile.com,lnk2.cc,sourceforge.net,uploadhub.*,uploadraja.com##+js(nano-stb)
 coolrom.com.au##+js(set, time, 0)
 dailyuploads.net##+js(ra, checked, input#chkIsAdd)
