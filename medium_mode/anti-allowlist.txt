@@ -2,7 +2,7 @@
 @@||scdn.co/cdn/js/gtag.$script,domain=spotify.com,badfilter
 @@||spclient.wg.spotify.com/$xhr,domain=spotify.com,badfilter
 
-! EasyList
+! EL
 /prebid1.$important,domain=9to5google.com|9to5mac.com|9to5toys.com|electrek.co|dronedj.com
 ||accuweather.com/bundles/prebid.$important
 ! May cause sign-in trouble for US IP
@@ -12,18 +12,17 @@
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=gounlimited.to,badfilter
 @@||clients*.google.com/adsense/*?key=$domain=~calcalist.co.il|~gaytube.com|~mako.co.il|~pornhub.com|~pornhubthbh7ap3u.onion|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~walla.co.il|~xtu,badfilter
 
-! EasyPrivacy
+! EP
 ||omtrdc.net/rest/$important
 ||play.google.com/log$important,domain=~myaccount.google.com
 ||smetrics.aem.playstation.com^$important
 ||walmart.com^*/logger^$xhr,important
 @@||s.yimg.com^*/advertisement/sponsor/promo/ad.png$image,domain=news.yahoo.com,badfilter
-@@||youtube.com/api/stats/watchtime?$image,domain=youtube.com,badfilter
 
-! AdGuard Base
+! AG Base
 @@||2mdn.net/instream/$badfilter
 @@||ads.exoclick.com/ads.js$domain=sss.xxx|hdzog.com|hclips.com,badfilter
-! no breakage on my end but if you get, add speedtest.net##+js(set, apstag.init, noopFunc)
+! No breakage on my end but if you get, add speedtest.net##+js(set, apstag.init, noopFunc)
 @@||b.cdnst.net/javascript/amazon.js$domain=speedtest.net,badfilter
 @@||dev.visualwebsiteoptimizer.com/j.php$badfilter
 @@||imasdk.googleapis.com/js/core/bridge*.html$domain=~spotify.com,badfilter
@@ -33,14 +32,15 @@
 @@||syndication.exosrv.com/splash.php$domain=kissjav.com|russkoepornotube.com,badfilter
 @@||wp.com/p/jetpack^$badfilter
 
-! AdGuard Tracking
+! AG TPL
 @@||google-analytics.com/analytics.js$domain=reuters.com,badfilter
 @@||google-analytics.com/gtm/js?id=$domain=reuters.com,badfilter
 @@||google-analytics.com/plugins/ua/linkid.js$domain=reuters.com,badfilter
 @@||googletagmanager.com/gtm.js$domain=reuters.com,badfilter
+@@||cdn.tt.omtrdc.net/cdn/target.js$badfilter
 @@||dev.visualwebsiteoptimizer.com/j.php$badfilter
 
-! Fanboy's Enhanced Tracking
+! Fanboy's ET
 ! These allow too many ad-scripts not related to blocker detection.
 @@.com/ads.js$script,1p,badfilter
 @@/js/advertisement.$script,badfilter
@@ -49,4 +49,4 @@
 @@||cloudfront.net/assets/$script,3p,badfilter
 @@||i-mobile.co.jp/script/ad$script,badfilter
 
-@@||client-event-reporter.twitch.tv^$xmlhttprequest,domain=twitch.tv,badfilter
+@@||client-event-reporter.twitch.tv^$xhr,domain=twitch.tv,badfilter
