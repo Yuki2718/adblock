@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-10-01
+! Last updated: 2020-10-04
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -536,6 +536,7 @@ youtube.com##body > .opened[opened][style^="z-index"]
 youtube.com##ytd-popup-container > .ytd-popup-container[role="dialog"]:has(a[href="https://support.google.com/youtube/?p=sign_in"])
 
 !#if !env_firefox
+bignox.com##.egg-section
 gesoten.com###colorbox:has(#modal-game-recommend-pc)
 goukashugi.jp###c-modal
 journal.botanistofficial.com##.modal
@@ -543,6 +544,7 @@ tamashii.jp##.overlay
 !#endif
 
 !#if env_firefox
+bignox.com##^.egg-section
 gesoten.com##^#colorbox:has(#modal-game-recommend-pc)
 goukashugi.jp##^#c-modal
 journal.botanistofficial.com##^.modal
@@ -792,6 +794,7 @@ instagram.com##.xZ2Xk:has-text(/App/)
 /blogroll_rss.js
 /bottomlink.js|
 /bottomrss3.html|
+/footerlink.js
 /headline.htm|
 /headline.html|
 /headline1.htm|
@@ -1000,6 +1003,8 @@ matacoco.com##.blog-rss
 ||moeimg.net/wp-content/uploads/img/pickup/
 moeimg.net##.pickup-random-header
 ||moeponzu.upper.jp/blogparts/
+||mojomojo-licarca.com/js/mojomojosp2.$script,1p
+||mojomojo-licarca.com/js/mojomojosp3.$script,1p
 ||monoist.atmarkit.co.jp/js/mn/rss_article_
 ||moyugenn.youblog.jp^$frame,1p
 ||mudainodocument.com^$frame,1p
