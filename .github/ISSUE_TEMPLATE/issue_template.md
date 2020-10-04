@@ -1,12 +1,3 @@
----
-name: ISSUE_TEMPLATE
-about: Issue template
-title: ''
-labels: ''
-assignees: ''
-
----
-
 [//]: # (You can ignore strings starting with "[//]:". / 「[//]:」で始まる行は無視できます)
 
 ### URL(s) where the issue occurs (mandatory) / 問題のURL（必須）
