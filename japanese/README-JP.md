@@ -1,3 +1,7 @@
+## お知らせ
+
+初心者向けに、広告ブロックについてのFAQ（よくある質問）を[まとめてみました](/FAQ.md)。ご意見がおありの方は、Issueやしたらばにどうぞ。
+
 ### Yuki's uBlock Japanese filters （雪フィルタ）
 
 日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、uBlock Origin用<sup>1</sup>フィルタです。
@@ -45,7 +49,7 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 <details>
 <summary><strong>併用可</strong></summary>
 
-ブロック対象に違いがなく、パフォーマンスや誤爆の観点から問題がない場合、[EasyList](https://easylist.to/easylist/easylist.txt), [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt), [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php), [uBlock 内製フィルター](https://github.com/uBlockOrigin/uAssets), [AdGuard Base](https://kb.adguard.com/en/general/adguard-ad-filters#english), [AdGuard Tracking Protection](https://kb.adguard.com/en/general/adguard-ad-filters#privacy), [Fanboy Enhanced Tracking](https://www.fanboy.co.nz/enhancedstats.txt), [280blocker 広告ドメインリスト](https://280blocker.net/files/280blocker_domain_ag.txt)など、併用されることが多そうなフィルタとルールを統一しています<sup>13</sup>。これによりフィルター一覧でのフィルタ有効数<sup>14</sup>が正しく表示されるだけでなく、非表示フィルタの多重適用も回避できます。つまり単独で使えるばかりでなく、上述の各種フィルタと併用した場合でも無駄がありません<sup>15</sup>。なお、280blocker 広告ドメインリスト以外の日本用フィルタとの併用はお勧めしません。
+ブロック対象に違いがなく、パフォーマンスや誤爆の観点から問題がない場合、[EasyList](https://easylist.to/easylist/easylist.txt), [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt), [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php), [uBlock 内製フィルター](https://github.com/uBlockOrigin/uAssets), [AdGuard Base](https://kb.adguard.com/en/general/adguard-ad-filters#english), [AdGuard Tracking Protection](https://kb.adguard.com/en/general/adguard-ad-filters#privacy), [Fanboy Enhanced Tracking](https://www.fanboy.co.nz/enhancedstats.txt), [280blocker 広告ドメインリスト](https://280blocker.net/files/280blocker_domain_ag.txt)など、併用されることが多そうなフィルタとルールを統一しています<sup>13</sup>。これにより重複が排除され、フィルター一覧でのフィルタ有効数<sup>14</sup>が正しく表示されるだけでなく、非表示フィルタの多重適用も回避できます。つまり単独で使えるばかりでなく、上述の各種フィルタと併用した場合でも無駄がありません<sup>15</sup>。なお、280blocker 広告ドメインリスト以外の日本用フィルタとの併用はお勧めしません。
 
 </details>
 
