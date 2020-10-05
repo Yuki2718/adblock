@@ -1,6 +1,6 @@
 ## 広告ブロック FAQ
 
-最終更新：2020年10月5日
+最終更新：2020/10/05
 
 内容は記事執筆時点のものですのでご了承ください。脚注は少し詳しい方向けです。
 
@@ -44,7 +44,7 @@
 
 #### 6. ブロックのカウンターが上がり続けます。
 
-  [何も問題ありません](https://old.reddit.com/r/uBlockOrigin/comments/itw503/ubo_google_docs_high_cpu_spikes_and_blocked/g5l5yjd/)。どういうわけか、カウンターが上がり続けるとパフォーマンスに悪影響があると信じている人が多いようです。確かに、ブロックされた場合にものすごい勢いでリクエストを送り続けるケースはあり、フリーズしたりCPU使用率が跳ね上がったりしますがこれはそのサイトの問題です。1秒に1つ程度のカウンター上昇なら何も影響ありません。どうしても信じられないなら、開発者ツールからパフォーマンスレコードをとって報告してください。証明できたらuBlock Origin史上初の発見です。
+  [何も問題](https://old.reddit.com/r/uBlockOrigin/comments/itw503/ubo_google_docs_high_cpu_spikes_and_blocked/g5l5yjd/)[ありません](https://old.reddit.com/r/uBlockOrigin/comments/j5cwdj/ubo_is_blocking_7k_xhr_requests_on_youtube_videos/g7sex8w/)。どういうわけか、カウンターが上がり続けるとパフォーマンスに悪影響があると信じている人が多いようです。確かに、ブロックされた場合にものすごい勢いでリクエストを送り続けるケースはあり、フリーズしたりCPU使用率が跳ね上がったりしますがこれはそのサイトの問題です。1秒に1つ程度のカウンター上昇なら何も影響ありません。どうしても信じられないなら、開発者ツールからパフォーマンスレコードをとって報告してください。証明できたらuBlock Origin史上初の発見です。
 
 #### 7. Chrome/EdgeでuBlock Extraは必要なのでしょうか？
 
