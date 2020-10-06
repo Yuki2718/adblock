@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-09-20
+! Last updated: 2020-10-07
 
 ! General tracker
 &visitor=*&referrer=
@@ -17,6 +17,7 @@
 /EndpointTracker/*
 /Statistics/Log.svc/*
 /VideoAnalytics.js
+/^https?:\/\/.*\/(public|resources|static|assets)\/([a-z0-9]){28,33}$/$script,~third-party,xmlhttprequest,domain=~cand.li
 /_/lite/performance/*$xmlhttprequest
 /__ssobj/ard.png?
 /_api/wix-code-telemetry-registry-public/*
@@ -105,6 +106,7 @@
 /plugins/top-10/*
 /plugins/where-did-they-go-from-here/*
 /pv?fe=$image
+/px/*/blank.gif?
 /renderTimingPixel.
 /resxclsa.
 /rollbar.min.js
