@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-10-08
+! Last updated: 2020-10-09
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -111,6 +111,7 @@ macha795.com###notice-area-wrap
 mail.google.com##span:has-text(Gmail のデスクトップ通知):upward(1)
 mrs.living.jp###floating-max
 news.yahoo.co.jp##li.newsFeed_item > div:has-text(あなたの興味や関心)
+slashdot.org###announcement
 translate.google.co.jp,translate.google.com##.tlid-notification-container
 w3q.jp###news-ticker-wrapper
 www.nicovideo.jp##.MylistContainer-premiumBanner
@@ -735,11 +736,12 @@ booklive.jp##.app_ad
 rtrp.jp##footer-induction
 ||rimage.gnst.jp/www-home/assets/img/appli/
 www.gnavi.co.jp##.p-appli
+||rnnnews.jp/img/v4_0/app300.
 ||s.yimg.jp/images/shp_front/pc/top/images/top/bg_footerSmartPhones.$domain=shopping.yahoo.co.jp
 ||s.yimg.jp/images/transit/pc/v2/img/common/spriteFatFooter_2x.$domain=transit.yahoo.co.jp
 ||s.yimg.jp/images/transit/pc/v2/img/common/icnAppTransit_$domain=transit.yahoo.co.jp
 transit.yahoo.co.jp###appguide, #mdFatFooter > .title, #mdFatFooter > ul
-||s.yimg.jp/images/weather/promo/banner/bnr_bousaiapp_$domain=typhoon.yahoo.co.jp
+||s.yimg.jp/images/weather/promo/banner/bnr_*app_$domain=typhoon.yahoo.co.jp|weather.yahoo.co.jp
 ||shaken.r10s.jp/shaken/img/top/app_$domain=shaken.rakuten.co.jp
 shaken.rakuten.co.jp##.app-bnn
 ||shingakunet.com/rnet/images/common/bnr_app04.
@@ -1081,7 +1083,7 @@ youskbe.com##.main > .row > div > aside:has(.blogroll)
 1000mg.jp,mylife.2chblog.jp,travel2ch.com##[class$=rss]
 2ch-matomenews.com##.switch
 2chcopipe.com##.entry_box3, .entry_box_left, .entry_box_right
-2chmatome.bloggeek.jp,addchannel.net,akb48rompen.com,azurlane.doorblog.jp,blog-mougenda.com,dareda.net,db-gohan.blog.jp,dechisoku.com,ebitsu.net,everydayissunday.livedoor.blog,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,gacha.blog.jp,gazoua2meru.livedoor.blog,gensen2ch.com,hanshintigers1.blog.jp,heartlife-matome.com,hero-news.com,honsoku.com,internet-game-lounge.blog.jp,jiwachan.net,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,kijoden.com,kijonikki.net,labradorsokuho.net,maki7.dreamlog.jp,mashlife.doorblog.jp,matmebae.net,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-push.blog.jp,nanj-short.net,nanj-world.blog.jp,narisoku.blog.jp,orufemorufenz.com,oumaga-times.com,tsubamesoku.blog.jp,paranormal-ch.com,pawawa.sokuho.org,sontaku.info,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,romeodensetsu.com,ronsoku.com,shumi-nikki.xyz,skematomemon.com,sutekinakijo.com,uwakich.com,virtualyoutuber-matome.blog.jp,vrtuber-news.com,vtuber-densoku.blog.jp##.rss-blogroll
+2chmatome.bloggeek.jp,addchannel.net,akb48rompen.com,azurlane.doorblog.jp,bb.doorblog.jp,blog-mougenda.com,dareda.net,db-gohan.blog.jp,dechisoku.com,ebitsu.net,everydayissunday.livedoor.blog,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,gacha.blog.jp,gazoua2meru.livedoor.blog,gensen2ch.com,hanshintigers1.blog.jp,heartlife-matome.com,hero-news.com,honsoku.com,internet-game-lounge.blog.jp,jiwachan.net,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,kijoden.com,kijonikki.net,kokoyakyumatomesokuho.blog.jp,koumuin-matome.blog.jp,labradorsokuho.net,maki7.dreamlog.jp,mashlife.doorblog.jp,matmebae.net,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-push.blog.jp,nanj-short.net,nanj-world.blog.jp,narisoku.blog.jp,orufemorufenz.com,oumaga-times.com,tsubamesoku.blog.jp,paranormal-ch.com,pawawa.sokuho.org,sontaku.info,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,romeodensetsu.com,ronsoku.com,shumi-nikki.xyz,skematomemon.com,sutekinakijo.com,uwakich.com,virtualyoutuber-matome.blog.jp,vrtuber-news.com,vtuber-densoku.blog.jp##.rss-blogroll
 2chmeshi.net##.RSSBlogroll, .bottom_ad, div[id^=diver_widget_pcsp-2]
 2chopmt.blog.jp##.article-sub-popular, .logbox, .newrss3
 2chopmt.blog.jp,blog.game084.com,nogizaka46link.blog.jp,recosoku.com##[class^=rss-blogroll]
@@ -1112,6 +1114,7 @@ au2chblog.blog.fc2.com##article:has(> .under_link_box)
 au2chblog.blog.fc2.com##article:has(> [class^=rss_body_])
 bakufu.jp##.entry-content > font[size] + table[width]
 bandai11.blog.fc2.com,erogletv.blog.fc2.com##.plugin3_outline
+bb.doorblog.jp,nanjde.blog.jp##.right-container[style^="position: fixed"]:style(position: static !important)
 beasoku.com##.code-block
 beasoku.com##.custom-html-widget:has(.l-rss-header)
 beelzeboulxxx.com##.article-body > .block, .article-body-more
@@ -1142,6 +1145,7 @@ blog.livedoor.jp###main.column > #headline
 blog.livedoor.jp###single-footer-buzz, #single-rss-01
 blog.livedoor.jp###wrapper > #main + div#side[style^="position: fixed"]:style(position:static !important)
 blog.livedoor.jp##.RSS05
+blog.livedoor.jp##.article-body-more > div[style="border:1px solid #1c7db3;margin:0px 0 5px;"]
 blog.livedoor.jp##.blog_osusume, .kiji > b > span[style="font-size: 19px;"], .rss_top, .rss_top6
 blog.livedoor.jp##.blogroll_innner2
 blog.livedoor.jp##.column-inner-2 > .headline
@@ -1229,7 +1233,7 @@ kanasoku.info##.cent_top, .headline_middle
 kankokunohannou.org##.ently_text > b:has-text(オススメ記事)
 kandatasokuho.blog.fc2.com###center > .page_navi, div[style$="background-color: lavender;"]
 kazokuchannel.doorblog.jp###more > ol, #more > span[style^="font-size: medium"], #more > ul
-kazokuchannel.doorblog.jp,recosoku.com##.plugin-memo:last-child
+kazokuchannel.doorblog.jp,matome-tarou.ldblog.jp,recosoku.com##.plugin-memo:last-child
 kazokuchannel.doorblog.jp,magical-news.blog.jp,minnanohimatubushi.2chblog.jp,oppao.blog.jp,vippers.jp##.plugin-memo:first-child
 kensho-matome.info###sidebar2 > .widget:last-child, .widget:nth-child(-n+2)
 keyakizaka46matomemory.net##div[style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;"]
@@ -1274,6 +1278,7 @@ mudasure.com,nadarenews.com##.blogroll-top
 nadarenews.com##.blogroll-sitasita, .blogroll-wow, .check, .itiuebar1, .uebar1, [class^=sitabar]
 nandemo-uketori.com##.right-container
 nanj-world.blog.jp###permalink
+nanjde.blog.jp###blogroll-box
 nantuka.blog119.fc2.com###header > center, font > center
 netatama.net##.article-outer-3 > center:nth-of-type(n+3)
 netouyonews.net###custom_html-17 > .custom-html-widget > div[align], .kijirss, [id$=rss1], [id$=rss2]
@@ -1290,6 +1295,7 @@ nogizaka-46bunno1.blog.jp##.plugin-memo:has(a[href^="http://blog."])
 nogizaka-46bunno1.blog.jp###more > div[style^="font-size: 16px; font-weight: bold; border-width: 2px"], #more > div[style^="font-size: 16px; ntrblog.com##.header_cm
 font-weight: bold; border-width: 2px"] ~ br
 oboega-01.blog.jp##.article-body-more > div[style="border-style: solid ; border-width: 1px;"]:first-child
+oekaki-navi.blog.jp###sub[style^="position: fixed"]:style(position: static !important)
 okashinahitobito.net##.logbox, [class^=sample-box-]
 oniyomediary.com###footer-rss
 openworldnews.net##.t_b:has(a[onclick])
