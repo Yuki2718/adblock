@@ -28,7 +28,7 @@
 
 #### 4. Nano Adblocker（+ Nano Defender）の方がよいと聞きました。
 
-  <strong>2020年10月17日追記：Nanoプロジェクト（Chrome版）はトルコの開発者に[売却され、](https://github.com/NanoAdblocker/NanoCore/issues/362)。危険な機能が追加されたため[ストアから削除されました](https://github.com/jspenguin2017/Snippets/issues/2)。ChromeでNanoをご利用の方は速やかにアンインストールしてください。Firefox版は別の方がメンテナンスしているため大丈夫です。</strong>
+  <strong>2020年10月17日追記：Nanoプロジェクト（Chrome版）はトルコの開発者に[売却され](https://github.com/NanoAdblocker/NanoCore/issues/362)、危険な機能が追加されたため[ストアから削除されました](https://github.com/jspenguin2017/Snippets/issues/2)。ChromeでNanoをご利用の方は速やかにアンインストールしてください。Firefox版は別の方がメンテナンスしているため大丈夫です。</strong>
 
   目的と使い方によります。もし、アンチ広告ブロックを念頭に置いておられるのなら、uBlock Originで十分です。現在、Nanoに報告されるすべてのアンチ広告ブロックはuBlock filtersかuBlock filters - Annoyancesにて対処されています。ただ、Nanoではコンテンツを妨害しないソフトアンチブロック（例：Outlook.com無料版で右側に出る「お願い」）もデフォルトで対処するのに対し、uBlock Originの場合はuBlock filters - Annoyancesの購読が必要になります。Nanoの最大の利点は強力だがリスクもあるスクリプトレットで一部の迷惑要素に対処できる点ですが<sup>4</sup>、Nano filters -  Annoyancesはほぼ海外向けです。日本語サイトを中心に見る人は、自分でルールを書くのでなければNanoを使うメリットはほぼありません。むしろ最新機能への追随が遅れることがあり<sup>5</sup>、使うフィルタによってはデメリットさえあります。ただ、NanoにはQuick reporterという問題報告ツールがあり、これは別の意味で大きなメリットといえます。ところで、アンチ広告ブロックは目立つため、初心者の方にはなにか特別な対処を要するものに思えてしまうのかもしれません。しかしこれは評判が悪かったため、近年増えてきているのはブロッカーを検知してそれを迂回する広告を再挿入するパターンです（これもあまり成功していないようです。広告を見たくない人に無理やり見せるのだから当然ですが）。
 
@@ -64,6 +64,8 @@
   [何も問題](https://old.reddit.com/r/uBlockOrigin/comments/itw503/ubo_google_docs_high_cpu_spikes_and_blocked/g5l5yjd/)[ありません](https://old.reddit.com/r/uBlockOrigin/comments/j5cwdj/ubo_is_blocking_7k_xhr_requests_on_youtube_videos/g7sex8w/)。どういうわけか、カウンターが上がり続けるとパフォーマンスに悪影響があると信じている人が多いようです。確かに、ブロックされた場合にものすごい勢いでリクエストを送り続けるケースはあり、フリーズしたりCPU使用率が跳ね上がったりしますがこれはそのサイトの問題です。1秒に1つ程度のカウンター上昇なら何も影響ありません。どうしても信じられないなら、開発者ツールからパフォーマンスレコードをとって報告してください。証明できたらuBlock Origin史上初の発見です。
 
 #### 9. Chrome/EdgeでuBlock Extraは必要なのでしょうか？
+
+  2020年10月18日追記：開発者自身も事実上不要だろうと[追認しました](https://github.com/jspenguin2017/Snippets/issues/2#issuecomment-711032979)。
 
   [もしかしたら役に立つこともあるかもしれない](https://forums.lanik.us/viewtopic.php?f=106&t=43736)程度です。私自身は有用性を確認できませんでした。<strong>アンチ広告ブロックとは関係ありません</strong>。
 

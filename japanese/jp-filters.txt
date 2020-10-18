@@ -271,7 +271,7 @@ gigaho.com##.admax-ads, .ads-side-bar, .amaw_box, .ga-dob.box_drc, .post-footer 
 /RdmAdFeed.
 /VideoAd/*
 /^https?://js\.[-.0-9a-z]+/t/[0-9]{3}/[0-9]{3}/a[0-9]{7,9}\.js$/$script,3p
-/^https?:\/\/([a-z0-9]{8,10}\.)?[a-z0-9]{5,26}\.(com|bid|online|top|club)\/([a-z0-9]{2}\/){3}[a-f0-9]{32}\.js$/$script,3p
+/^https?:\/\/([a-z0-9]{8,10}\.)?[a-z0-9]{5,}\.(com|bid|online|top|club)\/([a-z0-9]{2}\/){3}[a-f0-9]{32}\.js$/$script,3p
 /^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{54,57}\/[a-f,0-9]{8,10}$/$script,3p,xhr,domain=~amazon.com
 /^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{54,}\/secure\.js/$script,3p,xhr,domain=~amazon.com
 /^https?:\/\/[A-Z0-9a-z]{10,16}\.cloudfront\.net\/\?[a-z]{3,7}\=[0-9]{4,8}$/$script,3p
@@ -645,6 +645,7 @@ gigaho.com##.admax-ads, .ads-side-bar, .amaw_box, .ga-dob.box_drc, .post-footer 
 /wp-content/plugins/agreeable-button/*
 /wp-content/plugins/deblocker/js/deblocker.min*.js$1p
 /wp-content/plugins/kill-adblock/*
+/wp-content/uploads/gftpkzd.js
 /www/delivery/*
 /xads.js
 /xbhf.js$script,3p
@@ -1811,6 +1812,7 @@ vkcdnservice.appspot.com^$3p
 ||cdnondemand.org^$3p
 ||centent.streamp1ay.cc^
 ||cgx68vtoprov.com^
+||chargingsensationmetropolitan.com^
 ||checkm8.com^$3p
 ||checkyofeed.com^
 ||chiasephim.xyz^$3p
@@ -1973,6 +1975,7 @@ vkcdnservice.appspot.com^$3p
 ||hobfadbig.com^
 ||hornsgrid.com^
 ||hostingcloud.racing^
+||howtubray.com^
 ||htintpa.tech^
 ||htlbid.com^
 ||i4tvy8vk9f74.com^
@@ -2447,11 +2450,13 @@ vkcdnservice.appspot.com^$3p
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|fastly.net|fastlylb.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|jsdelivr.net|jwpcdn.com|recaptcha.net,domain=samehadaku.vip
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|fastlylb.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|jquery.com|recaptcha.net,domain=srl.li
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|google.com|gstatic.com|jsdelivr.net|recaptcha.net,domain=shorttey.org
+*$script,3p,denyallow=cloudflare.com|cloudflare.net|googleapis.com|jsdelivr.net|tawk.to,domain=leechall.*
 *$script,3p,denyallow=cloudflare.com|disqus.com|disquscdn.com|fastlylb.net|google.com|googleapis.com|gstatic.com,domain=veranime.*
 *$script,3p,denyallow=cloudflare.com|disqus.com|fastlylb.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|unpkg.com,domain=megavideo.*
 *$script,3p,denyallow=cloudflare.com|doecdn.me,domain=javdoe.tv|javfree.la|javfree.sh|javtc.tv|javthe.com
 *$script,3p,denyallow=cloudflare.com|google.com|gstatic.com,domain=fc-lc.com|fc.lc|fcdot.lc|shorterall.com|shrt10.com
-*$3p,script,denyallow=cloudflare.com|google.com|gstatic.com|hcaptcha.com|recaptcha.net,domain=shortzzy.in
+*$script,3p,denyallow=cloudflare.com|google.com|gstatic.com|hcaptcha.com|recaptcha.net,domain=shortzzy.in
+*$script,3p,denyallow=cloudflare.com|google.com|gstatic.com|hwcdn.net|jquery.com|recaptcha.net,domain=linksly.co
 *$script,3p,denyallow=cloudflare.com|google.com|gstatic.com|recaptcha.net,domain=gplinks.co
 *$script,3p,denyallow=findercdn.me,domain=findercdn.me|javfinder.la
 *$script,3p,denyallow=google.com|gstatic.com,domain=bit-url.com
@@ -3073,6 +3078,7 @@ _bn634.$domain=minnano-anime.com|minnano-av.com
 ||limetorrents.info/static/images/728.
 ||link.seo-search.com/cm/$domain=yakibuta.seo-search.com
 ||linkrex.net/sw.js$script,1p
+||linksly.co/sw.js$script,1p
 ||live.fc2.com/friendlyAd.
 ||live.fc2.com/liveBlogParts.$domain=artemisweb.jp
 ||livedoor.blogimg.jp/gi24/imgs/4/8/4887031b.jpg$domain=gi24blog.com
@@ -7161,6 +7167,7 @@ blog.livedoor.jp###more > b[style="color: rgb(255, 0, 0); font-size: large;"], #
 blog.livedoor.jp###more > div[align=center] > .ninja-recommend-block + br + div[align=center]
 blog.livedoor.jp###poweredAdsBy
 blog.livedoor.jp###side > .side-tp:last-child
+blog.livedoor.jp###sub .column-inner-2 > [href^="https://www.amazon.co.jp/gp/"]
 blog.livedoor.jp##.ad-type-rect
 blog.livedoor.jp##.adsencewaku, .adsencewaku2
 blog.livedoor.jp##.article-body-inner > .LargeImage.amazon
@@ -7168,6 +7175,8 @@ blog.livedoor.jp##.article-body-inner > table[style=" border-style: none; width:
 blog.livedoor.jp##.article-body-inner > table[width^="7"][height="250"][align=center]
 blog.livedoor.jp##.article-main2 > div[style^="margin: 60px 0px 20px;border: 1px solid "]
 blog.livedoor.jp##.article-outer-3 > div.inline-block_1
+blog.livedoor.jp##.article-outer-3 [href^="http://www.amazon.co.jp/exec/"]
+blog.livedoor.jp##.article-outer-3 [href^="https://www.amazon.co.jp/gp/"]
 blog.livedoor.jp##.column-inner-2 > .plugin-memo:has(iframe[src^="https://rcm-"])
 blog.livedoor.jp##.column-inner-2 > .plugin-memo:has(img[src^="https://doujin-assets."])
 blog.livedoor.jp##.column-inner-2 > table[bordercolordark="#000000"][width="680"]
@@ -7520,6 +7529,8 @@ f1jouhou2.blog.fc2.com##.rmenubox:has(.adsbygoogle)
 facebook.com##a[aria-label="Advertiser link"]
 facebook.com##div[data-pagelet*="FeedUnit"]:has(div[aria-label="Sponsored"])
 facebook.com##div[data-pagelet*="FeedUnit"]:has(div[aria-label="広告"])
+facebook.com##div[data-pagelet="RightRail"] div[class] h3[dir]:has(span[dir]:has-text(Sponsored)):upward(7)
+facebook.com##div[data-pagelet="RightRail"] div[class] h3[dir]:has(span[dir]:has-text(広告)):upward(7)
 facebook.com##div[id^="mount_"] div[data-pagelet="RightRail"] > div:not([data-vc-ignore-dynamic]) > div:not([class])
 fanblogs.jp###ad-60days-area
 fancrew.jp##.newArrivals > .pickup_top
@@ -7789,7 +7800,6 @@ ibispaint.com,routinehub.co###advertisement
 ibispaint.com##.sidebar > div:has(iframe[width="300"])
 icooon-mono.com###ad_responsive
 icutlink.com###link-view > p, #link-view > br
-icutlink.com##.banner-inner
 iecolle.com##.advertising
 ieeexplore.ieee.org##.Ads-leaderboard
 iii.main.jp##.main > .pc
@@ -8057,6 +8067,7 @@ lamire.jp##.ad-unit.content-bottom-left, .ad-unit.content-bottom-right
 last.fm##.full-bleed-ad-container
 last.fm##.sidebar-ad-container
 latte.la##.column-ads, .footer_ads
+ldoceonline.com##.topslot-container
 leez.info##.widget_custom_html:has(iframe)
 leez.info##.widget_custom_html:has(img[src*="a8.net"])
 leez.info##.widget_custom_html:has(img[src^="https://h."])
@@ -8079,6 +8090,7 @@ line-emoji.com###contents > div:has(script[src^="//pagead2"])
 linkdrop.net##.blog-item
 linkdrop.net##.short-link > a[href="javascript:void(0)"]
 linkedin.com##.core-rail > .ember-view > .ember-view:has(.feed-shared-actor__sub-description:has-text(/Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|الترويج/))
+linksly.co###imgAddDirectLink
 live.fc2.com##.m-viewAd
 live.nicovideo.jp###recommendedProgramListSection
 live.nicovideo.jp,live2.nicovideo.jp###billboard_ad, #header-ad, [class^=___app-download-banner], [class^=___banner-ad], [class^=___billboard-ad], [class^=___premium-merit-appeal-banner]
@@ -10571,8 +10583,8 @@ zukobako.com##^#topnews > dl:has(.smp)
 01fmovies.com,cloudvideo.tv,dailyuploads.*,databasegdriveplayer.*,dood.*,earnload.*,files.im,fmovies.*,fmovies2.*,gdriveplayer.*,hexupload.net,iir.ai,mediumarticles.com,ouo.io,playnow.to,playtube.ws,streamtape.*,tii.ai,upindia.*,userscloud.com,vidcloud9.*##+js(acis, Math, XMLHttpRequest)
 141tube.com,anitube.biz,bitporno.com,clipwatching.com,highporn.net,javix.net,javrave.club,onlyhgames.com,porndollz.com,saradahentai.com,thatav.net,xnxxvideo.pro##+js(acis, document.querySelectorAll, popMagic)
 1bitspace.com##+js(acis, setTimeout, Constant)
-4cash.me,adbull.*,adsh.cc,adslink.pw,adsrt.*,aii.sh,apksvip.com,birdurls.com,bit-url.com,bitfly.io,bolssc.com,boxlink.us,btcdot.xyz,cashurl.in,clik.pw,coinlyhub.com,cutpaid.com,cuts-url.com,cutwin.com,dz4link.com,earnload.*,genpas.icu,gibit.xyz,gplinks.co,icutlink.com,iir.ai,ilinks.in,joska.xyz,linkdrop.net,mitly.us,ouofly.com,owllink.net,pingit.*,pinnstube.com,pkr.pw,pnd.*,projecto2.xyz,proshort.gq,shorten.*,shortenbuddy.com,shorterall.com,shorttey.org,shortzzy.in,shotly.io,shrinkbtc.cc,shrinke.me,shrinkhere.xyz,shrinkme.io,shrt10.com,shurt.pw,srl.li,tii.ai,tmearn.*,wordcounter.icu,win2url.com,zlink.xyz##+js(aopr, app_vars.force_disable_adblock)
-4snip.pw,9anime.*,9xmovies.*,aii.sh,anime789.com,asianclub.*,bitfly.io,bitporno.com,clipwatching.com,cutpaid.com,digjav.com,dlfiles.online,drtuber.com,dwrfslsqpdfqfwy.net,easyload.io,femax20.com,feurl.com,fileone.tv,files.im,gayvidsclub.com,gdriveplayer.*,genpas.icu,getfile.mobi,gogoanimetv.*,gounlimited.to,hentai2read.com,hentai4.me,hentaihaven.xxx,hubfiles.ws,iframejav.com,imfb.xyz,javlove.club,katfile.com,luscious.net,mavplay.com,mixdrop.*,mm9841.com,notube.net,novelplanet.me,ohentai.org,onichanko.muvc.net,opmovie.xyz,playfinder.xyz,playvideo.best,pornhub.*,pornhubthbh7ap3u.onion,redanimedatabase.cloud,redtube.*,rubtech.xyz,savemedia.*,shortzzy.in,spankbang.com,streamtape.*,streamz.*,tmearn.com,tube8.*,uploadbank.com,uploadhub.*,uploadraja.com,waaw.*,xanimeporn.com,youporn.com,youtubedownloader.*,ytmp3.cc,yts.*,zupload.me##+js(nowoif)
+4cash.me,adbull.*,adsh.cc,adslink.pw,adsrt.*,aii.sh,apksvip.com,birdurls.com,bit-url.com,bitfly.io,bolssc.com,boxlink.us,btcdot.xyz,cashurl.in,clik.pw,coinlyhub.com,cutpaid.com,cuts-url.com,cutwin.com,dz4link.com,earnload.*,genpas.icu,gibit.xyz,gplinks.co,icutlink.com,iir.ai,ilinks.in,joska.xyz,linkdrop.net,linksly.co,mitly.us,ouofly.com,owllink.net,pingit.*,pinnstube.com,pkr.pw,pnd.*,projecto2.xyz,proshort.gq,pslfive.com,shorten.*,shortenbuddy.com,shorterall.com,shorttey.org,shortzzy.in,shotly.io,shrinkbtc.cc,shrinke.me,shrinkhere.xyz,shrinkme.io,shrt10.com,shurt.pw,srl.li,tii.ai,tmearn.*,wordcounter.icu,win2url.com,zlink.xyz##+js(aopr, app_vars.force_disable_adblock)
+4snip.pw,9anime.*,9xmovies.*,aii.sh,anime789.com,asianclub.*,bitfly.io,bitporno.com,clipwatching.com,cutpaid.com,digjav.com,dlfiles.online,drtuber.com,dwrfslsqpdfqfwy.net,easyload.io,femax20.com,feurl.com,fileone.tv,files.im,gayvidsclub.com,gdriveplayer.*,genpas.icu,getfile.mobi,gogoanimetv.*,gounlimited.to,hentai2read.com,hentai4.me,hentaihaven.xxx,hubfiles.ws,iframejav.com,imfb.xyz,javlove.club,katfile.com,linksly.co,luscious.net,mavplay.com,mixdrop.*,mm9841.com,notube.net,novelplanet.me,ohentai.org,onichanko.muvc.net,opmovie.xyz,playfinder.xyz,playvideo.best,pornhub.*,pornhubthbh7ap3u.onion,redanimedatabase.cloud,redtube.*,rubtech.xyz,savemedia.*,shortzzy.in,spankbang.com,streamtape.*,streamz.*,tmearn.com,tube8.*,uploadbank.com,uploadhub.*,uploadraja.com,waaw.*,xanimeporn.com,youporn.com,youtubedownloader.*,ytmp3.cc,yts.*,zupload.me##+js(nowoif)
 9anime.*##+js(acis, window.open, Cookie)
 9ketsuki.info##+js(nobab)
 9hentai.com##+js(set, _9HentaiPopJs, null)
@@ -10580,12 +10592,12 @@ zukobako.com##^#topnews > dl:has(.smp)
 adbull.*,icutlink.com,uploadfiles.pw,w4files.ws##+js(ra, onclick)
 adsh.cc##+js(acis, String, decodeURIComponent)
 adsh.cc,adsrt.*,ashemaletube.com,bestjavs.com,bit-url.com,boxlink.us,cam4.com,clik.pw,deepfakeporn.net,fcdot.lc,ffem.club,gibit.xyz,hitomi.la,icutlink.com,iir.ai,kwik.*,linkrex.net,loader.to,mitly.us,mstream.*,mystream.to,oke.io,onlyhgames.com,ouo.io,ouofly.com,owllink.net,picbaron.com,pingit.*,pkr.pw,projecto2.xyz,shorten.*,shorterall.com,shorttey.org,shrinke.me,shrinkme.io,shrt10.com,tii.ai,upstream.to,win2url.com,yavtube.com,youtube-video.download,zlink.xyz##+js(aopr, open)
-adsh.cc,animepahe.*,aniplay.*,asianclub.*,boxlink.us,cashurl.in,clicknupload.co,cpmlink.net,dood.*,dramahd.me,gibit.xyz,hexupload.net,hlsplay.com,javgayplus.com,javhay.net,javmost.com,javtiful.com,likn.xyz,linkdrop.net,linkrex.net,mangahere.onl,mangovideo.*,mirrorace.*,mitly.us,mixdrop.*,ouo.io,shrinkbtc.cc,srt.am,streamtape.*,streamz.*,playnow.to,streamanimetv.net,thepiratebay0.org,thisav.*,upstream.to,wordcounter.icu,xsober.com,xxgasm.com##+js(aopw, _pop)
+adsh.cc,animepahe.*,aniplay.*,asianclub.*,boxlink.us,cashurl.in,clicknupload.co,cpmlink.net,dood.*,dramahd.me,gibit.xyz,hexupload.net,hlsplay.com,javgayplus.com,javhay.net,javmost.com,javtiful.com,leechall.*,likn.xyz,linkdrop.net,linkrex.net,mangahere.onl,mangovideo.*,mirrorace.*,mitly.us,mixdrop.*,ouo.io,shrinkbtc.cc,srt.am,streamtape.*,streamz.*,playnow.to,streamanimetv.net,thepiratebay0.org,thisav.*,upstream.to,wordcounter.icu,xsober.com,xxgasm.com##+js(aopw, _pop)
 adshrink.it,linuxsecurity.com##+js(aeld, load, nextFunction)
 adshrink.it##+js(aopr, MutationObserver)
 adslink.pw##+js(aopw, ai_adb)
 adsrt.*##+js(aopr, rmVideoPlay)
-adsrt.*,aii.sh,bit-url.com,birdurls.com,bitfly.io,boxlink.us,cashurl.in,clk.ink,coinlyhub.com,cutpaid.com,cuts-url.com,cutwin.com,fc.lc,fcdot.lc,gplinks.co,icutlink.com,iir.ai,joska.xyz,linkrex.net,linkviet.*,mitly.us,ouofly.com,owllink.net,pkr.pw,projecto2.xyz,proshort.gq,shortenbuddy.com,shorttey.org,shortzzy.in,shotly.io,shrinkbtc.cc,shrinke.me,shrinkme.in,shrt10.com,srl.li,tii.ai,zlink.xyz##+js(set, blurred, false)
+adsrt.*,aii.sh,bit-url.com,birdurls.com,bitfly.io,boxlink.us,cashurl.in,clk.ink,coinlyhub.com,cutpaid.com,cuts-url.com,cutwin.com,fc.lc,fcdot.lc,gplinks.co,icutlink.com,iir.ai,joska.xyz,linkrex.net,linksly.co,linkviet.*,mitly.us,ouofly.com,owllink.net,pkr.pw,projecto2.xyz,proshort.gq,pslfive.com,shortenbuddy.com,shorttey.org,shortzzy.in,shotly.io,shrinkbtc.cc,shrinke.me,shrinkme.in,shrt10.com,srl.li,tii.ai,zlink.xyz##+js(set, blurred, false)
 ! Triggered either by other filters or by Brave
 affiliate.fc2.com##+js(nostif, checkFeed, 1000)
 aii.sh##+js(acis, String.prototype.charCodeAt)
@@ -10625,7 +10637,7 @@ bbc.com##+js(acis, loadChartbeat)
 bcvc.live##+js(aeld, load, (document.getElementById(')
 bcvc.live,shorten.sh##+js(aopr, Notification)
 bcvc.live##+js(aopr, punosyIppSettings)
-birdurls.com,bitfly.io,dailyuploads.*,gogo-stream.com,gplinks.co,hlsplay.com,hydracdn.*,ilinks.in,kissasian.*,manga-raw.club,ouofly.com,owllink.net,readm.org,shotly.io,shrinkbtc.cc,upstream.to,vidstreaming.io,win2url.com##+js(acis, String.fromCharCode, btoa)
+birdurls.com,bitfly.io,dailyuploads.*,gogo-stream.com,gplinks.co,hlsplay.com,hydracdn.*,ilinks.in,kissanime.*,kissasian.*,manga-raw.club,ouofly.com,owllink.net,readm.org,shotly.io,shrinkbtc.cc,upstream.to,vidstreaming.io,win2url.com##+js(acis, String.fromCharCode, btoa)
 birdurls.com,owllink.net,sznlink.xyz,xsober.com##+js(aopr, absda)
 blog.livedoor.jp##+js(acis, jmp, Math)
 bolssc.com,iir.ai,jkanime.net##+js(acis, String.fromCharCode, /emZnbG9hZGVk|break;case \$\./)
@@ -10653,6 +10665,7 @@ dramahd.me,sznlink.xyz##+js(aopw, ai_front)
 drivedrama.com##+js(aeld, load, onload)
 drtuber.com,proporn.com,viptube.com,weheartit.com##+js(set, canRunAds, true)
 duplichecker.com,filehorse.com,linkvertise.com##+js(set, isAdBlockActive, false)
+embed.streamx.me##+js(noeval-if, debugger)
 empflix.com,tnaflix.com##+js(aopr, ads.pop_url)
 eplayvid.com##+js(acis, Math, /XMLHttpRequest|break/)
 ero-video.net##+js(aeld, DOMContentLoaded, showPopUpBanner)
