@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-10-20
+! Last updated: 2020-10-21
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -841,6 +841,8 @@ instagram.com##.xZ2Xk:has-text(/App/)
 /rss.js|
 /rss/*$frame
 /rss_$frame
+/rss_bottom.js
+/rss_slide.js
 /rss0.html|
 /rss01.$frame
 /rss02.htm|
@@ -900,7 +902,6 @@ _rss3.$frame
 /pickupgirl/\d{6}-\d{3}s\.jpg$/$image,1p,domain=pickupgirl.blog23.fc2.com
 pickupgirl.blog23.fc2.com###gdright > table[width="100%"], #gdright > table[width="100%"] + br
 /recommended.js$domain=hero-news.com
-/rss_slide.js$domain=majikichi.com
 ||2ch-matomenews.com/*headline|$frame
 ||2ch-matomenews.com/headermenurss$frame
 2ch-matomenews.com##.bottom_matomeRss, .postTopRss
@@ -1031,6 +1032,9 @@ idol-blog.com###leftcol > ul > .post-list + li, #leftcol div[style^="width:205px
 ||livedoor.jp/karukan123/rss1vip.html|$domain=karukantimes.com
 ||m4ex.com/m4ex_box/frame/
 m4ex.com##.newsframe1, [class^=rssframe]
+||majikichi.com/js/matomeja_entry.
+||majikichi.com/js/rt_rank_widget.
+||majikichi.com/js/side_f_3c.
 ||mandou.info^$image,3p
 ||manga-mill.com/blog/feed/
 ||mashlife.doorblog.jp^$frame,1p
@@ -1201,7 +1205,6 @@ digital-thread.com##.article-headline, .plugin-memo:nth-last-child(n+3), .top-co
 doujin-eromanga.com##.rss_box
 doujinzone.com##.blogroll
 eegg.fun##.innerframe:has(iframe[src^="/rss"])
-erodoujin-mecca.xyz###widget-under-related-entries
 erogletv.blog.fc2.com##.plugin1_outline:nth-child(-n+2)
 eromangacafe.com##.loop-single-widget
 eropasture.com##.widget-below-comment-form, .widget-sidebar-scroll
@@ -1292,6 +1295,8 @@ magical-news.blog.jp###more > .t_h > b
 magical-news.blog.jp,mindhack2ch.com##.article-rss
 magsoku.blomaga.jp###comrss, #pick3
 magsoku.blomaga.jp##.msen:has-text(NEWS 3)
+majikichi.com###article-body > h3:not(:has-text(RTランキング))
+majikichi.com##.comment_rank_widget_root, [class^=headline_]
 maki7.dreamlog.jp##.message-board-outer
 mamekichimameko.blog.jp##.particlesArea
 mashlife.doorblog.jp##.article-body-inner > a[target=_blank], .article-body-inner > a[target=_blank] ~ br, .article-body-inner > table[summary=ad]
