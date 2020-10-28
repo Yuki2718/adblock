@@ -65,7 +65,7 @@ The most comprehensive, block-first, and efficient Japanese list for uBlock Orig
 
 ### Yuki's uBlock Japanese filters - Paranoid
 
-This can be added to Yuki's uBlock Japanese filters for enhanced blocking. Use at your own risk. Some rules are taken from or influenced by [EasyPrivacy](https://easylist.to/) and [Fanboy's Enhanced Trackers List](https://www.fanboy.co.nz/filters.html).
+This can be added to Yuki's uBlock Japanese filters for enhanced blocking. Use at your own risk. Some rules are taken from or influenced by [EasyPrivacy](https://easylist.to/), [Fanboy's Enhanced Trackers List](https://www.fanboy.co.nz/filters.html), and gwarser's [Block access to LAN](https://github.com/gwarser/filter-lists/blob/master/lan-block.txt) list.
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Paranoid">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
