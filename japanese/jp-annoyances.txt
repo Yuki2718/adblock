@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-10-29
+! Last updated: 2020-10-30
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -31,6 +31,7 @@ games.yahoo-net.jp###yse-footer-btn
 /push_notification.
 /pushes/notification.
 /pushnotification.
+/site-notification-desk.
 /urban-airship-
 /web-push.
 /webpush.
@@ -434,6 +435,8 @@ imitsu.jp###cv_bottom_a, #modal_bg
 instagram.com###react-root ~ div[class*=" "][class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > div > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
 instagram.com##.ZUqME:has(a[href^="/accounts/emailsignup/"])
 instagram.com##body[style*="overflow: hidden;"]:style(overflow-y: scroll !important;)
+investing.com###PromoteSignUpPopUp
+investing.com##.generalOverlay
 j-island.net##.l-pickup
 javascript.info###notify-translate-tutorial-local
 jp.techcrunch.com##.toaster
@@ -611,6 +614,7 @@ mery.jp##.m-footer-appLink
 ab-road.net##.app-area
 ||aixifan.com/acfun-pc/*/img/acimg.$domain=acfun.cn
 www.acfun.cn##.app-guide
+||akamaized.net/footer/footerMobile2018.$domain=investing.com
 ||alfafile.net/img/buttons/googleplay.
 ||amazonaws.com/assets/common/icon_app-$domain=medicalnote.jp
 medicalnote.jp##.p-app-area
@@ -1262,6 +1266,7 @@ himanatokiniyaruo.com###main > .plugin-title
 himanatokiniyaruo.com###plugin1
 himasoku.com##.himajin-headline
 honwaka2ch.livedoor.biz###main > .column-inner > .column-inner-2 > div[align=center], #main > .column-inner > .column-inner-2 > div[style], .article-outer-3 > div[style], .sample1
+hosyusokuhou.jp###bottom_rss, #footerinner
 huyosoku.com##.res-quote, .size-full, [id$=feed]
 i2chmeijin.blog.fc2.com##.rssBox
 ideal2ch.livedoor.biz##.sita-rss
@@ -1733,6 +1738,10 @@ blog.goo.ne.jp##.block__shop
 blog.goo.ne.jp##^.block__shop
 !#endif
 
+! ---------- Self promotion ----------
+||wpb.shueisha.co.jp/data/banner/announcement/
+wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
+
 ! ---------- Other ----------
 /amp-apester-
 /flash.js|$domain=oricon.co.jp
@@ -1802,6 +1811,7 @@ ironna.jp###side-theme-list
 live2.nicovideo.jp##[class^=___player-display-header___]
 lnk.parts##+js(nano-sib, r--, , 0.02)
 mixdrop.*##+js(nano-stb, DOWNLOAD, 1000)
+onlinegamesx.com###yuidea-snp:style(display:block !important)
 ponta.abstractpainting.work##+js(nano-stb, visibility, 4000)
 ponta.abstractpainting.work##+js(nano-stb, [native code], 2000, 0.3)
 ponta.abstractpainting.work##+js(nano-stb, [native code], 3000, 0.25)
