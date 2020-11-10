@@ -1,6 +1,6 @@
-## お知らせ
+## お知らせ（2020年11月10日）
 
-初心者向けに、広告ブロックについてのFAQ（よくある質問）を[まとめてみました](/japanese/FAQ.md)。ご意見がおありの方は、[Issue](https://github.com/Yuki2718/adblock/issues)か[したらば](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1598352715/)にどうぞ。
+Youtubeの白（または黒）い「広告をスキップ」画面および広告すり抜けについて：まず、uBlock Originでの対策方法は[公式ページ](https://github.com/gorhill/uBlock/releases)から1.30.9b12以降の開発者ビルドをインストールすることです。この新しいタイプのYoutube広告（新スキーム）では、fetchと組込みのBody.json()パーサーが用いられており、これまでのjson-pruneフィルタでは対処できませんでした（[参照](https://github.com/gorhill/uBlock/commit/13f92756befaa9a8d3ba1615bd7abc7075758c67)）。また、旧スキームは特定アカウントでサインイン中に限り広告が配信されていた（そのため、アカウント切り替えやサインアウトで対処できた）のに対し、新スキームは（旧スキームもこれからは？）サインアウト状態でも配信されることがあります。ただしクッキー削除後の初訪問時に表示されることはなく、リロードかページ遷移後に表示されるようです。念のため述べると、旧スキームも依然として用いられており、このフィルタのおかげで多くの人は広告を目にせず済んでいます。どちらのスキームにせよ、広告表示には何らかの条件があり、フィルタ作者側もuBlockチームのgwarser氏がほんの数時間、およびEasyListのFanboyNZ氏が再現できたほかは新スキーム広告を再現できていません。
 
 ### Yuki's uBlock Japanese filters （雪フィルタ）
 
@@ -50,7 +50,7 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 <details>
 <summary><strong>併用可</strong></summary>
 
-ブロック対象に違いがなく、パフォーマンスや誤爆の観点から問題がない場合、[EasyList](https://easylist.to/easylist/easylist.txt), [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt), [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php), [uBlock 内製フィルター](https://github.com/uBlockOrigin/uAssets), [AdGuard Base](https://kb.adguard.com/en/general/adguard-ad-filters#english), [AdGuard Tracking Protection](https://kb.adguard.com/en/general/adguard-ad-filters#privacy), [Fanboy Enhanced Tracking](https://www.fanboy.co.nz/enhancedstats.txt), [280blocker 広告ドメインリスト](https://280blocker.net/download/)など、併用されることが多そうなフィルタとルールを統一しています<sup>13</sup>。これにより重複が排除され、フィルター一覧でのフィルタ有効数<sup>14</sup>が正しく表示されるだけでなく、非表示フィルタの多重適用も回避できます。つまり単独で使えるばかりでなく、上述の各種フィルタと併用した場合でも無駄がありません<sup>15</sup>。また、標準リストで発生する不具合が当該リストで修正されない場合、こちらで修正いたします。つまり標準リストに対する不具合修正フィルタとしても機能します。なお、280blocker 広告ドメインリスト以外の日本用フィルタとの併用はおすすめしません。
+ブロック対象に違いがなく、パフォーマンスや誤爆の観点から問題がない場合、[EasyList](https://easylist.to/easylist/easylist.txt), [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt), [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php), [uBlock 内製フィルター](https://github.com/uBlockOrigin/uAssets), [AdGuard Base](https://kb.adguard.com/en/general/adguard-ad-filters#english), [AdGuard Tracking Protection](https://kb.adguard.com/en/general/adguard-ad-filters#privacy), [Fanboy Enhanced Tracking](https://www.fanboy.co.nz/enhancedstats.txt), [280blocker 広告ドメインリスト](https://280blocker.net/download/)など、併用されることが多そうなフィルタとルールを統一しています<sup>13</sup>。これにより重複が排除され、フィルター一覧でのフィルタ有効数<sup>14</sup>が正しく表示されるだけでなく、非表示フィルタの多重適用も回避できます。つまり単独で使えるばかりでなく、上述の各種フィルタと併用した場合でも無駄がありません<sup>15</sup>。また、標準リストで発生する不具合が当該リストで修正されない場合、こちらで修正いたします。つまり標準リストに対する不具合修正フィルタとしても機能します。なお、280blocker 広告ドメインリスト以外の日本用フィルタとの併用はおすすめしません。不具合やアンチ広告ブロック起動の原因となりえます。
 
 </details>
 
