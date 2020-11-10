@@ -14,7 +14,7 @@ Because not needed. Trusted filters can inject javascript into pages and thus ca
 
 ### AdGuard Social media Plus (social-plus.txt)
 
-[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social) tends to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter. Particularly useful on browser extensions and contents blocker, not as much on other AdGuard platforms where it can remove contents specified by cosmetic filters.
+[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social) tends to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter.
 - `||connect.facebook.net^*/sdk.js`
 - `||platform.twitter.com/widgets.js`
 - `||static.evernote.com^$third-party`
