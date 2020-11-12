@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-12
+! Last updated: 2020-11-13
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -124,7 +124,7 @@ www.sony.jp##.s5-frontLogin__notificationItem--favorite
 youtube-nocookie.com,youtube.com###movie_player > .ytp-ce-bottom-right-quad
 youtube-nocookie.com,youtube.com##.annotation.iv-branding
 youtube-nocookie.com,youtube.com##.ytp-cards-teaser
-youtube-nocookie.com,youtube.com##.ytp-ce-element
+~studio.youtube.com,youtube-nocookie.com,youtube.com##.ytp-ce-element
 
 !#if env_mobile
 m.youtube.com##ytm-item-section-renderer > lazy-list > .item:has(.watch-metadata-app-promo-content)
@@ -1247,6 +1247,7 @@ blog.livedoor.jp###hdline, #main > .h2-sub, #tab-wp, .rss-sub, .side-tp, section
 blog.livedoor.jp###main > div[style="padding:0 8px 10px 0;"] + div.box01
 blog.livedoor.jp###main-column > .kiziue
 blog.livedoor.jp###main > #headline
+blog.livedoor.jp###pickrightcon, .boxrss1toppage, .rsstoptop
 blog.livedoor.jp###rssheader, #rssinner
 blog.livedoor.jp###single-footer-buzz, #single-rss-01
 blog.livedoor.jp###wrapper > #main + div#side[style^="position: fixed"]:style(position:static !important)
@@ -1944,6 +1945,7 @@ ponta.abstractpainting.work##+js(set, NEXT_DELAY, 0)
 shorten.sh##+js(nano-sib, ti--)
 shortenbuddy.com##+js(nano-sib, downloadTimer)
 techcrunch.com##.homepage__event-promo, .upcoming-events
+thetechywizard.com##+js(nano-sib, timer, 1500)
 top.gg###video-root
 top.gg###vote-root:style(display:block !important)
 topics.smt.docomo.ne.jp##.m-tickerArea
@@ -1963,4 +1965,3 @@ nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 
 ! Exception
 @@||popin.cc/searchbox/action_$script,3p
-studio.youtube.com#@#.ytp-ce-element
