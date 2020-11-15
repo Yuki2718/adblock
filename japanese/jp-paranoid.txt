@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-12
+! Last updated: 2020-11-15
 
 /^(?:http|ws)s?://\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:/]/$3p
 /^\w+://10\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$3p
@@ -87,10 +87,12 @@ _omniture.$script,domain=mathworks.com
 ||rurubu.travel/aff/registfrom.asp?RegistFrom=*&RedirectURL=*&utm_source=$doc
 ||samuraiclick.com/lp/*.php?m=*&b=$doc
 ||search.rakuten.co.jp/search/mall/*/?sid=*&l-id=$doc
+||shingon.jp/p.php?pr=*&i=*&ac=$doc
 ||site-search.kddi.com/click?url=$doc
 ||studentwalker.com/st-manager/click/track?id=*&type=*&url=$doc
 ||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=*&COOKIE_PATH=*&COOKIE_DOMAIN=*&VIEW_URL=$doc
 www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
-!||hbol.jp^*?cx_clicks_art_mdl=$queryprune=|cx_clicks_art_mdl
-!||hbol.jp^*?cx_clicks_series_mdl=$queryprune=|cx_clicks_series_mdl
-!||response.jp^*html?from=$queryprune=|from
+!?_rt_ck=$doc,queryprune=|_rt_ck
+!||hbol.jp^*?cx_clicks_art_mdl=$doc,queryprune=|cx_clicks_art_mdl
+!||hbol.jp^*?cx_clicks_series_mdl=$doc,queryprune=|cx_clicks_series_mdl
+!||response.jp^*html?from=$doc,queryprune=|from
