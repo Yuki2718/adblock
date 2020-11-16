@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-15
+! Last updated: 2020-11-16
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -629,6 +629,7 @@ twitter.com#?#div[dir=auto] > span:contains(Twitterなら、「いま」):nth-an
 /plugins/smartbanner.
 @@/wp-content/plugins/bwp-minify/min/?*/jquery.smartbanner.$css,script,1p
 
+||9gag.com/s/*/sidebar-download-app.$image,1p
 ||a.mery.jp^*/footer-app.$image,1p
 ||a.mery.jp^*/link_btn_$image,1p
 mery.jp##.m-footer-appLink
@@ -1340,6 +1341,8 @@ hero-news.com##.right-container[style^="position: fixed"]:style(position: absolu
 himanatokiniyaruo.com###main > .plugin-title
 himanatokiniyaruo.com###plugin1
 himasoku.com##.himajin-headline
+honsoku.com##.left-column-inner > .plugin-memo:has(script[src$="/blogroll.js"])
+honsoku.com##.main-column-inner .ba, .right-column-inner > .plugin-memo:nth-child(n+3), .rss-t, .rss-t2, .rss2-blogroll, .widget-area:last-of-type
 honwaka2ch.livedoor.biz###main > .column-inner > .column-inner-2 > div[align=center], #main > .column-inner > .column-inner-2 > div[style], .article-outer-3 > div[style], .sample1
 hosyusokuhou.jp###bottom_rss, #footerinner
 huyosoku.com##.res-quote, .size-full, [id$=feed]
@@ -1423,6 +1426,9 @@ matometanews.com###bottom-links, #bottom-links2, #container > div[style^="width:
 megatron-v.site###sidebar-2
 mindhack2ch.com##.article__footer > .section-title, .blogroll-channel-wrapper
 mindhack2ch.com,pokemon-goh.doorblog.jp##.rss-blogroll4
+minnano-syuraba.ldblog.jp###koteikijinakatitle + br, #more > a[target=_blank], #more > br
+minnano-syuraba.ldblog.jp,sutekinakijo.com###koteikijinakatitle
+minnano-syuraba.ldblog.jp,srwmatome.blog.jp###more > span[style]
 minnanohimatubushi.2chblog.jp##.PR, .RSS1, .article-body-inner div[style^="border: solid 1px "], .article-body-more > span[style="font-size: large;"] ~ a + br, .article-body-more > span[style="font-size: large;"] ~ a[target=_blank], [id^=RSS-top]
 mizuhonokuni2ch.com##.ad-rss, .rss-text
 mizuhonokuni2ch.com##.article-wrapper:style(margin-top:auto !important)
@@ -1507,7 +1513,7 @@ shiropro.net##.Article > .Module__heading
 siokan5000.blog.fc2.com##.blogroll_content, .blogroll_content ~ br, .blogroll_content1
 sk2ch.net##.recommend
 skematomemon.com###more > .t_h > script + br
-srwmatome.blog.jp###more > span[style], #more > span[style] ~ br, .right-container > a[href^="http://blog.with2."] + br
+srwmatome.blog.jp###more > span[style] ~ br, .right-container > a[href^="http://blog.with2."] + br
 sshouko.net###secondary-column:style(position:static !important)
 sshouko.net##blockquote
 sshouko.net##[class^=headline]
@@ -1517,7 +1523,7 @@ sukattojapan.com##.section-rss1
 sukattojapan.com##.sub[style^="position: fixed"]:style(position: static !important)
 sumaburayasan.com##.article-body-inner > div[style^="font-size: 14px; padding: 5px;"]
 sundaysilence.blogterest.net##.blockAreaRight > .blockWrapper:nth-of-type(-n+4)
-sutekinakijo.com###adnet + .articlebox, #koteikijinakatitle, #koteititle, .footcon, .ga-rss
+sutekinakijo.com###adnet + .articlebox, #koteititle, .footcon, .ga-rss
 syurabahazard.com##.middlersstitle, .toprss
 syurabake.com##.centerPage, .headLine, .headPage
 tarosoku.com###brogrolltop, [class^=kijishita_rss]
@@ -1871,6 +1877,7 @@ blog.goo.ne.jp##^.block__shop
 !#endif
 
 ! ---------- Self-promo ----------
+||amazonaws.com/ledge-assets/media/*/techblog_banner.$domain=ledge.ai
 ||amazonaws.com^*/btbanner.png$domain=blog.best-teacher-inc.com
 ||baraero.com/wp-content/uploads/2020/06/stayhome.$image,1p
 baraero.com##.content > div[style="float: none; margin:0px;"] > .entrydiscription, .entrymidashi3
