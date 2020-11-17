@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-16
+! Last updated: 2020-11-17
 
 /^(?:http|ws)s?://\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:/]/$3p
 /^\w+://10\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$3p
@@ -21,8 +21,11 @@
 ||amazonaws.com/storage.shukatsu-ichiba.com/banner/$domain=shukatsu-ichiba.com
 ||c-r.gnst.jp/r/banner_mng/
 ||g.doubleclick.net/tag/js/gpt.js$important,domain=accuweather.com
+||i5.walmartimages.com/dfw/4ff9c6c9-29f9/k2-$script
+||i5.walmartimages.com/dfw/4ff9c6c9-6451/k2-$script
 ||r.r10s.jp/com/img/banner/
 ||rakuten-static.com/1/js/anl/$domain=member.id.rakuten.co.jp
+||s3.reutersmedia.net/resources/*&rtn=$image
 ||youtube.com/api/stats/watchtime?*=adunit&
 
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tver.jp,badfilter
@@ -68,7 +71,7 @@ _omniture.$script,domain=mathworks.com
 ! ---------- Tracking links ----------
 /?_rt_ck=$doc
 ||affiliate.suruga-ya.jp^$doc
-||amazon.co.jp/dp/*?tag=$doc
+||amazon.co.jp/dp/*?tag=*&linkCode=$doc
 ||amazon.co.jp/gp/goldbox/ref=*&linkCode=*&tag=*&linkId=$doc
 ||amazon.co.jp/gp/product/*/ref=*&camp=*&creative=*&linkCode=*&tag=$doc
 ||apple.com^*/product/*&cid=*-aff-*&clickid=$doc
@@ -76,6 +79,7 @@ _omniture.$script,domain=mathworks.com
 ||ck.jp.ap.valuecommerce.com/servlet/referral?sid=*&pid=*&vc_url=$doc
 ||d.dmkt-sp.jp/portal/clicklog?$doc
 ||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc
+||dlsoft.dmm.co.jp^*/?utm_medium=dmm_affiliate&utm_source=*&utm_campaign=$doc
 ||dmm.com^*?utm_content=*&utm_source=*&utm_medium=$doc
 ||e-3shop.com^*/?utm_source=*&utm_medium=*&utm_campaign=$doc
 ||g123.jp/game/*?platform=*&utm_source=*&utm_campaign=*&utm_adgroup=$doc
@@ -94,6 +98,9 @@ _omniture.$script,domain=mathworks.com
 ||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=*&COOKIE_PATH=*&COOKIE_DOMAIN=*&VIEW_URL=$doc
 www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
 !?_rt_ck=$doc,queryprune=|_rt_ck
+!||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|unique_op
+!||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|utm_medium
+!||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|utm_source
 !||hbol.jp^*?cx_clicks_art_mdl=$doc,queryprune=|cx_clicks_art_mdl
 !||hbol.jp^*?cx_clicks_series_mdl=$doc,queryprune=|cx_clicks_series_mdl
 !||response.jp^*html?from=$doc,queryprune=|from
