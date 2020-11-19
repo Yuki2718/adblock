@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-18
+! Last updated: 2020-11-19
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -13,6 +13,7 @@
 store.world.co.jp##.mod_message
 ||youtube.com/embed/3hhC4n3Dr6I|$domain=tamashii.jp
 mail.protonmail.com##.blackFridayModal
+nytimes.com###__next > #main[aria-live=assertive] + div[class][aria-hidden]
 
 ! ---------- Notification ----------
 -push-notification/
@@ -1013,6 +1014,7 @@ exawarosu.net##.img-links, .l-popular-bottom, .l-rss-top
 ||fate-rpg.jp/img/rss_
 fate-rpg.jp##.rss-box
 ||fc2.com/a/s/i/asiamachi/*-580x*$image,domain=asiamachi.blog.fc2.com
+||fc2.com/asiareaction/$frame,domain=asiareaction.com
 ||fc2.com/b/a/n/bandai11/$frame,domain=bandai11.blog.fc2.com
 ||fc2.com/erodoujininfo/$frame,domain=erodoujinjohoukan.com
 ||fc2.com/f/f/n/ffnews2016matome/$frame,domain=ffnews2016matome.blog.fc2.com
@@ -1210,6 +1212,7 @@ aramame.net##.s-side:has(.modernRSS)
 aramame.net##.s-wrapper-single:has(script)
 ashi-fechi.com###main > .widget:has(.immoral_parts)
 asiamachi.blog.fc2.com##.blog > div[style^="margin:0px;"]
+asiareaction.com###side > .title_wrapper + div[align=center], #side > br + .title_wrapper, #side > div:first-child + br
 au2chblog.blog.fc2.com##article:has(> .top_link_box)
 au2chblog.blog.fc2.com##article:has(> .under_link_box)
 au2chblog.blog.fc2.com##article:has(> [class^=rss_body_])
@@ -1225,7 +1228,7 @@ beelzeboulxxx.com##.article-body > .block, .article-body-more
 bigbangchannel.net,blog.livedoor.jp,matometre.net,majimanjisokuhou.com,moeclo.ldblog.jp,nanj-hero.com,paripinews.net,yabatanichannel.net###RSS001
 bikkuri-hatena.info##.box29
 bipblog.com###entry + .ent_sub_block, .main_center_block:first-child
-blog-news.doorblog.jp,blog.esuteru.com,ertk.net,exawarosu.net,giantskyojin2chmatome.blog.jp,kijyomatome.com,kijyomita.com,kuzu-soku.com,oniyomech.livedoor.biz,otakomu.jp,sk2ch.net,vip.blomaga.jp##.rss
+blog-news.doorblog.jp,blog.esuteru.com,ertk.net,exawarosu.net,giantskyojin2chmatome.blog.jp,kijyomatome.com,kijyomita.com,kuzu-soku.com,nnews1.com,oniyomech.livedoor.biz,otakomu.jp,sk2ch.net,vip.blomaga.jp##.rss
 blog.domesoccer.jp##.article-header-rss
 blog.esuteru.com##.siteAside
 blog.game084.com,nogizaka46link.blog.jp##.right-container[style^="position: fixed"]:style(position: absolute !important)
@@ -1416,7 +1419,7 @@ majikichi.com##.comment_rank_widget_root, [class^=headline_]
 maki7.dreamlog.jp##.message-board-outer
 mamekichimameko.blog.jp##.particlesArea
 mangajunky.net###main-box > br
-mashlife.doorblog.jp##.article-body-inner > a[target=_blank], .article-body-inner > a[target=_blank] ~ br, .article-body-inner > table[summary=ad]
+mashlife.doorblog.jp###comments > b, #more > span[style^="font-size:"], .article-body-inner > a[target=_blank], .article-body-inner > a[target=_blank] ~ br, .article-body-inner > table[summary=ad]
 matmebae.net,nanj-short.net##.article__footer > .module__heading
 matomate.blog133.fc2.com##.FI1
 matomate.blog133.fc2.com,yaraon-blog.com###topHeadline
@@ -1467,6 +1470,7 @@ nijissoku.livedoor.biz##.h-rss
 nijitoraware.com###main > hr[size="9"]
 nijitoraware.com###sidebar[style^="position: fixed"]:style(position: static !important;)
 nikkanerog.com###mainBlock > .mainEntryBase, #mainBlock > .mainEntryFoot, #mainBlock > .mainEntryHead, body > div[style^="font-size:18px;font-weight: bold;"]
+nnews1.com##.l-popular-bottom, .l-rss-fixed-card, .rss-fixed-list-single-wrapper
 nofootynolife.blog.fc2.com##.blogroll_content2
 nofootynolife.blog.fc2.com##.plugin2:has(img[src^="http://image.with2"])
 nogizaka-46bunno1.blog.jp##.plugin-memo:has(a[href^="http://blog."])
@@ -1499,6 +1503,7 @@ precurematome.com###pc_text-13
 punisoku.blog54.fc2.com###main_l > .entry_header
 punisoku.blog54.fc2.com##.entry_body > .plg_body
 punyu.com###content > .box_title[style="width:700px;"], #content > .box_title[style^="width:700px; margin-top:20px; "], #content > .rank_table, #right > .box_title[style="width:410px; margin-top:10px;"], #right > .rank_table, .box_title[style="width:330px; margin-top:10px;"]
+mashlife.doorblog.jp,sshouko.net##blockquote
 momoniji.com###content-top-in > .widget-content-top:first-child
 mudainodocument.com##.menu_cont3, .menu_title3
 rangeriishoppingu.blog.fc2.com##.plugin_right:has(script):not(:has(iframe)):not(:has(.plugin-myimage))
@@ -1517,7 +1522,6 @@ sk2ch.net##.recommend
 skematomemon.com###more > .t_h > script + br
 srwmatome.blog.jp###more > span[style] ~ br, .right-container > a[href^="http://blog.with2."] + br
 sshouko.net###secondary-column:style(position:static !important)
-sshouko.net##blockquote
 sshouko.net##[class^=headline]
 sugirl.info###main > h2:has-text(オススメ)
 sukattojapan.com##.plugin-memo:has(.blogroll-saido)
@@ -1560,6 +1564,7 @@ watch2chan.com###text-15, #text-21, .widget-above-single-content-title:not(#popu
 workingnews.blog117.fc2.com##.free_area
 workingnews.blog117.fc2.com##.menu1BlockBase:has(.bcounter)
 world-fusigi.net##.article-random-outer, .articles_under_rss, .come_ranking_wrap, .relate, .top_rss_wrap
+xn--gdkl0dubtwb7e.net##.rss-antenna, .smanone[style="padding-top:10px;"]
 xn--gmq92kd2rm1kx34a.com###rssrole
 xn--r8jwklh769h2mc880dk1o431a.com##.post > .kuninikeere
 xxxkikimimixxx.blog.fc2.com###side_r
@@ -1943,7 +1948,7 @@ otapol.com###balloonText
 ||vignette.wikia.nocookie.net^*/Nat195.$image,important,domain=yakusokunoneverland.fandom.com
 ||w.atwiki.jp/common/_js/preconnect.
 ||washingtonpost.com/wp-stat/pwapi/
-1ink.cc,cpmlink.net,fcc.lc,fcdot.lc,kpopstan.com,short-url.link,underhentai.net,upfile.us##+js(nano-sib)
+1ink.cc,cpmlink.net,fcc.lc,fcdot.lc,kpopstan.com,opensubtitles.org,short-url.link,underhentai.net,upfile.us##+js(nano-sib)
 abandonmail.com##+js(aopr, indexedDB.open)
 adfoc.us##+js(nano-sib, , 1100)
 ampmedia.jp##.article-vote-area

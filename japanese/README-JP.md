@@ -81,14 +81,14 @@ uBlock Originはトークン化という仕組みにより高速処理を実現�
 
 ### Yuki's uBlock Japanese filters - Paranoid　（大雪フィルタ）
 
-Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。<strong>自己責任で使用してください</strong>。トラッキングパラメータを含むリンクからの移動もブロックします。この場合、<strong>「uBlock Origin は、このページの読み込みをブロックしました」画面で右側の虫眼鏡アイコンをクリックすると、トラッキングパラメータを除いたURLが（場合によってはいくつか）表示され、そのままクリックできます。</strong>ただし、ブロックするとあまりに煩雑になる場合はブロックしません（例：記事の大部分にトラッキングパラメータを付与しているサイト、utm_sourceなど広範に使われるパラメータの一般ブロック）。1.30.9b5から`$queryprune`が追加されパラメータの直接除去が可能になりましたが、`$rewrite`と違い完全な置き換えができないこと、また無条件に除去するとプロモーションや割引が受けられない場合もあることから、Strict blockingによる除去はこれまで通り続け、`$queryprune`は除去して問題のないことが十分確認されたトラッキングパラメータやSSAI対策に限定するつもりです。なお、このフィルタの一部のルールはgwarser氏の[Block access to LAN](https://github.com/gwarser/filter-lists/blob/master/lan-block.txt)フィルタによるものです。
+Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。<strong>自己責任で使用してください</strong>。トラッキングパラメータを含むリンクからの移動もブロックします。この場合、<strong>「uBlock Origin は、このページの読み込みをブロックしました」画面で右側の虫眼鏡アイコンをクリックすると、トラッキングパラメータを除いたURLが（場合によってはいくつか）表示され、そのままクリックできます。</strong>ただし、ブロックするとあまりに煩雑になる場合はブロックしません（例：記事の大部分にトラッキングパラメータを付与しているサイト、utm_sourceなど広範に使われるパラメータの一般ブロック）。1.31.0から`$queryprune`が追加されパラメータの直接除去が可能になりましたが、`$rewrite`と違い完全な置き換えができないこと、また無条件に除去するとプロモーションや割引が受けられない場合もあることから、Strict blockingによる除去はこれまで通り続け、`$queryprune`は除去して問題のないことが十分確認されたトラッキングパラメータやSSAI対策に限定するつもりです。なお、このフィルタの一部のルールはgwarser氏の[Block access to LAN](https://github.com/gwarser/filter-lists/blob/master/lan-block.txt)フィルタによるものです。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Paranoid">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
 
 ### Yuki's uBlock Japanese filters - Social　（あられフィルタ）
 
-ソーシャル要素をブロックするフィルタです。一部、[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social)と共通のルールがあります。ブロック優先主義のため、非表示にしかできないものは迷惑度が高いものを除き無視します。また、ブロックできても他の要素まで巻き込んでしまう場合はブロックしません。これらも非表示にしたい方や、海外のサイトもご覧になる方はAdGuard Social mediaなどを併用してください。
+ソーシャル要素をブロックするフィルタです。[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social)との互換性を重視しており、一部、共通のルールがあります。ブロック優先主義のため、非表示にしかできないものは迷惑度が高いものを除き無視します。また、ブロックできても他の要素まで巻き込んでしまう場合はブロックしません。これらも非表示にしたい方や、海外のサイトもご覧になる方はAdGuard Social mediaを併用してください。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Social">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-social.txt)
@@ -116,7 +116,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 ### Yuki's uBlock Japanese filters - Annoyances　（みぞれフィルタ）
 
-広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt), [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances), [uBlock filters – Annoyances](https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt), および[Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances)から取られたルールもあります。
+広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt), [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances), [uBlock filters – Annoyances](https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt), および[Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances)から取られたルールもあります。AdGuard AnnoyancesおよびuBlock filters – Annoyancesとの互換性を少しだけ意識していますが、Socialの場合ほどではありません（併用可能ですが、多少の無駄が発生します）。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
@@ -185,7 +185,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 280blockerさんは、2020年8月2日の更新で悪質サイト対策のルールを大幅に追加されました。できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、280blocker AdblockPlus形式フィルタは正規表現などの高度な文法を避け、互換性の高い記法で書かれています。一方で、AdGuardやuBlock Originなど高度な文法をサポートするモダンブロッカーにとっては、この記法による悪質サイト対策にはいくつかの限界があります。
 
-1. 誤爆の恐れが高まります（海外サイトですが、[実例](https://www.fullhdfilmcehennemi8.live/)）
+1. 誤爆の恐れが高まります（海外サイトですが、実例：https://www.fullhdfilmcehennemi8.live/）
 2. AdGuardでは悪質サイトへのアクセス自体はブロックされません
 3. uBlock Originではパフォーマンスが悪いです（質の低いトークンしか引き出せないため）
 
@@ -227,9 +227,11 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 - デッドドメインや不要になったルールは見つけ次第取り除く方針です。デッドドメインでもリクエストは発生するため、見かけ上ほかのフィルタよりブロックが少なく見えることがあり得ます。
 
+- ブロッカー検知スクリプトは意図的にブロックから除外しています。初心者の方にはこれがブロック漏れにみえるようです（[例1](https://github.com/easylist/easylist/issues/6407)、[例2](https://github.com/AdguardTeam/AdguardFilters/issues/67785)）。報告は実際の問題に対して行うか、せめてスクリプトの内容を確認してからにしてください。
+
 - 問題報告がGithubのみなのは、あまり気軽に報告できてしまうと質の低い報告が増えるという懸念もあるためです。必ず所定の手順を守ってください。
 
-- 正直なところ、既に公開しているフィルタの維持と主要フィルタへの報告だけでも限界に近く、長期的にメンテナンスできるかはわかりません。他のフィルタ作者さんはご自身で使われているケースが多いようですが、こちらでは私用フィルタと公開フィルタは別です。元々、当時更新が停滞していた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)のフォークを考えていたのですが、許可が下りなかったためオリジナルフィルタを企画しました。その間に豆腐さんも更新を再開されたようです。オリジナルとはいえ豆腐フィルタを参考にした部分は多々あり、ここに感謝申し上げます。
+- 正直なところ、既に公開しているフィルタの維持と主要フィルタへの報告だけでも限界に近く、長期的にメンテナンスできるかはわかりません。他のフィルタ作者さんはご自身で使われているケースが多いようですが、こちらでは私用フィルタと公開フィルタは別です。元々、当時更新が停滞していた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)のフォークを考えていたのですが、許可が下りなかったためオリジナルフィルタを企画しました（念のため：わざわざフィルタを公開するからには、理由は他にもあります）。その間に豆腐さんも更新を再開されたようです。オリジナルとはいえ豆腐フィルタを参考にした部分は多々あり、ここに感謝申し上げます。
 
 - 当フィルタの方針に同意いただけ、かつフィルタを作成する技能のある方の貢献は歓迎いたします。興味がおありの方はプルリクエストやIssueを通じて声をおかけください。それが面倒くさい方は、CC BY-SA 4.0の範囲において自由に改変、再配布も可能です。識別のために私の名前を入れたものの、本来はチームによる共同管理が望ましいと考えています。
 
@@ -240,7 +242,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 <details>
 <summary>註</summary>
 
-<sub>1: Nano Adblockerでもご利用いただけますが、当フィルタでuBlock Originの最新機能を利用した場合、一時的にその機能が利用できない可能性があります。Nanoの本質的な違いは、専用のスクリプトレットによりある種の迷惑要素に対処できるという点です。アンチ広告ブロックについては、Nano Defenderも不要です。強いて言えばuBlock OriginではuBlock filters - Annoyancesの購読が必要な「控えめな」アンチブロック（×ボタンで消せるか、コンテンツを妨害しないもの）が、Nanoではデフォルトでブロックされているくらいの違いです（古いアンチ広告ブロックで、uBlock Origin未対応のものがある可能性は否定できませんが）。ただ、Quick reporterはフィルタ作者としてありがたい機能なのですが。[2020年10月16日追記] Chrome版Nanoは売却され、新開発者がスパイウェアらしきコードを追加しました。ご利用の方は速やかにアンインストールすることをおすすめします。Firefox版はメンテナーが別のため大丈夫ですが、前述のようにNanoを使うメリット自体あまりありません。</sub>
+<sub>1: Nano Adblockerでもご利用いただけますが、当フィルタでuBlock Originの最新機能を利用した場合、一時的にその機能が利用できない可能性があります。Nanoの本質的な違いは、専用のスクリプトレットによりある種の迷惑要素に対処できるという点です。アンチ広告ブロックについては、Nano Defenderも不要です。強いて言えばuBlock OriginではuBlock filters - Annoyancesの購読が必要な「控えめな」アンチブロック（×ボタンで消せるか、コンテンツを妨害しないもの）が、Nanoではデフォルトでブロックされているくらいの違いです（古いアンチ広告ブロックで、uBlock Origin未対応のものがある可能性は否定できませんが）。ただ、Quick reporterはフィルタ作者としてありがたい機能なのですが。[2020年10月16日追記] Chrome版Nanoは売却され、マルウェア化しました。ご利用の方は速やかにアンインストールすることをおすすめします。Firefox版はメンテナーが別のため大丈夫ですが、前述のようにNanoを使うメリット自体あまりありません。</sub>
 
 <sub>2: AdGuardで使用する場合、最大の問題はspecific-genericとdenyallowでしょう。とくに後者は大幅な書き直しが必要です。PCでAdGuardをご利用の場合、もちフィルタを使用するか、あるいは海外サイトも閲覧するのであればAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。豆腐フィルタはAdGuardで機能しないルールが増えてきたため、おすすめできません。</sub>
 
@@ -267,9 +269,9 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 <sub>13: 当フィルタはCC BY-SA 4.0のもとに配布しており、こればuBlock 内製フィルターと280blocker以外を正しく継承（デュアルライセンス、バージョン違い）しています。uBlock内製フィルターはGPLv3ですが、AdGuardなどと比較して癖のないルールであり、一般的なフィルタ作者が思いつく範囲だと思います（スクリプトレットルールを比較していただくとわかるように、実際に有効なルール以外は採用していません。古いスクリプトルールは不要になったものが多く、適宜報告しています。さらに言えば、もともと私が提案ないしプルリクエストしたルールもあります）。280blockerはライセンス指定なしですが、参考にしているのはドメインリストのみであり、これは書き方がほぼ一意に決まってしまうため問題ないと考えます。また一部、[EasyList China](http://abpchina.org/forum/forum.php), [RU AdList](https://forums.lanik.us/viewforum.php?f=102), [Brave Unbreak](https://github.com/brave/adblock-lists)（MITライセンス）からとられたルールがある他、[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)を参考にしたルールが少なからずあります（著作権上、そのままの使用はなるべく避けましたが、どうしても同じになってしまったものもあります）。</sub>
 
-<sub>14: 有効数には優先順位がありませんので、Yuki's uBlock Japanese filtersの内どれだけ使われているか知りたい場合、一度Yuki's uBlock Japanese filtersのチェックを外して他のフィルタを更新し、再度チェックを入れてください。なお、この方法で真の有効数がわかるのはYuki's uBlock Japanese filtersならではであり、ほかのフィルタではメモリに載るルール数までしかわかりません。同じブロック対象をまったく別のルールでターゲットにするケースが多数生じるためで、この場合、優先順位の低いトークン化可能ブロックルールは「死んだルール」（メモリのみ消費）、トークン化不能ブロックルールやProcedural cosmetic filters、スクリプトレットルール等はパフォーマンス上の損失となります。</sub>
+<sub>14: 有効数には優先順位がありませんので、Yuki's uBlock Japanese filtersの内どれだけ使われているか知りたい場合、一度Yuki's uBlock Japanese filtersのチェックを外して他のフィルタを更新し、再度チェックを入れてください。なお、この方法で真の有効数がわかるのはYuki's uBlock Japanese filtersならではであり、ほかのフィルタではメモリに載るルール数までしかわかりません。同じブロック対象をまったく別のルールでターゲットにするケースが多数生じるためで、この場合、優先順位の低いトークン化可能ブロックルールは「死んだルール」（メモリのみ消費）、トークン化不能ブロックルールやProcedural cosmetic filters、スクリプトレットルール等はパフォーマンス上の損失となります。フィルター一覧の使用数は実際に使われるフィルタ数ではないということです。</sub>
 
-<sub>15: これらのフィルタによる誤爆をより網羅的に修正していることもあり、既にEasyList等を併用されている方にはもっともおすすめできる日本用フィルタと言ってよいでしょう。逆に、既存の日本用フィルタとこれらの併用は無駄が多く、Braveの日本用フィルタに採用されなかった[一因](https://github.com/brave/adblock-lists/issues/355#issuecomment-609680337)となっています。ちなみに、日本以外の国や地域ではEasyListに各言語用のフィルタを追加して使うのが普通であり、各言語用フィルタはEasyListの併用を前提としたものとなっています。</sub>
+<sub>15: これらのフィルタによる誤爆をより網羅的に修正していることもあり、既にEasyList等を併用されている方にはもっともおすすめできる日本用フィルタと言ってよいでしょう。逆に、既存の日本用フィルタとこれらの併用は無駄が多く、Braveの日本用フィルタに採用されなかった[一因](https://github.com/brave/adblock-lists/issues/355#issuecomment-609680337)となっています。ちなみに、日本以外の国や地域ではEasyListに各言語用のフィルタを追加して使うのが普通であり、各言語用フィルタはEasyListの併用を前提としたものとなっています。中国では（主にモバイル用のようですが）EasyList Liteというのを用意しており、中国語サイトを中心にみる場合はEasyListの代わりにこれを使ってもよいとされています。Yuki's uBlock Japanese filtersも、日本のサイトを中心見るなら10万以上のルール数におよぶ標準リストの代わりに使えるものとして提供していますが、標準リストとの併用も可能としている点が異なります。実は、標準リストの変更に追随していくのは結構大変な作業です。</sub>
 
 <sub>16: 有用性などを鑑み、すべてはブロックしません。大まかには、記事リストの間に挿入されるもの、ネイティブ広告としての性質が強いものなどを中心にブロックしています。</sub>
 

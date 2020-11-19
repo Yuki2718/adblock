@@ -69,7 +69,6 @@ _omniture.$script,domain=mathworks.com
 @@||assets.adobedtm.com^*/mbox-contents-$script,domain=nsat.collegeboard.org|sony.jp
 
 ! ---------- Tracking links ----------
-/?_rt_ck=$doc
 ||affiliate.suruga-ya.jp^$doc
 ||amazon.co.jp/dp/*?tag=*&linkCode=$doc
 ||amazon.co.jp/gp/goldbox/ref=*&linkCode=*&tag=*&linkId=$doc
@@ -96,7 +95,7 @@ _omniture.$script,domain=mathworks.com
 ||site-search.kddi.com/click?url=$doc
 ||studentwalker.com/st-manager/click/track?id=*&type=*&url=$doc
 ||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=*&COOKIE_PATH=*&COOKIE_DOMAIN=*&VIEW_URL=$doc
-www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
+
 !?_rt_ck=$doc,queryprune=|_rt_ck
 !||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|unique_op
 !||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|utm_medium
@@ -104,3 +103,6 @@ www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
 !||hbol.jp^*?cx_clicks_art_mdl=$doc,queryprune=|cx_clicks_art_mdl
 !||hbol.jp^*?cx_clicks_series_mdl=$doc,queryprune=|cx_clicks_series_mdl
 !||response.jp^*html?from=$doc,queryprune=|from
+!||site-search.kddi.com/click?url=*&query=*&site=$doc,queryprune=|query
+!||site-search.kddi.com/click?url=*&query=*&site=$doc,queryprune=|site
+www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
