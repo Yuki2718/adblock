@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-21
+! Last updated: 2020-11-22
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -111,7 +111,6 @@ japancred.com##.timeline-header
 kyodemo.net##.is-danger.message
 lmaga.jp##.header_headline
 macha795.com###notice-area-wrap
-mail.google.com##span:has-text(Gmail のデスクトップ通知):upward(1)
 mrs.living.jp###floating-max
 news.yahoo.co.jp##li.newsFeed_item > div:has-text(あなたの興味や関心)
 qiita.com##.ac-CampaignLink
@@ -369,7 +368,7 @@ tamashii.jp##[id$=_bra_bnr_area]
 ||the0123.com^*_floating_$image,1p
 the0123.com###floating-estimate
 ||topcard.co.jp/images/address_pop*$image,1p
-||travel.navitime.com/*_app$image,1p
+||travel.navitime.com/*_app$image
 travel.navitime.com##.screen-width-border:has(.app-banner-container)
 ||whotwi.com/whotwi_web/img/common/socialdog_modal.
 hoihoi.whotwi.com###cheetah_modal
@@ -453,6 +452,7 @@ hypebeast.com###newsletter-popup-fixed
 ig.com###sticky-footer
 imitsu.jp###cv_bottom_a, #modal_bg
 instagram.com###react-root ~ div[class*=" "][class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > div > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
+instagram.com##+js(set, _sharedData.is_whitelisted_crawl_bot, true)
 instagram.com##.ZUqME:has(a[href^="/accounts/emailsignup/"])
 instagram.com##body[style*="overflow: hidden;"]:style(overflow-y: scroll !important;)
 investing.com###PromoteSignUpPopUp
@@ -555,7 +555,7 @@ twitter.com##div[dir=auto] > span:has-text(Twitterなら、「いま」):upward(
 udemy.benesse.co.jp##.cmn--contentCoursePopup
 uwl.weblio.jp###free-house-ad-on-load-modal-container, #free-house-ad-on-load-modal-overlay
 video.fc2.com##.login-footer
-video.fc2.com##div:has(> a[href^="http://fc2information"])
+video.fc2.com##a[href^="http://fc2information"][data-link][style]:upward(1)
 video.tv-tokyo.co.jp###jsiModalOverLayerShare
 video.tv-tokyo.co.jp##.md-question.js-modal-window
 video.tv-tokyo.co.jp##*:style(opacity: 1 !important;)
@@ -604,7 +604,7 @@ tamashii.jp##^.overlay
 !#if env_mobile
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
 m.youtube.com##.mealbar-promo-renderer
-mobile.twitter.com##span:has-text(/better on the app|Twitterアプリをおすすめ/):upward(5)
+mobile.twitter.com###layers div[dir="auto"] > span:has-text(/在应用上更好|在應用程式上體驗更好的|better on the app|besser in der App|еще больше возможностей в приложении|mejor en la app|melhor no aplicativo|profiterez mieux de Twitter sur l'application/):upward(5)
 pinterest.*##.Hsu.iyn.zI7.FNs
 qiita.com##.apm-Content, .is-open, [id^=logly-lift]
 quora.com##.q-box > div[class^="CssComponent-"][style*="height: 50px;"]
@@ -615,7 +615,7 @@ reddit.com##.XPromoInFeed, .xPromoChoiceBanner
 drive.google.com#?#a[data-target=clientDownload]:nth-ancestor(3)
 mail.google.com#?#span:contains(Gmail のデスクトップ通知):nth-ancestor(1)
 mobile.twitter.com#?#div[data-testid="sidebarColumn"] section[aria-label][role="region"]:nth-ancestor(1)
-mobile.twitter.com#?#span:contains(/better on the app|Twitterアプリをおすすめ/):nth-ancestor(5)
+mobile.twitter.com###layers div[dir="auto"] > span:has-text(/在应用上更好|在應用程式上體驗更好的|better on the app|besser in der App|еще больше возможностей в приложении|mejor en la app|melhor no aplicativo|profiterez mieux de Twitter sur l'application/):nth-ancestor(5)
 outlook.live.com#?#button.ms-Link:contains(Edge):nth-ancestor(3)
 twitter.com#?#div[dir=auto] > span:contains(Twitterなら、「いま」):nth-ancestor(5)
 !#endif
@@ -819,7 +819,6 @@ news.tbs.co.jp##.ls--app
 tenki.jp##.ft-app
 ||thxyoutube.com/images/thxyoutube_banner720x280.
 ||townwork.net/img/sidebar/bnr_app.
-||travel.navitime.com/*_app$image
 travel.navitime.com##div.screen-width-border:has(.app-banner-container)
 ||trilltrill.jp/images/desktop/app-
 trilltrill.jp##.footer-AppDownLoad
@@ -832,7 +831,7 @@ w.grapps.me##.app-intro
 ||wanchan.jp/images/footer/footer_app_dl_
 wanchan.jp##.footer_app_dl
 ||web-jp-assets.mercdn.net/_next/static/images/download_app_
-www.mercari.com##div:has(> div > figure)
+www.mercari.com##img[src^="https://web-jp-assets.mercdn.net/_next/static/images/download_app_pc-"]:upward(3)
 ||webaccel.jp^*/cover_apps_image.$image,3p
 ||wimg.jp/content/first/pc/ftr_img.
 wear.jp###app_info
@@ -931,7 +930,6 @@ _rss3.$frame
 ||chatbot.ds-ai.net^
 ||feed.mikle.com^$domain=blog.livedoor.jp|crx7601.com|fate-rpg.jp|gadgetlife2ch.blomaga.jp|gtoys.blog.fc2.com|h1g.jp|hdouga.com|ibarakinews.jp|obutu.com|totalwar.doorblog.jp|xn--bckadddb2a0d4dnc8dwhngdtb58aya0l4a2om843g5npczp7dwh5g.com|xn--cckea5a6cidcbh6ce7ghug17a2ge3aht3nwigef51658aw7kd.com
 ||feed.mobeek.net^
-||feedburner.com^$image,3p
 ||fukugan.com^$3p
 ||goodmediator.net^
 ||hanamura.shop^$xhr,3p
@@ -945,7 +943,6 @@ _rss3.$frame
 ||urutil.com^
 ||widget.eroantenna.com^
 ||widget.erogbox.com^
-||widget.ranklet.com^
 ||zenback.jp^
 
 *$3p,image,domain=hdouga.com

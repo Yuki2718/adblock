@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-21
+! Last updated: 2020-11-22
 
 /^(?:http|ws)s?://\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:/]/$3p
 /^\w+://10\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$3p
@@ -15,7 +15,6 @@
 ||[::1]^$3p
 
 .php?ad=
-/^https?://[a-z]{7,15}\.(?:com|pw)/[0-9a-zA-Z]{11,17}/\d{4,5}$/$script,3p
 ||accuweather.com/bundles/prebid.$important
 ||aiasahi.jp/ads/$important
 ||akamai.net^*/pict.sbisec.co.jp/sbisec/images/banner/bnr780_campaign_$domain=sbisec.co.jp
@@ -65,6 +64,7 @@ _omniture.$script,domain=mathworks.com
 ||travel.yahoo.co.jp^*/adobe_event.
 
 @@||adobedtm.com/launch-$script
+@@||adobedtm.com^*/AppMeasurement.min.js$script,domain=apple.com|foodnetwork.com
 @@||adobedtm.com^*/launch-$script,xhr
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|newyorker.com|nfl.com|oracle.com|radiko.jp|telegraph.co.uk|wired.com|sony.jp
@@ -72,7 +72,6 @@ _omniture.$script,domain=mathworks.com
 @@||assets.adobedtm.com^*/mbox-contents-$script,domain=nsat.collegeboard.org|sony.jp
 
 ! ---------- Tracking links ----------
-/?_rt_ck=$doc
 ||affiliate.suruga-ya.jp^$doc
 ||amazon.co.jp/dp/*?tag=*&linkCode=$doc
 ||amazon.co.jp/gp/goldbox/ref=*&linkCode=*&tag=*&linkId=$doc
@@ -81,7 +80,6 @@ _omniture.$script,domain=mathworks.com
 ||beauty.hotpepper.jp^*?wak=*_link_$doc
 ||ck.jp.ap.valuecommerce.com/servlet/referral?sid=*&pid=*&vc_url=$doc
 ||d.dmkt-sp.jp/portal/clicklog?$doc
-||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc
 ||dlsoft.dmm.co.jp^*/?utm_medium=dmm_affiliate&utm_source=*&utm_campaign=$doc
 ||dmm.com^*?utm_content=*&utm_source=*&utm_medium=$doc
 ||e-3shop.com^*/?utm_source=*&utm_medium=*&utm_campaign=$doc
@@ -96,17 +94,18 @@ _omniture.$script,domain=mathworks.com
 ||samuraiclick.com/lp/*.php?m=*&b=$doc
 ||search.rakuten.co.jp/search/mall/*/?sid=*&l-id=$doc
 ||shingon.jp/p.php?pr=*&i=*&ac=$doc
-||site-search.kddi.com/click?url=$doc
 ||studentwalker.com/st-manager/click/track?id=*&type=*&url=$doc
 ||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=*&COOKIE_PATH=*&COOKIE_DOMAIN=*&VIEW_URL=$doc
 
-!?_rt_ck=$doc,queryprune=|_rt_ck
-!||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|unique_op
-!||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|utm_medium
-!||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|utm_source
-!||hbol.jp^*?cx_clicks_art_mdl=$doc,queryprune=|cx_clicks_art_mdl
-!||hbol.jp^*?cx_clicks_series_mdl=$doc,queryprune=|cx_clicks_series_mdl
-!||response.jp^*html?from=$doc,queryprune=|from
-!||site-search.kddi.com/click?url=*&query=*&site=$doc,queryprune=|query
-!||site-search.kddi.com/click?url=*&query=*&site=$doc,queryprune=|site
+?_rt_ck=$doc,queryprune=|_rt_ck
+||discas.net^*/entry_site.pl?SITE=*&AP=*&sc_cid=*&afult=$doc,queryprune=|SITE
+||discas.net^*/entry_site.pl?SITE=*&AP=*&sc_cid=*&afult=$doc,queryprune=|afult
+||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|unique_op
+||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|utm_medium
+||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,queryprune=|utm_source
+||hbol.jp^*?cx_clicks_art_mdl=$doc,queryprune=|cx_clicks_art_mdl
+||hbol.jp^*?cx_clicks_series_mdl=$doc,queryprune=|cx_clicks_series_mdl
+||response.jp^*html?from=$doc,queryprune=|from
+||site-search.kddi.com/click?url=*&query=*&site=$doc,queryprune=|query
+||site-search.kddi.com/click?url=*&query=*&site=$doc,queryprune=|site
 www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
