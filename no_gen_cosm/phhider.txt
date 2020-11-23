@@ -2,13 +2,13 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-21
+! Last updated: 2020-11-24
 
 ! Generic and semi-generic rules
 *##.adsbygoogle
 *##div[id^=div-gpt-ad]
 biomedcentral.com,nature.com,springer.com,springeropen.com,threatpost.com##.c-ad
-btimesonline.com,businessinsider.com,cnn.com,filehippo.com,msn.com,statescoop.com,webmd.com,wfaa.com,whatsmydns.net,wired.com,wral.com,www.iis.net,www.neowin.net##.ad
+btimesonline.com,businessinsider.com,cnn.com,filehippo.com,iis.net,msn.com,neowin.net,statescoop.com,webmd.com,wfaa.com,whatsmydns.net,wired.com,wral.com##.ad
 
 ! Specific rules
 85tube.com,camvideos.org,camvideos.tv,camwhores.tv,javbangers.com,porntrex.com##.bottom-adv
@@ -105,6 +105,8 @@ journals.plos.org###topslot
 jpost.com##.OUTBRAIN, .banner
 kotaku.com##.ad-left-top
 kpopstan.com##.ads-wrapper
+kurocore.com###top-banner
+kurocore.com##.ad-b1
 latimes.com##.Page-below
 latimes.com##.google-dfp-ad-wrapper
 listenonrepeat.com###desktop_top_ad_fixed
@@ -146,6 +148,7 @@ rtsak.com##AMP-AD
 salon.com##.proper-ad-unit
 scmagazine.com##.widget_ads
 scmagazineuk.com,yahoo.com##[id$=Ad]
+searchenginejournal.com##.mh-90, .mh250
 securityweek.com###banner
 slate.com##.bottom-ad
 slate.com##.top-ad
@@ -180,7 +183,7 @@ wired.com##.content-footer__bottom > .row:has(.outbrain-widget)
 wowhead.com###main > .blocks
 wsj.com##div[class*="-adWrapper-"]
 www-creators.com##.adsense-footer
-www.barrons.com##div:has(> [id^=wrapper-AD_1TOP])
+www.barrons.com##[id^=wrapper-AD_1TOP]:upward(1)
 www.barrons.com##[id^=wrapper-AD_]
 www.engadget.com###atwAdFrame0
 www.engadget.com###atwAdFrame1
@@ -192,6 +195,5 @@ www.gloucestershirelive.co.uk##.top-slot
 www.nippon.com###detail_aside_recommend_title, #popular_news_title, .c-detail_under, div[name=addthis_tools]
 www.nippon.com##.c-wrap:has([id^=popular])
 www.nippon.com##section:has(#recommend_top_title)
-www.searchenginejournal.com##.mh-90, .mh250
 zdnet.com###taboola-below-home-thumbnails-homepage
 zerohedge.com##.ad__wrapper-element
