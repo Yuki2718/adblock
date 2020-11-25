@@ -4,7 +4,7 @@
 
 ## お知らせ（2020年11月25日）
 
-Twitchの動画広告について：uBlock Originでは対応できないため、TTV ad-block（(Chrome用)[https://chrome.google.com/webstore/detail/ttv-ad-block/kndhknfnihidhcfnaacnndbolonbimai] (Firefox用)[https://addons.mozilla.org/en-US/firefox/addon/ttv-adblock/]）を入れてみてください。同広告についてはいたちごっこが続いており、ブロック側が更新してもすぐTwitchが対策するため効果の保証はできません。なお、同広告はServer Side Ad Injectionというサーバー側でコンテンツに広告を織り込む手法であり、広告のみのブロックは初めからできません。これまでの様々な対策は、基本的に広告配信の対象外と誤認させるためのものです。（Youtubeと同じく、広告配信にはある程度の条件があるようです。）
+Twitchの動画広告について：uBlock Originでは対応できないため、TTV ad-block（[Chrome用](https://chrome.google.com/webstore/detail/ttv-ad-block/kndhknfnihidhcfnaacnndbolonbimai) [Firefox用](https://addons.mozilla.org/en-US/firefox/addon/ttv-adblock/)）を入れてみてください。同広告についてはいたちごっこが続いており、ブロック側が更新してもすぐTwitchが対策するため効果の保証はできません。なお、同広告はServer Side Ad Injectionというサーバー側でコンテンツに広告を織り込む手法であり、広告のみのブロックは初めからできません。これまでの様々な対策は、基本的に広告配信の対象外と誤認させるためのものです。（Youtubeと同じく、広告配信にはある程度の条件があるようです。）
 
 ### Yuki's uBlock Japanese filters （雪フィルタ）
 
