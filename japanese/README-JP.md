@@ -2,9 +2,9 @@
 
 当サイト（レポジトリ）管理者および貢献者は、当サイトのフィルタやルールによって生じたいかなる損害についても責任を負いません。
 
-## お知らせ（2020年11月10日）
+## お知らせ（2020年11月25日）
 
-Youtubeの白（または黒）い「広告をスキップ」画面および広告すり抜けについて：まず、uBlock Originでの対策方法は1.31.0以降にアップデートすることです。この新しいタイプのYoutube広告（新スキーム）では、fetchと組込みのBody.json()パーサーが用いられており、これまでのjson-pruneフィルタでは対処できませんでした（[参照](https://github.com/gorhill/uBlock/commit/13f92756befaa9a8d3ba1615bd7abc7075758c67)）。また、旧スキームは特定アカウントでサインイン中に限り広告が配信されていた（そのため、アカウント切り替えやサインアウトで対処できた）のに対し、新スキームは（旧スキームもこれからは？）サインアウト状態でも配信されることがあります。ただしクッキー削除後の初訪問時に表示されることはなく、リロードかページ遷移後に表示されるようです。念のため述べると、旧スキームも依然として用いられており、このフィルタのおかげで多くの人は広告を目にせず済んでいます。どちらのスキームにせよ、広告表示には何らかの条件があり、フィルタ作者側もuBlockチームのgwarser氏がほんの数時間、およびEasyListのFanboyNZ氏が再現できたほかは新スキーム広告を再現できていません。
+Twitchの動画広告について：uBlock Originでは対応できないため、TTV ad-block（(Chrome用)[https://chrome.google.com/webstore/detail/ttv-ad-block/kndhknfnihidhcfnaacnndbolonbimai] (Firefox用)[https://addons.mozilla.org/en-US/firefox/addon/ttv-adblock/]）を入れてみてください。同広告についてはいたちごっこが続いており、ブロック側が更新してもすぐTwitchが対策するため効果の保証はできません。なお、同広告はServer Side Ad Injectionというサーバー側でコンテンツに広告を織り込む手法であり、広告のみのブロックは初めからできません。これまでの様々な対策は、基本的に広告配信の対象外と誤認させるためのものです。（Youtubeと同じく、広告配信にはある程度の条件があるようです。）
 
 ### Yuki's uBlock Japanese filters （雪フィルタ）
 
@@ -48,7 +48,7 @@ Youtubeの白（または黒）い「広告をスキップ」画面および広�
 <details>
 <summary><strong>高効率</strong></summary>
 
-uBlock Originはトークン化という仕組みにより高速処理を実現しています<sup>10</sup>。ルールがトークン化可能なら、ルール数は[処理時間に](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)[影響しません](https://twitter.com/i/web/status/1289255976198123520)<sup>11</sup>。当フィルタはできるだけトークン化を意識したルールを心がけており（例外あり）<sup>12</sup>、また非表示フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないセレクタを使うよう心がけているつもりです。
+uBlock Originはトークン化という仕組みにより高速処理を実現しています<sup>10</sup>。ルールがトークン化可能なら、ルール数は[処理時間に](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)[影響しません](https://twitter.com/i/web/status/1289255976198123520)<sup>11</sup>。当フィルタはできるだけトークン化を意識したルールを心がけており（例外あり）<sup>12</sup>、また非表示フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないセレクタを使うよう心がけているつもりです。さらに、数か月ごとに冗長なルールとデッドドメインのチェックを行い無駄を省いているほか、スクリプトレットについてはプロパティや関数のチェックをできる限り行い、不要なスクリプトレットを追加しないようにしています。
 
 </details>
 
