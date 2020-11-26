@@ -4,7 +4,7 @@
 
 ## お知らせ（2020年11月25日）
 
-Twitchの動画広告について：uBlock Originでは対応できないため、TTV ad-block（[Chrome用](https://chrome.google.com/webstore/detail/ttv-ad-block/kndhknfnihidhcfnaacnndbolonbimai) [Firefox用](https://addons.mozilla.org/en-US/firefox/addon/ttv-adblock/)）を入れてみてください。同広告についてはいたちごっこが続いており、ブロック側が更新してもすぐTwitchが対策するため効果の保証はできません。なお、同広告はServer Side Ad Injectionというサーバー側でコンテンツに広告を織り込む手法であり、広告のみのブロックは初めからできません。これまでの様々な対策は、基本的に広告配信の対象外と誤認させるためのものです。（Youtubeと同じく、広告配信にはある程度の条件があるようです。）
+Twitchの動画広告について：uBlock Originでは対応できないため、TTV ad-block（[Firefox用](https://addons.mozilla.org/en-US/firefox/addon/ttv-adblock/)/[Chrome用](https://chrome.google.com/webstore/detail/ttv-ad-block/kndhknfnihidhcfnaacnndbolonbimai)）を入れてみてください。同広告についてはいたちごっこが続いており、ブロック側が更新してもすぐTwitchが対策するため効果の保証はできません。なお、同広告はServer Side Ad Injectionというサーバー側でコンテンツに広告を織り込む手法であり、広告のみのブロックは初めからできません。これまでの様々な対策は、基本的に広告配信の対象外と誤認させるためのものです。（Youtubeと同じく、広告配信にはある程度の条件があるようです。）
 
 ### Yuki's uBlock Japanese filters （雪フィルタ）
 
@@ -14,7 +14,7 @@ Twitchの動画広告について：uBlock Originでは対応できないため�
 - モバイルサイトは対象外です。280blockerさんの[フィルタ](https://280blocker.net/download/)やもちおさんの[たまごフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/tamago.html)など、モバイル用のフィルタを使用してください。
 - 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。たとえば、AdGuard日本語フィルタがブロックするブログロール系、uBlock filtersがカットする不要な待ち時間、その他一部のプロモーションなどです。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
 
-<strong>ガイドライン（PC広告）：</strong>広告ブロック初心者の方は、まずuBlock Origin（[Firefox用](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)/[Chrome用](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)）をインストールしてください（名前の似たまがいものに注意！）。豆腐フィルタやもちフィルタなど、<strong>主要な日本用のフィルタが性能をフルに発揮できるのは、uBlock Originだけです</strong><sup>3</sup>。その上でまず、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)を試してみることをおすすめします。もしそれで十分でないと感じられた場合、同サイトで提供されているサブフィルタを追加するか、あるいは長年、日本の広告ブロックを代表されてきた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法があります。もちフィルタよりやや不具合（誤爆と呼ばれる）が増えたり、パフォーマンスが落ちたりするかもしれませんが<sup>4</sup>、2020年7月末より大幅な改修がなされており、十分おすすめできると思います。雪フィルタ系が適しているのは以下のような方です。
+<strong>ガイドライン（PC広告）：</strong>広告ブロック初心者の方は、まずuBlock Origin（[Firefox用](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)/[Chrome用](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)）をインストールしてください（名前の似たまがいものに注意！）。豆腐フィルタやもちフィルタなど、<strong>主要な日本用のフィルタが性能をフルに発揮できるのは、uBlock Originだけです</strong><sup>3</sup>。その上でまず、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)を試してみることをおすすめします。日本用フィルタの中では比較的、不具合やアンチ広告ブロックの起動が少ないと思います（ないわけではありません）。もしそれで十分でないと感じられた場合、同サイトで提供されているサブフィルタを追加するか、あるいは長年、日本の広告ブロックを代表されてきた[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法があります。もちフィルタよりやや不具合（誤爆と呼ばれる）が増えたり、パフォーマンスが落ちたりするかもしれませんが<sup>4</sup>、2020年7月末より大幅な改修がなされており、十分おすすめできると思います。雪フィルタ系が適しているのは以下のような方です。
 
 - とにかく徹底的にブロックしたい
 - オンラインのアクセス解析、行動追跡が気になる
