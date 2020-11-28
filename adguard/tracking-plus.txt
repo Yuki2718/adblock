@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-27
+! Last updated: 2020-11-28
 
 ! General tracker
 &visitor=*&referrer=
@@ -96,12 +96,15 @@
 /lib/quantcast/*
 /lib/tracking/adobe/*$script
 /lib/tracking/mux.js|
+/logAutoMicroConversion?
+/logExecutionStats?
 /logImpressions?
 /logger.performance?
 /logger.screensize?
 /matomo/*$domain=~github.com|~matomo.org|~wordpress.org
 /meta-analytics/*
 /metrika/*&ident=
+/mixpanel-*.js
 /mms/get_loaders?$xmlhttprequest
 /monetate.js
 /mrliteLogger.js|
@@ -145,6 +148,7 @@
 /streamsense.min.js
 /tealeaf.min.js
 /tms/metrics.
+/toplytics.js
 /track-internal-links.
 /trackPageView/*
 /tracking/events?
@@ -375,6 +379,7 @@
 ||littletikes.com/mas_assets/store/universal_analytics.
 ||linkedin.com/platform-telemetry/
 ||linkedin.com^*/collect
+||live.mrf.io/statics/marfeel/gardac-sync.js
 ||live365.com/geocheck|
 ||location.bloomberg.com^
 ||log.gifmagazine.net^
