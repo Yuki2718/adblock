@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20201202
+! Version: 20201203
 
 ! YT
 youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
@@ -1432,6 +1432,7 @@ vkcdnservice.appspot.com^$3p
 ||dis.hogei.info^
 ||discountwound.com^
 ||displayvertising.com^
+||dita6jhhqwoiz.cloudfront.net^
 ||dlfclcey.com^
 ||dmvbdfblevxvx.com^
 ||dombnrs.com^
@@ -2836,7 +2837,7 @@ vkcdnservice.appspot.com^$3p
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|fastly.net|fastlylb.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|jsdelivr.net|jwpcdn.com|recaptcha.net,domain=samehadaku.vip
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|fastlylb.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|hwcdn.net|jquery.com|recaptcha.net,domain=srl.li
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|google.com|gstatic.com|hwcdn.net|jquery.com|jsdelivr.net|section.io|streamroot.io|zencdn.net,domain=jetload.net
-*$script,3p,denyallow=cloudflare.com|cloudflare.net|google.com|gstatic.com|jsdelivr.net|hcaptcha.net|recaptcha.net,domain=shorttey.*
+*$script,3p,denyallow=cloudflare.com|cloudflare.net|google.com|gstatic.com|jsdelivr.net|hcaptcha.com|recaptcha.net,domain=shorttey.*
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|googleapis.com|jsdelivr.net|tawk.to,domain=leechall.*
 *$script,3p,denyallow=cloudflare.com|disqus.com|disquscdn.com|fastlylb.net|google.com|googleapis.com|gstatic.com,domain=veranime.*
 *$script,3p,denyallow=cloudflare.com|disqus.com|fastlylb.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|unpkg.com,domain=megavideo.*
@@ -5621,6 +5622,7 @@ cgi-bin/counter
 ||analytics.163.com^
 ||analytics.agoda.com^
 ||analytics.cathaypacific.com^
+||analytics.cinematoday.jp^
 ||analytics.cocolog-nifty.com^
 ||analytics.comeso.org^
 ||analytics.archive.org^
@@ -6851,6 +6853,7 @@ _webtrends/$domain=zurichlife-jp.force.com
 ||cecile.co.jp/component/common/js/thirdparty/load-
 ||chintai.net/tracking/$xhr
 ||chintaistyle.jp/_js/outsidelog.
+||cinematoday.jp^*/pageviews.min.js
 ||civicscience.com/jot?
 ||click-sec.com/common/js/ga_
 ||click.aliexpress.com^$image
@@ -8302,7 +8305,7 @@ chugoku-np.co.jp###pc_top_inlinebanner
 chukei-news.co.jp##.headerbanner
 cinemacafe.net##._popIn_infinite_page:has(._popIn_recommend_article_ad_reserved)
 cinemacafe.net##.main-feature
-cinematoday.jp###ct-affiliate-box, .ct-ad
+cinematoday.jp###ct-affiliate-box, .col-sidebar > div[style="min-height:100px"], .ct-ad
 citrus-net.jp,kininarunaru-sokuhou.net##.ad-box-pc
 city.living.jp###billboard, #footer-banner, #top-footer-banner
 cktt.jp##.inner-widget:has(script)
@@ -9736,12 +9739,15 @@ pintoru.com##[class$=_link], [class$=_pc]
 pirate-bay.net###vpnModal
 pirate-bay.net##.sidebar-vpn
 pixiv.net##._illust-upload + div[style^="display:block;width:968px;height:170px;"]
-pixiv.net##iframe[name="dashboard_home"]:upward(div[span="1"])
-pixiv.net##iframe[name="infeed"]:upward(1)
-pixiv.net##iframe[width="300"][height="250"]:upward(2)
-pixiv.net##iframe[width="468"][height="60"]:upward(1)
+pixiv.net##div[style*="width: 728px;"]:first-child > iframe[name="footer"][width="728"][height="90"]:upward(2):matches-css(padding-bottom: 56px)
+pixiv.net##iframe[name="dashboard_home"]:upward(div[class^="sc-"][span="1"])
+pixiv.net##iframe[name="footer"][width="728"][height="90"]:upward(1)
+pixiv.net##iframe[name="header"][width="468"][height="60"]:upward(1)
+pixiv.net##iframe[name="rectangle"][width="300"][height="250"]:upward(1)
+pixiv.net##iframe[name="topbranding_rectangle"][width="300"][height="250"]:upward(li[size="2"][offset="1"])
+pixiv.net##iframe[name][width="184"][height="232"]:upward(1)
 pixiv.net##iframe[name][width="500"][height="520"]:upward(1)
-pixiv.net##div[class^=sc-]:has(> div[style] > iframe[width="728"][height="90"])
+pixiv.net,sex.com,ushigyu.net##.ad-footer
 plamoq.com##.cl_ad
 plan-ltd.co.jp##.advads-widget
 platuku.com##.add_pu_reg, .adsbygoogle, .cl_article_footer_2, .col-bnr
@@ -11439,7 +11445,6 @@ seiai.xyz###rsslink_image_side
 seiroganmania.com##.plugin1_outline:has(script[src^="http://rranking"])
 seoul.cs.land.to##body > p[align=center]
 sex.com##.ad-medium
-sex.com,ushigyu.net,www.pixiv.net##.ad-footer
 sexynude007.com###outline > div > .ninja-recommend-block + br + div[align=center], #outline > div > a[href^="https://click."] ~ br, #outline > div[align=center] > span[style], div[style^="width:1000px; height:250px;"]
 sexytvcap.com###bottomrss, .c_back2, .category1:last-of-type, .pictureRss, aside > div[style$="height: 485px;"]
 shanbara.jp##div[align=center] > [href^="http://click."], [href="http://ag.kakakuhi.com/"]
@@ -11790,7 +11795,6 @@ oumaga-times.com##.right-container:style(position:absolute !important;margin-lef
 papipu2ch.blomaga.jp###side:style(position:static !important)
 peing.net##body[style="overflow: hidden;"]:style(overflow: auto !important;)
 pixhost.*###web:style(display: block !important;)
-pixiv.net###js-mount-point-header.with-ad:style(min-height:0!important;)
 play-life.jp##.pc-container__right:style(min-height:auto !important)
 pokemon-goh.doorblog.jp##.left-container[style^="position: fixed"]:style(position:absolute !important; margin-left: -10% !important)
 proshort.gq###FirstDiv:style(display:block !important)
