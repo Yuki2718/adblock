@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20201205
+! Version: 20201206
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -111,6 +111,7 @@ bible-cafe.com##.news-ticker
 cookpad.com##.myfolder_button_wrapper > .notification
 drive.google.com##a[data-target=clientDownload]:upward(3)
 drive.google.com##body > [aria-labelledby$=".afp"]
+finance.yahoo.co.jp###mhd_uhd_pc
 japancred.com##.timeline-header
 kyodemo.net##.is-danger.message
 lmaga.jp##.header_headline
@@ -554,8 +555,10 @@ tora-tora.net##.btn-ctr
 trip.com##.J_PopupMask
 trip.com##.o-pop-box-retention
 trip.com##body:style(overflow: auto !important)
-tripadvisor.jp##.message_overlay_action_wrapper, .ui_backdrop
-tripadvisor.jp##body > div[aria-live]:has(a[href^="https://tripadvisor.co1.qualtrics."])
+tripadvisor.jp##body[style="overflow: hidden;"] > #fb-root + div[class^=_]:matches-css(opacity:0.8)
+tripadvisor.jp##body[style="overflow: hidden;"]:style(overflow: auto !important)
+tripadvisor.jp##div[class^=_][style="background-color: white;"] button.primary:has-text(今すぐチェック):upward(5):matches-css(overflow: auto)
+tripadvisor.jp##div[class^=_][style^="position: fixed; inset: auto"] span:has-text(でのご予約はいかがでしたか？):upward(4):matches-css(width: 360px)
 tumblr.com##.road-block, .tmblr-iframe--follow-teaser
 tv.netkeiba.com##.DetailIntroArea01, .TvIntroOverlay
 tver.jp##+js(set, enquete.checkDispEQ, falseFunc)
@@ -626,6 +629,8 @@ mail.google.com#?#span:contains(Gmail のデスクトップ通知):nth-ancestor(
 mobile.twitter.com#?#div[data-testid="sidebarColumn"] section[aria-label][role="region"]:nth-ancestor(1)
 mobile.twitter.com###layers div[dir="auto"] > span:has-text(/在应用上更好|在應用程式上體驗更好的|better on the app|besser in der App|еще больше возможностей в приложении|mejor en la app|melhor no aplicativo|profiterez mieux de Twitter sur l'application/):nth-ancestor(5)
 outlook.live.com#?#button.ms-Link:contains(Edge):nth-ancestor(3)
+tripadvisor.jp##div[class^=_][style="background-color: white;"] button.primary:has-text(今すぐチェック):nth-ancestor(5):matches-css(overflow: auto)
+tripadvisor.jp##div[class^=_][style^="position: fixed; inset: auto"] span:has-text(でのご予約はいかがでしたか？):nth-ancestor(4):matches-css(width: 360px)
 twitter.com#?#div[dir=auto] > span:contains(Twitterなら、「いま」):nth-ancestor(5)
 !#endif
 
@@ -638,6 +643,8 @@ twitter.com#?#div[dir=auto] > span:contains(Twitterなら、「いま」):nth-an
 /plugins/smartbanner.
 @@/wp-content/plugins/bwp-minify/min/?*/jquery.smartbanner.$css,script,1p
 
+||2chm-1.com/simages/application.png
+kinpira-san.com##.-linkList + .-freeArea
 ||9gag.com/s/*/sidebar-download-app.$image,1p
 ||a.mery.jp^*/footer-app.$image,1p
 ||a.mery.jp^*/link_btn_$image,1p
@@ -1197,7 +1204,7 @@ youskbe.com##.main > .row > div > aside:has(.blogroll)
 1000mg.jp,mylife.2chblog.jp,travel2ch.com##[class$=rss]
 2ch-matomenews.com##.switch
 2chcopipe.com##.entry_box3, .entry_box_left, .entry_box_right
-2chmatome.bloggeek.jp,addchannel.net,akb48rompen.com,azurlane.doorblog.jp,babymetaltimes.com,bb.doorblog.jp,blog-mougenda.com,chikakb.ldblog.jp,chomangasokuho.blog.jp,curationewsharp.blog.jp,curioso.blog.jp,dareda.net,db-gohan.blog.jp,dechisoku.com,ebitsu.net,ekuzodeerhand.blog.jp,everydayissunday.livedoor.blog,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,fireembs.blog.jp,gacha.blog.jp,gazoua2meru.livedoor.blog,gensen2ch.com,gunji.blog.jp,hanshintigers1.blog.jp,heartlife-matome.com,hero-news.com,hiraganakeyaki.blog.jp,honsoku.com,ideal2ch.livedoor.biz,internet-game-lounge.blog.jp,jiwachan.net,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,kijoden.com,kijonikki.net,kijyotsubu.net,kininaruero7.blog.jp,kokoyakyumatomesokuho.blog.jp,koumuin-matome.blog.jp,labradorsokuho.net,maki7.dreamlog.jp,mashlife.doorblog.jp,matmebae.net,matomemo-ch.net,mhsoken.blog.jp,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-push.blog.jp,nanj-short.net,nanj-world.blog.jp,nanjchallenge.net,narisoku.blog.jp,nizigami.com,orufemorufenz.com,oumaga-times.com,paranormal-ch.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,romeodensetsu.com,ronsoku.com,sematome.com,shumi-nikki.xyz,skematomemon.com,sontaku.info,sutekinakijo.com,syurabarabanba.blog.jp,tsubamesoku.blog.jp,uwakich.com,virtualyoutuber-matome.blog.jp,vrtuber-news.com,vtuber-densoku.blog.jp##.rss-blogroll
+2chmatome.bloggeek.jp,addchannel.net,akb48rompen.com,azurlane.doorblog.jp,babymetaltimes.com,bb.doorblog.jp,blog-mougenda.com,chikakb.ldblog.jp,chomangasokuho.blog.jp,curationewsharp.blog.jp,curioso.blog.jp,dareda.net,db-gohan.blog.jp,dechisoku.com,ebitsu.net,ekuzodeerhand.blog.jp,everydayissunday.livedoor.blog,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,fireembs.blog.jp,gacha.blog.jp,gazoua2meru.livedoor.blog,gensen2ch.com,gunji.blog.jp,hanshintigers1.blog.jp,heartlife-matome.com,hero-news.com,hiraganakeyaki.blog.jp,honsoku.com,ideal2ch.livedoor.biz,internet-game-lounge.blog.jp,jiwachan.net,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,kijoden.com,kijonikki.net,kijyotsubu.net,kininaruero7.blog.jp,kinpira-san.com,kokoyakyumatomesokuho.blog.jp,koumuin-matome.blog.jp,labradorsokuho.net,maki7.dreamlog.jp,mashlife.doorblog.jp,matmebae.net,matomemo-ch.net,mhsoken.blog.jp,mindhack2ch.com,moe-vip.com,money-life.doorblog.jp,nanj-push.blog.jp,nanj-short.net,nanj-world.blog.jp,nanjchallenge.net,narisoku.blog.jp,nizigami.com,orufemorufenz.com,oumaga-times.com,paranormal-ch.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,romeodensetsu.com,ronsoku.com,sematome.com,shumi-nikki.xyz,skematomemon.com,sontaku.info,sutekinakijo.com,syurabarabanba.blog.jp,tsubamesoku.blog.jp,uwakich.com,virtualyoutuber-matome.blog.jp,vrtuber-news.com,vtuber-densoku.blog.jp##.rss-blogroll
 2chmatome.net,akb48matomemory.com,anicobin.ldblog.jp,aramame.net,checkmate-blog.com,girlsvip-matome.com,gahalog.2chblog.jp,hattatu-matome.ldblog.jp,kemochan.com,keyaki.tech,kokopyon.net,kijomatomelog.com,mojomojo-licarca.com,morikinoko.com,netamesi.com,okusama-kijyo.com,s2-log.com,saikyo-jump.com,seiyufan.livedoor.biz,squallchannel.com,uwakitaiken.com##[class^=rss]
 2chmatome.net,vippers.jp###topRss
 2chmeshi.net##.bottom_ad, div[id^=diver_widget_pcsp-2]
@@ -1925,6 +1932,7 @@ baraero.com##.content > div[style="float: none; margin:0px;"] > .entrydiscriptio
 wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
 
 imymac.com##.pmmProduct.sideProductBox
+sportiva.shueisha.co.jp##.block-widget-a-a__article__pr:upward(li.block-widget-a-a__article)
 
 ! ---------- Other ----------
 /amp-apester-

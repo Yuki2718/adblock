@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20201205
+! Version: 20201206
 
 ! General blocking
 /CookieInfo.
@@ -241,6 +241,7 @@ mediafire.com###cookie-accept-footer
 microsoft.com###uhfCookieAlert
 mihoyo.com##.mihoyo-cookie-tips
 moodle.org##.eupopup-container
+msn.com##.cookieBanner
 my.kaspersky.com##wp-cookie-notification-banner
 myanimelist.net##.modal-content
 navita.co.jp,nikkei-r.co.jp##.c-cookiePolicy
@@ -309,17 +310,18 @@ ubuntu.com##.cookie-policy
 userstyles.org##.NotificationLine
 volkswagen.co.jp###cookiemgmt
 voyeurhit.com##.header__cookie
+weatheronline.co.uk###EUCookie
 weibo.com##.cookie-disclaimer
 wilderssecurity.com##.noticeContent
 wolframalpha.com##.oaDry
 wordpress.com##.custom-cookie-banner
 wp-kyoto.net##.cookieConsent
-www.pixiv.net##a[href="/terms?page=privacy"]:upward(2)
+www.pixiv.net##div[class^=of] > div[class^=of] > span[class^=of] + a[class^=of][href="https://policies.pixiv.net/#privacy"]:upward(2):matches-css(height: 64px)
 xecce.com###cookies
 xhamster.*,xhamster11.com,xhamster12.com,xhamster13.com,xhamster14.com,xhamster15.com,xhamster2.com,xhamster5.*##.cookie-announce
 xhamsterpremium.com##.cookie-policy-agree
 york.ac.uk##.c-cookie-banner
 
 !#if adguard
-www.pixiv.net##a[href="/terms?page=privacy"]:nth-ancestor(2)
+www.pixiv.net##div[class^=of] > div[class^=of] > span[class^=of] + a[class^=of][href="https://policies.pixiv.net/#privacy"]:nth-ancestor(2):matches-css(height: 64px)
 !#endif
