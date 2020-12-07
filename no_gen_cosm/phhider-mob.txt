@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Last updated: 2020-11-15
+! Version: 20201207
 
 ! Generic and semi-generic rules
 *##.adsbygoogle
@@ -12,8 +12,8 @@ btimesonline.com,businessinsider.com,iis.net,softpedia.com,wfaa.com,wired.com,wr
 
 ! Specific rules
 ||video.fc2.com/a/pagead/
-||video.fc2.com/a/suggest_list_ad.php|
-||video.fc2.com/suggest_list_ad.php|
+||video.fc2.com/a/suggest_list_ad.php
+||video.fc2.com/suggest_list_ad.php
 9to5google.com,9to5mac.com,9to5toys.com,cdrinfo.com,dronedj.com,electrek.co##.adsense
 abcnews.go.com##.yieldmo-ad
 accuweather.com##.adhesion-header
@@ -41,7 +41,7 @@ darkreading.com##.ad-imu
 deccanherald.com##.ad-320-1023
 dictionary.cambridge.org##[id^=ad_]
 dictionary.com,thesaurus.com##.wide-ad
-dictionary.com##aside:has(.lazy-ad)
+dictionary.com##.lazy-ad:upward(aside)
 dictionary.com##[id^=dcomMobileMisspell], [id^=dcomMobileSERP]
 digg.com##.ads-homepage-leaderboard-btf
 dns.ninja##.adtester-container
@@ -107,7 +107,7 @@ theblaze.com##.ad-tag
 thedailybeast.com##.ConnatixAd
 thedailybeast.com##.FooterAd
 thedailybeast.com##.PageTopAd
-thesaurus.com##aside:has(> div[id^=tcom])
+thesaurus.com##aside > div[id^=tcom]:upward(1)
 thesaurus.com##[id^=dmwMisspellThes]
 thesun.co.uk##.advert-wrapper
 threatpost.com##.c-ad
@@ -115,7 +115,7 @@ tv.com##.ad_wrapper
 tvguide.com###layout-header-ad-wrapper
 us.cnn.com##[id^=sponsored-outbrain]
 venturebeat.com##.adslot
-video.fc2.com##li:has(iframe[src$="suggest_list_ad.php"])
+video.fc2.com##iframe[src$="suggest_list_ad.php"]:upward(li)
 video.fc2.com###ad_middle2
 wccftech.com##.content-ad
 weather.com##[class*=adWrapper]
@@ -125,7 +125,7 @@ wsj.com##.wsj-immersive-ad-container
 www-creators.com##.adsense-container
 www.nippon.com##.c-detail_under
 www.nippon.com##section.c-aside:not(:has(#pop-keywords))
-www.nippon.com##section:has(#recommend_top_title)
+www.nippon.com###recommend_top_title:upward(section)
 yahoo.com###ad_wp_base
 yandex.com##.showcase
 zerohedge.com##.ad__wrapper-element
