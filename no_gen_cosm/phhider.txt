@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20201210
+! Version: 20201211
 
 ! Generic and semi-generic rules
 *##.adsbygoogle
@@ -33,8 +33,12 @@ bestbuy.com##.media-network-ad
 boards.4chan.org##.adg-rects
 btimesonline.com##.block:has(> .ad)
 businessinsider.com##.ad-subnav-container
+businessinsider.com.au###ad-main-top
+businessinsider.com.au##.adspot-300x250-pos1-container
 caniuse.com##.bottom-ad
 cbslocal.com##.page-pencil-ad-container-bottom
+cbsnews.com###component-taboola-below-article-feed
+cbsnews.com##.ad-leader-bottom-all
 chicagotribune.com##.pb-container, .pb-f-ads-dfp
 cnet.com,theguardian.com##.ad-slot
 cnn.com###story-bottom, .BasicArticle__outbrainMain
@@ -101,6 +105,7 @@ iis.net##.ad-home
 imgur.com##.advertisement
 independent.co.uk###frameInner > #gutterRoot + div:has(div[data-tile-name=top_banner])
 independent.co.uk###polar-sidebar-sponsored
+independent.co.uk##article > div[class^="sc-"]:has(> div > div[data-tile-name="top_banner"])
 independent.com##.ad-center
 investors.com##.houseAd
 investors.com##.sidebar-ad
