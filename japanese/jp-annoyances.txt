@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20201210
+! Version: 20201213
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -95,6 +95,7 @@ imgur.com##.Transformation-tooltip--hovering
 ||script1.kakaku.k-img.com/script/push.
 ||shikiho.jp/notice/
 ||shukatsu-mirai.com/notifications.
+||thetennisdaily.jp/assets/js/push-modal.
 ||ticker.teacup.com/rss2/
 ||tinami.com/js/jquery/tipsy/notify.
 ||townwork.net/js/register_sw.js
@@ -619,7 +620,7 @@ tamashii.jp##^.overlay
 !#if env_mobile
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
 m.youtube.com##.mealbar-promo-renderer
-mobile.twitter.com###layers div[dir="auto"] > span:has-text(/在应用上更好|在應用程式上體驗更好的|better on the app|besser in der App|еще больше возможностей в приложении|mejor en la app|melhor no aplicativo|profiterez mieux de Twitter sur l'application/):upward(5)
+mobile.twitter.com###layers div[dir="auto"] > span:has-text(/在应用上更好|在應用程式上體驗更好的|better on the app|besser in der App|еще больше возможностей в приложении|mejor en la app|melhor no aplicativo|profiterez mieux de Twitter sur l'application|Twitterアプリをおすすめ/):upward(5)
 pinterest.*##.Hsu.iyn.zI7.FNs
 qiita.com##.apm-Content, .is-open, [id^=logly-lift]
 quora.com##.q-box > div[class^="CssComponent-"][style*="height: 50px;"]
@@ -631,7 +632,7 @@ reddit.com##.XPromoInFeed, .xPromoChoiceBanner
 drive.google.com#?#a[data-target=clientDownload]:nth-ancestor(3)
 mail.google.com#?#span:contains(Gmail のデスクトップ通知):nth-ancestor(1)
 mobile.twitter.com#?#div[data-testid="sidebarColumn"] section[aria-label][role="region"]:nth-ancestor(1)
-mobile.twitter.com#?##layers div[dir="auto"] > span:contains(/在应用上更好|在應用程式上體驗更好的|better on the app|besser in der App|еще больше возможностей в приложении|mejor en la app|melhor no aplicativo|profiterez mieux de Twitter sur l'application/):nth-ancestor(5)
+mobile.twitter.com#?##layers div[dir="auto"] > span:contains(/在应用上更好|在應用程式上體驗更好的|better on the app|besser in der App|еще больше возможностей в приложении|mejor en la app|melhor no aplicativo|profiterez mieux de Twitter sur l'application|Twitterアプリをおすすめ/):nth-ancestor(5)
 outlook.live.com#?#button.ms-Link:contains(Edge):nth-ancestor(3)
 tripadvisor.jp#?#div[class^=_][style="background-color: white;"] button.primary:contains(今すぐチェック):nth-ancestor(5):matches-css(overflow: auto)
 tripadvisor.jp#?#div[class^=_][style^="position: fixed; inset: auto"] span:contains(でのご予約はいかがでしたか？):nth-ancestor(4):matches-css(width: 360px)
@@ -1847,6 +1848,7 @@ techcrunch.com##.newsletter-signup-block
 techwave.jp##.jetpack_subscription_widget
 telecom.nikkei.co.jp##.scroll-btn
 thebridge.jp##.newsletter-widget
+theguardian.com###footer__email-form
 theintercept.com##.Newsletter
 webtan.impress.co.jp##.block-block:has(form)
 wisdommingle.com###post-end-optin-box, #sidebar-optin-box
@@ -1927,14 +1929,29 @@ blog.goo.ne.jp##.block__shop
 blog.goo.ne.jp##^.block__shop
 !#endif
 
+!#if env_mobile
+mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^="タイムライン"] > div[style] > div[style] > div > div[class] > div[class] > div[dir=auto][style^="-webkit-line-clamp"] > span:has-text(登録すると、):upward(2)
+mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^="タイムライン"] > div[style] > div[style] > div > div[class] > section[aria-labelledby^="accessible-list-"][role=region]:has(div[aria-label^="トピック「"][role=button])
+!mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^=タイムライン] > div[style^="padding-bottom"] > div[style^="padding-top"] > div > div[class]:only-child > a[href^="/i/connect_people?"]:only-child
+!mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^=タイムライン] > div[style] > div[style] > div > div[class] > div[class] > h2[role=heading] > div[dir=auto][style^="-webkit-line-clamp"] > span:has-text(おすすめユーザー):upward(3)
+!mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^=タイムライン] > div[style] > div[style] > div > div[class] > div[data-testid=UserCell]:has(div[dir=auto] > span:has-text(フォロー))
+!#endif
+
+!#if adguard
+mobile.twitter.com#?#nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^="タイムライン"] > div[style] > div[style] > div > div[class] > div[class] > div[dir=auto][style^="-webkit-line-clamp"] > span:contains(登録すると、):nth-ancestor(2)
+!mobile.twitter.com#?#nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^=タイムライン] > div[style] > div[style] > div > div[class] > div[class] > h2[role=heading] > div[dir=auto][style^="-webkit-line-clamp"] > span:contains(おすすめユーザー):nth-ancestor(3)
+!#endif
+
 ! ---------- Self-promo ----------
 ||amazonaws.com/ledge-assets/media/*/techblog_banner.$domain=ledge.ai
 ||amazonaws.com^*/btbanner.png$domain=blog.best-teacher-inc.com
 ||baraero.com/wp-content/uploads/2020/06/stayhome.$image,1p
 baraero.com##.content > div[style="float: none; margin:0px;"] > .entrydiscription, .entrymidashi3
+||foxnews.com^*/fox-news/nation-promo/nation_promo_$image,1p
 ||wpb.shueisha.co.jp/data/banner/announcement/
 wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
 
+cyclist.sanspo.com###latest-news .sponsored:upward(li)
 imymac.com##.pmmProduct.sideProductBox
 passmarket.yahoo.co.jp##.ptsGoToPromo
 sportiva.shueisha.co.jp##.block-widget-a-a__article__pr:upward(li.block-widget-a-a__article)
