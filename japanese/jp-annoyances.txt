@@ -1902,14 +1902,14 @@ oshiete.goo.ne.jp##.specialistAnswerArea
 style.nikkei.com##.floating_related
 topics.or.jp##.recommend-article
 transit.yahoo.co.jp##.realestateSlink
-twitter.com##section:only-child > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] div > a[href$="/flow/topics_selector"][role=link]:upward(div[style^="position: absolute; width: 100%;"])
-twitter.com##section:only-child > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] div[aria-roledescription=carousel] div[aria-label^="トピック「"]:upward(div[style^="position: absolute; width: 100%;"])
-twitter.com##section:only-child > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめトピック):upward(div[style^="position: absolute;"])
+twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] div > a[href$="/flow/topics_selector"][role=link]:upward(div[style^="position: absolute; width: 100%;"])
+twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] div[aria-roledescription=carousel] div[aria-label^="トピック「"]:upward(div[style^="position: absolute; width: 100%;"])
+twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめトピック):upward(div[style^="position: absolute;"])
 ! おすすめユーザー、おすすめツイート
 !twitter.com##div[class^=css-] > aside[aria-label="おすすめユーザー"][role=complementary]:upward(1)
-!twitter.com##section:only-child > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] div > a[href^="/i/connect_people?"][role=link]:upward(div[style^="position: absolute; width: 100%;"])
-!twitter.com##section:only-child > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute; width: 100%"])
-!twitter.com##section:only-child > div[aria-label^=タイムライン]:not([aria-label$=移動する]) > div[style] > div[style^="position: absolute;"] div[role=button][data-testid$=-follow]:upward(div[style^="position: absolute; width: 100%;"])
+!twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] div > a[href^="/i/connect_people?"][role=link]:upward(div[style^="position: absolute; width: 100%;"])
+!twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute; width: 100%"])
+!twitter.com##section > div[aria-label^=タイムライン]:not([aria-label$=移動する]) > div[style] > div[style^="position: absolute;"] div[role=button][data-testid$=-follow]:upward(div[style^="position: absolute; width: 100%;"])
 www.nicovideo.jp##.FeedbackLink
 www.yahoo.co.jp###Service.ult__mods
 youtube.com##ytd-thumbnail-overlay-endorsement-renderer
@@ -1923,11 +1923,12 @@ blog.goo.ne.jp##^.block__shop
 !#endif
 
 !#if env_mobile
-mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^="タイムライン"] > div[style] > div[style] > div > div[class] > div[class] > div[dir=auto][style^="-webkit-line-clamp"] > span:has-text(登録すると、):upward(2)
-mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^="タイムライン"] > div[style] > div[style] > div > div[class] > section[aria-labelledby^="accessible-list-"][role=region]:has(div[aria-label^="トピック「"][role=button])
-!mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^=タイムライン] > div[style^="padding-bottom"] > div[style^="padding-top"] > div > div[class]:only-child > a[href^="/i/connect_people?"]:only-child
-!mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^=タイムライン] > div[style] > div[style] > div > div[class] > div[class] > h2[role=heading] > div[dir=auto][style^="-webkit-line-clamp"] > span:has-text(おすすめユーザー):upward(3)
-!mobile.twitter.com##nav[aria-label=プロフィールタイムライン] + div > section > div[aria-label^=タイムライン] > div[style] > div[style] > div > div[class] > div[data-testid=UserCell]:has(div[dir=auto] > span:has-text(フォロー))
+mobile.twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style] > div > div[class] > a[href="/i/flow/topics_selector"][role=link]
+mobile.twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style] > div > div[class] > div[class] > h2 > div[dir=auto][style^="-webkit-line-clamp"] > span:has-text(おすすめトピック):upward(3)
+mobile.twitter.com##section > div[aria-label^="タイムライン"] > div[style] > div[style] > div > div[class] > section[aria-labelledby^="accessible-list-"][role=region]:has(div[aria-label^="トピック「"][role=button])
+!mobile.twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style] > div > div[class] > a[href^="/i/connect_people?"][role=link]
+!mobile.twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style] > div > div[class] > div[class] > h2 > div[dir=auto][style^="-webkit-line-clamp"] > span:has-text(おすすめユーザー):upward(3)
+!mobile.twitter.com##section > div[aria-label^=タイムライン]:not([aria-label$=移動する]) > div[style] > div[style] > div > div[class] > div[data-testid=UserCell]:has(div[style="min-width: 92px;"] > div[role=button] > div[dir=auto] > span > span:has-text(フォロー))
 !#endif
 
 ! ---------- Self-promo ----------
