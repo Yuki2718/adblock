@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20201215
+! Version: 20201216
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -37,6 +37,7 @@ nytimes.com###__next > #main[aria-live=assertive] + div[class][aria-hidden]
 /web-push.
 /webpush.
 /webpush/*
+||amazonaws.com/cdn.aimtell.com/
 ||aswpsdkeu.com^$3p
 ||braze.com^$3p
 ||browserpush.net^$3p
@@ -444,7 +445,7 @@ facebook.com##._5hn6
 fantia.jp##.popup-bar
 faq.support.biglobe.ne.jp###suMiniEnqueteWrapper
 findpro.jp###js-stickyFooter
-finnishdesignshop.com,hoihoi.whotwi.com,kadoebi.co.jp,lec.medilink-study.com,rebates.jp,service-safari.com##.modal-backdrop
+finnishdesignshop.com,hoihoi.whotwi.com,honichi.com,kadoebi.co.jp,lec.medilink-study.com,rebates.jp,service-safari.com##.modal-backdrop
 froggy.smbcnikko.co.jp##.floatingBanner
 fuzoku.sod.co.jp##.top_webyoyaku
 galleria.emotionflow.com,tegaki.pipa.jp###AboutFrame
@@ -457,6 +458,8 @@ hikkoshi-sakai.co.jp##.fixed.fix-info
 hiroba.dpoint.jp###gtm-promotionModal-overlay, #js-floating, .js-modal-promotion-banner
 hiroba.dpoint.jp##body[data-modal-overlay=open] > div#wrapper:style(position:static !important)
 hitohana.tokyo###cta
+honichi.com###staticModal
+honichi.com##body.modal-open:style(overflow: auto !important)
 houyhnhnm.jp##.js-skip-content
 hypebeast.com###newsletter-popup-fixed
 ig.com###sticky-footer
@@ -1737,7 +1740,7 @@ xn--r8jwklh769h2mc880dk1o431a.com##^.clear_balloon + div[data-index][style], .po
 /wp-content/plugins/icegram/*
 /wysija-newsletters/*
 ||reader.combzmail.jp^
-||tinypass.com^$domain=fortune.com
+||tinypass.com^$domain=fortune.com|washingtontimes.com
 
 ||1000ya.isis.ne.jp/img/common/AD_TOP_press.
 ||agqr.jp/img/bnr_left_ag_express.
@@ -1823,6 +1826,7 @@ exchangewire.jp##.SocialNewsletter_Widget
 gazoo.com##.mailmag_link
 globe.asahi.com##.module-article-mailmag
 hivelocity.co.jp##.hvc-information
+honichi.com##.mailmag-text-banner, .side-mailmag-box
 itmedia.co.jp###colBoxMailmag, .footerMailmag
 jafmate.jp##.go_mailmagazine
 japan.cnet.com###article_under_nllink
@@ -1862,6 +1866,7 @@ zdnet.com##div[data-component="newsletterWidget"]
 ||cxpublic.com^$3p
 ||d.rcmd.jp^
 ||gacraft.jp^
+||getsitecontrol.com^$3p
 ||gravityrd-services.com^$3p
 ||i.popincdn.com^
 ||linkwithin.com^$3p
