@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20201216
+! Version: 20201218
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -2041,13 +2041,10 @@ www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
 
 !#if !env_firefox
 ampmedia.jp##.yarpp-related
-newyorker.com##+js(acis, navigator.storage.estimate)
-nytimes.com##+js(set, navigator.storage.estimate, undefined)
 !#endif
 
 !#if env_firefox
 ampmedia.jp##^.yarpp-related
-newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 !#endif
 
 ! Exception
