@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20201219
+! Version: 20201220
 
 ! YT
 youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
@@ -238,7 +238,6 @@ www.yahoo.co.jp###PayPayFes2020, #Peron
 .com/adx_
 .com/af/
 .com/js/ads/
-.com/ntfc.php?$script
 .com/ufo/$3p
 .eu/ads/
 .fm/ads/
@@ -479,6 +478,7 @@ www.yahoo.co.jp###PayPayFes2020, #Peron
 /av/ads/*
 /awaps-ad-
 /azlink/*
+/backend_loader$script
 /banger.js
 /banner/700
 /banner/ad_
@@ -8160,7 +8160,7 @@ a-antenam.info,antenam.info,tcgantenna.readers.jp##.content:has(> .ad_footer)
 a-kimama.com##.ad__content
 a-matome.com##.LOG2[style], .footer[style^="height:120px;"], .head3
 a-season.com##div > table > tbody > tr:nth-of-type(-n+4):not(:has(img))
-a.hatena.ne.jp,bokete.jp,otadantenna.com,wakudan.seesaa.net##.side-ad
+a.hatena.ne.jp,blog.livedoor.jp,bokete.jp,otadantenna.com,wakudan.seesaa.net##.side-ad
 aaanews.net,autoc-one.jp,duckduckgo.com,kintoreclub.jp,love-episode.com,mettyaeeyan.com,msn.com,news-us.org,porntube.com,trollmanb.com##.sponsored
 aaanews.net,boosting-site.com,druginformation-clinic.com,honmotakeshi.com,media-structure.com,rond8.com##.entry-content > center
 aaieba.livedoor.biz###more > div:has(a[href^="https://www.amazon."])
@@ -8495,6 +8495,7 @@ blog.livedoor.jp###Article > #boxA, #Article > #boxB
 blog.livedoor.jp###YDNA, #YDNB
 blog.livedoor.jp###ac-ranking, #main > section.clearfix + .h2-sub:first-of-type, .autopagerize_page_element > .clearfix > .ad-tp
 blog.livedoor.jp###accessrank
+blog.livedoor.jp###article-options > a[name=comments] ~ div[align=center] > table[cellspacing="0"][cellpadding="0"][border="0"], .ad-bottom-outer, .page-ad
 blog.livedoor.jp###article-options > a[name=trackbacks] + .article-option
 blog.livedoor.jp###article-options > div.inline-block_2
 blog.livedoor.jp###article_amazon_links, #gad-fixed-l, .adplace, .adtitle, .side_ad1
@@ -8525,6 +8526,7 @@ blog.livedoor.jp##.article-outer-3 > a[href^="https://click."] ~ .linkwithin_div
 blog.livedoor.jp##.article-outer-3 > div.inline-block_1
 blog.livedoor.jp##.article-outer-3 [href^="http://www.amazon.co.jp/exec/"]
 blog.livedoor.jp##.article-outer-3 [href^="https://www.amazon.co.jp/gp/"]
+blog.livedoor.jp##.bp2
 blog.livedoor.jp##.column-inner-2 > .plugin-memo:has(iframe[src^="https://rcm-"])
 blog.livedoor.jp##.column-inner-2 > .plugin-memo:has(img[src^="https://doujin-assets."])
 blog.livedoor.jp##.column-inner-2 > table[bordercolordark="#000000"][width="680"]
@@ -9392,7 +9394,7 @@ jbbs.shitaraba.net##table[width="640"] > tbody:has(a[href^="http://www.amazon."]
 jbbs.shitaraba.net##td > div[align=left]:has(a[href^="http://www.amazon."])
 jetanimes.co##.fakeplayer
 jetanimes.co##.module_single_ads
-jiji.com##.ArticleInnerAD
+jiji.com##.ArticleInnerAD, .Rectangle2
 jimeishi.net##.kijishitakk-area, .morekk-area
 jin115.com###sponsered, .article > .jin-ads, .article_bodymore > table[style^="text-align:left;"], div[style="width:728px; height:90px;"]
 jisakupc-technical.info##p[style="text-align: center;"]
@@ -9942,6 +9944,7 @@ nandokun.com##.ad-area-728, .ad-area-728-2
 nanj-short.net,takenokosokuhou.com##.module--category-recent-entry
 nanj-world.blog.jp###second-header, .adnw-2ad
 nanjchallenge.net##.-category.Module:first-child
+nanjchallenge.net##div[align=center] > script[src^="https://cdn-"]:upward(1)
 nantuka.blog119.fc2.com##.article > center:has(script)
 nantuka.blog119.fc2.com##.menu_outline3
 narisoku.blog.jp###pick-c
@@ -11024,8 +11027,8 @@ youtube.com##.ytp-ad-progress
 youtube.com##.ytp-ad-progress-list
 youtube.com##ytd-companion-slot-renderer
 youtube.com##ytd-display-ad-renderer
+youtube.com##ytd-display-ad-renderer:upward(ytd-rich-item-renderer)
 youtube.com##ytd-promoted-sparkles-web-renderer
-youtube.com##ytd-rich-item-renderer:has(ytd-display-ad-renderer)
 youtube.com##ytd-search-pyv-renderer
 youtube.com##ytd-single-option-survey-renderer
 youtube.com##ytd-video-masthead-ad-advertiser-info-renderer,ytm-promoted-sparkles-web-renderer
@@ -11084,6 +11087,7 @@ blog.livedoor.jp##.plugin-memo:has(#sc_dmm)
 blog.livedoor.jp##.plugin-memo:has(.afi)
 blog.livedoor.jp##.plugin-memo:has(img[src^="//ws-fe."])
 blog.livedoor.jp##.right-column-inner > [href^="http://www.amazon.co.jp/exec/"]
+blog.livedoor.jp##.side-ama-outer
 blog.livedoor.jp##.uekokoku, .uekoukoku
 blog.livedoor.jp##div.amzimg
 businessinsider.jp##.p-cardList-card:has(.p-cardList-cardSponsored)
@@ -12373,6 +12377,7 @@ blog.livedoor.jp##^.article-outer-3 > .entry-content > [href^="https://www.amazo
 blog.livedoor.jp##^.article-outer-3 > .linkwithin_div + center > a
 blog.livedoor.jp##^.header_recommen_item, .kiji > .article_main > [href^="https://www.amazon.co.jp/o/ASIN/"], .kiji > .article_main > span[style="color: #0000FF;"] > span[style="font-size: 125%;"]
 blog.livedoor.jp##^.left-column-inner > .plugin-recent_comments ~ .plugin-link + center, .main-column-inner > #ad_rs + .first-article[itemtype] ~ a[name=amazletlink]
+blog.livedoor.jp##^.side-ama-outer
 blog.livedoor.jp##^.uekokoku, .uekoukoku
 blog.livedoor.jp##^.plugin-memo:has(#sc_dmm)
 blog.livedoor.jp##^.plugin-memo:has(.afi)
@@ -13166,6 +13171,7 @@ archive.is,archive.today,archive.vn,archive.fo,archive.md,archive.li,archive.ph,
 @@||g.alicdn.com/alilog/$script,domain=tudou.com|youku.com
 @@||g.doubleclick.net/ads/preferences/$popup
 @@||g.doubleclick.net/gampad/ads?*RakutenShowtime$xhr,domain=imasdk.googleapis.com
+@@||g.doubleclick.net/gampad/ads?sz=*nba.rakuten.co.jp$xhr,domain=imasdk.googleapis.com
 @@||g.doubleclick.net/tag/js/gpt.js$script,xhr,domain=accuweather.com|gamespot.com|independent.co.uk|webmd.com
 @@||gakushuin.ac.jp/ad/common/$1p
 @@||games.softgames.com^$script,1p
@@ -13277,7 +13283,6 @@ archive.is,archive.today,archive.vn,archive.fo,archive.md,archive.li,archive.ph,
 @@||ps.w.org/wp-slimstat/$domain=wordpress.org
 @@||pubads.g.doubleclick.net/gampad/ads*viki.com$xhr,domain=imasdk.googleapis.com
 @@||pubads.g.doubleclick.net/gampad/ads?$xhr,domain=tver.jp|video.tv-tokyo.co.jp
-@@||pubads.g.doubleclick.net/gampad/ads?sz=*nba.rakuten.co.jp$xhr,domain=imasdk.googleapis.com
 @@||publicwww.com/images/labels$image,1p
 @@||r-ad.ne.jp/json?$xhr,domain=recruit.co.jp
 @@||rakuten-bank.co.jp/shared/js/ad.js?$script,domain=rakuten-bank.co.jp
