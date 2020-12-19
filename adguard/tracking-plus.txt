@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20201213
+! Version: 20201219
 
 ! General tracker
 &visitor=*&referrer=
@@ -58,6 +58,7 @@
 /detectizr.
 /dtagent_
 /dwanalytics-
+/electrode/api/logger
 /entry_stats?
 /event.gif?
 /event_logger
@@ -248,6 +249,7 @@
 ||a.espncdn.com/prod/scripts/yield_
 ||a.nytimes.com/svc/nyt/data-layer?sourceApp
 ||aa.com/fingerprint/
+||accounts.google.com/gsi/*$xmlhttprequest,script,third-party
 ||accu-web-raine.azurewebsites.net^
 ||acronymsandslang.com/libs/add_click.
 ||adobe.com/etc/beagle/public/globalnav/privacy-files/sitenotice/evidon-sitenotice-tag.
@@ -348,7 +350,8 @@
 ||google.com/_/DotsSplashUi/browserinfo
 ||google.com/dssw.js
 ||google.com/insights/$script,third-party
-||google.com/log?
+||google.*/log?$xmlhttprequest
+||google.com^*/log?
 ||gotogate.*/ibe-user-event
 ||gotogate.*/system/jslib/ibe/ibe-metric.
 ||gotogate.*/system/jslib/ibe/ibe-user-events.
@@ -510,11 +513,14 @@
 ||vimeocdn.com/js_opt/vendor/siftscience/
 ||vox.com/services/entry_stats
 ||vox.com/services/user_context|
-||walmart.com^*/logger^$xmlhttprequest
+||walmart.com/client/api/logs
+||walmart.com/client/api/metrics
 ||walmartimages.com/beacon/
 ||walmartimages.com/dfw/4ff9c6c9-29f9/k2-$script
 ||walmartimages.com/dfw/4ff9c6c9-6451/k2-$script
+||walmartimages.com^*/cdn-perf.min.js$domain=walmart.com
 ||washingtonpost.com/subscribe/logging/
+||wc.yahoodns.net^$image
 ||weather.com^*/assets/comscore.
 ||weblog.flyasiana.com^
 ||webtracker.newzenler.com^
