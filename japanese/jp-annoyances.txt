@@ -60,6 +60,7 @@ nytimes.com###__next > #main[aria-live=assertive] + div[class][aria-hidden]
 ||pushnami.com^$3p
 ||pushbullet.com^$3p
 ||pushcrew.com^$3p
+||pushengage.com^$3p
 ||pusherapp.com^$3p
 ||pushnotifications.click^
 ||realpush.media^$3p
@@ -133,6 +134,7 @@ w3q.jp###news-ticker-wrapper
 www.nicovideo.jp##.MylistContainer-premiumBanner
 www.nicovideo.jp##.PreVideoStartPremiumLinkContainer, .PreVideoStartPremiumLinkOnEconomyTimeContainer
 youtube-nocookie.com,youtube.com###movie_player > .ytp-ce-bottom-right-quad
+youtube-nocookie.com,youtube.com###movie_player > .ytp-promotooltip-wrapper[style="top: 168px; left: 298px; display: none;"][data-layer="8"]
 youtube-nocookie.com,youtube.com##.annotation.iv-branding
 youtube-nocookie.com,youtube.com##.ytp-cards-teaser
 ~studio.youtube.com,youtube-nocookie.com,youtube.com##.ytp-ce-element
@@ -937,6 +939,7 @@ _rss03.html|
 _rss1.$frame
 _rss2.$frame
 _rss3.$frame
+_rsslink.html|
 
 @@||rss.solty.biz^$script,3p,badfilter
 ||adult-rss.com^
@@ -1059,6 +1062,8 @@ figsoku.net##aside:style(height:auto !important)
 ||g-n-ipponmichi.xxxblog.jp^$frame,1p
 ||girlsvip-matome.com/js/link*$script,1p
 girlsvip-matome.com##.kotei_link
+||gyousei1234.xsrv.jp^$frame,domain=gogotorimaru.blog19.fc2.com
+gogotorimaru.blog19.fc2.com###center > div[style$="border-color:#666666;border-width:1px;border-style:solid;background:#eeeeee;"]
 ||h-douga.xyz^$domain=mixerovideo.jp
 mixerovideo.jp###hdougaxyz-k0
 ||hayamimi-hobby.com/storage/app/media/rss-images/
@@ -1265,7 +1270,7 @@ blog.livedoor.jp###footline, #hokanokiji, #kijisaikabu, .headrss, .linkh, .naka_
 blog.livedoor.jp###RSSbox
 blog.livedoor.jp###articles-outer > .top-right:style(margin-top:0 !important)
 blog.livedoor.jp###blog-body-outer > #left-t:style(margin-top:0 !important)
-blog.livedoor.jp###container > .blog-title-outer + div[class^=entry_box_left], #container > div[class^=entry_box_left] + div[class^=entry_box_right], #main > .column-inner > .column-inner-2 > div[class^=entry_box102], .article-body-more > div[style^="padding: 1px; margin-top: 0px; margin-bottom: 20px; overflow:hidden;"]
+blog.livedoor.jp###container > .blog-title-outer + div[class^=entry_box_left], #container > div[class^=entry_box_left] + div[class^=entry_box_right], #main > .column-inner:only-child > .column-inner-2:only-child > .entry_box101:nth-child(-n+2), #main > .column-inner > .column-inner-2 > div[class^=entry_box102], .article-body-more > div[style^="padding: 1px; margin-top: 0px; margin-bottom: 20px; overflow:hidden;"]
 blog.livedoor.jp###container > .rss-blogroll, #rss3
 blog.livedoor.jp###container > center:first-child > table[bgcolor="#ffffff"]
 blog.livedoor.jp###container > div[style^="width:1105px;height:300px;overflow:auto;background-color:#ffffff;"], .article-body > div[style^="width:685px;height:540px;overflow:auto;background-color:#fafad2"], .article-body-inner > div[style^="width:685px;height:460px;overflow:auto;background-color:#FFEEFF;"], .article-outer-3 > div[style^="width:758px;height:460px;overflow:auto;background-color:#fafad2;"], .column-inner-2 div[style^="width:758px;height:500px;overflow:auto;background-color:#FFEEFF;"]
@@ -1382,6 +1387,7 @@ honsoku.com##.left-column-inner > .plugin-memo:has(script[src$="/blogroll.js"])
 honsoku.com##.main-column-inner .ba, .right-column-inner > .plugin-memo:nth-child(n+3), .rss-t, .rss-t2, .rss2-blogroll, .widget-area:last-of-type
 honwaka2ch.livedoor.biz###main > .column-inner > .column-inner-2 > div[align=center], #main > .column-inner > .column-inner-2 > div[style], .article-outer-3 > div[style], .sample1
 hosyusokuhou.jp###bottom_rss, #footerinner
+hunter31.blog.fc2.com##.plugin1_outline script[src$="/blogroll.js"]:upward(.plugin1_outline)
 huyosoku.com##.res-quote, .size-full, [id$=feed]
 i2chmeijin.blog.fc2.com##.rssBox
 ideal2ch.livedoor.biz##.sita-rss
@@ -1596,6 +1602,7 @@ vippers.jp###relevantPost, .aside:last-child
 vipsister23.com###cat-recent, #share2, #site-footer > .clearfix.container > .sidewrapper, .inline-block > h3
 vsnp.net###link_area, #link_etc2
 waranote.livedoor.biz##.right-container[style^="position: fixed"]:style(position:absolute !important;top:unset !important; left:969px !important; margin-left: 10px !important)
+wara2ch.com##.column-inner-2 span[style="line-height:20pt"]
 waro-soku.com###sidebar > #text-2, #top-rss, [class^=rss_wrapper]
 waro-soku.com##.entry-content > h3
 waro-soku.com##.eyecatch > h3
@@ -1904,6 +1911,7 @@ zdnet.com##div[data-component="newsletterWidget"]
 biteki.com##.btn_back_to_list + div > .recommend_title
 crank-in.net##.right_in:has([id^=_popIn_trend])
 encyclopedia.ushmm.org###open-feedback
+event.rakuten.co.jp###rexSurveyRoot > aside > form > .Nps
 excite.co.jp##.linkaff
 facebook.com##div[data-pagelet*="FeedUnit"]:has-text(/Suggested for You|おすすめ/)
 iphone-diary.com##.awasete_yomitai
@@ -1918,6 +1926,7 @@ oshiete.goo.ne.jp##.specialistAnswerArea
 style.nikkei.com##.floating_related
 topics.or.jp##.recommend-article
 transit.yahoo.co.jp##.realestateSlink
+travel.rakuten.co.jp###rexSurveyRoot > div:only-child > div:only-child
 twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] div > a[href$="/flow/topics_selector"][role=link]:upward(div[style^="position: absolute; width: 100%;"])
 twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] div[aria-roledescription=carousel] div[aria-label^="トピック「"]:upward(div[style^="position: absolute; width: 100%;"])
 twitter.com##section > div[aria-label^=タイムライン] > div[style] > div[style^="position: absolute;"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめトピック):upward(div[style^="position: absolute;"])
