@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210103
+! Version: 20210104
 
 ! General tracker
 &visitor=*&referrer=
@@ -101,6 +101,7 @@
 /id?d_visid_
 /in.php?p=
 /instart.js
+/internal/page_view?
 /jquery.iframetracker.
 /js-tag-manager/*
 /js/targeting.js
@@ -199,6 +200,8 @@
 ?action=track_visitor&
 ?log=stats-
 ?type=pageview&
+||airtable.com/internal/$xmlhttprequest
+||airtable.com^*/reports
 ||akamaihd.net^*.gif?e=
 ||amazonaws.com/ai-img/1x1.gif
 ||amazonaws.com/ai-img/aia.js|
