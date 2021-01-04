@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210103
+! Version: 20210105
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -638,8 +638,7 @@ mobile.twitter.com###layers div[dir="auto"] > span:has-text(/在应用上更好|
 pinterest.*##.Hsu.iyn.zI7.FNs
 qiita.com##.apm-Content, .is-open, [id^=logly-lift]
 quora.com##.q-box > div[class^="CssComponent-"][style*="height: 50px;"]
-reddit.com##.NavFrame > .m-slideIn.XPromoPill
-reddit.com##.XPromoInFeed, .xPromoChoiceBanner
+reddit.com##.xPromoChoiceBanner, .XPromoInFeed, .XPromoPill
 !#endif
 
 ! ---------- App ----------
@@ -1215,6 +1214,7 @@ idol-blog.com##.box2:has(img[src$="/title_lovegala.png"]) + .post
 ||yabesoku.blog.jp^$frame,1p
 ||youskbe.com/pkup/
 youskbe.com##.main > .row > div > aside:has(.blogroll)
+||zaeega.com^$frame,1p
 ||zsaz.blog.jp^$frame,1p
 
 ###toprss
@@ -1288,7 +1288,7 @@ blog.esuteru.com##.siteAside
 blog.game084.com,nogizaka46link.blog.jp##.right-container[style^="position: fixed"]:style(position: absolute !important)
 bnewg.sokuho.org##.yad_billboard
 chomanga.org##.hdrWidget, .widgetPage
-college2ch.blomaga.jp,dechamore.net,f1jouhou2.blog.fc2.com,hosyusokuhou.jp,jpsoku.blog.jp,kanasoku.info,lifehack2ch.livedoor.biz,news4vip.livedoor.biz,openworldnews.net,ryusoku.com###headline
+college2ch.blomaga.jp,dechamore.net,f1jouhou2.blog.fc2.com,hosyusokuhou.jp,jpsoku.blog.jp,kanasoku.info,lifehack2ch.livedoor.biz,news4vip.livedoor.biz,openworldnews.net,ryusoku.com,zaeega.com###headline
 curationewsharp.blog.jp,kininaruero7.blog.jp##.left-container
 blog.livedoor.jp###container > table[bordercolordark="#000000"][width="1200"], .article-footer > table[bordercolordark="#000000"][width="600"]
 blog.livedoor.jp###footline, #hokanokiji, #kijisaikabu, .headrss, .linkh, .naka_rss, .rtcm, [class^=footrss], [class^=shitarss_], [id^=shitarss_title_]
@@ -1413,6 +1413,7 @@ hijikisokuhou.doorblog.jp###kiji-bottom, #top-rss-box, .article-body > .kijishit
 himanatokiniyaruo.com###main > .plugin-title
 himanatokiniyaruo.com###plugin1
 himasoku.com##.himajin-headline
+hiroburo.com##div[style$="width:780px;"]
 honmotakeshi.com##.entry-content > span[style="color: rgb(255, 153, 0);"], .top_rss_area_pc
 honsoku.com##.left-column-inner > .plugin-memo:has(script[src$="/blogroll.js"])
 honsoku.com##.main-column-inner .ba, .right-column-inner > .plugin-memo:nth-child(n+3), .rss-t, .rss-t2, .rss2-blogroll, .widget-area:last-of-type
@@ -1591,6 +1592,7 @@ precurematome.com###pc_text-13
 punisoku.blog54.fc2.com###main_l > .entry_header
 punisoku.blog54.fc2.com##.entry_body > .plg_body
 punyu.com###content > .box_title[style="width:700px;"], #content > .box_title[style^="width:700px; margin-top:20px; "], #content > .rank_table, #right > .box_title[style="width:410px; margin-top:10px;"], #right > .rank_table, .box_title[style="width:330px; margin-top:10px;"]
+question56.blog.jp###more > iframe ~ span[style^="border-left: 5px"], #more > iframe ~ span[style^="border-left: 5px"] ~ br, test1
 mashlife.doorblog.jp,sshouko.net##blockquote
 momoniji.com###content-top-in > .widget-content-top:first-child
 mudainodocument.com##.menu_cont3, .menu_title3
@@ -1669,8 +1671,10 @@ yaruonichijou.blog.fc2.com##.plugin2_outline:has(script[src^="https://blogroll."
 yaruonichijou.blog.fc2.com##.plugin3_outline:has(script[src^="https://blogroll."])
 you1news.com###custom_html-22, .article-bottom-rss1, .article-bottom-rss2
 you1news.com##h2.caption-title:has-text(おすすめ記事)
+zaeega.com###ad2 + p[style^="background:url"]
 
 !#if !env_firefox
+2ch-matomenews.com##.blog-card, .linkcard
 adgene.net##.sidebar
 asiamachi.blog.fc2.com##.blog + .menu3, .blog > center
 baraero.com##.container_top_widget
@@ -1717,6 +1721,7 @@ xn--r8jwklh769h2mc880dk1o431a.com##.clear_balloon + div[data-index][style], .pos
 !#endif
 
 !#if env_firefox
+2ch-matomenews.com##^.blog-card, .linkcard
 adgene.net##^.sidebar
 asiamachi.blog.fc2.com##^.blog + .menu3, .blog > center
 baraero.com##^.container_top_widget
