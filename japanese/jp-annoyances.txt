@@ -512,7 +512,7 @@ mobile.twitter.com##div[data-testid="sidebarColumn"] section[aria-label][role="r
 moca-news.net###guide
 monosnap.com##.modalSide
 movie-times.tv###newContactBanner
-music.youtube.com##ytmusic-popup-container > .ytmusic-popup-container[style$="max-width: 1383px;"] > ytmusic-mealbar-promo-renderer
+music.youtube.com##ytmusic-popup-container > .ytmusic-popup-container[style*="position: fixed; inset: auto auto 0px 0px;"] > ytmusic-mealbar-promo-renderer[dialog=""]
 naitopi.com###age_check
 nature.com##.c-site-messages--nature-briefing-email-variant
 news.yahoo.co.jp###newsFeed + div:has(a[data-ylk^="rsec:cmtfloat;"])
@@ -991,6 +991,8 @@ _rsslink.html|
 ||zenback.jp^
 
 *$3p,image,domain=hdouga.com
+/esuteru/Header_new_articles.js$domain=otakomu.jp
+otakomu.jp##.htm-articles-top
 /pickupgirl/\d{6}-\d{3}s\.jpg$/$image,1p,domain=pickupgirl.blog23.fc2.com
 pickupgirl.blog23.fc2.com###gdright > table[width="100%"], #gdright > table[width="100%"] + br
 /recommended.js$domain=hero-news.com
@@ -1450,6 +1452,7 @@ jp-matome.info,pink-ch.site##.entry-content > font[size="3"] + table[width="100%
 jpsoku.blog.jp###headline-outer, #more > a, #more > a ~ br, .footer_rss_box
 jpsoku.blog.jp,kazokuchannel.doorblog.jp##.first-article > font[size="5"]
 jpsoku.blog.jp,mashlife.doorblog.jp##.first-article > b
+jumpsokuhou.com##.headline_out
 jyouhouya3.net##.entry_kanren2, .entry_main2 > .side_center_sennashi, .kadomaru_m2 > .side_center_sennashi
 k-han.com##.RRR-5500:last-child, .kakomi-box10, .kakomi-box12
 kanasoku.info###headrank2:has-text(/Pickup|オススメ/)
