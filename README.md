@@ -45,7 +45,7 @@ About CNAME tracker: I really don't understand why it's so special to some peopl
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt&title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt)
 
-<sub>1: uBlock Origin can now fight against this by [strict3p](https://github.com/gorhill/uBlock/commit/bde3164eb445a4e74acca303ec9fa07f82ba1b1c) option.</usb>
+<sub>1: uBlock Origin can now fight against this by [strict3p](https://github.com/gorhill/uBlock/commit/bde3164eb445a4e74acca303ec9fa07f82ba1b1c) option.</sub>
 
 </details>
 
