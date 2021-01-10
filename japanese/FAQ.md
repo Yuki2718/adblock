@@ -1,14 +1,16 @@
 ## 広告ブロック FAQ
 
-最終更新：2021/01/09
+最終更新：2021/01/10
 
 内容は記事執筆時点のものですのでご了承ください。脚注は少し詳しい方向けです。
 
+### ブロッカー選択
+
+#### Q1 AdBlockやAdblock Plus（ABP）ではダメなのですか？
+
 <details>
 
-<summary><strong>ブロッカー選択</strong></summary>
-
-#### 1. AdBlockやAdblock Plus（ABP）ではダメなのですか？
+<summary><strong>A1</strong></summary>
 
   それらでも大部分の広告は消えるでしょう。ですが、AdBlockで適用されるABP Japanese filtersは2020年2月に更新が停止しており、不具合の修正等は期待できません（ABPでは既に削除されたようです）。広告ブロッカーとは基本的にフィルタに書かれたルールを強制するためのプログラムであり、フィルタこそがその心臓部にあたります<sup>1</sup>。主要な日本語サイトの広告を大体除去するだけなら、100ほどのドメインをブロックするだけでもかなりの効果がありますが<sup>2</sup>、一部の厄介なサイトに対応するには特殊な文法で書かれたフィルタが必要です。そしてここからが重要なのですが、<strong>現在の主要な広告ブロッカーにはそれぞれ専用のフィルタ記法があり、それを無視して使うと十分な効果が得られません。</strong>今のところ、もちフィルタや豆腐フィルタといった主要な日本用フィルタが十分に性能を発揮できるのはuBlock Originだけであり、AdGuard（iOS版とコンテンツブロッカーを除く）が許容範囲といえる互換性を持っています<sup>3</sup>。日本用のフィルタでABPと互換性があるフィルタは280blockerさんのものだけですが、こちらはモバイルサイトを対象としています。ほかに選択肢がないならともかく、より良い選択肢がある以上、わざわざAdBlockやABPを使う必要はありません。また、uBlock filtersやuBlock filters - Annoyancesが日本のサイトもカバーしているのに対し、ABP内臓のABP filtersには日本用フィルタがありません。
 
@@ -22,23 +24,47 @@
 
   <sub>4: uBlock Originのパフォーマンス追及は徹底しており、拡張機能だけでなくフィルタにも容赦なく改善を求めてきます。たとえばEasyListの[この変更](https://github.com/easylist/easylist/commit/eca8326d7ac0fd71d67b8264d13e91293376cf73)はuBlock Origin開発者の要求に基づくもので、彼がベンチマーク上のパフォーマンス劣化に気づいたことが発端となっています。</sub>
 
-#### 2. AdBlockとAdblock Plusの違いは？
+</details>
+
+#### Q2 AdBlockとAdblock Plusの違いは？
+
+<details>
+
+<summary><strong>A2</strong></summary>
 
   歴史的な経緯についてはほかに優れた記事があるのでそちらに譲ります。現在はAdBlockのエンジンはAdblock Plusそのものであり、外装を付け替えただけです。小文字のAdblockについては知りません。
 
-#### 3. ブラウザ組込みのブロッカーはどうですか？
+</details>
 
-  1.を参照していただきたいのですが、豆腐フィルタやもちフィルタが採用しているuBlock Origin文法に対応した組込みブロッカーは、PCでは私の知る限りBraveのみです。しかし、Braveは今のところカスタムフィルタの購読ができません。Vivaldiはカスタムフィルタの購読ができますが、非表示や正規表現すらサポートしておらず、機能的にはAdblock PlusはおろかiOSのコンテンツブロッカーにも劣ります。
+#### Q3 ブラウザ組込みのブロッカーはどうですか？
 
-#### 4. Chrome拡張機能のManifest V3移行で、広告ブロック拡張は使えなくなると聞きました。
+<details>
 
-  まず、専門外ですので以下には間違った点があるかもしれません。<strong>広告ブロック拡張自体はManifest V3準拠のDeclarative Net Request APIでも可能です</strong>。V3移行で広告ブロック拡張が死ぬかのような主張は的外れです。しかし、現状のまま移行されるとuBlock Originのような[高度で柔軟な機能を持った拡張機能](https://twitter.com/gorhill/status/1316734012963119105)は死滅します。それ以上に、少数のボランティアに頼っている現在のフィルタコミュニティは大打撃を受けるでしょう<sup>5</sup>。既に（Manifest V3に近い）iOSは大きな負担となっています。広告ブロックコミュニティ側も、Manifest V3のすべてに反対しているわけではもちろんなく、ちゃんと意味のある制約は受け入れる意思を[示しています](https://github.com/uBlockOrigin/uBlock-issues/issues/338#issuecomment-534261690)。批判の要点は、プライバシー保護が目的というなら[筋違いではないか](https://www.eff.org/ja/deeplinks/2019/07/googles-plans-chrome-extensions-wont-really-help-security)という点と、広告ブロックコミュニティの実情を[理解していない](https://adguard.com/ja/blog/how-ad-blocking-is-done.html)というが大きいのではないかと思います<sup>6</sup>。webRequest APIのうちブロック以外は残るため、Chromiumチームが挙げているような悪用はManifest V3でも可能で、プライバシー保護への直接的な効果はほぼありません。現状（2021年01月）ではV2がいつ切り捨てられるのか、V3がこのまま実装されるのか、企業向けに残されるというブロッキングwebRequest APIには誰がアクセス可能なのか等、不明なことが多すぎてあまりコメントできることはありません。ちなみに、[Ad Blocker Developer Summit 2020](https://adblockerdevsummit.com/)において、Mozillaも長期的にはwebRequest APIを切り捨て、Declarative Net Request APIに移行する予定であることが[示されました](https://www.youtube.com/watch?v=tpDFS-GUytg)。発表を行ったRob Wu氏にPeter Lowe氏が質問したところ、「Declarative Net Request APIが代替として十分なものになってからの話で、すぐではない」とのことですが。
+<summary><strong>A3</strong></summary>
+
+  A1.を参照していただきたいのですが、豆腐フィルタやもちフィルタが採用しているuBlock Origin文法に対応した組込みブロッカーは、PCでは私の知る限りBraveのみです。しかし、Braveは今のところカスタムフィルタの購読ができません。Vivaldiはカスタムフィルタの購読ができますが、非表示や正規表現すらサポートしておらず、機能的にはAdblock PlusはおろかiOSのコンテンツブロッカーにも劣ります。
+
+</details>
+
+#### Q4 Chrome拡張機能のManifest V3移行で、広告ブロック拡張は使えなくなると聞きました。
+
+<details>
+
+<summary><strong>A4</strong></summary>
+
+  まず、専門外ですので以下には間違った点があるかもしれません。<strong>広告ブロック拡張自体はManifest V3準拠のDeclarative Net Request APIでも可能です</strong>。V3移行で広告ブロック拡張が死ぬかのような主張は的外れです。しかし、現状のまま移行されるとuBlock Originのような[高度で柔軟な機能を持った拡張機能](https://twitter.com/gorhill/status/1316734012963119105)は死滅します。それ以上に、少数のボランティアに頼っている現在のフィルタコミュニティは大打撃を受けるでしょう<sup>5</sup>。既に（Manifest V3に近い）iOSは大きな負担となっています。広告ブロックコミュニティ側も、Manifest V3のすべてに反対しているわけではもちろんなく、ちゃんと意味のある制約は受け入れる意思を[示しています](https://github.com/uBlockOrigin/uBlock-issues/issues/338#issuecomment-534261690)。批判の要点は、プライバシー保護が目的というなら[筋違いではないか](https://www.eff.org/ja/deeplinks/2019/07/googles-plans-chrome-extensions-wont-really-help-security)という点と、広告ブロックコミュニティの実情を[理解していない](https://adguard.com/ja/blog/how-ad-blocking-is-done.html)という点が大きいのではないかと思います<sup>6</sup>。webRequest APIのうちブロック以外は残るため、Chromiumチームが挙げているような悪用はManifest V3でも可能で、プライバシー保護への直接的な効果はほぼありません。現状（2021年01月）ではV2がいつ切り捨てられるのか、V3がこのまま実装されるのか、企業向けに残されるというブロッキングwebRequest APIには誰がアクセス可能なのか等、不明なことが多すぎてあまりコメントできることはありません。ちなみに、[Ad Blocker Developer Summit 2020](https://adblockerdevsummit.com/)において、Mozillaも長期的にはwebRequest APIを切り捨て、Declarative Net Request APIに移行する予定であることが[示されました](https://www.youtube.com/watch?v=tpDFS-GUytg)。発表を行ったRob Wu氏にPeter Lowe氏が質問したところ、「Declarative Net Request APIが代替として十分なものになってからの話で、すぐではない」とのことですが。
 
   <sub>5: 機械学習を使えばいいという人もいますが、現状ではフィルタコミュニティの代替になるようなものではありません。Adblock Plusは既にFacebookのフィルタ作成用に[機械学習を使っています](https://gitlab.com/eyeo/adblockplus/adblockpluscore/-/issues/98)し、Braveが関与している[AdGraph](https://arxiv.org/abs/1805.09155)をはじめ、機械学習を広告やトラッキングのブロックに使った論文は多く出ています。</sub>
 
   <sub>6: 当初、Googleはパフォーマンスも理由に挙げていましたが、現行のAPIがパフォーマンス上まったく足かせになっていないデータが示されたためプライバシーに軸足を移しました。一方で、一般にはルール数の制約といったわかりやすい点ばかりが流布している気がします。ルール数は本題ではありません。そもそもuBlock Originが持つような高度な機能が必要となった背景には広告提供側とのいたちごっこが一因としてあります。既にiOSは圧倒的に不利な状況で、一部のアンチ広告ブロックや広告再挿入に対してはあきらめて広告を受け入れ、せいぜいそれがユーザーに目立たないよう誤魔化すのが精一杯です。幸い、日本ではそうしたサイトは比較的まれですが。</sub>
 
-#### 5. Nano Adblocker（+ Nano Defender）の方がよいと聞きました。
+</details>
+
+#### Q5 Nano Adblocker（+ Nano Defender）の方がよいと聞きました。
+
+<details>
+
+<summary><strong>A5</strong></summary>
 
   <strong>2020年10月17日追記：Nanoプロジェクト（Chrome版）はトルコの開発者に[売却され](https://github.com/NanoAdblocker/NanoCore/issues/362)、危険な機能が追加されたため[ストアから削除されました](https://github.com/jspenguin2017/Snippets/issues/2)。ChromeでNanoをご利用の方は速やかにアンインストールしてください。Firefox版は別の方がメンテナンスしているため大丈夫です。</strong>
 
@@ -50,26 +76,49 @@
 
   <sub>9: DandelionSprout氏によると、domainオプションのワイルドカードサポートへの対応遅れが問題となったようです。</sub>
 
-#### 6. スパイウェア化した、Nano Defenderの代わりはありますか？
+</details>
 
-  4.で述べたように、適切なフィルタを使用していればそもそもいらないと思います。uBlock Originに戻したことでアンチ広告ブロックが出るようになったという人は十中八九、フィルタ選択を間違えていると疑われます。まず、uBlock filtersが有効なことを確認し、それからほかのフィルタについても過剰購読などないか見直してみてください。また、アンチ広告ブロックのテストページはuBlock filtersの対象外です。雪フィルタでも対象外としていましたが、初心者の混乱を避けるため対応してみました（未対応のテストページをご存じの方は教えてください）。テストページでブロッカーが検知されるからと言って、アンチ広告ブロック対策がされていないと早合点しないでください。それでもアンチ広告ブロックに遭遇してしまった場合<sup>10</sup>、[フィルタ作者に報告してください](https://www.reddit.com/r/firefox/comments/jbua53/nanoadblocker_nanodefender_is_malware_now/g8xrhct/)。2020年12月現在、フィルタで対処できないアンチ広告ブロックは知られておらず、サイト側がこちらの対策を監視していたちごっこにならない限りは必ず対処できます<sup>11</sup>。予防的な対処がしたいのであれば、一番簡単で効果的なのは「汎用的な要素隠蔽フィルターを無視する」にチェックを入れることです。ただし広告枠やテキスト広告、一部ポップアップが隠し切れなくなるなど副作用もあるため、中級者以上向けです。どうしても標準のリストと日本用フィルタ以外にフィルタを追加したいのであれば、せいぜいAdGuard Baseくらいでしょう（uBlock Originの設定の、フィルター一覧 ＞ 広告にあるものを使ってください）。まれにuBlock filters未対応のアンチ広告ブロックに対応している場合もあります。ただし、uBlock Originで使うとそれなりに不具合もあり、逆にアンチブロックを起動してしまうこともあります（最近の[例](https://forums.lanik.us/viewtopic.php?f=62&t=45330)）。Fxxk Fxxkadblock（あえて伏字）は無駄が多く、作りもちょっと雑なためおすすめしませんし、uBlock filtersとBaseがあれば不要です。Fanboy's problematic-sitesは13.で述べたFanboy's Enhanced Tracking Listのサブフィルタで、13.と同様の理由でおすすめしませんし、適切なフィルタを使っていれば効果もあまりありません。なお、雪フィルタにおいても個別対応だけでなくアンチブロックを惹起しやすいルールを積極的に外すなどの対策をとっていますが、現状は個人管理ですので限界があります。
+#### Q6 スパイウェア化した、Nano Defenderの代わりはありますか？
+
+<details>
+
+<summary><strong>A6</strong></summary>
+
+  A5.で述べたように、適切なフィルタを使用していればそもそもいらないと思います。uBlock Originに戻したことでアンチ広告ブロックが出るようになったという人は十中八九、フィルタ選択を間違えていると疑われます。まず、uBlock filtersが有効なことを確認し、それからほかのフィルタについても過剰購読などないか見直してみてください。また、アンチ広告ブロックのテストページはuBlock filtersの対象外です。雪フィルタでも対象外としていましたが、初心者の混乱を避けるため対応してみました（未対応のテストページをご存じの方は教えてください）。テストページでブロッカーが検知されるからと言って、アンチ広告ブロック対策がされていないと早合点しないでください。それでもアンチ広告ブロックに遭遇してしまった場合<sup>10</sup>、[フィルタ作者に報告してください](https://www.reddit.com/r/firefox/comments/jbua53/nanoadblocker_nanodefender_is_malware_now/g8xrhct/)。2020年12月現在、フィルタで対処できないアンチ広告ブロックは知られておらず、サイト側がこちらの対策を監視していたちごっこにならない限りは必ず対処できます<sup>11</sup>。予防的な対処がしたいのであれば、一番簡単で効果的なのは「汎用的な要素隠蔽フィルターを無視する」にチェックを入れることです。ただし広告枠やテキスト広告、一部ポップアップが隠し切れなくなるなど副作用もあるため、中級者以上向けです。どうしても標準のリストと日本用フィルタ以外にフィルタを追加したいのであれば、せいぜいAdGuard Baseくらいでしょう（uBlock Originの設定の、フィルター一覧 ＞ 広告にあるものを使ってください）。まれにuBlock filters未対応のアンチ広告ブロックに対応している場合もあります。ただし、uBlock Originで使うとそれなりに不具合もあり、逆にアンチブロックを起動してしまうこともあります（最近の[例](https://forums.lanik.us/viewtopic.php?f=62&t=45330)）。Fxxk Fxxkadblock（あえて伏字）は無駄が多く、作りもちょっと雑なためおすすめしませんし、uBlock filtersとBaseがあれば不要です。Fanboy's problematic-sitesはA13で述べたFanboy's Enhanced Tracking Listのサブフィルタで、13.と同様の理由でおすすめしませんし、適切なフィルタを使っていれば効果もあまりありません。なお、雪フィルタにおいても個別対応だけでなくアンチブロックを惹起しやすいルールを積極的に外すなどの対策をとっていますが、現状は個人管理ですので限界があります。
   
   <sub>10: 日本用フィルタでのみ惹起されるアンチ広告ブロックもあります。この場合uBlock filtersは対応しませんので、ご利用のフィルタ作者に報告してください。また、AdGuard日本語フィルタで対処されているアンチ広告ブロックは、原則としてuBlock filtersでは対処しません。</sub>
 
   <sub>11: 迂回広告やポップアップ、迷惑要素の中にはフィルタで対処できないものもあります。</sub>
 
-#### 7. uBlock OriginもNanoのように売却されないか心配です。
+</details>
+
+#### Q7 uBlock OriginもNanoのように売却されないか心配です。
+
+<details>
+
+<summary><strong>A7</strong></summary>
 
   確かなことは何も言えませんが、個人的な意見としては、Raymond Hill（uBlock Originの開発者、gorhill）は開発を中止することはあっても売却したり、その他ユーザーを危険にさらすことはないんじゃないかと思います。彼自身が今回の騒動で述べているように、現在の広告ブロック拡張機能は強大な権限を持っており、開発者を信用できなければ使うべきではありません。私はuBlock Originの前々身であるHttp Switchboardの誕生にも立ち会っている最初期ユーザーの一人で、そのころから何度か言葉を交わしていますが、ことセキュリティやプライバシーには厳格な人です。ほかの[悪質な拡張機能を見回ったり](https://www.bleepingcomputer.com/news/security/mozilla-removes-23-firefox-add-ons-that-snooped-on-users/)、パラメータの書換え機能などをセキュリティ上の問題で[却下したり](https://github.com/uBlockOrigin/uBlock-issues/issues/46#issuecomment-391303700)（同機能を採用したAdblock Plusは後に[脆弱性として指摘](https://forest.watch.impress.co.jp/docs/news/1180855.html)されることに）、例には事欠きません。また、お金に影響されるのを避けるため[寄付すら拒否](https://github.com/gorhill/uBlock/wiki/Why-don%27t-you-accept-donations%3F)しており、儲け話の誘いがあれば[さらし者にしています](https://twitter.com/gorhill/status/1293233244826218498)。実は一度、負担に耐え切れずuBlock Originの前身であるuBlockを新開発者に譲渡したことがあるのですが<sup>12</sup>、この時の失敗は氏にとって苦い経験だったようで、今でもときどきRedditなどで言及しています。
 
   <sub>12: 日本語では[こちらの記事](https://www.reddit.com/r/newsokur/comments/33wick/ublock%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%81%AE%E4%BD%9C%E8%80%85%E3%81%8C%E7%8F%BE%E9%96%8B%E7%99%BA%E9%99%A3%E3%81%AE%E9%81%8B%E5%96%B6%E6%96%B9%E9%87%9D%E3%82%92%E7%96%91%E5%95%8F%E8%A6%96%E3%81%97%E7%8B%AC%E8%87%AA%E3%81%AB%E9%96%8B%E7%99%BA%E5%AD%98%E7%B6%9A%E3%82%92%E3%82%A2%E3%83%8A%E3%82%A6%E3%83%B3%E3%82%B9/)が詳しいです。ただし、uBlock Originの開発継続はもともとuBlockを委譲したときから決まっていました。</sub>
 
+</details>
 
-#### 8. 初心者におすすめのブロッカーを教えてください。
+#### Q8 初心者におすすめのブロッカーを教えてください。
+
+<details>
+
+<summary><strong>A8</strong></summary>
 
   PCではブラウザ上のブロックで大抵の人は足りると思います。この場合、一番のおすすめはuBlock Originです。Macは使っていないのでわかりません。Androidだとアプリ内の広告もまれではないため、デバイス全体をカバーできた方がよいでしょう。AdGuard for Androidがもっともメジャーで、かつ機能的にも十分だと思います。[なんJ AdGuard部](https://wikiwiki.jp/nanj-adguard/)さんに記事がまとまっています。iOSは2020年現在、広告ブロッカーへの制約が最も厳しい環境で、正直な話、厄介な広告再挿入などへの根本的な対処はできません（OSの問題で、ブロッカー開発者の技術でどうにかなるものではありません。文句はAxxleに）。日本語サイトを中心にみられる場合、280blockerがベストだと思います。最近の更新で、iOS14以上ならアプリ内広告にもある程度対応できるようになりました。少し詳しい人や海外サイトを本格的にみる人はいくつか選択肢がありますが、そういう人にはこんな導入記事は必要ないでしょう。ネットワーク全体をカバーするには、Pi-holeやAdGuard Homeを使う方法と、DNSキャッシュサーバーを広告ブロック機能のあるものにする簡易的な方法があります。AdGuard Homeについては280blockerさんがわかりやすい[記事](https://280blocker.net/blog/20181027/1254/)を書いてくださっています。ただしこれらはドメイン単位の「粗い」ブロックしかできないため、各デバイスのブロッカーを置き換えることはできません。
 
-#### 9. ブロッカーを複数入れてもいいですか？
+</details>
+
+#### Q9 ブロッカーを複数入れてもいいですか？
+
+<details>
+
+<summary><strong>A9</strong></summary>
 
   [やめて](https://twitter.com/gorhill/status/1033706103782170625)[ください](https://twitter.com/gorhill/status/1296122090026946567)。1.で述べたブロッカーとフィルタの区別が理解できれば、いかに無意味なことかわかるはずです。ブロックを強化したり、アンチ広告ブロックを除去したりしたいのでしたら、するべきことはブロッカーの複数使用ではなく、適切なフィルタの選択です（たくさん購読すればよいというものではない）。中級者以上の方であれば、ブラウザの広告ブロック拡張機能にhostsファイルあるいはネットワーク全体のブロック（たとえばPi-hole, AdGuard Home, UnboundなどによるDNSブラックホール）を組み合わせるのもありですが、不具合への対処といった点から初心者にはおすすめしづらいものがあります。また、目的が（少し）違う拡張機能、たとえばトラッキング対策のGhosteryやPrivacy Badgerなどを勧める人もいますが、これもほとんど意味がありません。[多くの論文](https://www.reddit.com/r/uBlockOrigin/comments/k6cezt/discussion_is_it_advisable_to_use_privacy_badger/gem3yds/)で、uBlock Origin（デフォルト設定）が最高レベルのトラッキング保護と高パフォーマンスを両立していることが実証されています。トラッキング対策を強化したいなら、やはりフィルタの選択が肝要です<sup>13</sup>。雪フィルタ単独でも日本のサイトにおいてはかなりのトラッカーをブロックしていますが、これにEasyPrivacyかAdGuard Tracking Protectionのどちらか（両方はほとんど無意味）を加えれば多くの人には十分以上です。これ以上を求めるなら、ブロッカーの併用などより[Medium mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode)といったデフォルト拒否の採用を考えるべきです。
 
@@ -77,36 +126,52 @@
 
 </details>
 
+### uBlock Origin - 拡張機能
+
+#### Q10 ブロックのカウンターが上がり続けます。/Adblock Plusの方がuBlock Originよりたくさんブロックしているようです。
+
 <details>
 
-<summary><strong>uBlock Origin - 拡張機能</strong></summary>
-
-#### 10. ブロックのカウンターが上がり続けます。/Adblock Plusの方がuBlock Originよりたくさんブロックしているようです。
+<summary><strong>A10</strong></summary>
 
   カウンターの上昇は[何も問題](https://www.reddit.com/r/uBlockOrigin/comments/itw503/ubo_google_docs_high_cpu_spikes_and_blocked/g5l5yjd/)[ありません](https://www.reddit.com/r/uBlockOrigin/comments/j5cwdj/ubo_is_blocking_7k_xhr_requests_on_youtube_videos/g7sex8w/)。どういうわけか、カウンターが上がり続けるとパフォーマンスに悪影響があると信じている人が多いようです。確かに、ブロックされた場合にものすごい勢いでリクエストを送り続けるケースはあり、フリーズしたりCPU使用率が跳ね上がったりしますがこれはそのサイトの問題です。1秒に1つ程度のカウンター上昇なら何も影響ありません。どうしても信じられないなら、開発者ツールからパフォーマンスレコードをとって報告してください。証明できたらuBlock Origin史上初の発見です。また、逆にカウンターの数字が大きいほどたくさんブロックしてくれていると信じてアドオンやフィルタを比較する人もいますが、これも一概に言えません。Adblock PlusとuBlock Originではカウンターの仕様が異なりますし、HTMLフィルタで除去してしまえばカウンターの数字は上がりません。そもそもブロッカー検知用プローブ（アンチ広告ブロックとは無関係に、統計的情報を得るため使われることも多いです）などはブロックしない方がいいのですが、この点を理解されていない方も多そうです（[例](https://github.com/easylist/easylist/issues/6274)）。
 
 </details>
 
+### uBlock Origin - フィルタ
+
+#### Q11 クラス名が毎回ランダムに変わる要素はどう消せばいいのでしょうか？/「要素をブロック」で消したものがすぐ復活します。
+
 <details>
 
-<summary><strong>uBlock Origin - フィルタ</strong></summary>
-
-#### 11. クラス名が毎回ランダムに変わる要素はどう消せばいいのでしょうか？/「要素をブロック」で消したものがすぐ復活します。
+<summary><strong>A11</strong></summary>
 
   「要素をブロック」はフィルター作者のための補助ツールです。１つ２つならともかく、同機能で自動生成されたルールをたくさん作るのはおすすめしません。クラス名が変わる場合、まずはクラス名以外で使える属性がないか、開発者ツールで見てみるのがよいと思います。もしなければ、該当要素の親や子孫で安定した属性を持つものや、使えそうなテキストを含むものがないか探します。そうしたものがあれば（必ずと言っていいほどあります）、あとは[Procedural cosmetic filters](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters)を使うだけです。初心者であれば`:has`, `:has-text`と`:upward`だけでも十分でしょう。
 
-#### 12. 効率的な非表示ルールの書き方を教えてください。
+</details>
+
+#### Q12 効率的な非表示ルールの書き方を教えてください。
+
+<details>
+
+<summary><strong>A12</strong></summary>
 
   細かいTipsはありますが、一番大切なのは[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)を意識することです。通常の非表示ルールでもそうですが、Procedural cosmetic filtersにおいては[とくに](https://github.com/uBlockOrigin/uAssets/commit/8fd12b060148cfde8e53e70012733b089abf65bc#commitcomment-39037147)[重要](https://www.reddit.com/r/uBlockOrigin/comments/j4ewg7/best_practice_hasx_or_xupward/)です（[実際に生じた問題の例](https://www.reddit.com/r/uBlockOrigin/comments/kg7224/youtube_homepage_loading_high_cpu/)）。
 
-#### 13. おすすめのフィルタ構成を教えてください。
+</details>
 
-  フィルタ構成についてはこれが正解といえるものはなく、各自で調べて自身の好みに合うものを選択するしかありません。ただ、間違いといえるものはあります。フィルタを解釈して評価できる人はまれなため、インターネット上には主観的な使用感や信念にもとづいた「おすすめ」がたくさん転がっています。たとえば、Adblock Warning Removal Listは、最近になってようやく意味のないリストという認識が広まってきたようですが、数年前まであちこちでアンチ広告ブロック対策に推奨されていました。ここまでひどくはないものの、あまり正しく理解されていなさそうなリストとしてFanboy's Enhanced Tracking Listが挙げられます。このリストの最大部分は許可ルールによるブロッカー検知回避なのですが、ちょっと大雑把すぎて検知と関係ない広告スクリプトまで許可してしまっています。これらは基本的にイニシエイターで、最終的な広告は別のルールでブロックされますが、不要なスクリプトを走らせてまで一部の検知を回避することを、同リストの利用者が求めているかは疑問です<sup>13</sup>。残りの部分もすべてがトラッキング対策ではなく、迷惑要素なども含まれています。あまり意味のないリストについていえば、NoCoinが挙げられるでしょう。コインマイニング自体、絶滅してはいないものの下火ですが<sup>14</sup>、NoCoinでブロックされるものはほぼすべてEasyPrivacy + uBlock filters - Resource abuseでカバーされています。
+#### Q13 おすすめのフィルタ構成を教えてください。
+
+<details>
+
+<summary><strong>A13</strong></summary>
+
+  フィルタ構成についてはこれが正解といえるものはなく、各自で調べて自身の好みに合うものを選択するしかありません。ただ、間違いといえるものはあります。フィルタを解釈して評価できる人はまれなため、インターネット上には主観的な使用感や信念にもとづいた「おすすめ」がたくさん転がっています。たとえば、Adblock Warning Removal Listは、最近になってようやく意味のないリストという認識が広まってきたようですが、数年前まであちこちでアンチ広告ブロック対策に推奨されていました。ここまでひどくはないものの、あまり正しく理解されていなさそうなリストとしてFanboy's Enhanced Tracking Listが挙げられます。このリストの最大部分は許可ルールによるブロッカー検知回避なのですが、ちょっと大雑把すぎて検知と関係ない広告スクリプトまで許可してしまっています。これらは基本的にイニシエイターで、最終的な広告は別のルールでブロックされますが、不要なスクリプトを走らせてまで一部の検知を回避することを、同リストの利用者が求めているかは疑問です<sup>13</sup>。残りの部分もすべてがトラッキング対策ではなく、迷惑要素なども含まれています。あまり意味のないリストについていえば、NoCoinが挙げられるでしょう。コインマイニング自体、絶滅してはいないものの下火ですが<sup>14</sup>、NoCoinでブロックされるものは（ほぼ？）すべてEasyPrivacy + uBlock filters - Resource abuseでカバーされています。
 
   一般的なアドバイスとしては、初心者の方はともかく購読しすぎに注意することです。日本用フィルタの複数購読、ソーシャルや迷惑要素用フィルタの多重購読はおすすめしません。おそらく、たくさん購読するとそれだけ多くブロックしてくれるという考えからなのでしょうが、これは必ずしも正しくありません<sup>15</sup>。また、フィルタによる不具合は天災のようなもので、普段はあまり遭遇しませんが忘れたころにやってきます。多く購読すればするほど、メリットは薄くなっていき、不具合の確率ばかり高まります。それにいくらuBlock Originでも、非表示フィルタやトークン化不能正規表現の無駄が多量に積もればパフォーマンスに影響しかねません。そもそもフィルタの購読は「なんとなく役に立ちそう」というあいまいな感覚ではなく、[実際に遭遇したニーズに基づいて行うべきです](https://www.reddit.com/r/uBlockOrigin/comments/jr6szm/suggestion_scoring_performance_of_filterlists/gbxu8i7/)。
 
   もう少し具体的に、PCの場合なら（あくまで参考程度にお願いします）
-  - 内製フィルタ：最低でもuBlock filtersは維持することをおすすめします。ほかのフィルタに比べると不具合の率が少なく、日本語サイト利用者でもメリットは大きいです。Privacyはごくまれに誤爆することがあります。Badware risksやUnbreakは意味がわかっている人は外してもよいですが、維持しても害はないと思います。
+  - 内製フィルタ：最低でもuBlock filtersは維持することをおすすめします。ほかのフィルタに比べると不具合の率が少なく、日本語サイト利用者でもメリットは大きいです。Privacyはごくまれに誤爆することがあります。Badware risksやUnbreakは意味がわかっている人は外してもよいですが、維持しても問題はほとんどないと思います。
   - 広告：海外サイトをよく見る人はEasyListを維持。日本のサイトしか見ないなら、お好みで外してもよい
   - プライバシー：トラッキングを気にしない人、または雪フィルタ使用者は外してもよい。気にする人で、雪以外の日本語フィルタ使用または海外サイトをよく使うなら、平均的なブロック性能が高いが不具合も多いEasyPrivacyを維持するか、不具合は少ないが漏れも多いAdGuard Tracking Protectionから選択
   - マルウェアドメイン：お好みで。デフォルトのOnline Malicious URL Blocklistはブラウザのセキュリティ機能（Google Safe Browsing）とデータ共有しており、大部分はブラウザでブロックされます
@@ -119,11 +184,17 @@
 
   <sub>13: 一般非表示が有効なら、結局検知されてしまうことが多いです。そもそも同リストで許可されている検知スクリプトは、多くがEasyListなどの主要フィルタ（雪も）で既にブロックから除外されています。</sub>
 
-  <sub>14: coinhiveをはじめ主要なマイナーのほとんどがサービス閉鎖しており、フィルタ作者ですら実際に機能しているマイニングに会うことは極めてまれです。</sub>
+  <sub>14: coinhiveをはじめ主要なマイナーのほとんどがサービス終了しており、フィルタ作者ですら実際に機能しているマイニングに会うことは極めてまれです。</sub>
 
   <sub>15: 理由は大きく二つあります。まず、許可ルールが原則的にブロックルールに対して優先されるということがあります。ある程度の規模のフィルタリストであれば必ずといっていいほど不要になった許可ルールが含まれますし、リストによっては絞り込みが甘い許可ルールもあるかもしれません。こうした許可ルールを悪用して広告を表示した例も報告されています。もう一つは広告再挿入です。これはアンチ広告ブロックと原理は同じで、ブロッカーを検知し、アンチ広告ブロックの派手な警告の代わりにブロッカーを迂回する広告を再挿入するものです。あるリストがせっかく再挿入を惹起しないようにしていても、他のリストが惹起してしまうと意味がありません。
 
-#### 14. EasyListやEasyPrivacyは不具合が多いと聞きます。
+</details>
+
+#### Q14 EasyListやEasyPrivacyは不具合が多いと聞きます。
+
+<details>
+
+<summary><strong>A14</strong></summary>
 
   事実です。私もこれまでいろいろな形で、おそらく数十件は報告しています。なお、ルールが多いから不具合が多いわけではありません。80対20の法則ではありませんが、大部分のルールは不具合と無関係な一方、誤爆しやすいルールというのがあります。雪フィルタではこの点を逆手にとり、誤爆しやすいルールをなるべく外すことにしました<sup>16</sup>。またアンチ広告ブロックを惹起しやすいという議論も聞きます。これは間違ってはいませんが、「それほど違わない」という印象です。もっとも一般的なトリガーは非表示、とくに`##.adsbygoogle`ですが、これは主要な日本用フィルタすべてに含まれています。EasyList側も当然気づいており、[変更してみたり](https://github.com/easylist/easylist/commit/216979ef1f3643405c9d2dba077807e114def71c)（失敗）、uBlock Origin限定ですが`*##.adsbygoogle:style(width:1px!important;height:1px!important;)`を検討してみたり（レイアウトが崩れるケース有り、断念）<sup>17</sup>、世界的なアンチブロックの潮流についてはむしろ日本用フィルタより対策が進んでいるかもしれません。もちろん`/adspace.`など日本で多いトリガーもありますが（2020年10月追記：EasyListより[削除されました](https://github.com/easylist/easylist/commit/7200d30acd38504d4c5053081065383a3519776c)）、それを言い出すと日本用フィルタでのみトリガーされるものもあります。ところで、不具合が多い理由の一つは日本のユーザーからの報告がほとんどないことです。EasyListでなくとも、日本では280blockerさんを唯一の例外として、フィルタ作者への報告自体がまばらな印象です。すべてのユーザーが不具合を自己修正できるとは思えないため、ブロックをそのサイトで無効にしたり、dynamic filteringの緑で上書きしたりといった対処をされている方が多いのではないかと思います。フィルタ作者はそういった「荒療治」より効果的な対処ができますし、あなたの報告がほかの多くのユーザーを助けるかもしれません。ぜひ積極的な報告をお願いします。なお、当サイトおよびしたらばの[簡易報告掲示板](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1598352715/)では、EasyList等外部フィルタ併用時の不具合も受けつけ、可能であれば関係先にフィードバックを送ります。
 
@@ -133,11 +204,13 @@
 
 </details>
 
+### 当サイトのフィルタ
+
+#### Q15 雪フィルタの中を見ると、海外サイト用のルールが結構あります。どのようなサイトが対象なのでしょうか？
+
 <details>
 
-<summary><strong>当サイトのフィルタ</strong></summary>
-
-#### 15. 雪フィルタの中を見ると、海外サイト用のルールが結構あります。どのようなサイトが対象なのでしょうか？
+<summary><strong>A15</strong></summary>
 
   New York Timesなどの大手英語メディアや日本人利用者が多い海外マンガ、アニメ、あるいはポルノサイトに加え、以下のようなサイトを対象にしています：
   - 他の日本用フィルタで個別対応されているもの
@@ -149,7 +222,13 @@
 
   英語以外ではロシアと中国/広東語のサイトがやや多いですが、これらの言語をよく利用する方には到底足りません。EasyListや各言語用フィルタを使用してください。
 
-#### 16. 雪フィルタでCNAMEトラッカー（ファーストパーティートラッカー）はブロックできますか？
+</details>
+
+#### Q16 雪フィルタでCNAMEトラッカー（ファーストパーティートラッカー）はブロックできますか？
+
+<details>
+
+<summary><strong>A16</strong></summary>
 
   2020年11月17日追記：[こちら](https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/)の論文を踏まえ、若干記述を修正しました。[First-party trackers host list](https://hostfiles.frogeye.fr/firstparty-only-trackers-hosts.txt)に含まれるものに関しては以前の記述で問題ないのですが、同リストでカバーされていないCNAMEトラッカーもまだたくさんあるようです。
   
@@ -159,7 +238,13 @@
 
   <sub>19: CNAMEトラッカーが騒ぎになったときからAレコードやAAAAレコードの利用が予測されていましたが、実際に2020年よりGoogleが[サーバーサイドタギング](https://developers.google.com/tag-manager/serverside?hl=ja)として提供しています。uBlock Originもこれに対応するため[strict3p](https://github.com/gorhill/uBlock/commit/bde3164eb445a4e74acca303ec9fa07f82ba1b1c)オプションを追加しました。このように、ブロッカーの迂回やその他"user hostile"な機能に真っ先に対応し続けているのもuBlock Originが信用されている理由の一つでしょう。</sub>
 
-#### 17. なにか言い残したことは？
+</details>
+
+#### Q17 なにか言い残したことは？
+
+<details>
+
+<summary><strong>A17</strong></summary>
 
   AdGuardに関する某掲示板で私を指名するのはやめてください。ちゃんと報告していただければAdGuardチームの誰かが対処するはずです。私を含めチームの何名かはただの無償ボランティア<sup>20</sup>で、チームの誰かから依頼された場合は別として、空き時間で適当に目についた問題に対処しているだけです。ところで、スクリーンショットのみで説明がなく、何をしてほしいのか不明瞭な報告がたまにあります。大抵、チームから呼ばれて私がエスパーするはめになります。日本語で構いませんので（スクリーンショット中に日本語で説明を入れるのは控えてください）、一言、説明を加えてください。できればスクリーンショットにもマーキングをしていただけるとなおよいです。また、ご希望に添えない場合もあります。とくにDNS用のフィルタはブロックと不具合のバランスをとるのが難しいため、その傾向が強いです。
   
