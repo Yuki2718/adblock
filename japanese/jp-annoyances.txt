@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210110
+! Version: 20210112
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -133,6 +133,8 @@ sony.jp##.s5-frontLogin__notificationItem--favorite
 translate.google.co.jp,translate.google.com##.tlid-notification-container
 twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute;"] > div > div > div > div[role=button] > div[dir=auto] > span > span:has-text(通知をオンにする):upward(5)
 w3q.jp###news-ticker-wrapper
+www.dropbox.com##.callout-container--bottom-left:has(.callout-content-title:has-text(編集しますか？))
+www.dropbox.com##.maestro-secondary-sidebar:has(.continuous-onboarding__heading__text:has-text(新しいおすすめ))
 www.nicovideo.jp##.MylistContainer-premiumBanner
 www.nicovideo.jp##.PreVideoStartPremiumLinkContainer, .PreVideoStartPremiumLinkOnEconomyTimeContainer
 youtube-nocookie.com,youtube.com###movie_player > .ytp-ce-bottom-right-quad
@@ -598,6 +600,9 @@ webprofessional.jp###js_footer
 wikipedia.org##.cn-fundraising
 wizcase.com###bio_ep, #bio_ep_bg
 wizcase.com##body[style="overflow: hidden;"]:style(overflow:auto !important)
+www.dropbox.com###upsell-home-modal:has(.confirm-button:has-text(/Business をお試し|アプリをダウンロード/))
+www.dropbox.com##.dig-Menu-backdrop, .waffle-menu__backdrop
+www.dropbox.com##.persistent-footer:has(> .persistent-footer__footer-ctas > .persistent-footer__signup-button)
 www.elecom.co.jp###js-business-panel
 www.icloud.com##.notice-view-container
 www.microsoft.com##body.p_onestore.deferred-popup:style(overflow:visible !important)
@@ -1279,7 +1284,7 @@ au2chblog.blog.fc2.com##article:has(> .under_link_box)
 au2chblog.blog.fc2.com##article:has(> [class^=rss_body_])
 babymetaltimes.com##.article-body-inner > fieldset, .header-image
 bakufu.jp##.entry-content > font[size] + table[width]
-bandai11.blog.fc2.com,erogletv.blog.fc2.com,hunter31.blog.fc2.com,kopipe2011.blog116.fc2.com##.plugin3_outline
+bandai11.blog.fc2.com,erogletv.blog.fc2.com,hitoikigame.com,hunter31.blog.fc2.com,kopipe2011.blog116.fc2.com##.plugin3_outline
 baraero.com##.bottom_ad
 baychannel.jp##.sidemenu_body:has(script[src$="/blogroll.js"])
 baychannel.jp##.sidemenu_body:has(script[src^="//widget."])
@@ -1424,6 +1429,7 @@ himanatokiniyaruo.com###main > .plugin-title
 himanatokiniyaruo.com###plugin1
 himasoku.com##.himajin-headline
 hiroburo.com##div[style$="width:780px;"]
+hitoikigame.com##.plugin3_outline ~ br
 honmotakeshi.com##.entry-content > span[style="color: rgb(255, 153, 0);"], .top_rss_area_pc
 honsoku.com##.left-column-inner > .plugin-memo:has(script[src$="/blogroll.js"])
 honsoku.com##.main-column-inner .ba, .right-column-inner > .plugin-memo:nth-child(n+3), .rss-t, .rss-t2, .rss2-blogroll, .widget-area:last-of-type
@@ -1463,7 +1469,7 @@ kanasoku.info##.cent_top, .headline_middle
 kandatasokuho.blog.fc2.com###center > .page_navi, div[style$="background-color: lavender;"]
 kankokunohannou.org##.ently_text > b:has-text(オススメ記事)
 kanmsu.com##.akismet_comment_form_privacy_notice ~ div[class]:not(.pager), .header-menu + .t2
-kasegeru.blog.jp##script[src$="/widget.js"]:upward(.plugin-memo)
+kasegeru.blog.jp##.plugin-memo script[src$="/widget.js"]:upward(.plugin-memo)
 kazokuchannel.doorblog.jp###more > ol, #more > span[style^="font-size: medium"], #more > ul
 kazokuchannel.doorblog.jp,matome-tarou.ldblog.jp,recosoku.com##.plugin-memo:last-child
 kazokuchannel.doorblog.jp,magical-news.blog.jp,minnanohimatubushi.2chblog.jp,oppao.blog.jp,vippers.jp##.plugin-memo:first-child
@@ -1501,6 +1507,7 @@ kurusoku.com###main-inner > div[style^="background:#E065A0; padding:5px; "]:firs
 kyuukaiou.ldblog.jp###dou, #urss, #urssbox, .plugin-memo, .rssbox, div[align=center] + hr[style]
 kyuusai2nd.net##table[style="padding-top: 15px"][width="920"] table[width="900"]:first-child
 l-o-l.net##.live-rss, .live-rss2
+labaq.com##.plugin-memo script[src$="/blogroll.js"]:upward(.plugin-memo)
 lakatan.net###text-5
 lucky318b.m50.coreserver.jp##.blogroll-column, .blogroll-nantoka
 magazinematome.livedoor.blog,pachinkolist.com##.listWithImage
