@@ -2,9 +2,7 @@
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
 
-<strong>Notice to Nano Adblocker (+ Nano Defender) user on Chrome</strong>: Nano projects [was sold](https://github.com/NanoAdblocker/NanoCore/issues/362) to Turkish developers who inserted dubious code into the extension. Uninstall Nano Adblocker and/or Nano Defender ASAP if you have them on Chrome. Firefox version are independently maintained so are safe.
-
-I can't guarantee these filers won't cause problems. If you found problems, report it by filling in all the mandatory items in Issue template; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard). They are not what I use and shared solely for others' sake, so please don't blame me if I haven't updated for a while.
+I can't guarantee these filers won't cause problems. If you found problems, report it by filling in all the mandatory items in Issue template; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard). They are not exactly what I myself use and shared solely for others' sake, so please don't blame me if I haven't updated for a while.
 
 <details>
 <summary><strong>adguard</strong></summary>
@@ -29,7 +27,7 @@ Exclusion:
 
 ### AdGuard Tracking Protection Plus (tracking-plus.txt)
 
-[AdGuard Tracking Protection filter](https://kb.adguard.com/en/general/adguard-ad-filters#privacy) is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage which this filter aims to complement. Some of bug reports are commented out but you can add them to User Rules without the initial `!`. Some rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
+[AdGuard Tracking Protection filter](https://kb.adguard.com/en/general/adguard-ad-filters#privacy) is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage on average which this filter aims to complement. Some of bug reports are commented out but you can add them to User Rules without the initial `!`. Some rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
 
 Inclusion criteria:
 - Didn't and less likely to cause false-positive
@@ -124,39 +122,48 @@ Enhance anti-scam capability of [280blocker for Japanese mobile site (ABP format
 <details>
 <summary><strong>medium_mode</strong></summary>
 
-All the filters/rules in this category are for uBlock Origin.
+All the filters/rules in this category are for uBlock Origin. dynamic-rules.txt or dynamic-rules-mob.txt can be imported to My rules whereas anti-allowlist.txt and/or static-rules.txt should be copied and pasted into My filters. You can subscribe the latter two instead by importing their raw text URL into Filter lists, but as they are not frequently updated I don't make them subscription filter.
 
 ### anti-allowlist.txt
 
 This is to counter unnecessary or too generic allowlists which were not addressed or won't be addressed by the maintainer. Only for advanced user as it can cause problems.
 
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/anti-allowlist.txt)
+
 ### dynamic-rules-mob.txt
 
 See below, it's a mobile version of ublock-dynamic-rules.txt.
 
+[View Rules](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules-mob.txt)
+
 ### dynamic-rules.txt
 
-Nooplists for medium mode of uBlock Origin dedicated for English user. The objective is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope. In addition, following rules are included:
+Nooplists for medium mode of uBlock Origin dedicated for English user. The objective is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope<sup>1</sup>. In addition, following rules are included (Update: removed `* localhost * block` as causes trouble in some particular case):
 
-- `* localhost * block`
 - `file-scheme * 1p-script block`
 - `file-scheme * inline-script block`
 
+[View Rules](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules.txt)
+
 Q: Why X is nooped, it's bad!
-A: See the purpose, this list is built to make as few breakage as possible for as many English user. This doesn't mean it should be used 'as is' - still each user should train their rules. Even with lax rules medium mode is much better than easy mode in terms of blocking.
+A: See the purpose, this list is built to make as few breakage as possible for as many English user. This doesn't mean it should be used 'as is' - still each user should train their rules (obviously you have to add many rules if you browse non-English sites). Even with lax rules medium mode is much better than easy mode in terms of blocking.
+
+<sub>1: I live in Japan and don't have full access to US, UK, etc. payment/shopping/banking services. Until you get accustomed to medium mode, it may be advisable to turn medium mode off on such sites. They anyway know much about you.</sub>
 
 ### static-rules.txt
 
-WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea<sup>1</sup>. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules<sup>2</sup> and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter and uBlock filters - Annoyances which are relatively small in size and rarely break pages; however, they only block minimal set of the plugins. This list includes 1) rules for the plugins not on Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer (thanks to @gwarser), and 3) a regex rule focused only on the latest survey scam campaign. Want more protection? Assuming you've already usgin medium mode, you know default-deny approach well. @jawz101 provides a good [wordpress plugins whitelist](https://raw.githubusercontent.com/jawz101/ublockOrigin_wordpressWhitelist/master/my-ublock-static-filters_wordpressWhitelist.txt) which should be used with an entire block rule for the plugin directory.
+WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea<sup>2</sup>. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules<sup>3</sup> and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter and uBlock filters - Annoyances which are relatively small in size and rarely break pages; however, they only block minimal set of the plugins. This list includes 1) rules for the plugins not on Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer (thanks to @gwarser), and 3) a regex rule focused only on the latest survey scam campaign. Want more protection? Assuming you've already using medium mode, you know default-deny approach well. @jawz101 provides a good [wordpress plugins whitelist](https://raw.githubusercontent.com/jawz101/ublockOrigin_wordpressWhitelist/master/my-ublock-static-filters_wordpressWhitelist.txt) which should be used with an entire block rule for the plugin directory.
 
 Exclusion:
 - Rules that caused or can cause false-positive
 - Rarely seen plugins such that used by less than 100 sites according to themesinfo.com or plugins used only on specific websites
 - CSS-only plugins
 
-<sub>1: It doesn't make sense if the site was fully compromised, but in some other cases may protect you from malwarized plugins and some vulnerabilities.</sub>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/static-rules.txt)
 
-<sub>2: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.</sub>
+<sub>2: It doesn't make sense if the site was fully compromised, but in some other cases may protect you from malwarized plugins and some vulnerabilities.</sub>
+
+<sub>3: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.</sub>
 </details>
 
 <details>
@@ -179,6 +186,8 @@ Exclusion:
 
 See above, it's a mobile version of phhider-nogen.txt. Rules covered by AdGuard Mobile ads filter won't be added.
 
+Update: Since generic cosmetic filtering is disabled by default on mobile, some specific-generic filters were added to uBlock filters so the value of this list dropped (I already removed entries no more needed - actually I'm the one who proposed and added the filters to uBlock filters). I may stop providing this list in future once I find time to move them to uBlock filters with further check.
+
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt)
 
@@ -192,4 +201,4 @@ See above, it's a mobile version of phhider-nogen.txt. Rules covered by AdGuard 
 
 #### Acknowledgements
 
-I use [PyFunceble](https://github.com/funilrys/PyFunceble) to screen potential dead domains.
+I use [PyFunceble](https://github.com/funilrys/PyFunceble) to screen potential dead domains. I thank all ad- and contents-blocking community members who helped me to learn right filter writing.
