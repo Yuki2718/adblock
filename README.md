@@ -138,7 +138,7 @@ See below, it's a mobile version of ublock-dynamic-rules.txt.
 
 ### dynamic-rules.txt
 
-Nooplists for medium mode of uBlock Origin dedicated for English user. The objective is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope<sup>1</sup>. In addition, following rules are included (Update: removed `* localhost * block` as causes trouble in some particular case):
+Nooplists for medium mode of uBlock Origin dedicated for English user. The objective is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope<sup>1</sup>. In addition, following rules are included (Update: removed `* localhost * block` as it causes trouble on some particular case):
 
 - `file-scheme * 1p-script block`
 - `file-scheme * inline-script block`
