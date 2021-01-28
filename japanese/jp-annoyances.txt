@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210127
+! Version: 20210129
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -787,6 +787,7 @@ magazine.hitosara.com##.app
 ||manga-zero.com/public/images/app-
 manga-zero.com##.app, .app-dl
 ||itsnap.jp/static/images/app_store.
+||makuake.com^*/footer/banner_app_download.png
 ||mag.minne.com/wp-content/themes/minne-mag/images/layout/footer/footer_
 mag.minne.com##.l-footer__introduceApp
 magazine.itsnap.jp##.itm_post_apps
@@ -1043,6 +1044,7 @@ aqua2ch.net##.menu_outline3, .menu_title3
 ||blogmaterial.nicoblomaga.jp/material/11/js/top.js$domain=otakamu.com
 otakamu.com###blogroll-top
 ||blogmaterial.nicoblomaga.jp^*/feed.js$script
+||bp2-antena.com^$~css,domain=isekaitraffic.livedoor.biz
 ||burusoku-vip.com^$frame,1p
 ||cloud.akibablog.net^$frame,domain=blog.livedoor.jp
 ||comusume.net/den.html|
@@ -1256,7 +1258,6 @@ youskbe.com##.main > .row > div > aside:has(.blogroll)
 2chopmt.blog.jp##.logbox, .newrss3
 2chopmt.blog.jp,blog.game084.com,kininaru-geinou-m.blog.jp,mikomikonews.net,money-soku.blog.jp,nogizaka46link.blog.jp,recosoku.com,reiwamatome3.blog.jp##[class^=rss-blogroll]
 5ch-echiechi.doorblog.jp##.rss-blogroll ~ br
-5ch-echiechi.doorblog.jp,pokemon-goh.doorblog.jp,sematome.com##.plugin-memo:has(script)
 aatyu.livedoor.blog##[class^=logbox]:not(.logbox3)
 absurd.blogo.jp,blog.livedoor.jp##.headlinerss
 actgameslog.net##.add
@@ -1271,7 +1272,8 @@ akb48nensensou.net###container > table > tbody > tr > td > div[style$="bottom-st
 akb48nensensou.net###content:style(background:none !important)
 akb48rompen.com###more > span[style^="font-weight: bold; "] + ul, .pickuptitle
 allthewayfrom.blog.fc2.com###top-area, .side-menu:last-child
-anichil.com###rssbox, .rss1
+anichil.com###rssbox
+anichil.com,greemas.doorblog.jp##.rss1
 anige-sokuhouvip.com###main-box > div[style^="border : 2px solid gray;"], [id^=top_center]
 aqua2ch.net##.menu_title111
 aqua2ch.net,blogo.jp,fesoku.net,ldblog.jp,livedoor.biz,matometanews.com##.related-articles
@@ -1343,14 +1345,14 @@ blog.livedoor.jp##.column-inner-2 > table[summary="<%blog_name>"][width="728"]
 blog.livedoor.jp##.main-container > .rss-blogroll
 blog.livedoor.jp##.main-container > .rss-blogroll + br
 blog.livedoor.jp##.osusumemokyumoji2, .rss3rd, .rssbottom3, .rsskijityu2, .rsstop, .tabmoji, .tabmoji2
-blog.livedoor.jp##.plugin-memo:has(script[src^="//blog.with2."])
+blog.livedoor.jp##.plugin-memo > .side script[src$="/blogroll.js"]:upward(.plugin-memo)
+blog.livedoor.jp##.plugin-memo > .side script[src^="//blog.with2."]:upward(.plugin-memo)
 blog.livedoor.jp##.rss-outer-kakoi, .rss-outer-kakoi-under, .side-rss1
 blog.livedoor.jp##.rsslist
 blog.livedoor.jp##div#container > .blogroll_wrapper + div.main-container + .left-container + aside.right-container > .right-column-inner:only-child
 blog.livedoor.jp##div.box01 + div[style="padding:10px 8px 10px 0;"]
 blog.livedoor.jp##div[class^=toprss]
 blog.livedoor.jp,giantskyojin2chmatome.blog.jp##.popular
-blog.livedoor.jp,kitizawa.com,syurabahazard.com##.plugin-memo:has(script[src$="/blogroll.js"])
 burusoku-vip.com##.article-body-more > .t_b:has(a[target=_blank])
 burusoku-vip.com##.article-body-more > div[style^="background-color: white; padding: 5px; "]
 burusoku-vip.com,gekiyaku.com,kojikisokuhou.com,kosodatech.blog133.fc2.com,nya-su.doorblog.jp,repsoku.net##.headline
@@ -1409,8 +1411,10 @@ gfoodd.com##.post > .singleh4
 giantskyojin2chmatome.blog.jp##.rss-name:upward(aside.mb40)
 ginnga.blog.jp,rabitsokuhou.2chblog.jp,yamakamu.com###rss
 gooddays-wedding.com###widget-index-bottom, .widget-over-article
+greemas.doorblog.jp###main .column-inner-2 > p[align=center], .tag.popularArticlesWithImage
 gtoys.blog.fc2.com###outline > table
 gundam-futab.info###sidebar-widget > .widget_pc_text:last-child, .rss_label, .sousyoku, .widget-under-article
+gundamlog.com###top_rss
 gunpla-news24.info###sidebar-widget > .widget_pc_text, .ad
 h-ken.net##.mainColumn > div > .sidebarList, .mainColumn > div > p.midashiPink
 h723.blog.fc2.com##div[align=left], div[align=left] + div[style]
@@ -1453,6 +1457,7 @@ insyoku.livedoor.biz###container > div[style="padding-top:30px;"], .plugin-memo
 inutomo11.com###more > b, .article-body-inner > div[style^="background-color: white;"]
 iqoo.me,nukistream.com##.update_list
 iroirokeiba.blog.fc2.com###left-box > .side-body:last-child, #left-box > .side-title:nth-last-child(-n+2), #main-box > div[align=center]:first-child + br, .entry-body > font[size="4"], table, table + br
+isekaitraffic.livedoor.biz##.main-column-inner > div[style$="overflow-y:scroll;"]
 itaishinja.com###footer > .container, #twtrank
 itaishinja.com##.article_body > h3:has-text(記事)
 jin115.com###other_news_website
@@ -1483,21 +1488,22 @@ kichimama.com##.ifram, .pickup
 kijobibouroku.com,kijojikenbo.com##.chumoku
 kijonikki.net,kijyotsubu.net,romeodensetsu.com###rss2
 kijonotakuhaibin.com##.plugin-memo:has(#nyuuresu)
-kijorabu.com##.plugin-memo:has(#rss_side)
+kijorabu.com##.plugin-memo #rss_side:upward(.plugin-memo)
 kijoume.net##.footer-widgets, .second-content-rss
 kijoume.net##.sub[style^="position: fixed"]:style(position: static !important)
 kijoume.net,sukattojapan.com##.related-wrapper
 kijyokaigi.com,kizyonouwaki.com##.rssunder, .social-button + h3
 kijyomatome.com##.header-rss, .rss2
 kijyomatome.com,sutekinakijo.com##.ga-rss
-kijyomita.com##.plugin-memo:first-child
+kijyomita.com###left-side .plugin-memo:first-child
 kimootoko.net##hr[style]
 kimsoku.com###article-options > h3:first-of-type
 kininaru-geinou-m.blog.jp##.main-container > br:nth-of-type(-n+8)
 kininaru-geinou-m.blog.jp,mikomikonews.net,reiwamatome3.blog.jp##.sub-title-box
 kinsoku.blog.jp##.article-header > br
 kinsoku.blog.jp##.plugin-memo:has(script[src^="//blog.with2"])
-kitizawa.com##.article-body-more > div[style^="border:1px solid"]
+kitizawa.com###headerRSS, .article-body-more > div[style^="border:1px solid"]
+kitizawa.com,labaq.com,mojomojo-licarca.com,onihimechan.com,pokemon-goh.doorblog.jp,syurabahazard.com##.plugin-memo script[src$="/blogroll.js"]:upward(.plugin-memo)
 kizunayutaka2013.seesaa.net##.module--free
 kojikisokuhou.com##.main > .post
 kokopyon.net##.osusume:first-of-type
@@ -1510,7 +1516,6 @@ kurusoku.com###main-inner > div[style^="background:#E065A0; padding:5px; "]:firs
 kyuukaiou.ldblog.jp###dou, #urss, #urssbox, .plugin-memo, .rssbox, div[align=center] + hr[style]
 kyuusai2nd.net##table[style="padding-top: 15px"][width="920"] table[width="900"]:first-child
 l-o-l.net##.live-rss, .live-rss2
-labaq.com##.plugin-memo script[src$="/blogroll.js"]:upward(.plugin-memo)
 lakatan.net###text-5
 lucky318b.m50.coreserver.jp##.blogroll-column, .blogroll-nantoka
 magazinematome.livedoor.blog,nintentou.com,pachinkolist.com##.listWithImage
