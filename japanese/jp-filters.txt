@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210129
+! Version: 20210130
 
 ! YT
 youtube-nocookie.com,youtube.com##+js(json-prune, [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
@@ -999,6 +999,7 @@ vkcdnservice.appspot.com^$3p
 ||aukana.jp^$3p
 ||autolinkmaker.itunes.apple.com^$3p
 ||auweelta.net^
+||awebotchunto.work^
 ||awltovhc.com^$3p
 ||bannerbridge.net^$3p
 ||bannerfarm.aolp.jp^
@@ -1081,6 +1082,7 @@ vkcdnservice.appspot.com^$3p
 ||ebis.ne.jp^$3p
 ||ec-images.com^$3p
 ||eco-tag.jp^
+||eggsosgum.site^
 ||eisys-bcs.jp^
 ||ekansovi.com^$3p
 ||emxdnfvdnwzx.com^
@@ -1712,6 +1714,7 @@ vkcdnservice.appspot.com^$3p
 ||hq3x.com^
 ||hrahdmon.com^
 ||huffson-delivery.com^$3p
+||hugregregy.pro^
 ||huiyutz.cn^
 ||hyperoi.com^$3p
 ||hzkachqd.com^
@@ -3372,6 +3375,7 @@ vkcdnservice.appspot.com^$3p
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|disqus.com|disquscdn.com|fastly.net|fastlylb.net|googleapis.com|hwcdn.net|jquery.com|jwpcdn.com|wp.com,domain=animeshd.org
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|fastlylb.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|jsdelivr.net|jwplatform.com|jwpcdn.com|recaptcha.net,domain=zpaste.net|zplayer.live
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|fastly.net|google.com|gstatic.com|hwcdn.net|jquery.com|jsdelivr.net|section.io|streamroot.io|zencdn.net,domain=jetload.net
+*$script,3p,denyallow=cloudflare.com|cloudflare.net|fontawesome.com|jsdelivr.net,domain=mp4upload.com
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|google.com|gstatic.com|hwcdn.net|jquery.com|recaptcha.net,domain=shrinke.me
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|google.com|gstatic.com|jsdelivr.net|hcaptcha.com|recaptcha.net,domain=shorttey.*
 *$script,3p,denyallow=cloudflare.com|cloudflare.net|google.com|gstatic.com|jsdelivr.net|recaptcha.net|tawk.to,domain=payskip.org
@@ -3383,7 +3387,6 @@ vkcdnservice.appspot.com^$3p
 *$script,3p,denyallow=cloudflare.com|disqus.com|disquscdn.com|fastlylb.net|google.com|googleapis.com|gstatic.com,domain=veranime.*
 *$script,3p,denyallow=cloudflare.com|disqus.com|fastlylb.net|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|unpkg.com,domain=megavideo.*
 *$script,3p,denyallow=cloudflare.com|doecdn.me,domain=javdoe.tv|javfree.*|javtc.tv|javthe.com
-*$script,3p,denyallow=cloudflare.com|fontawesome.com|jsdelivr.net,domain=mp4upload.com
 *$script,3p,denyallow=cloudflare.com|github.io|google.com|googleapis.com|gstatic.com|hwcdn.net|jquery.com|recaptcha.net|tipsforce.com,domain=gplinks.co
 *$script,3p,denyallow=cloudflare.com|google.com|gstatic.com,domain=fc-lc.com|fc.lc|fcc.lc|fcdot.lc
 *$script,3p,denyallow=cloudflare.com|google.com|gstatic.com|hcaptcha.com|recaptcha.net,domain=femax20.com
@@ -7049,6 +7052,7 @@ cgi-bin/counter
 ||lg.tr.pandora.tv^
 ||lift.acquia.com^
 ||lightboxcdn.com^$3p
+||link.tenki-yoho.com^
 ||linksynergy.com^$3p
 ||litix.io^
 ||livelog.biz^
@@ -8183,7 +8187,6 @@ _webtrends/$domain=zurichlife-jp.force.com
 ||liginc.co.jp/collect?
 ||line.me/tag.gif$image
 ||line-scdn.net^*/line_tag/
-||link.tenki-yoho.com^
 ||linkedin.com/countserv/count/$3p
 ||linkedin.com/platform-telemetry/
 ||linkedin.com^*/collect
@@ -9792,8 +9795,11 @@ f14wiki.info###content > [href^="https://amzn."], #content > [href^="https://www
 ff14wiki.info###sidead
 ff5ch.syoboi.jp##.result > center
 ffbe-exdeath.blog.jp,norisoku.com,pokemon-goh.doorblog.jp,punisoku.blogo.jp,vehicle123.com##.left-column-inner > .plugin-memo:last-of-type
-ffnews2016matome.blog.fc2.com##.plugin1_outline:has(script):not(:has(#twitter-widget-1))
+ffnews2016matome.blog.fc2.com##.plugin-counter:upward(.plugin1_outline)
+ffnews2016matome.blog.fc2.com##.plugin1_outline div[id^=i2i]:upward(.plugin1_outline)
+ffnews2016matome.blog.fc2.com##.plugin1_outline script[src*="//js."]:upward(.plugin1_outline)
 ffnews2016matome.blog.fc2.com##.plugin2_outline:nth-last-child(-n+2)
+ffnews2016matome.blog.fc2.com,kaigainohannoublog.blog55.fc2.com,sexynude007.com##.plugin1_outline .ninja-recommend-block:upward(.plugin1_outline)
 fgo-matome.doorblog.jp##p[style="font-size: 70%;"]
 figsoku.net##.abox
 figsoku.net##.pluginWrap:has(img)
@@ -9978,7 +9984,7 @@ gogoanime.*##.headnav_center
 gogoanimehub.tv,gogoanimes.tv##.banner_center
 gogotorimaru.blog19.fc2.com###center > hr, .ently_outline + hr + div[style$="border-width:1px 1px 1px 7px;border-style:solid;"], .page_navi + hr + div[style$="border-width:1px 1px 1px 7px;border-style:solid;"], table[width="200"]
 gogotorimaru.blog19.fc2.com##.plugin2_outline:nth-child(n+4):has(a[name=amazletlink])
-gogotorimaru.blog19.fc2.com,mainichieroga.blog90.fc2.com,stumbleon.blog.fc2.com##.plugin1_outline:first-child
+gogotorimaru.blog19.fc2.com,kaigainohannoublog.blog55.fc2.com,kandatasokuho.blog.fc2.com,mainichieroga.blog90.fc2.com,stumbleon.blog.fc2.com,tohken2ch.blog.fc2.com##.plugin1_outline:first-child
 golfdigest.co.jp###adsYahoo, .specialCornerBox
 golfdigest.co.jp##.adborder
 golfdigest.co.jp,livefans.jp##.adBanner
@@ -10249,8 +10255,8 @@ jin115.com###side_left, #sponsered, #side_right > .plugin-memo:first-child, #sid
 jin115.com###side_right > .plugin-memo > .side > script[src^="http://rranking"]:upward(.plugin-memo)
 jisakupc-technical.info##p[style="text-align: center;"]
 jisha.site###sidebar-fixed
-jishin-yogen.com##.ad_entrymiddle_body2, .ad_header336_body, .ads_970x90, [class^=kiji_entry_ads]
-jishin-yogen.com##.plugin1_outline:has(script):not(:has(.ranklet))
+jishin-yogen.com##.ad_entrymiddle_body1, .ad_entrymiddle_body2, .ad_header336_body, .ads_970x90, [class^=kiji_entry_ads]
+jishin-yogen.com##.plugin1_outline div[id] > script:upward(.plugin1_outline)
 jishin-yogen.com,mhsoken.blog.jp##.side_by_side
 jitenon.jp##.ads_wraptop2
 jiwachan.net##.sidetitle:has-text(/アクセス|スポンサーリンク/)
@@ -10328,17 +10334,17 @@ kahoku.co.jp###headbnr
 kai-you.net##.l-article-side-banner, .l-side-common-banner-big, .m-ad-pc-article-title, [class^=l-ad-]
 kaigai-antenna.com###posts > div[id]:has(iframe)
 kaigai-nippon.com##.c_box
-kaikai.ch###sideThread > .inner:has(script)
+kaikai.ch###side > .inner[style^="width: 441px"], #sideThread > .inner:first-child
 kaigainohannou.info###the-content > center
-kaigainohannoublog.blog55.fc2.com,kankokunohannou.org,naikakuoppai.blog116.fc2.com,sexynude007.com,tohken2ch.blog.fc2.com##.plugin1_outline:has(script)
-kaigainohannoublog.blog55.fc2.com##.plugin2_outline:has(script):not(:has(input))
+kaigainohannoublog.blog55.fc2.com##.plugin2_outline .adsbygoogle:upward(.plugin2_outline)
+kaigainohannoublog.blog55.fc2.com##.plugin2_outline .ninja-recommend-block:upward(.plugin2_outline)
 kaigainoomaera.com###plugin_first > .plugin_right:first-child
 kaigainoomaera.com###plugin_second > .plugin_right:has(script)
 kaigoways.com##.ads_body_top, .ads_cnav_top, .ads_cont_bottom
 kaiten-heiten.com##.side_ad_google
 kaiten-heiten.com,lmaga.jp##.header_ad
-kakaku.com###listingPr, #yAuctionBox, .c-ad_frameWrap, .prTitle
-kakaku.com##.alignC > .mTop10 > div:has-text(-PR-)
+kakaku.com###listingPr, #yAuctionBox, .c-ad_frameWrap, .prTitle, .sqTwoWrapper
+kakaku.com##.alignC > .mTop10 > div[style]:has-text(-PR-)
 kakakumag.com##.side-ad-top, [class^=main-ad-mrectangle]
 kakijun.jp###header1 > div[style^="float:right;"], #migi > .divcenter, #rcounter, .gadcenter
 kakomonn.com##[class^=ctr_ad_]
@@ -10353,11 +10359,12 @@ kanasoku.info###headrank2:first-child, .adset, .adset-Cover, .fixing-base
 kanasoku.info##.cent_top > div:has(script)
 kanasoku.s130.coreserver.jp###side
 kandatasokuho.blog.fc2.com###center > div > font:has-text(ｽﾎﾟﾝｻｰﾄﾞ)
-kandatasokuho.blog.fc2.com###center > div[align=left] > div:has(font[size="1"])
-kandatasokuho.blog.fc2.com##.ently_text > div[align=left]:has(font[size="1"])
-kandatasokuho.blog.fc2.com##.commentarea > div > div > font:first-of-type
-kandatasokuho.blog.fc2.com,stumbleon.blog.fc2.com,yaruonichijou.blog.fc2.com##.plugin1_outline:has(img)
-kandatasokuho.blog.fc2.com,kopipe2011.blog116.fc2.com,ginmaku3.blog25.fc2.com,marumie55.com,sanzierogazou.com,sennenaigis.blog.fc2.com,toanewsplus.blog.fc2.com##.plugin1_outline:has(script)
+kandatasokuho.blog.fc2.com###center > div[align=left] > div[align=center] font[size="1"]:upward(div[align=center])
+kandatasokuho.blog.fc2.com##.ently_text > div[align=left] > font[size="1"]:upward(1)
+kandatasokuho.blog.fc2.com##.commentarea > div > div > font:first-of-type, .plugin1_outline:nth-of-type(n+5)
+kopipe2011.blog116.fc2.com,ginmaku3.blog25.fc2.com,marumie55.com,sanzierogazou.com,sennenaigis.blog.fc2.com,toanewsplus.blog.fc2.com##.plugin1_outline:has(script)
+kankokunohannou.org##.plugin1_outline .AMbanner:upward(.plugin1_outline)
+kankokunohannou.org##.plugin1_outline:nth-child(2)
 kanmsu.com##.ad21, .ad3, .body-article-list-ad
 kanmsu.com##.header-ad
 kannrininn.jugem.jp###navi > div:has(.amazon)
@@ -10453,7 +10460,8 @@ kojikisokuhou.com,mhw.2chblog.jp,talblo.com##[href^="https://px."]
 kooky.jp##.disclaimer, .sidebar_list
 koonz.blog.fc2.com##.plugin-counter:upward(1)
 koonz.blog.fc2.com##.cBody + .cTitle:has-text(カウンタ)
-kopipe2011.blog116.fc2.com##.plugin2_outline:has(script[src])
+kopipe2011.blog116.fc2.com##.plugin1_outline:nth-last-child(-n+2)
+kopipe2011.blog116.fc2.com##.plugin2_outline script[src*="ads.js"]:upward(.plugin2_outline)
 koreoshi-manga.com##.ad-yokonarabi, .article-body > div > p[style="text-align: center;"]
 koshien117.blog.fc2.com##.plugin-content:has(script):not(:has(font))
 koshien117.blog.fc2.com##.plugin-title:has-text(/スポンサーリンク|楽天市場/)
@@ -11548,8 +11556,8 @@ toanewsplus.blog.fc2.com###center > p > a[onclick^="window.open"]
 toanewsplus.blog.fc2.com##.plugin2_outline:has(script[src^="http://rranking"])
 toanewsplus.blog.fc2.com##.plugin2_outline:has(script[src^="http://spdeliver"])
 tocana.jp###adEntryBottom, #bnr_goSrid
-togetter.com##.ad_custom, .ad_custom_fluid, .ad_list_top, .ad_topics_custom
-togetter.com##a[href^="https://www.amazon.co.jp/exec/"][target=_blank]:has(> img[src$="_SL400_.jpg"]):upward(div.list_box)
+togetter.com###ad_overlay, .ad_custom, .ad_custom_fluid, .ad_list_top, .ad_topics_custom
+tohken2ch.blog.fc2.com##.plugin1_outline .kar_wraper:upward(.plugin1_outline)
 tokkaban.com##.container-ads
 toku-mori.com###bannerBIG
 tokyo-calendar.jp###banner-area
@@ -11944,11 +11952,12 @@ yamareco.com###extarea[style$="height:280px;"], #sidebar_right > .pt20[style="cl
 yamareco.com###sidebar_right > .box img[src^="https://images-na."]:upward(.box)
 yaraon-blog.com###single_content_sidebar, .my_widget_text:last-child
 yaruonichijou.blog.fc2.com##.ently_text > .relate_dl + table:has(.adsbygoogle)
-yaruonichijou.blog.fc2.com##.plugin1_outline:has(.adsbygoogle)
-yaruonichijou.blog.fc2.com##.plugin1_outline:has(script[src^="//counter1."])
-yaruonichijou.blog.fc2.com##.plugin3_outline:has(script[src^="//sr."])
+yaruonichijou.blog.fc2.com##.plugin1_outline .adsbygoogle:upward(.plugin1_outline)
+yaruonichijou.blog.fc2.com##.plugin1_outline a[href^="//ck."]:first-child:upward(.plugin1_outline)
+yaruonichijou.blog.fc2.com##.plugin1_outline script[src^="//counter1."]:first-of-type:upward(.plugin1_outline)
+yaruonichijou.blog.fc2.com##.plugin3_outline:last-of-type
 yasu-suma.net###item_ranking-3
-yasu.bellnet.info##.linktext:has(script)
+yasu.bellnet.info##.linktext .adsbygoogle:upward(.linktext)
 yasu.bellnet.info##.linktitle:has-text(Sponsored)
 yesasia.com##.advHr
 yesasia.com##.advText
@@ -12347,7 +12356,7 @@ contents-news.net##.AdContainer
 corriente.top##.sponsored-links
 cosplay-toriko.com###main_ad_top, #post_ad_top, .ad_bottom
 cosplayerogu.blog.fc2.com##.plugin1_outline:has(script):not(:has(form))
-cosplayerogu.blog.fc2.com,erogletv.blog.fc2.com,hunter31.blog.fc2.com,jishin-yogen.com,marumie55.com,naikakuoppai.blog116.fc2.com,rastaneko-blog.com,secross.jp,siroutoerovideo.blog.fc2.com,tohken2ch.blog.fc2.com,worldrankingup.blog41.fc2.com##.plugin2_outline:has(script)
+cosplayerogu.blog.fc2.com,erogletv.blog.fc2.com,hunter31.blog.fc2.com,jishin-yogen.com,marumie55.com,naikakuoppai.blog116.fc2.com,rastaneko-blog.com,secross.jp,tohken2ch.blog.fc2.com,worldrankingup.blog41.fc2.com##.plugin2_outline:has(script)
 cpz.to###side_newlink, #sns_topicon, .grid_7 > h2.midashi, .index-dti2
 cpz.to##.grid_4:has(#mgs_Widget)
 cpz.to##.grid_7 > div:has(.clean-blue)
@@ -12435,7 +12444,7 @@ erogazoufactory.com###salle_de_fortune
 erogazoufactory.com##.widget_text:has(script):not(#text-8)
 erogegazoo.blog.fc2.com###sub2 > .sub-content
 erogleerogle.dtiblog.com###calender
-erogletv.blog.fc2.com,eromangashoukaijo.blog.fc2.com,gogotorimaru.blog19.fc2.com,hitoikigame.com,kokuhakutaiken.com,matomecup.com,muryomosuko.blog.fc2.com,peroro99.blog.fc2.com,sexynude007.com,toanewsplus.blog.fc2.com,worldrankingup.blog41.fc2.com##.plugin1_outline:last-child
+erogletv.blog.fc2.com,eromangashoukaijo.blog.fc2.com,gogotorimaru.blog19.fc2.com,hitoikigame.com,kaigainohannoublog.blog55.fc2.com,kokuhakutaiken.com,matomecup.com,muryomosuko.blog.fc2.com,peroro99.blog.fc2.com,sexynude007.com,stumbleon.blog.fc2.com,toanewsplus.blog.fc2.com,worldrankingup.blog41.fc2.com##.plugin1_outline:last-child
 eroido.jp###content > aside > div.related:first-child
 eroido.jp##.nativead
 eroido.jp,matomedane.jp##.adv_top, #footeradv
@@ -12836,7 +12845,8 @@ mushuseigirl.dtiblog.com##.entry:has(.plugin2conts)
 musyuuseiclub.com##.aff-list_footer
 naihai.net###mybox > ul a[href$="ziyu.net/"]:upward(ul)
 naihai.net###mybox > ul script[src*="//adm"]:upward(ul)
-naikakuoppai.blog116.fc2.com##.plugin5_outline:has(a[href^="https://track."])
+naikakuoppai.blog116.fc2.com##.plugin1_outline script[src*="//adm."]:upward(.plugin1_outline)
+naikakuoppai.blog116.fc2.com##.plugin5_outline a[href^="https://track."]:upward(.plugin5_outline)
 naitopi.com##.banner_02
 nakedneighbour.com##.banner:upward(.block)
 namethatporn.com###fab_blacko
@@ -13029,7 +13039,6 @@ shiko-shiko.com##.widget_custom_html:has(script[src^="//bpm."])
 shikotch.net##[class^=pc-ads-]
 silky-love.net##table[style="FONT-SIZE: 12px"][height="220"], table[style=" FONT-SIZE: 15px"][height="400"]
 silky-love.net##table[width="750"] + center:has(script[src^="http://js."])
-siroutoerovideo.blog.fc2.com##.plugin1_outline:nth-child(-n+2)
 skypemeet.net##.layout_cont > div[align=center] + hr, .layout_cont > div[style][align=center] + div.small[align=center]
 sleazyneasy.com###pre-adv
 sleazyneasy.com##.adv-aside
@@ -13384,6 +13393,7 @@ izia-grill.ru##footer:style(height:auto !important)
 javcl.com###wrapfabtest:style(height:1px !important;width:1px !important)
 javfull.net###wrapfabtest:style(height:1px !important;width:1px !important)
 jzzo.com###embed:style(position: static!important; margin-top: 0!important;)
+kaikai.ch###side[style^="height"]:style(height: auto !important)
 kakijun.jp###hidari:style(top:auto !important)
 kandatasokuho.blog.fc2.com###left:style(position:static !important)
 kininatta2chmatome.doorblog.jp##.right-container:style(position:static !important)
@@ -14053,6 +14063,7 @@ shrinkbtc.cc##+js(aeld, DOMContentLoaded, &nbsp)
 shrinkhere.xyz##+js(acis, String.fromCharCode, atob)
 shrinkme.in##+js(ra, href, a[href][target="_blank"])
 shrinkurl.org##+js(aeld, click, trigger)
+simply-hentai.com##+js(acis, document.createElement, __htas)
 soulreaperzone.com##+js(acis, jQuery, ai_check)
 sourceforge.net##+js(set, SF.adblock, true)
 speedtest.net##+js(set, apstag.init, noopFunc)
