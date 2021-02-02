@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210201
+! Version: 20210203
 
 /^(?:http|ws)s?://\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:/]/$3p
 /^\w+://10\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$3p
@@ -129,22 +129,15 @@ _omniture.$script,domain=mathworks.com
 ||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=*&COOKIE_PATH=*&COOKIE_DOMAIN=*&VIEW_URL=$doc
 
 ?_rt_ck=$doc,removeparam=_rt_ck
+||buy-ap.piano.io/checkout/template/show?*&trackingId=*&pageViewId=*&visitId=*&customCookies=$frame,removeparam=/trackingId|pageViewId|visitId|customCookies/,domain=special.sankei.com
 ||cinematoday.jp/page/*?g_clk=$doc,removeparam=g_clk
-||ck.storematch.jp/bc?d=*&B=*&sc_i=*&rd=*&sig=$doc,removeparam=d
-||ck.storematch.jp/bc?d=*&B=*&sc_i=*&rd=*&sig=$doc,removeparam=B
-||ck.storematch.jp/bc?d=*&B=*&sc_i=*&rd=*&sig=$doc,removeparam=sc_i
-||ck.storematch.jp/bc?d=*&B=*&sc_i=*&rd=*&sig=$doc,removeparam=sig
-||discas.net^*/entry_site.pl?SITE=*&AP=*&sc_cid=*&afult=$doc,removeparam=SITE
-||discas.net^*/entry_site.pl?SITE=*&AP=*&sc_cid=*&afult=$doc,removeparam=afult
-||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=unique_op
-||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=utm_medium
-||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=utm_source
+||ck.storematch.jp/bc?d=*&B=*&sc_i=*&rd=*&sig=$doc,removeparam=/d|B|sc_i|sig/
+||discas.net^*/entry_site.pl?SITE=*&AP=*&sc_cid=*&afult=$doc,removeparam=/SITE|afult/
+||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=/unique_op|utm_medium|utm_source/
 ||hbol.jp^*?cx_clicks_art_mdl=$doc,removeparam=cx_clicks_art_mdl
 ||hbol.jp^*?cx_clicks_series_mdl=$doc,removeparam=cx_clicks_series_mdl
-||michiuru.jp/shopping/lp.php?p=*&adcd=*&_zaf_act=$doc,removeparam=adcd
-||michiuru.jp/shopping/lp.php?p=*&adcd=*&_zaf_act=$doc,removeparam=/^_zaf_/
+||michiuru.jp/shopping/lp.php?p=*&adcd=*&_zaf_act=$doc,removeparam=/adcd|_zaf_[a-z]+/
 ||r18.com/videos/vod/*/id=*?nats=$doc,removeparam=nats
 ||response.jp^*html?from=$doc,removeparam=from
-||site-search.kddi.com/click?url=*&query=*&site=$doc,removeparam=query
-||site-search.kddi.com/click?url=*&query=*&site=$doc,removeparam=site
+||site-search.kddi.com/click?url=*&query=*&site=$doc,removeparam=/query|site/
 www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
