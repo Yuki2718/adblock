@@ -4,7 +4,7 @@
 
 ## お知らせ（2021年01月28日）
 
-Manifest V2終了後の予定について：以前と少し状況が変わったため、あらためてuBlock OriginがFirefox以外で使えなくなった場合の対応について現時点での予定を書きます。Yuki's uBlock Japanese filtersシリーズはこれまで通り提供するつもりですが、ChromeやEdgeをご利用の方はAdGuardに切り替えていただくのがよいかと思います。AdGuard for Windowsは影響を受けませんし、AdGuardはおそらくV3対応の拡張機能も提供すると思います。その場合、Yuki's uBlock Japanese filtersは使えませんが、管理人がAdGuardのフィルタを直接メンテナンスできるようになったため、今後少しづつAdGuardの内製フィルタを（PCサイト中心に）強化していき、多くの方に満足いただけるようにしたいと思っています。
+Manifest V2終了後の予定について：以前と少し状況が変わったため、あらためてuBlock OriginがFirefox以外で使えなくなった場合の対応について現時点での予定を書きます。Yuki's uBlock Japanese filtersシリーズはこれまで通り提供するつもりですが、ChromeやEdgeをご利用の方はAdGuardに切り替えていただくのがよいかと思います。AdGuard for Windowsは影響を受けませんし、AdGuardはおそらくV3対応の拡張機能も提供するでしょう。その場合、Yuki's uBlock Japanese filtersは使えませんが、管理人がAdGuardのフィルタを直接メンテナンスできるようになったため、今後少しづつAdGuardの内製フィルタを（PCサイト中心に）強化していき、多くの方に満足いただけるようにしたいと思っています。
 
 ### Yuki's uBlock Japanese filters （雪フィルタ）
 
