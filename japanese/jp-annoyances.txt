@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210205
+! Version: 20210206
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -2029,16 +2029,16 @@ tiktok.com##.feedback
 topics.or.jp##.recommend-article
 transit.yahoo.co.jp##.realestateSlink
 travel.rakuten.co.jp###rexSurveyRoot > div:only-child > div:only-child
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute;"] div > a[href$="/flow/topics_selector"][role=link]:upward(div[style^="position: absolute; width: 100%;"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute;"] div[aria-roledescription=carousel] div[aria-label^="トピック「"]:upward(div[style^="position: absolute; width: 100%;"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute;"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめトピック):upward(div[style^="position: absolute;"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute;"] div > a[href^="/i/connect_people?"][role=link]:upward(div[style^="position: absolute; width: 100%;"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute;"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute; width: 100%"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute;"] div[role=button][data-testid$=-follow]:upward(div[style^="position: absolute; width: 100%;"])
+twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div > a[href$="/flow/topics_selector"][role=link]:upward(div[style^="position: absolute"])
+twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div[aria-roledescription=carousel] div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
+twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめトピック):upward(div[style^="position: absolute"])
+twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div > a[href^="/i/connect_people?"][role=link]:upward(div[style^="position: absolute"])
+twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
+twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div[role=button][data-testid$=-follow]:upward(div[style^="position: absolute"])
 ! タイムラインにトピックも表示しましょう
-twitter.com##div[style^="position: absolute; width: 100%;"] section > div[aria-label="タイムライン: Carousel"] > div[class] > div[style="height: 150px;"] div[aria-label^="トピック「"]:upward(div[style^="position: absolute; width: 100%;"])
-twitter.com##section > div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute;"] div > a[href$="/flow/topics_selector"][role=link]:upward(div[style^="position: absolute; width: 100%;"])
-twitter.com##section > div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute;"] h2 + div[dir=auto][style^=-webkit-line-clamp] > span:has-text(これらのトピックについてのトップツイートが):upward(div[style^="position: absolute;"])
+twitter.com##div[style^="position: absolute; width: 100%"] section > div[aria-label="タイムライン: Carousel"] > div[class] > div[style="height: 150px;"] div[aria-label^="トピック「"]:upward(div[style^="position: absolute; width: 100%"])
+twitter.com##section > div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] div > a[href$="/flow/topics_selector"][role=link]:upward(div[style^="position: absolute"])
+twitter.com##section > div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] h2 + div[dir=auto][style^=-webkit-line-clamp] > span:has-text(これらのトピックについてのトップツイートが):upward(div[style^="position: absolute"])
 ! おすすめツイート
 !twitter.com##div[class^=css-] > aside[aria-label="おすすめユーザー"][role=complementary]:upward(1)
 www.nicovideo.jp##.FeedbackLink
@@ -2151,7 +2151,7 @@ ec.line.me##+js(nano-stb, goOutlink, 2800)
 game8.jp##+js(rc, async-hide, html)
 ironna.jp###side-theme-list
 janusnotes.com##+js(nano-sib, , 100, 0)
-joska.xyz,petsched.website##+js(set, count, 0)
+joska.xyz,nstnews.net,petsched.website##+js(set, count, 0)
 kiemlua.com,rodjulian.com##+js(nano-sib, , 2300, 0)
 kiemlua.com,rodjulian.com,uebnews.online##+js(nano-sib, , 2000, 0)
 live2.nicovideo.jp##[class^=___player-display-header___]
