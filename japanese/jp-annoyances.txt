@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210206
+! Version: 20210207
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -46,6 +46,7 @@ nytimes.com###__next > #main[aria-live=assertive] + div[class][aria-hidden]
 ||event.notifier.rakuten.co.jp^
 ||foxpush.net^$3p
 ||ismcdn.jp^*/webpush_dialog.
+||jeeng.com^$3p
 ||js.pusher.com^$3p
 ||moengage.com^$3p
 ||noticious.jp^$3p
@@ -596,7 +597,7 @@ tripadvisor.jp##div[class^=_][style^="position: fixed; inset: auto"] span:has-te
 tumblr.com##.road-block, .tmblr-iframe--follow-teaser
 tv.netkeiba.com##.DetailIntroArea01, .TvIntroOverlay
 tver.jp##+js(set, enquete.checkDispEQ, falseFunc)
-twitter.com###layers div[dir=auto] > span:has-text(Twitterなら、「いま」):upward(5):matches-css(background-color: rgb(29, 161, 242))
+twitter.com###layers div[dir=auto] > span:has-text(Twitterなら、「いま」):upward(5)
 udemy.benesse.co.jp##.cmn--contentCoursePopup
 uwl.weblio.jp###free-house-ad-on-load-modal-container, #free-house-ad-on-load-modal-overlay
 video.fc2.com##.login-footer
@@ -604,7 +605,7 @@ video.fc2.com##a[href^="http://fc2information"][data-link][style]:upward(1)
 video.tv-tokyo.co.jp###jsiModalOverLayerShare
 video.tv-tokyo.co.jp##.md-question.js-modal-window
 video.tv-tokyo.co.jp##*:style(opacity: 1 !important;)
-vimeo.com###main > div > div:has-text(アップロード、)
+vimeo.com###main > div[data-reactroot] > div[class^=_]:has-text(アップロード、)
 webprofessional.jp###js_footer
 wikipedia.org##.cn-fundraising
 wizcase.com###bio_ep, #bio_ep_bg
@@ -2146,6 +2147,7 @@ cmnw.jp,dotti2.jp,goldencocco.jp,gotouchi.jp,mottonoutore.jp,pochitto2.jp##+js(s
 coinlyhub.com##+js(nano-sib, seconds)
 coolrom.com.au##+js(set, time, 0)
 dailyuploads.net##+js(ra, checked, input#chkIsAdd)
+deportealdia.live,noticiasesports.live,techgeek.digital##+js(nano-sib, , 1200, 0)
 easylinkref.com,lnk.news,lnk.parts##+js(nano-sib, , , 0)
 ec.line.me##+js(nano-stb, goOutlink, 2800)
 game8.jp##+js(rc, async-hide, html)
@@ -2156,7 +2158,6 @@ kiemlua.com,rodjulian.com##+js(nano-sib, , 2300, 0)
 kiemlua.com,rodjulian.com,uebnews.online##+js(nano-sib, , 2000, 0)
 live2.nicovideo.jp##[class^=___player-display-header___]
 mixdrop.*##+js(nano-stb, DOWNLOAD, 1000)
-noticiasesports.live,techgeek.digital##+js(nano-sib, , 1200, 0)
 ohyeah1080.site##+js(nano-sib, timer, 1100)
 onlinegamesx.com###yuidea-snp:style(display:block !important)
 ponta.abstractpainting.work##+js(nano-stb, visibility, 4000)
