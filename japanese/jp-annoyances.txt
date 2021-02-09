@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210209
+! Version: 20210210
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -524,6 +524,7 @@ mobile.twitter.com##div[data-testid="sidebarColumn"] section[aria-label][role="r
 moca-news.net###guide
 monosnap.com##.modalSide
 movie-times.tv###newContactBanner
+mozilla.org##.mzp-c-sticky-promo
 music.youtube.com##ytmusic-popup-container > .ytmusic-popup-container[style*="position: fixed; inset: auto auto 0px 0px;"] > ytmusic-mealbar-promo-renderer[dialog=""]
 naitopi.com###age_check
 nature.com##.c-site-messages--nature-briefing-email-variant
@@ -999,6 +1000,7 @@ _rsslink.html|
 ||blogroll.click^
 ||blogroll.livedoor.net^
 !||bp2-antena.com^$domain=~gacha.blog.jp|~isekaitraffic.livedoor.biz|~kininaruero7.blog.jp|~newsweb.blog.jp|~timely.blog.jp
+||bp2-antena.com^$~css,domain=i.best-hit.tv|isekaitraffic.livedoor.biz
 ||chatbot.ds-ai.net^
 ||feed.mikle.com^$domain=blog.livedoor.jp|crx7601.com|fate-rpg.jp|gadgetlife2ch.blomaga.jp|gtoys.blog.fc2.com|h1g.jp|hdouga.com|ibarakinews.jp|obutu.com|totalwar.doorblog.jp|xn--bckadddb2a0d4dnc8dwhngdtb58aya0l4a2om843g5npczp7dwh5g.com|xn--cckea5a6cidcbh6ce7ghug17a2ge3aht3nwigef51658aw7kd.com
 ||feed.mobeek.net^
@@ -1057,7 +1059,6 @@ aqua2ch.net##.menu_outline3, .menu_title3
 ||blogmaterial.nicoblomaga.jp/material/11/js/top.js$domain=otakamu.com
 otakamu.com###blogroll-top
 ||blogmaterial.nicoblomaga.jp^*/feed.js$script
-||bp2-antena.com^$~css,domain=isekaitraffic.livedoor.biz
 ||burusoku-vip.com^$frame,1p
 ||cloud.akibablog.net^$frame,domain=blog.livedoor.jp
 ||comusume.net/den.html|
@@ -1380,6 +1381,7 @@ cherio199.blog120.fc2.com##.menu1BlockBase:has(img[src^="https://baseball-"])
 chikakb.ldblog.jp##.blogroll_main
 chitama.blog.jp##.article-body div[style^="font-size:12pt;"]
 chiwasoku.weblog.to##.blogroll-innner:upward(.article-inner)
+clashroyale.tokyo,ginnga.blog.jp,rabitsokuhou.2chblog.jp,yamakamu.com###rss
 crx7601.com###main > .column-inner > .column-inner-2 > div[align=center] + table, #main > .column-inner > .column-inner-2 > div[align=center]:first-child ~ br, .heading2
 dark-soku.blog.jp##.article-sub-popular ~ br, .main-container-k > br:first-child
 digital-thread.com##.article-headline, .plugin-memo:nth-last-child(n+3), .top-contents-headline, [class^=article-news]
@@ -1423,7 +1425,6 @@ geinoutopics-plus.blog.jp##.first-article > .t_b, .left-column-inner > .plugin-m
 gekiyaku.com###sub[style^="position: fixed"]:style(position: absolute !important)
 gfoodd.com##.post > .singleh4
 giantskyojin2chmatome.blog.jp##.rss-name:upward(aside.mb40)
-ginnga.blog.jp,rabitsokuhou.2chblog.jp,yamakamu.com###rss
 gooddays-wedding.com###widget-index-bottom, .widget-over-article
 greemas.doorblog.jp###main .column-inner-2 > p[align=center], .tag.popularArticlesWithImage
 gtoys.blog.fc2.com###outline > table
@@ -1457,6 +1458,7 @@ honwaka2ch.livedoor.biz###main > .column-inner > .column-inner-2 > div[align=cen
 hosyusokuhou.jp###bottom_rss, #footerinner
 hunter31.blog.fc2.com##.plugin1_outline script[src$="/blogroll.js"]:upward(.plugin1_outline)
 huyosoku.com##.res-quote, .size-full, [id$=feed]
+i.best-hit.tv##.panel-default .Bp2FeedList:upward(.panel-default)
 i2chmeijin.blog.fc2.com##.rssBox
 ideal2ch.livedoor.biz##.sita-rss
 idol-blog.com###maincol > .box[style="padding-left:25px;"], #nav2, .rssbox02
@@ -2070,6 +2072,9 @@ mobile.twitter.com##section > div[aria-label^=タイムライン][aria-label$=�
 ||baraero.com/wp-content/uploads/2020/06/stayhome.$image,1p
 baraero.com##.content > div[style="float: none; margin:0px;"] > .entrydiscription, .entrymidashi3
 ||foxnews.com^*/fox-news/nation-promo/nation_promo_$image,1p
+||iwate-np.co.jp/content/mekke/img/
+||iwate-np.co.jp/page/content/media/
+iwate-np.co.jp##div[class$=-CMSbox]
 ||wpb.shueisha.co.jp/data/banner/announcement/
 wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
 
@@ -2147,6 +2152,7 @@ bdupload.*,coolrom.com.au,hubfiles.ws,indishare.*,katfile.com,lnk2.cc,sourceforg
 cmnw.jp,dotti2.jp,goldencocco.jp,gotouchi.jp,mottonoutore.jp,pochitto2.jp##+js(set, sec, 0)
 coinlyhub.com##+js(nano-sib, seconds)
 coolrom.com.au##+js(set, time, 0)
+dailymail.co.uk##+js(aopr, Object.prototype.videoAdvertisingMode)
 dailyuploads.net##+js(ra, checked, input#chkIsAdd)
 deportealdia.live,noticiasesports.live,techgeek.digital##+js(nano-sib, , 1200, 0)
 easylinkref.com,lnk.news,lnk.parts##+js(nano-sib, , , 0)
