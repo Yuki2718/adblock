@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210210
+! Version: 20210211
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -17,6 +17,7 @@ nytimes.com###__next > #main[aria-live=assertive] + div[class][aria-hidden]
 
 ! ---------- Notification ----------
 -push-notification/
+-push-notifications/
 .biz/?pu=$script,3p
 /OneSignalSDK-
 /OneSignalSDKWorker.
@@ -2079,6 +2080,7 @@ iwate-np.co.jp##div[class$=-CMSbox]
 wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
 
 cyclist.sanspo.com###latest-news .sponsored:upward(li)
+google.*###cnt > #appbar + div[class][data-gid][jsaction][style="height: 190px;"]
 imymac.com##.pmmProduct.sideProductBox
 passmarket.yahoo.co.jp##.ptsGoToPromo
 sportiva.shueisha.co.jp##.block-widget-a-a__article__pr:upward(li.block-widget-a-a__article)
