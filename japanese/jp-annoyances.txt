@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210213
+! Version: 20210215
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -358,6 +358,7 @@ rebates.jp###ichiba-overlay
 rebates.jp###flashsale-overlay
 ||rebates.jp/img/campaign_entity/*_sticky.jpg|
 rebates.jp##.footer-fixed
+||receptionist.jp^*/top_banner.png
 ||recipe.rakuten.co.jp/scripts/webpc/leftFloat.
 recipe.rakuten.co.jp###rcpAutoScrollPopover
 ||recruit-ms.co.jp/assets/img/issue/banner/pc_banner_
@@ -613,6 +614,7 @@ webprofessional.jp###js_footer
 wikipedia.org##.cn-fundraising
 wizcase.com###bio_ep, #bio_ep_bg
 wizcase.com##body[style="overflow: hidden;"]:style(overflow:auto !important)
+wordpress.com###marketingbar
 www.dropbox.com###upsell-home-modal:has(.confirm-button:has-text(/Business をお試し|アプリをダウンロード/))
 www.dropbox.com##.dig-Menu-backdrop, .waffle-menu__backdrop
 www.dropbox.com##.persistent-footer:has(> .persistent-footer__footer-ctas > .persistent-footer__signup-button)
@@ -1585,6 +1587,7 @@ nanjchallenge.net##.Main__contents > .section-title
 nanjde.blog.jp###blogroll-box
 nanjhistory.2chblog.jp##.kiji-ue-rss
 nantuka.blog119.fc2.com###header > center, font > center
+negisoku.com###main .column-inner-2 > [href^="https://e-gaming."], #rss-box, #rss-box ~ br
 nekowan.com###more > span:has-text(新着記事)
 nekowan.com##.rsshead, [class^=rss_comsita_saigo]
 netatama.net##.article-outer-3 > center:nth-of-type(n+3)
@@ -2018,7 +2021,8 @@ zdnet.com##div[data-component="newsletterWidget"]
 ||zdnet.com/m3d0s1/recommend/
 
 biteki.com##.btn_back_to_list + div > .recommend_title
-crank-in.net##.right_in:has([id^=_popIn_trend])
+crank-in.net##.right_in [id^=_popIn_trend]:upward(.right_in)
+cs.myjcom.jp###enq_fixed
 encyclopedia.ushmm.org###open-feedback
 event.rakuten.co.jp###rexSurveyRoot > aside > form > .Nps
 excite.co.jp##.linkaff
@@ -2029,7 +2033,6 @@ jstage.jst.go.jp###right-feedback-btn
 latimes.com##.Enhancement > .PromoSmall
 machicon.jp###_popIn_recommend
 media.moneyforward.com##.mp-recommends
-millymilly.jp##.l-grid__item > .panel:has(#_popIn_recommend)
 moyugenn.youblog.jp##.main-column-inner > span:has-text(おすすめ)
 oshiete.goo.ne.jp##.specialistAnswerArea
 style.nikkei.com##.floating_related
@@ -2079,6 +2082,10 @@ baraero.com##.content > div[style="float: none; margin:0px;"] > .entrydiscriptio
 ||iwate-np.co.jp/content/mekke/img/
 ||iwate-np.co.jp/page/content/media/
 iwate-np.co.jp##div[class$=-CMSbox]
+||mtame.jp/dcms_media/image/banner_btobdl.
+||mtame.jp/dcms_media/image/banner_cb03.
+||mtame.jp/dcms_media/image/seminar_
+||mtame.jp/dcms_media/image/webtame_banner_
 ||wpb.shueisha.co.jp/data/banner/announcement/
 wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
 
@@ -2091,6 +2098,10 @@ sportiva.shueisha.co.jp##.block-widget-a-a__article__pr:upward(li.block-widget-a
 
 ! ---------- Intrusive widgets ----------
 ||sinclo.jp^$3p
+
+||cs.myjcom.jp/servlet/servlet.FileDownload$image
+cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
+||windows.net/botchan/js/efoapp.$domain=receptionist.jp
 
 ! ---------- Other ----------
 /amp-apester-
