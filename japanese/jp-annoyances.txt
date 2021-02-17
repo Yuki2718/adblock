@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210217
+! Version: 20210218
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -439,6 +439,9 @@ carsensor.net###tm_ftr
 cbn.co.jp,ryu-blo.jp,sanei-ad.jp,us-lighthouse.com##.afc_popup
 cbnews.jp###kp-survey-modal, #kp-survey-modal-overlay
 chobirich.com###footer_adtxt_wrap
+chocolatey.org###package-disclaimer
+chocolatey.org##.show.fade.modal-backdrop
+chocolatey.org##body:style(overflow:auto !important)
 cinemacafe.net###danglingList
 city.living.jp###area-select
 cnn.com##.sibling
@@ -466,7 +469,7 @@ facebook.com##._5hn6
 fantia.jp##.popup-bar
 faq.support.biglobe.ne.jp###suMiniEnqueteWrapper
 findpro.jp###js-stickyFooter
-finnishdesignshop.com,hoihoi.whotwi.com,honichi.com,kadoebi.co.jp,lec.medilink-study.com,rebates.jp,service-safari.com##.modal-backdrop
+finnishdesignshop.com,hoihoi.whotwi.com,honichi.com,kadoebi.co.jp,lec.medilink-study.com,rebates.jp,service-safari.com,techacademy.jp##.modal-backdrop
 free.uploader.xzy.pw##.is-bottom.notices
 froggy.smbcnikko.co.jp##.floatingBanner
 fuzoku.sod.co.jp##.top_webyoyaku
@@ -584,7 +587,8 @@ t.pia.jp##.Y15-follow-btn__block
 tabroid.jp##.pursue_header
 taotao-ex.com###modal
 tbs.co.jp##+js(set, NS_TVER_EQ.checkEndEQ, trueFunc)
-tech-camp.in##.BottomFixedBannerContainer
+techacademy.jp###trialEntry.fade.modal
+techacademy.jp##body.modal-open:style(overflow: auto !important)
 techinasia.com###email-signup-reminder, #paywall-reminder
 ted.com###activity-feed
 themoscowtimes.com##.contribute-bar
@@ -1842,6 +1846,7 @@ xn--r8jwklh769h2mc880dk1o431a.com##^.clear_balloon + div[data-index][style], .po
 ||music.oricon.co.jp/lib/iecheck.
 ||portal.auone.jp^*/legacy/js/pc_ie.
 ||static-assets.strikinglycdn.com/detectIE
+||suntory.co.jp/sun_common/contents_alias/special_msg/special_msg_for-ie.js
 ||tbs.co.jp/um/v7/js/gh_ie8.
 ||ticket.co.jp/jss/lib/browserCheck.
 ||uktsc.com/js/browser-info.
@@ -2152,7 +2157,10 @@ otapol.com###balloonText
 ||scdn.line-apps.com/stf/line-news/js/thirdparty/banner2.
 ||sm-miracle.com/js/warning.
 ||stjp.image-qoo10.jp^*/ic_bookmark.v_
+||suntory.co.jp/softdrink/craftboss/flash/assets/img/mouse.gif
+||suntory.co.jp/softdrink/craftboss/flash/assets/js/main.js
 ||suruga-ya.jp/drupal/themes/surugaya/images/02_blue.
+||techacademy.jp/assets/jason/jason_udekumi_kotei-
 ||tnc.co.jp/img/common/body_illust
 ||ura-akiba.jp/u.js
 ||uta-net.com/reverse/image/get_flash_
@@ -2203,6 +2211,7 @@ topics.smt.docomo.ne.jp##.m-tickerArea
 uploadking.net##+js(nano-stb, downloadbtn)
 websiteoutlook.com###wo_ext
 www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
+zeefiles.*##+js(nano-stb, tick)
 
 !#if !env_firefox
 ampmedia.jp##.yarpp-related
