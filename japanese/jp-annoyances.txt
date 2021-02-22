@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210221
+! Version: 20210223
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -127,6 +127,8 @@ kyodemo.net##.is-danger.message
 lmaga.jp##.header_headline
 macha795.com###notice-area-wrap
 mrs.living.jp###floating-max
+news.biglobe.ne.jp##.push-area-btn
+news.biglobe.ne.jp##.push-bx
 news.yahoo.co.jp##li.newsFeed_item > div:has-text(あなたの興味や関心)
 qiita.com##.ac-CampaignLink
 search.rakuten.co.jp##.field > .dui-tooltip[data-tooltip-id=announcement-shipping]
@@ -2186,14 +2188,17 @@ dailyuploads.net##+js(ra, checked, input#chkIsAdd)
 deportealdia.live,noticiasesports.live,techgeek.digital##+js(nano-sib, , 1200, 0)
 easylinkref.com,lnk.news,lnk.parts##+js(nano-sib, , , 0)
 ec.line.me##+js(nano-stb, goOutlink, 2800)
+festyy.com##+js(nano-sib, o--)
+forex-trnd.com,imageking.xyz,imgzer.net##+js(nano-sib, timer)
 ! グラブル左
 !game.granbluefantasy.jp##body.jssdk > div[class^=_2]:first-child > div[class^=_2]:first-child > div[data-reactid=".0"]:only-child > div[data-menubar-container][data-reactid=".0.0"]
 game8.jp##+js(rc, async-hide, html)
-imageking.xyz,imgzer.net##+js(nano-sib, timer)
 ironna.jp###side-theme-list
 janusnotes.com##+js(nano-sib, , 100, 0)
+jma.go.jp###jma_ad_config_button
 kiemlua.com,rodjulian.com,uebnews.online##+js(nano-sib, , *, 0)
 live2.nicovideo.jp##[class^=___player-display-header___]
+mega4up.com,zeefiles.*##+js(nano-stb, tick)
 mixdrop.*##+js(nano-stb, DOWNLOAD, 1000)
 ohyeah1080.site##+js(nano-sib, timer, 1100)
 onlinegamesx.com###yuidea-snp:style(display:block !important)
@@ -2213,7 +2218,6 @@ topics.smt.docomo.ne.jp##.m-tickerArea
 uploadking.net##+js(nano-stb, downloadbtn)
 websiteoutlook.com###wo_ext
 www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
-zeefiles.*##+js(nano-stb, tick)
 
 !#if !env_firefox
 ampmedia.jp##.yarpp-related
