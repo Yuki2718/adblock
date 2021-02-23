@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210223
+! Version: 20210224
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -869,6 +869,11 @@ gnavi.co.jp##.p-appli
 ||rnnnews.jp/img/v4_0/app300.
 ||s.yimg.jp/images/ks/official/special/apps/$domain=chiebukuro.yahoo.co.jp
 chiebukuro.yahoo.co.jp###bnr_main
+||s.yimg.jp/images/realestate/special/feature/*/bnr/98_80.png$domain=realestate.yahoo.co.jp
+realestate.yahoo.co.jp###_shp_bnr.FixedBox__fixedInfoBox
+||s.yimg.jp/images/realestate/special/feature/*/bnr_*_690_520.png$domain=realestate.yahoo.co.jp
+||s.yimg.jp/images/realestate/special/feature/*/bnr_*_950_80.png$domain=realestate.yahoo.co.jp
+realestate.yahoo.co.jp###_modalContractView
 ||s.yimg.jp/images/realestate/tmpl2014/img/app/$domain=realestate.yahoo.co.jp
 ||s.yimg.jp/images/shp_front/pc/top/images/top/bg_footerSmartPhones.$domain=shopping.yahoo.co.jp
 shopping.yahoo.co.jp##.elAppB
@@ -1309,6 +1314,8 @@ aramame.net##.s-wrapper-single:has(script)
 ashi-fechi.com###main > .widget:has(.immoral_parts)
 asiamachi.blog.fc2.com##.blog > div[style^="margin:0px;"]
 asiareaction.com###side > .title_wrapper + div[align=center], #side > br + .title_wrapper, #side > div:first-child + br
+aya0205.smart-douga.mobi##.plg_body script[src^="https://www.elog-"]:upward(.plg_body)
+aya0205.smart-douga.mobi##.side_left > .title_wrapper:nth-child(3)
 au2chblog.blog.fc2.com##article:has(> .top_link_box)
 au2chblog.blog.fc2.com##article:has(> .under_link_box)
 au2chblog.blog.fc2.com##article:has(> [class^=rss_body_])
@@ -2198,7 +2205,6 @@ janusnotes.com##+js(nano-sib, , 100, 0)
 jma.go.jp###jma_ad_config_button
 kiemlua.com,rodjulian.com,uebnews.online##+js(nano-sib, , *, 0)
 live2.nicovideo.jp##[class^=___player-display-header___]
-mega4up.com,zeefiles.*##+js(nano-stb, tick)
 mixdrop.*##+js(nano-stb, DOWNLOAD, 1000)
 ohyeah1080.site##+js(nano-sib, timer, 1100)
 onlinegamesx.com###yuidea-snp:style(display:block !important)
@@ -2218,6 +2224,7 @@ topics.smt.docomo.ne.jp##.m-tickerArea
 uploadking.net##+js(nano-stb, downloadbtn)
 websiteoutlook.com###wo_ext
 www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])
+zeefiles.*##+js(nano-stb, tick)
 
 !#if !env_firefox
 ampmedia.jp##.yarpp-related
