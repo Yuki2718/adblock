@@ -1,3 +1,6 @@
+[![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
+[![syntax](https://img.shields.io/badge/syntax-uBlock%20Origin-%23c61300.svg)](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
+
 # adblock
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
