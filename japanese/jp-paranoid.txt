@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210303
+! Version: 20210304
 
 /^(?:http|ws)s?://\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:/]/$3p
 /^\w+://10\.(?:(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))\.){2}(?:[0-9]|[1-9][0-9]|1(?:[0-9][0-9])|2(?:[0-4][0-9]|5[0-5]))[:/]/$3p
@@ -47,6 +47,7 @@ smart-flash.jp##^.adsBlock
 ||smart-c.jp^
 
 news.mynavi.jp##.headerNav_listNode-hisamitsu, .headerNav_sponsored
+recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
 
 @@||epub-tw.com/reader/ad/banner_$image,1p,badfilter
 ! Block ads on some videos while break other ones.
@@ -109,6 +110,7 @@ _omniture.$script,domain=mathworks.com
 @@||ttutu.biz/log_event$1p,xhr
 
 ! ---------- Tracking links ----------
+||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
 ||affiliate.suruga-ya.jp^$doc
 ||amazon.co.jp/dp/*?tag=*&linkCode=$doc
 ||amazon.co.jp/gp/goldbox/ref=*&linkCode=*&tag=*&linkId=$doc

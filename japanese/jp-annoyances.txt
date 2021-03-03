@@ -2,13 +2,14 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210303
+! Version: 20210304
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
 !#include sabre-filters2.txt
 
 ! Temporal
+||s.yimg.jp/images/shp_edit/other/fc/mhd/s_sb_nw.png$domain=yahoo.co.jp
 ||store.world.co.jp/res/p/common/img/top/bnr/30w/pop200721_sale.
 store.world.co.jp##.mod_message
 ||youtube.com/embed/3hhC4n3Dr6I|$domain=tamashii.jp
@@ -2103,6 +2104,7 @@ baraero.com##.content > div[style="float: none; margin:0px;"] > .entrydiscriptio
 ||iwate-np.co.jp/content/mekke/img/
 ||iwate-np.co.jp/page/content/media/
 iwate-np.co.jp##div[class$=-CMSbox]
+||mbok.jp/image/campaign/*/banner/*_468x80.
 ||mtame.jp/dcms_media/image/banner_btobdl.
 ||mtame.jp/dcms_media/image/banner_cb03.
 ||mtame.jp/dcms_media/image/seminar_
@@ -2110,6 +2112,7 @@ iwate-np.co.jp##div[class$=-CMSbox]
 ||wpb.shueisha.co.jp/data/banner/announcement/
 wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
 
+archive.is##div[style^="display:table;background-color:white;border:3px black dashed"]
 cyclist.sanspo.com###latest-news .sponsored:upward(li)
 google.*###cnt > #appbar + div[class][data-gid][jsaction][style="height: 190px;"]
 imymac.com##.pmmProduct.sideProductBox
@@ -2117,6 +2120,13 @@ mdpr.jp##article.list-text .heading-a__pr:upward(article)
 passmarket.yahoo.co.jp##.ptsGoToPromo
 sportiva.shueisha.co.jp##.block-widget-a-a__article__pr:upward(li.block-widget-a-a__article)
 video.fc2.com##.vod_price_off
+
+!#if !env_firefox
+amiami.jp##.headerbanner
+!#endif
+!#if env_firefox
+amiami.jp##^.headerbanner
+!#endif
 
 ! ---------- Intrusive widgets ----------
 ||sinclo.jp^$3p
