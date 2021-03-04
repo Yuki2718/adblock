@@ -188,7 +188,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 </details>
 
-### 280blocker AdblockPlus形式 悪質サイト対策強化パッチ（AdGuard for AndroidおよびuBlock Origin専用）
+### 280blocker adblock filter 悪質サイト対策強化パッチ（AdGuard for AndroidおよびuBlock Origin専用）
 
 280blockerさんは、2020年8月2日の更新で悪質サイト対策のルールを大幅に追加されました。できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、280blocker AdblockPlus形式フィルタは正規表現などの高度な文法を避け、互換性の高い記法で書かれています。一方で、AdGuardやuBlock Originなど高度な文法をサポートするモダンブロッカーにとっては、この記法による悪質サイト対策にはいくつかの限界があります。
 
