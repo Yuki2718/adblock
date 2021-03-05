@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210303
+! Version: 20210306
 
 ! General tracker
 &visitor=*&referrer=
@@ -133,6 +133,7 @@
 /logImpressions?
 /logger.performance?
 /logger.screensize?
+/logging/v1/log|
 /matomo/*$domain=~github.com|~matomo.org|~wordpress.org
 /meta-analytics/*
 /metrika/*&ident=
@@ -230,6 +231,7 @@
 ?action=track_visitor&
 ?log=stats-
 ?type=pageview&
+_gpt_bootstrap_
 ||airtable.com/internal/$xmlhttprequest
 ||airtable.com^*/reports
 ||akamaihd.net^*.gif?e=
