@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210307
+! Version: 20210308
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -117,9 +117,9 @@ imgur.com##.Transformation-tooltip--hovering
 
 ab-road.net##.headerBottom-right > .message
 abema.tv##.com-m-Notification
+adult.contents.fc2.com##.dealArticleNotice
 baito.mynavi.jp##.alertWrap
 bible-cafe.com##.news-ticker
-blog.goo.ne.jp##.navbar__link--left
 cookpad.com##.myfolder_button_wrapper > .notification
 drive.google.com##a[data-target=clientDownload]:upward(3)
 drive.google.com##body > [aria-labelledby$=".afp"]
@@ -569,11 +569,9 @@ pinterest.*##body:style(overflow-y: scroll !important;)
 pinterest.*##div[data-test-id="giftWrap"]
 pinterest.*##div[style="visibility: visible; top: 80px; left: 99px;"]:has-text(探したい)
 pr-park.com##.header-info
-quora.com##.new_signup_dialog.modal_bg
-quora.com##.signup_wall_prevent_scroll #root:style(filter: none !important)
-quora.com##.signup_wall_prevent_scroll:style(position: unset !important; padding-right: 0 !important;)
-quora.com##body > div[id]:has(.modal_signup_dialog)
-quora.com##body:style(overflow: auto !important)
+quora.com##.qu-overflow--hidden[class*="qu-zIndex--modal_"]
+quora.com##.qu-overflow--hidden:style(overflow: auto !important;)
+quora.com##.qu-overflow--hidden[style*="filter: blur"]:style(filter: none !important;)
 recme.jp##.footer-register
 reddit.com##.happening-now-wrap
 researchgate.net###exit-modal
@@ -586,6 +584,7 @@ seikatsu110.jp###footerMenu.show
 sejuku.net###ft-banner
 service-safari.com###SignupRecommendationModal
 service-safari.com##body.modal-open:style(overflow:auto !important)
+shanxivideo.net,video.fc2.com##.login-footer
 shingakunet.com##.l-footerFix
 shopping.yahoo.co.jp##.elSticky > .elBanner
 skyscanner.jp###modal-container:has(#pqs-form)
@@ -619,7 +618,6 @@ tver.jp##+js(set, enquete.checkDispEQ, falseFunc)
 twitter.com###layers div[dir=auto] > span:has-text(Twitterなら、「いま」):upward(5)
 udemy.benesse.co.jp##.cmn--contentCoursePopup
 uwl.weblio.jp###free-house-ad-on-load-modal-container, #free-house-ad-on-load-modal-overlay
-video.fc2.com##.login-footer
 video.fc2.com##a[href^="http://fc2information"][data-link][style]:upward(1)
 video.tv-tokyo.co.jp###jsiModalOverLayerShare
 video.tv-tokyo.co.jp##.md-question.js-modal-window
@@ -2222,7 +2220,7 @@ deportealdia.live,noticiasesports.live,techgeek.digital##+js(nano-sib, , 1200, 0
 easylinkref.com,lnk.news,lnk.parts##+js(nano-sib, , , 0)
 ec.line.me##+js(nano-stb, goOutlink, 2800)
 festyy.com##+js(nano-sib, o--)
-forex-trnd.com,imageking.xyz,imgkes.xyz,imgko.xyz,imgzer.net##+js(nano-sib, timer)
+forex-trnd.com,imageking.xyz,imgkes.xyz,imgko.xyz,imglin.xyz,imgzer.net##+js(nano-sib, timer)
 fullxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster4.*,xhamster5.*,xhamster7.*##+js(rc, xh-thumb-disabled, html)
 fullxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster4.*,xhamster5.*,xhamster7.*##.dialog-desktop-container
 fullxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster4.*,xhamster5.*,xhamster7.*##body.xh-scroll-disabled:style(overflow:auto !important)
