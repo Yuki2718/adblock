@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210308
+! Version: 20210309
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -477,6 +477,8 @@ en-ambi.com###indexFixedBar
 eng-entrance.com##.left-bottom-float
 engineer-club.jp,hataraquest.com##.bfb-common-cta
 engineer-lab.findy-code.io##.popup
+evernote.com##.ReactModalPortal:has(#qa-GENERIC_LIGHTBOX_DIALOG_SUBMIT p[class^=_]:has-text(無料でお試し))
+evernote.com##.notifications-wrapper + div + div[class^=_] > div[class^=_]:has(div[class^=_] > span[class]:has-text(無料でお試し！))
 facebook.com##._5hn6
 fantia.jp##.popup-bar
 faq.support.biglobe.ne.jp###suMiniEnqueteWrapper
@@ -570,8 +572,7 @@ pinterest.*##div[data-test-id="giftWrap"]
 pinterest.*##div[style="visibility: visible; top: 80px; left: 99px;"]:has-text(探したい)
 pr-park.com##.header-info
 quora.com##.qu-overflow--hidden[class*="qu-zIndex--modal_"]
-quora.com##.qu-overflow--hidden:style(overflow: auto !important;)
-quora.com##.qu-overflow--hidden[style*="filter: blur"]:style(filter: none !important;)
+quora.com##.qu-overflow--hidden[style*="filter: blur"]:style(filter:none !important;overflow:auto !important)
 recme.jp##.footer-register
 reddit.com##.happening-now-wrap
 researchgate.net###exit-modal
@@ -1416,7 +1417,7 @@ dorosoku.com,girlsvip-matome.com,syuramama.com###pickup2
 dorosoku.com,syuramama.com###footer > h3
 dougaslot.com##.ad-pc
 doujin-eromanga.com##.rss_box
-doujinzone.com##.blogroll
+doujinzone.com,gurum.biz##.blogroll
 eegg.fun##.innerframe:has(iframe[src^="/rss"])
 ekurere3.com,knowledgesokuhou.com,reiwamatome3.blog.jp##.plugin-memo
 eroerogazo.com###container1 > center
@@ -1458,6 +1459,7 @@ gtoys.blog.fc2.com###outline > table
 gundam-futab.info###sidebar-widget > .widget_pc_text:last-child, .rss_label, .sousyoku, .widget-under-article
 gundamlog.com###top_rss
 gunpla-news24.info###sidebar-widget > .widget_pc_text, .ad
+gurum.biz##h3.title:has-text(おすすめ記事)
 h-ken.net##.mainColumn > div > .sidebarList, .mainColumn > div > p.midashiPink
 h723.blog.fc2.com##div[align=left], div[align=left] + div[style]
 hagelicious.com###appeal, #content-bottom, #content-top, #custom_html-25, #custom_html-26, #custom_html-32, .rssboxgaibu
@@ -1520,6 +1522,7 @@ kanasoku.info##.cent_top, .headline_middle
 kandatasokuho.blog.fc2.com###center > .page_navi, div[style$="background-color: lavender;"]
 kankokunohannou.org##.ently_text > b:has-text(オススメ記事)
 kanmsu.com##.akismet_comment_form_privacy_notice ~ div[class]:not(.pager), .header-menu + .t2
+karapaia.com,newresu1.blog.fc2.com###blogroll
 kasegeru.blog.jp##.plugin-memo script[src$="/widget.js"]:upward(.plugin-memo)
 kazokuchannel.doorblog.jp###more > ol, #more > span[style^="font-size: medium"], #more > ul
 kazokuchannel.doorblog.jp,matome-tarou.ldblog.jp,recosoku.com##.plugin-memo:last-child
@@ -1616,7 +1619,6 @@ nekowan.com##.rsshead, [class^=rss_comsita_saigo]
 netatama.net##.article-outer-3 > center:nth-of-type(n+3)
 netouyonews.net###custom_html-17 > .custom-html-widget > div[align], #super_rss_reader-2, .kijirss, .kijirss0, [id$=rss1], [id$=rss2]
 newmofu.doorblog.jp###widget-blogroll
-newresu1.blog.fc2.com###blogroll
 news.2chblog.jp###side-r, .sita-3
 news30over.com##.plugin-memo:has(script[src^="http://x5"])
 news30over.com##.topbox, .topbox2, .toptitle
@@ -1889,6 +1891,9 @@ xn--r8jwklh769h2mc880dk1o431a.com##^.clear_balloon + div[data-index][style], .po
 /td-newsletter/*
 /wp-content/plugins/icegram/*
 /wysija-newsletters/*
+||buy-ap.piano.io/checkout/offer/show?displayMode=*&showCloseButton=false*&url=https%3A%2F%2Fwww.kyobun.co.jp%2Fnews%$frame,domain=kyobun.co.jp
+kyobun.co.jp##.tp-active.tp-backdrop
+kyobun.co.jp##body.tp-modal-open:style(overflow: auto !important)
 ||reader.combzmail.jp^
 ||tinypass.com^$domain=fortune.com|washingtontimes.com
 
@@ -2106,6 +2111,8 @@ mobile.twitter.com##section > div[aria-label^=タイムライン][aria-label$=�
 ||baraero.com/wp-content/uploads/2020/06/stayhome.$image,1p
 baraero.com##.content > div[style="float: none; margin:0px;"] > .entrydiscription, .entrymidashi3
 ||foxnews.com^*/fox-news/nation-promo/nation_promo_$image,1p
+||h0874.com/img/toy_824x179.jpg
+h0874.com###channelBanner2
 ||iwate-np.co.jp/content/mekke/img/
 ||iwate-np.co.jp/page/content/media/
 iwate-np.co.jp##div[class$=-CMSbox]
