@@ -248,7 +248,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 <details>
 <summary>註</summary>
 
-<sub>1: AdGuardで使用する場合、最大の問題はspecific-genericでしょう。PCでAdGuardをご利用の場合、もちフィルタを使用するか、あるいは海外サイトも閲覧するのであればAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。豆腐フィルタはAdGuardで機能しないルールが増えてきたため、おすすめできません。</sub>
+<sub>1: AdGuardで使用する場合、最大の問題はspecific-genericとredirect-ruleでしょう。また、json-pruneのワイルドカード互換性によりYoutubeで問題が生じます。PCでAdGuardをご利用の場合、もちフィルタを使用するか、あるいは海外サイトも閲覧するのであればAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。豆腐フィルタはAdGuardで機能しないルールが増えてきたため、おすすめできません。</sub>
 
 <sub>2: AdGuardならスクリプトレットに互換性があるので許容範囲です。困ったことに、IT関係者の方でAdBlockやAdblock Plusを勧められる方がおられます。これらでも大体の広告は消えますが、フィルタ設定の如何にかかわらず不具合や広告漏れの確率が格段に高まります（詳しくは[FAQ A1](https://github.com/Yuki2718/adblock/blob/master/japanese/FAQ.md#q1-adblock%E3%82%84adblock-plusabp%E3%81%A7%E3%81%AF%E3%83%80%E3%83%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8B)）。</sub>
 
