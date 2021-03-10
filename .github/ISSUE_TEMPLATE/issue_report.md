@@ -14,7 +14,10 @@ assignees: ''
 [//]: # (The issue title should be domain name of (one of) the URL; i.e. if the URL is "http://example.com/page.htm", take "example.com" without quotation as the title. If it's adult site, add [NSFW] in the head of the title.)
 [//]: # (URLのドメイン名をIssueタイトルにしてください。http://example.com/page.htm であれば、example.comです。アダルトサイトの場合、[閲覧注意]か[NSFW]を先頭につけてください)
 
+
+
 ### Describe the issue (mandatory) / 何が問題か説明してください（必須）
+
 
 
 ### Screenshot(s) / スクリーンショット
@@ -35,5 +38,7 @@ assignees: ''
 ### Filters (mandatory) / 使用フィルタ（必須）
 
 [//]: # (List all the filter lists you subscribe. You can take screenshot(s) of Filters (AdGuard)/Filter lists (uBlock) instead / 購読しているすべてのフィルタを記入するか、フィルター一覧のスクリーンショットを貼ってください)
+
+
 
 ### Notes / その他有用な情報
