@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210317
+! Version: 20210318
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -1047,6 +1047,7 @@ _rsslink.html|
 ||chatbot.ds-ai.net^
 ||feed.mikle.com^$domain=blog.livedoor.jp|crx7601.com|fate-rpg.jp|gadgetlife2ch.blomaga.jp|gtoys.blog.fc2.com|h1g.jp|hdouga.com|ibarakinews.jp|obutu.com|totalwar.doorblog.jp|xn--bckadddb2a0d4dnc8dwhngdtb58aya0l4a2om843g5npczp7dwh5g.com|xn--cckea5a6cidcbh6ce7ghug17a2ge3aht3nwigef51658aw7kd.com|xn--sm-xv5cq52eyfnezf.com
 ||feed.mobeek.net^
+||feedrapp.lliy.biz^
 ||fukugan.com^$3p
 ||goodmediator.net^
 ||hanamura.shop^$xhr,3p
@@ -1443,7 +1444,7 @@ dorosoku.com,syuramama.com###footer > h3
 dougaslot.com##.ad-pc
 doujin-eromanga.com##.rss_box
 doujinzone.com,gurum.biz##.blogroll
-eegg.fun##.innerframe:has(iframe[src^="/rss"])
+eegg.fun##.innerframe iframe[src^="/rss"]:upward(.innerframe)
 ekurere3.com,knowledgesokuhou.com,reiwamatome3.blog.jp##.plugin-memo
 eroerogazo.com###container1 > center
 erogletv.blog.fc2.com##.plugin1_outline:nth-child(-n+2)
@@ -1643,13 +1644,13 @@ negisoku.com###main .column-inner-2 > [href^="https://e-gaming."], #rss-box, #rs
 nekowan.com###more > span:has-text(新着記事)
 nekowan.com##.rsshead, [class^=rss_comsita_saigo]
 netatama.net##.article-outer-3 > center:nth-of-type(n+3)
-netouyonews.net###custom_html-17 > .custom-html-widget > div[align], #super_rss_reader-2, .kijirss, .kijirss0, [id$=rss1], [id$=rss2]
+netouyonews.net###custom_html-17 > .custom-html-widget > div[align], #super_rss_reader-2, .entry-footer .custom-html-widget > h4, .kijirss, .kijirss0, .rss-aggregator, [id$=rss1], [id$=rss2]
 newmofu.doorblog.jp###widget-blogroll
 news.2chblog.jp###side-r, .sita-3
 news30over.com##.plugin-memo:has(script[src^="http://x5"])
 news30over.com##.topbox, .topbox2, .toptitle
 news4wide.net##.box-antenna
-newsoku.blog##.header-widget, .widget_execphp.widget-under-article
+newsoku.blog##.header-widget, .widget_execphp.widget-under-article, div[style="text-align:center;margin-top:10px;margin-bottom:10px;"] + .t_h[style="border-bottom: solid 5px #9b1c38;"]
 nijiero-ch.com##.rssArea
 nijimoemoe.com##.article-body-inner > center, .sine1 ~ [class^=sine]
 nijimoemoe.com##.raibudoasine:style(height: auto !important)
@@ -2054,7 +2055,7 @@ zdnet.com##div[data-component="newsletterWidget"]
 /wp-content/plugins/thrive-ultimatum/*
 ||actionbutton.co^$3p
 ||aja-recommend.com^
-||cxpublic.com^$3p
+||cxpublic.com^$3p,domain=~wpb.shueisha.co.jp
 ||d.rcmd.jp^
 ||gacraft.jp^
 ||getsitecontrol.com^$3p
@@ -2260,6 +2261,7 @@ dailyuploads.net##+js(ra, checked, input#chkIsAdd)
 deportealdia.live,noticiasesports.live,techgeek.digital##+js(nano-sib, , 1200, 0)
 easylinkref.com,lnk.news,lnk.parts##+js(nano-sib, , , 0)
 ec.line.me##+js(nano-stb, goOutlink, 2800)
+file4go.*##+js(set, time, 0)
 forex-trnd.com,imageking.xyz,imgkes.xyz,imgko.xyz,imglin.xyz,imgtigr.xyz,imgzer.net##+js(nano-sib, timer)
 fullxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster4.*,xhamster5.*,xhamster7.*##+js(rc, xh-thumb-disabled, html)
 fullxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster4.*,xhamster5.*,xhamster7.*##.dialog-desktop-container
