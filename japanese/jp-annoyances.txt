@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210318
+! Version: 20210319
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -145,7 +145,6 @@ w3q.jp###news-ticker-wrapper
 www.dropbox.com##.callout-container--bottom-left:has(.callout-content-title:has-text(編集しますか？))
 www.dropbox.com##.maestro-secondary-sidebar:has(.continuous-onboarding__heading__text:has-text(新しいおすすめ))
 www.nicovideo.jp##.MylistContainer-premiumBanner
-www.nicovideo.jp##.PreVideoStartPremiumLinkContainer, .PreVideoStartPremiumLinkOnEconomyTimeContainer
 youtube-nocookie.com,youtube.com###movie_player > .ytp-ce-bottom-right-quad
 youtube-nocookie.com,youtube.com###movie_player > .ytp-promotooltip-wrapper[style="top: 168px; left: 298px; display: none;"][data-layer="8"]
 youtube-nocookie.com,youtube.com##.annotation.iv-branding
@@ -700,8 +699,8 @@ reddit.com##.xPromoChoiceBanner, .XPromoInFeed, .XPromoPill
 !#endif
 
 ! ---------- App ----------
-/jquery.smartbanner.js|
-/jquery.smartbanner.min.js|
+/js/jquery.smartbanner.js|
+/js/jquery.smartbanner.min.js|
 /plugins/add-smart-app-banner/*
 /plugins/appbanners/*
 /plugins/apppresser/*
@@ -2102,16 +2101,25 @@ tiktok.com##.feedback
 topics.or.jp##.recommend-article
 transit.yahoo.co.jp##.realestateSlink
 travel.rakuten.co.jp###rexSurveyRoot > div:only-child > div:only-child
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div > a[href$="/flow/topics_selector"][role=link]:upward(div[style^="position: absolute"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div[aria-roledescription=carousel] div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめトピック):upward(div[style^="position: absolute"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div > a[href^="/i/connect_people?"][role=link]:upward(div[style^="position: absolute"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] h2 > div[dir=auto][style^=-webkit-line-clamp] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
-twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div[role=button][data-testid$=-follow]:upward(div[style^="position: absolute"])
+! おすすめユーザー
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] h2 > div[style^="-webkit-line-clamp"] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] div[role=button] > div[dir=auto] > span > span:has-text(フォロー):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] a[href^="/i/connect_people?"]:upward(div[style^="position: absolute"])
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div > a[href^="/i/connect_people?"]:upward(div[style^="position: absolute"])
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] h2 > div[style^=-webkit-line-clamp] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div[role=button][data-testid$=-follow]:upward(div[style^="position: absolute"])
+! おすすめトピック
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div > a[href$="/i/topics/picker/home"]:upward(div[style^="position: absolute"])
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] div[aria-roledescription=carousel] div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style^="position: absolute"] h2 > div[style^=-webkit-line-clamp] > span:has-text(おすすめトピック):upward(div[style^="position: absolute"])
+! リストを見つける
+twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] a[href="/i/lists/suggested"]:upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] div[dir=auto][style^="-webkit-line-clamp"] > span:has-text(新しいリストを見つける):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] span > span:only-child:has-text(フォロー):upward(div[style^="position: absolute"])
 ! タイムラインにトピックも表示しましょう
 twitter.com##div[style^="position: absolute; width: 100%"] section > div[aria-label="タイムライン: Carousel"] > div[class] > div[style="height: 150px;"] div[aria-label^="トピック「"]:upward(div[style^="position: absolute; width: 100%"])
-twitter.com##section > div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] div > a[href$="/flow/topics_selector"][role=link]:upward(div[style^="position: absolute"])
-twitter.com##section > div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] h2 + div[dir=auto][style^=-webkit-line-clamp] > span:has-text(これらのトピックについてのトップツイートが):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] div > a[href$="/flow/topics_selector"]:upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] h2 + div[style^=-webkit-line-clamp] > span:has-text(これらのトピックについてのトップツイートが):upward(div[style^="position: absolute"])
 ! おすすめツイート
 !twitter.com##div[class^=css-] > aside[aria-label="おすすめユーザー"][role=complementary]:upward(1)
 www.nicovideo.jp##.FeedbackLink
@@ -2121,18 +2129,8 @@ youtube.com##ytd-thumbnail-overlay-endorsement-renderer
 !#if !env_firefox
 blog.goo.ne.jp##.block__shop
 !#endif
-
 !#if env_firefox
 blog.goo.ne.jp##^.block__shop
-!#endif
-
-!#if env_mobile
-mobile.twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style] > div > div[class] > a[href="/i/flow/topics_selector"][role=link]
-mobile.twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style] > div > div[class] > div[class] > h2 > div[dir=auto][style^="-webkit-line-clamp"] > span:has-text(おすすめトピック):upward(3)
-mobile.twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style] > div > div[class] > section[aria-labelledby^="accessible-list-"][role=region]:has(div[aria-label^="トピック「"][role=button])
-mobile.twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style] > div > div[class] > a[href^="/i/connect_people?"][role=link]
-mobile.twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style] > div > div[class] > div[class] > h2 > div[dir=auto][style^="-webkit-line-clamp"] > span:has-text(おすすめユーザー):upward(3)
-mobile.twitter.com##section > div[aria-label^=タイムライン][aria-label$=さんのツイート] > div[style] > div[style] > div > div[class] > div[data-testid=UserCell] div[style="min-width: 92px;"] > div[role=button] > div[dir=auto] > span > span:has-text(フォロー):upward(div[data-testid=UserCell])
 !#endif
 
 ! ---------- Promo ----------
@@ -2243,7 +2241,7 @@ otapol.com###balloonText
 ||vignette.wikia.nocookie.net^*/Nat195.$image,important,domain=yakusokunoneverland.fandom.com
 ||w.atwiki.jp/common/_js/preconnect.
 100count.net##+js(nano-sib, /sec--|timedisplay--/)
-1ink.cc,aylink.co,cpmlink.net,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,elil.cc,get-url.com,kpopstan.com,lootlinks.net,opensubtitles.org,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,underhentai.net,upfile.us##+js(nano-sib)
+1ink.cc,aylink.co,cpmlink.net,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,elil.cc,kpopstan.com,lootlinks.net,opensubtitles.org,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,underhentai.net,upfile.us##+js(nano-sib)
 abandonmail.com##+js(aopr, indexedDB.open)
 adfoc.us##+js(nano-sib, , 1100)
 ampmedia.jp##.article-vote-area
@@ -2307,5 +2305,4 @@ aloegg.com,alofps.com,kiemlua.com,pennbookcenter.com,rodjulian.com,semawur.com,u
 
 ! Exception
 @@/wp-content/plugins/bwp-minify/min/?*/jquery.smartbanner.$css,script,1p
-@@||jrepoint.jp/resource/script/jquery.smartbanner.js
 @@||popin.cc/searchbox/action_$script,3p
