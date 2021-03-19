@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210316
+! Version: 20210320
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -133,51 +133,52 @@ _omniture.$script,domain=mathworks.com
 @@||ttutu.biz/log_event$1p,xhr
 
 ! ---------- Tracking links ----------
+-aff-*&clickid=$doc,domain=apple.com
 ||affiliate.suruga-ya.jp^$doc
-||amazon.co.jp/gp/goldbox/ref=*&linkCode=*&tag=*&linkId=$doc
-||amazon.co.jp/gp/product/*/ref=*&camp=*&creative=*&linkCode=*&tag=$doc
-||apple.com^*/product/*&cid=*-aff-*&clickid=$doc
-||beauty.hotpepper.jp^*?wak=*_link_$doc
-||ck.jp.ap.valuecommerce.com/servlet/referral?sid=*&pid=*&vc_url=$doc
-||cp.duo.jp/prwt_tk1900_eqs_com_cpt?utm_source=*&utm_medium=*&utm_campaign=*&waad=$doc
+||amazon.co.jp/gp/goldbox/ref=*&linkCode=$doc
+||amazon.co.jp/gp/product/*&linkCode=$doc
+||beauty.hotpepper.jp^*?wak=$doc
+||ck.jp.ap.valuecommerce.com/servlet/referral?sid=*&vc_url=$doc
+||cp.duo.jp/prwt_tk1900_eqs_com_cpt?utm_source=*&waad=$doc
 ||d.dmkt-sp.jp/portal/clicklog?$doc
-||dlsoft.dmm.co.jp^*/?utm_medium=dmm_affiliate&utm_source=*&utm_campaign=$doc
-||dmm.com^*?utm_content=*&utm_source=*&utm_medium=$doc
-||e-3shop.com^*/?utm_source=*&utm_medium=*&utm_campaign=$doc
-||g123.jp/game/*?platform=*&utm_source=*&utm_campaign=*&utm_adgroup=$doc
+||dlsoft.dmm.co.jp^*/?utm_medium=dmm_affiliate&utm_source=$doc
+||dmm.com^*?utm_content=$doc
+||e-3shop.com^*/?utm_source=$doc
+||g123.jp/game/*&utm_adgroup=$doc
 ||game.fc2.com/app/*?fc2gtc=$doc
-||is.accesstrade.net/cgi-bin/*?rk=*&nid=*&rurl=*&media=*&atss=$doc
+||is.accesstrade.net/cgi-bin/*?rk=$doc
 ||lightfx.jp/LP/fx/?AffiCode=$doc
-||msafflnk.net^*?sharedid=*&u=$doc
+||msafflnk.net^*?sharedid=$doc
 ||pc-koubou.jp/cgi-bin/linklp/linklp.cgi?siteID=$doc
 ||rakuten.co.jp/?scid=af_*&sc2id=af_$doc
-||rurubu.travel/aff/registfrom.asp?RegistFrom=*&RedirectURL=*&utm_source=$doc
-||samuraiclick.com/lp/*.php?m=*&b=$doc
-||search.rakuten.co.jp/search/mall/*/?sid=*&l-id=$doc
-||shingon.jp/p.php?pr=*&i=*&ac=$doc
-||stepupbuzz.club/st-manager/click/track?id=*&type=*&url=h*&source_url=$doc
-||studentwalker.com/st-manager/click/track?id=*&type=*&url=$doc
-||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=*&COOKIE_PATH=*&COOKIE_DOMAIN=*&VIEW_URL=$doc
+||rurubu.travel/aff/registfrom.asp?RegistFrom=*&RedirectURL=$doc
+||samuraiclick.com/lp/*.php?m=$doc
+||search.rakuten.co.jp/search/mall/*/?sid=$doc
+||shingon.jp/p.php?pr=*&i=$doc
+||stepupbuzz.club/st-manager/click/track?id=*&type=$doc
+||studentwalker.com/st-manager/click/track?id=*&type=$doc
+||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=$doc
 
+/entry_site.pl?SITE=*&afult=$doc,removeparam=/SITE|afult/,domain=discas.net
+/?adid=*&argument=$doc,removeparam=adid,domain=mouse-jp.co.jp
+/?sc_in=*&ult_in=$doc,removeparam=/sc_in|ult_in/,domain=realestate.yahoo.co.jp
+?ITRACK_INFO=*&vcptn=$doc,removeparam=/ITRACK_INFO|vcptn/,domain=digi-tag.net
 ?_rt_ck=$doc,removeparam=_rt_ck
+?campaign=*&event_callback_$doc,removeparam=/campaign|event_callback_[0-9a-z]+/,domain=adjust.com
+?pid=*&af_click_lookback=$doc,removeparam=/af_click_lookback|af_siteid/,domain=appsflyer.com
+?tag=*&linkCode=$doc,removeparam=/tag|linkCode/,domain=amazon.co.jp
+?utm_source=*&usid=$doc,removeparam=/^utm_|usid/,domain=d-card.jp
 ||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
-||adjust.com^*?campaign=*&event_callback_$doc,removeparam=/campaign|event_callback_[0-9a-z]+/
-||amazon.co.jp/dp/*?tag=*&linkCode=$doc,removeparam=/tag|linkCode/
-||appsflyer.com/*?pid=*&af_click_lookback=*&seedparam=*&af_siteid=$doc,removeparam=/af_click_lookback|af_siteid/
-||buy-ap.piano.io/checkout/template/show?*&trackingId=*&pageViewId=*&visitId=*&customCookies=$frame,removeparam=/trackingId|pageViewId|visitId|customCookies/,domain=special.sankei.com
+||alwys.net/contents/ard.php?id=*&adwares=$doc,removeparam=id
+||buy-ap.piano.io/checkout/template/show?*&trackingId=$frame,removeparam=/^trackingId|pageViewId|visitId|customCookies/,domain=special.sankei.com
 ||cinematoday.jp/page/*?g_clk=$doc,removeparam=g_clk
-||ck.storematch.jp/bc?d=*&B=*&sc_i=*&rd=*&sig=$doc,removeparam=/d|B|sc_i|sig/
-||d-card.jp/std/topics/af/*?utm_source=*&utm_medium=*&utm_campaign=*&argument=*&usid=$doc,removeparam=/^utm_|usid/
-||digi-tag.net^*?ITRACK_INFO=*&vcptn=$doc,removeparam=/ITRACK_INFO|vcptn/
-||discas.net^*/entry_site.pl?SITE=*&AP=*&sc_cid=*&afult=$doc,removeparam=/SITE|afult/
-||dlsite.com^*/work/=/product_id/*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=/unique_op|utm_medium|utm_source/
+||ck.storematch.jp/bc?d=*&B=$doc,removeparam=/d|B|sc_i|sig/
+||dlsite.com^*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=/unique_op|utm_medium|utm_source/
 ||hbol.jp^*?cx_clicks_art_mdl=$doc,removeparam=cx_clicks_art_mdl
 ||hbol.jp^*?cx_clicks_series_mdl=$doc,removeparam=cx_clicks_series_mdl
-||michiuru.jp/shopping/lp.php?p=*&adcd=*&_zaf_act=$doc,removeparam=/adcd|_zaf_[a-z]+/
-||mouse-jp.co.jp^*/?adid=*&argument=$doc,removeparam=adid
-||r18.com/videos/vod/*/id=*?nats=$doc,removeparam=nats
-||realestate.yahoo.co.jp^*/campaign/*/?sc_in=*&ult_in=$doc,removeparam=/sc_in|ult_in/
+||michiuru.jp/shopping/lp.php?p=*&adcd=$doc,removeparam=/adcd|_zaf_[a-z]+/
+||r18.com/videos/vod/*?nats=$doc,removeparam=nats
 ||response.jp^*html?from=$doc,removeparam=from
-||site-search.kddi.com/click?url=*&query=*&site=$doc,removeparam=/query|site/
+||site-search.kddi.com/click?url=*&query=$doc,removeparam=/query|site/
 ||u3h8.com^*?utm_source=$doc,removeparam=/^utm_[a-z]+/
 www.google.*##+js(ra, onmousedown|ping, a[href][onmousedown]\, a[href][ping])

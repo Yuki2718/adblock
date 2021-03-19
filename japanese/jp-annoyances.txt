@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210319
+! Version: 20210320
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -356,6 +356,7 @@ onamae.com###globalHeaderBannerBox, .footerFloatingAuction
 ||p.dmm.com/p/ds/common/bnr_digital_video_list.
 ||p.dmm.co.jp/p/dc/top/popup/pic_popup_
 dlsoft.dmm.co.jp##.fixed-btn, .fn-popup, .pcgame-popin
+||p.dmm.co.jp/p/ds_videoa/newUser_pointback/bnr_insert.png
 ||pc-farm.co.jp/wp-content/themes/pcfarm/images/page/pc_column_banner.
 ||qiita.com/assets/public/qiitan-for-prompt-login-modal
 qiita.com##.st-Modal
@@ -664,6 +665,7 @@ youtube.com##ytd-popup-container > .ytd-popup-container[role="dialog"]:has(a[hre
 zurich.co.jp###fixed-popup-cta, #floatnav
 
 !#if !env_firefox
+another-chance.love###bfb_content_pc
 bignox.com##.egg-section
 freshvoice.net##.c_bnr_01
 gesoten.com###colorbox:has(#modal-game-recommend-pc)
@@ -674,6 +676,7 @@ usshi-na-life.com##.td-more-articles-box
 !#endif
 
 !#if env_firefox
+another-chance.love##^#bfb_content_pc
 bignox.com##^.egg-section
 freshvoice.net##^.c_bnr_01
 gesoten.com##^#colorbox:has(#modal-game-recommend-pc)
@@ -933,8 +936,8 @@ wear.jp###app_info
 chiebukuro.yahoo.co.jp###bnr_main
 ||yimg.jp/images/realestate/special/feature/*/bnr/98_80.png$domain=realestate.yahoo.co.jp
 realestate.yahoo.co.jp###_shp_bnr.FixedBox__fixedInfoBox
-||yimg.jp/images/realestate/special/feature/*/bnr_*_690_520.png$domain=realestate.yahoo.co.jp
-||yimg.jp/images/realestate/special/feature/*/bnr_*_950_80.png$domain=realestate.yahoo.co.jp
+||yimg.jp/images/realestate/special/feature/*/bnr_*_690_520.png$image,domain=realestate.yahoo.co.jp
+||yimg.jp/images/realestate/special/feature/*/bnr_*_950_80.png$image,domain=realestate.yahoo.co.jp
 realestate.yahoo.co.jp###_modalContractView
 ||yimg.jp/images/realestate/tmpl2014/img/app/$domain=realestate.yahoo.co.jp
 ||yimg.jp/images/shp_front/pc/top/images/top/bg_footerSmartPhones.$domain=shopping.yahoo.co.jp
@@ -1132,12 +1135,12 @@ exawarosu.net##.img-links, .l-popular-bottom, .l-rss-top
 ||fate-rpg.jp/img/rss_
 fate-rpg.jp##.main-column-inner > .clearfix[style$="width:660px;"], .rss-box
 ||fc2.com/a/n/d/androidken/*_rss_$frame,domain=androidken.blog.fc2.com
-||fc2.com/a/s/i/asiamachi/*-580x*$image,domain=asiamachi.blog.fc2.com
+||fc2.com/a/s/i/asiamachi/*-580x*$image,1p,domain=asiamachi.blog.fc2.com
 ||fc2.com/asiareaction/$frame,domain=asiareaction.com
 ||fc2.com/b/a/n/bandai11/$frame,domain=bandai11.blog.fc2.com
 ||fc2.com/erodoujininfo/$frame,domain=erodoujinjohoukan.com
 ||fc2.com/f/f/n/ffnews2016matome/$frame,domain=ffnews2016matome.blog.fc2.com
-||fc2.com/g/i/n/ginjimasu/ginjimasu100*$image,domain=ginjimasu.blog39.fc2.com
+||fc2.com/g/i/n/ginjimasu/ginjimasu100*$image,1p,domain=ginjimasu.blog39.fc2.com
 ||fc2.com/g/i/n/ginjimasu/*_300.$image,domain=ginjimasu.blog39.fc2.com
 ginjimasu.blog39.fc2.com###more > a[href^="http://"] + br
 ||fc2.com/h/u/n/hunter31/$frame,domain=hunter31.blog.fc2.com
@@ -1255,6 +1258,7 @@ okkisokuho.com##[class^=syokai]
 onapple.jp##.pc-sidebar-out-link
 ||onecall2ch.com^$frame,1p
 ||otanew.jp^$frame,1p
+||otasoku.livedoor.biz/otarss.html
 ||ouchinews.doorblog.jp^$frame,1p
 ouchinews.doorblog.jp##center > div[style="padding-top:5px;"]
 ||oumaga-times.com/link-kiji.js
@@ -1306,7 +1310,7 @@ youskbe.com##.main > .row > div > aside:has(.blogroll)
 ##[id^=ldblog_related_articles_]
 1000mg.jp,mylife.2chblog.jp,travel2ch.com##[class$=rss]
 2ch-matomenews.com##.switch
-2ch-uwaki.com,2chmatome.bloggeek.jp,2monkeys.jp,5ch-echiechi.doorblog.jp,5chmatome.blogo.jp,aburatanisannogamematome.blog.jp,addchannel.net,aiteesokuhou.blog.jp,akb48rompen.com,azurlane.doorblog.jp,babymetaltimes.com,bb.doorblog.jp,blog-mougenda.com,bm.2chblog.jp,chikakb.ldblog.jp,chomangasokuho.blog.jp,curationewsharp.blog.jp,curioso.blog.jp,dareda.net,db-gohan.blog.jp,dechisoku.com,ebitsu.net,ekurere3.com,ekuzodeerhand.blog.jp,everydayissunday.livedoor.blog,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,fireembs.blog.jp,gacha.blog.jp,gazoua2meru.livedoor.blog,geinoutopics-plus.blog.jp,gensen2ch.com,gunji.blog.jp,hanshintigers1.blog.jp,heart-net.xyz,heartlife-matome.com,hero-news.com,hiraganakeyaki.blog.jp,honsoku.com,ideal2ch.livedoor.biz,internet-game-lounge.blog.jp,jiwachan.net,kasegeru.blog.jp,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,kijoden.com,kijonikki.net,kijyotsubu.net,kininaruero7.blog.jp,kinpira-san.com,kokoyakyumatomesokuho.blog.jp,koumuin-matome.blog.jp,labradorsokuho.net,maki7.dreamlog.jp,mashlife.doorblog.jp,matmebae.net,matomelotte.com,matomemo-ch.net,mhsoken.blog.jp,mindhack2ch.com,mirishita.2chblog.jp,moe-vip.com,money-life.doorblog.jp,nanj-push.blog.jp,nanj-short.net,nanj-world.blog.jp,nanjchallenge.net,narisoku.blog.jp,newsweb.blog.jp,nizigami.com,onosakaemiri.blog.jp,oomonoyoutubersokuhou.blogo.jp,orufemorufenz.com,oumaga-times.com,pachinko-next.blog.jp,pachinkolist.com,paranormal-ch.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,romeodensetsu.com,ronsoku.com,sematome.com,setouchi48g.ldblog.jp,shumi-nikki.xyz,skematomemon.com,sontaku.info,sutekinakijo.com,syurabarabanba.blog.jp,timely.blog.jp,torendoimasyun.blog.jp,tsubamesoku.blog.jp,uwakich.com,virtualyoutuber-matome.blog.jp,visual-matome.com,vrtuber-news.com,vtuber-densoku.blog.jp,yabesoku.blog.jp,yofukasi-susume.xxxblog.jp##.rss-blogroll
+2ch-uwaki.com,2chmatome.bloggeek.jp,2monkeys.jp,5ch-echiechi.doorblog.jp,5chmatome.blogo.jp,aburatanisannogamematome.blog.jp,addchannel.net,aiteesokuhou.blog.jp,akb48rompen.com,azurlane.doorblog.jp,babymetaltimes.com,bb.doorblog.jp,blog-mougenda.com,bm.2chblog.jp,chikakb.ldblog.jp,chomangasokuho.blog.jp,curationewsharp.blog.jp,curioso.blog.jp,dareda.net,db-gohan.blog.jp,dechisoku.com,ebitsu.net,ekurere3.com,ekuzodeerhand.blog.jp,everydayissunday.livedoor.blog,fate-go-grandorder.blog.jp,fate-go.blog.jp,fate-gok.blog.jp,fate-grandorder-go.blog.jp,fate-kouryakumaster.blog.jp,fireembs.blog.jp,gacha.blog.jp,gazoua2meru.livedoor.blog,geinoutopics-plus.blog.jp,gensen2ch.com,gunji.blog.jp,hanshintigers1.blog.jp,heart-net.xyz,heartlife-matome.com,hero-news.com,hiraganakeyaki.blog.jp,honsoku.com,ideal2ch.livedoor.biz,internet-game-lounge.blog.jp,jiwachan.net,kasegeru.blog.jp,katasumisokuhou.blog.jp,kazokuchannel.doorblog.jp,kijoden.com,kijonikki.net,kijyotsubu.net,kininaruero7.blog.jp,kinpira-san.com,kokoyakyumatomesokuho.blog.jp,koumuin-matome.blog.jp,labradorsokuho.net,maki7.dreamlog.jp,mashlife.doorblog.jp,matmebae.net,matomelotte.com,matomemo-ch.net,mhsoken.blog.jp,mindhack2ch.com,mirishita.2chblog.jp,moe-vip.com,money-life.doorblog.jp,nanj-push.blog.jp,nanj-short.net,nanj-world.blog.jp,nanjchallenge.net,narisoku.blog.jp,newsweb.blog.jp,nizigami.com,onosakaemiri.blog.jp,oomonoyoutubersokuhou.blogo.jp,orufemorufenz.com,oumaga-times.com,pachinko-next.blog.jp,pachinkolist.com,paranormal-ch.com,pawawa.sokuho.org,pinap.blog.jp,pokemon-goh.doorblog.jp,rakukan.net,romeodensetsu.com,ronsoku.com,sematome.com,setouchi48g.ldblog.jp,shumi-nikki.xyz,skematomemon.com,sontaku.info,sutekinakijo.com,syurabarabanba.blog.jp,timely.blog.jp,torendoimasyun.blog.jp,tsubamesoku.blog.jp,uwakich.com,virtualyoutuber-matome.blog.jp,visual-matome.com,vrtuber-news.com,vtuber-densoku.blog.jp,yabesoku.blog.jp,yofukasi-susume.xxxblog.jp,zetusoku.net##.rss-blogroll
 2chcopipe.blog122.fc2.com##.centernaka:first-child
 2chcopipe.com##.entry_box3, .entry_box_left, .entry_box_right
 2chmatome.net,akb48matomemory.com,anicobin.ldblog.jp,aramame.net,checkmate-blog.com,girlsvip-matome.com,gahalog.2chblog.jp,hattatu-matome.ldblog.jp,kemochan.com,keyaki.tech,kokopyon.net,kijomatomelog.com,mojomojo-licarca.com,morikinoko.com,netamesi.com,okusama-kijyo.com,s2-log.com,saikyo-jump.com,seiyufan.livedoor.biz,squallchannel.com,uwakitaiken.com##[class^=rss]
@@ -1679,6 +1683,7 @@ openworldnews.net##.t_h[style]
 oppao.blog.jp##.right-column-inner > .plugin-memo:has(script[src^="//blog."])
 orufemorufenz.com###links-left > .module--free:nth-child(3)
 otameshivip.com###container > div[style$="width:1170px;height:460px;"], .blogroll_rapper
+otasoku.livedoor.biz###bottomHeadline, .article-post
 otonarisoku.com###custom_html-2
 otonarisoku.com###main-contents > #comment-title, #main-contents > div[style="height:360px; overflow:hidden;"]
 oumaga-times.com##.popular-list
@@ -1792,7 +1797,7 @@ erogazooo.club###k_area2, #scrollad, .pcad, .post > div > p > a[target=_blank]
 erogazopple.com###content_top_ad, .post_content_btm_ad
 eromangajukujo.com###container > table[width="960"], .article-body-inner > div > table[bgcolor="#ffffcc"]
 eropasture.com##.widget-above-single-content-title, .widget-index-top
-||hdouga.com/dmmprshia*$image,domain=hdouga.com
+||hdouga.com/dmmprshia*$image,1p
 ginjimasu.blog39.fc2.com###more > a[href^="http://"], #sidemenu2 > .sidemenu_body:first-child
 hdouga.com##.feed, .headline, .pic_link_box
 heartlandgost.blog.fc2.com##.ently_text > br + a:last-of-type, .ently_text > span[style="font-size:large;"]
@@ -2081,6 +2086,7 @@ zdnet.com##div[data-component="newsletterWidget"]
 ||techcrunch.com/wp-json/wp/v2/tc_events
 ||zdnet.com/m3d0s1/recommend/
 
+amazon.*##.shoppingCxFeedbackRootWidget
 biteki.com##.btn_back_to_list + div > .recommend_title
 crank-in.net##.right_in [id^=_popIn_trend]:upward(.right_in)
 cs.myjcom.jp###enq_fixed
@@ -2145,7 +2151,7 @@ h0874.com###channelBanner2
 ||iwate-np.co.jp/content/mekke/img/
 ||iwate-np.co.jp/page/content/media/
 iwate-np.co.jp##div[class$=-CMSbox]
-||mbok.jp/image/campaign/*/banner/*_468x80.
+||mbok.jp/image/campaign/*_468x80.
 ||mtame.jp/dcms_media/image/banner_btobdl.
 ||mtame.jp/dcms_media/image/banner_cb03.
 ||mtame.jp/dcms_media/image/seminar_
@@ -2197,7 +2203,7 @@ cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
 
 ||abeagle-public.buzzfeed.com/public/v2/experiment_variants?
 ||biteki.com/wp-content/themes/biteki_new/common/img/iphone_img_
-||cdn-xtech.nikkei.com/images/*/top/bnr*
+||cdn-xtech.nikkei.com/images/*/top/bnr*$image,domain=xtech.nikkei.com
 xtech.nikkei.com##.p-myCategoryCustomize, .p-myThemeCustomize
 ||digstatic.dmm.com/js/Silverlight.
 ||dlsite.com/js/adultcheck.

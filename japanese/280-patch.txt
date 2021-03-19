@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
-! Version: 20210319
+! Version: 20210320
 
 &prvtof=*&poru=
 .systems/signup?ad_domain=$document,popup
@@ -21,8 +21,8 @@
 /ck_winAlert.js|
 /glp?r=*&rw=*&rh=*&ww=*&wh=$script,~third-party
 /redirect?feed=$subdocument
-/step1.php?msg=*&cnv=*&cnt=$document,domain=xyz
-/track/click.php?c=*&zoneid=*&realISP=*&reffers=*&languages=*&browsers=*&timezone=$document
+/step1.php?msg=*&cnv=$document,domain=xyz
+/track/click.php?c=*&zoneid=$document
 ^fp=*&prvtof=
 ||1ownandfresh1.com^$document,popup
 ||1ts18.top^$document
@@ -244,15 +244,3 @@ podcast.svenskafans.com#%#//scriptlet('abort-current-inline-script', 'document.c
 ||hotproduct.top^$document
 ||placetop.xyz^$document
 ||resvalues.top^$document
-
-||*0.live^$badfilter
-||*1.live^$badfilter
-||*2.live^$badfilter
-||*3.live^$badfilter
-||*4.live^$badfilter
-||*5.live^$badfilter
-||*6.live^$badfilter
-||*7.live^$domain=~17.live,badfilter
-||*8.live^$badfilter
-||*9.live^$badfilter
-!||podcast.svenskafans.com$badfilter
