@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210321
+! Version: 20210322
 
 !#include blog-parts-adult.txt
 !#include blog-parts.txt
@@ -358,6 +358,8 @@ onamae.com###globalHeaderBannerBox, .footerFloatingAuction
 dlsoft.dmm.co.jp##.fixed-btn, .fn-popup, .pcgame-popin
 ||p.dmm.co.jp/p/ds_videoa/newUser_pointback/bnr_insert.png
 ||pc-farm.co.jp/wp-content/themes/pcfarm/images/page/pc_column_banner.
+||pureshop.jp/wp-content/uploads/*_a_pc.jpg.webp
+pureshop.jp##.afc_popup
 ||qiita.com/assets/public/qiitan-for-prompt-login-modal
 qiita.com##.st-Modal
 ||qualva.com^$domain=liginc.co.jp
@@ -409,8 +411,9 @@ tamashii.jp##[id$=_bra_bnr_area]
 ||the0123.com^*_floating_$image,1p
 the0123.com###floating-estimate
 ||topcard.co.jp/images/address_pop*$image,1p
-||travel.navitime.com/*_app$image
-travel.navitime.com##.screen-width-border:has(.app-banner-container)
+||tripla.jp/wp-content/uploads/*/shiryoudownload.png
+||ujack.co.jp/wp_ujack/wp-content/uploads/*-300x152.png
+ujack.co.jp##.afc_popup
 ||whotwi.com/whotwi_web/img/common/socialdog_modal.
 hoihoi.whotwi.com###cheetah_modal
 hoihoi.whotwi.com##body.modal-open:style(overflow: auto !important;)
@@ -442,6 +445,7 @@ app.slack.com##.p-ia__workspace_banner.p-client__banners
 askul.co.jp##.stickyFooter
 auction.brandear.jp##.bounceInUp
 autoc-one.jp###js-floating, .modal-popup
+balloonworld.jp,cbn.co.jp,ryu-blo.jp,sanei-ad.jp,us-lighthouse.com##.afc_popup
 bee-music.jp###fix-contact-pc
 beta.sankakucomplex.com##.MuiPaper-elevation1
 bing.com###b_notificationContainer_bop
@@ -456,7 +460,6 @@ books.rakuten.co.jp###js-rMessageFloating
 bsearchtech.com##.model_wrap_border
 business.nikkei.com,xtrend.nikkei.com###slideIn
 carsensor.net###tm_ftr
-cbn.co.jp,ryu-blo.jp,sanei-ad.jp,us-lighthouse.com##.afc_popup
 cbnews.jp###kp-survey-modal, #kp-survey-modal-overlay
 chobirich.com###footer_adtxt_wrap
 chocolatey.org###package-disclaimer
@@ -909,10 +912,12 @@ qoo10.jp##.app
 ||tabizine.jp/wp-content/themes/travel/js/googleplay.
 ||tbs.co.jp/library/img/bn_01@2x.
 news.tbs.co.jp##.ls--app
+||telnavi.jp/img/sf/app.
 ||tenki.jp/images/banner/
 tenki.jp##.ft-app
 ||thxyoutube.com/images/thxyoutube_banner720x280.
 ||townwork.net/img/sidebar/bnr_app.
+||travel.navitime.com/*_app$image
 travel.navitime.com##div.screen-width-border:has(.app-banner-container)
 ||trilltrill.jp/images/desktop/app-
 trilltrill.jp##.footer-AppDownLoad
@@ -951,7 +956,7 @@ transit.yahoo.co.jp###appguide, #mdFatFooter > .title, #mdFatFooter > ul
 bokete.jp##.fixed-side
 collabo-cafe.com##.app__smart__dl
 decrypt.co###__next > div[class^="sc-"] > div[class^="sc-"] > div[class^="sc-"]:has(> div[class] > a[href^="https://apps.apple.com/"][title="app-store-link"])
-nnn.co.jp###base_right > div:has(img[src$="/app-dl.gif"])
+nnn.co.jp###base_right > div > img[src$="/app-dl.gif"]:upward(1)
 tiktok.com##.app-promotion
 video.tv-tokyo.co.jp##.adApp-wrapper
 
@@ -1344,6 +1349,7 @@ androidken.blog.fc2.com,nyafu.livedoor.biz###left
 anichil.com###rssbox, .rss10
 anichil.com,greemas.doorblog.jp##.rss1
 anige-sokuhouvip.com###main-box > div[style^="border : 2px solid gray;"], [id^=top_center]
+anitubu.com###rss-pc
 aqua2ch.net##.menu_title111
 aqua2ch.net,blogo.jp,fesoku.net,ldblog.jp,livedoor.biz,matometanews.com##.related-articles
 aramame.net##.article-body-middle
@@ -2172,14 +2178,17 @@ liginc.co.jp##.ligbgjack-media-pc[style^="background"]:style(background:none !im
 mdpr.jp##article.list-text .heading-a__pr:upward(article)
 passmarket.yahoo.co.jp##.ptsGoToPromo
 sportiva.shueisha.co.jp##.block-widget-a-a__article__pr:upward(li.block-widget-a-a__article)
+techtarget.itmedia.co.jp##.cbox > .vendorcontents:upward(1)
 video.fc2.com##.vod_price_off
 yamory.io##.should-show.scroll-follow-page-top
 
 !#if !env_firefox
 amiami.jp##.headerbanner
+asajo.jp##.choice-entry-content .pr-icon:upward(.choice-entry-content)
 !#endif
 !#if env_firefox
 amiami.jp##^.headerbanner
+asajo.jp##^.choice-entry-content .pr-icon:upward(.choice-entry-content)
 !#endif
 
 ! ---------- Intrusive widgets ----------
@@ -2267,7 +2276,7 @@ deportealdia.live,noticiasesports.live,techgeek.digital##+js(nano-sib, , 1200, 0
 easylinkref.com,lnk.news,lnk.parts##+js(nano-sib, , , 0)
 ec.line.me##+js(nano-stb, goOutlink, 2800)
 file4go.*##+js(set, time, 0)
-forex-trnd.com,imageking.xyz,imgkes.xyz,imgko.xyz,imglin.xyz,imgtigr.xyz,imgzer.net##+js(nano-sib, timer)
+forex-trnd.com,imageking.xyz,imgkes.xyz,imgko.xyz,imglin.xyz,imglion.xyz,imgsupa.xyz,imgtigr.xyz,imgzer.net##+js(nano-sib, timer)
 fullxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster4.*,xhamster5.*,xhamster7.*##+js(rc, xh-thumb-disabled, html)
 fullxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster4.*,xhamster5.*,xhamster7.*##.dialog-desktop-container
 fullxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster4.*,xhamster5.*,xhamster7.*##body.xh-scroll-disabled:style(overflow:auto !important)
