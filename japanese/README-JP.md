@@ -253,6 +253,10 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 [よくある質問](/japanese/FAQ.md)
 
+### 管理人について
+
+EasyListなどの国際的な広告ブロックコミュニティにボランティアとして一年以上貢献を続けており、uBlock内製フィルタおよびAdGuard公式フィルタの共同管理者でもあります。280blockerさん、もちフィルタさん、豆腐フィルタさんなどにも問題報告をすることがあります。
+
 <details>
 <summary>註</summary>
 
