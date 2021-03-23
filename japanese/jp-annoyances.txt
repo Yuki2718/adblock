@@ -2,11 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210323
-
-!#include blog-parts-adult.txt
-!#include blog-parts.txt
-!#include sabre-filters2.txt
+! Version: 20210324
 
 ! Temporal
 ||store.world.co.jp/res/p/common/img/top/bnr/30w/pop200721_sale.
@@ -195,7 +191,7 @@ m.youtube.com##ytm-item-section-renderer > lazy-list > .item:has(.watch-metadata
 ||reproio.com^
 ||s3.amazonaws.com/downloads.mailchimp.com/
 
-/\.jp/images/banners/(?:bnr|popup)_.+/$image,1p,domain=naturum.co.jp
+/images/banners/(?:bnr|popup)_.+/$image,1p,domain=naturum.co.jp
 naturum.co.jp###js-popup
 /rss-reader/*$domain=1000ya.isis.ne.jp
 ||3rdspring.jp/pc_img/linebanner.
@@ -487,6 +483,7 @@ edreams.jp###sessionAboutToExpireAlert
 eikaiwa.dmm.com###jsBannerFloat
 eikaiwa.weblio.jp##.header_box_right
 en-ambi.com###indexFixedBar
+enago.jp###sgpb-popup-dialog-main-div-wrapper, .sgpb-popup-overlay
 eng-entrance.com##.left-bottom-float
 engineer-club.jp,hataraquest.com##.bfb-common-cta
 engineer-lab.findy-code.io##.popup
@@ -1352,6 +1349,7 @@ anichil.com###rssbox, .rss10
 anichil.com,greemas.doorblog.jp##.rss1
 anige-sokuhouvip.com###main-box > div[style^="border : 2px solid gray;"], [id^=top_center]
 anitubu.com###rss-pc
+apasoku.doorblog.jp###main .column-inner-2 > br:first-child, .box1, .box2, .plugin-popular_articles_with_image + .plugin-memo
 aqua2ch.net##.menu_title111
 aqua2ch.net,blogo.jp,fesoku.net,ldblog.jp,livedoor.biz,matometanews.com##.related-articles
 aramame.net##.article-body-middle
@@ -2260,9 +2258,11 @@ otapol.com###balloonText
 ||w.atwiki.jp/common/_js/preconnect.
 100count.net##+js(nano-sib, /sec--|timedisplay--/)
 1ink.cc,aylink.co,cpmlink.net,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,elil.cc,kpopstan.com,lootlinks.net,opensubtitles.org,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,underhentai.net,upfile.us##+js(nano-sib)
+aapks.com##+js(nano-stb, countDown)
 abandonmail.com##+js(aopr, indexedDB.open)
 adfoc.us##+js(nano-sib, , 1100)
 ampmedia.jp##.article-vote-area
+android-apk.org##+js(nano-sib, time)
 apkmb.com##+js(nano-sib, show_download_links)
 aylink.co##+js(nano-sib, timer, 0.02)
 basket.step.rakuten.co.jp##+js(ra, checked, .ratCustomEventForCheckbox[data-rat-key=ratcart])
@@ -2326,3 +2326,7 @@ aloegg.com,alofps.com,kiemlua.com,pennbookcenter.com,rodjulian.com,semawur.com,u
 ! Exception
 @@/wp-content/plugins/bwp-minify/min/?*/jquery.smartbanner.$css,script,1p
 @@||popin.cc/searchbox/action_$script,3p
+
+!#include blog-parts-adult.txt
+!#include blog-parts.txt
+!#include sabre-filters2.txt

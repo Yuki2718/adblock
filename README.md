@@ -155,6 +155,7 @@ Nooplists for medium mode of uBlock Origin dedicated for English user. The objec
 [View Rules](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules.txt)
 
 Q: Why X is nooped, it's bad!
+
 A: See the purpose, this list is built to make as few breakage as possible for as many English user. This doesn't mean it should be used 'as is' - still each user should train their rules (obviously you have to add many rules if you browse non-English sites). Even with lax rules medium mode is much better than easy mode in terms of blocking.
 
 <sub>1: I live in Japan and don't have full access to US, UK, etc. payment/shopping/banking services. Until you get accustomed to medium mode, it may be advisable to turn medium mode off on such sites. They anyway know much about you.</sub>
