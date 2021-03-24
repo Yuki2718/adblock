@@ -12,10 +12,10 @@
 /^http:\/\/\d{9,13}\.[-a-z]{6,12}\.ru/$document,domain=ru
 /^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
 /^https:\/\/[-0-9a-z]+prize[-0-9a-z]+\.life\/\?u=[0-9a-z]+&o=[0-9a-z]+&t=/$document,domain=life
-/^https:\/\/[a-z]{3,4}\d{3}\.[a-z]{7,24}\.it\/([_%0-9a-zA-Z]{12,}\.html)?$/$document,domain=it
+/^https:\/\/[a-z]{3,8}\d{3}\.[a-z]{7,24}\.(?:cl|it)\/([_%0-9a-zA-Z]{12,}\.html)?$/$document,domain=cl|it
 /^https:\/\/www\.namejp0[1-9]\.xyz/$document,popup,domain=xyz
 /^https:\/\/[a-z]{4,}\d{3}[a-z]{4,}\.li[fv]e\/(?:\d{10}|[a-z]{8})\/\?/$doc,domain=life|live
-/^https?:\/\/(\d{9}|[a-z]{12})\.[a-z]{9,14}\.ru/(page\d{1,4}|[._a-z]+\?page=\d{1,4})/$document,domain=ru
+/^https?:\/\/(?:\d{9}|[a-z]{12})\.[a-z]{9,14}\.ru/(page\d{1,4}|[._a-z]+\?page=\d{1,4})/$document,domain=ru
 /^https?:\/\/([a-z]{2}\d){3}[a-z]{2}\.com/$document,domain=com
 /^https?:\/\/xn--[0-9a-z]{5,10}---[.0-9a-z]{20,30}\.ru/$document,domain=ru
 /^https?:\/\/(www\.)?[-0-9a-z]{14,}\.fun/[a-z]{10,11}\.php/$document,domain=fun
@@ -46,6 +46,7 @@
 ||antivirus-protection.me^$document,popup
 ||app-department.report^$document,popup
 ||ask4question.info^$document
+||asprm.ru^$document
 ||atobarai-honpo.com^$document
 ||av5z3d1ur.com^$document
 ||avideonavi.info^$document
