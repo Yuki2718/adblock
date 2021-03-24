@@ -2,22 +2,25 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
-! Version: 20210324
+! Version: 20210325
 
 &prvtof=*&poru=
+.biz/?p=*&sub1=$document,domain=biz
 .systems/signup?ad_domain=$document,popup
 /?r=*&a=*&icode=*$document,~third-party
 /?r=dir&zoneid=$document,popup
 /^http:\/\/\d{9,13}\.[-a-z]{6,12}\.ru/$document,domain=ru
 /^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
-/^https:\/\/[a-z]{6,}\d{2,3}\.[a-z]{15,}\.it/$document,domain=it
+/^https:\/\/[-0-9a-z]+prize[-0-9a-z]+\.life\/\?u=[0-9a-z]+&o=[0-9a-z]+&t=/$doc,domain=life
+/^https:\/\/[a-z]{3,4}\d{3}\.[a-z]{7,24}\.it\/([_%0-9a-zA-Z]{12,}\.html)?$/$document,domain=it
 /^https:\/\/www\.namejp0[1-9]\.xyz/$document,popup,domain=xyz
 /^https:\/\/[a-z]{4,}\d{3}[a-z]{4,}\.li[fv]e\/(?:\d{10}|[a-z]{8})\/\?/$doc,domain=life|live
 /^https?:\/\/(\d{9}|[a-z]{12})\.[a-z]{9,14}\.ru/(page\d{1,4}|[._a-z]+\?page=\d{1,4})/$document,domain=ru
 /^https?:\/\/([a-z]{2}\d){3}[a-z]{2}\.com/$document,domain=com
 /^https?:\/\/xn--[0-9a-z]{5,10}---[.0-9a-z]{20,30}\.ru/$document,domain=ru
-/^https?:\/\/(www\.)?[-0-9a-z]{14,}\.fun/[a-z]{10,11}\.php.*/$document,domain=fun
+/^https?:\/\/(www\.)?[-0-9a-z]{14,}\.fun/[a-z]{10,11}\.php/$document,domain=fun
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org\/page\d{1,4}/$document,domain=duckdns.org
+/antibot/ab.php|$xmlhttprequest,~third-party
 /ck_winAlert.js|
 /glp?r=*&rw=*&rh=*&ww=*&wh=$script,~third-party
 /redirect?feed=$subdocument
@@ -33,6 +36,7 @@
 ||adulttube.cc^$document
 ||adverdirect.com^$document,popup
 ||aeozh.com^$document
+||agrofermplast.ru^$document
 ||airdate.info/*.php?key=$document
 ||allbestsecurecn.com^$document
 ||almostmy.com^$document
@@ -53,6 +57,7 @@
 ||babysnoetjes.nl^$document
 ||bagclick.biz^$document
 ||beshtayhotel.ru^$document
+||best-prizehouse15.info^$document
 ||best-prizes-house.life^$document,popup
 ||best2019-games-web4.com^$document
 ||best2020-games-web1.com^$document,popup
@@ -74,6 +79,7 @@
 ||clickwantnow.com^$document
 ||cn-2020.top^$document,popup
 ||com.com^$document
+||computerassistancesas.it^$document
 ||cpa-optimizer.online^$document,popup
 ||cutiesforyou.com^$document
 ||datedate.today^$document
@@ -86,8 +92,10 @@
 ||ev8s6dc9kc.com^$document
 ||exrtbsrv.com^$document
 ||extreme.red^$document
+||fabioviglionephotography.it^$document
 ||fd4frc4ve4b.com^$document
 ||fg5vc6e3cv.com^$document
+||filippomiraglia.it^$document
 ||findsexygirl1.life^$document
 ||fj9k6yh6hp7t.com^$document
 ||fw3d4yw9xb.com^$document
@@ -100,6 +108,7 @@
 ||guard-web.com^$document,popup
 ||hentaiplaytime.com^$document
 ||hicam.net^$document
+||higet-prizenow3.life^$document
 ||hmedia.website^$document
 ||hokk-i.com^$document
 ||hotelatalaia.cl^$document
@@ -118,6 +127,7 @@
 ||itn3pg5wrv.com^$document
 ||iyfnzgb.com^$document,popup
 ||japan-best.xyz^$document,popup
+||japan-kik.ru^$document
 ||japan1-06.xyz^$document,popup
 ||ji-bnk.com^$document
 ||ji-ubc.com^$document
@@ -132,9 +142,11 @@
 ||kgtdthfn2y4n.com^$document
 ||kr-106.xyz^$document,popup
 ||ks4y9sr4x2ar.com^$document
+||load00.biz^$document
 ||load2.biz^$document
 ||local-dates.net^$document
 ||localmixdates.com^$document
+||lamonicaservizi.it^$document
 ||lovechats.org^$document
 ||loverfoyou.net^$document
 ||lucky7777.info^$document
@@ -142,15 +154,19 @@
 ||ma-plastifieuse.info^$document
 ||marmie2020sexnokunicup.xyz^$document
 ||masksjp.com^$document
+||mangiaebevitalia.it^$document
+||massive-prizebox.life^$document
 ||matchx2.com^$document
 ||mcm-unife.it^$document
 ||mebelprostore2.ru^$document
 ||mediamodern.biz^$document,popup
+||medkontakt24.ru^$document
 ||megexpo.ru^$document
 ||mf5z6yv6ep.com^$document
 ||minimiss-ufa.ru^$document
 ||mksarahf499.cocolog-nifty.com^$inline-script
 ||monroe.link^$document
+||movintersistemi.it^$document
 ||moytraf.site^$document
 ||mrw.so/6eVYgn$document
 ||multiadblock.com^$document,popup
@@ -168,6 +184,7 @@
 ||nv7gh9ue9rg.com^$document
 ||okay-dating.com^$document,popup
 ||onetouch6.com^$document,popup
+||onmiccatania.it^$document
 ||orenoitimotu2020dekasacup.xyz^$document
 ||orenoitimotu2020katasacup.xyz^$document
 ||oretachinosex.xyz^$document
@@ -194,6 +211,7 @@
 ||redhub.site^$document
 ||reimageplus.com^$document
 ||remembergirl.com^$document,popup
+||ro05.biz^$document
 ||rsafrwd.com^$document,popup
 ||rsalcau.com^$document,popup
 ||rsaltsjt.com^$document,popup
@@ -222,6 +240,7 @@
 ||special-update.online^$document,popup
 ||ssionsupre.fun^$document,popup
 ||stom-kitai.ru^$document
+||strumentidicalibrazione.it^$document
 ||tappling.jp^$document
 ||tendermeets.com^$document
 ||thebestgame2020.com^$document
@@ -229,6 +248,7 @@
 ||tm25.ru^$document
 ||track.clickchewer.com^$document
 ||track.countlessclicks.com^$document,popup
+||track.mspy.click^$document
 ||trellian.com^$document
 ||update-notification.com^$document
 ||updates-co-jp.live^$document
@@ -248,6 +268,7 @@
 ||xmtrading.com^$document
 ||xn--nnqt1l.beer^$document
 ||xxxrevpushclcdu.com^$document
+||yourprizesnow.life^$document
 ||zedplays.com^$document,popup
 ||zmusic-online.com^$document
 ||zvideo-live.com^$document
