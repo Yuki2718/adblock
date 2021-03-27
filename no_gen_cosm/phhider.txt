@@ -2,11 +2,11 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210325
+! Version: 20210327
 
 ! Generic and semi-generic rules
 *##.adsbygoogle
-*##div[id^="div-gpt-ad"]
+*##[id^="div-gpt-ad"]
 biomedcentral.com,nature.com,springer.com,springeropen.com,threatpost.com##.c-ad
 btimesonline.com,businessinsider.com,cnn.com,filehippo.com,iis.net,msn.com,neowin.net,statescoop.com,webmd.com,wfaa.com,whatsmydns.net,wired.com,wral.com##.ad
 
@@ -83,6 +83,11 @@ digg.com##.spacer
 dns.ninja,javadecompilers.com##.adtester-container
 drive.google.com##.a-ee-zh-k
 dvdtrailertube.com##.footerads
+engadget.com###atwAdFrame0
+engadget.com###atwAdFrame1
+engadget.com###atwAdFrame2
+engadget.com###atwAdFrame3
+engadget.com###atwAdFrame4
 engadget.com###gemini-right-rail-thumbnails
 engadget.com##div[class*="_browserAdOuterContainer_"]
 engadget.com##div[data-nav-drawer-slide-panel] > aside[role="banner"]
@@ -136,7 +141,7 @@ javbix.com,javbest.xyz,javkun.com,javmelon.com##.adsvideo
 jetanimes.*,serieslatinoamerica.tv##.module_single_ads
 joblo.com###right-ad
 joblo.com##.vuukle-ads
-joe.ie##.posts-container > div:has(> div[id^=div-gpt])
+joe.ie##.native-mpu-container
 journals.plos.org###topslot
 jpost.com##.OUTBRAIN, .banner
 kotaku.com##.ad-left-top
@@ -172,6 +177,8 @@ newsweek.com##div[class^="index__adWrapper"]
 newyorker.com##.full-bleed-ad
 nexusmods.com##.video-ad
 nhentai.net##.advt
+nippon.com###detail_aside_recommend_title, #popular_news_title, .c-detail_under, .c-photo ~ .c-main, div[name=addthis_tools]
+nippon.com##.c-main #recommend_top_title:upward(.c-main)
 nypost.com##.outbrain-enabled, .recirc
 nytimes.com###ad-0
 nytimes.com###ad-1
@@ -199,10 +206,7 @@ porno666.com##.bloc-pub
 raymond.cc###snhb-incontent_2-0, #snhb-sidebar_3-0
 raymond.cc##.adslot_1
 redtube.*,youporn.com##.adsbytrafficjunky
-researchgate.net##.is-sticky:style(top:0 !important)
 researchgate.net##.lite-page-ad
-researchgate.net##.lite-page__above:has(> .lite-page-ad)
-researchgate.net##.lite-page__content > div[class^=nova-l-flex__item]:has(div[id^=ntv-])
 reverso.net###rca
 rtsak.com##AMP-AD
 salon.com##.proper-ad-unit
@@ -249,21 +253,11 @@ washingtontimes.com##.sponsored-container
 wccftech.com##.banner-ad
 wccftech.com##.sidebar-ad
 weatheronline.co.uk##.banner_oben
-wired.com##.content-footer__bottom > .row:has(.outbrain-widget)
 wowhead.com###main > .blocks
 wsj.com##div[class*="-adWrapper-"]
 www-creators.com##.adsense-footer
 www.barrons.com##[id^=wrapper-AD_1TOP]:upward(1)
 www.barrons.com##[id^=wrapper-AD_]
-www.engadget.com###atwAdFrame0
-www.engadget.com###atwAdFrame1
-www.engadget.com###atwAdFrame2
-www.engadget.com###atwAdFrame3
-www.engadget.com###atwAdFrame4
-www.engadget.com##ul[data-component=LatestStream] > li:has([data-component=GeminiAdItem])
 www.gloucestershirelive.co.uk##.top-slot
-www.nippon.com###detail_aside_recommend_title, #popular_news_title, .c-detail_under, div[name=addthis_tools]
-www.nippon.com##.c-wrap:has([id^=popular])
-www.nippon.com##section:has(#recommend_top_title)
 zdnet.com###taboola-below-home-thumbnails-homepage
 zerohedge.com##.ad__wrapper-element
