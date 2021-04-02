@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210402
+! Version: 20210403
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -173,6 +173,7 @@ _omniture.$script,domain=mathworks.com
 ?tag=*&linkCode=$doc,removeparam=/tag|linkCode/,domain=amazon.co.jp
 ?utm_source=*&usid=$doc,removeparam=/^utm_|usid/,domain=d-card.jp
 ||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
+||affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=*&goods_url=$doc,removeparam=user_id
 ||alwys.net/contents/ard.php?id=*&adwares=$doc,removeparam=id
 ||bunshun.jp/articles/*?utm_source=$doc,removeparam=/^utm_/
 ||buy-ap.piano.io/checkout/template/show?*&trackingId=$frame,removeparam=/^trackingId|pageViewId|visitId|customCookies/,domain=special.sankei.com
