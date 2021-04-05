@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210404
+! Version: 20210406
 
 ! ---------- Common ----------
 /Twitter_b_rect.$image
@@ -241,6 +241,7 @@
 ###single-footer-sns
 ##.addtoany_share_save_container
 ##.c-shareBtns
+##.footer_snsbtn
 ##.share-article
 ##.share_button_design_type2
 ##.wp-share-buttons
@@ -667,6 +668,10 @@ gifmagazine.net##.detail-pc-share
 ||girlsvip-matome.com/js/share.
 ||glassdoor.com/app/static/js/gd-social-share-btns.
 ||glitty.jp/api/sns-count|
+||global.canon^*/bird-branch/common/img/cmn-icon-facebook
+||global.canon^*/bird-branch/common/img/cmn-icon-twitter
+||global.canon^*/bird-branch/common/img/cmn-icon-pinterest
+global.canon###footer-share-area, .contents-share-inner
 ||gogakuru.com/img/mypage/diary/
 ||goldenyokocho.jp/assets/feed_icon-
 ||googirl.jp^*/btn*$image,1p
@@ -1423,7 +1428,8 @@ hub.vroid.com##[id^=Header-gdpr-]
 icotto.jp##.js-sticky
 iflyer.tv##.share_section
 imd-net.com##.fadeInDown.sns
-initial.inc##main > div > div:has(a[href^="https://www.facebook"])
+initial.inc##main > div > div > [href^="https://www.facebook"]:upward(1)
+inshokuten.com###text-5
 ironna.jp###social-barometer
 javpornsex.com##.shareit
 jbpress.ismedia.jp##.sns-fixed
