@@ -112,7 +112,7 @@ This is a variant of Yuki's Blog parts filters for adult sites. Included in Yuki
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
 
-### Sable filters 2 (sable-filters2.txt)
+### Sable filters 2
 
 Inspired by Sable filters (discontinued), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in Yuki's uBlock Japanese filters - Annoyances
 
