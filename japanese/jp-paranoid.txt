@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210406
+! Version: 20210411
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -41,6 +41,7 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 ||youtube.com/api/stats/watchtime?*=adunit&
 ||youtube.com/watch?*&pbj=prefetch$xhr,domain=youtube.com
 ##article[id][class*=post-] div[class*=cta]
+##body[id][class*=post-] section[class*=cta]
 
 !#if !env_firefox
 smart-flash.jp##.adsBlock
@@ -139,6 +140,8 @@ _omniture.$script,domain=mathworks.com
 
 ! ---------- Tracking links ----------
 -aff-*&clickid=$doc,domain=apple.com
+/?cmp=*&waad=$doc,removeparam,domain=happyon.jp|hulu.jp
+?cid=*&adid=$doc,removeparam,domain=video.unext.jp
 ?sharedid=*&u=$doc,domain=msafflnk.net
 ?utm_content=*&utm_source=$doc,domain=dmm.com
 ?utm_source=*&utm_medium=$doc,domain=e-3shop.com
