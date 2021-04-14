@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210411
+! Version: 20210415
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -188,6 +188,7 @@ _omniture.$script,domain=mathworks.com
 ||hbol.jp^*?cx_clicks_art_mdl=$doc,queryprune=cx_clicks_art_mdl
 ||hbol.jp^*?cx_clicks_series_mdl=$doc,queryprune=cx_clicks_series_mdl
 ||michiuru.jp/shopping/lp.php?p=*&adcd=$doc,queryprune=/adcd|_zaf_[a-z]+/
+||nttdocomo.co.jp/special_contents/dmagazine/index_af.html?utm_source=$doc,queryprune=/^utm_/
 ||odsyms15.com/click?aid=*&mimp=$doc,queryprune=/mimp|ext.referrer/
 ||r18.com/videos/vod/*?nats=$doc,queryprune=nats
 ||response.jp^*html?from=$doc,queryprune=from
