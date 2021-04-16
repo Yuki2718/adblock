@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
-! Version: 20210416
+! Version: 20210417
 
 &prvtof=*&poru=
 .biz/?p=*&sub1=$document,domain=biz
@@ -14,7 +14,7 @@
 /^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
 /^https:\/\/[a-z]{3,9}\d{3}\.[a-z]{7,24}\.(?:cl|it)\/([_%0-9a-zA-Z]{12,}\.html)?$/$document,domain=cl|it
 /^https:\/\/www\.namejp0[1-9]\.xyz/$document,popup,domain=xyz
-/^https:\/\/[a-z]{3,}\d{0,3}[a-z]{4,}\.li[fv]e\/(?:\d{10}|[a-z]{8})\/\?/$document,popup,domain=life|live
+/^https:\/\/[a-z]{7,}\.li[fv]e\/[a-z]{8}\/\?/$document,popup,domain=life|live
 /^https?:\/\/(?:\d{9}|[a-z]{12})\.[a-z]{9,14}\.ru/(page\d{1,4}|[._a-z]+\?page=\d{1,4})/$document,domain=ru
 /^https?:\/\/([a-z]{2}\d){3}[a-z]{2}\.com/$document,domain=com
 /^https?:\/\/xn--[0-9a-z]{5,10}---[.0-9a-z]{20,30}\.ru/$document,domain=ru
@@ -80,6 +80,7 @@
 ||bestoffer21.info^$document,popup
 ||bestprotection.site^$document
 ||bestsecretflirt.com^$document
+||bmwsangiorgio.it^$document
 ||bnmjjwinf292.com^$document
 ||boraheadpupon.tk^$document
 ||bq4w4ex8as.com^$document
@@ -190,6 +191,7 @@
 ||load2.biz^$document
 ||local-dates.net^$document
 ||localmixdates.com^$document
+||locandadepazzi.it^$document
 ||lovechats.org^$document
 ||loverfoyou.net^$document
 ||ltca.online^$document
@@ -226,14 +228,17 @@
 ||newsinform.net^$document,popup
 ||nextyourcontent.com^$document
 ||nh4dt5swe6jy.com^$document
+||nicebuyit.top^$document
 ||nihonflirt.com^$document
 ||nowvisitor.rentalcgi.com/counter.php?
 ||nudetube.site^$document
+||nuve.dsmall.xyz^$document
 ||nv7gh9ue9rg.com^$document
 ||okay-dating.com^$document,popup
 ||omgtnc.com^$document,popup
 ||onetouch6.com^$document,popup
 ||onmiccatania.it^$document
+||onryshop.xyz^$document
 ||orchideaonlus.it^$document
 ||orenoitimotu2020dekasacup.xyz^$document
 ||orenoitimotu2020katasacup.xyz^$document
@@ -319,6 +324,7 @@
 ||vacris.ru^$document
 ||ve9gv3d7ru.com^$document
 ||vfgrse.com^$document,popup
+||videowatchmore.com^$document
 ||vpnadefenceplus.com^$document
 ||vsemsnasti.ru^$document
 ||warming-need.xyz/*.php$document
@@ -337,6 +343,14 @@
 ||zedplays.com^$document,popup
 ||zmusic-online.com^$document
 ||zvideo-live.com^$document
+
+!#if ext_ublock
+cocolog-nifty.com##^img[onerror^="document.location=`htt"]
+!#endif
+!#if adguard
+cocolog-nifty.com$$img[onerror^="document.location=`htt"]
+!#endif
+
 podcast.svenskafans.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'error.php')
 
 ! Fu Chao
