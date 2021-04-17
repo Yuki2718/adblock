@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210416
+! Version: 20210417
 
 ! General blocking
 /CookieInfo.
@@ -70,6 +70,7 @@
 ###gdpr-cookie-notice
 ###moove_gdpr_cookie_info_bar
 ##.cc_banner
+##.ensureCookie
 ##.penci-wrap-gprd-law
 ##.popup_confirmation_bar
 ##.widget_eu_cookie_law_widget
@@ -156,7 +157,7 @@ airbnb.jp##div[data-testid="main-cookies-banner-container"]
 airvpn.org###cookieLaw
 alphacoders.com###cookie_consent
 amada.co.jp,ambafrance.org,osdn.net###cookie-bar
-amd.com,msn.com###onetrust-consent-sdk
+amd.com,businesswire.com,msn.com,trivago.jp###onetrust-consent-sdk
 amunra.com##.cookies
 anaconda.com,wordpress.com##.gdpr-banner
 analog.com#$##cookie-consent-container { display:none !important }
@@ -184,10 +185,12 @@ boyfriendtv.com##.eu-cookies
 btimesonline.com###cookieAcceptBar
 businesswire.com,healthitsecurity.com###cookie-consent
 callofwar.com###cookieNotificationMain
-cam4.com###promptArea, div[class^="CookieConsent"]
+cam4.com###promptArea
+cam4.com##div[class^="CookieConsent"]
 cars.mclaren.com##.n040-cookie-alert
 cbsnews.com###onetrust-banner-sdk
-china-airlines.com###cookieInfoDetails, .top-bar
+china-airlines.com###cookieInfoDetails
+china-airlines.com##.top-bar
 chocolatey.org###cookieNoticeAlert
 circle.ms##.cookie_grayL
 circle.ms,ikmultimedia.com,sarahah.com###cookieConsent
@@ -197,11 +200,13 @@ community.spotify.com###js-message-bar-cookie-notice
 copyright.com##.site-wide-notice--gdpr
 coron.tech###notice
 costco.co.jp###gdprMessage
-credit-suisse.com###consent-cookie-container, .consent-cookie-overlay
+credit-suisse.com###consent-cookie-container
+credit-suisse.com##.consent-cookie-overlay
 credit-suisse.com#$#body.m-consent-manager-open { overflow:auto !important }
 dailymotion.com##div[class^="CookiePopup_"]
 dataprotection.com.ua,drweb-av.de,drweb-av.es,drweb-av.it,drweb-av.pl,drweb.cn,drweb.co.jp,drweb.com,drweb.fr,drweb.kz,drweb.ru###cookie_accept_msg_block
-dazn.com##.w-cookie-banner, [class^=cookieDisclaimer___container]
+dazn.com##.w-cookie-banner
+dazn.com##[class^=cookieDisclaimer___container]
 deepfakeporn.net##.cookie-notice-container
 delta.com##ngc-cookie-banner
 depositfiles.com###cookie_popup
@@ -217,7 +222,9 @@ elifesciences.org##.opt-in-message-bar
 enno.jp##.cookies-eu
 ereg.ets.org,nyaa.net###cookie-warning
 etherscan.io###divcookie
-evaair.com###cboxOverlay, #colorbox
+evaair.com###cookie
+evaair.com#$##modal { background:none!important; }
+evaair.com#$#body.is-modal { overflow:auto!important;-webkit-user-select:auto!important;-moz-user-select:auto!important;-ms-user-select:auto!important;user-select:auto!important;pointer-events:auto!important; }
 evernote.com##.cookie-notice:not(body):not(html)
 excesssecurity.com###webarx-cookie-notice
 ferrari.com##div[class^="CookieBanner__banner"]
@@ -334,7 +341,6 @@ psyarxiv.com##[class^=__cookie-banner__]
 pubs.acs.org###gdpr-message-modal
 pubsonline.informs.org##.cookiePolicy-popup
 radarbox.com###privacy-popup
-radiko.jp###cboxOverlay, #colorbox.policy
 rankchart.org###cc_container
 redhat.com##.redhat-cookie-banner
 royalpanda.com###CookiePolicy
@@ -370,7 +376,6 @@ tohotheater.jp##.optIn
 transcend-info.com###legal_notice
 travel2be.com###alertCookies
 trendmicro.com##.cookie_verif
-trivago.jp###onetrust-consent-sdk
 tumblr.com##.cookies-policy
 twitter.com##.u12-data-protection-notice
 txxx.*##.cookie-notify
