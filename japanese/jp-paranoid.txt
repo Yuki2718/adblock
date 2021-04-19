@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210419
+! Version: 20210420
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -56,6 +56,7 @@ smart-flash.jp##^.adsBlock
 ||af.moshimo.com^$doc
 ||affiliateone.jp^
 ||affiliateone.jp^$3p,badfilter
+||fam-ad.com^
 ||get.mobu.jp^
 ||smart-c.jp^
 
@@ -172,6 +173,7 @@ _omniture.$script,domain=mathworks.com
 *$removeparam=gclid
 *$removeparam=yclid
 /entry_site.pl?SITE=*&afult=$doc,removeparam=/SITE|afult/,domain=discas.net
+/lp.php?p=*&adcd=$doc,removeparam=adcd
 /?adid=*&argument=$doc,removeparam=adid,domain=mouse-jp.co.jp
 /?sc_in=*&ult_in=$doc,removeparam=/sc_in|ult_in/,domain=realestate.yahoo.co.jp
 ?ITRACK_INFO=*&vcptn=$doc,removeparam=/ITRACK_INFO|vcptn/,domain=digi-tag.net
@@ -190,7 +192,6 @@ _omniture.$script,domain=mathworks.com
 ||dlsite.com^*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=/unique_op|utm_medium|utm_source/
 ||hbol.jp^*?cx_clicks_art_mdl=$doc,removeparam=cx_clicks_art_mdl
 ||hbol.jp^*?cx_clicks_series_mdl=$doc,removeparam=cx_clicks_series_mdl
-||michiuru.jp/shopping/lp.php?p=*&adcd=$doc,removeparam=/adcd|_zaf_[a-z]+/
 ||nijichat.jp/promotion/index/*?afid=$doc,removeparam=afid
 ||nttdocomo.co.jp/special_contents/dmagazine/index_af.html?utm_source=$doc,removeparam=/^utm_/
 ||odsyms15.com/click?aid=*&mimp=$doc,removeparam=/mimp|ext.referrer/
