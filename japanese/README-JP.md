@@ -34,7 +34,7 @@ Googleスライドで表示が崩れる方：EasyListの問題で既に[修正�
 <details>
 <summary><strong>網羅性</strong></summary>
 
-日本語サイト<sup>3</sup>のPC用公開フィルタリストとして、2021年2月現在メンテナンスされているものの中で最高のブロック性能を持ちます。とくにアクセス解析については他の日本用フィルタではおまけ程度にしか扱われていませんが、当フィルタはできるだけブロックします。そのため不具合も多いかもしれません<sup>4</sup>。また、当フィルタの管理人は国際的な広告ブロックコミュニティと連携しているため、YoutubeやFacebookなど個人での対応が困難なサイトにもある程度対応できます。これらのサイトの広告は特定条件でしか出なかったり、人によって出方が違ったりするため、コミュニティでの議論や情報を反映させていただいています。
+日本語サイト<sup>3</sup>のPC用公開フィルタリストとして、2021年4月現在メンテナンスされているものの中で最高のブロック性能を持ちます。とくにアクセス解析については他の日本用フィルタではおまけ程度にしか扱われていませんが、当フィルタはできるだけブロックします<sup>4</sup>。また、当フィルタの管理人は国際的な広告ブロックコミュニティと連携しているため、YoutubeやFacebookなど個人での対応が困難なサイトにもある程度対応できます。これらのサイトの広告は特定条件でしか出なかったり、人によって出方が違ったりするため、コミュニティでの議論や情報を反映させていただいています。
 
 </details>
 
@@ -50,7 +50,7 @@ Googleスライドで表示が崩れる方：EasyListの問題で既に[修正�
 <details>
 <summary><strong>高効率</strong></summary>
 
-uBlock Originはトークン化という仕組みにより高速処理を実現しています<sup>8</sup>。ルールがトークン化可能なら、ルール数は[処理時間に](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)[影響しません](https://twitter.com/i/web/status/1289255976198123520)。uBlock Originにおける限り、ルール数が多いと重くなるという議論は[ナイーブな直感に基づいた完全な誤りです](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-204#post-2975580)<sup>9</sup>。当フィルタはできるだけトークン化を意識したルールを心がけており（例外あり）<sup>10</sup>、また非表示フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないセレクタを使うよう心がけているつもりです。さらに、数か月ごとに冗長なルールとデッドドメインのチェックを行い無駄を省いているほか、スクリプトレットについてはプロパティや関数のチェックをできる限り行い、不要なスクリプトレットを追加しないようにしています。
+ほとんどのルールがuBlock Originで最適に処理されるよう調整された、現状唯一の日本用フィルタです。uBlock Originはトークン化という仕組みにより高速処理を実現しています<sup>8</sup>。ルールがトークン化可能なら、ルール数は[処理時間に](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)[影響しません](https://twitter.com/i/web/status/1289255976198123520)。uBlock Originにおける限り、ルール数が多いと重くなるという議論は[ナイーブな直感に基づいた完全な誤りです](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-204#post-2975580)<sup>9</sup>。当フィルタはできるだけトークン化を意識したルールを心がけており（例外あり）<sup>10</sup>、また非表示フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないセレクタを使うよう心がけているつもりです。さらに、数か月ごとに冗長なルールとデッドドメインのチェックを行い無駄を省いているほか、スクリプトレットについてはプロパティや関数のチェックをできる限り行い、不要なスクリプトレットを追加しないようにしています。
 
 </details>
 
