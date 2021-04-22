@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210422
+! Version: 20210423
 
 ! General blocking
 /CookieInfo.
@@ -140,6 +140,7 @@
 ||staticcontent.fxstreet.com/website/mustache/alerts/cookiesalert_
 ||storage.googleapis.com/app*/js/bottom.js$domain=herokuapp.com
 ||synology.com^*/syno_cookie_
+||tags.tiqcdn.com/utag/*/prod/utag.js$script,redirect=noopjs,domain=total.com
 ||transcend-info.com/dist/scripts/cookiegotop.js|
 ||ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
 ||wolframcdn.com/consent/cookie-consent.
@@ -190,6 +191,8 @@ cam4.com###promptArea
 cam4.com##div[class^="CookieConsent"]
 cars.mclaren.com##.n040-cookie-alert
 cbsnews.com###onetrust-banner-sdk
+cebupacificair.com##.gdpr-banner
+cebupacificair.com,ubuntu.com##.cookie-policy
 china-airlines.com###cookieInfoDetails
 china-airlines.com##.top-bar
 chocolatey.org###cookieNoticeAlert
@@ -226,7 +229,7 @@ etherscan.io###divcookie
 evaair.com###cookie
 evaair.com#$##modal { background:none!important; }
 evaair.com#$#body.is-modal { overflow:auto!important;-webkit-user-select:auto!important;-moz-user-select:auto!important;-ms-user-select:auto!important;user-select:auto!important;pointer-events:auto!important; }
-evernote.com##.cookie-notice:not(body):not(html)
+evernote.com##.cookie-notice
 excesssecurity.com###webarx-cookie-notice
 ferrari.com##div[class^="CookieBanner__banner"]
 figshare.com###ck-banner
@@ -348,7 +351,7 @@ redhat.com##.redhat-cookie-banner
 royalpanda.com###CookiePolicy
 rt.com##.cookies__banner
 rutube.ru##.eu-cookie-popup
-rutube.ru,softbankhawksstore.jp##.cookie-consent:not(body):not(html)
+rutube.ru,softbankhawksstore.jp##.cookie-consent
 scorchin.com,xhamsterlive.com##.cookies-reminder
 searchenginejournal.com###cooknote-div
 seikowatches.com##.blk-Disclaimer
@@ -359,6 +362,7 @@ sketch.pixiv.net##.HeaderFixed > .PrivacyPolicyPrompt
 smm.co.jp##.c-cookiePolicy-box
 softbankrobotics.com##.cookie-confirm
 softpedia.com###cookienotif
+soundcloud.com##.announcements > div.sc-list-nostyle
 source.chromium.org###cdk-overlay-0[style="position: static; margin-bottom: 0px;"]:has(simple-snack-bar > span:has-text(cookies))
 spankwire.com###js-react-cookie-policy
 sso.ss-blog.jp##.fixed-bottom
@@ -382,11 +386,10 @@ trendmicro.com##.cookie_verif
 tumblr.com##.cookies-policy
 twitter.com##.u12-data-protection-notice
 txxx.*##.cookie-notify
-ubuntu.com##.cookie-policy
 ungleich.ch###gdprBanner
 userstyles.org##.NotificationLine
 virustotal.com##.disclaimers-container
-voe.sx##.cookieBanner:not(body)
+voe.sx##.cookieBanner
 volkswagen.co.jp###cookiemgmt
 weatheronline.co.uk###EUCookie
 weibo.com##.cookie-disclaimer

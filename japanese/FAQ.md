@@ -1,6 +1,6 @@
 ## 広告ブロック FAQ
 
-最終更新：2021/04/21
+最終更新：2021/04/23
 
 内容は記事執筆時点のものですのでご了承ください。脚注は少し詳しい方向けです。
 
@@ -267,13 +267,51 @@
 
 </details>
 
-### 当サイトのフィルタ
-
-#### Q19 雪フィルタの中を見ると、海外サイト用のルールが結構あります。どのようなサイトが対象なのでしょうか？
+#### Q19 アンチ広告ブロック（広告ブロック解除要求）への対処法を教えてください。
 
 <details>
 
 <summary><strong>A19</strong></summary>
+
+  ご自身でフィルタを書ける人は別として、最良の対処はフィルタ作者に報告することです。uBlock Origin標準設定で出る場合は[こちら](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1618326670/)でも受けつけます。以下では、日本のサイトで比較的よくみるアンチ広告ブロックへの簡易的な対処をまとめました。内容的には、以前に「りぃのなんでも知恵袋」さんの[記事](https://mabidiary.blogspot.com/2019/01/2019.html)にコメントさせていただいたものの更新になります。`hoge.com`でアンチ広告ブロックが出たという仮定です。参考画像は一例で、バリエーションがあります。
+
+  1. `antiblock.org`の場合
+  uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'google_ad_client')`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="3000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。
+
+  2. `BlockAdBlock`の場合
+  uBlock Originでは`hoge.com##+js(nosiif, visibility, 1000)`、AdGuardでは`hoge.com#%#//scriptlet("prevent-bab")`を追加してください。姉妹品にFuckAdBlockがありますが、日本のサイトでは最近ほぼみないため割愛します。
+
+  3. Google Funding Choice Anti-adblockの場合
+  UIはバリエーションが多いので割愛しますが、日本のサイトであれば日本語で解除を要求するのが一つの特徴といえるかもしれません。uBlock Originでは、uBlock filtersが有効ならよほどおかしな設定（過剰購読など）にしない限りみることはありません。AdGuardでは`hoge.com#$#body { overflow: visible !important; }`と`hoge.com#$#body div.fc-ab-root { display: none !important; }`を一行ずつ追加してください。
+
+  4. それら以外
+  アンチ広告ブロックプラグインにはほかにも多くのファミリーがあり、ここで網羅することはできません。また、独自実装のものも増えています。以下ではそうした場合にもしかしたら機能するかもしれない簡易的な対処をまとめます。
+
+  uBlock Origin：まず、以下を追加
+  ```
+  *$image,redirect-rule=1x1.gif,domain=hoge.com
+  *$script,redirect-rule=noop.js,domain=hoge.com
+  ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js:10,domain=hoge.com
+  @@||hoge.com^$ghide
+  ```
+  ダメなら`||hoge.com^$inline-script`に切り替え、ただしサイトの機能を壊す可能性が高い。
+
+  AdGuard：まず、以下を追加
+  ```
+  @@||hoge.com^$generichide
+  ||googlesyndication.com/pagead/js/adsbygoogle.js$script,xmlhttprequest,redirect=googlesyndication-adsbygoogle,domain=hoge.com
+  ```
+  ダメなら`||hoge.com^$csp=script-src 'self' 'unsafe-eval' http: https:`に切り替え、ただしサイトの機能を壊す可能性が高い。
+
+</details>
+
+### 当サイトのフィルタ
+
+#### Q20 雪フィルタの中を見ると、海外サイト用のルールが結構あります。どのようなサイトが対象なのでしょうか？
+
+<details>
+
+<summary><strong>A20</strong></summary>
 
   New York Timesなどの大手英語メディアや日本人利用者が多い海外マンガ、アニメ、あるいはポルノサイトに加え、以下のようなサイトを対象にしています：
   - 他の日本用フィルタで個別対応されているもの
@@ -287,11 +325,11 @@
 
 </details>
 
-#### Q20雪フィルタでCNAMEトラッカー（ファーストパーティートラッカー）はブロックできますか？
+#### Q21 雪フィルタでCNAMEトラッカー（ファーストパーティートラッカー）はブロックできますか？
 
 <details>
 
-<summary><strong>A20</strong></summary>
+<summary><strong>A21</strong></summary>
 
   2020年11月17日追記：[こちら](https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/)の論文を踏まえ、若干記述を修正しました。[First-party trackers host list](https://hostfiles.frogeye.fr/firstparty-only-trackers-hosts.txt)に含まれるものに関しては以前の記述で問題ないのですが、同リストでカバーされていないCNAMEトラッカーもまだたくさんあるようです。
   
@@ -303,21 +341,21 @@
 
 </details>
 
-#### Q21 アクセス解析を独立したリストにわけてもらえませんか？
+#### Q22 アクセス解析を独立したリストにわけてもらえませんか？
 
 <details>
 
-<summary><strong>A21</strong></summary>
+<summary><strong>A22</strong></summary>
 
   アクセス解析は気にする人とそうでない人がわかれるため、そうしたいところですがメンテナンスコストの点で難しいです。リストをわけると、非表示フィルタをメイン単独の場合とサブリストも購読する場合とでわけて考える必要がでてきます。既にみぞれでそういうケースは多数発生していますが、みぞれの場合はまだ限定的です。アクセス解析の場合だとアクセスカウンターやレコメンデーションエンジンを使用する多くのサイトでそうする必要がでてきます。また、広告と解析は常にきっぱりわけられるわけでもなく、現在の分類は正直に申し上げますと大雑把です。リストをわけるとなれば、判断に迷うケースや現実的に言って誤分類も出てきます。そして広告スクリプトを解析に誤分類してしまうと、広告漏れにもつながります。
 
 </details>
 
-#### Q22 雪フィルタの提供をやめてAdGuard Japaneseの強化に集中したほうが効率がよいのでは？
+#### Q23 雪フィルタの提供をやめてAdGuard Japaneseの強化に集中したほうが効率がよいのでは？
 
 <details>
 
-<summary><strong>A22</strong></summary>
+<summary><strong>A23</strong></summary>
 
   最初からAdGuardFiltersの書き込み権限があればそうしたかもしれません。とはいえ、方針も異なりますし、自己管理のフィルタだからできることもあります。たとえばuBlock Originに完全特化して専用機能・最新機能をふんだんに使うこと、トラッカーを即時ブロックすること（一定の不具合チェックはしています）などです。AdGuard公式フィルタにルールを追加する場合はどうしても慎重になりますし、チームの方針にしたがう必要もあります。とはいえ、フィルタの概念に気づいている広告ブロックユーザー自体が少なく、また、AdGuard JapaneseがuBlock OriginやBraveの標準リストでもあることから、これを改善していくのが最良と認識しています。ちなみに、雪を提供している理由の一つに、日本語ユーザーにおいて標準のフィルタリストを外し日本用フィルタ一本に絞るというのが割と行われているようだというのがあります。EasyList, EasyPrivacyの不具合の多さから理解はできますが、長期的には好ましくないと思っています<sup>27</sup>。不具合が多い最大の理由は、日本語ユーザーがあまり報告を行わない点にあると思われるため、雪を媒介に不具合報告を標準リストに反映させるという意味もあります。
 
@@ -325,11 +363,11 @@
 
 </details>
 
-#### Q23 既に正規表現でブロックされていても広告ドメインを追加するのはなぜですか？
+#### Q24 既に正規表現でブロックされていても広告ドメインを追加するのはなぜですか？
 
 <details>
 
-<summary><strong>A23</strong></summary>
+<summary><strong>A24</strong></summary>
 
   ほとんど好みの問題ですが、処理の重い正規表現チェックが入るリクエストを少しでも減らすためです。トークン化可能な一般ルールでブロックされている場合は原則として追加しません。雪フィルタは数か月ごとにデッドドメインのスキャンも行っているため、無駄になる心配もありません。
 
@@ -337,11 +375,11 @@
 
 ### その他一般
 
-#### Q24 Youtubeで検索が機能しない、メニューが開けない、接続が途切れるなど不具合が出る
+#### Q25 Youtubeで検索が機能しない、メニューが開けない、接続が途切れるなど不具合が出る
 
 <details>
 
-<summary><strong>A24</strong></summary>
+<summary><strong>A25</strong></summary>
 
   2021年3月22日追記：Twitterなどで同様の報告が後を絶たないようなので、ABP Japanese filtersを[ブラックリスト指定](https://github.com/uBlockOrigin/uAssets/issues/8738)させていただきました。
 
@@ -350,11 +388,11 @@
 </details>
 
 
-#### Q25 なにか言い残したことは？
+#### Q26 なにか言い残したことは？
 
 <details>
 
-<summary><strong>A25</strong></summary>
+<summary><strong>A26</strong></summary>
 
   AdGuardに関する某掲示板で私を指名するのはやめてください。ちゃんと報告していただければAdGuardチームの誰かが対処するはずです。私を含めチームの何名かはただの無償ボランティア<sup>28</sup>で、チームの誰かから依頼された場合は別として、空き時間で適当に目についた問題に対処しているだけです。ところで、スクリーンショットのみで説明がなく、何をしてほしいのか不明瞭な報告がたまにあります。大抵、チームから呼ばれて私がエスパーするはめになります。日本語で構いませんので（スクリーンショット中に日本語で説明を入れるのは控えてください）、一言、説明を加えてください。できればスクリーンショットにもマーキングをしていただけるとなおよいです。また、ご希望に添えない場合もあります。とくにDNS用のフィルタはブロックと不具合のバランスをとるのが難しいため、その傾向が強いです。
   

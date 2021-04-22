@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210420
+! Version: 20210423
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -21,6 +21,7 @@
 
 .php?ad=
 /banners/300
+/gpt.js$script,xhr
 /9[a-g0-9]{21}\.online\/9[a-g0-9]{21}\.js$/$script,3p,badfilter
 /^https?:\/\/[a-z0-9]{7,}\.online\/[a-z0-9]{7,}\.js$/$script,3p
 ||accuweather.com/bundles/prebid.$important
@@ -169,9 +170,6 @@ _omniture.$script,domain=mathworks.com
 ||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=$doc
 
 &af_click_lookback=*&af_siteid=$doc,removeparam=/af_click_lookback|af_siteid/,domain=appsflyer.com
-*$removeparam=fbclid
-*$removeparam=gclid
-*$removeparam=yclid
 /entry_site.pl?SITE=*&afult=$doc,removeparam=/SITE|afult/,domain=discas.net
 /lp.php?p=*&adcd=$doc,removeparam=adcd
 /?adid=*&argument=$doc,removeparam=adid,domain=mouse-jp.co.jp
