@@ -276,9 +276,19 @@
   ご自身でフィルタを書ける人は別として、最良の対処はフィルタ作者に報告することです。uBlock Origin標準設定で出る場合は[こちら](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1618326670/)でも受けつけます。以下では、日本のサイトで比較的よくみるアンチ広告ブロックへの簡易的な対処をまとめました。内容的には、以前に「りぃのなんでも知恵袋」さんの[記事](https://mabidiary.blogspot.com/2019/01/2019.html)にコメントさせていただいたものの更新になります。`hoge.com`でアンチ広告ブロックが出たという仮定です。参考画像は一例で、バリエーションがあります。
 
   1. `antiblock.org`の場合
+  
+  以下のようなUIです。
+  
+  ![antiadblock_org ](https://user-images.githubusercontent.com/58900598/115764834-fd251600-a3e0-11eb-9fc4-524a0abf14f6.png)
+
   uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'google_ad_client')`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="3000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。
 
   2. `BlockAdBlock`の場合
+  
+  以下のようなUIです。
+  
+  ![bab](https://user-images.githubusercontent.com/58900598/115764861-0615e780-a3e1-11eb-8ff8-88a083be4056.png)
+  
   uBlock Originでは`hoge.com##+js(nosiif, visibility, 1000)`、AdGuardでは`hoge.com#%#//scriptlet("prevent-bab")`を追加してください。姉妹品にFuckAdBlockがありますが、日本のサイトでは最近ほぼみないため割愛します。
 
   3. Google Funding Choice Anti-adblockの場合
