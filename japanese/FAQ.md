@@ -277,9 +277,13 @@
 
   1. `antiblock.org`の場合
   
-  以下のようなUIです。
+  以下のようなUIです。 
   
-  ![antiadblock_org ](https://user-images.githubusercontent.com/58900598/115764834-fd251600-a3e0-11eb-9fc4-524a0abf14f6.png)
+  ![antiblock_org_var1](https://user-images.githubusercontent.com/58900598/115898288-58660f80-a498-11eb-808a-c8f5300bd0d3.png)
+  
+  ![antiblock_org_var2](https://user-images.githubusercontent.com/58900598/115898305-5bf99680-a498-11eb-92ca-7f79b9932c4a.png)
+  
+  ![antiadblock_org_var3](https://user-images.githubusercontent.com/58900598/115898594-b0047b00-a498-11eb-8b5e-922e48b95855.png)
 
   uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'google_ad_client')`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="3000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。
 
