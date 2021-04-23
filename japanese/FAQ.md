@@ -292,9 +292,11 @@
   uBlock Originでは`hoge.com##+js(nosiif, visibility, 1000)`、AdGuardでは`hoge.com#%#//scriptlet("prevent-bab")`を追加してください。姉妹品にFuckAdBlockがありますが、日本のサイトでは最近ほぼみないため割愛します。
 
   3. Google Funding Choice Anti-adblockの場合
+
   UIはバリエーションが多いので割愛しますが、日本のサイトであれば日本語で解除を要求するのが一つの特徴といえるかもしれません。uBlock Originでは、uBlock filtersが有効ならよほどおかしな設定（過剰購読など）にしない限りみることはありません。AdGuardでは`hoge.com#$#body { overflow: visible !important; }`と`hoge.com#$#body div.fc-ab-root { display: none !important; }`を一行ずつ追加してください。
 
   4. それら以外
+  
   アンチ広告ブロックプラグインにはほかにも多くのファミリーがあり、ここで網羅することはできません。また、独自実装のものも増えています。以下ではそうした場合にもしかしたら機能するかもしれない簡易的な対処をまとめます。
 
   uBlock Origin：まず、以下を追加
