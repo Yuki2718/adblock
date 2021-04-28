@@ -5,7 +5,7 @@
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
 
-I can't guarantee these filers won't cause problems. If you found problems, report it by filling in all the mandatory items in Issue template; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard). They are not exactly what I myself use and shared solely for others' sake, so please don't blame me if I haven't updated for a while.
+I can't guarantee these filers won't cause problems. If you found problems, report it by filling in all the mandatory items in Issue template; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard).
 
 <details>
 <summary><strong>adguard</strong></summary>
@@ -15,12 +15,12 @@ Because not needed. Trusted filters can inject javascript into pages and thus ca
 
 ### AdGuard Social media Plus
 
-[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social) tends to rely too much on cosmetic filters IMHO. This filter consists of network filters only and complements Social media filter.
+[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social) tends to rely too much on cosmetic filters IMHO. This list consists of network filters only and complements Social media filter.
 - `||connect.facebook.net^*/sdk.js`
 - `||platform.twitter.com/widgets.js`
 - `||static.evernote.com^$third-party`
 
-are commented out as some people will need them. Those who are sure don't need them can add them to User Rules without the initial `!`.
+are commented out as some people will need them. Those who don't need them can add them to User Rules without the initial `!`.
 
 Exclusion:
 - Follow buttons & comment widgets - they can be useful to some people and often Social media filter doesn't block them.
@@ -30,7 +30,7 @@ Exclusion:
 
 ### AdGuard Tracking Protection Plus
 
-**Update** (2021-03-16): Many things have changed since I published this list. Now I'm a maintainer of the official AdGuard lists so tend to add trackers directly to AdGuard Tracking Protection filter. Therefore, Tracking Protection Plus became more of an experiment field for rules I'm not much sure about false positive. When I published this list, there were many unique entries not found in any other lists, but EasyPrivacy has caught up and to avoid redundancy for those who use both AdGuard Tracking Protection and EasyPrivacy I consolidated to EasyPrivacy's writing as far as the likelihood of false positive by doing so is not high. As a result, now this list has many duplicates with EasyPrivacy.
+**Update** (2021-03-16): Many things have changed since I published this list. Now I'm a maintainer of the official AdGuard lists so tend to add trackers directly to AdGuard Tracking Protection filter. Therefore, Tracking Protection Plus became more of an experiment field for rules I'm not much sure about false positive. When I published this list, there were many unique entries not found in any other lists, but EasyPrivacy has caught up and to avoid redundancy for those who use all the AdGuard Tracking Protection, EasyPrivacy, and this list I consolidated to EasyPrivacy's writing as far as the likelihood of false positive by doing so is not high. As a result, now this list has many duplicates with EasyPrivacy.
 
 [AdGuard Tracking Protection filter](https://kb.adguard.com/en/general/adguard-ad-filters#privacy) is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage on average which this filter aims to complement. Some of bug reports are commented out but you can add them to User Rules without the initial `!`. Some rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
 
@@ -65,7 +65,7 @@ I really don't understand why it's so special to some people. Apparently they st
 
 ### Yuki's uBlock Japanese filters
 
-The most comprehensive, block-first, and efficient Japanese list **only for uBlock Origin** that removes ads and analytics on desktop, designed for advanced user. Some of its rules are taken from - or rather intentionally made to be identical with - [EasyList, EasyPrivacy](https://easylist.to/), [AdGuard Base, AdGuard Tracking Protection](https://kb.adguard.com/en/general/adguard-ad-filters), [uBlock Built-in lists](https://github.com/uBlockOrigin/uAssets/), [Peter Lowe's list](https://pgl.yoyo.org/adservers/), [Fanboy's Enhanced Trackers List](https://www.fanboy.co.nz/filters.html), [EasyList China](http://abpchina.org/forum/forum.php), [RU AdList](https://forums.lanik.us/viewforum.php?f=102), [280blocker domain list](https://280blocker.net/download/), and [Brave Unbreak](https://github.com/brave/adblock-lists)<sup>1</sup>. This way even if an user added any of those lists (which is uncommon in Japanese adblock user) along with my list, those duplicates will be discarded and can do no harm. This list is also strongly influenced by [Tofu filter](http://tofukko.r.ribbon.to/abp.html) though rules are not directly taken for copy right problems.
+The most comprehensive, block-first, and efficient Japanese list **only for uBlock Origin** that removes ads and analytics on PC. Some rules are taken from - or rather intentionally made to be identical with - [EasyList, EasyPrivacy](https://easylist.to/), [AdGuard Base, AdGuard Tracking Protection](https://kb.adguard.com/en/general/adguard-ad-filters), [uBlock Built-in lists](https://github.com/uBlockOrigin/uAssets/), [Peter Lowe's list](https://pgl.yoyo.org/adservers/), [Fanboy's Enhanced Trackers List](https://www.fanboy.co.nz/filters.html), [EasyList China](http://abpchina.org/forum/forum.php), [RU AdList](https://forums.lanik.us/viewforum.php?f=102), [280blocker domain list](https://280blocker.net/download/), and [Brave Unbreak](https://github.com/brave/adblock-lists)<sup>1</sup>. This way even if an user added any of those lists along with my list, those duplicates will be discarded and thus can do no harm. This list is also strongly influenced by [Tofu filter](http://tofukko.r.ribbon.to/abp.html) though rules are not directly taken to avoid copy right infringement.
 
 <sub>1: uBlock Built-in and 280blocker domain list are out of CC BY-SA license. I hope and believe rules taken from them are within a range of what filter authors can generally think of.　Brave Unbreak is under MIT license.</sub>
 
@@ -95,7 +95,7 @@ Removes annoyances mainly on Japanese sites. Some rules are taken from or influe
 
 ### Yuki's Blog parts filters
 
-This removes blog parts and ranking buttons on Japanese websites. Included in Yuki's uBlock Japanese filters - Annoyances
+Removes blog parts and ranking buttons on Japanese websites. Included in Yuki's uBlock Japanese filters - Annoyances
 
 Exclusion:
 - Potentially useful parts or buttons
@@ -112,6 +112,13 @@ This is a variant of Yuki's Blog parts filters for adult sites. Included in Yuki
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
 
+### Yuki's Blogroll filters
+
+Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's uBlock Japanese filters - Annoyances
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt&title=Yuki's%20Blogroll%20filters">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt)
+
 ### Sable filters 2
 
 Inspired by Sable filters (discontinued), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in Yuki's uBlock Japanese filters - Annoyances
@@ -119,9 +126,9 @@ Inspired by Sable filters (discontinued), this removes cookie consents. Main tar
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
 
-### Anti-scam enhancer for 280blocker ABP format list（only for AdGuard for Android and uBlock Origin）
+### Anti-scam enhancer for 280blocker adblock filter（only for AdGuard for Android and uBlock Origin）
 
-Enhance anti-scam capability of [280blocker for Japanese mobile site (ABP format)](https://280blocker.net/download/) by utilizing advanced capability of AdGuard/uBlock Origin. Only this list is licensed under CC0 1.0.
+Enhance anti-scam capability of [280blocker adblock filter](https://280blocker.net/download/) by utilizing advanced capability of AdGuard/uBlock Origin. Only this list is licensed under CC0 1.0.
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
