@@ -140,19 +140,13 @@ Enhance anti-scam capability of [280blocker adblock filter](https://280blocker.n
 
 All the filters/rules in this category are for uBlock Origin. dynamic-rules.txt or dynamic-rules-mob.txt can be imported to My rules whereas anti-allowlist.txt and/or static-rules.txt should be copied and pasted into My filters. You can subscribe the latter two instead by importing their raw text URL into Filter lists, but as they are not frequently updated I don't make them subscription filter.
 
-### anti-allowlist.txt
+### Yuki's uBlock Anti-allowlist (anti-allowlist.txt)
 
 This is to counter unnecessary or too generic allowlists which were not addressed or won't be addressed by the maintainer. Only for advanced user as it can cause problems.
 
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/anti-allowlist.txt)
 
-### dynamic-rules-mob.txt
-
-See below, it's a mobile version of ublock-dynamic-rules.txt.
-
-[View Rules](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules-mob.txt)
-
-### dynamic-rules.txt
+### Yuki's uBlock Dynamic Rules (dynamic-rules.txt)
 
 Nooplists for medium mode of uBlock Origin dedicated for English user. The objective is to help those non-techie, yet security-conscious, people to use the mode. Payment services and mobile sites are out-of-scope<sup>1</sup>. In addition, following rules are included (Update: removed `* localhost * block` as it causes trouble on some particular case):
 
@@ -161,13 +155,19 @@ Nooplists for medium mode of uBlock Origin dedicated for English user. The objec
 
 [View Rules](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules.txt)
 
+### Yuki's uBlock Dynamic Rules for mobile (dynamic-rules-mob.txt)
+
+Mobile version of Yuki's uBlock Dynamic Rules
+
+[View Rules](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/dynamic-rules-mob.txt)
+
 Q: Why X is nooped, it's bad!
 
 A: See the purpose, this list is built to make as few breakage as possible for as many English user. This doesn't mean it should be used 'as is' - still each user should train their rules (obviously you have to add many rules if you browse non-English sites). Even with lax rules medium mode is much better than easy mode in terms of blocking.
 
 <sub>1: I live in Japan and don't have full access to US, UK, etc. payment/shopping/banking services. Until you get accustomed to medium mode, it may be advisable to turn medium mode off on such sites. They anyway know much about you.</sub>
 
-### static-rules.txt
+### Yuki's uBlock Static Rules (static-rules.txt)
 
 WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea<sup>2</sup>. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules<sup>3</sup> and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter and uBlock filters - Annoyances which are relatively small in size and rarely break pages; however, they only block minimal set of the plugins. This list includes 1) rules for the plugins not on Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer (thanks to @gwarser), and 3) a regex rule focused only on the latest survey scam campaign. Want more protection? Assuming you've already using medium mode, you know default-deny approach well. @jawz101 provides a good [wordpress plugins whitelist](https://raw.githubusercontent.com/jawz101/ublockOrigin_wordpressWhitelist/master/my-ublock-static-filters_wordpressWhitelist.txt) which should be used with an entire block rule for the plugin directory.
 
