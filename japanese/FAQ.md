@@ -278,6 +278,8 @@
   ![antiblock_org_var2](https://user-images.githubusercontent.com/58900598/115898305-5bf99680-a498-11eb-92ca-7f79b9932c4a.png)
   
   ![antiadblock_org_var3](https://user-images.githubusercontent.com/58900598/115898594-b0047b00-a498-11eb-8b5e-922e48b95855.png)
+  
+  ![antiblock_org_var4](https://user-images.githubusercontent.com/58900598/116763221-0f91f600-aa58-11eb-8b00-59be52128603.png)
 
   uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'google_ad_client')`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="3000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。
 
@@ -285,7 +287,9 @@
   
   以下のようなUIです。
   
-  ![bab](https://user-images.githubusercontent.com/58900598/115764861-0615e780-a3e1-11eb-8ff8-88a083be4056.png)
+  ![bab_var1](https://user-images.githubusercontent.com/58900598/115764861-0615e780-a3e1-11eb-8ff8-88a083be4056.png)
+  
+  ![bab_var2](https://user-images.githubusercontent.com/58900598/116763515-9fd03b00-aa58-11eb-9049-2adcf1efedcb.png)
   
   uBlock Originでは`hoge.com##+js(nosiif, visibility, 1000)`、AdGuardでは`hoge.com#%#//scriptlet("prevent-bab")`を追加してください。姉妹品にFuckAdBlockがありますが、日本のサイトでは最近ほぼみないため割愛します。
 
