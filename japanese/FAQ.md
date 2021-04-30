@@ -1,6 +1,6 @@
 ## 広告ブロック FAQ
 
-最終更新：2021/04/28
+最終更新：2021/05/01
 
 内容は各項目執筆時点のものですのでご了承ください。脚注は少し詳しい方向けです。
 
@@ -291,7 +291,7 @@
 
   3. Google Funding Choice Anti-adblockの場合
 
-  UIはバリエーションが多いので割愛しますが、日本のサイトであれば日本語で解除を要求することが多く、またメディアサイトでの使用が多いのが特徴といえるかもしれません。uBlock Originでは、uBlock filtersが有効ならよほどおかしな設定（過剰購読など）にしない限りみることはありません。AdGuardでは`hoge.com#$#body { overflow: visible !important; }`と`hoge.com#$#body div.fc-ab-root { display: none !important; }`を一行ずつ追加してください。
+  UIはバリエーションが多いので割愛しますが、日本のサイトであれば日本語でサイトの名前が警告メッセージに含まれていることが多い（常にではありません）のが特徴といえるかもしれません。×ボタンで消せるタイプのものもあります。uBlock Originでは、uBlock filtersが有効ならよほどおかしな設定（過剰購読など）にしない限りみることはありません。AdGuardでは`hoge.com#$#body { overflow: visible !important; }`と`hoge.com#$#body div.fc-ab-root { display: none !important; }`を一行ずつ追加してください。
 
   4. それら以外
   
