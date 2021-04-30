@@ -289,7 +289,7 @@
   
   ![bab_var1](https://user-images.githubusercontent.com/58900598/115764861-0615e780-a3e1-11eb-8ff8-88a083be4056.png)
   
-  ![bab_var2](https://user-images.githubusercontent.com/58900598/116763515-9fd03b00-aa58-11eb-9049-2adcf1efedcb.png)
+  ![bab_var2](https://user-images.githubusercontent.com/58900598/116763631-06555900-aa59-11eb-94d0-e61209fecde3.png)
   
   uBlock Originでは`hoge.com##+js(nosiif, visibility, 1000)`、AdGuardでは`hoge.com#%#//scriptlet("prevent-bab")`を追加してください。姉妹品にFuckAdBlockがありますが、日本のサイトでは最近ほぼみないため割愛します。
 
