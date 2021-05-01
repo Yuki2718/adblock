@@ -257,7 +257,7 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 <details>
 <summary>註</summary>
 
-<sub>1: AdGuardで使用する場合、最大の問題はspecific-generic（[解決予定](https://github.com/AdguardTeam/CoreLibs/issues/1437)）, redirect-rule, domain=のワイルドカードでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。ほかにもAdGuard - uBlock Origin間にはスクリプトレットやProcedural comsetic filtersの仕様の違いがいろいろあり、気づき次第報告していますが今後もそうしたことが起こるかもしれません。PCでAdGuardをご利用の場合、もちフィルタを使用するか、あるいはAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
+<sub>1: AdGuardで使用する場合、最大の問題はspecific-generic（[解決予定](https://github.com/AdguardTeam/CoreLibs/issues/1437)）, redirect-rule, domain=のワイルドカード, script以外のHTMLフィルタでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。ほかにもAdGuard - uBlock Origin間にはスクリプトレットやProcedural comsetic filtersの仕様の違いがいろいろあり、気づき次第報告していますが今後もそうしたことが起こるかもしれません。PCでAdGuardをご利用の場合、もちフィルタを使用するか、あるいはAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
 
 <sub>2: AdGuardならスクリプトレットに互換性があるので許容範囲です。</sub>
 

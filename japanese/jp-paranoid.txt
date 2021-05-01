@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210427
+! Version: 20210501
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -194,6 +194,7 @@ _omniture.$script,domain=mathworks.com
 ||cinematoday.jp/page/*?g_clk=$doc,removeparam=g_clk
 ||ck.storematch.jp/bc?d=*&B=$doc,removeparam=/d|B|sc_i|sig/
 ||dlsite.com^*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=/unique_op|utm_medium|utm_source/
+||duckduckgo.com/?t=$doc,removeparam=t
 ||hbol.jp^*?cx_clicks_art_mdl=$doc,removeparam=cx_clicks_art_mdl
 ||hbol.jp^*?cx_clicks_series_mdl=$doc,removeparam=cx_clicks_series_mdl
 ||nijichat.jp/promotion/index/*?afid=$doc,removeparam=afid
