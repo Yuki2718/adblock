@@ -281,13 +281,13 @@
   
   ![antiblock_org_var4](https://user-images.githubusercontent.com/58900598/116763221-0f91f600-aa58-11eb-8b00-59be52128603.png)
 
-  uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'google_ad_client')`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="3000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。
+  uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'google_ad_client')`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="7000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。
 
   2. `BlockAdBlock`の場合
   
   以下のようなUIです。
   
-  ![bab_var1](https://user-images.githubusercontent.com/58900598/115764861-0615e780-a3e1-11eb-8ff8-88a083be4056.png)
+  ![bab_var1](https://user-images.githubusercontent.com/58900598/116775902-a4b8dd00-aaa0-11eb-913b-f9643ed3f5cf.png)
   
   ![bab_var2](https://user-images.githubusercontent.com/58900598/116763631-06555900-aa59-11eb-94d0-e61209fecde3.png)
   
