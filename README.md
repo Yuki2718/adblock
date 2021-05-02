@@ -54,6 +54,13 @@ I really don't understand why it's so special to some people. Apparently they st
 
 <sub>1: uBlock Origin can now fight against this by [strict3p](https://github.com/gorhill/uBlock/commit/bde3164eb445a4e74acca303ec9fa07f82ba1b1c) option.</sub>
 
+### Anti Anti-adblock Enhancer for AdGuard
+
+Enhances anti anti-adblock capability of AdGuard by generic filters. Works on AdGuard for Windows, AdGuard for Android, AdGuard for Mac, and AdGuard Browser Extensions; not on AdGuard for Safari, AdGuard for iOS, and AdGuard Contents Blocker. The list never address individual cases so report detection to AdGuard, not here. This list also mitigates malicioous popups often seen on porn sites, pirate sites, and/or short links. Since most of filters are taken form uBlock filters, this list is provided under GPLv3.
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt)
+
 </details>
 
 <details>
@@ -92,6 +99,13 @@ Removes annoyances mainly on Japanese sites. Some rules are taken from or influe
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
+
+### Yuki's uBlock Japanese filters - Annoyances+
+
+Removes annoyances mainly on Japanese sites which only some user, not everyone, want to remove.
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances+.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances+.txt)
 
 ### Yuki's Blog parts filters
 

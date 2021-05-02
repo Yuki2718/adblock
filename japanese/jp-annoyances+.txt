@@ -1,0 +1,15 @@
+! Title: Yuki's uBlock Japanese filters - Annoyances+
+! Expires: 5 days
+! Homepage: https://github.com/Yuki2718/adblock
+! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+! Version: 20210502
+
+! YT プロモーションを含みます
+youtube-nocookie.com,youtube.com##.ytp-paid-content-overlay
+
+! nakanohito chat
+@@||support-beacon.nakanohito.jp/widget/$xhr,badfilter
+@@||support-widget.nakanohito.jp/chatbot$css,script,badfilter
+
+! グラブル左
+game.granbluefantasy.jp##body.jssdk > div[class^=_2]:first-child > div[class^=_2]:first-child > div[data-reactid=".0"]:only-child > div[data-menubar-container][data-reactid=".0.0"]

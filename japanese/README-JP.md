@@ -86,14 +86,14 @@ Googleスライドで表示が崩れる方：EasyListの問題で既に[修正�
 - Google Safe Browsingでカバーされている、またはモバイル限定の悪質サイト
 - デッドドメイン
 
-### Yuki's uBlock Japanese filters - Paranoid　（大雪フィルタ）
+### Yuki's uBlock Japanese filters - Paranoid （大雪フィルタ）
 
 Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。<strong>自己責任で使用してください</strong>。トラッキングパラメータも除去するほか、一部、トラッキングパラメータを含むリンクからの移動もブロックします。この場合、<strong>「uBlock Origin は、このページの読み込みをブロックしました」画面で右側の虫眼鏡アイコンをクリックすると、トラッキングパラメータを除いたURLが（場合によってはいくつか）表示され、そのままクリックできます。</strong>ただし、ブロックするとあまりに煩雑になる場合はブロックしません。また、gwarser氏の[Block access to LAN](https://github.com/gwarser/filter-lists/blob/master/lan-block.txt)フィルタによるLANへの攻撃を防ぐルールも含みます。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Paranoid">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
 
-### Yuki's uBlock Japanese filters - Social　（あられフィルタ）
+### Yuki's uBlock Japanese filters - Social （あられフィルタ）
 
 ソーシャル要素をブロックするフィルタです。[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social)との互換性を重視しており、一部、共通のルールがあります。ブロック優先主義のため、非表示にしかできないものは迷惑度が高いものを除き無視します。また、ブロックできても他の要素まで巻き込んでしまう場合はブロックしません。これらも非表示にしたい方や、海外のサイトもご覧になる方はAdGuard Social mediaを併用してください。
 
@@ -121,7 +121,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 - 対象に入るが、非表示にしかできず、かつ一定の基準を満たさないもの
 
 
-### Yuki's uBlock Japanese filters - Annoyances　（みぞれフィルタ）
+### Yuki's uBlock Japanese filters - Annoyances （みぞれフィルタ）
 
 広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt), [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances), [uBlock filters – Annoyances](https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt), および[Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances)と共通のルールもあります。AdGuard AnnoyancesおよびuBlock filters – Annoyancesとの互換性を意識していますが、Socialの場合ほどではありません（併用可能ですが、多少の無駄が生じます）。
 
@@ -159,8 +159,6 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 - ブログ以外のブックマークボタン、クリップ系
 - 一般のチャットウィジェット
 - コロナウイルス関係で、一般的な通知ブロックで防げないもの（一時的なものなので）
-- Youtubeで一部の動画に表示される「プロモーションを含みます」：コメントアウトしています。消したい方は、Myフィルターに`youtube-nocookie.com,youtube.com##.ytp-paid-content-overlay`を追加してください）
-- グランブルーファンタジー左側のバー：コメントアウトしています。消したい方は、`! グラブル左`の下の行の先頭の`!`を除いたものをMyフィルターにコピー＆ペーストしてください
 
 モバイルサイトは限定的に対応します、メインはPCです。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください（この場合、モバイル用のフィルタと併用してください。ただし、一定の無駄は生じます）<sup>19</sup>。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初、Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
 
@@ -197,6 +195,26 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt)
 
 </details>
+
+### Yuki's uBlock Japanese filters - Annoyances+ （ひょうフィルタ）
+
+人によって要否がわかれる、微妙な迷惑要素をブロックするフィルタです。対象をよく見て、必要な人だけ購読してください。
+
+#### 対象
+
+- Youtubeで一部の動画に表示される「プロモーションを含みます」
+- 侵襲的ではないが、必要性も低そうなチャットウィジェット
+- グランブルーファンタジー左側のバー
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances+.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">購読する</a>
+[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances+.txt)
+
+### Anti Anti-adblock Enhancer for AdGuard （AdGuard アンチ広告ブロック対策強化パッチ）
+
+AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ拡張機能専用です。AdGuard for Safari, AdGuard for iOS, AdGuardコンテンツブロッカーではあまり機能しません。AdGuardのアンチ広告ブロック対策機能を汎用フィルタで底上げします。個別対策はしませんので、対応漏れがについてはこちらではなくAdGuard公式に報告してください（表示崩れなどの不具合報告は受けつけます）。一部アダルトサイト、違法コンテンツサイト、短縮リンクなどでよくみられる悪質ポップアップも軽減します。HTTPSフィルタリングが有効でないとあまり機能しません。AdGuard標準フィルタリストへの追加を想定していますが、280blocker adblock filterなどほかのリストに追加してもある程度の効果はあると思います。uBlock filtersから取られたルールが多いため、ライセンスはGPLv3としています。
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">購読する</a>
+[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt)
 
 ### 280blocker adblock filter 悪質サイト対策強化パッチ
 
