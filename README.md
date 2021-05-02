@@ -56,6 +56,8 @@ I really don't understand why it's so special to some people. Apparently they st
 
 ### Anti Anti-adblock Enhancer for AdGuard
 
+Important note: To get the most of the list, you have to turn HTTPS filtering on AND **turn DNS filtering OFF**. It's not that I recommend turning DNS filtering off generally, but that this list requires doing so. 
+
 Enhances anti anti-adblock capability of AdGuard by generic filters. Works on AdGuard for Windows, AdGuard for Android, AdGuard for Mac, and AdGuard Browser Extensions; not on AdGuard for Safari, AdGuard for iOS, and AdGuard Contents Blocker. The list never address individual cases so report detection to AdGuard, not here. This list also mitigates malicioous popups often seen on porn sites, pirate sites, and/or short links. Since most of filters are taken form uBlock filters, this list is provided under GPLv3.
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">Subscribe</a>
