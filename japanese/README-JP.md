@@ -206,12 +206,14 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 - 侵襲的ではないが、必要性も低そうなチャットウィジェット
 - グランブルーファンタジー左側のバー
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances+.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">購読する</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances%2B.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances+.txt)
 
 ### Anti Anti-adblock Enhancer for AdGuard （AdGuard アンチ広告ブロック対策強化パッチ）
 
-AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ拡張機能専用です。AdGuard for Safari, AdGuard for iOS, AdGuardコンテンツブロッカーではあまり機能しません。AdGuardのアンチ広告ブロック対策機能を汎用フィルタで底上げします。個別対策はしませんので、対応漏れはこちらではなくAdGuard公式に報告してください（表示崩れなどの不具合報告は受けつけます）。一部アダルトサイト、違法コンテンツサイト、短縮リンクなどでよくみられる悪質ポップアップも軽減します。HTTPSフィルタリングが有効でないとあまり機能しません。また、**DNSフィルタリングが有効の場合、機能が半減します**（リソースリダイレクトの問題）。とはいえDNSフィルタリングにはメリットもあるため、総合的に判断してください。AdGuard標準フィルタリストへの追加を想定していますが、280blocker adblock filterなどほかのリストに追加してもある程度の効果はあると思います。uBlock filtersから取られたルールが多いため、ライセンスはGPLv3としています。
+<strong>当リストをご利用の場合、「信頼するフィルタ」のチェックとHTTPSフィルタリングが必須です。また、DNSフィルタリングが有効の場合、機能が半減します（リソースリダイレクトの問題）。とはいえDNSフィルタリングにはメリットもあるため、各自の優先項目に応じて総合的に判断してください。</strong>
+
+AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ拡張機能専用です。AdGuard for Safari, AdGuard for iOS, AdGuardコンテンツブロッカーではあまり機能しません。AdGuardのアンチ広告ブロック対策機能を汎用フィルタで底上げします。個別対策はしませんので、対応漏れはこちらではなくAdGuard公式に報告してください（表示崩れなどの不具合報告は受けつけます）。一部アダルトサイト、違法コンテンツサイト、短縮リンクなどでよくみられる悪質ポップアップも軽減します。が有効でないとあまり機能しません。AdGuard標準フィルタリストへの追加を想定していますが、280blocker adblock filterなどほかのリストに追加してもある程度の効果はあると思います。uBlock filtersから取られたルールが多いため、ライセンスはGPLv3としています。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt)
