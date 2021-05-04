@@ -10,7 +10,7 @@ I can't guarantee these filers won't cause problems. If you found problems, repo
 <details>
 <summary><strong>adguard</strong></summary>
 
-<strong>Do NOT check the "Trusted" box if you subscribe Social media Plus and/or Tracking Protection Plus!</strong>
+<strong>Do NOT check the "Trusted" box if you subscribe these!</strong>
 Because not needed. Trusted filters can inject javascript into pages and thus can potentially be risky. Of course I'm not going to do anything nasty with any of my filters, but imagine what if my Github account was hacked. I'd like to encourage a basic security practice.
 
 ### AdGuard Social media Plus
@@ -56,7 +56,7 @@ I really don't understand why it's so special to some people. Apparently they st
 
 ### Anti Anti-adblock Enhancer for AdGuard
 
-<strong> Check the Trusted box if you use this list as you trust me! To get the most of the list, you have to turn HTTPS filtering on AND turn DNS filtering OFF. It's not that I recommend turning DNS filtering off generally, but that this list requires doing so for full function. </strong>
+<strong>To get the most of the list, you have to turn HTTPS filtering on AND turn DNS filtering OFF. It's not that I recommend turning DNS filtering off generally, but that this list requires doing so for full function.</strong>
 
 Enhances anti anti-adblock capability of AdGuard by generic filters. Works on AdGuard for Windows, AdGuard for Android, AdGuard for Mac, and AdGuard Browser Extensions but not for AdGuard for Safari, AdGuard for iOS, and AdGuard Contents Blocker. The list never address individual cases so report blocker detection to AdGuard and not here. This list also mitigates malicious popups often seen on porn sites, pirate sites, and/or short links. Since most of filters are taken form uBlock filters, this list is provided under the same license of GPLv3.
 
