@@ -196,7 +196,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 </details>
 
-### Yuki's uBlock Japanese filters - Annoyances+ （ひょうフィルタ）
+### Yuki's uBlock Japanese filters - Annoyances Plus （ひょうフィルタ）
 
 人によって要否がわかれる、微妙な迷惑要素をブロックするフィルタです。対象をよく見て、必要な人だけ購読してください。
 
@@ -206,8 +206,8 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 - 侵襲的ではないが、必要性も低そうなチャットウィジェット
 - グランブルーファンタジー左側のバー
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances%2B.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">購読する</a>
-[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances+.txt)
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">購読する</a>
+[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt)
 
 ### Anti Anti-adblock Enhancer for AdGuard （AdGuard アンチ広告ブロック対策強化パッチ）
 

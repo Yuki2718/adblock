@@ -102,12 +102,12 @@ Removes annoyances mainly on Japanese sites. Some rules are taken from or influe
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
 
-### Yuki's uBlock Japanese filters - Annoyances+
+### Yuki's uBlock Japanese filters - Annoyances Plus
 
 Removes annoyances which only some user, not everyone, want to remove mainly on Japanese sites.
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances%2B.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">Subscribe</a>
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances+.txt)
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt)
 
 ### Yuki's Blog parts filters
 
