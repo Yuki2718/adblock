@@ -211,7 +211,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 ### Anti Anti-adblock Enhancer for AdGuard （AdGuard アンチ広告ブロック対策強化パッチ）
 
-<strong>DNSフィルタリングが有効の場合、機能が半減します（リソースリダイレクトの問題）。とはいえDNSフィルタリングにはメリットもあるため、各自の優先項目に応じて総合的に判断してください</strong>
+<strong>「信頼するフィルタ」のチェックが必要です。また、DNSフィルタリングが有効の場合、機能が半減します（リソースリダイレクトの問題）。とはいえDNSフィルタリングにはメリットもあるため、各自の優先項目に応じて総合的に判断してください</strong>
 
 AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ拡張機能専用です。AdGuard for Safari, AdGuard for iOS, AdGuardコンテンツブロッカーではあまり機能しません。AdGuardのアンチ広告ブロック対策機能を汎用フィルタで底上げします。個別対策はしませんので、対応漏れはこちらではなくAdGuard公式に報告してください（表示崩れなどの不具合報告は受けつけます）。一部アダルトサイト、違法コンテンツサイト、短縮リンクなどでよくみられる悪質ポップアップも軽減します。AdGuard標準フィルタリストへの追加を想定していますが、280blocker adblock filterなどほかのリストに追加してもある程度の効果はあると思います。uBlock filtersから取られたルールが多いため、ライセンスはGPLv3としています。
 
