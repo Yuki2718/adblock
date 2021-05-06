@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210505
+! Version: 20210506
 
 ! Temporal
 ||store.world.co.jp/res/p/common/img/top/bnr/30w/pop200721_sale.
@@ -1357,6 +1357,7 @@ baraero.com##.entrymidashi3
 ||h0874.com/img/toy_824x179.jpg
 h0874.com###channelBanner2
 ||idcf.jp/sevice_shared/img/*/bnr_
+||ibarakinews.jp/image/banner/
 ||iwate-np.co.jp/content/mekke/img/
 ||iwate-np.co.jp/page/content/media/
 iwate-np.co.jp##div[class$=-CMSbox]
@@ -1366,8 +1367,11 @@ iwate-np.co.jp##div[class$=-CMSbox]
 ||mtame.jp/dcms_media/image/seminar_
 ||mtame.jp/dcms_media/image/webtame_banner_
 ||netanswerplus.saisoncard.co.jp/WebPc/pages/images/person/login/*_520_230_CS_
+||nnn.co.jp/images/adn/
 ||p.dmm.co.jp/p/general/ds/bnr/
 ||ranking.xgoo.jp^*/PC_650_80.png
+||saitama-np.co.jp/ad/
+||sannichi.co.jp/images/side_bnr_
 ||scdn.co/i/account/overview/iphone-ddd9e69.png$domain=spotify.com
 spotify.com##div[class*=Hero__rootWithNavigationPadding] > div[class*=Hero__inverse]:has(.col-lg-6.col-sm-7 > a[class*=CTA__root][href$="/purchase/premium/"])
 ||strate.biz/wp-content/uploads/*/banner.
@@ -1375,9 +1379,11 @@ spotify.com##div[class*=Hero__rootWithNavigationPadding] > div[class*=Hero__inve
 ||wpb.shueisha.co.jp/data/banner/announcement/
 wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
 
+373news.com##.mns_bn
 anna-media.jp##.home.column3-list li .icon-pr:upward(li)
 archive.is##div[style^="display:table;background-color:white;border:3px black dashed"]
 cyclist.sanspo.com###latest-news .sponsored:upward(li)
+felia.373news.com###ticker-area
 google.*###cnt > #appbar + div[class][data-gid][jsaction][style="height: 190px;"]
 imymac.com##.pmmProduct.sideProductBox
 inshokuten.com##.articleDetailPage__textAdTitle
@@ -1396,11 +1402,13 @@ yamory.io##.should-show.scroll-follow-page-top
 amiami.jp##.headerbanner
 asajo.jp##.choice-entry-content .pr-icon:upward(.choice-entry-content)
 kids.gakken.co.jp##.feed_item .pr_tag:upward(.feed_item)
+muromin.jp##.row > .bnr
 !#endif
 !#if env_firefox
 amiami.jp##^.headerbanner
 asajo.jp##^.choice-entry-content .pr-icon:upward(.choice-entry-content)
 kids.gakken.co.jp##^.feed_item .pr_tag:upward(.feed_item)
+muromin.jp##^.row > .bnr
 !#endif
 
 ! ---------- Intrusive widgets ----------
@@ -1522,6 +1530,7 @@ ponta.abstractpainting.work##+js(nano-stb, [native code], 4000, 0.2)
 ponta.abstractpainting.work##+js(set, FIRST_DELAY, 0)
 ponta.abstractpainting.work##+js(set, NEXT_DELAY, 0)
 py.md##+js(nano-sib, countdown)
+romhustler.org##+js(nano-sib, timer.remove)
 shorten.sh##+js(nano-sib, ti--)
 taisv.com##+js(nano-sib, counter, 2000)
 techcrunch.com##.homepage__event-promo, .upcoming-events
