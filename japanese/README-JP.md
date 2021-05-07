@@ -1,14 +1,14 @@
-## お知らせ（2021年04月15日）
+### お知らせ（2021年04月15日）
 
 Googleスライドで表示が崩れる方：EasyListの問題で既に[修正済み](https://github.com/easylist/easylist/commit/44ab3df31bf58268681e91d5f00849781a1b72f8)です、フィルタを更新してください（uBlock Originの場合、ダッシュボードのフィルター一覧タブから全キャッシュを削除→今すぐ更新）。ブロッカーを無効にする必要はありません。問題のフィルタは[違法動画サイト用のものでしたが](https://twitter.com/fanboynz/status/1382328862168678402)、たまたま、Google Docsがそれに引っかかりました。今回の件に限らず、広告ブロッカーで起こる不具合のほとんどはブロッカーではなくフィルタの問題です。一時的な対処として無効にするとしても、ほかのユーザーのためにできるだけフィルター作者に報告してください。uBlock Origin標準設定で発生する問題につきましては、[こちら](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1618326670/)でも受けつけています。
 
-### Yuki's uBlock Japanese filters （雪フィルタ）
+## Yuki's uBlock Japanese filters （雪フィルタ）
 
 日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、uBlock Origin専用フィルタです。
 
 - AdGuardなど他のプラットフォームでは機能しないルールがあるため、使用はおすすめしません<sup>1</sup>。uBlock-for-firefox-legacyもサポートしません。
 - モバイルサイトは対象外です。280blockerさんの[フィルタ](https://280blocker.net/download/)やもちおさんの[たまごフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/tamago.html)など、モバイル用のフィルタを使用してください。
-- 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。たとえば、AdGuard日本語フィルタがブロックするブログロール系、uBlock filtersがカットする不要な待ち時間、その他一部のプロモーションなどです。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
+- 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
 
 <strong>ガイドライン（PC広告）：</strong>初心者の方は、まずuBlock Origin（[Firefox用](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)/[Chrome用](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)）をインストールしてください。豆腐フィルタやもちフィルタなど、<strong>主要な日本用のフィルタが性能をフルに発揮できるのは、uBlock Originだけです</strong><sup>2</sup>。その上でまず、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)を試してみることをおすすめします。これから広告ブロックを導入される方は「多少の広告は許せるし、行動追跡と言われてもよくわからないけど、下品な広告やコンテンツを妨害するものはイヤ」という方が多いと思います。その場合、もちフィルタなら主要な日本語サイトにおいて十分な効果がありますし、日本用フィルタの中では比較的、不具合やアンチ広告ブロック（広告ブロック解除要求）の起動率が少ないです。もしそれで不足を感じられた場合、同サイトで提供されている目的別フィルタを追加するか、あるいは[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法もあります。もちフィルタよりやや不具合（誤爆と呼ばれる）やアンチ広告ブロックへの遭遇率は上がりますが、とくにサブカル系に強いです。Yuki's uBlock Japanese filtersファミリーが適しているのは以下のような方です。
 
@@ -39,7 +39,7 @@ Googleスライドで表示が崩れる方：EasyListの問題で既に[修正�
 
 ブロック可能な対象はできる限りブロックします。これは当然ではなく、他のフィルタではブロック可能でも非表示で済ましているケースが多数あります<sup>5,6</sup>。ブロックが困難な場合、HTMLフィルタリングによる除去を試みています（これは広告を根こそぎ取り除きますがEdgeやChrome上で使えず、Firefoxでもいつも可能なわけではありません）。ブロックさえできればよいという中級者以上の方は「汎用的な要素隠蔽フィルターを無視する」にチェックを入れてください。表示崩れや多少の広告漏れと引き換えに、パフォーマンスを高めることができます。Yuki's uBlock Japanese filtersファミリーは、その場合でもある程度の性能を維持できます<sup>7</sup>。
 
-<strong>初心者向け補足：</strong>広告ブロックには、ブロックと非表示という２種類の方法があります。ブロックはそのままですが、非表示とは広告を見えなくすることです。広告自体は読み込まれているため、通信量やコンピュータのリソースを消費しますし、悪質広告（Malvertising）の防御もできないことがあります。それでも非表示を使わなければならない理由はいろいろありますが、どこまで使うかはフィルタによってまちまちです。当フィルタは世界的に見てもブロックに極振りしたフィルタです。
+<strong>初心者向け補足：</strong>広告ブロックには、ブロックと非表示という２種類の方法があります。ブロックはそのままですが、非表示とは広告を見えなくすることです。広告自体は読み込まれているため、通信量やコンピュータのリソースを消費しますし、悪質広告（Malvertising）の防御もできないことがあります。それでも非表示を使う理由はいろいろありますが、どこまで使うかはフィルタによってまちまちです。当フィルタは世界的に見てもブロックに極振りしたフィルタです。
 
 </details>
 
@@ -87,14 +87,14 @@ Googleスライドで表示が崩れる方：EasyListの問題で既に[修正�
 - Google Safe Browsingでカバーされている、またはモバイル限定の悪質サイト
 - デッドドメイン
 
-### Yuki's uBlock Japanese filters - Paranoid （大雪フィルタ）
+## Yuki's uBlock Japanese filters - Paranoid （大雪フィルタ）
 
 Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。<strong>自己責任で使用してください</strong>。トラッキングパラメータも除去するほか、一部、トラッキングパラメータを含むリンクからの移動もブロックします。この場合、<strong>「uBlock Origin は、このページの読み込みをブロックしました」画面で右側の虫眼鏡アイコンをクリックすると、トラッキングパラメータを除いたURLが（場合によってはいくつか）表示され、そのままクリックできます。</strong>ただし、ブロックするとあまりに煩雑になる場合はブロックしません。また、gwarser氏の[Block access to LAN](https://github.com/gwarser/filter-lists/blob/master/lan-block.txt)フィルタによるLANへの攻撃を防ぐルールも含みます。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Paranoid">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
 
-### Yuki's uBlock Japanese filters - Social （あられフィルタ）
+## Yuki's uBlock Japanese filters - Social （あられフィルタ）
 
 ソーシャル要素をブロックするフィルタです。[AdGuard Social media filter](https://kb.adguard.com/en/general/adguard-ad-filters#social)との互換性を重視しており、一部、共通のルールがあります。ブロック優先主義のため、非表示にしかできないものは迷惑度が高いものを除き無視します。また、ブロックできても他の要素まで巻き込んでしまう場合はブロックしません。これらも非表示にしたい方や、海外のサイトもご覧になる方はAdGuard Social mediaを併用してください。
 
@@ -122,7 +122,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 - 対象に入るが、非表示にしかできず、かつ一定の基準を満たさないもの
 
 
-### Yuki's uBlock Japanese filters - Annoyances （みぞれフィルタ）
+## Yuki's uBlock Japanese filters - Annoyances （みぞれフィルタ）
 
 広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt), [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances), [uBlock filters – Annoyances](https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt), および[Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances)と共通のルールもあります。AdGuard AnnoyancesおよびuBlock filters – Annoyancesとの互換性を意識していますが、Socialの場合ほどではありません（併用可能ですが、多少の無駄が生じます）。
 
@@ -197,7 +197,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 </details>
 
-### Yuki's uBlock Japanese filters - Annoyances Plus （ひょうフィルタ）
+## Yuki's uBlock Japanese filters - Annoyances Plus （ひょうフィルタ）
 
 人によって要否がわかれる、微妙な迷惑要素をブロックするフィルタです。対象をよく見て、必要な人だけ購読してください。
 
@@ -210,16 +210,16 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt)
 
-### Anti Anti-adblock Enhancer for AdGuard （AdGuard アンチ広告ブロック対策強化パッチ）
+## Anti Anti-adblock Enhancer for AdGuard （AdGuard アンチ広告ブロック対策強化パッチ）
 
-<strong>「信頼するフィルタ」のチェックが必要です。また、DNSフィルタリングが有効の場合、機能が半減します（リソースリダイレクトの問題）。とはいえDNSフィルタリングにはメリットもあるため、各自の優先項目に応じて総合的に判断してください</strong>
+<strong>「信頼するフィルタ」のチェックが必要です。また、DNSフィルタリングが有効の場合、効果が半減します（リソースリダイレクトの問題）。とはいえDNSフィルタリングにはメリットもあるため、各自の優先項目に応じて総合的に判断してください</strong>
 
 AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ拡張機能専用です。AdGuard for Safari, AdGuard for iOS, AdGuardコンテンツブロッカーではあまり機能しません。AdGuardのアンチ広告ブロック対策機能を汎用フィルタで底上げします。個別対策はしませんので、対応漏れはこちらではなくAdGuard公式に報告してください（表示崩れなどの不具合報告は受けつけます）。一部アダルトサイト、違法コンテンツサイト、短縮リンクなどでよくみられる悪質ポップアップも軽減します。AdGuard標準フィルタリストへの追加を想定していますが、280blocker adblock filterなどほかのリストに追加してもある程度の効果はあると思います。uBlock filtersから取られたルールが多いため、ライセンスはGPLv3としています。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt)
 
-### 280blocker adblock filter 悪質サイト対策強化パッチ
+## 280blocker adblock filter 悪質サイト対策強化パッチ
 
 **AdGuard for AndroidおよびuBlock Origin専用**
 
@@ -247,7 +247,7 @@ GithubのIssueか[掲示板](https://jbbs.shitaraba.net/internet/25463/)を通�
 
 注意： ログインが必要なサイトでの不具合や広告漏れにつきましては、ログや開発者ツールのスクリーンショット等、こちらがログインせずとも現象や解決を確認できる手段の提供をお願いすることがあります。
 
-## ブロックおよびメンテナンス方針
+### ブロックおよびメンテナンス方針
 
 - ルールの追加・削除については問題の検証を必須とします。他のフィルタが採用しているからというだけの理由、またはユーザー様の自己報告だけに基づく追加・削除は原則として行いません。
 
@@ -267,7 +267,7 @@ GithubのIssueか[掲示板](https://jbbs.shitaraba.net/internet/25463/)を通�
 
 [よくある質問](/japanese/FAQ.md)
 
-## お断り
+### お断り
 
 当サイト（レポジトリ）管理人および貢献者は、当サイトのフィルタやルールによって生じたいかなる損害についても責任を負いません。また、事前の予告なく公開を中止する可能性があります。
 
