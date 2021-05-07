@@ -311,7 +311,17 @@
 
   UIはバリエーションが多いので割愛しますが、日本のサイトであれば日本語でサイトの名前が警告メッセージに含まれていることが多い（常にではありません）のが特徴といえるかもしれません。×ボタンで消せるタイプのものもあります。uBlock Originでは、uBlock filtersが有効ならよほどおかしな設定（過剰購読など）にしない限りみることはありません。AdGuardでは`hoge.com#$#body { overflow: visible !important; }`と`hoge.com#$#body div.fc-ab-root { display: none !important; }`を一行ずつ追加してください。
 
-  4. それら以外
+  4. mdpDeBlockerの場合
+
+  以下のようなUIです。
+  
+  uBlock Originでは現在、基本的にみることはありません。ただ、DeBlockerは開発が活発なため将来バイパスされる可能性はあります。AdGuardでは以下を追加してください。
+  ```
+  ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xmlhttprequest,redirect=googlesyndication-adsbygoogle,domain=hoge.com
+  ||googleads.g.doubleclick.net/pagead/id$script,xmlhttprequest,redirect=nooptext,domain=hoge.com
+  ```
+
+  5. それら以外
   
   アンチ広告ブロックプラグインにはほかにも多くのファミリーがあり、ここで網羅することはできません。また、独自実装のものも増えています。以下ではそうした場合にもしかしたら機能するかもしれない簡易的な対処をまとめます。
 
