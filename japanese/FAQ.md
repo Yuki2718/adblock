@@ -315,6 +315,8 @@
 
   以下のようなUIです。
   
+  ![deblocker_var1](https://user-images.githubusercontent.com/58900598/117489530-b02c6c80-afa8-11eb-8ed1-7ceb5c6f4bf1.png)
+  
   uBlock Originでは現在、基本的にみることはありません。ただ、DeBlockerは開発が活発なため将来バイパスされる可能性はあります。AdGuardでは以下を追加してください。
   ```
   ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xmlhttprequest,redirect=googlesyndication-adsbygoogle,domain=hoge.com
