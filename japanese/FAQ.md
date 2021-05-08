@@ -309,7 +309,7 @@
 
   3. Google Funding Choice Anti-adblockの場合
 
-  UIはバリエーションが多いので割愛しますが、日本のサイトであれば日本語でサイトの名前が警告メッセージに含まれていることが多い（常にではありません）のが特徴といえるかもしれません。×ボタンで消せるタイプのものもあります。uBlock Originでは、uBlock filtersが有効ならよほどおかしな設定（過剰購読など）にしない限りみることはありません。AdGuardでは`hoge.com#$#body { overflow: visible !important; }`と`hoge.com#$#body div.fc-ab-root { display: none !important; }`を一行ずつ追加してください。
+  UIはバリエーションが多いので割愛しますが、日本のサイトであれば日本語でサイトの名前が警告メッセージに含まれていることが多い（常にではありません）のが特徴といえるかもしれません。×ボタンで消せるタイプのものもあります。uBlock Originでは、uBlock filtersが有効ならめったにみることはありません。AdGuardでは`hoge.com#$#body { overflow: visible !important; }`と`hoge.com#$#body div.fc-ab-root { display: none !important; }`を一行ずつ追加してください。
 
   4. `mdpDeBlocker`の場合
 
@@ -317,7 +317,7 @@
   
   ![deblocker_var1](https://user-images.githubusercontent.com/58900598/117489530-b02c6c80-afa8-11eb-8ed1-7ceb5c6f4bf1.png)
   
-  uBlock Originでは現在、基本的にみることはありません。ただ、DeBlockerは開発が活発なため将来バイパスされる可能性はあります。AdGuardでは以下を追加してください。
+  uBlock Originでは現在、基本的にみることはありません。ただ、DeBlockerは開発が活発なため将来バイパスされる可能性はあります。AdGuardでは以下を追加してください。ただし、DNSフィルタリングが有効だと効きません。
   ```
   ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xmlhttprequest,redirect=googlesyndication-adsbygoogle,domain=hoge.com
   ||googleads.g.doubleclick.net/pagead/id$script,xmlhttprequest,redirect=nooptext,domain=hoge.com
@@ -336,12 +336,12 @@
   ```
   ダメなら`||hoge.com^$inline-script`に切り替え、ただしサイトの機能を壊す可能性が高い。
 
-  AdGuard：まず、以下を追加
+  AdGuard：まず、DNSフィルタリングを無効化して以下を追加
   ```
   @@||hoge.com^$generichide
   ||googlesyndication.com/pagead/js/adsbygoogle.js$script,xmlhttprequest,redirect=googlesyndication-adsbygoogle,domain=hoge.com
   ```
-  ダメなら`||hoge.com^$csp=script-src 'self' 'unsafe-eval' http: https:`に切り替え、ただしサイトの機能を壊す可能性が高い。
+  ダメなら`||hoge.com^$csp=script-src 'self' 'unsafe-eval' http: https:`に切り替え（DNSフィルタリングを無効化した人は戻してよい）、ただしサイトの機能を壊す可能性が高い。
 
 </details>
 
