@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
-! Version: 20210510
+! Version: 20210511
 
 &prvtof=*&poru=
 .biz/?p=*&sub1=$document,domain=biz
@@ -17,6 +17,7 @@
 /^https:\/\/xn--[a-z]{3,4}-[-0-9a-z]{15,30}\.[a-z]{8}\.pl\//$document,domain=pl
 /^http:\/\/[0-9a-z]{6,11}\.[-a-z]{8,12}(\.com)?\.pl\//$document,domain=pl
 /^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
+/^http:\/\/[a-z]{9,10}\.ddns/$document,domain=ddns.net
 /^https:\/\/[a-z]{3,11}\d{3,4}([a-z]{4})?\.[a-z]{7,24}\.(?:cl|it)\/([_%0-9a-zA-Z]{12,}\.html)?$/$document,domain=cl|it
 /^https:\/\/xn--\d{4,5}-[a-z]{3}\.biz\/[0-9a-z]+\?key=/$document,domain=biz
 /^https:\/\/www\.namejp0[1-9]\.xyz/$document,popup,domain=xyz
@@ -26,7 +27,7 @@
 /^https?:\/\/(?:\d{9}|[a-z]{12})\.[a-z]{9,14}\.ru/(page\d{1,4}|[._a-z]+\?page=\d{1,4})/$document,domain=ru
 /^https?:\/\/([a-z]{2}\d){3}[a-z]{2}\.com/$document,domain=com
 /^https?:\/\/xn--[-.0-9a-z]{20,60}\.ru/$document,domain=ru
-/^https?:\/\/(www\.)?[-0-9a-z]{14,}\.fun/[a-z]{10,11}\.php/$document,domain=fun
+/^https?:\/\/(www\.)?[-0-9a-z]{14,}\.(?:biz|fun)/[a-z]{10,11}\.php/$document,domain=biz|fun
 /^https?:\/\/[-0-9a-z]*prize[-0-9a-z]+\.li[fv]e\/\?u=[0-9a-z]+&o=[0-9a-z]+/$document,domain=life|live
 /^https?:\/\/[-0-9a-z]*prize[-0-9a-z]+\.li[fv]e\/\?u=[0-9a-z]+&o=[0-9a-z]+/$popup,domain=www.google.co.jp|www.google.com
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org\/page\d{1,4}/$document,domain=duckdns.org
@@ -50,7 +51,6 @@
 ||4waz.com/lp.php?q=$document
 ||8181momerunda.xyz^$document
 ||898955j83.xyz^$document
-||a.mazon.workers.dev^$document
 ||acc.pp.ua^$document,popup
 ||ad-score.com^$document,popup
 ||adsbtrk.com^$document
@@ -137,7 +137,6 @@
 ||dbj5d4u6hy4cs.com^$document
 ||ddt4.ru^$document
 ||dinesmultiplexed.pw^$document
-||dinets.co.jp.oekuo.com^$document
 ||directhourshoulders-1.life^$document
 ||dnsrd.com/*.php$popup,domain=www.google.com
 ||dog-information.xyz/*.php$document
@@ -371,8 +370,6 @@
 ||storage-for-mobileapps.life^$document,popup
 ||strumentidicalibrazione.it^$document
 ||success-news.net^$document,popup
-||subscribers.shanghaisiyuan.cn^$document
-||sumirclnb.jp.oekuo.com^$document
 ||tappling.jp^$document
 ||tendermeets.com^$document
 ||terlaby.com^$document,popup

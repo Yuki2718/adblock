@@ -59,7 +59,7 @@ Googleスライドで表示が崩れる方：EasyListの問題で既に[修正�
 |:---|:---:|:---:|
 | uBlock内製フィルター, EasyList, EasyPrivacy, Peter Lowe’s Ad and tracking server list, AdGuard Base, 280blocker domain filter, AdGuard Social Media, uBlock filters – Annoyances | ◎ | 互換性が最大限考慮されており、併用しても無駄はほとんど生じない |
 | AdGuard Chinese/EasyList China, RU AdList, Fanboy Enhanced Tracking, AdGuard Annoyances, EasyList Cookie, Fanboy’s Annoyance, Fanboy’s Social | ○ | 互換性がある程度考慮されており、多少の無駄は生じるがあまり問題ない（Fanboy系は互換性低め） |
-| もちフィルタ, いちごフィルタ, AdGuard Japanese | △ | 併用すると大量の無駄が生じるが、問題が生じるかは未確認 |
+| もちフィルタ, もち拡張フィルタ, いちごフィルタ, ことりフィルタ, ねぎフィルタ, AdGuard Japanese | △ | 併用すると大量の無駄が生じるが、問題が生じるかは未確認 |
 | 豆腐フィルタ, 280blocker adblock filter | × | 大量の無駄だけでなく、実際に問題が生じるため併用は非推奨 |
 
 </details>
