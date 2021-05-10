@@ -325,7 +325,9 @@
 
   5. `AdBlock Notify`の場合
 
-  以下のようなUTです。
+  以下のようなUIです。
+  
+  ![notify](https://user-images.githubusercontent.com/58900598/117700695-4eb30a80-b201-11eb-8677-7ec4ed1bb6c8.png)
 
   uBlock Origin, AdGuardとも基本的なフィルタ構成（+ 雪フィルタ）ではみないはずですが、カスタムリストを追加した場合みる可能性があります。uBlock Originでは`hoge.com##+js(aopr, anOptions)`、AdGuardでは`hoge.com#%#//scriptlet("abort-on-property-read", "anOptions")`を追加してください。
 
