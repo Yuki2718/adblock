@@ -1,6 +1,6 @@
 ## 広告ブロック FAQ
 
-最終更新：2021/05/11
+最終更新：2021/05/12
 
 内容は各項目執筆時点のものですのでご了承ください。脚注は少し詳しい方向けです。
 
@@ -281,7 +281,7 @@
 
 <summary><strong>A20</strong></summary>
 
-  ご自身でフィルタを書ける人は別として、最良の対処はフィルタ作者に報告することです。uBlock Origin標準設定で出る場合は[こちら](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1618326670/)でも受けつけます。以下では、日本のサイトで比較的よくみるアンチ広告ブロックへの簡易的な対処をまとめました。内容的には、以前に「りぃのなんでも知恵袋」さんの[記事](https://mabidiary.blogspot.com/2019/01/2019.html)にコメントさせていただいたものの更新になります。`hoge.com`でアンチ広告ブロックが出たという仮定です。参考画像は一例で、バリエーションがあります。
+  ご自身でフィルタを書ける人は別として、最良の対処はフィルタ作者に報告することです。uBlock Origin標準設定で出る場合は[こちら](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1618326670/)でも受けつけます。以下では、日本のサイトで比較的よくみるアンチ広告ブロックへの簡易的な対処をまとめました。内容的には、以前に「りぃのなんでも知恵袋」さんの[記事](https://mabidiary.blogspot.com/2019/01/2019.html)にコメントさせていただいたものの更新になります。`hoge.com`でアンチ広告ブロックが出たという仮定です。参考画像は一例で、バリエーションがあります。100%の効果は保証できません。
 
   1. `antiblock.org`の場合
   
@@ -295,9 +295,12 @@
   
   ![antiblock_org_var4](https://user-images.githubusercontent.com/58900598/116763221-0f91f600-aa58-11eb-8b00-59be52128603.png)
 
-  uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'google_ad_client')`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="7000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。
-
-  2. `BlockAdBlock`の場合
+  uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "google_ad_client")`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="7000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。iOS版AdGuardでは、コンテンツブロッカーに以下を追加してみてください（これだけではダメな場合もあります）。
+  ```
+  @@#*/ad/$image,domain=hoge.com
+  @@||hoge.com^$generichide
+  ```
+  2. BlockAdBlockの場合
   
   以下のようなUIです。
   
@@ -305,33 +308,50 @@
   
   ![bab_var2](https://user-images.githubusercontent.com/58900598/116763631-06555900-aa59-11eb-94d0-e61209fecde3.png)
   
-  uBlock Originでは`hoge.com##+js(nosiif, visibility, 1000)`、AdGuardでは`hoge.com#%#//scriptlet("prevent-bab")`を追加してください。姉妹品にFuckAdBlockがありますが、日本のサイトでは最近ほぼみないため割愛します。
+  uBlock Originでは`hoge.com##+js(nosiif, visibility, 1000)`、AdGuardでは`hoge.com#%#//scriptlet("prevent-bab")`を追加してください。iOS版AdGuardでは、コンテンツブロッカーに`@@||hoge.com^$generichide`を追加してみてください（これだけではダメな場合もあります）。姉妹品にFuckAdBlockがありますが、日本のサイトでは最近ほぼみないため割愛します。
 
   3. Google Funding Choice Anti-adblockの場合
 
-  UIはバリエーションが多いので割愛しますが、日本のサイトであれば日本語でサイトの名前が警告メッセージに含まれていることが多い（常にではありません）のが特徴といえるかもしれません。×ボタンで消せるタイプのものもあります。uBlock Originでは、uBlock filtersが有効ならめったにみることはありません。AdGuardでは`hoge.com#$#body { overflow: visible !important; }`と`hoge.com#$#body div.fc-ab-root { display: none !important; }`を一行ずつ追加してください。
+  UIはバリエーションが多いので割愛しますが、日本のサイトであれば日本語でサイトの名前が警告メッセージに含まれていることが多い（常にではありません）のが特徴といえるかもしれません。×ボタンで消せるタイプのものもあります。uBlock Originでは、uBlock filtersが有効ならめったにみることはありません。AdGuardでは`hoge.com#$#body { overflow: visible !important; }`と`hoge.com#$#body div.fc-ab-root { display: none !important; }`を一行ずつ追加してください。iOS版AdGuardでは、コンテンツブロッカーに`@@||hoge.com^$generichide`を追加してください。
 
-  4. `mdpDeBlocker`の場合
+  4. mdpDeBlockerの場合
 
   以下のようなUIです。
   
   ![deblocker_var1](https://user-images.githubusercontent.com/58900598/117489530-b02c6c80-afa8-11eb-8ed1-7ceb5c6f4bf1.png)
   
-  uBlock Originでは現在、基本的にみることはありません。ただ、DeBlockerは開発が活発なため将来バイパスされる可能性はあります。AdGuardでは以下を追加してください。ただし、DNSフィルタリングが有効だと効きません。
+  uBlock Originでは現在、基本的にみることはありません。ただ、DeBlockerは開発が活発なため将来バイパスされる可能性はあります。AdGuardでは以下を追加してください。ただし、DNSフィルタリングが有効だと効きません。報告いただければDNSフィルタリングを有効にしたままでの対策を提供いたしますが、マニュアル化は困難です。
   ```
   ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xmlhttprequest,redirect=googlesyndication-adsbygoogle,domain=hoge.com
   ||googleads.g.doubleclick.net/pagead/id$script,xmlhttprequest,redirect=nooptext,domain=hoge.com
   ```
+  iOS版AdGuardでは、コンテンツブロッカーに以下を追加したうえで、DNS保護を一時無効にするか、`pagead2.googlesyndication.com`と`googleads.g.doubleclick.net`を例外に追加してください。AdGuard DNSなど広告ブロック機能のついたDNSサーバーを使っている場合は、一時ほかのDNSにする必要もあります。
+  ```
+  @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=hoge.com
+  @@||googleads.g.doubleclick.net/pagead/id$domain=hoge.com
+  ```
 
-  5. `AdBlock Notify`の場合
+  5. AdBlock Notifyの場合
 
   以下のようなUIです。
   
   ![notify](https://user-images.githubusercontent.com/58900598/117700695-4eb30a80-b201-11eb-8677-7ec4ed1bb6c8.png)
 
-  uBlock Origin, AdGuardとも基本的なフィルタ構成（+ 雪フィルタ）ではみないはずですが、カスタムリストを追加した場合みる可能性があります。uBlock Originでは`hoge.com##+js(aopr, anOptions)`、AdGuardでは`hoge.com#%#//scriptlet("abort-on-property-read", "anOptions")`を追加してください。
+  uBlock Origin, AdGuardとも基本的なフィルタ構成（+ 雪フィルタ）ではみないはずですが、カスタムリストを追加した場合みる可能性があります。uBlock Originでは`hoge.com##+js(aopr, anOptions)`、AdGuardでは`hoge.com#%#//scriptlet("abort-on-property-read", "anOptions")`を追加してください。iOS版AdGuardでは、コンテンツブロッカーに以下を追加してください。
+  ```
+  /wp-content/uploads/*/*.js$domain=hoge.com
+  hoge.com#@##adsense
+  hoge.com#@#.an-advert-banner
+  hoge.com#@#.an-sponsored
+  ```
 
-  6. 上記以外
+  6. Admiral Anti-adblockの場合
+
+  以下のようなUIです。
+
+  これはいわゆるsoft anti-adblockで、対策せずともContinue without disablingをクリックすることでコンテンツを閲覧することができます。そのためuBlock Origin、AdGuardともメインのフィルタでは対策せず、迷惑系フィルタ（uBlock filters - Annoyances, AdGuard Annoyances）で対応しています。また、EasyPrivacy, Peter Lowe’s Ad and tracking server list, AdGuard追跡防止フィルタのいずれかを使用することでも大部分回避できます。個別に対策したい場合、uBlock Originでは`hoge.com##+js(acis, document.createElement, admiral)`、AdGuardでは`hoge.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "admiral")`を追加してください。
+
+  7. 上記以外
   
   アンチ広告ブロックプラグインにはほかにも多くのファミリーがあり、ここで網羅することはできません。また、独自実装のものも増えています。以下ではそうした場合にもしかしたら機能するかもしれない簡易的な対処をまとめます。
 
