@@ -325,7 +325,7 @@
   ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xmlhttprequest,redirect=googlesyndication-adsbygoogle,domain=hoge.com
   ||googleads.g.doubleclick.net/pagead/id$script,xmlhttprequest,redirect=nooptext,domain=hoge.com
   ```
-  iOS版AdGuardでは、コンテンツブロッカーに以下を追加したうえで、DNS保護を一時無効にするか、`pagead2.googlesyndication.com`と`googleads.g.doubleclick.net`を例外に追加してください。AdGuard DNSなど広告ブロック機能のついたDNSサーバーを使っている場合は、一時ほかのDNSにする必要もあります。
+  iOS版AdGuardでは、コンテンツブロッカーに以下を追加したうえで、DNSフィルタリングを一時無効にするか、`pagead2.googlesyndication.com`と`googleads.g.doubleclick.net`をホワイトリストに追加してください。AdGuard DNSなど広告ブロック機能のついたDNSサーバーを使っている場合は、一時ほかのDNSにする必要もあります。
   ```
   @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=hoge.com
   @@||googleads.g.doubleclick.net/pagead/id$domain=hoge.com
@@ -346,9 +346,11 @@
   ```
 
   6. Admiral Anti-adblockの場合
-
+  
   以下のようなUIです。
-
+  
+  ![admiral_var1](https://user-images.githubusercontent.com/58900598/117851260-196df180-b2c1-11eb-8a44-8f3bc0b4148b.png)
+  
   これはいわゆるsoft anti-adblockで、対策せずともContinue without disablingをクリックすることでコンテンツを閲覧することができます。そのためuBlock Origin、AdGuardともメインのフィルタでは対策せず、迷惑系フィルタ（uBlock filters - Annoyances, AdGuard Annoyances）で対応しています。また、EasyPrivacy, Peter Lowe’s Ad and tracking server list, AdGuard追跡防止フィルタのいずれかを使用することでも大部分回避できます。個別に対策したい場合、uBlock Originでは`hoge.com##+js(acis, document.createElement, admiral)`、AdGuardでは`hoge.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "admiral")`を追加してください。
 
   7. 上記以外
