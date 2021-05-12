@@ -7,7 +7,7 @@ Googleスライドで表示が崩れる方：EasyListの問題で既に[修正�
 日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、uBlock Origin専用フィルタです。
 
 - AdGuardなど他のプラットフォームでは機能しないルールがあるため、使用はおすすめしません<sup>1</sup>。uBlock-for-firefox-legacyもサポートしません。
-- モバイルサイトは対象外です。280blockerさんの[フィルタ](https://280blocker.net/download/)やもちおさんの[たまごフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/tamago.html)など、モバイル用のフィルタを使用してください。
+- モバイルサイトは対象外です。各ブロッカー標準のフィルタ、または280blockerさんの[フィルタ](https://280blocker.net/download/)やもちおさんの[たまごフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/tamago.html)など、モバイル用のフィルタを使用してください。
 - 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
 
 <strong>ガイドライン（PC広告）：</strong>初心者の方は、まずuBlock Origin（[Firefox用](https://addons.mozilla.org/ja/firefox/addon/ublock-origin/)/[Chrome用](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)）をインストールしてください。豆腐フィルタやもちフィルタなど、<strong>主要な日本用のフィルタが性能をフルに発揮できるのは、uBlock Originだけです</strong><sup>2</sup>。その上でまず、もちおさんが提供なさっている[もちフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/mochi.html)を試してみることをおすすめします。これから広告ブロックを導入される方は「多少の広告は許せるし、行動追跡と言われてもよくわからないけど、下品な広告やコンテンツを妨害するものはイヤ」という方が多いと思います。その場合、もちフィルタなら主要な日本語サイトにおいて十分な効果がありますし、日本用フィルタの中では比較的、不具合やアンチ広告ブロック（広告ブロック解除要求）の起動率が少ないです。もしそれで不足を感じられた場合、同サイトで提供されている目的別フィルタを追加するか、あるいは[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)に切り替えるという方法もあります。もちフィルタよりやや不具合（誤爆と呼ばれる）やアンチ広告ブロックへの遭遇率は上がりますが、とくにサブカル系に強いです。Yuki's uBlock Japanese filtersファミリーが適しているのは以下のような方です。
