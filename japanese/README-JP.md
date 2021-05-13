@@ -280,7 +280,7 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 <details>
 <summary>註</summary>
 
-<sub>1: AdGuardで使用する場合、最大の問題はspecific-generic（[解決予定](https://github.com/AdguardTeam/CoreLibs/issues/1437)）, redirect-rule, domain=のワイルドカード, script以外のHTMLフィルタでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。ほかにもAdGuard - uBlock Origin間にはスクリプトレットやProcedural comsetic filtersの仕様の違いがいろいろあり、気づき次第報告していますが今後もそうしたことが起こるかもしれません。PC/MacでAdGuardをご利用の場合、AdGuard標準のフィルタリストに@hirorpt氏による[こなゆきフィルタ](https://github.com/hirorpt/filters#%E3%81%93%E3%81%AA%E3%82%86%E3%81%8D%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF-%E6%A8%99%E6%BA%96%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF1%E3%81%AE%E4%B8%8D%E5%85%B7%E5%90%88%E4%BF%AE%E6%AD%A3)を追加していただくのが最善と思います。ほかの日本用フィルタでは一部のルールが機能しませんし、互換性の問題が起こることもあります。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
+<sub>1: AdGuardで使用する場合、最大の問題はspecific-generic（[解決予定](https://github.com/AdguardTeam/CoreLibs/issues/1437)）, redirect-rule, domain=のワイルドカード, script以外のHTMLフィルタでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。ほかにもAdGuard - uBlock Origin間にはスクリプトレットやProcedural comsetic filtersの仕様の違いがいろいろあり、気づき次第報告していますが今後もそうしたことが起こるかもしれません。PC/MacでAdGuardをご利用の場合、AdGuard標準のフィルタリストに@hirorpt氏による[こなゆきフィルタ](https://github.com/hirorpt/filters#%E3%81%93%E3%81%AA%E3%82%86%E3%81%8D%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF-%E6%A8%99%E6%BA%96%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF1%E3%81%AE%E4%B8%8D%E5%85%B7%E5%90%88%E4%BF%AE%E6%AD%A3)を追加していただくのが最善と思います。ほかのPC向け日本用フィルタでは一部のルールが機能しませんし、互換性の問題が起こることもあります。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
 
 <sub>2: AdGuardならスクリプトレットに互換性があるので許容範囲です。</sub>
 
