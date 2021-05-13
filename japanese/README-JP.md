@@ -1,6 +1,8 @@
-### お知らせ（2021年04月15日）
+### お知らせ（2021年05月13日）
 
-Googleスライドで表示が崩れる方：EasyListの問題で既に[修正済み](https://github.com/easylist/easylist/commit/44ab3df31bf58268681e91d5f00849781a1b72f8)です、フィルタを更新してください（uBlock Originの場合、ダッシュボードのフィルター一覧タブから全キャッシュを削除→今すぐ更新）。ブロッカーを無効にする必要はありません。問題のフィルタは[違法動画サイト用のものでしたが](https://twitter.com/fanboynz/status/1382328862168678402)、たまたま、Google Docsがそれに引っかかりました。今回の件に限らず、広告ブロッカーで起こる不具合のほとんどはブロッカーではなくフィルタの問題です。一時的な対処として無効にするとしても、ほかのユーザーのためにできるだけフィルター作者に報告してください。uBlock Origin標準設定で発生する問題につきましては、[こちら](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1618326670/)でも受けつけています。
+Youtubeの動画内広告について：各所で、また動画内広告がすり抜けてきたという報告が上がっています。一部では再生不具合も起こっているようです。今のところ、フィルター作者間（注）ではEasyListメンテナーの一人がごく短時間不具合を再現したほかは再現しておらず、原因はわかりません。もしこの新型広告（？）の対象になってしまった場合、現状ではアカウントを切り替える、ログアウトする等が最善かと思います。同じアカウントでも時間がたつと自然に回復（？）することもあるようです。ただし、これまでのすり抜け報告の大部分はフィルターや設定の問題、またはほかの拡張機能による干渉でした。まずはフィルター設定を見直し、uBlock Origin以外の広告・追跡ブロック拡張機能はすべて無効にしてください。またBlocktubeなどYoutube用のいくつかの拡張機能はuBlock filtersと干渉することが知られていますので、無効にしてください。Yuki's uBlock Japanese filtersでは、再生不具合に対し実験的なフィルタを既に導入していますが、効果があるかはわかりません（すり抜けには効果がありません）。
+
+<sub>注：Adblock Plus, AdGuard, EasyList, uBlock Origin, 各言語用フィルタの作者間では毎日活発に情報交換しており、Youtubeの広告などは共同で解析することもあります。</sub>
 
 ## Yuki's uBlock Japanese filters （雪フィルタ）
 
@@ -223,9 +225,9 @@ AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ�
 
 **AdGuard for AndroidおよびuBlock Origin専用**
 
-280blocker adblock filterは、できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、正規表現などの高度な文法を避け、互換性の高い記法で書かれています。ただ、このためにアプリの280blockerではブロック可能なビジターアンケート詐欺などの悪質サイトが完全にはブロックされません。当パッチはAdGuardとuBlock Originの高度な機能を使い、この点を補強します。また、ほかにも多くの悪質サイトを登録しています。
+280blocker adblock filterは、できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、正規表現などの高度な文法を避け、互換性の高い記法で書かれています。ただ、このためにアプリの280blockerではブロック可能なビジターアンケート詐欺などの悪質サイトが完全にはブロックされません。当パッチはAdGuardとuBlock Originの高度な機能を使い、この点を補強します。また、ほかにも多くの悪質サイトを登録しています。AdGuardおよびuBlock Origin標準のフィルターリストに追加しても効果はありますが、Yuki's uBlock Japanese filtersご利用の場合は不要です。
 
-<strong>2021年4月現在、「信頼するフィルタ」のチェックは必須ではありません。ただ、今後信頼するフィルタ用の機能を使う可能性はあるので、当サイトを信頼していただけるならチェックを推奨します。AdGuardの場合、信頼されたフィルタはページに様々なスクリプトを挿入することが可能になるため、本当に信頼できるのでなければチェックすべきではありません。</strong>
+<strong>2021年5月現在、「信頼するフィルタ」のチェックは必須ではありません。ただ、今後信頼するフィルタ用の機能を使う可能性はあるので、当サイトを信頼していただけるならチェックを推奨します。AdGuardの場合、信頼されたフィルタはページに様々なスクリプトを挿入することが可能になるため、本当に信頼できるのでなければチェックすべきではありません。</strong>
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
@@ -278,11 +280,11 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 <details>
 <summary>註</summary>
 
-<sub>1: AdGuardで使用する場合、最大の問題はspecific-generic（[解決予定](https://github.com/AdguardTeam/CoreLibs/issues/1437)）, redirect-rule, domain=のワイルドカード, script以外のHTMLフィルタでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。ほかにもAdGuard - uBlock Origin間にはスクリプトレットやProcedural comsetic filtersの仕様の違いがいろいろあり、気づき次第報告していますが今後もそうしたことが起こるかもしれません。PCでAdGuardをご利用の場合、もちフィルタを使用するか、あるいはAdGuardベース + 日本語フィルタの組合せも悪くないと思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
+<sub>1: AdGuardで使用する場合、最大の問題はspecific-generic（[解決予定](https://github.com/AdguardTeam/CoreLibs/issues/1437)）, redirect-rule, domain=のワイルドカード, script以外のHTMLフィルタでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。ほかにもAdGuard - uBlock Origin間にはスクリプトレットやProcedural comsetic filtersの仕様の違いがいろいろあり、気づき次第報告していますが今後もそうしたことが起こるかもしれません。PC/MacでAdGuardをご利用の場合、AdGuard標準のフィルタリストに@hirorpt氏による[こなゆきフィルタ](https://github.com/hirorpt/filters#%E3%81%93%E3%81%AA%E3%82%86%E3%81%8D%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF-%E6%A8%99%E6%BA%96%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF1%E3%81%AE%E4%B8%8D%E5%85%B7%E5%90%88%E4%BF%AE%E6%AD%A3)を追加していただくのが最善と思います。ほかの日本用フィルタでは一部のルールが機能しませんし、互換性の問題が起こることもあります。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
 
 <sub>2: AdGuardならスクリプトレットに互換性があるので許容範囲です。</sub>
 
-<sub>3: いくつかの日本用フィルタと同様、日本語話者がよく利用すると思われる海外サイトにも対応しています（[FAQ A20](https://github.com/Yuki2718/adblock/blob/master/japanese/FAQ.md#q20-%E9%9B%AA%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%81%AE%E4%B8%AD%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%A8%E6%B5%B7%E5%A4%96%E3%82%B5%E3%82%A4%E3%83%88%E7%94%A8%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%8C%E7%B5%90%E6%A7%8B%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8C%E5%AF%BE%E8%B1%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)）。</sub>
+<sub>3: いくつかの日本用フィルタと同様、日本語話者がよく利用すると思われる海外サイトにも対応しています（[FAQ A21](https://github.com/Yuki2718/adblock/blob/master/japanese/FAQ.md#q20-%E9%9B%AA%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%81%AE%E4%B8%AD%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%A8%E6%B5%B7%E5%A4%96%E3%82%B5%E3%82%A4%E3%83%88%E7%94%A8%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%8C%E7%B5%90%E6%A7%8B%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8C%E5%AF%BE%E8%B1%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)）。</sub>
 
 <sub>4: 後述のようにEasyListやEasyPrivacyなどから多くのルールを取り入れているものの、誤爆率の高いルールは除外しています。EasyPrivacyではリコメンドウィジェットやプッシュ通知などもブロックしていますが、これには異論もあるためこちらではAnnoyancesに分類しています。また私の知るこれらのフィルタによる誤爆で、未報告または報告済みだが未対処のものにも対応しています。一方、EasyPrivacyなどに含まれていないアクセス解析も（誤爆率の高そうなもの以外）多く盛り込んでいます。</sub>
 

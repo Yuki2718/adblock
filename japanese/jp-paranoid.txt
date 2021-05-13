@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210512
+! Version: 20210513
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -38,6 +38,7 @@
 search.rakuten.co.jp##.keywordcontent.dui-card
 ||rakuten-static.com/1/js/anl/$domain=member.id.rakuten.co.jp
 ||s3.reutersmedia.net/resources/*&rtn=$image
+||webike.net/sys_images/saimg/*_1000_45.$domain=webike.net
 ||youtube.com/api/stats/watchtime?*=adunit&
 ||youtube.com/watch?*&pbj=prefetch$xhr,domain=youtube.com
 @@||click.speee-ad.jp^$script,domain=saitama-np.co.jp,badfilter
@@ -45,6 +46,7 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 @@||speee-ad.akamaized.net^$css,image,script,domain=saitama-np.co.jp,badfilter
 ##body[id][class*=post-] section[class*=cta]
 baysia-tokyo.com##.ctawidget
+webike.net###pc_top_obi_2
 ~baysia-tokyo.com##article[id][class*=post-] div[class*=cta]
 
 !#if !env_firefox
