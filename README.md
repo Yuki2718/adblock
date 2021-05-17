@@ -56,9 +56,9 @@ I really don't understand why it's so special to some people. Apparently they st
 
 ### Anti Anti-adblock Enhancer for AdGuard
 
-<strong>Check Trusted box if you use this list and trust me! To get the most of the list, you have to turn HTTPS filtering on AND turn DNS filtering OFF. It's not that I recommend turning DNS filtering off generally, but that this list requires doing so for full function.</strong>
+<strong>Check Trusted box if you use this list as you trust me! To get the most of the list, you have to turn HTTPS filtering on AND DNS filtering OFF. It's not that I recommend to turn DNS filtering off generally, but that this list requires doing so for full function.</strong>
 
-Enhances anti anti-adblock capability of AdGuard by generic filters. Works on AdGuard for Windows, AdGuard for Android, AdGuard for Mac, and AdGuard Browser Extensions but not for AdGuard for Safari, AdGuard for iOS, and AdGuard Contents Blocker. The list never address individual cases so report blocker detection to AdGuard and not here. This list also mitigates malicious popups often seen on porn sites, pirate sites, and/or short links. Since most of filters are taken form uBlock filters, this list is provided under the same license of GPLv3.
+Enhances anti anti-adblock capability of AdGuard by generic filters. Works on AdGuard for Windows, AdGuard for Android, AdGuard for Mac, and AdGuard Browser Extensions but not for AdGuard for Safari, AdGuard for iOS, and AdGuard Contents Blocker. The list never address individual cases so report blocker detection to AdGuard and not here. This list also mitigates malicious popups often seen on porn sites, pirate sites, and/or short links. Since most of filters are taken from uBlock filters, this list is provided under the same license of GPLv3.
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt)
