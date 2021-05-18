@@ -61,6 +61,7 @@ smart-flash.jp##^.adsBlock
 ||ad.isaf.jp^
 ||al.dmm.co.jp^$doc
 ||af.moshimo.com^$doc
+||affiliate.suruga-ya.jp^$doc
 ||affiliateone.jp^
 ||affiliateone.jp^$3p,badfilter
 ||fam-ad.com^
@@ -83,6 +84,7 @@ recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
 /AppMeasurement.js
 /AppMeasurement_Module_
 /amplitude-*.js$script
+/analytics/event
 /api/tracking/*
 /detm-container-
 /dtm/*/satellitelib-
@@ -144,6 +146,7 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
 @@||playy.online/log_event$1p,xhr
 @@||tags.tiqcdn.com/utag/$script,domain=wineenthusiast.com
+@@||tags.tiqcdn.com/utag/*/utag.js$script,domain=hm.com
 @@||tags.tiqcdn.com/utag/cbsi/cbssportssite/prod/utag.js$script,domain=cbssports.com
 @@||tags.tiqcdn.com/utag/lenovo/$script,domain=lenovo.com
 @@||tags.tiqcdn.com/utag/politico/main/prod/utag.js$script,domain=politico.com
@@ -157,15 +160,23 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 @@||ttutu.biz/log_event$1p,xhr
 
 ! ---------- Tracking links ----------
+&event_callback_*&redirect=$doc,removeparam=/^event_callback_/,domain=app.adjust.com
 -aff-*&clickid=$doc,domain=apple.com
+.com/lp/*&utm_campaign=$doc,removeparam=utm_campaign
+.com/lp/*&utm_medium=$doc,removeparam=utm_medium
+.com/lp/*&utm_source=$doc,removeparam=utm_source
+.com/lp/*?utm_campaign=$doc,removeparam=utm_campaign
+.com/lp/*?utm_source=$doc,removeparam=utm_source
+.jp/lp/*&utm_campaign=$doc,removeparam=utm_campaign
+.jp/lp/*&utm_source=$doc,removeparam=utm_source
+.jp/lp/*?trcd=$doc,removeparam=trcd
+.jp/lp/*?waad=$doc,removeparam=waad
 /?cmp=*&waad=$doc,removeparam,domain=happyon.jp|hulu.jp
 ?cid=*&adid=$doc,removeparam,domain=video.unext.jp
 ?sharedid=*&u=$doc,domain=msafflnk.net
 ?utm_content=*&utm_source=$doc,domain=dmm.com
 ?utm_source=*&utm_medium=$doc,domain=e-3shop.com
-?utm_source=*&waad=$doc,domain=cp.duo.jp
 ?wak=*_link_$doc,domain=beauty.hotpepper.jp
-||affiliate.suruga-ya.jp^$doc
 ||amazon.co.jp/gp/goldbox/ref=*&linkCode=$doc
 ||amazon.co.jp/gp/product/*&linkCode=$doc
 ||ck.jp.ap.valuecommerce.com/servlet/referral?sid=*&vc_url=$doc
@@ -206,6 +217,7 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 ||ck.storematch.jp/bc?d=*&B=$doc,removeparam=/d|B|sc_i|sig/
 ||dlsite.com^*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=/unique_op|utm_medium|utm_source/
 ||duckduckgo.com/?t=$doc,removeparam=t
+||google.com/search?*&client=*&biw=*&bih=$doc,removeparam=/client|biw|bih/
 ||hbol.jp^*?cx_clicks_art_mdl=$doc,removeparam=cx_clicks_art_mdl
 ||hbol.jp^*?cx_clicks_series_mdl=$doc,removeparam=cx_clicks_series_mdl
 ||nijichat.jp/promotion/index/*?afid=$doc,removeparam=afid
