@@ -1,6 +1,6 @@
 ## 広告ブロック FAQ
 
-最終更新：2021/05/19
+最終更新：2021/05/22
 
 内容は各項目執筆時点のものですのでご了承ください。脚注は少し詳しい方向けです。
 
@@ -295,7 +295,7 @@
   
   ![antiblock_org_var4](https://user-images.githubusercontent.com/58900598/116763221-0f91f600-aa58-11eb-8b00-59be52128603.png)
 
-  uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "google_ad_client")`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="7000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。iOS版AdGuardでは、コンテンツブロッカーに以下を追加してみてください（これだけではダメな場合もあります）。
+  uBlock Originでは`hoge.com##+js(acis, document.addEventListener, google_ad_client)`、AdGuard（iOSおよびAdGuardコンテンツブロッカーを除く）では`hoge.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "google_ad_client")`をMyフィルター/ユーザールールに追加してみてください。たまに競合条件により安定して機能しない場合もあります。uBlock Originでは、Firefox上なら`hoge.com##^script:has-text(google_ad_client)`に切り替えてください。AdGuardでは`hoge.com$$script[wildcard="*load*google_ad_client*"][min-length="2000"][max-length="7000"]`に切り替えてみてください（一部のプラットフォームでは機能しません）。それでだめな場合、uBlock Originでは`hoge.com##+js(acis, document.addEventListener, nextFunction)`に、AdGuardでは`hoge.com#%#//scriptlet("prevent-setTimeout", "/\.displayMessage[\s\S]*?\.nextFunction\(\)/")`に切り替えてみてください。iOS版AdGuardでは、コンテンツブロッカーに以下を追加してみてください（これだけではダメな場合もあります）。
   ```
   @@#*/ad/$image,domain=hoge.com
   @@||hoge.com^$generichide
