@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210522
+! Version: 20210523
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -116,6 +116,7 @@ _omniture.$script,domain=mathworks.com
 ||api.twitter.com^*/external_referer.json|
 ||blog.hubspot.jp/hs/cta/cta/current.js
 ||carsensor.net/vos/
+||cdn-net.com^$3p
 ||cedexis.net^$3p
 ||go.pardot.com^
 ||ip-api.com^$3p
@@ -149,6 +150,7 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 @@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|telegraph.co.uk|vanityfair.com|wired.com
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
 @@||assets.adobedtm.com^*/mbox-contents-$script,domain=nsat.collegeboard.org|sony.jp
+@@||cdn-net.com/cc.js$script,domain=butterfieldonline.com|uber.com|ubereats.com
 @@||cdx.cedexis.net^$domain=bloomberg.*
 @@||fplay.online/log_event$1p,xhr
 @@||ipapi.co/json/$xhr,domain=168.dailymaverick.co.za|audius.co
