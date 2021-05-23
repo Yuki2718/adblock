@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210523
+! Version: 20210524
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -87,6 +87,7 @@ recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
 ! Block ads on some videos while break other ones.
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tver.jp,badfilter
 
+-adobe-analytics/
 -contrib-ads/
 .s_code.js$domain=cadillacjapan.com|chevroletjapan.com
 /AppMeasurement.js
