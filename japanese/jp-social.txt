@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210524
+! Version: 20210525
 
 ! ---------- Common ----------
 /Twitter_b_rect.$image
@@ -121,6 +121,7 @@
 /xeory_base/lib/images/line.
 /xeory_extension/lib/images/line.
 /wp-socializer/*
+||amazonaws.com/*/hatena-widget.js
 ||ap.teacup.com/common/img/rss_
 ||ap.teacup.com/common/js/apclips.
 ||apis.google.com/js/plusone.
@@ -129,10 +130,7 @@
 ||asahi.com/images08/common/icn_
 ||asahicom.jp/js/socialbutton
 ||assets.pinterest.com/images/pidgets/$3p
-||b.hatena.ne.jp^$3p
-||b.st-hatena.com/js/bookmark_button.js
-||b.st-hatena.com/images/v4/public/entry/share
-||b.st-hatena.com^*/entry-button/
+||b.hatena.ne.jp/js/bookmark_button.js$3p
 ||biz.line.naver.jp/line_business/img/btn/
 ||blog.livedoor.jp/staff_reader/pocket_widget/
 ||blog.seesaa.jp/js/simple-bookmark-
@@ -224,6 +222,10 @@
 ||socialbars-web5.com^
 ||sp.zalo.me/plugins/share?dev=$3p
 ||st-hatena.com/images/theme/star/hatena-star-add-button.
+||st-hatena.com/images/v4/public/entry/share
+||st-hatena.com/js/bookmark_button.js
+||st-hatena.com/js/bookmark_button_wo_al.js$3p,domain=~hatena.com
+||st-hatena.com^*/entry-button/
 ||st-note.com/js/social_button.
 ||static.addtoany.com^$3p
 ||static.evernote.com^$3p
@@ -1525,6 +1527,7 @@ blog.game084.com,seikatsu-hyakka.com##.social-area
 blog.livedoor.jp##.sns > .fb:style(background:none !important)
 blog.livedoor.jp##.sns > .tw:style(background:none !important)
 blogos.com##.sns-bar
+blogspot.com###sns-shares
 buildinsider.net##.snsBar
 bunshun.jp###verticalSnsBar
 businesslawyers.jp##.entryFixBar
