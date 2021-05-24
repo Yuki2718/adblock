@@ -6,7 +6,7 @@ Youtubeの動画内広告について：各所で、また動画内広告がす�
 
 <sub>注1：Adblock Plus, AdGuard, EasyList, uBlock Origin, 各言語用フィルタの作者間では毎日活発に情報交換しており、Youtubeの広告などは共同で解析することもあります。</sub>
 
-<sub>注2：Paranoidの実験フィルタが効果を発揮するには、「ウェブサイトのオフライン作業用データ」を削除していただくか、`about:debugging#/runtime/this-firefox`または`chrome://inspect/#service-workers`からYoutubeのWorkerを解除していただく必要があります。</sub>
+<sub>注2：Paranoidの実験フィルタが効果を発揮するには、「ウェブサイトのオフライン作業用データ」を削除していただくか、`about:debugging#/runtime/this-firefox`または`chrome://inspect/#service-workers`からYoutubeのWorkerを解除していただく必要があります。なお、Fanboy Annoyanceにもほぼ同じ実験フィルタが含まれています。</sub>
 
 <sub>注3：これらの内、AdBlockは今でもABP Japanese filtersをデフォルトで有効にしており、Youtubeで接続の問題など様々な不具合を引き起こします。これはYoutubeの広告ブロック対策などではなく、単なるフィルタの誤爆です。</sub>
 
