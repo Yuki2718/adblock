@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210524
+! Version: 20210526
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -120,6 +120,7 @@ _omniture.$script,domain=mathworks.com
 ||carsensor.net/vos/
 ||cdn-net.com^$3p
 ||cedexis.net^$3p
+||geoip-js.com^$3p
 ||go.pardot.com^
 ||ip-api.com^$3p
 ||ipapi.co^$3p
@@ -155,6 +156,8 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 @@||cdn-net.com/cc.js$script,domain=butterfieldonline.com|uber.com|ubereats.com
 @@||cdx.cedexis.net^$domain=bloomberg.*
 @@||fplay.online/log_event$1p,xhr
+@@||geoip-js.com/js/apis/geoip2/$script,domain=freshdesk.com
+@@||geoip-js.com^*/me?referrer=$xhr,domain=freshdesk.com|ibanez.com
 @@||ipapi.co/json/$xhr,domain=168.dailymaverick.co.za|audius.co
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
 @@||playy.online/log_event$1p,xhr
