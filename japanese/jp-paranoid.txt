@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210527
+! Version: 20210528
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -120,12 +120,14 @@ _omniture.$script,domain=mathworks.com
 ||adobedtm.com^$3p,domain=~adobe.com
 ||api.nike.com/measure/uxevents/
 ||api.twitter.com^*/external_referer.json|
+||asadcdn.com^$3p
 ||blog.hubspot.jp/hs/cta/cta/current.js
 ||carsensor.net/vos/
 ||cdn-net.com^$3p
 ||cedexis.net^$3p
 ||geoip-js.com^$3p
 ||go.pardot.com^
+||ioam.de^
 ||ip-api.com^$3p
 ||ipapi.co^$3p
 ||livechatinc.com/tracking.js
@@ -155,6 +157,8 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 @@||adobedtm.com^*/mbox-contents-$script,domain=americanexpress.com|costco.com|lenovo.com|nfl.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|telegraph.co.uk|vanityfair.com|wired.com
+@@||asadcdn.com/adlib/pages/bild.js$script,domain=bild.de
+@@||asadcdn.com/adlib/libmodules/desktop/instream.$script,domain=bild.de
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
 @@||assets.adobedtm.com^*/mbox-contents-$script,domain=nsat.collegeboard.org|sony.jp
 @@||cdn-net.com/cc.js$script,domain=butterfieldonline.com|uber.com|ubereats.com
@@ -162,6 +166,7 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 @@||fplay.online/log_event$1p,xhr
 @@||geoip-js.com/js/apis/geoip2/$script,domain=freshdesk.com
 @@||geoip-js.com^*/me?referrer=$xhr,domain=freshdesk.com|ibanez.com
+@@||ioam.de/iam.js$script,domain=bild.de
 @@||ipapi.co/json/$xhr,domain=168.dailymaverick.co.za|audius.co
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
 @@||playy.online/log_event$1p,xhr
