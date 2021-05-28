@@ -133,7 +133,7 @@ This is a variant of Yuki's Blog parts filters for adult sites. Included in Yuki
 Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's uBlock Japanese filters - Annoyances
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt&title=Yuki's%20Blogroll%20filters">Subscribe</a>
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt)
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt)
 
 ### Sable filters 2
 
