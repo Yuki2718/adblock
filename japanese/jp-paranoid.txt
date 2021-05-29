@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210529
+! Version: 20210530
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -201,7 +201,6 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 .jp/lp/*?waad=$doc,removeparam=waad
 /?cmp=*&waad=$doc,removeparam,domain=happyon.jp|hulu.jp
 ?cid=*&adid=$doc,removeparam,domain=video.unext.jp
-?sharedid=*&u=$doc,domain=msafflnk.net
 ?utm_content=*&utm_source=$doc,domain=dmm.com
 ?utm_source=*&utm_medium=$doc,domain=e-3shop.com
 ?wak=*_link_$doc,domain=beauty.hotpepper.jp
@@ -232,6 +231,7 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 ?ITRACK_INFO=*&vcptn=$doc,removeparam=/ITRACK_INFO|vcptn/,domain=digi-tag.net
 ?_rt_ck=$doc,removeparam=_rt_ck
 ?campaign=*&event_callback_$doc,removeparam=/campaign|event_callback_[0-9a-z]+/,domain=adjust.com
+?sharedid=*&u=$doc,removeparam,domain=msafflnk.net
 ?tag=*&linkCode=$doc,removeparam=/tag|linkCode/,domain=amazon.co.jp
 ?tag=a8-affi-*&a8=$doc,removeparam=/tag|a8/,domain=amazon.co.jp
 ?utm_source=*&usid=$doc,removeparam=/^utm_|usid/,domain=d-card.jp

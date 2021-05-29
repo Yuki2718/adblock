@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210528
+! Version: 20210530
 
 ! ---------- Common ----------
 /Twitter_b_rect.$image
@@ -1544,7 +1544,6 @@ bunshun.jp###verticalSnsBar
 businesslawyers.jp##.entryFixBar
 clouderp.jp,dsk-cloud.com,storage-channel.jp##.social-blog
 coelog.chuden.jp##.js-share
-courrier.jp##.fixed_sns_area
 cybozushiki.cybozu.co.jp##.ac-det-share-footer
 cyclestyle.net,reanimal.jp,response.jp##.arti-sharing-wrapper
 d-navi004.com,gagetmatome.com,toratora.testdoujin.net###snsbox
@@ -1650,6 +1649,12 @@ wpb.shueisha.co.jp##[class*=__grid__cell-share]
 www.msn.com##.stb-flexvertical
 yna.co.kr##.sns-flying
 zeiri4.com##.js-stickyShareBtn
+!#if !env_mobile
+courrier.jp##.fixed_sns_area
+!#endif
+!#if env_mobile
+courrier.jp##.sp_sns_share_area
+!#endif
 
 ! ---------- Exception ----------
 @@||apis.google.com/js/plusone.js$domain=abcnews.go.com
