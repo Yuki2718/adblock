@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210530
+! Version: 20210531
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -79,6 +79,7 @@ smart-flash.jp##^.adsBlock
 ||fam-ad.com^
 ||g-af.com^
 ||get.mobu.jp^
+||smart-a.jp^
 ||smart-c.jp^
 ||t.afi-b.com^
 ||track.affiliate-b.com^
@@ -106,6 +107,7 @@ recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
 /js/counter.js
 /js/optscript/script-$1p
 /pageviews/*$domain=~pageviews.toolforge.org|~stats.wikimedia.org|~tools.wmflabs.org
+/rtoaster.js$script
 /s_code.$domain=4travel.jp|akiba-souken.com|asahibeer.co.jp|daiwa.jp|eiga.com|fontplus.jp|his-j.com|hpplus.jp|lake.jp|magaseek.com|nikon-image.com|nomura.co.jp|nttdocomo.co.jp|peachjohn.co.jp|ponparemall.com|rakuten-bank.co.jp|service.mcafee.com|shop-yukimeg.jp|shopch.jp|smart-j.com|tabelog.com|www.smbc.co.jp|zexy-enmusubi.net
 /s_codeCommon-$domain=news.infoseek.co.jp
 /s_codeCommon.$domain=buyback.rakuten.co.jp|denwa.rakuten.co.jp|delivery.rakuten.co.jp|keiba.rakuten.co.jp|rakuten-life.co.jp|shaken.rakuten.co.jp
@@ -126,6 +128,7 @@ _omniture.$script,domain=mathworks.com
 ||carsensor.net/vos/
 ||cdn-net.com^$3p
 ||cedexis.net^$3p
+||cxense.com^$script,frame,3p
 ! FP for the sake of security
 ||fraudjs.io^$3p
 ||geoip-js.com^$3p
@@ -141,6 +144,7 @@ _omniture.$script,domain=mathworks.com
 ||r.r10s.jp/com/rat/sc/
 ||rakuten-sec.co.jp/web/shared/js/amy-ai-chat/fingerprint*
 ||rakuten-sec.co.jp/web/shared/js/sc/
+||rtoaster.jp^$script,3p
 ||s.yimg.jp/images/chie/js/ChieRapid3Common
 ||s.yimg.jp/images/ds/yas/ya-$domain=yahoo.co.jp
 ||s.yimg.jp/images/rapid/
@@ -152,6 +156,7 @@ _omniture.$script,domain=mathworks.com
 
 komachi.yomiuri.co.jp###_popIn_recommend
 komachi.yomiuri.co.jp###_popIn_recommend_tieup
+wpb.shueisha.co.jp##.js-cxense-widget-recommend
 
 @@||adobedtm.com/launch-$script
 @@||adobedtm.com^*/AppMeasurement.min.js$script,domain=apple.com|foodnetwork.com
@@ -160,12 +165,19 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 @@||adobedtm.com^*/mbox-contents-$script,domain=americanexpress.com|costco.com|lenovo.com|nfl.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|telegraph.co.uk|vanityfair.com|wired.com
+@@||api.cxense.com/document/search?$script,xhr,domain=friday.kodansha.co.jp|ntv.co.jp|tv-tokyo.co.jp
+@@||api.cxense.com/public/widget/click/$domain=api.cxense.com
+@@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
+@@||api.cxense.com/public/widget/data?$domain=cinemacafe.net|googirl.jp|marketwatch.com
+@@||api.cxense.com^$script,domain=ntv.co.jp
 @@||asadcdn.com/adlib/pages/bild.js$script,domain=bild.de
 @@||asadcdn.com/adlib/libmodules/desktop/instream.$script,domain=bild.de
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
 @@||assets.adobedtm.com^*/mbox-contents-$script,domain=nsat.collegeboard.org|sony.jp
 @@||cdn-net.com/cc.js$script,domain=butterfieldonline.com|uber.com|ubereats.com
+@@||cdn.cxense.com^$script,domain=marketwatch.com
 @@||cdx.cedexis.net^$domain=bloomberg.*
+@@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|tv-tokyo.co.jp|wpb.shueisha.co.jp
 @@||fplay.online/log_event$1p,xhr
 @@||geoip-js.com/js/apis/geoip2/$script,domain=freshdesk.com
 @@||geoip-js.com^*/me?referrer=$xhr,domain=freshdesk.com|ibanez.com
@@ -173,6 +185,8 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 @@||ipapi.co/json/$xhr,domain=168.dailymaverick.co.za|audius.co
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
 @@||playy.online/log_event$1p,xhr
+@@||rtoaster.jp^$script,domain=animate-onlineshop.jp|brainpad.co.jp|cecile.co.jp|daihatsu.co.jp|hanadonya.com|hikaritv.net|kanaloco.jp|lexus.jp|melonbooks.co.jp|peachjohn.co.jp|rurubu.jp|satofull.jp
+@@||scdn.cxense.com/cx.js$script,domain=cinemacafe.net|cyclestyle.net|friday.kodansha.co.jp|grajapa.shueisha.co.jp
 @@||tags.tiqcdn.com/utag/$script,domain=wineenthusiast.com
 @@||tags.tiqcdn.com/utag/*/utag.js$script,domain=hm.com
 @@||tags.tiqcdn.com/utag/cbsi/cbssportssite/prod/utag.js$script,domain=cbssports.com
@@ -235,6 +249,7 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 ?tag=*&linkCode=$doc,removeparam=/tag|linkCode/,domain=amazon.co.jp
 ?tag=a8-affi-*&a8=$doc,removeparam=/tag|a8/,domain=amazon.co.jp
 ?utm_source=*&usid=$doc,removeparam=/^utm_|usid/,domain=d-card.jp
+?waad=*&ugad=$doc,removeparam=/waad|ugad/,domain=fod.fujitv.co.jp
 ||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_ga=$doc,removeparam=/ga|_x?uid/
 ||affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=*&goods_url=$doc,removeparam=user_id
