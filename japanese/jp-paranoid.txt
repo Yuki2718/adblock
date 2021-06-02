@@ -52,12 +52,6 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 ##body[id][class*=post-] section[class*=cta]
 baysia-tokyo.com##.ctawidget
 webike.net###pc_top_obi_2
-youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
-youtube.com##+js(json-prune, playerResponse.adPlacements)
-youtube.com##+js(json-prune, playerResponse.playerAds) 
-youtube.com##+js(json-prune, *.playerResponse.adPlacements)
-youtube.com##+js(json-prune, *.playerResponse.playerAds)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 ~baysia-tokyo.com##article[id][class*=post-] div[class*=cta]
 
@@ -81,6 +75,7 @@ smart-flash.jp##^.adsBlock
 ||get.mobu.jp^
 ||smart-a.jp^
 ||smart-c.jp^
+||smart-c.jp^$3p,badfilter
 ||t.afi-b.com^
 ||track.affiliate-b.com^
 
@@ -181,6 +176,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||fplay.online/log_event$1p,xhr
 @@||geoip-js.com/js/apis/geoip2/$script,domain=freshdesk.com
 @@||geoip-js.com^*/me?referrer=$xhr,domain=freshdesk.com|ibanez.com
+@@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
 @@||ioam.de/iam.js$script,domain=bild.de
 @@||ipapi.co/json/$xhr,domain=168.dailymaverick.co.za|audius.co
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
