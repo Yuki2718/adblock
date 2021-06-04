@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210602
+! Version: 20210605
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -51,6 +51,10 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 @@||speee-ad.akamaized.net^$css,image,script,domain=saitama-np.co.jp,badfilter
 ##body[id][class*=post-] section[class*=cta]
 baysia-tokyo.com##.ctawidget
+facebook.com##[aria-label*=Marketplace] object > a[href^="/ads/"] > span:not(:empty):upward(11)
+news.mynavi.jp##.headerNav_listNode-hisamitsu
+news.mynavi.jp##.headerNav_sponsored
+recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
 webike.net###pc_top_obi_2
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 ~baysia-tokyo.com##article[id][class*=post-] div[class*=cta]
@@ -78,10 +82,6 @@ smart-flash.jp##^.adsBlock
 ||smart-c.jp^$3p,badfilter
 ||t.afi-b.com^
 ||track.affiliate-b.com^
-
-facebook.com##[aria-label*=Marketplace] object > a[href^="/ads/"] > span:not(:empty):upward(11)
-news.mynavi.jp##.headerNav_listNode-hisamitsu, .headerNav_sponsored
-recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
 
 @@||epub-tw.com/reader/ad/banner_$image,1p,badfilter
 ! Block ads on some videos while break other ones.
@@ -151,6 +151,7 @@ _omniture.$script,domain=mathworks.com
 
 komachi.yomiuri.co.jp###_popIn_recommend
 komachi.yomiuri.co.jp###_popIn_recommend_tieup
+roomie.jp##.powered_by_cx:upward(1)
 wpb.shueisha.co.jp##.js-cxense-widget-recommend
 
 @@||adobedtm.com/launch-$script
