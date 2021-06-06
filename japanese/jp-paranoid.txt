@@ -56,8 +56,11 @@ news.mynavi.jp##.headerNav_listNode-hisamitsu
 news.mynavi.jp##.headerNav_sponsored
 recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
 webike.net###pc_top_obi_2
-youtube-nocookie.com,youtube.com##+js(json-prune, *.playerResponse.adPlacements *.playerResponse.playerAds [].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube-nocookie.com,youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.playerAds)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 ~baysia-tokyo.com##article[id][class*=post-] div[class*=cta]
 
 !#if !env_firefox
