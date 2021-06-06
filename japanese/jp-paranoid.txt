@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210606
+! Version: 20210607
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -50,6 +50,7 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 @@||cloudfront.net/files/rcms_conv_webp/files/user/images/sidead/$domain=bcnretail.com,badfilter
 @@||speee-ad.akamaized.net^$css,image,script,domain=saitama-np.co.jp,badfilter
 ##body[id][class*=post-] section[class*=cta]
+2099.jp##.ugb-cta:not(.ugb-cta--design-plain)
 baysia-tokyo.com##.ctawidget
 facebook.com##[aria-label*=Marketplace] object > a[href^="/ads/"] > span:not(:empty):upward(11)
 news.mynavi.jp##.headerNav_listNode-hisamitsu
@@ -61,7 +62,7 @@ youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.playerAds)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
-~baysia-tokyo.com##article[id][class*=post-] div[class*=cta]
+~2099.jp,~baysia-tokyo.com##article[id][class*=post-] div[class*=cta]
 
 !#if !env_firefox
 smart-flash.jp##.adsBlock
@@ -102,6 +103,7 @@ smart-flash.jp##^.adsBlock
 /detm-container-
 /dtm/*/satellitelib-
 /firebase-performance-
+/friendbuy.min.js
 /frosmo.easy.js
 /js/counter.js
 /js/optscript/script-$1p
@@ -158,6 +160,7 @@ komachi.yomiuri.co.jp###_popIn_recommend_tieup
 roomie.jp##.powered_by_cx:upward(1)
 wpb.shueisha.co.jp##.js-cxense-widget-recommend
 
+@@/friendbuy.min.js$script,domain=butcherbox.com
 @@||adobedtm.com/launch-$script
 @@||adobedtm.com^*/AppMeasurement.min.js$script,domain=apple.com|foodnetwork.com
 @@||adobedtm.com^*/AppMeasurement_Module_$script,domain=foodnetwork.com
