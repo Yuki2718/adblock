@@ -14,7 +14,7 @@ Youtubeの動画内広告について：各所で、また動画内広告がす�
 
 ## Yuki's uBlock Japanese filters （雪フィルタ）
 
-日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、**uBlock Origin専用**フィルタです。AdBlock, Adblock Plus, AdGuard, uBlock-for-firefox-legacy, Vivaldiなどでは使わないでください<sup>1</sup>！
+日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、**uBlock Origin専用**フィルタです。AdBlock, Adblock Plus, AdGuard, uBlock-for-firefox-legacy, Vivaldiなどでは**使わないで**ください<sup>1</sup>！
 
 - モバイルサイトは対象外です。各ブロッカー標準のフィルタ、または280blockerさんの[フィルタ](https://280blocker.net/download/)やもちおさんの[たまごフィルタ](https://eeii0a5l.github.io/mochifilter_homepage/tamago.html)など、モバイル用のフィルタを使用してください。
 - 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
