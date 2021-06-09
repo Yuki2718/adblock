@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210608
+! Version: 20210609
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -263,9 +263,6 @@ carnext.jp###fixed_footer
 ||cloudfront.net/image/buyer.png$domain=appbankstore.jp
 appbankstore.jp###amznpopup
 ||cloudfront.net/img/dotimg/btn/aishipr_bnr_$domain=aiship.jp
-hiroba.dpoint.jp###gtm-promotionModal-overlay
-hiroba.dpoint.jp##.js-modal-promotion-banner
-hiroba.dpoint.jp##div#wrapper:style(position:static!important)
 ||commerce21.co.jp/files/user/images/bnr_
 commerce21.co.jp##.l-fixed-banner
 ||cosme.net/images/point/pc/common/sevendays-login/
@@ -367,6 +364,7 @@ lightfx.jp###overlay
 ||lionbridge.ai^*/resources_hero.$image,1p
 lionbridge.ai##.newsletter-popover
 ||llnwd.net/e113/lib/tm/pc/img/common/btnEntry.$domain=tenshoku.mynavi.jp
+||tenshoku.mynavi.jp/lib/tm/pc/img/common/btnEntry.png
 tenshoku.mynavi.jp##.fixedEntryBtn
 ||llnwd.net^*/house_ad_on_load_modal_$script,domain=uwl.weblio.jp
 ||logitech.com^*/popup-email-capture.png|
@@ -511,8 +509,11 @@ app.slack.com##.p-download_modal.c-fullscreen_modal.ReactModal__Overlay--after-o
 app.slack.com##.p-ia__workspace_banner.p-client__banners
 askul.co.jp##.stickyFooter
 auction.brandear.jp##.bounceInUp
+autoc-one.jp###diagnoseModal
 autoc-one.jp###js-floating
-autoc-one.jp##.modal-popup
+autoc-one.jp###withdrawalAppealModal
+autoc-one.jp##.modal-backdrop
+autoc-one.jp##body.modal-open:style(overflow: auto!important;padding-right: auto!important;)
 balloonworld.jp,cbn.co.jp,ryu-blo.jp,sanei-ad.jp,us-lighthouse.com##.afc_popup
 bee-music.jp###fix-contact-pc
 beta.sankakucomplex.com##.MuiPaper-elevation1
@@ -596,6 +597,7 @@ hiroba.dpoint.jp###gtm-promotionModal-overlay
 hiroba.dpoint.jp###js-floating
 hiroba.dpoint.jp##.js-modal-promotion-banner
 hiroba.dpoint.jp##body[data-modal-overlay=open] > div#wrapper:style(position:static!important)
+hiroba.dpoint.jp##div#wrapper:style(position:static!important)
 hitohana.tokyo###cta
 honichi.com###staticModal
 honichi.com##body.modal-open:style(overflow: auto !important)
@@ -1578,8 +1580,6 @@ otapol.com###balloonText
 ||suntory.co.jp/softdrink/craftboss/flash/assets/js/main.js
 ||suruga-ya.jp/drupal/themes/surugaya/images/02_blue.
 ||techacademy.jp/assets/jason/jason_udekumi_kotei-
-||tenshoku.mynavi.jp/lib/tm/pc/img/common/btnEntry.png
-tenshoku.mynavi.jp##.fixedEntryBtn
 ||tnc.co.jp/img/common/body_illust
 ||ura-akiba.jp/u.js
 ||uta-net.com/reverse/image/get_flash_
