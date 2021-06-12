@@ -137,7 +137,7 @@ Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's
 
 ### Sable filters 2
 
-Inspired by Sable filters (discontinued), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in Yuki's uBlock Japanese filters - Annoyances
+Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in Yuki's uBlock Japanese filters - Annoyances
 
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
