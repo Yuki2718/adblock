@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210609
+! Version: 20210614
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -178,6 +178,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||api.cxense.com/public/widget/click/$domain=api.cxense.com
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
 @@||api.cxense.com/public/widget/data?$domain=cinemacafe.net|googirl.jp|marketwatch.com
+@@||api.cxense.com/public/widget/data?*&ctx=https%3A%2F%2Fure.pia.co.jp$script,domain=cdn.cxpublic.com
 @@||api.cxense.com^$script,domain=ntv.co.jp
 @@||api.ipify.org^$xhr,domain=speedcheck.ky
 @@||asadcdn.com/adlib/pages/bild.js$script,domain=bild.de
@@ -188,7 +189,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||cdn.cxense.com^$script,domain=marketwatch.com
 @@||cdx.cedexis.net^$domain=bloomberg.*
 @@||cxense.com/cx.cce.js$script,domain=googirl.jp
-@@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|wpb.shueisha.co.jp
+@@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|ure.pia.co.jp|wpb.shueisha.co.jp
 @@||fplay.online/log_event$1p,xhr
 @@||geoip-js.com/js/apis/geoip2/$script,domain=freshdesk.com
 @@||geoip-js.com^*/me?referrer=$xhr,domain=freshdesk.com|ibanez.com
@@ -199,7 +200,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||playy.online/log_event$1p,xhr
 @@||rtoaster.jp^$script,domain=lexus.jp|melonbooks.co.jp
 @@||scdn.cxense.com/cx.cce.js$script,domain=cinemacafe.net|grajapa.shueisha.co.jp|rbbtoday.com|wpb.shueisha.co.jp
-@@||scdn.cxense.com/cx.js$script,domain=cyclestyle.net|friday.kodansha.co.jp
+@@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|friday.kodansha.co.jp
 @@||tags.tiqcdn.com/utag/$script,domain=wineenthusiast.com
 @@||tags.tiqcdn.com/utag/*/utag.js$script,domain=hm.com
 @@||tags.tiqcdn.com/utag/cbsi/cbssportssite/prod/utag.js$script,domain=cbssports.com
