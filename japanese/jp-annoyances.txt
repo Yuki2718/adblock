@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210617
+! Version: 20210618
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -229,7 +229,6 @@ naturum.co.jp###js-popup
 ||3rdspring.jp/pc_img/linebanner.
 ||3rdspring.jp/pc_img/wingbanner2.
 ||4900.co.jp/smarticle/wp-content/themes/smarticle/images/fixedfooter_
-4900.co.jp###ouibounce-modal
 4900.co.jp##.fixedFooter
 ||5-fifth.com/user_data_sp/*_youtube_sp.jpg|
 5-fifth.com##.m-popup
@@ -786,6 +785,7 @@ youtube.com##ytd-popup-container > .ytd-popup-container[role="dialog"]:has(a[hre
 zurich.co.jp###fixed-popup-cta, #floatnav
 
 !#if !env_firefox
+4900.co.jp###ouibounce-modal
 anokoro30.com##.td-more-articles-box
 another-chance.love###bfb_content_pc
 bignox.com##.egg-section
@@ -799,6 +799,7 @@ usshi-na-life.com##.td-more-articles-box
 !#endif
 
 !#if env_firefox
+4900.co.jp##^#ouibounce-modal
 anokoro30.com##^.td-more-articles-box
 another-chance.love##^#bfb_content_pc
 bignox.com##^.egg-section
@@ -1357,6 +1358,7 @@ zdnet.com##div[data-component="newsletterWidget"]
 ||linkwithin.com^$3p
 ||recommend.tws.toyota.jp^
 ||recommendations.data.tm-awx.com^
+||salesiq.zoho.com/widget
 ! search broken @dhc.co.jp
 !||snva.jp^
 ||surveymonkey.com^$script,3p,domain=~surverymonkey.co.uk|~surveymonkey.co.uk|~surveymonkey.de
@@ -1639,7 +1641,7 @@ dailyuploads.net##+js(ra, checked, input#chkIsAdd)
 deportealdia.live,noticiasesports.live,noweconomy.live,techgeek.digital##+js(nano-sib, , 1200, 0)
 easylinkref.com,lnk.news,lnk.parts##+js(nano-sib, , , 0)
 ec.line.me##+js(nano-stb, goOutlink, 2800)
-federleqa.icu,forex-trnd.com,imgbigo.xyz,imgez.xyz,imgflyer.xyz,imgflyr.xyz,imggong.xyz,imgkaid.xyz,imgkaka.xyz,imgopp.xyz,imgoppo.xyz,imgzer.net,kekolangti.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
+federleqa.icu,forex-trnd.com,imgbigo.xyz,imgez.xyz,imgflyer.xyz,imgflyr.xyz,imggong.xyz,imgirx.xyz,imgkaid.xyz,imgkaka.xyz,imgopp.xyz,imgoppo.xyz,imgzer.net,kekolangti.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
 file4go.*##+js(set, time, 0)
 game8.jp##+js(rc, async-hide, html)
 get.adobe.com##+js(ra, checked, #chrExtCheckbox)

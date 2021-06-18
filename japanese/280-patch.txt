@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
-! Version: 20210617
+! Version: 20210618
 
 &prvtof=*&poru=
 .biz/?p=*&sub1=$document
@@ -15,9 +15,17 @@
 /?l=*&s=*&mprtr=$~third-party,xmlhttprequest
 /?r=*&a=*&icode=*$document,~third-party
 /?r=dir&zoneid=$document,popup
+/antibot/ab.php|$xmlhttprequest,~third-party
+/bdv_rd.dbm?ownid=$doc
 /bdv_rd3.dbm?frdto=$document,popup
+/ck_winAlert.js|
+/glp?r=*&rw=*&rh=*&ww=*&wh=$script,~third-party
 /jscheck.php?enc=$xmlhttprequest
 /push-skin/skin.min.js
+/redirect?feed=$subdocument
+/search/tsc.php?
+/step1.php?msg=*&cnv=$document
+/track/click.php?c=*&zoneid=$document
 /^http:\/\/(?:\d{9}|xn--[-0-9a-z]{10,}--[0-9a-z]{14,}|[a-z]{6,})\.[-a-z]{10,}\.nl\//$document
 /^http:\/\/(?:\d{9}|[-a-z]{25,})\.[a-z]{9,}\.it\//$document
 /^http:\/\/\d{9}\.[-0-9a-z]{10,26}\.(?:pl|ru)\//$document
@@ -39,15 +47,10 @@
 /^https?:\/\/(www\.)?[-0-9a-z]{14,}\.(?:biz|fun)\/[a-z]{10,11}\.php/$document
 /^https?:\/\/[-0-9a-z]*prize[-0-9a-z]+\.li[fv]e\/\?u=[0-9a-z]+&o=[0-9a-z]+/$document
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org\/page\d{1,4}/$document,domain=duckdns.org
-/antibot/ab.php|$xmlhttprequest,~third-party
-/ck_winAlert.js|
-/glp?r=*&rw=*&rh=*&ww=*&wh=$script,~third-party
-/redirect?feed=$subdocument
-/search/tsc.php?
-/step1.php?msg=*&cnv=$document
-/track/click.php?c=*&zoneid=$document
 ^fp=*&prvtof=
 ||0265331.com^$document
+||0globally594.ga^$document,popup
+||0redirc.com^$document,popup
 ||1111sale.us^$document,popup
 ||1919otokonosex.xyz^$document
 ||1919yarerunda.xyz^$document
@@ -199,10 +202,12 @@
 ||ekb-tv.ru^$document
 ||eroero7.xyz^$document
 ||eroerosex.xyz^$document
+||erointheero.xyz^$document
 ||este-plan.pw/?u=$document
 ||eurasiatravel.me^$document
 ||ev8s6dc9kc.com^$document
 ||excursioconero.it^$document
+||expmediadirect1.com^$document
 ||express-news.me^$document,popup
 ||exrtbsrv.com^$document
 ||extreme.red^$document
@@ -225,6 +230,7 @@
 ||g3xq4wr6bv.com^$document
 ||geniusdexchange.com^$document,popup
 ||getoiu.com^$document,popup
+||gigcount.com^$third-party
 ||glamsilkskin.com^$document,popup
 ||glbltraffic.com^$document,popup
 ||glugruptixo.com^$document,popup
@@ -424,6 +430,7 @@
 ||rodnoe2010.ru^$document
 ||rqhere2.com^$document
 ||rsafrwd.com^$document,popup
+||rsafrwdr.com^$document,popup
 ||rsalcau.com^$document,popup
 ||rsaltsjt.com^$document,popup
 ||rtpdn11.com^$document
@@ -450,6 +457,7 @@
 ||sexgirl.tokyo^$document
 ||sexmura.xyz^$document
 ||sextoryumon.xyz^$document
+||sexyladydesire.xyz^$document,popup
 ||shewantyou.com^$document
 ||shewantyou.net^$document
 ||shiouo.com^$document

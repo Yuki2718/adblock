@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210617
+! Version: 20210618
 
 ! ---------- Common ----------
 /Twitter_b_rect.$image
@@ -78,6 +78,7 @@
 /rss.gif$image
 /rss.png$image
 /rss_icon.$image,1p
+/rss2_icon.gif|
 /rssicon.$domain=oceana.ne.jp
 /share42.js$domain=~dontreg.ru|~kinopovod.tv
 /sharedaddy/sharing.js
@@ -186,9 +187,10 @@
 ||line-apps.com/n/line_it/thirdparty/loader.
 ||line-website.com/social-plugins/js/thirdparty/loader.min.js$script,domain=~social-plugins.line.me
 ||loggly.com^*/TweetThisPost.$image
+||macaro-ni.jp/assets/img/*/line3.png
 ||media.line.me/img/button/
 ||media.line.me/js/line-button.js^$3p
-||media.line.naver.jp/js/line-button.
+||media.line.naver.jp/js/line-button.js
 ||mediabuttons.ru^$3p
 ||mixi.net/img/basic/mixicheck_entry/
 ||nwidget.networkedblogs.com^$3p
@@ -221,9 +223,12 @@
 ||shop-pro.jp/tmpl_img/*/feed_
 ||shop-pro.jp/tmpl_img/*_side_feed.
 ||shop-pro.jp^*/etc/sns_$image
-||shop-pro.jp^*/facebook.png|
-||shop-pro.jp^*/line.png|
-||shop-pro.jp^*/twitter.png|
+||shop-pro.jp^*/facebook.png
+||shop-pro.jp^*/icon_hatena.gif
+||shop-pro.jp^*/icon_logpi.gif
+||shop-pro.jp^*/icon_y_bookmark.gif
+||shop-pro.jp^*/line.png
+||shop-pro.jp^*/twitter.png
 ||shorte.st^$3p
 ||skype.com/skypewebsdk/shareButton/
 ||social-plugins.line.me/widget^$3p
@@ -286,7 +291,6 @@
 /static/img/hatena_bookmark.png$domain=haraheri.net|tabichannel.com|torothy.com
 /static/img/twitter.png$domain=haraheri.net|tabichannel.com|torothy.com
 /t_mini-b.$domain=2chmm.com|5chmm.jp
-_sns.js|$script,domain=oricon.co.jp
 ||0matome.com/img/icon_feed.
 ||1242.com/lf/asset/themes/1242/assets/images/common/btn_p_
 1242.com##.box-btn_sns
@@ -377,6 +381,9 @@ anpanman.jp##.btn-sbm
 ||antenna.jp/static/share_images/FB-
 ||antenna.jp/static/share_images/Twitter_
 ||appgaku.com/img/btn/sns/
+||applion.jp/d/img/icon/facebook_next.
+||applion.jp/d/img/icon/twitter_next.
+applion.jp##.buttons
 ||aria.nikkei.com/images/aria/2019/iconFb.
 ||aria.nikkei.com/images/aria/2019/iconLine.
 ||aria.nikkei.com/images/aria/2019/iconTw.
@@ -444,7 +451,7 @@ at.webry.info##.bookmark:has(.webry-simple-sbm)
 bio.nikkeibp.co.jp##.socialButtons
 ||biteki.com/wp-content/themes/biteki_new/common/svg/icon_share_
 biteki.com##.block_share
-||biz-journal.jp/wp-content/themes/biz-journal/pc/img/pc_
+||biz-journal.jp/wp-content/themes/biz-journal/pc/img/pc_*_btn.
 ||bizcompass.jp/wp-content/themes/bizcom/img/common/sns_en.
 ||bizcompass.jp/wp-content/themes/bizcom/img/common/sns_fb.
 ||bizcompass.jp/wp-content/themes/bizcom/img/common/sns_hatena.
@@ -499,6 +506,8 @@ bobbylondon.tv##.headSocial
 ||booklog.jp/img/btn/btn_facebook_circle
 ||booklog.jp/img/btn/btn_hatena_circle
 ||booklog.jp/img/btn/btn_twitter_circle
+||bookmeter.com/assets/common/sprite_sns_pc-
+bookmeter.com##.sns-share
 ||books.or.jp/assets/img/facebook.
 ||books.or.jp/assets/img/hatena.
 ||books.or.jp/assets/img/line.
@@ -551,7 +560,7 @@ cinra.net##.sns--fixed
 city.kyoto.lg.jp##.sns_btn
 ||city.nagoya.jp/assets/img/icon_share_
 city.nagoya.jp##.ngy-snsBtnArea
-||city.nagoya.jp/css/img/sns.js|
+||city.nagoya.jp/css/img/sns.js
 ||city.osaka.lg.jp/images/facebook.
 ||city.osaka.lg.jp/images/line.
 ||city.osaka.lg.jp/images/twitter.
@@ -574,6 +583,7 @@ times.abema.tv##.c-article-share
 ||cloudfront.net/local/lightmv.com/dist/static/img/twitter.$domain=lightmv.com
 ||cloudfront.net/org/ba/*_640x208_w.png$domain=eclat.hpplus.jp
 ||cloudfront.net/wp-content/themes/ovo2/img/btn_$domain=ovo.kyodo.co.jp
+||cmoa.jp/pcc/images/new_special/linebutton.
 ||colocal.jp/wp-content/themes/colocal/libs/images/cmn/cmn-btn-hatena.
 ||colocal.jp/wp-content/themes/colocal/libs/images/cmn/cmn-btn-rss.
 ||columbia.jp^*/icn/icn_share_
@@ -601,7 +611,7 @@ couples.jp##.p-sideTitle:has-text(SNSで共有)
 ||coupon.netmile.co.jp/img/icon_facebook.
 ||coupon.netmile.co.jp/img/icon_twitter.
 ||crd.ndl.go.jp/reference/modules/d3ndlcrdentry/images/hatena.
-||create-yokohama.com^*/facebook.js|
+||create-yokohama.com^*/facebook.js
 ||crosset.onward.co.jp/common/img/common/icon_$image,1p
 crosset.onward.co.jp##.share
 ||ctv.co.jp^*/btn_fb.$image,1p
@@ -1160,6 +1170,7 @@ lomni7.jp##.listShare
 ||omyutech.com/image/home/icon_$image,1p
 ||openworldnews.net/icon_sns.
 openworldnews.net###shareBtns
+||oricon.co.jp/pc/js/_parts/*_sns.js
 ||osanpo-english.com/materials/snsicon-
 ||oshiete.xgoo.jp/images/2010renew/icon_feed.
 ||otekomachi.yomiuri.co.jp/wp-content/themes/otekomachi/assets/images/singular_page_icon.
@@ -1616,6 +1627,7 @@ bunshun.jp###verticalSnsBar
 businesslawyers.jp##.entryFixBar
 clouderp.jp,dsk-cloud.com,storage-channel.jp##.social-blog
 coelog.chuden.jp##.js-share
+courrier.jp##.fixed_sns_area
 cybozushiki.cybozu.co.jp##.ac-det-share-footer
 cyclestyle.net,reanimal.jp,response.jp##.arti-sharing-wrapper
 d-navi004.com,gagetmatome.com,toratora.testdoujin.net###snsbox
@@ -1722,10 +1734,25 @@ wpb.shueisha.co.jp##[class*=__grid__cell-share]
 www.msn.com##.stb-flexvertical
 yna.co.kr##.sns-flying
 zeiri4.com##.js-stickyShareBtn
-!#if !env_mobile
-courrier.jp##.fixed_sns_area
-!#endif
 !#if env_mobile
+||aidoly.net/common/img/sp/btn_
+||ananweb.jp/core/img/bot/sns-line-add-
+||applion.jp/d/img/icon/icon_fix_
+||biz-journal.jp/wp-content/themes/biz-journal/sp/img/sp_*_btn.
+||bookmeter.com/assets/sp/components/bm-sns-share/
+bookmeter.com##.bm-sns-share
+||businessinsider.jp/asset/sp/js/share_sticky.
+||cmoa.jp/cc/template/common/sns/
+||contents.oricon.co.jp^*_76.png|
+||cpcdn.com/videos/assets/smart_phone/facebook-$domain=cookpad-video.jp
+||cpcdn.com/videos/assets/smart_phone/twitter-$domain=cookpad-video.jp
+||macaro-ni.jp/assets/img/*/facebook_full.svg
+||macaro-ni.jp/assets/img/*/line_full.svg
+||macaro-ni.jp/assets/img/*/twitter_full.svg
+||parts.blog.livedoor.jp/img/lite2/item/social_buttons/
+||rakuten-static.com/img/sp/common/btn_line.$image,domain=plaza.rakuten.co.jp
+||rakuten-static.com/img/sp/common/btn_share_$image,domain=plaza.rakuten.co.jp
+4900.co.jp##.social
 courrier.jp##.sp_sns_share_area
 !#endif
 
