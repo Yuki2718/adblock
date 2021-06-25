@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210625
+! Version: 20210626
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -58,6 +58,7 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 2099.jp##.ugb-cta:not(.ugb-cta--design-plain)
 baysia-tokyo.com##.ctawidget
 facebook.com##[aria-label*=Marketplace] object > a[href^="/ads/"] > span:not(:empty):upward(11)
+iwatetabi.jp###ad
 news.mynavi.jp##.headerNav_listNode-hisamitsu
 news.mynavi.jp##.headerNav_sponsored
 recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
@@ -71,9 +72,11 @@ youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 ~2099.jp,~baysia-tokyo.com##article[id][class*=post-] div[class*=cta]
 
 !#if !env_firefox
+iwatetabi.jp###adbnr
 smart-flash.jp##.adsBlock
 !#endif
 !#if env_firefox
+iwatetabi.jp##^#adbnr
 smart-flash.jp##^.adsBlock
 !#endif
 
