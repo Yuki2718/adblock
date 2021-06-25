@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210624
+! Version: 20210625
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -168,7 +168,7 @@ sony.jp##.s5-frontLogin__notificationItem--favorite
 thetimes.co.uk##.is-fixed.Tooltip--arrow-topLeft
 thetimes.co.uk##.js-channelsTooltip
 translate.google.co.jp,translate.google.com##.tlid-notification-container
-twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute;"] > div > div > div > div[role=button] > div[dir=auto] > span > span:has-text(通知をオンにする):upward(5)
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute;"] > div > div > div > div[role=button] > div[dir=auto] > span > span:has-text(通知をオンにする):upward(5)
 w3q.jp###news-ticker-wrapper
 wowgame.jp###tubiaWalkthroughNotification
 www.dropbox.com##.callout-container--bottom-left:has(.callout-content-title:has-text(編集しますか？))
@@ -253,7 +253,7 @@ asobo.com##.banner
 ||blog.fancl.co.jp/common/img/bgmodal_
 blog.fancl.co.jp###modal-open
 blog.fancl.co.jp###modal-overlay
-||buy.tinypass.com/checkout/template/cacheableShow?aid=*&offerId=fakeOfferId&experienceId=*&iframeId=offer_*&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template|$frame,domain=thehindu.com
+||buy.tinypass.com/checkout/template/cacheableShow?aid=*&offerId=fakeOfferId&experienceId=*&iframeId=offer_*&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template|$frame,3p,domain=thehindu.com
 thehindu.com##.tp-backdrop
 thehindu.com##.tp-modal:has(> div.tp-iframe-wrapper > iframe[id^="offer_"][src*="/cacheableShow?aid="][src*="offerId=fakeOfferId"][src$="widget=template"])
 thehindu.com##body.tp-modal-open:style(overflow: auto!important;height: auto!important;)
@@ -756,7 +756,7 @@ tumblr.com##.road-block
 tumblr.com##.tmblr-iframe--follow-teaser
 tv.netkeiba.com##.DetailIntroArea01, .TvIntroOverlay
 tver.jp##+js(set, enquete.checkDispEQ, falseFunc)
-twitter.com###layers div[dir=auto] > span:has-text(Twitterなら、「いま」):upward(5)
+twitter.com###layers > div[class] > div[class] > div[class] > div[class]:has(> div[class] > div[class] > div[class] > div[class] > div[class] > a[href="/login"])
 udemy.benesse.co.jp##.cmn--contentCoursePopup
 uwl.weblio.jp###free-house-ad-on-load-modal-container, #free-house-ad-on-load-modal-overlay
 video.fc2.com##a[href^="http://fc2information"][data-link][style]:upward(1)
@@ -1365,6 +1365,7 @@ zdnet.com##div[data-component="newsletterWidget"]
 ||getsitecontrol.com^$3p
 ||gravityrd-services.com^$3p
 !||i.popincdn.com^
+||jivosite.com^$3p,domain=~jivosite.ru
 ||linkwithin.com^$3p
 ||recommend.tws.toyota.jp^
 ||recommendations.data.tm-awx.com^
@@ -1425,22 +1426,23 @@ twitter.com##div[aria-label^="タイムライン"][aria-label$=さんのツイ�
 twitter.com##aside[aria-label=おすすめユーザー]:upward(1)
 twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute"] a[href^="/i/connect_people?"]:upward(div[style^="position: absolute"])
 twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute"] div[role=button] > div[dir=auto] > span > span:has-text(フォロー):upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute"] h2 > div[style^="-webkit"] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: 話題を検索"] > div[style] > div[style^="position: absolute"] h2 > div[style^="-webkit"] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: 話題を検索"] > div[style] > div[style^="position: absolute"] h2 > div[style^="-webkit"] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"]) ~ div[style^="position: absolute"]
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div[style] > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div[style] > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"]) ~ div[style^="position: absolute"]
 twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] div > a[href^="/i/connect_people?"]:upward(div[style^="position: absolute"])
 twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] div[role=button][data-testid$=-follow]:upward(div[style^="position: absolute"])
 twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
 ! おすすめトピック
+twitter.com##div[aria-label="タイムライン: "] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[aria-label="タイムライン: "])
 twitter.com##div[aria-label="タイムライン: トピック"] > div > div[style^="position: absolute"] div > a[href$="/i/topics/picker/home"]:upward(div[style^="position: absolute"])
 twitter.com##div[aria-label="タイムライン: トピック"] > div > div[style^="position: absolute"] div[role=presentation]:first-child > div > div:first-child div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: トピック"] div[style^="position: absolute"] h2 > div[style^="-webkit"] > span:has-text(おすすめトピック):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: トピック"] div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[style^="position: absolute"])
 twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] div > a[href$="/i/topics/picker/home"]:upward(div[style^="position: absolute"])
 twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] div[role=presentation]:first-child > div > div:first-child div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
 twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[style^="position: absolute"])
 ! リストを見つける
 twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] a[href="/i/lists/suggested"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] div[dir=auto][style^="-webkit"] > span:has-text(新しいリストを見つける):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] div[dir=auto][style^=-webkit] > span:has-text(新しいリストを見つける):upward(div[style^="position: absolute"])
 twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] span > span:only-child:has-text(フォロー):upward(div[style^="position: absolute"])
 ! タイムラインにトピックも表示しましょう
 twitter.com##div[style^="position: absolute"] section > div[aria-label="タイムライン: Carousel"] > nav div[role=presentation]:first-child > div > div:first-child div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
@@ -1510,6 +1512,8 @@ realsound.jp###rsCareer
 ||sannichi.co.jp/images/side_bnr_
 ||scdn.co/i/account/overview/iphone-ddd9e69.png$domain=spotify.com
 spotify.com##div[class*=Hero__rootWithNavigationPadding] > div[class*=Hero__inverse]:has(.col-lg-6.col-sm-7 > a[class*=CTA__root][href$="/purchase/premium/"])
+||star-ch.jp/resources/img/banners/*_300x200$image,1p
+star-ch.jp##.sc-footer__contents2
 ||strate.biz/wp-content/uploads/*/banner.
 ||thisisgallery.com/wp-content/themes/thisismedia/images/side/banner_
 ||vector.co.jp/img_cache/tq/p/service/man/*_banner.
