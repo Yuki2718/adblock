@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210626
+! Version: 20210628
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -87,21 +87,17 @@ smart-flash.jp##^.adsBlock
 ||ad.isaf.jp^
 ||adm.shinobi.jp^$1p
 ||admane.jp^
-||admane.jp^$3p,badfilter
 ||al.dmm.co.jp^$doc
 ||af.moshimo.com^$doc
 ||affiliate.shopping.yahoo.co.jp^$doc
 ||affiliate.suruga-ya.jp^$doc
 ||affiliateone.jp^
-||affiliateone.jp^$3p,badfilter
 ||fam-ad.com^
 ||focas.jp^
-||focas.jp^$3p,badfilter
 ||g-af.com^
 ||get.mobu.jp^
 ||smart-a.jp^
 ||smart-c.jp^
-||smart-c.jp^$3p,badfilter
 ||t.afi-b.com^
 ||track.affiliate-b.com^
 
@@ -186,6 +182,9 @@ roomie.jp##.powered_by_cx:upward(1)
 ropping.tv-asahi.co.jp##div[id^=recommendArea_]
 seshop.com###recommend-content
 shoeisha.co.jp###rec-related-book-list
+storee.saisoncard.co.jp###block-top-recommend
+storee.saisoncard.co.jp##.block-recommend-container
+storee.saisoncard.co.jp##.mainframe_ > .event_
 wpb.shueisha.co.jp##.js-cxense-widget-recommend
 
 @@/friendbuy.min.js$script,domain=butcherbox.com
