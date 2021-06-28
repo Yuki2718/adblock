@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210628
+! Version: 20210629
 
 ! General blocking
 /CookieInfo.
@@ -101,6 +101,7 @@
 /CookieBannerApplication.$script,domain=gotogate.jp|mytrip.com
 /cookie-banner$domain=paypal.com|sedo.com|sugarsync.jp
 /cookie-prompt.$domain=adblockplus.org
+/eu_cookie_$script,domain=bureauveritas.jp|unicef.org
 /wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies$domain=blog.kaspersky.co.jp|kasperskydaily.com|threatpost.com
 /uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
 ||a-port.asahi.com/js/gdpr/
@@ -168,6 +169,7 @@ accounts.pixiv.net###js-privacy-policy-banner
 accuweather.com##.privacy-policy-banner
 adlittle.jp##.eu-cookie-compliance-banner
 afreesms.com###js-cookie
+afs.or.jp##.privacy-banner
 aiasahi.jp,japan.cnet.com,cnn.co.jp,japan.techrepublic.com,japan.zdnet.com###gdpr_area
 airbnb.jp##div[data-testid="main-cookies-banner-container"]
 airvpn.org###cookieLaw
@@ -301,6 +303,7 @@ interconti.co.jp###first-impression
 investors.com###investors-policy-terms-consent-dialog
 ispa.org.uk##.cookie-popup
 jamanetwork.com##.widget-GdprCookieBanner
+jica.go.jp###cookie_bnr
 joyourself.com,liveprivates.com##.notifier-18
 jpradio.jp,rutube.ru,softbankhawksstore.jp##.cookie-consent
 jti.co.jp##.p-top_cookie-agreement
@@ -376,6 +379,9 @@ pokemongolive.com##ark-cookiebar
 psyarxiv.com##[class^=__cookie-banner__]
 pubs.acs.org###gdpr-message-modal
 pubsonline.informs.org##.cookiePolicy-popup
+puratos.co.jp###cookieBannerModal
+puratos.co.jp##.modal-backdrop
+puratos.co.jp#$#body.modal-open { overflow: auto!important; }
 radarbox.com###privacy-popup
 rankchart.org###cc_container
 razer.com###cookies_popup_container
