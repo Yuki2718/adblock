@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210704
+! Version: 20210705
 
 ! Temporal
 ||2conv.com/_next/static/images/mp3studio-banner-
@@ -10215,6 +10215,7 @@ cgi-bin/counter
 ||smartocto.com^$3p
 ||smetrics.aem.playstation.com^$important
 ||smetrics.protrek.jp^
+||smp.tus.ac.jp^
 ||smp.sankei.co.jp^
 ||sni-dat.com^$3p
 ||snowplow.swm.digital^
@@ -12727,6 +12728,7 @@ asiamediablog.com##.widget-sidebar:nth-child(2)
 asiareaction.com##.title_wrapper:nth-of-type(n+7)
 ask-mswin.com##.ads-foot-wrap
 ask-mswin.com##.ads-head
+ask.com##.BottomAdsPartial
 ask.fm##.askfm-ad-slot
 asmart.jp##.recommend_area
 asobi-ni-ikou.net##.listwrap > div[align=center]:last-child
@@ -13933,6 +13935,12 @@ ejje.weblio.jp##.mainBlock > #ejje2ndDicRecommendAdId:upward(1)
 ejje.weblio.jp##.mainBlock > .flex-rectangle-ads-frame:upward(1)
 ejje.weblio.jp##.sideBlock > script:has-text(/adScS|_ADOBE_/):upward(1)
 ejje.weblio.jp##.sideBlock [id$=AdId]:upward(.sideBlock)
+ekitan.com##.ek-route-advertising-no-2
+ekitan.com##.ek-route-advertising-no-3
+ekitan.com##.na-bottom-wrap
+ekitan.com##.na-wrap
+ekitan.com##.sidebar-ad-item
+ekitan.com##div[class*="ek-forward-display"]
 ekiten.jp##.l-bottom_contents > .shop_owner
 ekiten.jp##.l-side_contents_shop_owner
 elephant.2chblog.jp,geinoujam.com,hijikisokuhou.doorblog.jp###sub .plugin-memo
@@ -14321,8 +14329,9 @@ gameranbu.jp,sakidori.co##.side_ad_top
 gamers.co.jp##a[id^=bn_]
 games.app-liv.jp##.jack-content
 games.softgames.com##div[style^="position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index:"][style$="background-color: rgba(0,0,0,.8);"]
-games.wkb.jp##.left-ad
 games.wkb.jp##aside.content__top
+games.wkb.jp##.left-ad
+games.wkb.jp##.result-ad
 games.yahoo.co.jp###jack
 gamesindustry.biz##.jobs-widget
 gamesink.net###footer_ov_ad
@@ -14919,6 +14928,7 @@ itmedia.co.jp##.colBoxPickup
 itmedia.co.jp,monoist.atmarkit.co.jp###ISALCT
 itpc-media.net,me-her.com,my-trendblog.com###custom_html-24
 its-mo.com##.google-ad
+its-mo.com##.panel:last-child > .panel-heading:has-text(PR情報):upward(1)
 itsuki-campuslife.com###sidebar > .widget_author_box + .widget_custom_html
 itsuki-campuslife.com,xn--j9j243ljipfhp.biz##.widget-below-sns-buttons
 ityarou.com##p[style="color:#666;margin-bottom:5px;"]
@@ -21073,7 +21083,7 @@ dvdgayonline.com,jetanimes.*,movs4u.*##+js(ra, href, #clickfakeplayer)
 dvdplay.*,rawmanga.top##+js(aost, Math, onreadystatechange)
 earncoin.site,kutmoney.com##+js(acis, Math, btoa)
 earnflies.com##+js(ra, href, #invisibleCaptchaShortlink > a[href])
-earnload.*,gplinks.co,uploadfile.cc##+js(disable-newtab-links)
+earnload.*,gplinks.co,multiup.*,uploadfile.cc##+js(disable-newtab-links)
 egotter.com##+js(aopr, AdBlockDetector)
 egotter.com##+js(aopr, SecretModeDetector)
 elil.cc##+js(ra, onmouseover|onclick|onmouseout, .save-btn.pull-right)
@@ -21853,6 +21863,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||ec.sofmap.tyrellsys.com^$xhr,domain=used.sofmap.com
 @@||ei-publishing.co.jp/*/top_renewal/ad/img/ads_$image,1p
 @@||ekibari.jp/ad/img/$image,1p
+@@||ekitan.com/ad/images/$image,1p
 @@||elil.cc/advertisement/$script,1p
 @@||entry.tv/images/ad$image,1p
 @@||epicgames.com/id/api/analytics$1p,xhr
@@ -21882,6 +21893,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||g.doubleclick.net/ads/preferences/$popup
 @@||g.doubleclick.net/gampad/ads$xhr,domain=gamespot.com|physicianspractice.com
 @@||g.doubleclick.net/gampad/ads?$domain=edy.rakuten.co.jp|video.tv-tokyo.co.jp
+@@||g.doubleclick.net/pagead/ads?*&plat=$frame,domain=games.wkb.jp
 @@||g.doubleclick.net/gampad/ads?*RakutenShowtime$xhr,domain=imasdk.googleapis.com
 @@||g.doubleclick.net/gpt/pubads_impl_$script,domain=edy.rakuten.co.jp
 @@||g.doubleclick.net/tag/js/gpt.js$script,xhr,domain=accuweather.com|edy.rakuten.co.jp|gamespot.com|mediaite.com|physicianspractice.com
@@ -22062,8 +22074,8 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||ox-d.adclixx.net/auid=
 @@||ox-d.adnetasia.com/auid=
 @@||ox-d.bannertrack.net/auid=
-@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl$script,domain=pasty.*
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=game.goo.ne.jp|pasty.*
+@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl$script,domain=games.wkb.jp|pasty.*
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=game.goo.ne.jp|games.wkb.jp|pasty.*
 @@||paypal.com/xoplatform/logger/api/logger$domain=play.leagueofkingdoms.com
 @@||pbs.twimg.com/ad_img/$image,xhr
 @@||pcdepot.co.jp/adgallery/img/ad_tmb_01.jpg
@@ -22450,6 +22462,7 @@ esse-online.jp,fet.co.jp,zanmai.co.jp#@#.ad_box
 f-keirin.jp#@##footer_ad
 freesoft-concierge.com#@#.sidebar-ad
 gameranbu.jp#@#.side_ad
+games.wkb.jp#@#.ad-rectangle
 gigazine.net#@#.adtag
 gigazine.net#@#.contentadleft
 hataraquest.com#@#.wrapad
@@ -22458,6 +22471,7 @@ ikkaku.net#@#.ad-bottom
 kagoshima-u.ac.jp#@#.p-ad
 kajima.co.jp#@#.section_ad
 kanagawabk.or.jp#@#.top_ad_banner
+kincho.co.jp#@#.ad-block
 kininaru-geinou-m.blog.jp#@#.ads01
 koepota.jp#@##ad_left
 koreatimes.co.kr#@#.aside_ad
