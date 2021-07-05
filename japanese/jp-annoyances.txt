@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210704
+! Version: 20210705
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -14,6 +14,8 @@ store.world.co.jp##.mod_message
 ||yimg.jp/images/shp_edit/other/fc/mhd/s_sb_nw.png$domain=yahoo.co.jp
 ||youtube.com/embed/3hhC4n3Dr6I|$domain=tamashii.jp
 gendai.ismedia.jp##[href="https://gendai.ismedia.jp/articles/-/81809"]
+mail.yahoo.co.jp###modal-tutorial-dialog.yui3-widget-stdmod.yui3-overlay-content
+mail.yahoo.co.jp##.yui3-overlay-mask
 
 ! ---------- Notification ----------
 -push-notification/
@@ -286,6 +288,9 @@ cookpad.com###cboxOverlay[style="opacity: 0.4; cursor: auto; visibility: visible
 cookpad.com###colorbox[tabindex="-1"][style="display: block; visibility: visible; top: 45px; left: 299px; position: fixed; width: 680px; height: 410px;"]
 ||crosset.onward.co.jp/images/tape/
 crosset.onward.co.jp##.tape
+||dejimachain.jp/owned/wp-content/uploads/*/popup-$image,1p
+dejimachain.jp,marketimes.jp##.boxzilla-center-container
+dejimachain.jp,marketimes.jp##.boxzilla-overlay
 ||diffchecker.com^*/download-trial.js|
 diffchecker.com##div.ReactModalPortal
 ||digima-japan.com/_img/footer/bnr_txt_
@@ -553,6 +558,7 @@ bitflyer.com##body.modal-open:style(overflow:auto!important)
 bitstarz.com##.n-tesla
 bizmates.jp##.p-following
 blog.codecamp.jp##.l-recommendFooter
+blog.hubspot.jp##.leadinModal
 boxil.jp###modal-appeal-download
 boxil.jp##.modal-backdrop
 boxil.jp##body.modal-open:style(overflow: auto!important;)
@@ -578,8 +584,6 @@ cookpad.com,gesoten.com###cboxOverlay
 creativecommons.org###deed-donate-slide
 d.tube##.sticky.centered > div.announcement[style="width: 100%;"]
 daiwa.jp##.mnyl-contact-btn
-dejimachain.jp,marketimes.jp##.boxzilla-center-container
-dejimachain.jp,marketimes.jp##.boxzilla-overlay
 detail.chiebukuro.yahoo.co.jp###fuwa
 developer.android.com##devsite-snackbar
 developer.mozilla.org##.notification:has(a[href^="https://www.surveygizmo"])
@@ -1376,6 +1380,13 @@ wsj.com###cx-candybar
 www.asahi.com##.p-news + .p-info
 zdnet.com##div[data-component="newsletterWidget"]
 
+!#if !env_firefox
+webbu.jp###text-7
+!#endif
+!#if env_firefox
+webbu.jp##^#text-7
+!#endif
+
 ! ---------- Reccomend/Feedback ----------
 /crm/site_button/loader_*.js
 /lucyinc-xeory-related-e5a7f89ccecf/*
@@ -1388,6 +1399,7 @@ zdnet.com##div[data-component="newsletterWidget"]
 /wp-content/plugins/futura/*$~css
 /wp-content/plugins/thrive-leads/*
 /wp-content/plugins/thrive-ultimatum/*
+@@||popin.cc/comments/emoji/bar?url=*.jp/ad/$xhr,3p,badfilter
 ||actionbutton.co^$3p
 ||aja-recommend.com^
 ||cxpublic.com^$3p,domain=~wpb.shueisha.co.jp
@@ -1528,6 +1540,8 @@ jj-blues.com###text-10
 ||kanaloco.jp/archives/013/201902/c07a4901b8bb49c86ec4edcddcf906c3.jpg
 ||komeri.com/include_html/include/cart/img/*_bnr_card.jpg
 ||komeri.com/include_html/include/cart/img/bnr_dc.jpg
+||lifetoronto.jp/images/bnr/
+lifetoronto.jp##.side-ad
 ||mbok.jp/image/campaign/*_468x80.
 ||minato-yamaguchi.co.jp/yama/images/banner/ins_index_banner2.
 ||mtame.jp/dcms_media/image/banner_btobdl.
