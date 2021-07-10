@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210709
+! Version: 20210710
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -423,7 +423,6 @@ nijiyome.jp##.modal
 ||nintendo.co.jp^*/purchase_$image,1p
 nintendo.co.jp##div[id$=-purchase]
 ||nordcdn.com/nordvpn/media/*/popups/$domain=nordvpn.com
-nordvpn.com##.modal-backdrop
 nordvpn.com##div[id^="popup_"]
 ||o.prod.theintercept.com/checkout/template/show
 theintercept.com###third-party--viewport-takeover
@@ -546,8 +545,8 @@ auction.brandear.jp##.bounceInUp
 autoc-one.jp###diagnoseModal
 autoc-one.jp###js-floating
 autoc-one.jp###withdrawalAppealModal
-autoc-one.jp##.modal-backdrop
 autoc-one.jp##body.modal-open:style(overflow: auto!important;padding-right: auto!important;)
+autoc-one.jp,boxil.jp,finnishdesignshop.com,hoihoi.whotwi.com,honichi.com,kadoebi.co.jp,lec.medilink-study.com,nordvpn.com,razer.com,rebates.jp,service-safari.com,techacademy.jp##.modal-backdrop
 balloonworld.jp,cbn.co.jp,ryu-blo.jp,sanei-ad.jp,us-lighthouse.com##.afc_popup
 baseconnect.in##.modalBanner__overlay
 baseconnect.in##.slide[style="width: 340px; height: 283px;"]
@@ -564,7 +563,6 @@ bizmates.jp##.p-following
 blog.codecamp.jp##.l-recommendFooter
 blog.hubspot.jp##.leadinModal
 boxil.jp###modal-appeal-download
-boxil.jp##.modal-backdrop
 boxil.jp##body.modal-open:style(overflow: auto!important;)
 books.rakuten.co.jp###js-rMessageFloating
 brave.com##.announcement-banner
@@ -617,7 +615,6 @@ faq.support.biglobe.ne.jp###suMiniEnqueteWrapper
 fashionpost.jp##.p-ad-area--interstitial
 files.fm###popup-poster
 findpro.jp###js-stickyFooter
-finnishdesignshop.com,hoihoi.whotwi.com,honichi.com,kadoebi.co.jp,lec.medilink-study.com,rebates.jp,service-safari.com,techacademy.jp##.modal-backdrop
 folk-media.com###member-alert
 form.run##+js(nostif, popmake)
 forcemedia.co.jp###sidenav
@@ -728,6 +725,8 @@ pixta.jp###js-modal--recognized-subscription
 pixta.jp##body > .__b-popup1__.b-modal
 pr-park.com##.header-info
 quora.com##.qu-overflow--hidden[class*="qu-zIndex--modal_"]
+razer.com##.modal-newsletter
+razer.com##body.modal-open:style(overflow: auto!important;)
 recme.jp##.footer-register
 reddit.com##.happening-now-wrap
 reddit.com##.upsell_banner
@@ -1430,6 +1429,7 @@ webbu.jp##^#text-7
 !||snva.jp^
 ||surveymonkey.com^$script,3p,domain=~surverymonkey.co.uk|~surveymonkey.co.uk|~surveymonkey.de
 
+||ameba.jp/blog/xml/mk_data/
 ||cbsistatic.com/fly/js/components/tr-premium-promo$domain=zdnet.com
 ||fandom.com/f2/api/public/feed
 ||fandom.com/f2/api/public/hot-content-module
