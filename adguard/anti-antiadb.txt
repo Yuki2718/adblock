@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20210710
+! Version: 20210711
 
 .com/jsb/js_script.js|$~third-party
 .com/pup.php?section=$script,third-party
@@ -11,11 +11,14 @@
 .com/slider.php?section=$script,third-party
 .pro/sdk/push_web/?zid=
 /?oo=1|$xmlhttprequest,third-party
+/\/js\/(?:\d{3}eka\d{3}|[a-z]{5})\.js$/$script,~third-party
+/\/v\d\/a\/[a-z]{2,3}\/js\/\d{5,6}/$script,third-party
 /\/wp-content\/uploads\/[a-z]{6,9}\.js(?:\?ver=1\.1\.5|,qver=1\.1\.5\.pagespeed\..+\.js)$/$script,~third-party
 /\/wp-content\/uploads\/[a-zA-Z]{12}\/[a-zA-Z]{12}\.js(?:\?ver=2\.2\.3|,qver=2\.2\.3\.pagespeed\..+\.js)$/$script,~third-party
 /^https:\/\/[a-z]{7,25}\.com\/v2(?=[-_0-9a-z]{0,62}[A-Z])(?=[-_a-zA-Z]{0,61}[0-9])(?=[0-9a-zA-Z]{0,60}[-_])[-_0-9a-zA-Z]{63}$/$script,third-party,match-case
 /1clkn/*$script
 /a/ban/iframe/*
+/a/isv/js/*
 /a/na/js/*?container=$script,third-party
 /a/vsl/vst/*
 /api/pop.php$xmlhttprequest,~third-party
