@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210711
+! Version: 20210712
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -141,6 +141,8 @@ smart-flash.jp##^.adsBlock
 ://lightning.*/launch/
 _omniture.$script,domain=mathworks.com
 
+@@||bdash-cloud.com/out/recommendations?$script,3p,badfilter
+@@||bdash-cloud.com/recommend-script/$script,3p,badfilter
 ||adobedtm.com^$3p,domain=~adobe.com
 ||api.nike.com/measure/uxevents/
 ||api.twitter.com^*/external_referer.json|
