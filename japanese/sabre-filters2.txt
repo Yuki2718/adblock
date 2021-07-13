@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210713
+! Version: 20210714
 
 ! General blocking
 /CookieInfo.
@@ -88,6 +88,7 @@
 ##.cookies-notification
 ##.cookies-popup
 ##.ensureCookie
+##.eu-cookie-compliance-banner:not(body):not(html)
 ##.penci-wrap-gprd-law
 ##.popup_confirmation_bar
 ##.widget_eu_cookie_law_widget
@@ -108,7 +109,7 @@
 /cookie-banner$domain=paypal.com|sedo.com|sugarsync.jp
 /cookie-consent.$domain=wolfram.com
 /cookie-prompt.$domain=adblockplus.org
-/eu_cookie_$script,domain=bureauveritas.jp|unicef.org
+/eu_cookie_$script,domain=bayer.jp|bureauveritas.jp|unicef.org
 /wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies$domain=blog.kaspersky.co.jp|kasperskydaily.com|threatpost.com
 /uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
 ||a-port.asahi.com/js/gdpr/
@@ -219,7 +220,7 @@ cars.mclaren.com##.n040-cookie-alert
 cbsnews.com###onetrust-banner-sdk
 cdrinfo.com,developer.nvidia.com,eneuro.org,jneurosci.org,pnas.org###sliding-popup
 cebupacificair.com,ubuntu.com##.cookie-policy
-champlain.edu,dxc.technology##.optanon-alert-box-wrapper
+champlain.edu,deloitte.com,dxc.technology##.optanon-alert-box-wrapper
 china-airlines.com###cookieInfoDetails
 china-airlines.com##.top-bar
 chocolatey.org###cookieNoticeAlert
@@ -455,4 +456,5 @@ york.ac.uk##.c-cookie-banner
 ! Exception
 @@||cdn.cookielaw.org/consent
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cbsnews.com|epicgames.com|kawasaki.com|metacritic.com|shop.mango.com|vimeo.com|wargaming.net
+@@||cdn.cookielaw.org/skins^
 @@||jimstatic.com/cookieControl.js$domain=yaxi.jp
