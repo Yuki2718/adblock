@@ -5,13 +5,16 @@
 ! Version: 20210716
 
 &prvtof=*&poru=
+.biz/?auf=*&sub1=$document
 .biz/?p=*&sub1=$document
 .biz/?p=*&sub1=$popup,domain=www.google.co.jp|www.google.com
 .co/?go=*&cat=$document
 .me/?go=*&cat=$document
+.ru/?u=*&o=$document
 .systems/signup?ad_domain=$document,popup
 .xyz/?u=*&o=$document
 .xyz/v1/redirect?cid=*&url=$document
+/?ip=*&uclickhash=$document
 /?l=*&s=*&mprtr=$~third-party,xmlhttprequest
 /?r=*&a=*&icode=*$document,~third-party
 /?r=dir&zoneid=$document,popup
@@ -20,6 +23,7 @@
 /bdv_rd.dbm?ownid=$doc
 /bdv_rd3.dbm?frdto=$document,popup
 /ck_winAlert.js|
+/click.php?key=*&cost=$document
 /glp?r=*&rw=*&rh=*&ww=*&wh=$script,~third-party
 /jscheck.php?enc=$xmlhttprequest
 /push-skin/skin.min.js
@@ -30,16 +34,17 @@
 /^http:\/\/(?:\d{9}|\d{6,}(-\d{4,8}){1,2})\.[-a-z]{6,}\.nl/$document
 /^http:\/\/(?:\d{9}|[-a-z]{25,})\.[a-z]{9,}\.it\//$document
 /^http:\/\/\d{9}\.[-0-9a-z]{5,26}\(?:biz|es|ru)\//$document
+/^http:\/\/[0-9a-z]{3,15}\.proxydns\.com/$document,domain=proxydns.com
 /^http:\/\/[a-z]{4,13}\.[-0-9a-z]{6,26}\.it\/[%+-_0-9a-zA-Z]{10,}\.html$/$document
 /^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
 /^http:\/\/[a-z]{9,10}\.ddns/$document,domain=ddns.net
 /^https:\/\/xn--\d{4,5}-[a-z]{3}\.biz\/[0-9a-z]+\?key=/$document
 /^https:\/\/www\.japan\d-\d{2}\.xyz\//$document,popup
-/^https:\/\/[-a-z]*yourwin[-a-z]*\.life\/\?u=[0-9a-z]+&o=/$document
+/^https:\/\/[-a-z]{12,}\.life\/\?u=[0-9a-z]+&o=/$document
 /^https:\/\/[-a-z]{5,10}\d{4,6}\.[a-z]{5,18}\.cl\/[%_0-9a-zA-Z]{10,}\.html$/$document
 /^https:\/\/[a-z]+\.[a-z]+prizes\.net\/[a-z]\/[0-9a-z]+\?s1=/$document
-/^https:\/\/[a-z]{3,4}\.[a-z]{12,16}\.top\/[a-z]{8}\/\?u=[0-9a-z]+&o=/$document
-/^https:\/\/[a-z]{3,4}\.[a-z]{12,16}\.top\/[a-z]{8}\/\?u=[0-9a-z]+&o=/$document
+/^https:\/\/[a-z]{2,3}\d\.biz\/go\/[0-9a-z]{15,18}$/$document
+/^https:\/\/[a-z]{3,8}\.[a-z]{10,16}\.top\/[a-z]{8}\/\?u=[0-9a-z]+&o=/$document
 /^https:\/\/[a-z]{3,}\.[a-z]{10,}\.club\/[a-z]{8}\/\?u=[0-9a-zA-Z]{6,}&o=[0-9a-z]+/$document
 /^https:\/\/[a-z]{10,}\.club\/\?utm_campaign=[_0-9a-zA-Z]{40,}&t=[0-9a-z]+/$document
 /^https:\/\/[a-z]{3,}\.[a-z]{10,}\.club\/[a-z]{8}\/\?utm_campaign=[_0-9a-zA-Z]{40,}&t=[0-9a-z]+/$document
@@ -50,6 +55,9 @@
 /^https?:\/\/(www\.)?[-0-9a-z]{14,}\.(?:biz|fun)\/[a-z]{10,11}\.php/$document
 /^https?:\/\/[-0-9a-z]*prize[-0-9a-z]+\.li[fv]e\/\?u=[0-9a-z]+&o=[0-9a-z]+/$document
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org\/page\d{1,4}/$document,domain=duckdns.org
+://0.*.biz/?p=$document
+://0.*.biz/index.php?p=$document
+://0.*.net/?p=$document
 ^fp=*&prvtof=
 |https://freesecurehosting.com/|$document
 ||0265331.com^$document
@@ -60,6 +68,7 @@
 ||1919yarerunda.xyz^$document
 ||1ownandfresh1.com^$document,popup
 ||1ts18.top^$document
+||1wat.ru^$document,popup
 ||2021downloads.com^$document,popup
 ||3-a.net^$document
 ||37.1.209.213^$document,popup
@@ -102,6 +111,7 @@
 ||an.angel100.net^$document
 ||anaru7.xyz^$document
 ||anatidab.tk^$document
+||andrew2y.beget.tech^$document
 ||antivirus-protection.me^$document,popup
 ||app-department.report^$document,popup
 ||ar1ycc6htz.com^$document
@@ -173,11 +183,13 @@
 ||clubretro.com.pl^$document
 ||chatmilkprude.casa^$document
 ||chicks4date.com^$document
+||chinesean.com/affiliate/click.do?$document
 ||claspedtwelve.com^$document,popup
 ||clickserve.dartsearch.net^$document,popup
 ||clickwantnow.com^$document
 ||cn-2020.top^$document,popup
 ||coffee50.ru^$document
+||coinforcoin.site^$document,popup
 ||com.com^$document
 ||comfirmit2021.website^$document
 ||communicatoremail.shop^$document
@@ -206,6 +218,7 @@
 ||dog-sharpei.ru^$document
 ||dolohen.com^$document
 ||donmilanipon.it^$document
+||download-app.net^$document,popup
 ||doubleadserve.com^$document
 ||downloads2020.com^$document,popup
 ||downloads2021.com^$document,popup
@@ -215,6 +228,7 @@
 ||ds-military.ru^$document
 ||dsahoesa.jp^$document
 ||dsh1tr.info^$document
+||dspultra.com^$document
 ||dy5g4ra4yk.com^$document
 ||eathical.co^$document
 ||echampion.info^$document
@@ -320,6 +334,7 @@
 ||japan-life.buzz^$document
 ||japan1-05.xyz^$document,popup
 ||japan1-06.xyz^$document,popup
+||jarvispopsu.com^$document,popup
 ||ji-bnk.com^$document
 ||ji-ubc.com^$document
 ||joinfileplatforms.best^$document,popup
@@ -330,6 +345,7 @@
 ||kabooo.net^$document,popup
 ||kakstitotako.com^$document,popup
 ||karikubi.com^$document
+||keitaro2.best^$document
 ||kiminosex.xyz^$document
 ||kimotii.xyz^$document
 ||kgtdthfn2y4n.com^$document
@@ -344,6 +360,7 @@
 ||lehub.biz^$document
 ||lend.djin.site^$document
 ||lendcash.online^$document
+||lib2.biz^$document,popup
 ||limitedprizes.net^$document
 ||linkwork.pl^$document
 ||litance-viestside.icu^$document,popup
@@ -392,6 +409,7 @@
 ||multiadblock.com^$document,popup
 ||mv4e8gax5ws.com^$document
 ||my-hookup-clubs1.com^$document,popup
+||myactualblog.com^$document,popup
 ||mybetterdl.com^$document
 ||mydeejayspace.com^$document,popup
 ||mypion.ru^$document
@@ -401,6 +419,8 @@
 ||natureseye.nl^$document
 ||nbryb.com^$document
 ||ne02.biz^$document,popup
+||ne03.biz^$document,popup
+||ne04.biz^$document,popup
 ||new-message.live^$document
 ||newmode.biz^$document
 ||news-back.org^$document
@@ -461,6 +481,7 @@
 ||ps150.pl^$document
 ||pshtr.xyz^$document,popup
 ||ptookaih.net^$document,popup
+||pu4.biz^$document,popup
 ||pumicer-unreturned-hemipteron.xyz^$document
 ||pushmeup.art^$document
 ||px8pr3e5g.com^$document
@@ -483,6 +504,7 @@
 ||revercecaptcha.com^$document,popup
 ||rfes78dws.xyz^$document
 ||ro05.biz^$document
+||ro4.biz^$document,popup
 ||rodnoe2010.ru^$document
 ||rollmeout.xyz^$document,popup
 ||rouonixon.com^$document,popup
@@ -545,6 +567,7 @@
 ||system-update-new-2021.com^$document,popup
 ||t-o-u-oubo.com^$document
 ||tappling.jp^$document
+||techevolution.work^$document,popup
 ||tendermeets.com^$document
 ||terlaby.com^$document,popup
 ||thebestgame2020.com^$document
@@ -560,6 +583,7 @@
 ||track.mspy.click^$document
 ||track.trackbyfast.com^$document
 ||trackonsyntex.com^$document,popup
+||traf.top^$document
 ||trellian.com^$document
 ||trfcbooost.com^$document,popup
 ||ufetp.site^$document
