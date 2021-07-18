@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210716
+! Version: 20210719
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -138,6 +138,7 @@ smart-flash.jp##^.adsBlock
 /v60.js
 /visilabs.min.js
 /webtrekk.js$domain=db.com
+://ensighten.
 ://lightning.*/launch/
 _omniture.$script,domain=mathworks.com
 
@@ -153,6 +154,7 @@ _omniture.$script,domain=mathworks.com
 ||cdn-net.com^$3p
 ||cedexis.net^$3p
 ||cxense.com^$frame,script,3p
+||ensighten.com^$3p
 ||facebook.com/platform/scribe_endpoint.php/
 ! FP for the sake of security
 ||fraudjs.io^$3p
@@ -222,6 +224,9 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||cdx.cedexis.net^$domain=bloomberg.*
 @@||cxense.com/cx.cce.js$script,domain=googirl.jp
 @@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|ure.pia.co.jp|wpb.shueisha.co.jp
+@@||ensighten.com^*/Bootstrap.js$domain=americanexpress.com|britishairways.com|citi.com|dell.com|hp.com|t-mobile.com
+@@||ensighten.com^*/code/$script
+@@||ensighten.com^*/scode/$script,domain=norton.com
 @@||fplay.online/log_event$1p,xhr
 @@||geoip-js.com/js/apis/geoip2/$script,domain=freshdesk.com
 @@||geoip-js.com^*/me?referrer=$xhr,domain=freshdesk.com|ibanez.com
@@ -274,7 +279,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||is.accesstrade.net/cgi-bin/*?rk=$doc
 ||lightfx.jp/LP/fx/?AffiCode=$doc
 ||pc-koubou.jp/cgi-bin/linklp/linklp.cgi?siteID=$doc
-||rakuten.co.jp/?scid=af_*&sc2id=af_$doc
 ||rurubu.travel/aff/registfrom.asp?RegistFrom=*&utm_source=$doc
 ||samuraiclick.com/lp/*.php?m=$doc
 ||search.rakuten.co.jp/search/mall/*&l-id=$doc
@@ -286,11 +290,12 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 &af_click_lookback=*&af_siteid=$doc,removeparam=/af_click_lookback|af_siteid/,domain=appsflyer.com
 /entry_site.pl?SITE=*&afult=$doc,removeparam=/SITE|afult/,domain=discas.net
 /lp.php?p=*&adcd=$doc,removeparam=adcd
-/?adid=*&argument=$doc,removeparam=adid,domain=mouse-jp.co.jp
-/?sc_in=*&ult_in=$doc,removeparam=/sc_in|ult_in/,domain=realestate.yahoo.co.jp
 ?ITRACK_INFO=*&vcptn=$doc,removeparam=/ITRACK_INFO|vcptn/,domain=digi-tag.net
 ?_rt_ck=$doc,removeparam=_rt_ck
+?adid=*&argument=$doc,removeparam=adid,domain=mouse-jp.co.jp
 ?campaign=*&event_callback_$doc,removeparam=/campaign|event_callback_[0-9a-z]+/,domain=adjust.com
+?sc_in=*&ult_in=$doc,removeparam=/sc_in|ult_in/,domain=realestate.yahoo.co.jp
+?scid=af_*&sc2id=af_$doc,removeparam=/^sc2?id/,domain=rakuten.co.jp
 ?sharedid=*&u=$doc,removeparam,domain=msafflnk.net
 ?tag=*&linkCode=$doc,removeparam=/tag|linkCode/,domain=amazon.co.jp
 ?tag=a8-affi-*&a8=$doc,removeparam=/tag|a8/,domain=amazon.co.jp
