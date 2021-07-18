@@ -2,10 +2,9 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210716
+! Version: 20210718
 
 ! General tracker
-&visitor=*&referrer=
 -adobe-analytics/
 -appanalytics-
 -dtaectolog-
@@ -232,6 +231,7 @@
 /tms/metrics.
 /toplytics.js
 /tr/pageview/*
+/track?*&event=
 /track-internal-links.
 /track/view|
 /trackPageView/*
@@ -251,6 +251,7 @@
 /vwFiles/analytics/*
 /w_js.php|
 /webAnalytics/*
+/webPushAnalytics|
 /web_analytics/*
 /wf-beacon-
 /wordpress-popular-posts/public/js/tracking.
@@ -261,15 +262,14 @@
 /xhr/b/s|
 /zddmp.min.js
 ://cmpv2.
+://ensighten.
 ://piwik.$domain=~matomo.org|~piwik.pro
 =googleanalytics_
 ?action=log_promo_impression
 ?action=track_visitor&
-?log=stats-
 ?logType=impression&
 ?logType=trackEvent&
 ?type=pageview&
-_ajax/btrack.php?
 _gpt_bootstrap_
 _logHuman=
 ||airtable.com/internal/$xmlhttprequest
