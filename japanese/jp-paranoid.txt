@@ -21,6 +21,7 @@
 
 -300x250-$~xhr
 .org/ad/$1p,domain=~playguide.org|~sonoyama.org|~ufcw870.org
+/^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,3p,match-case
 /banner/700$1p,domain=~parasol-soft.com|~sm-sanctuary.net
 /banner468.$1p,domain=~3t1a.net|~9c25s.blog120.fc2.com|~a-head.cc|~and-shibuya.com|~angelino-lulu.com|~awatalia.com|~borero.net|~chiezobond.blog57.fc2.com|~chiyuudou.com|~clocknote.net|~crowsclaw.info|~digitalic-party.net|~dobuusagi.com|~emju.net|~f-g-s.net|~gairo4.blog133.fc2.com|~feltmusic.net|~forest306.com|~gameover25.web.fc2.com|~genkianamei.xxxxxxxx.jp|~golf.areasw.com|~hyakka.studio2x.com|~ironiac.com|~.j-leskiss.com|~mandarin.dojin.com|~menesjapon.com|~navi1.x.fc2.com|~o-mikan.net|~otowaseinennkai.org|~red.redalice.net|~saisenturn.net|~shintamanegi.com|~sketchuprecordings.com|~stardust.studio2x.com|~yoccho.com
 /banners/300
@@ -316,7 +317,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||cxense.com/public/widget/click/*?cx_$doc,removeparam=/^cx_/
 ||dlsite.com^*/?unique_op=af&utm_medium=affiliate&utm_source=$doc,removeparam=/unique_op|utm_medium|utm_source/
 ||duckduckgo.com/?t=$doc,removeparam=t
-||fam-ad.com/ad/p/dt?*&suid=$doc,removeparam=suid
 ||google.com/travel/hotels/entity/*?tcfs=$doc,removeparam=tcfs
 ||google.com/travel/things-to-do/*&dest_src=$doc,removeparam=dest_src
 ||hbol.jp^*?cx_clicks_art_mdl=$doc,removeparam=cx_clicks_art_mdl
