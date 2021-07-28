@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20210728
+! Version: 20210729
 
 .com/custom|$xmlhttprequest,third-party
 .com/embed/*&subAffId=$script,third-party
@@ -21,6 +21,7 @@
 /\/v\d\/a\/[a-z]{2,3}\/js\/\d{5,6}/$script,third-party
 /\/wp-content\/uploads\/[a-z]{6,9}\.js(?:\?ver=1\.1\.5|,qver=1\.1\.5\.pagespeed\..+\.js)$/$script,~third-party
 /\/wp-content\/uploads\/[a-zA-Z]{12}\/[a-zA-Z]{12}\.js(?:\?ver=2\.2\.3|,qver=2\.2\.3\.pagespeed\..+\.js)$/$script,~third-party
+/^https:\/\/a\.[a-z]{9,16}\.com\/(?=[a-zA-Z]{0,6}\d)(?=[0-9a-z]{0,5}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
 /^https:\/\/[a-z]{7,25}\.com\/v2(?=[-_0-9a-z]{0,62}[A-Z])(?=[-_a-zA-Z]{0,61}[0-9])(?=[0-9a-zA-Z]{0,60}[-_])[-_0-9a-zA-Z]{63}$/$script,third-party,match-case
 /^https?:\/\/[a-z]{8,10}\.com\/4\/\d{7}$/$document,popup
 /^https?:\/\/[a-z]{8}\.(?:com|net)\/tag\.min\.js$/$script,third-party
@@ -55,6 +56,7 @@
 /player/plugins/vast-*.js$script
 /pn07uscr/f/tr/zavbn/*$script,third-party
 /pn21ywqw/z/sc/scssx/*$script,third-party
+/preroll.engine?id=$xmlhttprequest,third-party,redirect=nooptext
 /q/tdl/95/dnt/*$script,third-party
 /safu/safu.js
 /script/atg.js
@@ -66,6 +68,8 @@
 /s/s/js/m/im.js?v=
 /s/s/sup.php
 /v2/a/push/js/*$script,third-party
+://a.*.top/warp/$script,third-party
+://a.*/static?r=$script,third-party
 ://t.*.com/redirect/?spot_id=$script,third-party
 
 ||fundingchoicesmessages.google.com^$third-party
