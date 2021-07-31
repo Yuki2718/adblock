@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210730
+! Version: 20210801
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -156,7 +156,7 @@ cookpad.com##.myfolder_button_wrapper > .notification
 dailymail.co.uk##+js(set, PushManager, undefined)
 drive.google.com##a[data-target=clientDownload]:upward(3)
 drive.google.com##body > [aria-labelledby$=".afp"]
-fandom.com###WikiaBar
+fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon > .message[data-wikiabarcontent*="Bingebot"])
 japancred.com##.timeline-header
 kakaku.com###modalFrame
 kyodemo.net##.is-danger.message
@@ -1792,6 +1792,7 @@ live2.nicovideo.jp##[class^=___player-display-header___]
 luutruhay.net,thaitrieuvi.live,uniqueten.net##+js(nano-sib, counter)
 menjelajahi.com##+js(nano-sib, time, , 0)
 mixdrop.*##+js(nano-stb, disabled)
+mycams.com,trannylivecams.com###over-18-notification
 nexusmods.com##+js(nano-stb, timer)
 ohyeah1080.site##+js(nano-sib, timer, 1100)
 onlinegamesx.com###yuidea-snp:style(display:block !important;)
@@ -1811,7 +1812,6 @@ thetechywizard.com##+js(nano-sib, timer, 1500)
 top.gg###video-root
 top.gg###vote-root:style(display:block !important)
 topics.smt.docomo.ne.jp##.m-tickerArea
-trannylivecams.com###over-18-notification
 uploadking.net##+js(nano-stb, downloadbtn)
 websiteoutlook.com###wo_ext
 zeefiles.*##+js(nano-stb, tick)
