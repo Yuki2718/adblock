@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20210731
+! Version: 20210802
 
 .com/custom|$xmlhttprequest,third-party
 .com/embed/*&subAffId=$script,third-party
@@ -82,6 +82,7 @@
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=~academicwork.se|~olx.bg|~olx.pl|~olx.ro|~olx.ua|~olx.uz|~soranews24.com|~rocketnews24.com|~tv-asahi.co.jp
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~express.co.uk
+||ipp.littlecdn.com/web/static/$image,third-party
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect=nooptext
 ||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices-gpt
@@ -92,6 +93,7 @@
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 100%;"][style*="height: 100%;"]
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 99%;"][style*="height: 98%;"][style*="z-index:"]
 ##div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]
+##iframe[style^="width: 100% !important; height: 327.5px !important; opacity: 1 !important; max-width: 420px !important; border: medium none !important; position: fixed !important; display: block !important; z-index: 2147483647 !important"]
 
 ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#$#.div-gpt-ad { width:1px!important;height:1px!important;min-height:1px!important; }
 ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama,~ff14angler.com#$#ins.adsbygoogle:empty { width:1px!important;height:1px!important;min-height:1px!important; }
