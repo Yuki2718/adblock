@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210804
+! Version: 20210805
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -24,7 +24,6 @@ mail.yahoo.co.jp##.yui3-overlay-mask
 /?smpushprofile=load_frontend_push_js
 /OneSignalSDK-
 /OneSignalSDKWorker.
-/amp-user-notification-
 /jquery_notification_v
 /myPushDc.
 /notification-ext.
@@ -110,6 +109,7 @@ mail.yahoo.co.jp##.yui3-overlay-mask
 ||a2zapk.com/js/notification.js
 ||akamaized.net/js/n/notifications-$domain=investing.com
 ||api-iam.intercom.io/messenger/
+||baidu.com/push.js
 ||cdnen.rt.com/static/js/pushes/
 ||contents.froggy.money/wp-json/api/v1/notifications/
 ||dogma-annex.com/api/noty/
@@ -187,8 +187,6 @@ yahoo.co.jp###mhd_uhd_pc
 youtube-nocookie.com,youtube.com###movie_player > .ytp-ce-bottom-right-quad
 youtube-nocookie.com,youtube.com###movie_player > .ytp-promotooltip-wrapper[style="top: 168px; left: 298px; display: none;"][data-layer="8"]
 youtube-nocookie.com,youtube.com##.annotation.iv-branding
-!youtube-nocookie.com,youtube.com##.ytp-cards-teaser
-~studio.youtube.com,youtube-nocookie.com,youtube.com##.ytp-ce-element
 
 !#if env_mobile
 m.youtube.com##ytm-item-section-renderer > lazy-list > .item:has(.watch-metadata-app-promo-content)
@@ -617,7 +615,7 @@ engineer-lab.findy-code.io##.popup
 evernote.com##.ReactModalPortal:has(#qa-GENERIC_LIGHTBOX_DIALOG_SUBMIT p[class^=_]:has-text(無料でお試し))
 evernote.com##.notifications-wrapper + div + div[class^=_] > div[class^=_]:has(div[class^=_] > span[class]:has-text(無料でお試し！))
 express.co.uk##.breaking-news-container
-facebook.com##._5hn6
+facebook.com###pagelet_growth_expanding_cta
 fandom.com##.banner-notifications-placeholder
 fantia.jp##.popup-bar
 faq.support.biglobe.ne.jp###suMiniEnqueteWrapper
