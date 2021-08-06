@@ -184,13 +184,8 @@ www.dropbox.com##.callout-container--bottom-left:has(.callout-content-title:has-
 www.dropbox.com##.maestro-secondary-sidebar:has(.continuous-onboarding__heading__text:has-text(新しいおすすめ))
 www.nicovideo.jp##.MylistContainer-premiumBanner
 yahoo.co.jp###mhd_uhd_pc
-youtube-nocookie.com,youtube.com###movie_player > .ytp-ce-bottom-right-quad
-youtube-nocookie.com,youtube.com###movie_player > .ytp-promotooltip-wrapper[style="top: 168px; left: 298px; display: none;"][data-layer="8"]
 youtube-nocookie.com,youtube.com##.annotation.iv-branding
-
-!#if env_mobile
-m.youtube.com##ytm-item-section-renderer > lazy-list > .item:has(.watch-metadata-app-promo-content)
-!#endif
+youtube-nocookie.com,youtube.com##.ytp-cards-teaser
 
 ! ---------- Popup/Banner ----------
 /bioep.js$script,domain=~tomshw.it
@@ -528,7 +523,7 @@ yanmaga.jp##.cv-banner-show
 page.auctions.yahoo.co.jp###prmdl
 ||yimg.jp/images/auct/cms/promo/promo_modal/$domain=auctions.yahoo.co.jp
 ||yimg.jp/images/auct/salespromotion/*/prmodal_$domain=auctions.yahoo.co.jp
-auctions.yahoo.co.jp###topPageArea > section[class^=Component-sc-] > a[class^="Layer-sc-"][data-ylk^="rsec:prmdl"]:upward(1)
+auctions.yahoo.co.jp###topPageArea > section[class^="Component-sc"] > a[class^="Layer-sc"][data-ylk^="rsec:prmdl"]:upward(1)
 ||yimg.jp/images/auct/salespromotion/*300_200$image,domain=auctions.yahoo.co.jp
 auctions.yahoo.co.jp###js-BannerFrame
 ||yoox.com/JP/PopupNewsletter/
@@ -824,13 +819,6 @@ yahoo.co.jp###Perorin
 yahoo.com###mega-banner-wrapper
 yandex.com##.zalogin-smart
 yoriso.com##.footer-cta
-youtube.com##+js(json-prune, [].playerResponse.auxiliaryUi.messageRenderers.upsellDialogRenderer)
-youtube.com##+js(json-prune, [].response.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
-youtube.com##+js(set, ytInitialData.overlay.upsellDialogRenderer.isVisible, false)
-youtube.com##+js(set, ytInitialData.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer.forceConsent, false)
-youtube.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.upsellDialogRenderer.isVisible, false)
-youtube.com##body > .opened[opened][style^="z-index"]
-youtube.com##ytd-popup-container > .ytd-popup-container[role="dialog"]:has(a[href="https://support.google.com/youtube/?p=sign_in"])
 zurich.co.jp###fixed-popup-cta, #floatnav
 
 !#if !env_firefox
@@ -1538,7 +1526,7 @@ twitter.com##div[aria-label="タイムライン: ホームタイムライン"] >
 wedge.ismedia.jp##.related-article
 www.nicovideo.jp##.FeedbackLink
 www.yahoo.co.jp###Service.ult__mods
-youtube.com##ytd-thumbnail-overlay-endorsement-renderer
+!youtube.com##ytd-thumbnail-overlay-endorsement-renderer
 
 !#if !env_firefox
 banger.jp##.l-popup
