@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210802
+! Version: 20210807
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -32,6 +32,8 @@
 /banner468.$1p,domain=~3t1a.net|~9c25s.blog120.fc2.com|~a-head.cc|~and-shibuya.com|~angelino-lulu.com|~awatalia.com|~borero.net|~chiezobond.blog57.fc2.com|~chiyuudou.com|~clocknote.net|~crowsclaw.info|~digitalic-party.net|~dobuusagi.com|~emju.net|~f-g-s.net|~gairo4.blog133.fc2.com|~feltmusic.net|~forest306.com|~gameover25.web.fc2.com|~genkianamei.xxxxxxxx.jp|~golf.areasw.com|~hyakka.studio2x.com|~ironiac.com|~.j-leskiss.com|~mandarin.dojin.com|~menesjapon.com|~navi1.x.fc2.com|~o-mikan.net|~otowaseinennkai.org|~red.redalice.net|~saisenturn.net|~shintamanegi.com|~sketchuprecordings.com|~stardust.studio2x.com|~yoccho.com
 /banners/300
 /gpt.js$script,xhr
+/images/ad-$image,domain=~slimjet.com
+/images/ad.$image,domain=~ngohq.com
 /9[a-g0-9]{21}\.online\/9[a-g0-9]{21}\.js$/$script,3p,badfilter
 /^https?:\/\/[a-z0-9]{7,}\.online\/[a-z0-9]{7,}\.js$/$script,3p
 /wpsafelink.js
@@ -79,6 +81,89 @@ youtube.com##+js(json-prune, playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.playerAds)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 ~2099.jp,~baysia-tokyo.com##article[id][class*=post-] div[class*=cta]
+@@||arcangeli.jp/images/ad-logo.gif
+@@||ad-house.jp/images/ad-top_01.gif
+@@||aditalia.jp/images/ad-$image,1p
+@@||adoner.jp/images/ad-logo.png
+@@||akbar.co.jp/images/ad-$image,1p
+@@||alpha-gate.jp/images/ad-icon_01.png
+@@||anabuki-cs.jp/images/ad.png
+@@||app-city.jp/images/ad.png
+@@||apple.com^*/images/ad-$image,domain=apple.com
+@@||aqsys.co.jp/images/ad-1-main-300x300.jpg
+@@||asis-project.co.jp/images/ad.png
+@@||atrain.jp/images/ad-crop-u122384.jpg
+@@||autofield.jp/images/ad.jpg
+@@||blanche-toile.com/freestyle/wp-content/themes/fs1/images/ad-position.png
+@@||bry.jp/images/ad-d_$image,1p
+@@||camroc.co.jp/images/ad.png
+@@||chibi.9981.ne.jp/images/AD.jpg
+@@||chintai-apple.co.jp/images/ad.jpg
+@@||d-n-a.co.jp/wp-content/themes/dna/images/ad-solid.svg
+@@||dct-group.co.jp/images/ad-001.jpg
+@@||dentrepair.jp/images/ad-d_$image,1p
+@@||digimarke.jp/images/ad.jpg
+@@||dream.ed.jp/images/ad-3
+@@||dri.co.jp/images/ad-$image,1p
+@@||excellence.co.jp/images/ad-sougoushikaku.gif
+@@||flexagency.co.jp/images/ad.jpg
+@@||garrot.jp/images/AD.jpg
+@@||gayjob.jp/images/ad-$image,1p
+@@||goodpass.jp/images/ad-thum-$image,1p
+@@||gsgs.co.jp/wp/wp-content/themes/gs/images/AD.jpg
+@@||ishinoyuraku.jp/wp-content/themes/yuraku/images/ad.jpg
+@@||kanemichi-gr.jp/images/AD.png
+@@||kei-corp.jp/tokusen/images/ad.jpg
+@@||kfctriathlon.com/images/ad-event-title.gif
+@@||kimura-drink.co.jp/common/images/ad.jpg
+@@||kitami-shakyo.jp/wp-content/themes/kitami_fukushi/assets/images/ad.png
+@@||koekisha-ad.jp/images/ad-$image,1p
+@@||konan-ltd.jp/images/ad.png
+@@||kotsuadcenter.jp/images/ad-$image,1p
+@@||kyowa.ibaraki.jp/cgi/blog/skin/images/ad.gif
+@@||maemoto.co.jp/images/ad-logo2.png
+@@||makino-ohyo.jp/product/adapter/images/AD-$image,1p
+@@||megane-i.jp/images/ad.jpg
+@@||mibro83.jp/images/ad.jpg
+@@||miyaepoch.jp/service/images/AD-3_W.jpg
+@@||mlrev.co.jp/common/images/ad.png
+@@||mmark.co.jp/images/ad.jpg
+@@||mobius1.jp/published/publicdata/*/attachments/SC/images/ad-$image,1p
+@@||mono-st.jp/images/ad.jpg
+@@||music-bunker.jp/images/ad-$image,1p
+@@||music-bunker.jp/recruit/extra/images/ad-extra.jpg
+@@||n-h-c.jp/images/ad-search/$image,1p
+@@||nuuo.jp/images/ad.png
+@@||oizumi.gr.jp/wp-content/themes/oizumi-resp/images/ad-$image,1p
+@@||opticoat.co.jp/peripheral/images/AD-$image,1p
+@@||osabishi.jp/cake/images/ad-sc.jpg
+@@||peiajapan.jp/merrydo/wp-content/themes/PEIA/images/ad.png
+@@||plasticsage.co.jp/contact/images/ad-space.gif
+@@||postmankobe.co.jp/images/ad-nega.png
+@@||rell.co.jp/images/ad-bodo-Sep-Final-v2.png
+@@||ringo-no-mori.jp/images/ad-bnr/$image,1p
+@@||s-heroes.co.jp/images/ad-$image,1p
+@@||sei-hon.jp/images/ad-$image,1p
+@@||shieldsoft.co.jp/common/images/ad-
+@@||shiogama-nouen.jp/sakuranbogari/images/ad.jpg
+@@||sugawara2103.co.jp/common/images/ad.jpg
+@@||supride.jp/images/ad.jpg
+@@||taishoen.co.jp/wp/wp-content/themes/understrap/images/ad-mark.png
+@@||takken-k.co.jp/images/ad.gif
+@@||tanabe-home.co.jp/images/ad.jpg
+@@||tateyama448.jp/images/ad-s.gif
+@@||tcm-koko.ed.jp/images/ad.jpg
+@@||technobell.co.jp/images/ad.png
+@@||television-ad.com/ad-mechanism/images/ad-fee-bg02.jpg
+@@||tendo-ad.co.jp/images/ad-title.gif
+@@||tokyodoors.co.jp/media/images/ad-channel/
+@@||tottori-green.or.jp/images/ad.gif
+@@||tounin.jp/cmn/images/ad.png
+@@||town.shisui.chiba.jp/_common/themes/shisui/piece/images/ad-bosyu.png
+@@||umetaniinc.co.jp/images/ad.png
+@@||w-f-goodlife.co.jp/images/ad.png
+@@||xn--68j3b118kc3c8tqzrlcrd9ts.jp/images/ad-arrow.jpg
+@@||ysp-top.co.jp/images/ad.jpg
 
 !#if !env_firefox
 iwatetabi.jp###adbnr
