@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210808
+! Version: 20210809
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -534,7 +534,7 @@ auctions.yahoo.co.jp###js-BannerFrame
 5ch.net##.bs-popover-bottom
 80c.jp##.td-more-articles-box
 affikatsu.com##.touchy-email-button
-affiliate-town.info,aquarium-suisou.net,game-para-dise.com,hunade.com,repeat-drama.info###bfb_content_pc
+affiliate-town.info,aquarium-suisou.net,game-para-dise.com,hunade.com,kaigaifx-research.com,repeat-drama.info###bfb_content_pc
 affitopic.com###mailmag_bnr
 alternativeto.net###bottomNotifier
 amp.reddit.com##.AppSelectorModal__body
@@ -623,6 +623,7 @@ forcemedia.co.jp###sidenav
 free.uploader.xzy.pw##.is-bottom.notices
 froggy.smbcnikko.co.jp##.floatingBanner
 fuzoku.sod.co.jp##.top_webyoyaku
+fx-review.jp###fixed-button-area
 galleria.emotionflow.com,tegaki.pipa.jp###AboutFrame
 gazoo.com##.footer-floatbanner-area
 gekkan-fukugyou.jp###modal-content
@@ -838,7 +839,6 @@ scan.netsecurity.ne.jp##.thm-panel-register-case
 tamashii.jp##.overlay
 usshi-na-life.com##.td-more-articles-box
 !#endif
-
 !#if env_firefox
 4900.co.jp##^#ouibounce-modal
 anokoro30.com##^.td-more-articles-box
@@ -857,12 +857,14 @@ scan.netsecurity.ne.jp##^.thm-panel-register-case
 tamashii.jp##^.overlay
 usshi-na-life.com##^.td-more-articles-box
 !#endif
-
 !#if env_mobile
+||gamewith.jp/bookmark/chrome.png
+gamewith.jp##.to-btn--bookmark
 ###xeory-fixed-banner-sp
 b.hatena.ne.jp##.bookmark-guest-guide-modal
 b.hatena.ne.jp##.modal-overlay
 b.hatena.ne.jp##body.is-overlay:style(overflow: auto!important;)
+girlschannel.net###popupModal
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
 m.youtube.com##.mealbar-promo-renderer
 mobile.twitter.com###layers div[dir="auto"] > span:has-text(/在应用上更好|在應用程式上體驗更好的|better on the app|besser in der App|еще больше возможностей в приложении|mejor en la app|melhor no aplicativo|profiterez mieux de Twitter sur l'application|Twitterアプリをおすすめ/):upward(5)
@@ -1190,7 +1192,21 @@ tiktok.com##.app-promotion
 video.tv-tokyo.co.jp##.adApp-wrapper
 
 !#if env_mobile
+b.hatena.ne.jp###global-header:style(top: 0!important;)
+b.hatena.ne.jp##.android-appbanner
+b.hatena.ne.jp##.with-android-appbanner .js-smart-app-banner-container::before
+||collabo-cafe.com/wp-content/uploads/collabo-cafe-app-icon.png
+collabo-cafe.com##.app__smart__dl
+dictionary.goo.ne.jp###app-promo-dialog
+||fc2.com/video/img/app/
+video.fc2.com##.c-app-sp2
+||gamewith.jp/app/pr/
+gamewith.jp##.to-btn--deep-link
+||xgoo.jp/img/portal/misc/footer_app_recommend/
+blog.goo.ne.jp###msg-box-app-recommend
+blog.goo.ne.jp##.app_induction
 instagram.com##.xZ2Xk:has-text(/App/)
+news.tv-asahi.co.jp##.sp-app-banner
 !#endif
 
 ! ---------- Browser check ----------
@@ -1540,6 +1556,9 @@ blog.goo.ne.jp##^.block__shop
 diamond-fudosan.jp##^.sc-recommend
 response.jp,spyder7.com##^.sidebox-pickup
 !#endif
+!#if env_mobile
+automesseweb.jp###_popIn_ranking:upward(.code_php_in_widget)
+!#endif
 
 ! ---------- Promo ----------
 /\/upload\/banner\/(?!sidebar).*/$image,1p,domain=alphapolis.co.jp
@@ -1569,6 +1588,7 @@ iwate-np.co.jp##div[class$=-CMSbox]
 ||jj-blues.com/cms/wp-content/uploads/2018/04/585e852d2cfdd37d9e51e7564654f50f-1.jpg
 jj-blues.com###text-10
 ||k-img.com/images/bb/parts/$domain=review.kakaku.com
+||k-img.com/images/id/id_benefit/bnr/bnr_id_benefit01_740x50.png$domain=review.kakaku.com
 ||kanaloco.jp/archives/013/201902/c07a4901b8bb49c86ec4edcddcf906c3.jpg
 ||komeri.com/include_html/include/cart/img/*_bnr_card.jpg
 ||komeri.com/include_html/include/cart/img/bnr_dc.jpg
