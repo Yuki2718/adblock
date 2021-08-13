@@ -1,0 +1,202 @@
+! Title: Yuki's uBlock Japanese filters Mobile module
+! Expires: 3 days
+! Homepage: https://github.com/Yuki2718/adblock
+! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+! Version: 20210812
+
+!#if env_mobile
+||1000mg.jp/ad_com1.php
+||gamerch.com/s3-assets/js/system/gcad/
+||k-img.com/script/fixed_bnr_area.js$domain=s.kakaku.com
+||m.media-amazon.com/images/I/$domain=yamahack.com
+||m.youtube.com/*/ad.js$script
+||m.youtube.com/get_midroll_$domain=youtube.com
+||poiful.com/sdk/vrizeadsdk.
+||smart-flash.jp/wp-content/themes/original/embed/FoneH
+||thumbnail.image.rakuten.co.jp/@0_mall/$domain=yamahack.com
+||video.fc2.com/suggest_list_ad.php
+
+||2nd.clublucifer.net/regular/$frame
+||fc2.com/video/js/u/sp/hdr/
+||jav789.com/assets/love/index.js
+||m.sunporno.com/bs.php
+||nan-net.com/show/bbs/s/inc/$frame
+||smaero.jp/advimg/
+
+*##AMP-AD
+2chan.net##.ui-li > iframe[src^="//dec.2chan.net/bin/"]:upward(1)
+2chan.net##iframe[src$="/ampsp.htm"]
+2chan.net##iframe[src*=".net/bin/ad"]
+2chan.net##iframe[src*=".net/bin/ad"] + hr
+altema.jp##.head_koukoku_wrapper
+amaebi.co##.interstitial-ad
+ameblo.jp##div[style="overflow: hidden;"] > div[class^="_"]:last-of-type > aside[class^="_"]:only-child > div[class^="_"] > aside[class^="_"]:only-child > div > div:empty:upward(3)
+ameblo.jp##div[style="overflow: hidden;"] > main > div > div.LazyLoad[style="height: 80vw;"]:only-child
+ap-siken.com,db-siken.com,fe-siken.com,itpassportsiken.com,nw-siken.com,pm-siken.com,sc-siken.com,sg-siken.com##.ad2
+apkdone.com##.adplaceholder-top
+aquarium-suisou.net,ba-ro-4869.com,jeep-m.jp##.sponsor
+asahi.com##.ArticleRectangleAd
+asahi.com##.ad
+asahi.com##.list-ad
+asahi.com##.list-adL
+asahi.com##li.FeatureBox_list
+b.hatena.ne.jp###touch-footer-ad-placeholder
+b.hatena.ne.jp##.entry-ad-sp-banner
+b.hatena.ne.jp##.entrylist-ad-sp-rectangle
+belcy.jp###Ad_Overlay
+belcy.jp##.Ad_widget
+belcy.jp##.ads_textbox
+biz-journal.jp##.rankpr
+biz-journal.jp,realsound.jp##.adsenseArea
+blog.goo.ne.jp##.article__ad
+blog.goo.ne.jp##.article__hideads
+blog.goo.ne.jp##.navbar__link--bottom
+blog.goo.ne.jp##^.banner--marchel:upward(#msg-box-app-recommend)
+buzzap.jp##.sp_inarticle
+camphack.nap-camp.com,runhack.jp,tsurihack.com,watch.impress.co.jp##._popIn_infinite_ad
+chronicle.wiki,ff4psp.jp,game-info.wiki,genron.blogos.com,jbbs.shitaraba.net,memo.wiki,playing.wiki,pokemasujikaku.com,seesaawiki.jp,shitamachi.world,sokuhou.wiki,sougouwiki.com,st12.jp##.ad-300_250
+chronicle.wiki,ff4psp.jp,game-info.wiki,genron.blogos.com,memo.wiki,playing.wiki,pokemasujikaku.com,seesaawiki.jp,shitamachi.world,sokuhou.wiki,st12.jp##.header-banner
+cyclehack.jp,gogo-miyagi.com,izuhack.akao-hotel.co.jp,nap-camp.com,runhack.jp,stylehack.jp,tsurihack.com,yamahack.com###ad-overlay
+detail.chiebukuro.yahoo.co.jp##aside[class*="ClapLv3SubList_Chie-SubList__ListItem--Ad__"]
+dic.pixiv.net###ad-d-sp-footer
+dic.pixiv.net###ad-d-sp-rectangle
+dic.pixiv.net###ad-d-sp-toparticle
+fukutubu.jp##.td-header-sp-recs
+gamer.ne.jp##.adArticleBottom_sp
+gamer.ne.jp##.adBottomRectangle_sp
+girlschannel.net##.topic-items > div[style="height:93px;"]
+google.*##a[href*="/aclk?"][data-al]:upward(2)
+grapee.jp##aside > div[class^="mod-ads-area"]:upward(1)
+grapee.jp##div[id^="guno-m"]
+hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadiary.org,itest.5ch.net,syosetu.org##.ad
+hensachiterrace.com##^.footer_overlay
+hoiclue.jp##.ad-SP
+irasutoya.com##.mobilead
+itest.5ch.net###float-bnr
+itest.5ch.net###instant_ad
+itest.5ch.net###js-bottom-ad-300x250
+itest.5ch.net###js-bottom-ad-320x250
+itest.5ch.net###js-cardview_ad
+itest.5ch.net##.ad-native-comment
+itest.5ch.net##.ad_320x50
+itest.5ch.net##.js-ad_iframe_wrap
+itest.5ch.net##.js-cardview_ad-320x180 > div
+itest.5ch.net##.js-cardview_ad-320x50
+itest.5ch.net##.res_ad
+itest.5ch.net##div[class^=sproutad_]
+itest.5ch.net##[class*=js-ads-content-top_]
+japanese.engadget.com###post-center-col > div.D\(b\)\!--sm.D\(n\) > div.Mb\(10px\).Mt\(20px\)
+jbbs.shitaraba.net##.ad-320_50
+jprime.jp##.ad-overlay
+jprime.jp##.ad-top-header
+jprime.jp##.ad-undertitle
+kanasoku.info##body > div[style^="width:320px; height:100px"]
+kissanime.mobi##.offads
+kobe-np.co.jp##div[id^="knsp-"]
+kurashi-no.jp###kurashino1_SP_Billboard
+kurashi-no.jp##.Ad_Rectangle
+kurashi-no.jp##div[id^="kurashino1_SP_article_"][style*="min-height: 280px"]
+lnews.jp##.bnr250
+m.crank-in.net##.ad-area-header-top
+m.crank-in.net##.ad-area_pr
+mainichi.jp##.articledetail-body-pr
+mainichi.jp##.l-inner-ad
+mainichi.jp##div[id^="ad-sp-article-infeed_"]
+mainichi.jp##div[id^="ad-sp-channel-infeed_"]
+mildch.com###container > div.free-area > div[align="center"] > script[src*="adingo.jp"]:upward(2)
+negisoku.com###fluct_overlay
+news-postseven.com##div[style$="text-align:center; margin-bottom: 5px; margin-top:-20px; min-height:245px;"]
+news-postseven.com##div[style$="text-align:center; min-height: 100px;"]
+news.1242.com###pickup_list
+news.1242.com##.box_infeed.gmossp
+news.1242.com##div[class^="area_ads"]
+news.dwango.jp##.overlay-footer_ad
+news.livedoor.com##.ads-google300
+news.tbs.co.jp##.cp-spAd
+news.tv-asahi.co.jp###common-header > #adbanner_spheader:upward(1)
+news4vip.livedoor.biz###f984a
+nikkansports.com###MiddleAD
+nikkansports.com###TopAD
+nikkei.com##[class*="adForSmall_"]
+nordot.app##li > ._popIn_recommend_article_ad_reserved:upward(1)
+nordot.app,watch.impress.co.jp##li > ._popIn_recommend_article_ad:upward(1)
+nordot.app##.main__adWrapper
+nordot.app##.page__ad:not(.page__ad--discoverMore)
+outlook.live.com###OwaContainer
+qiita.com##div[class^="css-"] > div > div[class^="it-Ads_"]:upward(2)
+qiita.com##div[class^="css-"] > div[class^="css-"] > div[id^="logly-"]:upward(2)
+realsound.jp##.entry-summary[style$="text-align:center;min-height:95px;"]
+realsound.jp##.entryBottomAd
+roomie.jp###secondary > .r-section:first-child
+ryutsuu.biz##.bnr300
+ryutsuu.biz##.bnr50
+s.ekiten.jp##.solid_ad_container
+s.kakaku.com###headerAd
+s.kakaku.com##.misetoku
+s.kakaku.com##.subCtsArea
+s.kakaku.com##.withIboxDb
+s.kakaku.com##div[style="background:#ddd; min-height:120px;"]
+sp.nicovideo.jp##.siteWide-BannerAd
+sp.okwave.jp##.adfunnel.message-wrap
+sp.okwave.jp##.adfunnel_special
+sp.uta-net.com###footer_banner
+sp.uta-net.com###header_banner
+sp.uta-net.com###overlay_banner
+sp.uta-net.com##._popIn_infinite_page > ._popIn_recommend_article_ad:upward(1)
+sp.uta-net.com##.ad-area-d
+sp.uta-net.com##.ad-kashi-bottom2
+tokyo-sports.co.jp##.ad-sp-bil
+video.fc2.com##.ad_area_top
+washingtonpost.com###mobile-footer-ad-wrapper
+washingtonpost.com##[data-qa="article-body-ad"]
+watch.impress.co.jp##.inline-rect
+watch.impress.co.jp##div[style="min-height: 250px;"]
+web.gekisaka.jp##.SP_NEWS_D_SP_ONLY
+whotwi.com##.sp_ad_rectangle_responsive
+whotwi.com##div[style^="width: 300px;height:250px"]
+withnews.jp##.sticky-sidebar
+yamahack.com###sub > .section:first-child
+yamareco.com##div[style="min-height: 280px;"]
+yamareco.com##div[style^="position: fixed; bottom: 0; width: 100%; height: 50px; z-index: 9999"]
+
+adacomi.com##div[style$="width:300px; height:250px;"]
+adacomi.com,eromanga-time.com,eromanga-yoru.com,ivfree.me,momon-ga.com,nan-net.com,tokyomotion.net##div[id^="active_overlay_"]
+cartoonpornvideos.com##.ads
+cartoonpornvideos.com##div[id^="adn-"]
+gaytail.com##.happy-before-list
+gaytail.com##.happy-before-video
+hentaidude.com###ft-trig.ft-home, .vip-c
+hentaidude.com##.mobile-il:style(visibility: hidden !important; height: 1px !important)
+itest.bbspink.com###float-bnr
+itest.bbspink.com###instant_ad
+itest.bbspink.com###js-bottom-ad-300x250
+itest.bbspink.com##.ad
+itest.bbspink.com##.ad-native-comment
+itest.bbspink.com##.js-cardview_ad-320x50 > div
+itest.bbspink.com##.res_ad
+itest.bbspink.com##div[class^=sproutad_]
+itest.bbspink.com##[class*=js-ads-content-top_]
+javhdporn.net##.header-ad-mobile
+javhdporn.net##.sidebar-ads
+javhdporn.net##.under-player-ad-mobile
+javsubtitle.co###mimpanel
+javsubtitle.co##.mid-ads
+m.proporn.com###banner_overlay-postitial-video:remove()
+m.sunporno.com##.spot
+nan-net.com##div[style*="height:250px;"]
+nan-net.com##div[style="height:100px;"]
+pornhub.com,redtube.com,redtube.net##.adContainer
+pornicom.com##.top-spot
+video.fc2.com##.list-spCont > li[style="line-height: 0; margin: 0; padding: 0; height: 110px;"]
+video.fc2.com##div[style^="height:30px;text-align:center;background-color:black;"]
+xnxx.com,xvideos.com###ad-header-mobile
+
+@@||d-cache.microad.jp/js/td_iw_access.js$domain=watch.impress.co.jp
+@@||googletagmanager.com/gtm.js$script,domain=book.impress.co.jp|sankei.com
+@@||lupicia.com/sp/img/ad/$image,1p
+@@||suumo.jp/sp/js/beacon.js$script,1p
+@@||worldvision.jp/img/topSP/topFootBana_ad.gif|
+@@||www.googletagmanager.com^$domain=onlineshop.smt.docomo.ne.jp
+
+||momimomibokujo.xyz^$doc
+!#endif
