@@ -109,6 +109,13 @@ Removes annoyances which only some user, not everyone, want to remove mainly on 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt)
 
+### Sable filters 2
+
+Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in Yuki's uBlock Japanese filters - Annoyances
+
+<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
+
 ### Yuki's Blog parts filters
 
 Removes blog parts and ranking buttons on Japanese websites. Included in Yuki's uBlock Japanese filters - Annoyances
@@ -135,12 +142,12 @@ Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt&title=Yuki's%20Blogroll%20filters">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blogroll.txt)
 
-### Sable filters 2
+### Yuki's Mobile App filters
 
-Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in Yuki's uBlock Japanese filters - Annoyances
+Blocks mobile app banners. Included in Yuki's uBlock Japanese filters - Annoyances
 
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt&title=Sabre%20filters%202">Subscribe</a>
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/sabre-filters2.txt)
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/mob-app.txt&title=Yuki's%20Mobile%20App%20filters">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/mob-app.txt)
 
 ### Anti-scam enhancer for 280blocker adblock filter（only for AdGuard for Android and uBlock Origin）
 
