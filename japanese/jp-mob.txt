@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210814
+! Version: 20210815
 
 !#if env_mobile
 ! ---------- Ads specific ----------
@@ -14,6 +14,7 @@
 ||blog.alco.co.jp/wp-content/themes/newworld/images/50.png
 ||booklive.jp/resources/a/sp/v2/images/top/banner/palmie_640_90.png
 ||books.rakuten.co.jp/books/img/js/smart/sp-footer-ad-banner
+||cxpublic.com^$domain=googirl.jp
 ||gamerch.com/s3-assets/js/system/gcad/
 ||k-img.com/script/fixed_bnr_area.js$domain=s.kakaku.com
 ||m.media-amazon.com/images/I/$domain=yamahack.com
@@ -93,6 +94,7 @@ gamer.ne.jp##.adArticleBottom_sp
 gamer.ne.jp##.adBottomRectangle_sp
 ghacks.net##.box-banner
 girlschannel.net##.topic-items > div[style="height:93px;"]
+googirl.jp##.newentry_in > li.“cf”
 google.*##a[href*="/aclk?"][data-al]:upward(2)
 grapee.jp##aside > div[class^="mod-ads-area"]:upward(1)
 grapee.jp##div[id^="guno-m"]
@@ -100,6 +102,8 @@ hateblo.jp,hatenablog.com,hatenablog.jp,hatenadiary.com,hatenadiary.jp,hatenadia
 hensachiterrace.com##^.footer_overlay
 hoiclue.jp##.ad-SP
 irasutoya.com##.mobilead
+itest.5ch.net###ad_network
+itest.5ch.net###ads
 itest.5ch.net###float-bnr
 itest.5ch.net###instant_ad
 itest.5ch.net###js-bottom-ad-300x250
@@ -124,11 +128,14 @@ kobe-np.co.jp##div[id^="knsp-"]
 kurashi-no.jp###kurashino1_SP_Billboard
 kurashi-no.jp##.Ad_Rectangle
 kurashi-no.jp##div[id^="kurashino1_SP_article_"][style*="min-height: 280px"]
+libae.jp##.gmossp_con
+libae.jp##.sp_display > div.pink-title
 lnews.jp##.bnr250
 m.crank-in.net##.ad-area-header-top
 m.crank-in.net##.ad-area_pr
 m.crank-in.net##.block-area > .OUTBRAIN:upward(1)
 m.investing.com##.adDrawer
+m.mail.yahoo.co.jp###ad_container_top
 mag.app-liv.jp##.p-overlay--upper-ad:style(bottom: 0!important;)
 mainichi.jp##.articledetail-body-pr
 mainichi.jp##.l-inner-ad
@@ -222,8 +229,8 @@ pornhub.com,redtube.com,redtube.net##.adContainer
 pornicom.com##.top-spot
 video.fc2.com##.list-spCont > li[style="line-height: 0; margin: 0; padding: 0; height: 110px;"]
 video.fc2.com##div[style^="height:30px;text-align:center;background-color:black;"]
-xhamster.com##.thumb-list-mobile-item--widget
-xhamster.com##.wio-cbanner-container
+xhamster.*##.thumb-list-mobile-item--widget
+xhamster.*##.wio-cbanner-container
 xnxx.com,xvideos.com###ad-header-mobile
 
 ! ---------- Extension ----------

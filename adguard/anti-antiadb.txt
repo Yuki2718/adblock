@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20210812
+! Version: 20210815
 
 .com/1?z=$script,third-party
 .com/custom|$xmlhttprequest,third-party
@@ -66,6 +66,8 @@
 /nb/frot_lod.js
 /nb/nb_script.js
 /pfe/current/*$script,xmlhttprequest,third-party
+/player/html.php?aid=start_html&video_id=*&referer=$subdocument,~third-party
+/player/html.php?aid=pause_html&video_id=*&referer=$subdocument,~third-party
 /player/plugins/vast-*.js$script
 /pn07uscr/f/tr/zavbn/*$script,third-party
 /pn21ywqw/z/sc/scssx/*$script,third-party
@@ -125,6 +127,7 @@ ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,
 @@/prebid-ads.js$script
 @@/shared/bannerpages/darttagsbanner.aspx?h=$script,third-party
 @@/static/image/ad_top_bg2.png?&ad_box_=$image,~third-party
+@@/wp-banners.js|$script,~third-party
 @@||ads.twitter.com/favicon.ico
 @@||advertising.yahoo.com/favicon.ico
 @@||as.inbox.com/banner_ad.gif
@@ -148,33 +151,33 @@ ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,
 @@||yahoo.adnetasia.com/serv
 @@||yahoo.adtrackers.net/serv
 @@||yahoo.bannertrack.net/serv
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ad300x145
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama,~tegaki.pipa.jp#@##Ad300x250
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##AdBox160
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##AdFrame1
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##AdFrame2
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##AdFrame4
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ads_google_01
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ads_google_02
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ads_google_03
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ads_google_04
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAd
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAd1
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAd2
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAd3
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAdB
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAdC
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##ad-frame
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##ad-lb
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##adAd
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##adTeaser
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##glinkswrapper
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##outbrain-paid
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##sponsored_link
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@##ad-banner
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@#.ad-banner
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@#.adsBox
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@#.adsbygoogle
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@#.div-gpt-ad
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@#div[class^="div-gpt-ad"]
-ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#@#[class^="div-gpt-ad"]
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ad300x145
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama,~tegaki.pipa.jp#@##Ad300x250
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##AdBox160
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##AdFrame1
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##AdFrame2
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##AdFrame4
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ads_google_01
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ads_google_02
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ads_google_03
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##Ads_google_04
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAd
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAd1
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAd2
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAd3
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAdB
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##DivAdC
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##ad-frame
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##ad-lb
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##adAd
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##adTeaser
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##glinkswrapper
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##outbrain-paid
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##sponsored_link
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@##ad-banner
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@#.ad-banner
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@#.adsBox
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@#.adsbygoogle
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@#.div-gpt-ad
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@#div[class^="div-gpt-ad"]
+ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,to,today,tokyo,top,website,win,work,world,xyz,yokohama#@#[class^="div-gpt-ad"]
