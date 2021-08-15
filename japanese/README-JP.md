@@ -185,7 +185,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 ### Yuki's Blog parts filters
 
-ランキングボタン等のブログパーツをブロックします。こちらもuBlock Origin以外のABP文法互換プラットフォームでご利用可能です。
+ランキングボタン等のブログパーツをブロックします。AdGuardとも完全な互換性があります。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt&title=Yuki's%20Blog%20parts%20filters">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt)
@@ -206,7 +206,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 ### Yuki's Mobile App filters
 
-モバイルアプリのダウンロードを促すバナーを除去します。uBlock Origin以外のABP文法互換プラットフォームでご利用可能です。
+モバイルアプリのダウンロードを促すバナーを除去します。AdGuardとも完全な互換性があります。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/mob-app.txt&title=Yuki's%20Mobile%20App%20filters">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/mob-app.txt)
