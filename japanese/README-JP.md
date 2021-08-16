@@ -335,6 +335,6 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 
 <sub>18: Yuki's uBlock Japanese filtersと比べてAdGuardで機能しないルールは減っています。uBlock Originでの使用を推奨しますが、このフィルタについてはAdGuardでの使用も今のところ許容範囲です。<strong>ただしAdGuard for Androidでご利用の場合、Sabre filters2などのサブフィルタを別途購読してください</strong>。AdGuardブラウザ拡張機能ではその必要はなさそうです。AdGuardコンテンツブロッカーでの使用はおすすめしません。</sub>
 
-<sub>19: ポップアップ、サブスクリプション、プロモーションについてはサブリスト化が困難です。AdGuard Annoyancesでもそうですが、ポップアップという括りは「表示形式がポップアップであるあらゆる迷惑要素」ぐらいの意味しかなく、サブスクリプションやプロモーションにも分類可能なものが含まれているからです。プッシュ通知はサブリスト化可能ですが、Fanboy's Annoyanceのサブリストである[Fanboy's Notifications Blocking List](https://easylist-downloads.adblockplus.org/fanboy-notifications.txt)と大部分重複しており、そちらを購読していただければよいと思います。ターゲットが明確でルールも少ないため、Fanboy系にしては不具合は少ないです。Othersに含めているカウントダウン系もサブリスト化可能ですが、uBlock filtersで標準対応しているため需要が低いと思います。こちらで標準対応しないのは、広告でないことに加えてまれに不具合を起こすためです。</sub>
+<sub>19: ポップアップ、サブスクリプション、プロモーションについては個別のサブリスト化は困難です。AdGuard Annoyancesでもそうですが、ポップアップという括りは「表示形式がポップアップであるあらゆる迷惑要素」ぐらいの意味しかなく、サブスクリプションやプロモーションにも分類可能なものが含まれているからです。プッシュ通知はサブリスト化可能ですが、Fanboy's Annoyanceのサブリストである[Fanboy's Notifications Blocking List](https://easylist-downloads.adblockplus.org/fanboy-notifications.txt)と大部分重複しており、そちらを購読していただければよいと思います。ターゲットが明確でルールも少ないため、Fanboy系にしては不具合は少ないです。Othersに含めているカウントダウン系もサブリスト化可能ですが、uBlock filtersで標準対応しているため需要が低いと思います。こちらで標準対応しないのは、広告でないことに加えてまれに不具合を起こすためです。</sub>
 
 </details>
