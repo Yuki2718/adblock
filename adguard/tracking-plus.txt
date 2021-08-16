@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210815
+! Version: 20210816
 
 ! General tracker
 -adobe-analytics/
@@ -17,6 +17,7 @@
 /?dm=*&blogid=*$script,domain=~wordpress.org
 /?dsp_uid=
 /?essb_counter_cache=$xmlhttprequest
+/?sentry_version=
 /?swift-performance-tracking
 /CelebrusInsert.js
 /GARecord^
@@ -72,7 +73,7 @@
 /chartbeat_
 /chartbeatanalytics/*
 /clickevent.js
-/client_204?$image,other,ping,script
+/client_204?
 /client_pathlog.asp?
 /cnt.php?rf=
 /collect_v3.
@@ -144,6 +145,7 @@
 /jquery.iframetracker.
 /js-tag-manager/*
 /js/targeting.js
+/js/tracking?
 /js/tealium/*
 /keen-tracking-
 /keen.min.js
@@ -161,6 +163,7 @@
 /logger.performance?
 /logger.screensize?
 /logging/v1/log|
+/matomo.php
 /matomo/*$domain=~github.com|~matomo.org|~wordpress.org
 /meta-analytics/*
 /metrika/*&ident=
@@ -173,6 +176,7 @@
 /mtracking.
 /mu-plugins/admin-bar/masterbar-tracks.
 /new-client/trackers.
+/newrelic.browser.
 /npm/perfops-rom
 /nv-loaded.js
 /ocounter.
@@ -277,7 +281,7 @@ _logHuman=
 ||airtable.com^*/reports
 ||akamaihd.net^*.gif?e=
 ||amazonaws.com/ai-img/1x1.gif
-||amazonaws.com/ai-img/aia.js|
+||amazonaws.com/ai-img/aia.js
 ||analyzer.wox.cc^
 ||api-mg2.db-ip.com^
 ||api.ceros.com/a?data=
@@ -303,7 +307,7 @@ _logHuman=
 ||ganon.yahoo.com^
 ||gstatic.com/recommendationengine/
 ||hupso.com^*/counters.
-||includemodal.global.ssl.fastly.net/sp.js|
+||includemodal.global.ssl.fastly.net/sp.js
 ||ipify.org^$third-party
 ||jsdelivr.net/npm/ga-lite@2/
 ||loglys.com^
@@ -318,12 +322,12 @@ _logHuman=
 ||q20jqurls0y7gk8.info^
 ||r.mail.ru^
 ||r9cdn.net/res/js/app/logger.
-||redhat.com/dtm.js|
+||redhat.com/dtm.js
 ||s.yimg.com/ss/rapid3$script,domain=~techcrunch.com
 ||s3.amazonaws.com/heartbeat.pmc.com/track
 ||s3.amazonaws.com^$script,domain=decider.com|nypost.com|pagesix.com
 ||shopify.com/shopifycloud/boomerang/
-||slideshare.net/li/track|
+||slideshare.net/li/track
 ||slideshare.net/pingback/
 ||slidesharecdn.com/images/1x1.gif?
 ||sni-dat.com^$third-party
@@ -354,8 +358,7 @@ _logHuman=
 ||adobe.com/etc/beagle/public/globalnav/privacy-files/sitenotice/evidon-sitenotice-tag.
 ||adblockplus.org/js/tracking
 ||afpbb.com/oo/
-||amazon.*/batch/*/oe/$ping
-||amazon.*/gp/mobile-marketing/afap/record-event.html|
+||amazon.*/gp/mobile-marketing/afap/record-event.html
 ||amd.com/js/analytics/
 ||ana.co.jp/behavior/
 ||ana.co.jp/common/js/GTM*$script
@@ -367,13 +370,14 @@ _logHuman=
 ||anon-stats.eff.org^
 ||anybunny.tv/js/counter.
 ||api.geoip.mmg.zone^
-||appsource.microsoft.com/api/log|
+||api.live365.com/geocheck
+||appsource.microsoft.com/api/log
 ||asia.nikkei.com/sitecatalyst/
 ||ask.fm/track/
 ||assets1.mtggoldfish.com/assets/google_analytics-
-||bbc.co.uk^*/comscoreContextID.js|
-||bbc.co.uk^*/comscoreSettings.js|
-||bbc.com/reel/logger|
+||bbc.co.uk^*/comscoreContextID.js
+||bbc.co.uk^*/comscoreSettings.js
+||bbc.com/reel/logger
 ||bbc.com/userinfo|
 ||bbstatic.pcmag.com/js/bk-coretag.
 ||bbstatic.pcmag.com/js/krux-coretag.
@@ -411,7 +415,7 @@ _logHuman=
 ||diffchecker-api-production.herokuapp.com^
 ||digitaltrends.com/SIQk$image,subdocument
 ||digitaltrends.com^*/ajax-actions.php?action=dt_get_user_data
-||drive.google.com/drive/logImpressions|
+||drive.google.com/drive/logImpressions
 ||dropbox.com/2/client_metrics/
 ||dropbox.com/alternate_
 ||dropbox.com/log/
@@ -430,9 +434,9 @@ _logHuman=
 ||facebook.com/a/bz?
 ||facebook.com/platform/plugin/page/logging/
 ||facebook.com/xti.php?
-||feedbackws.icloud.com/reportStats|
-||ferret-one.akamaized.net/assets/mktr.js|
-||finnishdesignshop.com/personalize.php|
+||feedbackws.icloud.com/reportStats
+||ferret-one.akamaized.net/assets/mktr.js
+||finnishdesignshop.com/personalize.php
 ||flyasiana.com^*/googleAnalysisAjax.
 ||forbes.com/statsapi/
 ||fortune.com/comscore.json
@@ -447,8 +451,6 @@ _logHuman=
 ||google.com/_/DotsSplashUi/browserinfo
 ||google.com/dssw.js
 ||google.com/insights/$script,third-party
-||google.*/log?$xmlhttprequest
-||google.com^*/log?
 ||gotogate.*/ibe-user-event
 ||gotogate.*/system/jslib/ibe/ibe-metric.
 ||gotogate.*/system/jslib/ibe/ibe-user-events.
@@ -461,7 +463,7 @@ _logHuman=
 ||help.ea.com/en/csat/site-survey/
 ||howtogeek.com/wp-content/uploads/px/*/blank.gif
 ||ieeexplore.ieee.org/assets/js/analytics/
-||ig.com/behaviours/|
+||ig.com/behaviours/
 ||imgur.com/lumbar.gif?
 ||infoq.com/metrics/
 ||insight.jw-api.org^
@@ -470,7 +472,7 @@ _logHuman=
 ||irishtimes.com/apw/api/v1/amp/pingback/
 ||irishtimes.com/rta-logging/
 ||jal.co.jp/common_rn/js/rtam.
-||jal.co.jp^*/analysis_
+||jal.co.jp^*/analysis_$script,redirect=noopjs
 ||jsdelivr.net/npm/livcounter/counter.js
 ||kayak.*/log/
 ||kayak.*/s/impression/
@@ -487,7 +489,6 @@ _logHuman=
 ||linkedin.com/platform-telemetry/
 ||linkedin.com^*/collect
 ||live.mrf.io/statics/marfeel/gardac-sync.js
-||live365.com/geocheck|
 ||livelyvideo.tv/lb/logger
 ||log.gifmagazine.net^
 ||logg.kiwi.com^
@@ -502,7 +503,7 @@ _logHuman=
 ||mint.macobserver.com/?js|
 ||mms.coachmag.co.uk^
 ||msn.com/collect/
-||msn.com/pv.xml|
+||msn.com/pv.xml
 ||music.youtube.com/error_204
 ||my.vmware.com/web/vmware/assets/analytics.
 ||mytrip.com/ibe-user-event
@@ -537,7 +538,6 @@ _logHuman=
 ||prod.theintercept.com^*/conversion/
 ||prod.theintercept.com^*/logExecutionStats
 ||public-api.wordpress.com/geo/
-||quora.com/ajax/batched_log_
 ||qz.com/log
 ||reddit.com/error|
 ||reddit.com/timings/
@@ -545,14 +545,14 @@ _logHuman=
 ||redsky.target.com/v1/location_details/
 ||redsky.target.com/v3/stores/nearby/
 ||res.infosecurity-magazine.com^*/tracking.
-||rgstatic.net^*/logger.js|
+||rgstatic.net^*/logger.js
 ||rt.com/static/js/libs/counters
 ||s2-prod.gloucestershirelive.co.uk/@trinitymirrordigital/withnail/tags/
 ||s2member.com/s-badges/
 ||scoop.it/pv|
 ||securemvt.apple.com^
 ||skypicker.com^*locations/
-||skyscanner.*/slipstream/view|
+||skyscanner.*/slipstream/view
 ||slant.co/js/track.min.js
 ||sm.pcmag.com^$script
 ||smetrics.aem.playstation.com^
@@ -564,7 +564,7 @@ _logHuman=
 ||srepdata.usatoday.com^
 ||sstats.adobe.com^
 ||sstats.bitdefender.com^
-||static3.avast.com^*/detect-device.js|
+||static3.avast.com^*/detect-device.js
 ||staticflickr.com/ap/build/images/pxl.
 ||stats.digg.com^
 ||stats.streamhub.io/api/playerevent/
@@ -572,7 +572,6 @@ _logHuman=
 ||storage.googleapis.com^*/workbox-offline-ga.
 ||store.moncler.com/yTos/api/Plugins/LoggerApi/
 ||subscribe.washingtonpost.com/acquisition/views/tracking
-||supportmetrics.apple.com/content/services/stats
 ||surpricenow.com/js/s_code_
 ||sweetwater.com/p2TBVNJZ/
 ||taglocker.target.com^
@@ -583,30 +582,29 @@ _logHuman=
 ||targetemsecure.blob.core.windows.net^$script
 ||targeting.washpost.nile.works^
 ||techcommunity.microsoft.com/beacon/
-||techworld.com/coldboxproxy.cfc?method=getGeoLocation|
+||techworld.com/coldboxproxy.cfc?method=getGeoLocation
 ||theintercept.com/a?
 ||theporn.cc/anyalytics?
 ||theverge.com/services/entry_stats
 ||threadreaderapp.com/api/v0/ping/
-||threadreaderapp.com/stats|$xmlhttprequest
+||threadreaderapp.com/stats$xmlhttprequest
 ||thurrott.com/api/user/page-visit/
 ||tmz.com^*/kaltura-player-scode.
 ||tn.alphonso.tv/ad/
-||trip.com/flightapi/x24Log|
+||trip.com/flightapi/x24Log
 ||tripadvisor.*/PageMoniker?
 ||tripadvisor.*/api/SentryProxy/
 ||ttauri.space.com^
 ||tumblr.com/analytics.
 ||tumblr.com/assets/scripts/vendor/cedexis/
 ||tumblr.com/impixu?
-||twitter.com^*/client_event.
+||twitter.com/1.1/jot/client_event.json
 ||ubereats.com/_events|
-||unagi.amazon.*/events/$domain=~aws.amazon.com
 ||united.com/ual/Format/js/NewRelic/
 ||vmware.com/etc/clientlibs/vmwaredevapp/clientlib-geoip
 ||vmware.com/etc/clientlibs/vmwaredevapp/clientlib-utag.
 ||vmware.com/files/templates/inc/utag_
-||veoh.com/increment-view-count-by-id|
+||veoh.com/increment-view-count-by-id
 ||vimeo.com/ablincoln/
 ||vimeo.com/log/js_error
 ||vimeocdn.com/js_opt/ablincoln_combined.min.js

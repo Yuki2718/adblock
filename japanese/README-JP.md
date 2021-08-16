@@ -175,6 +175,8 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 <details>
 <summary><strong>みぞれフィルタのサブフィルタ</strong></summary>
 
+特定の迷惑要素だけをブロックしたい場合、みぞれフィルタの代わりにサブフィルタ（の組み合わせ）をご利用いただくこともできます<sup>19</sup>。
+
 ### Sable filters 2
 
 クッキーの同意バナーを除去します。<strong>Yuki's uBlock Japanese filters - Annoyancesに含まれており、これを購読しているなら必要ありません（AdGuard for Androidを除く）</strong>。一方でYuki's uBlock Japanese filters - Annoyancesと異なり、AdGuardとも完全な互換性があります。
@@ -244,12 +246,12 @@ AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ�
 
 280blocker adblock filterは、できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、正規表現などの高度な文法を避け、互換性の高い記法で書かれています。ただ、このためにアプリの280blockerではブロック可能なビジターアンケート詐欺などの悪質サイトが完全にはブロックされません。当パッチはAdGuardとuBlock Originの高度な機能を使い、この点を補強します。また、ほかにも多くの悪質サイトを登録しています。AdGuardおよびuBlock Origin標準のフィルターリストに追加しても効果はありますが、Yuki's uBlock Japanese filtersご利用の場合は不要です。
 
-<strong>2021年5月現在、「信頼するフィルタ」のチェックは必須ではありません。ただ、今後信頼するフィルタ用の機能を使う可能性はあるので、当サイトを信頼していただけるならチェックを推奨します。AdGuardの場合、信頼されたフィルタはページに様々なスクリプトを挿入することが可能になるため、本当に信頼できるのでなければチェックすべきではありません。</strong>
+<strong>2021年8月現在、「信頼するフィルタ」のチェックは必須ではありません。ただ、ごく一部に信頼するフィルタ用の機能を使っているため、当サイトを信頼していただけるならチェックを推奨します。AdGuardの場合、信頼されたフィルタはページに様々なスクリプトを挿入することが可能になるため、本当に信頼できるのでなければチェックすべきではありません。</strong>
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
 
-公益の観点から、このフィルタのみ[CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja)で提供しています。
+公益の観点、また他リストへの依存がほぼないことから、このフィルタのみ[CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja)で提供しています。
 
 #### 対象外
 
@@ -332,5 +334,7 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 <sub>17: こちらも基本、他の日本用フィルタでもブロックされていません。そもそも広告でなく、画像付きのリンクに過ぎませんが、侵襲性が高いものについては（ときにAnnoyancesで）ブロックする場合もあります。</sub>
 
 <sub>18: Yuki's uBlock Japanese filtersと比べてAdGuardで機能しないルールは減っています。uBlock Originでの使用を推奨しますが、このフィルタについてはAdGuardでの使用も今のところ許容範囲です。<strong>ただしAdGuard for Androidでご利用の場合、Sabre filters2などのサブフィルタを別途購読してください</strong>。AdGuardブラウザ拡張機能ではその必要はなさそうです。AdGuardコンテンツブロッカーでの使用はおすすめしません。</sub>
+
+<sub>19: ポップアップ、サブスクリプション、プロモーションについてはサブリスト化が困難です。AdGuard Annoyancesでもそうですが、ポップアップという括りは「表示形式がポップアップであるあらゆる迷惑要素」ぐらいの意味しかなく、サブスクリプションやプロモーションにも分類可能なものが含まれているからです。プッシュ通知はサブリスト化可能ですが、Fanboy's Annoyanceのサブリストである[Fanboy's Notifications Blocking List](https://easylist-downloads.adblockplus.org/fanboy-notifications.txt)と大部分重複しており、そちらを購読していただければよいと思います。ターゲットが明確でルールも少ないため、Fanboy系にしては不具合は少ないです。Othersに含めているカウントダウン系もサブリスト化可能ですが、uBlock filtersで標準対応しているため需要が低いと思います。こちらで標準対応しないのは、広告でないことに加えてまれに不具合を起こすためです。</sub>
 
 </details>
