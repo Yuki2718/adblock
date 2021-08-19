@@ -44,7 +44,6 @@ _Ad300x250_
 ||aiasahi.jp/ads/$important
 ||akamai.net^*/pict.sbisec.co.jp/sbisec/images/banner/bnr780_campaign_$domain=sbisec.co.jp
 ||amazonaws.com/storage.shukatsu-ichiba.com/banner/$domain=shukatsu-ichiba.com
-||buy-ap.piano.io/checkout/template/cacheableShow?aid=*&displayMode=inline$frame,domain=www.sankei.com
 ||gnst.jp/r/banner_mng/
 ||cdn.storematch.jp^$3p
 ||dospara.co.jp/5img/side/bnr_
@@ -57,7 +56,6 @@ _Ad300x250_
 ||r10s.jp/com/inc/search/*_hp_creator_400x800.png$domain=search.rakuten.co.jp
 search.rakuten.co.jp##.keywordcontent.dui-card
 ||rakuten-static.com/1/js/anl/$domain=member.id.rakuten.co.jp
-||s.yjtag.jp/tag.js$script,important,domain=mail.yahoo.co.jp
 ||s3.reutersmedia.net/resources/*&rtn=$image
 ||webike.net/sys_images/saimg/*_1000_45.$domain=webike.net
 ||youtube.com^$csp=worker-src 'none'
@@ -238,7 +236,7 @@ smart-flash.jp##^.adsBlock
 /s_code_$domain=cs.myjcom.jp|ext.hp.com|fontplus.jp|froma.com|haken.rikunabi.com|his-j.com|kinarino-mall.jp|surpricenow.com|townwork.net|www.kddi.com
 /s_code2.$domain=infoseek.co.jp
 /services/analytics/*
-/sitecatalyst/*domain=ana.co.jp|asia.nikkei.com|bellemaison.jp|energy.rakuten.co.jp|fujisan.co.jp|jcom.co.jp|ozmall.co.jp|recruit.co.jp|takarakuji.rakuten.co.jp
+/sitecatalyst/*$domain=ana.co.jp|asia.nikkei.com|bellemaison.jp|energy.rakuten.co.jp|fujisan.co.jp|jcom.co.jp|ozmall.co.jp|recruit.co.jp|takarakuji.rakuten.co.jp
 /v60.js
 /visilabs.min.js
 /webtrekk.js$domain=db.com
@@ -264,6 +262,7 @@ _omniture.$script,domain=mathworks.com
 ! FP for the sake of security
 ||fraudjs.io^$3p
 ||geoip-js.com^$3p
+||gsght.com/twizards.js
 ||ioam.de^
 ||ip-api.com^$3p
 ||ipapi.co^$3p
@@ -360,19 +359,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||ttutu.biz/log_event$1p,xhr
 
 ! ---------- Tracking links ----------
-&event_callback_*&redirect=$doc,removeparam=/^event_callback_/,domain=app.adjust.com
 -aff-*&clickid=$doc,domain=apple.com
-.com/lp/*&utm_campaign=$doc,removeparam=utm_campaign
-.com/lp/*&utm_medium=$doc,removeparam=utm_medium
-.com/lp/*&utm_source=$doc,removeparam=utm_source
-.com/lp/*?utm_campaign=$doc,removeparam=utm_campaign
-.com/lp/*?utm_source=$doc,removeparam=utm_source
-.jp/lp/*&utm_campaign=$doc,removeparam=utm_campaign
-.jp/lp/*&utm_source=$doc,removeparam=utm_source
-.jp/lp/*?trcd=$doc,removeparam=trcd
-.jp/lp/*?waad=$doc,removeparam=waad
-/?cmp=*&waad=$doc,removeparam,domain=happyon.jp|hulu.jp
-?cid=*&adid=$doc,removeparam,domain=video.unext.jp
 ?utm_content=*&utm_source=$doc,domain=dmm.com
 ?utm_source=*&utm_medium=$doc,domain=e-3shop.com
 ?wak=*_link_$doc,domain=beauty.hotpepper.jp
@@ -395,6 +382,15 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=$doc
 
 &af_click_lookback=*&af_siteid=$doc,removeparam=/af_click_lookback|af_siteid/,domain=appsflyer.com
+&event_callback_*&redirect=$doc,removeparam=/^event_callback_/,domain=app.adjust.com
+.com/lp/*&utm_medium=$doc,removeparam=utm_medium
+.com/lp/*^utm_campaign=$doc,removeparam=utm_campaign
+.com/lp/*^utm_source=$doc,removeparam=utm_source
+.jp/lp/*&utm_campaign=$doc,removeparam=utm_campaign
+.jp/lp/*&utm_source=$doc,removeparam=utm_source
+.jp/lp/*?trcd=$doc,removeparam=trcd
+.jp/lp/*?waad=$doc,removeparam=waad
+/?cmp=*&waad=$doc,removeparam,domain=happyon.jp|hulu.jp
 /entry_site.pl?SITE=*&afult=$doc,removeparam=/SITE|afult/,domain=discas.net
 /lp.php?p=*&adcd=$doc,removeparam=adcd
 ?ITRACK_INFO=*&vcptn=$doc,removeparam=/ITRACK_INFO|vcptn/,domain=digi-tag.net
@@ -402,6 +398,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ?adid=*&argument=$doc,removeparam=adid,domain=mouse-jp.co.jp
 ?aid=af_*&algokey=$doc,removeparam=/aid|algokey/,domain=rakuten-sec.co.jp
 ?campaign=*&event_callback_$doc,removeparam=/campaign|event_callback_[0-9a-z]+/,domain=adjust.com
+?cid=*&adid=$doc,removeparam,domain=video.unext.jp
 ?sc_in=*&ult_in=$doc,removeparam=/sc_in|ult_in/,domain=realestate.yahoo.co.jp
 ?scid=af_*&sc2id=af_$doc,removeparam=/^sc2?id/,domain=rakuten.co.jp
 ?sharedid=*&u=$doc,removeparam,domain=msafflnk.net

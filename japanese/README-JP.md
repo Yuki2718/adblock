@@ -294,7 +294,7 @@ GithubのIssueか[掲示板](https://jbbs.shitaraba.net/internet/25463/)を通�
 
 ### 管理人について
 
-EasyListなどの国際的な広告ブロックコミュニティにボランティアとして一年以上貢献を続けており、uBlock内製フィルタおよびAdGuard公式フィルタの共同管理者でもあります。280blockerさん、もちフィルタさん、豆腐フィルタさんなどにも問題報告をすることがあります。
+EasyListなどの国際的な広告ブロックコミュニティにボランティアとして一年以上貢献を続けており、uBlock内製フィルタおよびAdGuard公式フィルタの共同管理者でもあります。280blockerさん、もちフィルタさん、豆腐フィルタさんなどにも問題報告をすることがあります。AppleストアにあるYuki - Ad Blocker+ for YouTubeとは何の関係もありません、念のため。
 
 <details>
 <summary>註</summary>
