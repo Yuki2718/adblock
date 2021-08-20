@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210820
+! Version: 20210821
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -284,7 +284,7 @@ _omniture.$script,domain=mathworks.com
 ||s.yimg.jp/images/rapid/
 ||securemvt.apple.com^
 ||silveregg.net^$3p
-||snva.jp/javascripts/reco/
+||snva.jp/javascripts/reco/$script
 ||tags.tiqcdn.com/utag/*/prod/utag.js$script,redirect-rule=noop.js
 ||tags.tiqcdn.com^
 ||tm.ma.future-shop.net^
@@ -345,6 +345,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||rtoaster.jp^$script,domain=lexus.jp|melonbooks.co.jp
 @@||scdn.cxense.com/cx.cce.js$script,domain=cinemacafe.net|grajapa.shueisha.co.jp|rbbtoday.com|wpb.shueisha.co.jp
 @@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|friday.kodansha.co.jp
+@@||snva.jp/javascripts/reco/$domain=concent.co.jp|mouse-jp.co.jp
 @@||tags.tiqcdn.com/utag/$script,domain=wineenthusiast.com
 @@||tags.tiqcdn.com/utag/*/utag.js$script,domain=hm.com
 @@||tags.tiqcdn.com/utag/cbsi/cbssportssite/prod/utag.js$script,domain=cbssports.com
@@ -425,6 +426,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||google.com/travel/things-to-do/*&dest_src=$doc,removeparam=dest_src
 ||hbol.jp^*?cx_clicks_art_mdl=$doc,removeparam=cx_clicks_art_mdl
 ||hbol.jp^*?cx_clicks_series_mdl=$doc,removeparam=cx_clicks_series_mdl
+||instagram.com^*?igshid=$doc,removeparam=igshid
 ||nijichat.jp/promotion/index/*?afid=$doc,removeparam=afid
 ||nttdocomo.co.jp/special_contents/dmagazine/index_af.html?utm_source=$doc,removeparam=/^utm_/
 ||odsyms15.com/click?aid=*&mimp=$doc,removeparam=/mimp|ext.referrer/
@@ -433,3 +435,5 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||response.jp^*html?from=$doc,removeparam=from
 ||u3h8.com^*?utm_source=$doc,removeparam=/^utm_[a-z]+/
 ||wimax-broad.jp/?utm_source=lc&utm_medium=affiliate&ac_source=lc&ac_medium=affiliate&fdid=$doc,removeparam
+
+||instagram.com^$removeparam=igshid,badfilter
