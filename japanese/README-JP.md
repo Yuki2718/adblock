@@ -1,6 +1,8 @@
-### お知らせ（2021年06月30日）
+### お知らせ（2021年08月21日）
 
-6月27日夜からAdblock Plus, AdGuard, AdBlockでTwitterが表示されないなど広範な不具合が起きましたが、これはEasyListの[ミス](https://github.com/easylist/easylist/commit/1e83bda)が原因と思われます。uBlock Originではフィルタ解釈の違いにより、たまたま不具合が起きません。現在は修正されており、フィルタを更新すれば解決するはずです。
+Twitchの動画内広告について：AdGuard Extraが対応したようです。いたちごっこのため通常のフィルタでの対応は困難です。
+
+Youtubeの視聴履歴について：履歴が残らないという報告があり、EasyPrivacyが原因ということまでは確定しています。フィルタの更新で多くは解決するようですが、解決しなかったという報告もあります。EasyPrivacyと一部同期しているYuki's uBlock Japanese filtersでも同様の問題が起こる可能性があります。
 
 （2021年05月15日）
 
