@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210828
+! Version: 20210829
 
 !#if env_mobile
 ! ---------- Ads specific ----------
@@ -306,6 +306,8 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 @@||www.googletagmanager.com^$domain=onlineshop.smt.docomo.ne.jp
 
 ! ---------- Scam & Redirect ----------
+/^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
+/^http:\/\/[a-z]{9,10}\.ddns/$doc,domain=ddns.net
 ||improveprivacy.me^$all
 ||lucky4wins.club^$all
 ||momimomibokujo.xyz^$doc
