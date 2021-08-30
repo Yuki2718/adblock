@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210829
+! Version: 20210831
 
 !#if env_mobile
 ! ---------- Ads specific ----------
@@ -15,9 +15,12 @@
 ||blog.alco.co.jp/wp-content/themes/newworld/images/50.png
 ||booklive.jp/resources/a/sp/v2/images/top/banner/palmie_640_90.png
 ||books.rakuten.co.jp/books/img/js/smart/sp-footer-ad-banner
+||cpcdn.com/assets/device/ad/$domain=cookpad.com
 ||cxpublic.com^$domain=googirl.jp
+||dailyportalz.jp/api/dpz/adPosts|
 ||gamerch.com/s3-assets/js/system/gcad/
 ||itest.5ch.net/assets/img/ronin_premium_640x100.
+||jmty.jp/s/geniee/rectangle_$frame,domain=jmty.jp
 ||k-img.com/script/fixed_bnr_area.js$domain=s.kakaku.com
 ||m.media-amazon.com/images/I/$domain=yamahack.com
 ||m.youtube.com/*/ad.js$script
@@ -105,14 +108,18 @@ buzzap.jp##.sp_inarticle
 camphack.nap-camp.com,runhack.jp,tsurihack.com,watch.impress.co.jp##._popIn_infinite_ad
 chronicle.wiki,ff4psp.jp,game-info.wiki,genron.blogos.com,jbbs.shitaraba.net,memo.wiki,playing.wiki,pokemasujikaku.com,seesaawiki.jp,shitamachi.world,sokuhou.wiki,sougouwiki.com,st12.jp##.ad-300_250
 chronicle.wiki,ff4psp.jp,game-info.wiki,genron.blogos.com,memo.wiki,playing.wiki,pokemasujikaku.com,seesaawiki.jp,shitamachi.world,sokuhou.wiki,st12.jp##.header-banner
+cookpad.com##.standard_ad_slot
 cyclehack.jp,gogo-miyagi.com,izuhack.akao-hotel.co.jp,nap-camp.com,runhack.jp,stylehack.jp,tsurihack.com,yamahack.com###ad-overlay
 daily.co.jp##.adv
+dailyportalz.jp##main > div > div.contents_title:first-child
+ddnavi.com,kakakumag.com##.article-ad
 detail.chiebukuro.yahoo.co.jp##aside[class*="ClapLv3SubList_Chie-SubList__ListItem--Ad__"]
 dic.pixiv.net###ad-d-sp-footer
 dic.pixiv.net###ad-d-sp-rectangle
 dic.pixiv.net###ad-d-sp-toparticle
 dqname.jp##.ui-link[href*="//happymail."]
 ejje.weblio.jp##.adBannerHdWrp
+forbesjapan.com##.recommended-box
 fukutubu.jp##.td-header-sp-recs
 gadget2ch.com###page > center
 gadget2ch.com##.hgooglead
@@ -152,7 +159,6 @@ jbbs.shitaraba.net##.ad-320_50
 jprime.jp##.ad-overlay
 jprime.jp##.ad-top-header
 jprime.jp##.ad-undertitle
-kakakumag.com##.article-ad
 kakakumag.com##.footer-ad
 kanasoku.info##body > div[style^="width:320px; height:100px"]
 kissanime.mobi##.offads
@@ -308,6 +314,7 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 ! ---------- Scam & Redirect ----------
 /^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
 /^http:\/\/[a-z]{9,10}\.ddns/$doc,domain=ddns.net
+||nuhte.com^$doc
 ||improveprivacy.me^$all
 ||lucky4wins.club^$all
 ||momimomibokujo.xyz^$doc
