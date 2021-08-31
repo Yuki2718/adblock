@@ -1,8 +1,6 @@
-### お知らせ（2021年08月21日）
+### お知らせ（2021年08月31日）
 
-Twitchの動画内広告について：AdGuard Extraが対応したようです。いたちごっこのため通常のフィルタでの対応は困難です。
-
-Youtubeの視聴履歴について：履歴が残らないという報告があり、EasyPrivacyが原因ということまでは確定しています。フィルタの更新で多くは解決するようですが、解決しなかったという報告もあります。EasyPrivacyと一部同期しているYuki's uBlock Japanese filtersでも同様の問題が起こる可能性があります。
+Yuki's uBlock Japanese filters - Mobileにおいてモバイルウェブの対応を始めます。サポート対象はAndroid用FirefoxにインストールされたuBlock Originのみです。AdGuardやKiwiブラウザ上のuBlock Originはサポートしません、とくにAdGuardでは使わないでください。本来であれば一定の完成度に達してからアナウンスする予定でしたが、280blockrerさんのフィルターが[近々Androidで使えなくなる](https://280blocker.net/blog/20210831/3043/)ため、見切り発車的に対応を始めます。
 
 （2021年05月15日）
 
@@ -97,6 +95,13 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 - ファーストパーティーの単純なCGI/SSIアクセスカウンターで、広範に使われているもの以外
 - Google Safe Browsingでカバーされている、またはモバイル限定の悪質サイト
 - デッドドメイン
+
+## Yuki's uBlock Japanese filters - Mobile （愛称未定、募集中）
+
+Android版FirefoxでYuki's uBlock Japanese filtersをご利用になる場合はこちらも追加してください。PCでは不要です。
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-mob.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Mobile">購読する</a>
+[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-mob.txt)
 
 ## Yuki's uBlock Japanese filters - Paranoid （大雪フィルタ）
 
