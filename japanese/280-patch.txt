@@ -44,13 +44,13 @@
 /templates/_assets/push-skin/skin.html
 /track/click.php?c=*&zoneid=$document
 /v2/a/skm/*$document,popup
-/^http:\/\/(?:\d{9}|\d{6,}(-\d{4,8}){1,2})\.[-a-z]{6,}\.nl/$document
+/^http:\/\/(?:\d{9}|\d{6,}(?:-\d{4,8}){1,2})\.[-a-z]{6,}\.nl/$document
 /^http:\/\/(?:\d{9}|[-a-z]{25,})\.[a-z]{9,}\.it\//$document
 /^http:\/\/\d{9}\.[-0-9a-z]{5,26}\(?:biz|es|ru)\//$document
 /^http:\/\/[0-9a-z]{3,15}\.proxydns\.com/$document,domain=proxydns.com
 /^http:\/\/p\d{3}\.[a-z]{15,20}\.it\/\S{10,}\.html/$document
 /^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
-/^http:\/\/[a-z]{4,13}(\d{8})?\.[-0-9a-z]{6,26}\.it\/\S{7,}\.html/$document
+/^http:\/\/[a-z]{4,13}(?:\d{8})?\.[-0-9a-z]{6,26}\.it\/\S{7,}\.html/$document
 /^http:\/\/[a-z]{8,12}\.ru\/\d{6}\.html$/$document
 /^http:\/\/[a-z]{9,10}\.ddns/$document,domain=ddns.net
 /^https:\/\/happydays\d{2}\.site\/\?u=/$document
@@ -68,8 +68,8 @@
 /^https:\/\/[a-z]{4,13}\d{2,3}\.[-0-9a-z]{6,32}\.it\/\S{10,}\.html/$document
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
 /^https:\/\/[a-z]{9,12}\d{2}\.[a-z]{4,}\.cl\/\S{7,}\.html/$document
-/^https?:\/\/([a-z]{2}\d){3}[a-z]{2}\.com\//$document
-/^https?:\/\/(www\.)?[-0-9a-z]{14,}\.(?:biz|fun|live)\/[a-z]{10,11}\.php/$document
+/^https?:\/\/(?:[a-z]{2}\d){3}[a-z]{2}\.com\//$document
+/^https?:\/\/(?:www\.)?[-0-9a-z]{14,}\.(?:biz|fun|live)\/[a-z]{10,11}\.php/$document
 /^https?:\/\/[-0-9a-z]*prize[-0-9a-z]+\.li[fv]e\/\?u=[0-9a-z]+&o=[0-9a-z]+/$document
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org\/page\d{1,4}/$document,domain=duckdns.org
 /^https?:\/\/[a-z]{6,10}\.com\/4\/\d{7}$/$document,popup
