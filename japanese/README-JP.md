@@ -97,7 +97,12 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 
 ## Yuki's uBlock Japanese filters - Mobile （愛称未定、募集中）
 
-Android版FirefoxでYuki's uBlock Japanese filtersをご利用になる場合はこちらも追加してください。PCでは不要です。
+Android版FirefoxでYuki's uBlock Japanese filtersをご利用になる場合はこちらも追加してください。PCでは不要です。標準のAdGuard JapaneseからYuki's uBlock Japanese filters + Yuki's uBlock Japanese filters - Mobileに置き換えた場合（AdGuard Japaneseとの併用は無意味）
+
+1. 網羅性とブロック優先主義により、通信料をさらに抑えることができます。
+2. ほぼすべてのフィルタがuBlock Originに最適化されているため、一部のページでCPU使用率が抑えられます<sup>18</sup>。
+3. AdGuard Mobile Adsを含むuBlock Origin標準リストと併用しても無駄が生じず、未対応の不具合の修正を受けることができます。
+4. uBlock Originをモバイルで使う場合に生じる枠や空白の消し残り等が少なくなります<sup>19</sup>。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-mob.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Mobile">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-mob.txt)
@@ -176,12 +181,12 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 - 一般のチャットウィジェット
 - コロナウイルス関係で、一般的な通知ブロックで防げないもの（一時的なものなので）
 
-モバイルサイトは限定的に対応します、メインはPCです。モバイルで使用する場合、拡張機能に対応したブラウザにuBlock Originを入れてご利用ください（この場合、モバイル用のフィルタと併用してください。ただし、一定の無駄は生じます）<sup>18</sup>。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初、Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
+モバイルサイトは限定的に対応します、メインはPCです。モバイルで使用する場合、Android版FirefoxにuBlock Originを入れてご利用ください。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初、Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
 
 <details>
 <summary><strong>みぞれフィルタのサブフィルタ</strong></summary>
 
-特定の迷惑要素だけをブロックしたい場合、みぞれフィルタの代わりにサブフィルタ（の組み合わせ）をご利用いただくこともできます<sup>19</sup>。
+特定の迷惑要素だけをブロックしたい場合、みぞれフィルタの代わりにサブフィルタ（の組み合わせ）をご利用いただくこともできます<sup>20</sup>。
 
 ### Sable filters 2
 
@@ -339,8 +344,10 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 
 <sub>17: こちらも基本、他の日本用フィルタでもブロックされていません。そもそも広告でなく、画像付きのリンクに過ぎませんが、侵襲性が高いものについては（ときにAnnoyancesで）ブロックする場合もあります。</sub>
 
-<sub>18: Yuki's uBlock Japanese filtersと比べてAdGuardで機能しないルールは減っています。uBlock Originでの使用を推奨しますが、このフィルタについてはAdGuardでの使用も今のところ許容範囲です。<strong>ただしAdGuard for Androidでご利用の場合、Sabre filters2などのサブフィルタを別途購読してください</strong>。AdGuardブラウザ拡張機能ではその必要はなさそうです。AdGuardコンテンツブロッカーでの使用はおすすめしません。</sub>
+<sub>18: AdGuard Japaneseにおいても、当管理人がコミットする場合はできるだけuBlock Originでも最適となるようフィルタを調整していますが、AdGuardの仕様の違いやフィルターポリシーの違いなどにより、そうできないケースもあります。</sub>
 
-<sub>19: ポップアップ、サブスクリプション、プロモーションについては個別のサブリスト化は困難です。AdGuard Annoyancesでもそうですが、ポップアップという括りは「表示形式がポップアップであるあらゆる迷惑要素」ぐらいの意味しかなく、サブスクリプションやプロモーションにも分類可能なものが含まれているからです。プッシュ通知はサブリスト化可能ですが、Fanboy's Annoyanceのサブリストである[Fanboy's Notifications Blocking List](https://easylist-downloads.adblockplus.org/fanboy-notifications.txt)と大部分重複しており、そちらを購読していただければよいと思います。ターゲットが明確でルールも少ないため、Fanboy系にしては不具合は少ないです。Othersに含めているカウントダウン系もサブリスト化可能ですが、uBlock filtersで標準対応しているため需要が低いと思います。こちらで標準対応しないのは、広告でないことに加えてまれに不具合を起こすためです。</sub>
+<sub>19: モバイルでは「汎用的な要素隠蔽フィルターを無視する」がデフォルトで有効になります。これによりパフォーマンスが向上しますが、消し残り等も出てくるためuBlock Originチーム内でディスカッションした結果、いくつかの汎用性の高い非表示フィルタをspecific-genericとして内製フィルタに追加しました。これらのフィルタの選定はAdGuard社のフィルタ統計を参考にしながら当管理人が行いましたが、国際的なサイトや英語サイトが中心となっています。一方、国際的にはマイナーでも日本のサイトでよく問題になるものもあり、これまで内製フィルタやAdGuard Japaneseで対応してきましたが、AdGuardのフィルタでuBlock Origin固有の問題をどこまで対応すべきなのか、内製フィルタで日本固有の問題をどこまで対応すべきなのか、という問題がありました。Yuki's uBlock Japanese filtersでは、日本のサイトでよく問題になるものをspecific-genericに追加しています。uBlock Origin開発者によれば、何千もの汎用非表示を埋め込むのが問題なのであって、数十程度ならパフォーマンス上の懸念はありません。</sub>
+
+<sub>20: ポップアップ、サブスクリプション、プロモーションについては個別のサブリスト化は困難です。AdGuard Annoyancesでもそうですが、ポップアップという括りは「表示形式がポップアップであるあらゆる迷惑要素」ぐらいの意味しかなく、サブスクリプションやプロモーションにも分類可能なものが含まれているからです。プッシュ通知はサブリスト化可能ですが、Fanboy's Annoyanceのサブリストである[Fanboy's Notifications Blocking List](https://easylist-downloads.adblockplus.org/fanboy-notifications.txt)と大部分重複しており、そちらを購読していただければよいと思います。ターゲットが明確でルールも少ないため、Fanboy系にしては不具合は少ないです。Othersに含めているカウントダウン系もサブリスト化可能ですが、uBlock filtersで標準対応しているため需要が低いと思います。こちらで標準対応しないのは、広告でないことに加えてまれに不具合を起こすためです。</sub>
 
 </details>
