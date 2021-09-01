@@ -99,7 +99,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 
 Android版FirefoxでYuki's uBlock Japanese filtersをご利用になる場合はこちらも追加してください。PCでは不要です。標準のAdGuard JapaneseからYuki's uBlock Japanese filters + Yuki's uBlock Japanese filters - Mobileに置き換えた場合（AdGuard Japaneseとの併用は無意味）
 
-1. 網羅性とブロック優先主義により、通信料をさらに抑えることができます。
+1. 網羅性とブロック優先主義により、通信量をさらに抑えることができます。
 2. ほぼすべてのフィルタがuBlock Originに最適化されているため、一部のページでCPU使用率が抑えられます<sup>18</sup>。
 3. AdGuard Mobile Adsを含むuBlock Origin標準リストと併用しても無駄が生じず、未対応の不具合の修正を受けることができます。
 4. uBlock Originをモバイルで使う場合に生じる枠や空白の消し残り等が少なくなります<sup>19</sup>。
