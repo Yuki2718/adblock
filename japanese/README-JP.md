@@ -1,6 +1,6 @@
 ### お知らせ（2021年09月02日）
 
-Yuki's uBlock Japanese filters - Mobileにおいてモバイルウェブの対応を始めます。Yuki's uBlock Japanese filtersとの併用が前提で、サポート対象はAndroid用FirefoxにインストールされたuBlock Originのみです。AdGuardやKiwiブラウザ上のuBlock Originはサポートしません、とくにAdGuardでは使わないでください、Youtubeをはじめとして不具合が出ますし、正しく機能しないルールが多数あります（注1）。本来であれば一定の完成度に達してからアナウンスする予定でしたが、280blockrerさんのフィルターが[近々Androidで使えなくなる](https://280blocker.net/blog/20210831/3043/)ため、見切り発車的に対応を始めます。280blocker adblock filter 悪質サイト対策強化パッチは、280blocker adblock filterの公開停止に合わせて削除する予定です。
+Yuki's uBlock Japanese filters - Mobileにおいてモバイルウェブの対応を始めます。**Yuki's uBlock Japanese filtersとの併用が前提**で、サポート対象は**Android用FirefoxにインストールされたuBlock Originのみ**です。AdGuardやKiwiブラウザ上のuBlock Originはサポートしません、とくにAdGuardでは使わないでください、Youtubeをはじめとして不具合が出ますし、正しく機能しないルールが多数あります（注1）。本来であれば一定の完成度に達してからアナウンスする予定でしたが、280blockrerさんのフィルターが[近々Androidで使えなくなる](https://280blocker.net/blog/20210831/3043/)ため、見切り発車的に対応を始めます。280blocker adblock filter 悪質サイト対策強化パッチは、280blocker adblock filterの公開停止に合わせて削除する予定です。
 
 <sub>注1：[FAQ](https://github.com/Yuki2718/adblock/wiki#q17-ublock-origin%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BCpc%E3%81%A7%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E6%A7%8B%E6%88%90%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)でも述べましたが、文法互換性は両者で正しく機能することを保証しません。</sub>
 
@@ -19,6 +19,7 @@ Youtubeの動画内広告について：各所で、また動画内広告がす�
 日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、**uBlock Origin専用**フィルタです。AdBlock, Adblock Plus, AdGuard, uBlock-for-firefox-legacy, Vivaldiなどでは**使わないで**ください<sup>1</sup>！
 
 - 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
+- Android版Firefoxでご利用の場合、Yuki's uBlock Japanese filters - Mobileを併用してください。
 
 Yuki's uBlock Japanese filtersファミリーが適しているのは以下のような方です。
 
@@ -99,7 +100,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 
 ## Yuki's uBlock Japanese filters - Mobile （愛称未定、募集中）
 
-Android版FirefoxでYuki's uBlock Japanese filtersをご利用になる場合はこちらも追加してください。PCでは不要です。標準のAdGuard JapaneseからYuki's uBlock Japanese filters + Yuki's uBlock Japanese filters - Mobileに置き換えた場合（AdGuard Japaneseとの併用は無意味）
+Android版Firefoxでご利用になる場合、Yuki's uBlock Japanese filtersに加えてこちらも**追加購読**してください。PCでは不要です。標準のAdGuard JapaneseからYuki's uBlock Japanese filters + Yuki's uBlock Japanese filters - Mobileに置き換えた場合（AdGuard Japaneseとの併用は無意味）
 
 1. 網羅性とブロック優先主義により、通信量をさらに抑えることができます。
 2. ほぼすべてのフィルタがuBlock Originに最適化されているため、一部のページでCPU使用率が抑えられます<sup>18</sup>。
