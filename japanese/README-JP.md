@@ -1,6 +1,8 @@
-### お知らせ（2021年09月01日）
+### お知らせ（2021年09月03日）
 
-Yuki's uBlock Japanese filters - Mobileにおいてモバイルウェブの対応を始めます。サポート対象はAndroid用FirefoxにインストールされたuBlock Originのみです。AdGuardやKiwiブラウザ上のuBlock Originはサポートしません、とくにAdGuardでは使わないでください。本来であれば一定の完成度に達してからアナウンスする予定でしたが、280blockrerさんのフィルターが[近々Androidで使えなくなる](https://280blocker.net/blog/20210831/3043/)ため、見切り発車的に対応を始めます。280blocker adblock filter 悪質サイト対策強化パッチは、280blocker adblock filterの公開停止に合わせて削除する予定です。
+Yuki's uBlock Japanese filters - Mobileにおいてモバイルウェブの対応を始めます。Yuki's uBlock Japanese filtersとの併用が前提で、サポート対象はAndroid用FirefoxにインストールされたuBlock Originのみです。AdGuardやKiwiブラウザ上のuBlock Originはサポートしません、とくにAdGuardでは使わないでください、Youtubeをはじめとして不具合が出ますし、正しく機能しないルールが多数あります（注1）。本来であれば一定の完成度に達してからアナウンスする予定でしたが、280blockrerさんのフィルターが[近々Androidで使えなくなる](https://280blocker.net/blog/20210831/3043/)ため、見切り発車的に対応を始めます。280blocker adblock filter 悪質サイト対策強化パッチは、280blocker adblock filterの公開停止に合わせて削除する予定です。
+
+<sub>注1：[FAQ](https://github.com/Yuki2718/adblock/wiki#q17-ublock-origin%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BCpc%E3%81%A7%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E6%A7%8B%E6%88%90%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)でも述べましたが、文法互換性は両者で正しく機能することを保証しません。</sub>
 
 （2021年05月15日）
 
@@ -310,7 +312,7 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 <details>
 <summary>註</summary>
 
-<sub>1: AdGuardで使用する場合、最大の問題は一部の`:upward()`とスクリプトレットの非互換性、`domain=TLD`、script以外のHTMLフィルタでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。PC/MacでAdGuardをご利用の場合、AdGuard標準のフィルタリストに@hirorpt氏による[こなゆきフィルタ](https://github.com/hirorpt/filters#%E3%81%93%E3%81%AA%E3%82%86%E3%81%8D%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF-%E6%A8%99%E6%BA%96%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF1%E3%81%AE%E4%B8%8D%E5%85%B7%E5%90%88%E4%BF%AE%E6%AD%A3)を追加していただくのが最善と思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
+<sub>1: AdGuardで使用する場合、問題は一部の`:upward()`とスクリプトレットの非互換性、`domain=TLD`、script以外のHTMLフィルタ、汎用非表示例外のバグでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。PC/MacでAdGuardをご利用の場合、AdGuard標準のフィルタリストをご利用いただくのが最善と思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
 
 <sub>2: いくつかの日本用フィルタと同様、日本語話者がよく利用すると思われる海外サイトにも対応しています（[FAQ A23](https://github.com/Yuki2718/adblock/wiki#q23-%E9%9B%AA%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%81%AE%E4%B8%AD%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%A8%E6%B5%B7%E5%A4%96%E3%82%B5%E3%82%A4%E3%83%88%E7%94%A8%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%8C%E7%B5%90%E6%A7%8B%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8C%E5%AF%BE%E8%B1%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)）。</sub>
 

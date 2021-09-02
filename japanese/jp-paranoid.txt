@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210901
+! Version: 20210902
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -20,10 +20,6 @@
 ||[::1]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 
 -300x250-$~xhr
-.com/custom|$xhr,3p
-.com/event|$xhr,3p
-.net/custom|$xhr,3p
-.net/event|$xhr,3p
 .org/ad/$1p,domain=~playguide.org|~sonoyama.org|~ufcw870.org
 /(https?:\/\/)\w{30,}.me\/\w{30,}\./$script,3p
 /^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,3p,match-case
@@ -272,6 +268,7 @@ _omniture.$script,domain=mathworks.com
 ||ioam.de^
 ||ip-api.com^$3p
 ||ipapi.co^$3p
+||ipdata.co^$3p
 ||ipify.org^$3p
 ||linkedin.com/li/track^
 ||livechatinc.com/tracking.js
