@@ -1,4 +1,4 @@
-### お知らせ（2021年09月03日）
+### お知らせ（2021年09月02日）
 
 Yuki's uBlock Japanese filters - Mobileにおいてモバイルウェブの対応を始めます。Yuki's uBlock Japanese filtersとの併用が前提で、サポート対象はAndroid用FirefoxにインストールされたuBlock Originのみです。AdGuardやKiwiブラウザ上のuBlock Originはサポートしません、とくにAdGuardでは使わないでください、Youtubeをはじめとして不具合が出ますし、正しく機能しないルールが多数あります（注1）。本来であれば一定の完成度に達してからアナウンスする予定でしたが、280blockrerさんのフィルターが[近々Androidで使えなくなる](https://280blocker.net/blog/20210831/3043/)ため、見切り発車的に対応を始めます。280blocker adblock filter 悪質サイト対策強化パッチは、280blocker adblock filterの公開停止に合わせて削除する予定です。
 
