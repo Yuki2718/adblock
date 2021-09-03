@@ -1,6 +1,6 @@
 ### お知らせ（2021年09月02日）
 
-Yuki's uBlock Japanese filters - Mobileにおいてモバイルウェブの対応を始めます。**Yuki's uBlock Japanese filtersとの併用が前提**で、サポート対象は**Android用FirefoxにインストールされたuBlock Originのみ**です。AdGuardやKiwiブラウザ上のuBlock Originはサポートしません、とくにAdGuardでは使わないでください、Youtubeをはじめとして不具合が出ますし、正しく機能しないルールが多数あります（注1）。本来であれば一定の完成度に達してからアナウンスする予定でしたが、280blockrerさんのフィルターが[近々Androidで使えなくなる](https://280blocker.net/blog/20210831/3043/)ため、見切り発車的に対応を始めます。280blocker adblock filter 悪質サイト対策強化パッチは、280blocker adblock filterの公開停止に合わせて削除する予定です。
+Yuki's uBlock Japanese filters - Mobileにおいてモバイルウェブの対応を始めます。**Yuki's uBlock Japanese filtersとの併用が前提**で、サポート対象は**Android用FirefoxにインストールされたuBlock Originのみ**です。AdGuardやKiwiブラウザ上のuBlock Originはサポートしません、とくにAdGuardでは使わないでください――Youtubeをはじめとして不具合が出ますし、正しく機能しないルールが多数あります（注1）。本来であれば一定の完成度に達してからアナウンスする予定でしたが、280blockrerさんのフィルターが[近々Androidで使えなくなる](https://280blocker.net/blog/20210831/3043/)ため、見切り発車的に対応を始めます。280blocker adblock filter 悪質サイト対策強化パッチは、280blocker adblock filterの公開停止に合わせて削除する予定です。
 
 <sub>注1：[FAQ](https://github.com/Yuki2718/adblock/wiki#q17-ublock-origin%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BCpc%E3%81%A7%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E6%A7%8B%E6%88%90%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)でも述べましたが、文法互換性は両者で正しく機能することを保証しません。</sub>
 
@@ -98,11 +98,11 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 - Google Safe Browsingでカバーされている、またはモバイル限定の悪質サイト
 - デッドドメイン
 
-## Yuki's uBlock Japanese filters - Mobile （愛称未定、募集中）
+## Yuki's uBlock Japanese filters - Mobile （愛称未定、掲示板で募集中）
 
 Android版Firefoxでご利用になる場合、Yuki's uBlock Japanese filtersに加えてこちらも**追加購読**してください。PCでは不要です。標準のAdGuard JapaneseからYuki's uBlock Japanese filters + Yuki's uBlock Japanese filters - Mobileに置き換えた場合（AdGuard Japaneseとの併用は無意味）
 
-1. 網羅性とブロック優先主義により、通信量をさらに抑えることができます。
+1. 高い網羅性とブロック優先主義により、通信量をさらに抑えることができます。
 2. ほぼすべてのフィルタがuBlock Originに最適化されているため、一部のページでCPU使用率が抑えられます<sup>18</sup>。
 3. uBlock Origin標準リストによる不具合の修正を受けることができます。AdGuard Mobile Adsともルールを統一しており、無駄はほとんど生じません。
 4. uBlock Originをモバイルで使う場合に生じる枠や空白の消し残り等が少なくなります<sup>19</sup>。
@@ -347,9 +347,9 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 
 <sub>17: こちらも基本、他の日本用フィルタでもブロックされていません。そもそも広告でなく、画像付きのリンクに過ぎませんが、侵襲性が高いものについては（ときにAnnoyancesで）ブロックする場合もあります。</sub>
 
-<sub>18: AdGuard Japaneseにおいても、当管理人がコミットする場合はできるだけuBlock Originでも最適となるようフィルタを調整していますが、AdGuardの仕様の違いやフィルターポリシーの違いなどにより、そうできないケースもあります。</sub>
+<sub>18: AdGuard Japaneseにおいても、当管理人がコミットする場合はできるだけuBlock Originでも最適となるようフィルタを書いていますが、AdGuardの仕様の違いやフィルターポリシーの違いなどにより、そうできないケースもあります。</sub>
 
-<sub>19: モバイルでは「汎用的な要素隠蔽フィルターを無視する」がデフォルトで有効になります。これによりパフォーマンスが向上しますが、消し残り等も出てくるためuBlock Originチーム内でディスカッションした結果、いくつかの汎用性の高い非表示フィルタをspecific-genericとして内製フィルタに追加しました。これらのフィルタの選定はAdGuard社のフィルタ統計を参考にしながら当管理人が行いましたが、国際的なサイトや英語サイトが中心となっています。一方、国際的にはマイナーでも日本のサイトでよく問題になるものもあり、これまで内製フィルタやAdGuard Japaneseで対応してきましたが、AdGuardのフィルタでuBlock Origin固有の問題をどこまで対応すべきなのか、内製フィルタで日本固有の問題をどこまで対応すべきなのか、という問題がありました。Yuki's uBlock Japanese filters - Mobileでは、日本のサイトでよく問題になるものをspecific-genericに追加しています。uBlock Origin開発者によれば、何千もの汎用非表示を埋め込むのが問題なのであって、数十程度ならパフォーマンス上の懸念はありません。</sub>
+<sub>19: モバイルでは「汎用的な要素隠蔽フィルターを無視する」がデフォルトで有効になります。これによりパフォーマンスが向上しますが、消し残り等も出てくるためuBlock Originチーム内でディスカッションした結果、いくつかの汎用性の高い非表示フィルタをspecific-genericとして内製フィルタに追加しました。これらのフィルタの選定はAdGuard社のフィルタ統計を参考にしながら当管理人が行いましたが、国際的なサイトや英語サイトが中心となっています。一方、国際的にはマイナーでも日本のサイトでよく問題になるものもあり、これまで内製フィルタやAdGuard Japaneseで対応してきましたが、AdGuardのフィルタでuBlock Origin固有の問題をどこまで対応すべきなのか、内製フィルタで日本固有の問題をどこまで対応すべきなのか、という問題がありました。Yuki's uBlock Japanese filters - Mobileでは、日本のサイトでよく問題になるものをspecific-genericに追加しています。uBlock Origin開発者によれば、何千もの汎用非表示を挿入するのが問題なのであって、数十程度ならパフォーマンス上の懸念はありません。</sub>
 
 <sub>20: ポップアップ、サブスクリプション、プロモーションについては個別のサブリスト化は困難です。AdGuard Annoyancesでもそうですが、ポップアップという括りは「表示形式がポップアップであるあらゆる迷惑要素」ぐらいの意味しかなく、サブスクリプションやプロモーションにも分類可能なものが含まれているからです。プッシュ通知はサブリスト化可能ですが、Fanboy's Annoyanceのサブリストである[Fanboy's Notifications Blocking List](https://easylist-downloads.adblockplus.org/fanboy-notifications.txt)と大部分重複しており、そちらを購読していただければよいと思います。ターゲットが明確でルールも少ないため、Fanboy系にしては不具合は少ないです。Othersに含めているカウントダウン系もサブリスト化可能ですが、uBlock filtersで標準対応しているため需要が低いと思います。こちらで標準対応しないのは、広告でないことに加えてまれに不具合を起こすためです。</sub>
 
