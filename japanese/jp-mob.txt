@@ -2,9 +2,15 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210903
+! Version: 20210904
 
-!#if env_mobile
+! ---------- Ads general ----------
+/lite2/ads.js
+/lite2/ads/infeed.js
+
+! ---------- Ad servers ----------
+||adntokyo.gunosy.com^
+
 ! ---------- Ads specific ----------
 ||1000mg.jp/ad_com1.php
 ||3bitter.com/apbk-hbonetag.js
@@ -63,6 +69,7 @@
 2chan.net##iframe[src$="/ampsp.htm"]
 2chan.net##iframe[src*=".net/bin/ad"] + hr
 2chan.net##iframe[src*="2chan.net/bin/"]
+2chblog.jp,blog.jp,blog.livedoor.jp,bloggeek.jp,blogism.jp,blogo.jp,blogstation.jp,blogto.jp,cafeblog.jp,corpblog.jp,diary.to,doorblog.jp,dreamlog.jp,gger.jp,golog.jp,ldblog.jp,liblo.jp,livedoor.biz,livedoor.blog,myjournal.jp,mynikki.jp,officeblog.jp,officialblog.jp,publog.jp,storeblog.jp,teamblog.jp,techblog.jp,weblog.to,xxxblog.jp,youblog.jp##.plugin-ad
 4900.co.jp##.bottom-tel
 acrylicrab.com##.turtlink-wrap
 altema.jp##.head_koukoku_wrapper
@@ -190,6 +197,8 @@ mainichi.jp##.articledetail-body-pr
 mainichi.jp##.l-inner-ad
 mainichi.jp##div[id^="ad-sp-article-infeed_"]
 mainichi.jp##div[id^="ad-sp-channel-infeed_"]
+majikichi.com###article_bottom_v2 + aside#lite_link
+majikichi.com##.content > aside#lite_link
 matomedane.jp###AdvHeader
 matomedane.jp###AdvHeader2
 matomedane.jp##.fam_hybrid_adv
@@ -338,4 +347,3 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 ||systemupdatix.club^$all
 ||trtbs.com^$doc
 ||vcdew.com^$doc
-!#endif
