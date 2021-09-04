@@ -98,7 +98,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 - Google Safe Browsingでカバーされている、またはモバイル限定の悪質サイト
 - デッドドメイン
 
-## Yuki's uBlock Japanese filters - Mobile （愛称未定、掲示板で募集中）
+## Yuki's uBlock Japanese filters - Mobile （霜フィルタ）
 
 Android版Firefoxでご利用になる場合、Yuki's uBlock Japanese filtersに加えてこちらも**追加購読**してください。PCでは不要です。標準のAdGuard JapaneseからYuki's uBlock Japanese filters + Yuki's uBlock Japanese filters - Mobileに置き換えた場合（AdGuard Japaneseとの併用は無意味）
 
