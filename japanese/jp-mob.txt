@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210905
+! Version: 20210906
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -24,6 +24,7 @@
 ||cpcdn.com/assets/device/ad/$domain=cookpad.com
 ||cxpublic.com^$domain=googirl.jp
 ||dailyportalz.jp/api/dpz/adPosts|
+||eigo.plus/wp-content/uploads/2020/09/680x143-2.png
 ||gamerch.com/s3-assets/js/system/gcad/
 ||itest.5ch.net/assets/img/ronin_premium_640x100.
 ||jmty.jp/s/geniee/rectangle_$frame,domain=jmty.jp
@@ -54,11 +55,10 @@
 ||adn-srv.reckoner-api.com/v1/ad/
 ||hinata.me^*/pageview|
 
-! ---------- Cosmetic specific ----------
+! ---------- Cosmetic general ----------
 *##AMP-AD
 *###WIX_ADS
 *##.ad-area
-*##.ad-space
 *##.adPost
 *##.adWidget
 *##.interstitial-ad
@@ -66,6 +66,8 @@
 *##.thk_ps_widget
 *##div[class][data-index][style^="float: none;"]
 *##[class*=post-] [class*=content] div[id*="-"][class*="%"]
+
+! ---------- Cosmetic specific ----------
 2chan.net##.ui-li > iframe[src^="//dec.2chan.net/bin/"]:upward(1)
 2chan.net##iframe[src$="/ampsp.htm"]
 2chan.net##iframe[src*=".net/bin/ad"] + hr
@@ -134,8 +136,10 @@ diamond.jp##.infeed
 dic.pixiv.net###ad-d-sp-footer
 dic.pixiv.net###ad-d-sp-rectangle
 dic.pixiv.net###ad-d-sp-toparticle
+dic.pixiv.net###d-sp-itemarticle0
 dic.nicovideo.jp##.st-Ad:not(#sdad)
 dqname.jp##.ui-link[href*="//happymail."]
+eigo.plus###widget-fixed-footer
 ejje.weblio.jp##.adBannerHdWrp
 forbesjapan.com##.recommended-box
 fukutubu.jp##.td-header-sp-recs
@@ -146,6 +150,8 @@ gamer.ne.jp##.adBottomRectangle_sp
 gamewith.jp###js-ad-jack
 gendai.ismedia.jp##div[style="min-height:250px;"]
 ghacks.net##.box-banner
+gigazine.net###LB[style="position:sticky; top:0;"]
+gigazine.net###ad
 girlschannel.net##.topic-items > div[style="height:93px;"]
 googirl.jp##.newentry_in > li.“cf”
 google.*##a[href*="/aclk?"][data-al]:upward(2)
