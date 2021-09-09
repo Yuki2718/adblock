@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20210907
+! Version: 20210910
 
 .com/1?z=$script,third-party
 .com/custom|$xmlhttprequest,third-party
@@ -122,10 +122,12 @@
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 100%;"][style*="height: 100%;"]
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 99%;"][style*="height: 9"][style*="z-index:"]
 ##div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]
+##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height: 194px !important; cursor: pointer !important;"]:not([class])
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]:not([class])
+##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style^="max-width: 390px; border: medium none; bottom: 0px !important; right: 0px !important; left: 50% !important; transform: translateX(-50%); z-index: 2147483647; position: fixed;"]:not([src])
 ##iframe[style$="z-index: 2147483647; min-width: 240px !important; display: block !important; max-width: 418px !important;"]:not([src])
+##iframe[style*="opacity: 1 !important; max-width: 420px !important; border: medium none !important; position: fixed !important; display: block !important; z-index: 2147483647 !important;"]:not([src])
 ##iframe[style="width: 100% !important; height: 100% !important; margin: 0px; padding: 0px; border: medium none; outline: currentcolor none medium; box-sizing: border-box; position: fixed; inset: 0px; overflow: hidden; z-index: 2147483647;"]:not([src])
-##iframe[style^="width: 100% !important; height: 327.5px !important; opacity: 1 !important; max-width: 420px !important; border: medium none !important; position: fixed !important; display: block !important; z-index: 2147483647 !important"]
 
 ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#$#.div-gpt-ad { width:1px!important;height:1px!important;min-height:1px!important; }
 ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama,~ff14angler.com#$#ins.adsbygoogle { width:1px!important;height:1px!important;min-height:1px!important; }
