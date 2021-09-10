@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210910
+! Version: 20210911
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -53,6 +53,9 @@
 ||nan-net.com/show/bbs/s/inc/$frame
 ||pics.dmm.co.jp^$domain=niji-gazo.com
 ||smaero.jp/advimg/
+
+! ---------- Analytics servers ----------
+||goo-access-analytics.appspot.com^
 
 ! ---------- Analytics specific ----------
 ||adn-srv.reckoner-api.com/v1/ad/
@@ -248,6 +251,7 @@ nordot.app##.page__ad:not(.page__ad--discoverMore)
 okinawatimes.co.jp##li > #sp_article_infeed_1st:upward(1)
 onlinegamer.jp###adSpRecommend
 outlook.live.com###OwaContainer
+poginfo.ddo.jp##.mx-auto[style$="text-align: center;"]
 post.tv-asahi.co.jp##.sp-ad2
 precurematome.com###mobile_text-61
 precurematome.com###mobile_text-79
@@ -266,6 +270,7 @@ s.ekiten.jp##.solid_ad_container
 s.famitsu.com##.banner-window-jack-wrapper
 s.famitsu.com##.l-banner
 s.famitsu.com##.l-contents-block--tie-up-top + div.l-contents-block
+s.kakaku.com###frameFeedRandomAd
 s.kakaku.com###headerAd
 s.kakaku.com##.misetoku
 s.kakaku.com##.subCtsArea
@@ -379,6 +384,7 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 @@||googletagmanager.com/gtm.js$script,domain=book.impress.co.jp|sankei.com
 @@||lupicia.com/sp/img/ad/$image,1p
 @@||suumo.jp/sp/js/beacon.js$script,1p
+@@||taboola.com/libtrc/$script,domain=news.goo.ne.jp
 @@||worldvision.jp/img/topSP/topFootBana_ad.gif|
 @@||www.googletagmanager.com^$domain=onlineshop.smt.docomo.ne.jp
 

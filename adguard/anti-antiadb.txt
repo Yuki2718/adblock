@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20210910
+! Version: 20210911
 
 .com/1?z=$script,third-party
 .com/custom|$xmlhttprequest,third-party
@@ -26,7 +26,7 @@
 /\/v\d\/a\/[a-z]{2,3}\/js\/\d{5,6}/$script,third-party
 /\/wp-content\/uploads\/[a-z]{6,9}\.js(?:\?ver=1\.1\.5|,qver=1\.1\.5\.pagespeed\..+\.js)$/$script,~third-party
 /\/wp-content\/uploads\/[a-zA-Z]{12}\/[a-zA-Z]{12}\.js(?:\?ver=2\.2\.3|,qver=2\.2\.3\.pagespeed\..+\.js)$/$script,~third-party
-/^https:\/\/a\.[a-z]{9,16}\.com\/(?=[a-zA-Z]{0,6}\d)(?=[0-9a-z]{0,5}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
+/^https:\/\/a\.[a-z]{9,16}\.com\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,5}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
 /^https:\/\/[-a-z]{9,15}\.com\/400\/\d{7}$/$script,third-party
 /^https:\/\/[a-z]{7,25}\.com\/v2(?=[-_0-9a-z]{0,62}[A-Z])(?=[-_a-zA-Z]{0,61}[0-9])(?=[0-9a-zA-Z]{0,60}[-_])[-_0-9a-zA-Z]{63}$/$script,third-party,match-case
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
@@ -122,6 +122,7 @@
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 100%;"][style*="height: 100%;"]
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 99%;"][style*="height: 9"][style*="z-index:"]
 ##div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]
+##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 ##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height: 194px !important; cursor: pointer !important;"]:not([class])
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]:not([class])
 ##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style^="max-width: 390px; border: medium none; bottom: 0px !important; right: 0px !important; left: 50% !important; transform: translateX(-50%); z-index: 2147483647; position: fixed;"]:not([src])
