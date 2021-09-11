@@ -116,7 +116,7 @@ Removes annoyances which only some user, not everyone, want to remove mainly on 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt)
 
-### Sable filters 2
+### Yuki's Cookie Dialogue filters (formerly Sable filters 2)
 
 Inspired by [Sable filters](http://meetingwords.com/RK2njtyC7k), this removes cookie consents. Main targets are Japanese sites and other high-traffic sites many Japanese people may visit. False-positive prone rules won't be added. Included in Yuki's uBlock Japanese filters - Annoyances
 

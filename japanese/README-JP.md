@@ -191,7 +191,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 特定の迷惑要素だけをブロックしたい場合、みぞれフィルタの代わりにサブフィルタ（の組み合わせ）をご利用いただくこともできます<sup>20</sup>。
 
-### Sable filters 2
+### Yuki's Cookie Dialogue filters （旧：Sabre filters 2）
 
 クッキーの同意バナーを除去します。<strong>Yuki's uBlock Japanese filters - Annoyancesに含まれており、これを購読しているなら必要ありません（AdGuard for Androidを除く）</strong>。一方でYuki's uBlock Japanese filters - Annoyancesと異なり、AdGuardとも完全な互換性があります。
 
