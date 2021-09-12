@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210912
+! Version: 20210913
 
 ! Temporal
 ||2conv.com/_next/static/images/mp3studio-banner-
@@ -940,6 +940,7 @@ secrettalk.me##.week_hot
 /nativead/*
 /nativeads-
 /nb/a_frog.js
+/nb/f_ls.js
 /nb/fe_ld.js
 /nb/fl.js
 /nb/frot_lod.js
@@ -955,6 +956,7 @@ secrettalk.me##.week_hot
 /ntfc.php?$script
 /ntv-ad.js
 /?oo=1^$xhr,3p
+/ok/ok.js
 /oncc-ad.
 /onead_$script
 /openx_$script
@@ -2131,6 +2133,7 @@ vkcdnservice.appspot.com^$3p
 ||blogparts.dgpot.com^$3p
 ||blogparts.gcolle.net^$3p
 ||blogroll.click^
+||bluffyporn.com^$3p
 ||bmbsgo.com^$3p
 ||bngpst.com^$3p
 ||bngpt.com^
@@ -5414,6 +5417,7 @@ vkcdnservice.appspot.com^$3p
 ||underneathfirsthand.com^
 ||undertone.com^$3p
 ||unmortalloose.com^
+||untimburra.com^
 ||unwieldyhealth.com^
 ||upgulpinon.com^
 ||uporods.com^
@@ -11109,6 +11113,7 @@ cgi-bin/counter
 ||log.ma-jin.jp^
 ||log.olark.com^
 ||log.outbrainimg.com^
+||log.perfecttitspics.com^
 ||log.pinterest.com^
 ||log.popin.cc^
 ||log.quora.com^
@@ -11901,7 +11906,7 @@ cgi-bin/counter
 ||vm5apis.com^$3p
 ||vortex.hulu.com^
 ||w3counter.com^$3p
-||w55c.net^
+||w55c.net^$3p
 ||wal.wolfram.com^
 ||washpost.nile.works^
 ||waudit.cz^$3p
@@ -16177,6 +16182,7 @@ glosbe.com##.right-sidebar-ads-container
 glossary.work###the-content > hr:last-of-type
 gnavi.co.jp##.hatena-module-html div[id^=div-gpt-ad]:upward(.hatena-module-html)
 gnavi.co.jp,shibayu36.org###bottom-editarea
+go.adslinkfly.online,linkfly.io,shorttey.*##.short
 go.com##.ad_300
 go.com##.banneradcontainer
 go.extra-drive.com##.box-main > .btn
@@ -17307,7 +17313,6 @@ linkdrop.net##.short-link
 linkedin.com##.feed-shared-update-v2:has(.feed-shared-actor__sub-description:has-text(/Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|الترويج/))
 linkedin.com##.scaffold-layout__ad
 linkfang.org###LinkFang_Horizontal
-linkfly.io,shorttey.*##.short
 linksly.co###imgAddDirectLink
 linux.ikoinoba.net###adsense
 liselog.com,salary-saver.com##.ani > .widget_tsnc_ads_custom_html:upward(1)
@@ -19898,9 +19903,9 @@ www.excite.co.jp##.topics
 www.gendama.jp###left_related_contents > div[style]:last-child
 www.gendama.jp###point_ranking > div > div[style$="width:728px;"]:upward(1)
 www.gendama.jp##[id^=right_] > div:has(script[src^="//wtag."])
-www.google.*##.sh-sr__shop-result-group .sh-sp__btn:matches-css(font-size: 13px):upward(.sh-sr__shop-result-group):has(a[href^="/aclk"][href$="adurl="])
+www.google.*##*:not([class^="sh-sr__shop-result-group"]) [href^="/aclk"][href$="adurl="]:upward(3)
+www.google.*##div[data-section-id] > a[href^="/aclk"][href*="placesheetAdFix="][href*="adurl="]:upward(1)
 www.google.*##[href^="https://www.googleadservices.com/pagead/aclk?"][href$="adurl="]:upward(3)
-www.google.*##a[href^="/aclk"][href*="placesheetAdFix="][href*="adurl="]:upward(1)
 www.mashingup.jp###recommendContentId
 www.mashingup.jp##.po-Post_Body > p:last-of-type:has-text(Sponsored)
 www.mashingup.jp##.po-Post_Body > p:last-of-type:has-text(Sponsored) ~ .po-Post_BodyLink
@@ -20041,12 +20046,13 @@ yomidr.yomiuri.co.jp##.thumbnail-ad-header
 yomidr.yomiuri.co.jp##.thumbnail-ad
 yomiuri.co.jp###ad_dfp_premiumrec
 yomiuri.co.jp###js-footer-global-guide
-yomiuri.co.jp##.home-2020-ad-text
-yomiuri.co.jp##.home-2020-ad-wide
-yomiuri.co.jp##.home-2020-prime-headline__ad
+yomiuri.co.jp##.home-2020-ntvnews-ad
+yomiuri.co.jp##.home-2020-prime-recommend
 yomiuri.co.jp##.js-footer-2020-subscribe
 yomiuri.co.jp##.p-ad-dfp-rec1
+yomiuri.co.jp##div[class^=home-2020-ad-]
 yomiuri.co.jp##div[class^=p-ad-dfp]
+yomiuri.co.jp##[class^=home-2020-][class$=__ad]
 yomiuri.co.jp##[id^=ad_dfp_news-txt]
 yomosoku.com###left-box > div[style$=";height:250px;"]
 yomosoku.com##.dai-RSS
@@ -23191,7 +23197,7 @@ adnit-tri.tk,adnit.xyz,promo-visits.site,sanos.xyz,tny.so##+js(acis, atob, 'shif
 adsh.cc##+js(acis, String, decodeURIComponent)
 adshrink.it,itsguider.com,linuxsecurity.com##+js(aeld, load, nextFunction)
 adslink.pw##+js(aopw, ai_adb)
-adslinkfly.online,de-baystars.doorblog.jp,dokuo666.blog98.fc2.com,drop.download,eikaiwamastery.blogspot.com,gtoys.blog.fc2.com,health-karada.com,maxurlz.com,miyabi.netlify.app,nandetribune.com,nandokun.com,omutulove.blog.fc2.com,satoh-blog.blogspot.com,sorasi.net,turkdebrid.site,wakudan.seesaa.net,webcreator-journal.com##+js(acis, document.addEventListener, google_ad_client)
+adslinkfly.online,blog.40ch.net,fc-lc.com,fc.lc,fcc.lc,katflys.com##+js(acis, document.addEventListener, nextFunction)
 adsrt.*##+js(aopr, rmVideoPlay)
 adultasianporn.com##+js(cookie-remover, /^/)
 adultasianporn.com,gaytail.com,girlsofdesire.org,jav789.com,javbuz.com,javout.co,lesbian8.com,letfap.com,onlyhgames.com,pictoa.com,tnaflix.com,vikiporn.com##+js(aeld, getexoloader)
@@ -23267,7 +23273,6 @@ bing.com##+js(set, SVGForeignObjectElement, undefined)
 bitfly.io,clk.ink,hitomi.la,rodjulian.com,up-load.io##+js(noeval)
 bitporno.com##+js(nowoif, /^/, 0)
 blockadblock.com,ear-phone-review.com,javadecompilers.com,kingsleynyc.com,sznpaste.net,thegoneapp.com##+js(nobab)
-blog.40ch.net,fc-lc.com,fc.lc,fcc.lc,katflys.com##+js(acis, document.addEventListener, nextFunction)
 blog.livedoor.jp##+js(acis, document.write, sitejack)
 blog.livedoor.jp##+js(acis, jmp, Math)
 blog.umentu.work##+js(nosiif, isBlanketFound, 4000)
@@ -23318,6 +23323,7 @@ crefan.jp##+js(nostif, objDef.resolve, 3000)
 crypto-faucet.xyz,doctor-groups.com,pewgame.com,shrink.*,url4cut.xyz,vexfile.com##+js(acis, String.fromCharCode, break;case)
 danc.uk##+js(noeval-if, fab_alert)
 daftsex.com##+js(set, extEnabled, 0)
+de-baystars.doorblog.jp,dokuo666.blog98.fc2.com,drop.download,eikaiwamastery.blogspot.com,gtoys.blog.fc2.com,health-karada.com,maxurlz.com,miyabi.netlify.app,nandetribune.com,nandokun.com,omutulove.blog.fc2.com,satoh-blog.blogspot.com,sorasi.net,turkdebrid.site,wakudan.seesaa.net,webcreator-journal.com##+js(acis, document.addEventListener, google_ad_client)
 demae-can.com##+js(ra, data-trm-action|data-trm-category|data-trm-label, .trm_event, stay)
 deneblog.jp##+js(acis, msg, Math.random)
 desktophut.com##+js(acis, document.getElementById, .style)
@@ -24813,6 +24819,8 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||wow.zamimg.com/js/*/BlueTracker.js$script,domain=wowhead.com
 @@||wp.com/ryugen.xyz/wp-content/uploads/2021/01/advertisement-shape.jpg$domain=ryugen.xyz
 @@||ws-fe.assoc-amazon.com/widgets/cm?*&asins=$frame,domain=doitsuiroiro.blog.fc2.com|haseakio.hatenablog.com|home.v03.itscom.net|tottemoyasashiibitcoin.net|www5c.biglobe.ne.jp|yayoi-meister.com
+@@||www.google.*/search*tbm=shop$shide
+@@||www.google.*/shopping/$shide
 @@||www.ups.com/WebTracking/processInputRequest
 @@||x.kinja-static.com/assets/packaged-js/trackers$script
 @@||xn--efvx95a21e2qq.tokyo/ad/images/$image,1p

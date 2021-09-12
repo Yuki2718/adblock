@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210910
+! Version: 20210913
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -65,6 +65,7 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 @@||nicoad.nicovideo.jp/v1/nicoadgroups|$xhr,1p,badfilter
 @@||speee-ad.akamaized.net^$css,image,script,domain=saitama-np.co.jp,badfilter
 @@||tochinavi.net/ad/img/$image,1p,badfilter
+@@||www.google.*/search*tbm=shop$shide,badfilter
 ##body[id][class*=post-] section[class*=cta]
 2099.jp##.ugb-cta:not(.ugb-cta--design-plain)
 baysia-tokyo.com##.ctawidget
@@ -74,6 +75,10 @@ news.mynavi.jp##.headerNav_listNode-hisamitsu
 news.mynavi.jp##.headerNav_sponsored
 recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
 webike.net###pc_top_obi_2
+www.google.*##*:not([class^="sh-sr__shop-result-group"]) #kp-wp-tab-overview g-dropdown-menu:upward(#kp-wp-tab-overview > div):has(a[href*="/aclk?"][href$="adurl="])
+www.google.*##.sh-sr__shop-result-group .sh-sp__btn:matches-css(font-size: 13px):upward(.sh-sr__shop-result-group):has(a[href^="/aclk"][href$="adurl="])
+www.google.*#@#*:not([class^="sh-sr__shop-result-group"]) [href^="/aclk"][href$="adurl="]:upward(3)
+www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="adurl="]:upward(3)
 xn--cck1a7gsd645rnx7b.com##.thumbnail > iframe[src^="//adframe."]:upward(1)
 youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
