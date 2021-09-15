@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20210913
+! Version: 20210915
 
 .com/1?z=$script,third-party
 .com/custom|$xmlhttprequest,third-party
@@ -31,8 +31,8 @@
 /^https:\/\/[a-z]{7,25}\.com\/v2(?=[-_0-9a-z]{0,62}[A-Z])(?=[-_a-zA-Z]{0,61}[0-9])(?=[0-9a-zA-Z]{0,60}[-_])[-_0-9a-zA-Z]{63}$/$script,third-party,match-case
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
 /^https?:\/\/[a-z]{8,10}\.com\/4\/\d{7}$/$document,popup
+/^https?:\/\/[a-z]{8,13}\.com\/5\/\d{7}$/$script,third-party
 /^https?:\/\/[a-z]{8}\.(?:com|net)\/tag\.min\.js$/$script,third-party
-/^https?:\/\/[a-z]{8}\.com\/5\/\d{7}$/$script,third-party
 /1clkn/*$script
 /a/ban/iframe/*
 /a/isv/js/*
@@ -128,8 +128,9 @@
 ##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height: 194px !important; cursor: pointer !important;"]:not([class])
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]:not([class])
 ##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style^="max-width: 390px; border: medium none; bottom: 0px !important; right: 0px !important; left: 50% !important; transform: translateX(-50%); z-index: 2147483647; position: fixed;"]:not([src])
-##iframe[style$="z-index: 2147483647; min-width: 240px !important; display: block !important; max-width: 418px !important;"]:not([src])
+##iframe[style$="box-sizing: border-box; position: fixed; inset: auto 0px 0px auto !important; overflow: hidden; z-index: 2147483647;"]:not([src])
 ##iframe[style*="opacity: 1 !important; max-width: 420px !important; border: medium none !important; position: fixed !important; display: block !important; z-index: 2147483647 !important;"]:not([src])
+##iframe[style*="z-index: 2147483647; min-width: 240px !important; display: block !important; max-width:"]:not([src])
 ##iframe[style="width: 100% !important; height: 100% !important; margin: 0px; padding: 0px; border: medium none; outline: currentcolor none medium; box-sizing: border-box; position: fixed; inset: 0px; overflow: hidden; z-index: 2147483647;"]:not([src])
 
 ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,win,work,world,xyz,yokohama#$#.div-gpt-ad { width:1px!important;height:1px!important;min-height:1px!important; }
