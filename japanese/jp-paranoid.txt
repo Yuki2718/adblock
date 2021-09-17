@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210915
+! Version: 20210917
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -150,6 +150,7 @@ youtube.com##+js(json-prune, playerResponse.playerAds)
 @@||opticoat.co.jp/peripheral/images/AD-$image,1p
 @@||osabishi.jp/cake/images/ad-sc.jpg
 @@||peiajapan.jp/merrydo/wp-content/themes/PEIA/images/ad.png
+@@||phatcatmedia.net/images/ad.jpg$image,domain=allsonicgames.net
 @@||pics.dmm.co.jp/livechat/event/event_$image,3p
 @@||plasticsage.co.jp/contact/images/ad-space.gif
 @@||postmankobe.co.jp/images/ad-nega.png
@@ -225,6 +226,7 @@ smart-flash.jp##^.adsBlock
 -adobe-analytics/
 -contrib-ads/
 .s_code.js$domain=cadillacjapan.com|chevroletjapan.com
+/AdobeAnalyticsBundle.
 /AppMeasurement.js
 /AppMeasurement_Module_
 /amplitude-*.js$script
