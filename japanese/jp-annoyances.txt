@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210917
+! Version: 20210919
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -59,6 +59,7 @@ cookpad.com###summer2021_modal
 /webpush/*
 /webpushsdk/*$script
 ||amazonaws.com/cdn.aimtell.com/
+||arc.io^$3p
 ||aswpsdkeu.com^$3p
 ||braze.com^$3p
 ||browserpush.net^$3p
@@ -573,6 +574,8 @@ alternativeto.net###bottomNotifier
 amp.reddit.com##.AppSelectorModal__body
 anime-japan.jp##.mfp-ready.mfp-bg, .mfp-ready.mfp-wrap
 anime-japan.jp##html[style*="overflow: hidden"]:style(overflow: auto!important)
+anthropologie.com,urbanoutfitters.com###modal form#email-sign-up-form:upward(#modal)
+anthropologie.com,urbanoutfitters.com##body[style="overflow: hidden;"]:style(overflow: auto!important;)
 app.slack.com##.p-download_modal.c-fullscreen_modal.ReactModal__Overlay--after-open
 app.slack.com##.p-ia__workspace_banner.p-client__banners
 askul.co.jp##.stickyFooter
