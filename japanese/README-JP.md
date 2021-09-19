@@ -57,7 +57,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 <details>
 <summary><strong>高効率</strong></summary>
 
-ほとんどのルールがuBlock Originに最適化された、現状唯一の日本用フィルタです。uBlock Originはトークン化という仕組みにより高速処理を実現しています<sup>7</sup>。ルールがトークン化可能なら、ルール数は[処理時間に](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)[影響しません](https://twitter.com/i/web/status/1289255976198123520)。uBlock Originにおける限り、ルールが多いと重くなるという議論は[ナイーブな直感に基づいた完全な誤りです](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-204#post-2975580)<sup>8</sup>。当フィルタはできるだけトークン化を意識したルールを心がけており<sup>9</sup>、非表示フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないフィルタを使うよう心がけているつもりです。さらに、数か月ごとに冗長なルールとデッドドメインのチェックを行い無駄を省いているほか、スクリプトレットフィルタについてはプロパティや関数のチェックをできる限り行い、不要なルールを追加しないようにしています。
+ほとんどのルールがuBlock Originに最適化された、現状唯一の日本用フィルタです。uBlock Originはトークン化という仕組みにより高速処理を実現しています<sup>7</sup>。ルールがトークン化可能なら、ルール数は[処理時間に](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)[影響しません](https://twitter.com/i/web/status/1289255976198123520)。uBlock Originにおける限り、ルールが多いと重くなるという議論は[ナイーブな直感に基づいた完全な誤りです](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-204#post-2975580)が<sup>8</sup>、ユーザーの体感に[一番影響するのはそうした誤った信念](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-162#post-2849890)のようです。当フィルタはできるだけトークン化を意識したルールを心がけており<sup>9</sup>、非表示フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないフィルタを使うよう心がけているつもりです。さらに、数か月ごとに冗長なルールとデッドドメインのチェックを行い無駄を省いているほか、スクリプトレットフィルタについてはプロパティや関数のチェックをできる限り行い、不要なルールを追加しないようにしています。
 
 </details>
 
@@ -325,9 +325,9 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 
 <sub>6: 当サイトのフィルタは[specific-generic](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic)を利用したおそらく最初の公開フィルタです。なお、汎用非表示フィルタの数はパフォーマンスに[影響しません](https://github.com/uBlockOrigin/uBlock-issues/issues/738#issuecomment-619450820)。</sub>
 
-<sub>7: 簡単に言うと、リクエストとルールそれぞれから抽出したトークンを使ってマッチする見込みがありそうなルールを絞り込んでいます。一般的なリクエストに対して大部分のルールは無いも同然であり、計算量のオーダーはルール数に依存しません。検索エンジンの転置インデックスに近いです。</sub>
+<sub>7: 簡単に言うと、リクエストとルールそれぞれから抽出したトークンを使ってマッチする見込みがありそうなルールを絞り込んでいます。一般的なリクエストに対して大部分のルールは無いも同然であり、計算量のオーダーはルール数に依存しません。理屈は検索エンジンの転置インデックスと同じです（ウェブサイトの数がいくら増えても検索にかかる時間は変わりません）。</sub>
 
-<sub>8: 実測するのが早いです（レイテンシの影響が大きいのでキャッシュは維持してください。また、当然ですが有効数字や交絡要因に注意してください）。[こちら](https://brave.com/improved-ad-blocker-performance/)はBraveがuBlock Originの方式を導入した時の記事ですが、16,000個ルールを追加しても個々のリクエスト処理にかかる時間は1μsも変わらないことがわかります。メモリ消費はルール数に応じて増えますが、PCで問題になる量ではありません。ブロック漏れ（非表示含む）による消費のほうが大きいでしょう。逆に、非効率なルールが増えると遅くなるため、対象を絞り込むなどの対策が必要です。Twitterや個人ブログなどでルールを公開する人は多いですが、それらの中には問題のあるものも少なくありません。</sub>
+<sub>8: 実測するのが早いです（レイテンシの影響が大きいのでキャッシュは維持してください。また、当然ですが有効数字や交絡要因に注意してください）。[こちら](https://brave.com/improved-ad-blocker-performance/)はBraveがuBlock Originの方式を導入した時の記事ですが、16,000個ルールを追加しても個々のリクエスト処理にかかる時間は1μsも変わらないことがわかります。メモリ消費はルール数に応じて増えますが、PCで問題になる量ではありません。ブロック漏れによる消費のほうが大きいでしょう。逆に、非効率なルールが増えると遅くなるため、対象を絞り込むなどの対策が必要です。Twitterや個人ブログなどでルールを公開する人は多いですが、それらの中には問題のあるものも少なくありません。</sub>
 
 <sub>9: ABP文法と異なり、[単語境界を意識](https://github.com/gorhill/uBlock/issues/1065)する必要があります。たとえば`/foo`というルールは、（他の部分でトークンマッチが起きない限り）`/foo1`というリクエストをブロックしません。明示的に`*`を追加するとブロックするようになりますが（`/foo*`）、これは`foo`のトークン化を妨げます（細かく言うと、８文字以上だと[話が別になります](https://github.com/gorhill/uBlock/issues/3011#issuecomment-329140908)）。主要な[bad token](https://github.com/gorhill/uBlock/blob/381498daa2a9ce089a69d044760190b1dd14b5ac/src/js/static-net-filtering.js#L2062)（原則、トークン化されない文字列）も覚えた方がよいでしょう。一般に遅いとされる正規表現ルールも条件を満たせばトークン化可能です。</sub>
 
