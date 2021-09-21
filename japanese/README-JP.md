@@ -1,6 +1,6 @@
 ### お知らせ（2021年09月22日）
 
-280blocker adblock filterが当面は公開されるようですので、280blocker adblock filter 悪質サイト対策強化パッチの更新もしばらく続けることにします。ただ、「永続的に公開をお約束するものではない」とのことですし、既に[FilterLists](https://github.com/collinbarrett/FilterLists)の登録も削除してしまっているため、再登録するか公開停止にするか今後検討します。
+280blocker adblock filterが[当面は公開される](https://280blocker.net/blog/20210921/3055/)ようですので、280blocker adblock filter 悪質サイト対策強化パッチの更新もしばらく続けることにします。ただ、「永続的に公開をお約束するものではない」とのことですし、既に[FilterLists](https://github.com/collinbarrett/FilterLists)の登録も削除してしまっているため、再登録するか公開停止にするか今後検討します。
 
 （2021年05月15日）
 
