@@ -447,6 +447,7 @@ secrettalk.me##.week_hot
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,3p
 /^https?:\/\/(?:[a-z0-9]{8,10}\.)?[-a-z0-9]{5,}\.(?:com?|click|bid|link|net|online|top|club)\/(?:[a-z0-9]{2}\/){3}[a-f0-9]{32}\.js/$script,3p
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|pw|site)\/[a-z](?=[0-9a-z]{0,15}[A-Z])(?=[a-z]{0,14}[0-9A-Z])[0-9a-zA-Z]{10,16}\/(?:[1-4]\d{4}|[4-9]\d{3})(\?_=\d+)?$/$script,3p,match-case
+/^https?:\/\/www\.[0-9a-z]{5,11}\.(?:com|name)\/ok\/ok\.js$/$script,1p,match-case,domain=com|name
 /^https?:\/\/[-.0-9a-z]+-ad\.(?:com|jp|net)[/:]/$3p
 /^https?:\/\/[-.0-9a-z]+-ads\.com[/:]/$3p
 /^https?:\/\/[a-z]{8,13}\.com\/5\/\d{7}$/$script,3p
@@ -968,7 +969,6 @@ secrettalk.me##.week_hot
 /ntfc.php?$script
 /ntv-ad.js
 /?oo=1^$xhr,3p
-/ok/ok.js
 /oncc-ad.
 /onead_$script
 /openx_$script
@@ -1318,12 +1318,12 @@ vkcdnservice.appspot.com^$3p
 ||ad-link.jp^$3p
 ||ad-m.asia^
 ||ad-management.biz^
-||ad-mapps.com^$3p
+||ad-mapps.com^
 ||ad-nex.com^$3p
 ||ad-spire.net^
 ||ad-stir.com^$3p
 ||ad-track.jp^$3p
-||ad-vortex.com^$3p
+||ad-vortex.com^
 ||ad.abema.io^
 ||ad.plus^$3p
 ||ad.gt^
@@ -1375,7 +1375,7 @@ vkcdnservice.appspot.com^$3p
 ||adtechjp.com^$3p
 ||adtechus.com^$3p
 ||advack.net^$3p
-||advertising.com^
+||advertising.com^$3p
 ||advertising.jp.msn.com^
 ||advertnative.com^$3p
 ||advimg.ad-mapps.com^
@@ -1429,8 +1429,8 @@ vkcdnservice.appspot.com^$3p
 ||assys01.fc2.com^
 ||astrsk.net^$3p
 ||atozcorporation.net^
-||atonato.de^$3p
-||atwola.com^$3p
+||atonato.de^
+||atwola.com^
 ||atype.jp^$3p
 ||aukana.jp^$3p
 ||autolinkmaker.itunes.apple.com^$3p
@@ -1706,7 +1706,7 @@ vkcdnservice.appspot.com^$3p
 ||partner.become.co.jp^
 ||phuot.site^$3p
 ||pinpointdmp.com^$3p
-||pixiv.org^$3p
+||pixiv.org^
 ||pixon.ads-pixiv.net^
 ||polymorphicads.jp^$3p
 ||pompass.net^
@@ -1717,15 +1717,15 @@ vkcdnservice.appspot.com^$3p
 ||pr.news-matome.com^
 ||prf.hn^$3p
 ||pritre.com^$3p
-||pro-market.net^$3p
-||propgoservice.com^$3p
+||pro-market.net^
+||propgoservice.com^
 ||protectsubrev.com^
-||propellerads.com^$3p
+||propellerads.com^
 ||properatersch.fun^
 ||psoumtou.net^
 ||ptewarin.net^
 ||pub.network^
-||pubmine.com^$3p
+||pubmine.com^
 ||qozveo.com^
 ||qtbb6.com^
 ||quant.jp^$3p
@@ -1751,7 +1751,7 @@ vkcdnservice.appspot.com^$3p
 ||roy-union.com^$3p
 ||roy-union.org^$3p
 ||rtb.mts.ru^$3p
-||rubiconproject.com^
+||rubiconproject.com^$3p
 ||s.skimresources.com^
 ||sail-horizon.com^
 ||samuraiclick.com^$3p
@@ -1947,7 +1947,7 @@ vkcdnservice.appspot.com^$3p
 ||ad999.biz^
 ||adactioner.com^
 ||adbetnetwork.com^$3p
-||adcdnx.com^$3p
+||adcdnx.com^
 ||adf.underhentai.net^
 ||adgrowmedia.com^$3p
 ||adl-hunter.com^$3p
@@ -1971,7 +1971,7 @@ vkcdnservice.appspot.com^$3p
 ||adtng.com^
 ||adtrue24.com^
 ||adult-plus.com^$3p
-||adultadworld.com^
+||adultadworld.com^$3p
 ||adultfreedom.info^$3p
 ||adultgamepass.com^$3p
 ||adultsclips.com^$3p
@@ -2035,8 +2035,9 @@ vkcdnservice.appspot.com^$3p
 ||ashhgo.com^
 ||asia-northeast1-affiliate-pr.cloudfunctions.net^
 ||asjdhajsdnweqwasdascxzccsdcsdcsdfewfwefqweqweqw.network^
-||aso1.net^$3p
+||aso1.net^
 ||asuppsttp.com^
+||asxvawth.com^
 ||aulteeby.net^
 ||autoizers.info^
 ||avfay.com^$3p
@@ -2363,6 +2364,7 @@ vkcdnservice.appspot.com^$3p
 ||filexan.com^$3p
 ||findnewline.com^
 ||fintechpi.com^
+||fireadsone.com^$3p
 ||firexclamation.com^
 ||fitbxtqgneq.com^
 ||fkesfg.com^
@@ -2572,14 +2574,12 @@ vkcdnservice.appspot.com^$3p
 ||kfptslry.com^$3p
 ||kfuiprtjuqntp.com^
 ||kglmcsivtqcbj.com^
-||kgua0o66bcw8.com^
 ||khzbeucrltin.com^
 ||kindredplc.com^
 ||kiolim.com^
-||kittenmilletfoggy.com^
 ||kiynew.com^
 ||klqyxeidr.com^
-||knivestuitionconsequence.com^
+||knxntpsd.com^
 ||kogutcho.net^
 ||konradsheriff.com^
 ||koudaiyundong.com^$3p
@@ -2597,7 +2597,6 @@ vkcdnservice.appspot.com^$3p
 ||las4srv.com^
 ||lauhoosh.net^
 ||lauk.icu^
-||lauriestatuestroll.com^
 ||lbaetmvw.com^
 ||lcwfab1.com^$3p
 ||lcwfab2.com^$3p
@@ -2787,10 +2786,11 @@ vkcdnservice.appspot.com^$3p
 ||pdxgfnnoan.com^
 ||pefyglafy.pro^
 ||pgonews.pro^
+||phsqqnneqsbgqe.com^
 ||phukienthoitranggiare.com^$3p
 ||pierlinks.com^
 ||pinkpig2le8tt09.com^
-||ping-traffic.info^$3p
+||ping-traffic.info^
 ||pl8la42.cn^
 ||plainwrk.name^
 ||playwrightglancing.com^
@@ -2832,7 +2832,7 @@ vkcdnservice.appspot.com^$3p
 ||primead.jp^
 ||probns.com^
 ||producebreed.com^
-||promo-bc.com^$3p
+||promo-bc.com^
 ||promocionesweb.com^$3p
 ||promos.camsoda.com^
 ||promos.fling.com^
@@ -2845,7 +2845,7 @@ vkcdnservice.appspot.com^$3p
 ||psazamajy.pro^
 ||psixoglika.pro^
 ||psozyhotho.pro^
-||ptawe.com^$3p
+||ptawe.com^
 ||ptwmstc.com^$3p
 ||ptywajofa.pro^
 ||pub.contexthub.net^
@@ -2863,6 +2863,7 @@ vkcdnservice.appspot.com^$3p
 ||qppdqcid.com^
 ||qqjar.ru^$3p
 ||qugdtlps.com^
+||quinporn.com^$3p
 ||qumagee.com^
 ||qwerfdx.com^
 ||qwerty24.net^$3p
@@ -2881,7 +2882,7 @@ vkcdnservice.appspot.com^$3p
 ||rejcinews.pro^
 ||rek.savefrom.net^
 ||reklamko.pro^
-||rekovers.ru^$3p
+||rekovers.ru^
 ||rencontres-coquines.jacquieetmichel.net^
 ||reoxclick.com^$3p
 ||resalag.com^
@@ -2891,7 +2892,6 @@ vkcdnservice.appspot.com^$3p
 ||richcatis.com^
 ||riminghoggoofy.com^
 ||rindicalapa.fun^
-||riotousgrit.com^
 ||riverhit.com^
 ||riverpush.com^$3p
 ||rjhbcghmln.com^
@@ -3003,6 +3003,7 @@ vkcdnservice.appspot.com^$3p
 ||thetaweblink.com^
 ||thevtk.com^$3p
 ||thizamocu.pro^
+||thkxtvklfdeget.com^
 ||thodowaro.com^
 ||thterras.com^
 ||thugitori.pro^
@@ -3025,7 +3026,6 @@ vkcdnservice.appspot.com^$3p
 ||tpx.tesseradigital.com^
 ||tracot.com^
 ||trackcapitalvane.com^
-||tracking.scenepass.com^
 ||trading-ad.net^$3p
 ||traffdaq.com^$3p
 ||traffic-gate.com^$3p
@@ -3145,6 +3145,7 @@ vkcdnservice.appspot.com^$3p
 ||wormishammites.com^
 ||woodmountain.icu^
 ||wootwood.com^
+||woqkhzpu.com^
 ||worldsbestcams.com^$3p
 ||worldtraffic.trade^
 ||wpncdn.com^
@@ -3283,8 +3284,8 @@ vkcdnservice.appspot.com^$3p
 ||adapex.io^$3p
 ||adbit.biz^$3p
 ||adbiz3.co.kr^
-||adbox.lv^$3p
-||adbrite.com^$3p
+||adbox.lv^
+||adbrite.com^
 ||adcalm.com^$3p
 ||adcampo.com^
 ||adcash.com^$3p
@@ -3353,7 +3354,6 @@ vkcdnservice.appspot.com^$3p
 ||adpone.com^$3p
 ||adrecover.com^
 ||adreactor.com^$3p
-||adriftstressful.com^
 ||adright.co^$3p
 ||adrokt.com^
 ||adroll.com^$3p
@@ -3361,19 +3361,18 @@ vkcdnservice.appspot.com^$3p
 ||adrunnr.com^
 ||ads1-adnow.com^$3p
 ||ads2-adnow.com^$3p
-||ads2.hsoub.com^
 ||ads2.pbxware.ru^
-||ads3-adnow.com^$3p
-||ads5-adnow.com^$3p
+||ads3-adnow.com^
+||ads5-adnow.com^
 ||adsafeprotected.com^
 ||adsby.bidtheatre.com^
-||adscale.de^$3p
+||adscale.de^
 ||adsco.re^
 ||adscok.com^
 ||adservme.com^$3p
 ||adsgig.com^
-||adsinstant.com^$3p
-||adskeeper.com^$3p
+||adsinstant.com^
+||adskeeper.com^
 ||adsmodern.com^$3p
 ||adsnative.com^
 ||adspruce.com^$3p
@@ -3384,8 +3383,8 @@ vkcdnservice.appspot.com^$3p
 ||adsyou.pro^$3p
 ||adtech.de^$3p
 ||adtelligent.com^$3p
-||adthrive.com^
-||adthurst.com^
+||adthrive.com^$3p
+||adthurst.com^$3p
 ||adtival.network^$3p
 ||adtorio.com^$3p
 ||adtrue.com^$3p
@@ -3409,7 +3408,7 @@ vkcdnservice.appspot.com^$3p
 ||adzmoney.linkyqueen.ga^
 ||ae21a0ad95016488.com^
 ||affiliatefuture.com^
-||affiz.net^$3p
+||affiz.net^
 ||aftv-serving.bid^$3p
 ||agacelebir.com^
 ||aghtag.tech^
@@ -3430,20 +3429,20 @@ vkcdnservice.appspot.com^$3p
 ||akemeast.club^
 ||albshuckcute.com^
 ||alfasense.net^$3p
-||algovid.com^$3p
+||algovid.com^
 ||alimama.cn^$3p
 ||alkypeewit.com^
 ||alli-ti-cod.com^
 ||allmygoodlife.com^
 ||allosponsor.com^$3p
 ||allstat-pp.ru^$3p
-||alogationa.co^$3p
+||alogationa.co^
 ||aloofvest.com^
-||alphonso.tv^$3p
+||alphonso.tv^
 ||alruqbfjg.com^
 ||alstrome9riya10.com^
 ||altowriestwispy.com^
-||am15.net^$3p
+||am15.net^
 ||amirteeg.com^
 ||ammankeyan.com^
 ||ampdaisbras.com^
@@ -3480,11 +3479,10 @@ vkcdnservice.appspot.com^$3p
 ||asdb.xyz^
 ||asoulrox.com^
 ||assets.newsmaxwidget.com^$3p
-||assistedadultrib.com^
 ||astra9dlya10.com^
 ||aswpsdkus.com^
 ||asxemfnwbrmpdp.com^
-||atdmt.com^$3p
+||atdmt.com^
 ||ateletswitoto.com^
 ||auchoons.net^
 ||audiencerun.com^$3p
@@ -3558,9 +3556,9 @@ vkcdnservice.appspot.com^$3p
 ||bidbarrel.cbsnews.com^
 ||bidfilter.com^$3p
 ||bidscape.it^$3p
-||bidsxchange.com^
+||bidsxchange.com^$3p
 ||bidtimize.com^
-||bidvertiser.com^
+||bidvertiser.com^$3p
 ||bigappboi.com^
 ||bigbolz.com^
 ||bikrurda.net^
@@ -3600,11 +3598,11 @@ vkcdnservice.appspot.com^$3p
 ||bowsedsquiffy.com^
 ||boyaidare.club^
 ||bqcgrwahvuapq.com^
-||brand-display.com^
+||brand-display.com^$3p
 ||brapoiorc.com^
 ||breakingfeedz.com^$3p
 ||breaktime.com.tw^
-||brealtime.com^
+||brealtime.com^$3p
 ||breated.club^
 ||breathebuds.com^
 ||breedtagask.com^
@@ -3995,6 +3993,7 @@ vkcdnservice.appspot.com^$3p
 ||fgddl9szdof7.com^
 ||fhsmtrnsfnt.com^
 ||filetarget.net^
+||filmeserialehd.biz^$3p
 ||fingahvf.top^
 ||finkyepbows.com^
 ||fiorenetwork.com^
@@ -4102,7 +4101,7 @@ vkcdnservice.appspot.com^$3p
 ||grooksom.com^
 ||grecmaru.com^
 ||grirault.net^
-||groupian.io^$3p
+||groupian.io^
 ||grubsoan.com^
 ||grumft.com^$3p
 ||guphoulr.com^
@@ -4141,6 +4140,7 @@ vkcdnservice.appspot.com^$3p
 ||hotelfroma.fun^
 ||houdodoo.net^
 ||howtubray.com^
+||hsoub.com^
 ||htagpa.tech^
 ||htintpa.tech^
 ||htlbid.com^
@@ -4185,7 +4185,7 @@ vkcdnservice.appspot.com^$3p
 ||insightexpressai.com^
 ||inskinad.com^
 ||instinctiveads.com^
-||insurads.com^
+||insurads.com^$3p
 ||inswebt.com^
 ||intellipopup.com^$3p
 ||intellitxt.com^
@@ -4298,7 +4298,7 @@ vkcdnservice.appspot.com^$3p
 ||libedgolart.com^
 ||libertycdn.com^
 ||liftdna.com^
-||lijit.com^
+||lijit.com^$3p
 ||linkbucks.com^$3p
 ||linkprice.com^
 ||linkslot.ru^$3p
@@ -4454,7 +4454,7 @@ vkcdnservice.appspot.com^$3p
 ||nellads.com^
 ||neoamwhdg.com^
 ||neobits.net^$3p
-||neobux.com^
+||neobux.com^$3p
 ||neoebiz.co.kr^$3p
 ||neogaeakasher.com^
 ||neon.today^$3p
@@ -4576,12 +4576,11 @@ vkcdnservice.appspot.com^$3p
 ||pauzajoo.net^
 ||pawheatyous.com^
 ||pay2clik.cf^$3p
-||paybackvocal.com^$3p
-||pbcde.com^$3p
+||pbcde.com^
 ||pc5ads.com^$3p
 ||pebblemedia.be^$3p
 ||peekcogentpope.com^
-||peer39.net^$3p
+||peer39.net^
 ||pengenanu.files.im^
 ||penjazzvice.com^
 ||pepsgolfsintake.com^
@@ -4590,7 +4589,7 @@ vkcdnservice.appspot.com^$3p
 ||peuzubuqo.com^
 ||pgbxrigvbmdz.com^
 ||pgmcdn.com^
-||pgmediaserve.com^$3p
+||pgmediaserve.com^
 ||phaudree.com^
 ||phaurtuh.net^
 ||pheegoab.click^
@@ -4605,8 +4604,8 @@ vkcdnservice.appspot.com^$3p
 ||pippio.com^$3p
 ||pisism.com^
 ||piuradelivery.com^$3p
-||pixfuture.net^$3p
-||pixxur.com^$3p
+||pixfuture.net^
+||pixxur.com^
 ||pkhhyool.com^
 ||player.avplayer.com^$3p
 ||playerseo.club^
@@ -4631,7 +4630,7 @@ vkcdnservice.appspot.com^$3p
 ||postrelease.com^
 ||pouncewhineheadquarter.com^
 ||pourdear.com^
-||powerad.ai^$3p
+||powerad.ai^
 ||powerlinks.com^$3p
 ||ppcmate.com^$3p
 ||ppcnt.pro^$3p
@@ -4646,7 +4645,7 @@ vkcdnservice.appspot.com^$3p
 ||presearch.org^$3p
 ||primis.tech^$3p
 ||priordiameter.com^
-||proadscdn.com^$3p
+||proadscdn.com^
 ||producecopy.com^
 ||projectagoraservices.com^
 ||projectwonderful.com^
@@ -4680,7 +4679,7 @@ vkcdnservice.appspot.com^$3p
 ||puffnetwork.com^$3p
 ||puhtml.com^
 ||pulpsbarndomed.com^
-||purpleads.io^$3p
+||purpleads.io^
 ||pushdom.co^$3p
 ||pushinpage.com^
 ||pushub.net^$3p
@@ -4732,11 +4731,10 @@ vkcdnservice.appspot.com^$3p
 ||resoliltiu.*^
 ||responserver.com^
 ||restisbench.com^
-||retirementlash.com^
 ||revampcdn.com^
 ||revcontent.com^$3p
 ||revenueflex.com^$3p
-||rfihub.net^$3p
+||rfihub.net^
 ||rhombusads.com^
 ||rhudsplm.com^
 ||rhvdsplm.com^
@@ -4779,7 +4777,7 @@ vkcdnservice.appspot.com^$3p
 ||sadesriffsmap.com^
 ||safelinku.com^$3p
 ||sailcovertend.com^
-||sailif.com^$3p
+||sailif.com^
 ||sancdn.net^$3p
 ||sape.ru^$3p
 ||saumooly.net^
@@ -4939,15 +4937,15 @@ vkcdnservice.appspot.com^$3p
 ||tfzznclztl.com^
 ||tgvbwjbnxz.com^
 ||thaiksee.com^
-||tharbadir.com^$3p
+||tharbadir.com^
 ||themoneytizer.com^
 ||themoneytizer.net^
 ||theonecdn.com^
-||thepopads.com^$3p
+||thepopads.com^
 ||thetarhaw.com^
 ||theweblocker.net^$3p
 ||thirgoad.top^
-||thisiswaldo.com^$3p
+||thisiswaldo.com^
 ||thispositionw.biz^
 ||thoartuw.com^
 ||thongaspredo.com^
@@ -4956,7 +4954,7 @@ vkcdnservice.appspot.com^$3p
 ||threecd.name^
 ||ticketaunt.com^
 ||tillatingmer.fun^
-||tiller.co^$3p
+||tiller.co^
 ||tionmodat.club^
 ||tjzetzjqodjj.com^
 ||tm-offers.gamingadult.com^
@@ -7662,6 +7660,7 @@ _pop_under.js$domain=souko.pipii.tv
 ||777x.com/static/prime_300x100.
 ||7mmtv.tv/hgame/
 ||85tube.com/player/html.php?aid=*_html&video_id=*&*&referer$frame,xhr,redirect=noop.txt
+||85tube.com/static/images/gg/
 ||886644.com/img/af886644.
 ||a-market.jp/img/pr/pickup/
 ||a-up.info/avlady/img/site/mihoudai.
@@ -8336,6 +8335,7 @@ _pop_under.js$domain=souko.pipii.tv
 ||momoiroadult.com^*_728-90-$image,1p
 ||momvids.com/mm*/mv.js
 ||morazzia.com^*/banners/
+||morps.xyz/show-api.js
 ||movie-work.com^$domain=siro-hame.net
 ||movies.hentaistream.com/wp-content/themes/*-holder.jpg|
 ||mp4hentai.com/holy-cell-feb3/
@@ -10895,7 +10895,7 @@ cgi-bin/counter
 ||omarsys.com^$3p
 ||ometria.com^$3p
 ||omkt.co^$3p
-||omnitagjs.com^
+||omnitagjs.com^$3p
 ||omns.americanexpress.com^
 ||oms.dowjoneson.com^
 ||omt.shinobi.jp^
@@ -11161,7 +11161,7 @@ cgi-bin/counter
 ||seogreat.net^$3p
 ||seoparts.net^$3p
 ||servebom.com^$3p
-||serving-sys.com^
+||serving-sys.com^$3p
 ||sessions.bugsnag.com^
 ||sextracker.com^
 ||sftrack.searchforce.net^
@@ -11446,6 +11446,7 @@ cgi-bin/counter
 ||tracking.musixmatch.com^
 ||tracking.retailrocket.net^
 ||tracking.royalpanda.com^
+||tracking.scenepass.com^
 ||tracking.shinycolors.enza.fun^
 ||tracking.unrealengine.com^
 ||tracking2.channeladvisor.com^
@@ -14013,7 +14014,7 @@ axefactory.blog137.fc2.com,beastmodeblock.blog.fc2.com###main > .content:last-ch
 axios.com##.ads.grid-layout
 axismag.jp##.pr_posts
 axismag.jp,server-domain.info###pr_side
-aylink.co,shtms.co##.alternative-ad
+aylink.co,gitizle.vip,shtms.co##.alternative-ad
 azayobito.com,josinokintore.net,manga-comic-love.xyz###fix_sidebar
 azsoft.biz,downfile.site,scratch247.info##div.display ~ p
 azsoft.biz,downfile.site,scratch247.info##div.display ~ h2.text-center
@@ -15347,8 +15348,8 @@ facebook.com##div[data-pagelet^=FeedUnit_] div[role=article] div[style^=border-r
 facebook.com##div[data-pagelet="RightRail"] > div:not([data-visualcompletion]) > div > div[class]:has(> div[class] > div[class] div[class] > a[aria-label][href^="https://l.facebook.com/l.php?u="][target="_blank"])
 facebook.com##div[id^="mount_"] div[data-pagelet="RightRail"] > div:not([data-vc-ignore-dynamic]) > div:not([class])
 facebook.com##div[role=feed] div > span > span > a > span > *:not(:has-text(/^[^A-z]$/)):upward(div[role=feed] > div)
-facebook.com##[role="feed"] span[id] a[href="#"] > span > span:not(:has-text(/(\s|\d|^$)/)):upward([role="feed"] > div)
 facebook.com##[role="feed"] span[id] a[href="#"] > span > b:not(:has-text(/(\s|\d|^$)/)):upward([role="feed"] > div)
+facebook.com##[role="feed"] span[id] a[href="#"] > span > span:not(:has-text(/(\s|\d|^$)/)):upward([role="feed"] > div)
 famitsu.com##.ad-native-campaign
 famitsu.com##.article-ads-v2
 famitsu.com##.article-body__contents-pr-primary
@@ -22080,7 +22081,6 @@ daeki-mania.com##.bottom_ad > .widget_custom_html
 deepspaceatlas.com,javsister.com###custom_html-9
 dekasengataisen.blog85.fc2.com##.content [src$="/gorimacho.jpg"]:upward(.content)
 depot.pink,uab.jp##[id^=video_ad_]
-dhbr.net##^.article-end-banner
 duma.blogterest.net##.entryParts
 elog.tokyo###onlineGame
 ero-project.net###type01 > p[style="padding-left: 16px;"]
@@ -22571,6 +22571,7 @@ deneblog.jp##^.plugin1_outline [href^="https://cf-vanguard."]:upward(.plugin1_ou
 deneblog.jp##^.plugin1_outline [href^="https://www.amazon."]:upward(.plugin1_outline)
 deneblog.jp,touhouyaruosure.com##^[href^="https://affiliate."]
 depot.pink,uab.jp##^[id^=video_ad_]
+dhbr.net##^.article-end-banner
 diamond.jp##^#zai-subcolumn-banners
 diamond.jp##^.ad-bannar-floating
 diamond.jp##^.banner-sp
@@ -22830,6 +22831,7 @@ yu-gi5000guard.blog.jp##^#extra .plugin-memo:not(.plugin-memo:last-of-type)
 yu-gi5000guard.blog.jp##^#sub .plugin-memo:not(.plugin-memo:nth-child(2))
 yu-gi5000guard.blog.jp##^.article-body-more > .amazon > .pictBox
 yuki.la##^.middlead
+za.uy##^script:has-text(tabunder)
 zukobako.com##^#mybox, .post > [href^="http://cpz."], .post > [href^="https://www.dmm.co."]
 zukobako.com##^#topnews > dl .smp:upward(dl)
 !#endif
@@ -22937,8 +22939,8 @@ automotur.club,link.rota.cc##+js(aopr, adssBlocked)
 av-jamak.com##+js(nostif, displayMessage)
 avgle.com,imgkings.com##+js(acis, __htapop)
 avseesee.com##+js(acis, document.getElementById, _banner)
-aylink.co,shtms.co##+js(aopr, xmlhttp)
-aylink.co,shtms.co##+js(ra, data-ppcnt_ads|onclick, #main)
+aylink.co,gitizle.vip,shtms.co##+js(aopr, xmlhttp)
+aylink.co,gitizle.vip,shtms.co##+js(ra, data-ppcnt_ads|onclick, #main)
 badassdownloader.com##+js(nostif, innerHTML)
 badassdownloader.com##+js(set, bscheck.adblocker, noopFunc)
 baddiehub.com##+js(acis, sessionStorage, AdBlock)
@@ -23670,6 +23672,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||xmax.jp/trade/$image,domain=ecnavi.jp|lifemedia.jp|pointtown.com
 
 ! Optout
+||omnitagjs.com^$badfilter
 @@||adtdp.com/optout.js$domain=smalgo.jp
 @@||criteo.com/process/criteo_optout^$script,1p
 @@||focas.jp/optout/optout.html$domain=adroute.froute.jp
@@ -23861,8 +23864,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||cbsinteractive.com^*/lib/tracking/comscore/$script
 @@||cdn.cnn.com/ads/adfuel/ais/*/cnngo-ais.min.js$domain=go.cnn.com
 @@||cdn.gotraffic.net^$domain=bloomberg.*
-@@||cdn.jsdelivr.net/npm/fuckadblock@*/fuckadblock.min.js$script,domain=mitly.us
-@@||cdn.jsdelivr.net/npm/fuckadblock@3.2.1/fuckadblock.min.js$script,domain=redirect-ads.com
+@@||cdn.jsdelivr.net/npm/*/fuckadblock.min.js$script,3p
 @@||cdn.jsdelivr.net^*/js/analytics.min.js$script,domain=starfiles.co|starfiles.ml
 @@||cdn.optimizely.com/js/*.js$domain=heroku.com
 @@||cdn.permutive.com/*-web.js$domain=independent.co.uk
