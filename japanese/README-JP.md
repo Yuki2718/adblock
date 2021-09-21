@@ -1,8 +1,6 @@
-### お知らせ（2021年09月02日）
+### お知らせ（2021年09月22日）
 
-Yuki's uBlock Japanese filters - Mobileにおいてモバイルウェブの対応を始めます。**Yuki's uBlock Japanese filtersとの併用が前提**で、サポート対象は**Android用FirefoxにインストールされたuBlock Originのみ**です。AdGuardやKiwiブラウザ上のuBlock Originはサポートしません、とくにAdGuardでは使わないでください――Youtubeをはじめとして不具合が出ますし、正しく機能しないルールが多数あります（注1）。本来であれば一定の完成度に達してからアナウンスする予定でしたが、280blockrerさんのフィルターが[近々Androidで使えなくなる](https://280blocker.net/blog/20210831/3043/)ため、見切り発車的に対応を始めます。280blocker adblock filter 悪質サイト対策強化パッチは、280blocker adblock filterの公開停止に合わせて削除する予定です。
-
-<sub>注1：[FAQ](https://github.com/Yuki2718/adblock/wiki#q17-ublock-origin%E4%BB%A5%E5%A4%96%E3%81%AE%E3%83%96%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BCpc%E3%81%A7%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%81%AE%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E6%A7%8B%E6%88%90%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)でも述べましたが、文法互換性は両者で正しく機能することを保証しません。</sub>
+280blocker adblock filterが当面は公開されるようですので、280blocker adblock filter 悪質サイト対策強化パッチの更新もしばらく続けることにします。ただ、「永続的に公開をお約束するものではない」とのことですし、既に[FilterLists](https://github.com/collinbarrett/FilterLists)の登録も削除してしまっているため、再登録するか公開停止にするか今後検討します。
 
 （2021年05月15日）
 
@@ -260,12 +258,10 @@ AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ�
 
 280blocker adblock filterは、できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、正規表現などの高度な文法を避け、互換性の高い記法で書かれています。ただ、このためにアプリの280blockerではブロック可能なビジターアンケート詐欺などの悪質サイトが完全にはブロックされません。当パッチはAdGuardとuBlock Originの高度な機能を使い、この点を補強します。また、ほかにも多くの悪質サイトを登録しています。AdGuardおよびuBlock Origin標準のフィルターリストに追加しても効果はありますが、Yuki's uBlock Japanese filtersご利用の場合は不要です。
 
-<strong>2021年8月現在、「信頼するフィルタ」のチェックは必須ではありません。ただ、ごく一部に信頼するフィルタ用の機能を使っているため、当サイトを信頼していただけるならチェックを推奨します。AdGuardの場合、信頼されたフィルタはページに様々なスクリプトを挿入することが可能になるため、本当に信頼できるのでなければチェックすべきではありません。</strong>
+<strong>2021年9月現在、「信頼するフィルタ」のチェックは必須ではありません。ただ、ごく一部に信頼するフィルタ用の機能を使っているため、当サイトを信頼していただけるならチェックを推奨します。AdGuardの場合、信頼されたフィルタはページに様々なスクリプトを挿入することが可能になるため、本当に信頼できるのでなければチェックすべきではありません。</strong>
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
-
-公益の観点、また他リストへの依存がほぼないことから、このフィルタのみ[CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja)で提供しています。
 
 #### 対象外
 

@@ -158,7 +158,7 @@ Blocks mobile app banners. Included in Yuki's uBlock Japanese filters - Annoyanc
 
 ### Anti-scam enhancer for 280blocker adblock filter（only for AdGuard for Android and uBlock Origin）
 
-Enhance anti-scam capability of [280blocker adblock filter](https://280blocker.net/download/) by utilizing advanced capability of AdGuard/uBlock Origin. Only this list is licensed under CC0 1.0.
+Enhance anti-scam capability of [280blocker adblock filter](https://280blocker.net/download/) by utilizing advanced capability of AdGuard/uBlock Origin.
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
