@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210921
+! Version: 20210923
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -1609,6 +1609,12 @@ ampmedia.jp##.yarpp-related
 !#endif
 !#if env_firefox
 ampmedia.jp##^.yarpp-related
+!#endif
+!#if !adguard
+*$doc,removeparam=amp
+!#endif
+!#if adguard
+$removeparam=amp
 !#endif
 
 ! Exception
