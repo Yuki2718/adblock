@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210923
+! Version: 20210925
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -23,8 +23,11 @@
 .org/ad/$1p,domain=~playguide.org|~sonoyama.org|~ufcw870.org
 /(https?:\/\/)\w{30,}.me\/\w{30,}\./$script,3p
 /^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,3p,match-case
-/^https:\/\/[a-z]{8}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\.html$/$frame,3p,match-case
+/^https:\/\/[a-z]{8}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)?$/$frame,3p,match-case
 /^https:\/\/[a-z]{8}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\/$/$popup,3p,match-case
+/^https:\/\/[a-z]{8}\.(?:com|net)\/(?:bootstrap|bundle|index|jquery-ui|reset|styles?)\.css\?[0-9A-Za-z=]{64}$/$css,3p,match-case
+/^https:\/\/[a-z]{8}\.(?:com|net)\/(?:brand|error|favicon|header|icon|image|logo|star|warning)\.png\?[0-9A-Za-z=]{64}$/$image,3p,match-case
+/^https:\/\/[a-z]{8}\.(?:com|net)\/(?:ajax|articles|config|custom|data|menu|resources|validators)\.json$/$xhr,3p
 /^https?:\/\/[0-9a-z]{7,18}\.com\/(?:ace|animate|bootstrap(-datepicker)?|ckeditor|slick)\.min\.js\?1\d{6}$/$script,3p
 /adimg/*
 /banner468.$1p,domain=~3t1a.net|~9c25s.blog120.fc2.com|~a-head.cc|~and-shibuya.com|~angelino-lulu.com|~awatalia.com|~borero.net|~chiezobond.blog57.fc2.com|~chiyuudou.com|~clocknote.net|~crowsclaw.info|~digitalic-party.net|~dobuusagi.com|~emju.net|~f-g-s.net|~gairo4.blog133.fc2.com|~feltmusic.net|~forest306.com|~gameover25.web.fc2.com|~genkianamei.xxxxxxxx.jp|~golf.areasw.com|~hyakka.studio2x.com|~ironiac.com|~j-leskiss.com|~mandarin.dojin.com|~menesjapon.com|~navi1.x.fc2.com|~o-mikan.net|~otowaseinennkai.org|~red.redalice.net|~saisenturn.net|~shintamanegi.com|~sketchuprecordings.com|~stardust.studio2x.com|~yoccho.com
@@ -43,6 +46,7 @@ _Ad300x250_
 ||gnst.jp/r/banner_mng/
 ||caribbeancom.com^$3p,domain=~1pondo.tv|~adult-navi.net|~adult-websearch.net|~adultmovieplus.com|~caribbeancom-sample.com|~caribbeancomgirl.com|~d2pass.com|~docodemodouga.com|~eroking.net|~eroxjapanz.com|~fc1adult.com|~gayshamesf.org|~heydouga.com|~hotellestilleuls-hasparren.com|~javxxx.me|~medicaltourexpert.com|~nukiez.tv|~scar2014.com|~sexy-parts.com|~tenmusume.com|~warashi-asian-pornstars.fr|~xn--eckveb0l002pve5b.com
 ||cdn.storematch.jp^$3p
+||dlsite.jp/modpub/images2/$domain=~cospinfo.jp|~dlsite.com|~dojindl.com|~erogematomeblog.com|~erogamescape.dyndns.org|~erosou.com|~foxmafura.jp|~hytool.org|~kokageno.net|~liplis.mine.nu|~milkberry.com|~nanika-modoki.com|~richlink.blogsys.jp|~roomnumber55.com|~saboten.cc|~saiminfan.net|~satakerugames.com|~toratora.testdoujin.net|~tozicode.com
 ||dospara.co.jp/5img/side/bnr_
 ||ezoic.net^
 ||facebook.com/ajax/bootloader-endpoint*Comet
@@ -325,6 +329,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 
 @@/friendbuy.min.js$script,domain=butcherbox.com
 @@||adobedtm.com/launch-$script,xhr
+@@||adobedtm.com^*-libraryCode_source.min.js$script,domain=sbisec.co.jp
 @@||adobedtm.com^*/AppMeasurement.min.js$script,domain=apple.com|foodnetwork.com
 @@||adobedtm.com^*/AppMeasurement_Module_$script,domain=foodnetwork.com
 @@||adobedtm.com^*/launch-$script,xhr
