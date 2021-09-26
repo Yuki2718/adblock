@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210926
+! Version: 20210927
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -48,6 +48,9 @@ _Ad300x250_
 ||cdn.storematch.jp^$3p
 ||dlsite.jp/modpub/images2/$domain=~amacreate.com|~animedoujin.net|~blog.each-me.com|~blue-lib.com|~cospinfo.jp|~death-note.biz|~dejidownloaddoujin.net|~dlsite.com|~dojindl.com|~enjoymix.info|~ergmatome.com|~eroge-blog.jp|~erogematomeblog.com|~erogamescape.dyndns.org|~erosou.com|~fonetrason.net|~foro2014.com|~foxmafura.jp|~freenukige.com|~ftsf.me|~game-wiki.info|~hytool.org|~kichikueroge.com|~kokageno.net|~liplis.mine.nu|~makenleane.com|~milkberry.com|~mimikko.com|~musicpage.jp|~nanika-modoki.com|~narukei.com|~nenokuni.com|~oving.jp|~q-cumber-factory.com|~recovoice.com|~richlink.blogsys.jp|~roomnumber55.com|~saboten.cc|~sagisawashu.com|~saiminfan.net|~satakerugames.com|~sf-talk.com|~soukyu.net|~spy-online.info|~sukimono.jp|~toratora.testdoujin.net|~tozicode.com|~voiceholic.com|~xn--nck0cwa.xyz|~xn--vckua9mn43n.xyz|~yurige.info
 ||dospara.co.jp/5img/side/bnr_
+||doujin-assets.dmm.co.jp^$3p,domain=~animepress.net|~comicoco.net|~dejidownloaddoujin.net|~dvd-softin.com|~eronopower.com|~flashff-blog.com|~hcg-gallery.com|~romrador.com
+||ebook-assets.dmm.co.jp^$3p,domain=~av-book.com|~comicoco.net|~dmm.com|~douga100ka.jp|~eromatome-ru.com|~fetireview.com|~hagubook.com|~m-factory.com|~manga100ka.jp|~mcphersonscenicdesign.com|~narukei.com|~r18comic.info|~s-idol.biz|~spcomi.com
+||ebook-assets.dmm.com^$3p,domain=~dmm.co.jp
 ||ezoic.net^
 ||facebook.com/ajax/bootloader-endpoint*Comet
 ||g.doubleclick.net/tag/js/gpt.js$important,domain=accuweather.com
@@ -436,6 +439,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ?utm_campaign=$doc,removeparam=utm_campaign,domain=smfg.co.jp
 ?utm_source=*&usid=$doc,removeparam=/^utm_|usid/,domain=d-card.jp
 ?utm_source=google&utm_medium=*&gclid=$doc,removeparam=/^utm_/
+?utm_source=tw$doc,removeparam=utm_source
 ?waad=*&ugad=$doc,removeparam=/waad|ugad/,domain=fod.fujitv.co.jp
 ||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_ga=$doc,removeparam=/ga|_x?uid/
