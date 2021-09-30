@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20210929
+! Version: 20211001
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -13,6 +13,7 @@ sukima.me##.store-promotion-footer-box
 point.rakuten.co.jp##.modal-invest-over5million
 ||store.world.co.jp/res/p/common/img/top/bnr/30w/pop200721_sale.
 store.world.co.jp##.mod_message
+||webike.net/sys_images/caimg/20210813_redbaron_for_r.jpg
 ||yimg.jp/images/shp_edit/other/fc/mhd/s_sb_nw.png$domain=yahoo.co.jp
 ||youtube.com/embed/3hhC4n3Dr6I|$domain=tamashii.jp
 gendai.ismedia.jp##[href="https://gendai.ismedia.jp/articles/-/81809"]
@@ -312,8 +313,11 @@ point.cosme.net###sevendays-login
 ||cosmekitchen.jp/info/wp-content/themes/ck_2014/img/popup_
 cosmekitchen.jp###layer_board_area
 ||cpcdn.com/assets/recipe/interdevice_announce.$domain=cookpad.com
-cookpad.com###cboxOverlay[style="opacity: 0.4; cursor: auto; visibility: visible;"]
+cookpad.com###cboxOverlay
 cookpad.com###colorbox[tabindex="-1"][style="display: block; visibility: visible; top: 45px; left: 299px; position: fixed; width: 680px; height: 410px;"]
+||crocs.co.jp/on/demandware.static/*/IMG-EmailSignUp-Desktop-$image,1p
+crocs.co.jp###cboxContent.email-signup-lightbox
+crocs.co.jp###cboxOverlay
 ||crosset.onward.co.jp/images/tape/
 crosset.onward.co.jp##.tape
 ||d-gogo.com/apps/automizely-messages/layers/popup-bars/$frame
@@ -628,8 +632,6 @@ city.living.jp###area-select
 cnn.com##.sibling
 community.norton.com###block-norton-exit-poll-norton-poll-footer
 context.reverso.net###register-popup-bottom
-cookpad.com###colorbox
-cookpad.com,gesoten.com###cboxOverlay
 creativecommons.org###deed-donate-slide
 cryptocurrency-jp.net,ictmakes.com###js-footer-cta
 d.tube##.sticky.centered > div.announcement[style="width: 100%;"]
@@ -673,9 +675,9 @@ galleria.emotionflow.com,tegaki.pipa.jp###AboutFrame
 gazoo.com##.footer-floatbanner-area
 gekkan-fukugyou.jp###modal-content
 gekkan-fukugyou.jp###modal-overlay
+gesoten.com###cboxOverlay
 gitlab.com###slpFreeTrialBanner
 gizmodo.com##.js_modal_exit_intent
-goukashugi.jp###c-modal_bg
 h-navi.jp###ModalContent, #ModalOverlay
 hatena.ne.jp##.u-bnr--trial
 help.ea.com##.helpfulness-bar-outer
@@ -773,8 +775,6 @@ picrew.me###agreed-to-terms
 pinterest.*##body:style(overflow-y: scroll !important;)
 pinterest.*##div[data-test-id="giftWrap"]
 pinterest.*##div[style="visibility: visible; top: 80px; left: 99px;"]:has-text(探したい)
-pixta.jp###js-modal--recognized-subscription
-pixta.jp##body > .__b-popup1__.b-modal
 pr-park.com##.header-info
 quora.com##.qu-overflow--hidden[class*="qu-zIndex--modal_"]
 razer.com##.modal-newsletter
@@ -891,7 +891,6 @@ buzip.net###linkerBanner
 denwa-hikari.com###fixed_closing
 freshvoice.net##.c_bnr_01
 gesoten.com###colorbox:has(#modal-game-recommend-pc)
-goukashugi.jp###c-modal
 journal.botanistofficial.com##.modal
 okazurand.net###ado-side-drawer
 scan.netsecurity.ne.jp##.thm-panel-register-case
@@ -909,7 +908,6 @@ buzip.net##^#linkerBanner
 denwa-hikari.com##^#fixed_closing
 freshvoice.net##^.c_bnr_01
 gesoten.com##^#colorbox:has(#modal-game-recommend-pc)
-goukashugi.jp##^#c-modal
 journal.botanistofficial.com##^.modal
 liskul.com##^#xeory-fixed-banner
 okazurand.net##^#ado-side-drawer
@@ -1004,6 +1002,8 @@ zeiri4.com##.b-stickyShoukaiBanner
 /wp-content/plugins/icegram/*
 /wysija-newsletters/*
 ~dereferer.me###mc_embed_signup
+! Ignore generic
+cinci.jp,majorgeeks.com###mc_embed_signup
 ||buy-ap.piano.io/checkout/offer/show?displayMode=*&showCloseButton=false*&url=https%3A%2F%2Fwww.kyobun.co.jp%2Fnews%$frame,domain=kyobun.co.jp
 ||buy-ap.piano.io/checkout/offer/show?displayMode=*&showCloseButton=false*&hasLoginRequiredCallback=true$frame,domain=www.japantimes.co.jp
 japantimes.co.jp##.tp-backdrop
@@ -1042,7 +1042,6 @@ enfant.living.jp##.mailmagazine_text
 ||globis.jp/assets/img/common/image_news_letter.
 globis.jp##.news_letter
 ||go.techblitz.com/l/$frame,1p
-||goukashugi.jp/image/bnr_gouka_mm.
 ||hacks.mozilla.org/wp-content/themes/Hax/js/newsletter.
 ||hamee-consulting.co.jp/wp-content/themes/ecbook/img/right_mailmag_bn.
 ||honda.co.jp/layout/footer/img/btn_footer_mail
@@ -1111,7 +1110,6 @@ bitwave.showcase-tv.com##.merumaga
 bizhint.jp##.sg-recommend-register-area
 bunshun.jp###mail-magazine
 cbsnews.com##.newsletter_signup
-cinci.jp###mc_embed_signup
 dailyshincho.jp##.l-contents__section > dl.p-entry
 exchangewire.jp##.SocialNewsletter_Widget
 gazoo.com##.mailmag_link
@@ -1132,7 +1130,6 @@ japan.zdnet.com##.article-mailmagizine
 japan.zdnet.com##.mailmagazine
 jbl.com##.mail-form
 lifehacker.com##.js_subscribe
-majorgeeks.com###mc_embed_signup
 marketing-campus.jp##.mod_mailbox
 moongift.jp##.pre_text.mg-no-premium
 motorsport.com##.ms-footer > div.ms-footer_top:has(> div.ms-footer_top-start > a[href="/info/newsletter/"])
@@ -1565,7 +1562,7 @@ dsocker1234.blogspot.com##+js(set, new_config.timedown, 0)
 easylinkref.com,lnk.news,lnk.parts##+js(nano-sib, , , 0)
 ez4mods.com,techmody.io##+js(nano-sib, , *, 0)
 ec.line.me##+js(nano-stb, goOutlink, 2800)
-federleqa.icu,forex-trnd.com,imgalor.xyz,imgbigo.xyz,imgez.xyz,imgflyer.xyz,imgflyr.xyz,imggong.xyz,imgirx.xyz,imgjut.buzz,imgkaid.xyz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoka.buzz,imgkuiw.xyz,imglina.xyz,imgopp.xyz,imgoppo.xyz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgweika.buzz,imgwex.buzz,imgzer.net,imslp.org,kekolangti.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
+federleqa.icu,forex-trnd.com,imgalor.xyz,imgbigo.xyz,imgez.xyz,imgflyer.xyz,imgflyr.xyz,imggong.xyz,imgirx.xyz,imgjut.buzz,imgkaid.xyz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoka.buzz,imgkuiw.xyz,imglina.xyz,imgopp.xyz,imgoppo.xyz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgweika.buzz,imgwex.buzz,imgzer.net,imslp.org,kekolangti.com,michaelemad.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
 file4go.*##+js(set, time, 0)
 game8.jp##+js(rc, async-hide, html)
 get.adobe.com##+js(ra, checked, #chrExtCheckbox)
@@ -1599,7 +1596,7 @@ romhustler.org##+js(nano-sib, timer.remove)
 shorten.sh##+js(nano-sib, ti--)
 slreamplay.*##+js(nano-stb, grecaptcha.ready, *)
 streamtape.*##+js(set, towait, 0)
-aemenstore.com,aloass.com,alobyt.com,alocd.com,aloegg.com,alofps.com,alogum.com,aloguy.com,alohdd.com,byboe.com,cazzette.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rodjulian.com,semawur.com,staaker.com,taisv.com,techmody.io,thegoneapp.com,truebrandy.com,uebnews.online,yoshare.net##+js(nano-sib, counter, 2000)
+aemenstore.com,aloass.com,alobyt.com,alocd.com,aloegg.com,alofps.com,alogum.com,aloguy.com,alohdd.com,byboe.com,cazzette.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,mikl4forex.com,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rodjulian.com,semawur.com,staaker.com,taisv.com,techmody.io,thegoneapp.com,truebrandy.com,uebnews.online,yoshare.net##+js(nano-sib, counter, 2000)
 techcrunch.com##.homepage__event-promo, .upcoming-events
 thetechywizard.com##+js(nano-sib, timer, 1500)
 top.gg###video-root
