@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20211001
+! Version: 20211003
 
 .com/1?z=$script,third-party
 .com/add.php|$xmlhttprequest,third-party
@@ -32,6 +32,7 @@
 /^https:\/\/[-a-z]{9,15}\.com\/400\/\d{7}$/$script,third-party
 /^https:\/\/[a-z]{7,25}\.com\/v2(?=[-_0-9a-z]{0,62}[A-Z])(?=[-_a-zA-Z]{0,61}[0-9])(?=[0-9a-zA-Z]{0,60}[-_])[-_0-9a-zA-Z]{63}$/$script,third-party,match-case
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
+/^https?:\/\/[a-z]{6,10}\.com\/4\/\d{7}\/?$/$document,popup
 /^https?:\/\/[a-z]{8,10}\.com\/4\/\d{7}$/$document,popup
 /^https?:\/\/[a-z]{8,13}\.com\/5\/\d{7}$/$script,third-party
 /^https?:\/\/[a-z]{8}\.(?:com|net)\/tag\.min\.js$/$script,third-party
@@ -59,6 +60,7 @@
 /code/silent.js?h=
 /display/items.php?$script,third-party
 /eab/eab_fl.js
+/exzUndSJBH.jsx|$script,~third-party
 /fac.php$subdocument,third-party
 /files/js/ab.v11.js|$script,~third-party
 /fret/meow4/*$script
@@ -117,7 +119,6 @@
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager-gtm,domain=~academicwork.se|~olx.bg|~olx.pl|~olx.ro|~olx.ua|~olx.uz|~soranews24.com|~rocketnews24.com|~tv-asahi.co.jp
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=~express.co.uk
-||ipp.littlecdn.com/web/static/$image,third-party
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect=nooptext
 ||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices-gpt
