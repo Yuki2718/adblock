@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211003
+! Version: 20211005
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -92,7 +92,6 @@ cookpad.com###summer2021_modal
 ||push.daksham.in^$3p
 ||push.estart.jp^$3p
 ||push.reamaze.com^
-||push7.jp^
 ||pushalert.co^$3p
 ||pushcode.jp^
 ||pushbullet.com^$3p
@@ -107,6 +106,7 @@ cookpad.com###summer2021_modal
 ||pushwoosh.com^$3p
 ||realpush.media^$3p
 ||rocket-push.com^$3p
+||sdk.push7.jp^$3p,domain=~secret2.cygames.co.jp
 ||sendpulse.com^$3p
 ||sckxppzdm.com^$3p
 ||subscribers.com^$3p
@@ -951,6 +951,10 @@ reddit.com##.XPromoBlockingModal
 reddit.com##.xPromoChoiceBanner
 reddit.com##.XPromoInFeed
 reddit.com##.XPromoPill
+tiktok.com##div[class^="backdrop-"]
+tiktok.com##div[class^="jsx-"].tiktok-bottom:style(bottom: 0px!important;)
+tiktok.com##div[class^="jsx-"][style="bottom:49px"].footer-guide
+tiktok.com##body[style="overflow: hidden;"]:style(overflow: auto!important;)
 yourmystar.jp##^.toast-banner-block
 zeiri4.com##.b-stickyShoukaiBanner
 !#endif
@@ -1456,6 +1460,7 @@ nordot.app##^.sidebar__content > .brandModule
 ||alpen-group.jp/images/parts/banner/footer/ec_footter_SP_690_250.
 ||carsensor.net/static/sp/img/top/bnr.png
 ||wowma.net/exuc/promotion/$domain=wowma.jp
+news.yahoo.co.jp##.MtoCTool
 sbc-dental.com##.kotei-mob
 wowma.jp###promotionBanner
 !#endif
