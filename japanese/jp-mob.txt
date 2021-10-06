@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211006
+! Version: 20211007
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -56,6 +56,7 @@
 ||jav789.com/assets/love/index.js
 ||pics.dmm.co.jp^$domain=niji-gazo.com
 ||nan-net.com/show/bbs/s/inc/$frame
+||oppai-doga.info/wp-content/themes/opid/js/spad.
 ||sextvx.com/*/ads/mobile/$frame
 ||smaero.jp/advimg/
 ||sunporno.com/bs.php
@@ -361,6 +362,7 @@ yoyaku-top10.jp##.p-floating_banner_box
 ! ---------- Cosmetic specific - adult ----------
 adacomi.com##div[style$="width:300px; height:250px;"]
 adacomi.com,eromanga-time.com,eromanga-yoru.com,ivfree.me,momon-ga.com,nan-net.com,nukemanga.com,shikotch.net,tokyomotion.net##div[id^="active_overlay_"]
+adult-machiko.com##div[class^="ad_"]
 bakufu.jp###blogRoll
 bakufu.jp##.banner > br
 cartoonpornvideos.com##.ads
@@ -396,6 +398,7 @@ javhdporn.net##.sidebar-ads
 javhdporn.net##.under-player-ad-mobile
 javsubtitle.co###mimpanel
 javsubtitle.co##.mid-ads
+kimootoko.net###custom_html-23
 m.proporn.com###banner_overlay-postitial-video:remove()
 m.sextvx.com###home_hor_bot_ads
 m.sextvx.com###home_hor_top_ads
@@ -433,6 +436,7 @@ moeimg.net##^#overlay_frame
 xhamster.*##^script:has-text(popunder)
 weloma.net##^a[href="https://2048.biz/mobile/"]
 
+h-ken.net##+js(acis, onload, ad)
 m.sextvx.com##+js(acis, document.querySelectorAll, popMagic)
 supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 
