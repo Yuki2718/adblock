@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211005
+! Version: 20211008
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -185,6 +185,8 @@ news.yahoo.co.jp##li.newsFeed_item > div:has-text(あなたの興味や関心)
 qiita.com##.ac-CampaignLink
 report.netcraft.com##.notification-sidebar
 search.rakuten.co.jp##.field > .dui-tooltip[data-tooltip-id=announcement-shipping]
+similarweb.com##.top-notification
+similarweb.com##+js(rc, top-notification-parent, body, stay)
 slashdot.org###announcement
 shrinkzzy.link##+js(acis, firebase.initializeApp)
 sony.jp##.s5-frontLogin__notificationItem--favorite

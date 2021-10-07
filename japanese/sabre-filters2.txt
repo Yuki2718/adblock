@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211005
+! Version: 20211008
 
 ! General blocking
 /CookieInfo.
@@ -84,7 +84,7 @@
 ##.cc-window[aria-label="cookieconsent"]
 ##.cc_banner
 ##.cookie-dialog-wrapper
-##.cookies-notification
+##.cookies-notification:not(html):not(body)
 ##.cookies-popup
 ##.ensureCookie
 ##.eu-cookie-compliance-banner:not(body):not(html)
@@ -104,6 +104,7 @@
 ! For Ignore generic
 nordvpn.com##.cc-window[aria-label="cookieconsent"]
 selectra.jp##.eu-cookie-compliance-banner
+similarweb.com##.cookies-notification
 
 ! Individual sites
 -cookie-law-popup.$domain=waaw.to
@@ -244,7 +245,7 @@ cbc.ca##.privacyNotification
 cbsnews.com###onetrust-banner-sdk
 cdrinfo.com,developer.nvidia.com,eneuro.org,jneurosci.org,pnas.org###sliding-popup
 cebupacificair.com,ubuntu.com##.cookie-policy
-champlain.edu,deloitte.com,dxc.technology##.optanon-alert-box-wrapper
+champlain.edu,deloitte.com,dxc.technology,paloaltonetworks.com##.optanon-alert-box-wrapper
 china-airlines.com###cookieInfoDetails
 china-airlines.com##.top-bar
 chocolatey.org###cookieNoticeAlert
