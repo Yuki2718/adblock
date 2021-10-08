@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211007
+! Version: 20211009
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -82,7 +82,7 @@
 *##.quads-location
 *##.thk_ps_widget
 *##div[class][data-index][style^="float: none;"]
-*##div[id^="active_overlay_"]
+*##div[id^="active_overlay"]
 *##[class*=post-] [class*=content] div[id*="-"][class*="%"]
 
 ! ---------- Cosmetic specific ----------
@@ -297,7 +297,7 @@ onlinegamer.jp###adSpRecommend
 outlook.live.com###OwaContainer
 pixiv.net##.ad-frame-container
 poginfo.ddo.jp##.mx-auto[style$="text-align: center;"]
-pokemon.gamerstand.net,xn--gdkl0dubtwb7e.net,xn--o9j0bk1rwe8bvh.com,xn--o9j0bk3kzb8d3ee20ala8a.com,xn--o9j0bk5t7exbwe.com##.Bnr
+pokemon.gamerstand.net,xn--8mr619f.gamerstand.net,xn--gdkl0dubtwb7e.net,xn--o9j0bk1rwe8bvh.com,xn--o9j0bk3kzb8d3ee20ala8a.com,xn--o9j0bk5t7exbwe.com##.Bnr
 pokemongo-master.com##.imglink-box
 post.tv-asahi.co.jp##.sp-ad2
 precurematome.com###mobile_text-61
@@ -307,6 +307,7 @@ qiita.com##div[class^="css-"] > div[class^="css-"] > div[id^="logly-"]:upward(2)
 rastaneko-blog.com##center > div[id][style]
 realsound.jp##.entry-summary[style$="text-align:center;min-height:95px;"]
 realsound.jp##.entryBottomAd
+realtime-chart.info##div[style="height:334px;width:100%;background:#000;font-size:38px"]
 recipe.rakuten.co.jp##.ads_recipe_middle_banner_pr
 recipe.rakuten.co.jp##p[style="color: rgb(160, 160, 160); font-size: 10px; text-align: center;"]
 reddit.com##.adLinkBar:upward(article[style="z-index: 1;"])
@@ -371,12 +372,16 @@ yoyaku-top10.jp##.p-floating_banner_box
 ! ---------- Cosmetic specific - adult ----------
 adacomi.com##div[style$="width:300px; height:250px;"]
 adult-machiko.com##div[class^="ad_"]
+aya0205.smart-douga.mobi##.entry_more > div[style^="background-color: rgb(88, 140, 115)"]
+aya0205.smart-douga.mobi##.entry_more > div[style^="background-color: rgb(88, 140, 115)"] ~ br
 bakufu.jp###blogRoll
 bakufu.jp##.banner > br
 cartoonpornvideos.com##.ads
 cartoonpornvideos.com##div[id^="adn-"]
+cuebic.biz##.shelf-text script[src^="https://img.ad-nex.com/"]:upward(.shelf-text)
 enuchi.jp##.mobile-ad
 enuchi.jp##.related-li[style="height:96px;vertical-align:middle;"]
+erodougameijin.com##.sidebar-style > .s2:has-text(オススメ記事)
 erogazopple.com###ad06
 erogazopple.com###text-45
 erogazopple.com##.book_ad
@@ -413,6 +418,7 @@ javhdporn.net##.under-player-ad-mobile
 javsubtitle.co###mimpanel
 javsubtitle.co##.mid-ads
 kimootoko.net###custom_html-23
+leaked.jp##.age-sp
 m.proporn.com###banner_overlay-postitial-video:remove()
 m.sextvx.com###home_hor_bot_ads
 m.sextvx.com###home_hor_top_ads
@@ -425,8 +431,11 @@ momoniji.com###content-bottom > #mobile_text-11:upward(1)
 momoniji.com###mobile_text-3
 nan-net.com##div[style*="height:250px;"]
 nan-net.com##div[style="height:100px;"]
+newpuru.doorblog.jp##.ad
 niji-gazo.com###dmm-recommend
 nukemanga.com##.enhanced-text-widget
+pakosen.com##.hentry > .widget_custom_html
+panchirarism.blog.fc2.com##.nav-wrap > br
 pantiragasuki.com##.ninja-recommend-block
 pornhub.com,redtube.com,redtube.net##.adContainer
 pornicom.com##.top-spot
@@ -450,10 +459,14 @@ news.mynavi.jp##.articleList-attention:style(min-height: 0 !important;)
 news.mynavi.jp##.articleList-related-article:style(min-height: 0 !important;)
 shikotch.net##html.inv_scroll_cancel:style(overflow: auto!important;)
 
+aya0205.smart-douga.mobi##^.entry_more > div[style^="background-color: rgb(88, 140, 115)"] ~ div[style="text-align: center;"]
 bakufu.jp##^.adList
 bakufu.jp##^table[width="100%"][cellspacing="0"][cellpadding="3"][border="0"]
 blog.goo.ne.jp##^.banner--marchel:upward(#msg-box-app-recommend)
+erodougameijin.com##^div[class^=flexbox]:not(.flexbox3)
+erogazou-pinkline.com##^#adnex-text-widget
 erogazooo.club##^.spad
+leaked.jp##^.dfad
 moeimg.net##^#overlay_frame
 xhamster.*##^script:has-text(popunder)
 weloma.net##^a[href="https://2048.biz/mobile/"]
