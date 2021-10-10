@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211009
+! Version: 20211011
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -330,6 +330,8 @@ storee.saisoncard.co.jp##.block-recommend-container
 storee.saisoncard.co.jp##.mainframe_ > .event_
 wpb.shueisha.co.jp##.js-cxense-widget-recommend
 
+reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
+
 @@/friendbuy.min.js$script,domain=butcherbox.com
 @@||adobedtm.com/launch-$script,xhr
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=sbisec.co.jp
@@ -338,7 +340,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||adobedtm.com^*/launch-$script,xhr
 @@||adobedtm.com^*/mbox-contents-$script,domain=americanexpress.com|costco.com|lenovo.com|nfl.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
-@@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|support.nec-lavie.jp|telegraph.co.uk|vanityfair.com|wired.com
+@@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|auspost.com.au|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|support.nec-lavie.jp|telegraph.co.uk|vanityfair.com|wired.com
 @@||api.cxense.com/document/search?$script,xhr,domain=friday.kodansha.co.jp|ntv.co.jp|tv-tokyo.co.jp
 @@||api.cxense.com/public/widget/click/$domain=api.cxense.com
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
