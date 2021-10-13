@@ -1265,36 +1265,33 @@ tiktok.com##.feedback
 topics.or.jp##.recommend-article
 transit.yahoo.co.jp##.realestateSlink
 travel.rakuten.co.jp###rexSurveyRoot > div:only-child > div:only-child
-twitter.com##div[aria-label^="タイムライン"][aria-label$=さんのツイート] > div[style^="position: relative"] > div[style^="position: absolute"] > div[class^=css-] > div[class^=css-]:empty
 ! おすすめユーザー
 twitter.com##aside[aria-label=おすすめユーザー]:upward(1)
-twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute"] a[href^="/i/connect_people?"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute"] div[role=button] > div[dir=auto] > span > span:has-text(フォロー):upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: 話題を検索"] > div[style] > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: 話題を検索"] > div[style] > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"]) ~ div[style^="position: absolute"]
-twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] div > a[href^="/i/connect_people?"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] div[role=button][data-testid$=-follow]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめユーザー):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^=transform] > div > a[href^="/i/connect_people?"]
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"]  > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(おすすめユーザー):upward(div[style^=transform])
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div[style^=transform] > div > a[href^="/i/connect_people?"]
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])
+twitter.com##div[aria-label="タイムライン: 話題を検索"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(おすすめユーザー):upward(div[style^=transform])
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] > div > a[href^="/i/connect_people?"]
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(おすすめユーザー):upward(div[style^=transform])
 ! おすすめトピック
 twitter.com##div[aria-label="タイムライン: "] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[aria-label="タイムライン: "])
-twitter.com##div[aria-label="タイムライン: トピック"] > div > div[style^="position: absolute"] div > a[href$="/i/topics/picker/home"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: トピック"] > div > div[style^="position: absolute"] div[role=presentation]:first-child > div > div:first-child div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: トピック"] div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[style^="position: absolute"])
-twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] div > a[href$="/i/topics/picker/home"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] div[role=presentation]:first-child > div > div:first-child div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^="position: absolute"] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] > div > a[href^="/i/topics/picker/home"]
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] div[data-testid=ScrollSnap-SwipeableList]:has(div[aria-label^=トピック「][aria-label$=をフォロー])
+twitter.com##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[style^=transform])
 ! リストを見つける
-twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] a[href="/i/lists/suggested"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] div[dir=auto][style^=-webkit] > span:has-text(新しいリストを見つける):upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: 自分のリスト"] div[style^="position: absolute"] span > span:only-child:has-text(フォロー):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: 自分のリスト"] > div > div[style^=transform] > div > a[href="/i/lists/suggested"]
+twitter.com##div[aria-label="タイムライン: 自分のリスト"] > div > div[style^=transform] > div > a[href^="/i/lists/"] div[role=button] > div > span > span:upward(div[style^=transform])
+twitter.com##div[aria-label="タイムライン: 自分のリスト"] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text(新しいリストを見つける):upward(div[style^=transform])
 ! タイムラインにトピックも表示しましょう
-twitter.com##div[style^="position: absolute"] section > div[aria-label="タイムライン: Carousel"] > nav div[role=presentation]:first-child > div > div:first-child div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] div > a[href="/i/topics/picker/home"]:upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] h2 + div[style^=-webkit] > span:has-text(これらのトピックについてのトップツイートが):upward(div[style^="position: absolute"])
-twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] h2 + div[style^=-webkit] > span:has-text(これらのトピックについてのトップツイートが):upward(div[style^="position: absolute"]) + div[style^="position: absolute"]
+!twitter.com##div[style^="position: absolute"] section > div[aria-label="タイムライン: Carousel"] > nav div[role=presentation]:first-child > div > div:first-child div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
+!twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] div > a[href="/i/topics/picker/home"]:upward(div[style^="position: absolute"])
+!twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] h2 + div[style^=-webkit] > span:has-text(これらのトピックについてのトップツイートが):upward(div[style^="position: absolute"])
+!twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] h2 + div[style^=-webkit] > span:has-text(これらのトピックについてのトップツイートが):upward(div[style^="position: absolute"]) + div[style^="position: absolute"]
 ! プッシュ通知
-twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute"] h1[dir] > span[class^=css]:has-text(プッシュ通知):upward(div[style^="position: absolute"])
+twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^=transform] h1 > span:has-text(プッシュ通知):upward(div[style^=transform])
 wedge.ismedia.jp##.related-article
 www.nicovideo.jp##.FeedbackLink
 www.yahoo.co.jp###Service.ult__mods
