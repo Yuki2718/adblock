@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211013
+! Version: 20211014
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -256,6 +256,7 @@ smart-flash.jp##^.adsBlock
 /s_codeCommon.$domain=buyback.rakuten.co.jp|denwa.rakuten.co.jp|delivery.rakuten.co.jp|keiba.rakuten.co.jp|rakuten-life.co.jp|shaken.rakuten.co.jp
 /s_code_$domain=cs.myjcom.jp|ext.hp.com|fontplus.jp|froma.com|haken.rikunabi.com|his-j.com|kinarino-mall.jp|surpricenow.com|townwork.net|www.kddi.com
 /s_code2.$domain=infoseek.co.jp
+/sdc.js
 /services/analytics/*
 /sitecatalyst/*$domain=ana.co.jp|asia.nikkei.com|bellemaison.jp|energy.rakuten.co.jp|fujisan.co.jp|jcom.co.jp|ozmall.co.jp|recruit.co.jp|takarakuji.rakuten.co.jp
 /v60.js
@@ -347,7 +348,7 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
 @@||api.cxense.com/public/widget/data?$domain=cinemacafe.net|googirl.jp|marketwatch.com|wsj.com
 @@||api.cxense.com/public/widget/data?*&ctx=https%3A%2F%2Fure.pia.co.jp$script,domain=cdn.cxpublic.com
-@@||api.cxense.com^$script,domain=ntv.co.jp
+@@||api.cxense.com^$script,domain=bizjournals.com|ntv.co.jp
 @@||api.ipify.org^$xhr,domain=speedcheck.ky
 @@||asadcdn.com/adlib/pages/bild.js$script,domain=bild.de
 @@||asadcdn.com/adlib/libmodules/desktop/instream.$script,domain=bild.de
@@ -355,11 +356,13 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 @@||assets.adobedtm.com^*/mbox-contents-$script,domain=nsat.collegeboard.org|sony.jp
 @@||cdn-net.com/cc.js$script,domain=butterfieldonline.com|uber.com|ubereats.com
 @@||cdn.amplitude.com/libs/amplitude-*-min.gz.js$domain=pdfexpert.com
+@@||cdn.cxense.com/cx.cce.js$domain=tarzanweb.jp
+@@||cdn.cxense.com/cx.js$domain=tarzanweb.jp|wpb.shueisha.co.jp
 @@||cdn.cxense.com^$script,domain=marketwatch.com
 @@||cdx.cedexis.net^$domain=bloomberg.*
 @@||cleverbridge.com/*/cleveranalytics.js^$domain=secure.ccleaner.com
-@@||cxense.com/cx.cce.js$script,domain=googirl.jp
-@@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|ure.pia.co.jp|wpb.shueisha.co.jp
+@@||cxense.com/cx.cce.js$script,domain=bizjournals.com|googirl.jp
+@@||cxense.com/cx.js$script,domain=bizjournals.com|cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|ure.pia.co.jp
 @@||disaportal.gsi.go.jp/maps/js/counter.js
 @@||ensighten.com^*/Bootstrap.js$domain=americanexpress.com|britishairways.com|citi.com|dell.com|hp.com|t-mobile.com
 @@||ensighten.com^*/code/$script
