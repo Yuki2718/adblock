@@ -238,7 +238,10 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 - グランブルーファンタジー左側のバー
 - Twitter右側の「いまどうしてる？」
 - ニコニ広告
+- ニコニコ動画トップの「協賛」、「メディアパートナー」、「協力」
 - スポニチ競馬をFirefoxで閲覧したときのサポート外警告
+- Amazonカート内プロモーション
+- Avgle白文字の英文警告
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt)
