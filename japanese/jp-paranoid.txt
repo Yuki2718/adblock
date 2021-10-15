@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211014
+! Version: 20211016
 
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -210,6 +210,7 @@ smart-flash.jp##^.adsBlock
 ||click.dtiserv2.com^
 ||click.duga.jp^
 ||decotra.tokyo^
+||emjcd.com^$doc
 ||fam-ad.com^
 ||fintech-asp.com^
 ||focas.jp^
@@ -217,6 +218,7 @@ smart-flash.jp##^.adsBlock
 ||g-af.com^
 ||get.mobu.jp^
 ||i2idata.com^
+||kqzyfj.com^$doc
 ||refer.ccbill.com^
 ||smart-a.jp^
 ||smart-c.jp^$doc
@@ -425,7 +427,9 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 *$doc,removeparam=utm_brand
 .com/lp/*^utm_medium=$doc,removeparam=utm_medium
 .com/lp/*^utm_campaign=$doc,removeparam=utm_campaign
+.com/lp/*^utm_content=$doc,removeparam=utm_content
 .com/lp/*^utm_source=$doc,removeparam=utm_source
+.com/lp/*^utm_term=$doc,removeparam=utm_term
 .jp/lp/*^utm_campaign=$doc,removeparam=utm_campaign
 .jp/lp/*^utm_source=$doc,removeparam=utm_source
 .jp/lp/*?trcd=$doc,removeparam=trcd
