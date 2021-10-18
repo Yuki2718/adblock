@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211016
+! Version: 20211019
 
 .biz/?auf=*&sub1=$document
 .biz/?p=*&sub1=$document
@@ -47,6 +47,8 @@
 /templates/_assets/push-skin/skin.html
 /track/click.php?c=*&zoneid=$document
 /v2/a/skm/*$document,popup
+/^http:\/\/(?:\d{10}\.)?[-a-z]{13,}\.de\/\S{10,}\.html/$document
+/^http:\/\/(?:\d{10}\.)?[a-z]{6}\.nl\/\d{6}\.html/$document
 /^http:\/\/(?:\d{9}|[-a-z]{25,})\.[a-z]{9,}\.it\//$document
 /^http:\/\/\d{9,10}\.[-a-z]{6,25}\.es\/(?:\d{6}|\S{7,})\.html/$document
 /^http:\/\/[-0-9a-z]{4,8}\.ru\/\d{6}\.html/$document
@@ -58,13 +60,10 @@
 /^http:\/\/[a-z]{9,10}\.ddns/$document,domain=ddns.net
 /^https:\/\/capitalping\d{2}\.online\/\?u=/$doc,domain=online
 /^https:\/\/feedbackip\d{2}\.pw/$document
-/^https:\/\/happydays\d{2}\.site\/\?u=/$document
 /^https:\/\/serch\d{2}\.biz\/\?p=/$document
 /^https:\/\/traffichub\d{2}\.[a-z]{2,6}\/\?u=/$document
 /^https:\/\/xn--\d{4,5}-[a-z]{3}\.biz\/[0-9a-z]+\?key=/$document
-/^https:\/\/www\.japan\d-\d{2}\.xyz\//$document,popup
-/^https:\/\/[-0-9a-z]{12,19}\.(?:com|life)\/\?u=[0-9a-z]{7,}&o=[0-9a-z]{7,}&t=S1/$document
-/^https:\/\/[-a-z]{12,}\.life\/\?u=[0-9a-z]+&o=/$document
+/^https:\/\/[-0-9a-z]{12,}\.life\/\?u=[0-9a-z]{7,}&o=[0-9a-z]{7,}&t=/$document
 /^https:\/\/[-a-z]{5,10}\d{4,6}\.[a-z]{5,18}\.cl\/[%_0-9a-zA-Z]{10,}\.html/$document
 /^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?u=[0-9a-z]+&o=/$document
 /^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?utm_campaign=\w{40,}&t=/$document
@@ -89,6 +88,7 @@
 ||0redirc.com^$document,popup
 ||0rg.link^$document,popup
 ||1111sale.us^$document,popup
+||123fastcdn.com^$document
 ||143.244.169.239^$document
 ||15dfjkbvdf.club^$document,popup
 ||1919otokonosex.xyz^$document
@@ -218,7 +218,7 @@
 ||bestlifeblog.ru^$document
 ||bestoffer21.info^$document,popup
 ||bestprotection.site^$document
-||bestsecretflirt.com^$document
+||bestsecretflirt.com^$document,popup
 ||beta-news.org^$document,popup
 ||betchan19.com^$document
 ||betgorebysson.club^$document
@@ -465,6 +465,7 @@
 ||hsrvu.com^$document,popup
 ||hugedomains.com^$subdocument,third-party
 ||iamnaughty.com^$document,popup
+||icabby.nl^$document
 ||ichaichat.xyz^$document,popup
 ||ifetirw.xyz^$document
 ||igetnaughty.com^$document
@@ -527,6 +528,7 @@
 ||kitchingsmedia.com^$document
 ||kgtdthfn2y4n.com^$document
 ||kokon.jp.net^$document
+||konfi-project.de^$document
 ||konsumersalento.it^$document
 ||kqzyfj.com^
 ||krzeminek.pl^$document
@@ -653,6 +655,7 @@
 ||nosidance.org^$document
 ||nowhookupshere.com^$document
 ||nowvisitor.rentalcgi.com/counter.php?
+||ntvpevnts.com^$all
 ||numbersleasteye.xyz^$document
 ||numerology9111.site^$document
 ||nuhte.com^$document
@@ -672,6 +675,7 @@
 ||onmiccatania.it^$document
 ||onryshop.xyz^$document
 ||optica-art.ru^$document
+||optnx.co^$document,popup
 ||orchideaonlus.it^$document
 ||orenoitimotu2020dekasacup.xyz^$document
 ||orenoitimotu2020katasacup.xyz^$document
@@ -862,6 +866,7 @@
 ||to6s.biz^$document,popup
 ||todhamilton.pro^$document
 ||top2-personal-loans-credits.com^$document,popup
+||toplov.com^$document,popup
 ||topmatch4you.com^$document,popup
 ||totaltopposts.com^$document,popup
 ||tourism-services.online^$document,popup
@@ -914,6 +919,7 @@
 ||vun.fyi^$document,popup
 ||vur.fyi^$document,popup
 ||vyezda.ru^$document
+||w4w-keepon.ch^$document
 ||waitforit.site^$document
 ||wakuwakunet.jp^$document
 ||warming-need.xyz/*.php$document
