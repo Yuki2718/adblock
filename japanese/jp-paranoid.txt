@@ -4,6 +4,7 @@
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 ! Version: 20211019
 
+! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 /^\w+://172\.(?:1[6-9]|2\d|3[01])(?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){2}[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -19,25 +20,27 @@
 ||tplinkwifi.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||[::1]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 
+! ---------- Ads general ----------
 -300x250-$~xhr
 .org/ad/$1p,domain=~playguide.org|~sonoyama.org|~ufcw870.org
 /(https?:\/\/)\w{30,}.me\/\w{30,}\./$script,3p
 /^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,3p,match-case
 /^https:\/\/[a-z]{8,15}\.(?:com|net|xyz)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)?$/$frame,3p,match-case
 /^https:\/\/[a-z]{8,15}\.(?:com|net|xyz)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\/$/$popup,3p,match-case
-/^https:\/\/[a-z]{8,15}\.(?:com|net|xyz)\/(?:bootstrap|bundle|index|jquery-ui|reset|styles?)\.css\?[0-9A-Za-z=]{64}$/$css,3p,match-case
-/^https:\/\/[a-z]{8,15}\.(?:com|net|xyz)\/(?:brand|error|favicon|header|icon|image|logo|star|warning)\.png\?[0-9A-Za-z=]{64}$/$image,3p,match-case
-/^https:\/\/[a-z]{8}\.(?:com|net|xyz)\/(?:ajax|articles|config|custom|data|menu|resources|validators)\.json$/$xhr,3p
+/^https:\/\/[a-z]{8,15}\.(?:com|net|xyz)\/(?:bootstrap|bundle|index|jquery-ui|reset|styles?)\.css\?[0-9A-Za-z=]{48,}$/$css,3p,match-case
+/^https:\/\/[a-z]{8,15}\.(?:com|net|xyz)\/(?:brand|error|favicon|header|icon|image|logo|star|warning)\.png\?[0-9A-Za-z=]{60,}$/$image,3p,match-case
+/^https:\/\/[a-z]{8,15}\.(?:com|net|xyz)\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xhr,3p
 /^https?:\/\/[0-9a-z]{7,18}\.com\/(?:ace|animate|bootstrap(-datepicker)?|ckeditor|slick)\.min\.js\?1\d{6}$/$script,3p
 /adimg/*
 /banner468.$1p,domain=~3t1a.net|~9c25s.blog120.fc2.com|~a-head.cc|~and-shibuya.com|~angelino-lulu.com|~awatalia.com|~borero.net|~chiezobond.blog57.fc2.com|~chiyuudou.com|~clocknote.net|~crowsclaw.info|~digitalic-party.net|~dobuusagi.com|~emju.net|~f-g-s.net|~gairo4.blog133.fc2.com|~feltmusic.net|~forest306.com|~gameover25.web.fc2.com|~genkianamei.xxxxxxxx.jp|~golf.areasw.com|~hyakka.studio2x.com|~ironiac.com|~j-leskiss.com|~mandarin.dojin.com|~menesjapon.com|~navi1.x.fc2.com|~o-mikan.net|~otowaseinennkai.org|~red.redalice.net|~saisenturn.net|~shintamanegi.com|~sketchuprecordings.com|~stardust.studio2x.com|~yoccho.com
-/gpt.js$script,xhr
 /images/ad-$~script,domain=~slimjet.com
 /images/ad.$~script,domain=~ngohq.com
 /9[a-g0-9]{21}\.online\/9[a-g0-9]{21}\.js$/$script,3p,badfilter
 /^https?:\/\/[a-z0-9]{7,}\.online\/[a-z0-9]{7,}\.js$/$script,3p
 /wpsafelink.js
 _Ad300x250_
+
+! ---------- Ads specific ----------
 ||4ka.net/images/top/banner/
 ||accuweather.com/bundles/prebid.$important
 ||aiasahi.jp/ads/$important
@@ -45,7 +48,7 @@ _Ad300x250_
 ||amazonaws.com/storage.shukatsu-ichiba.com/banner/$domain=shukatsu-ichiba.com
 ||gnst.jp/r/banner_mng/
 ||caribbeancom.com^$3p,domain=~1pondo.tv|~adult-navi.net|~adult-websearch.net|~adultmovieplus.com|~caribbeancom-sample.com|~caribbeancomgirl.com|~d2pass.com|~docodemodouga.com|~eroking.net|~eroxjapanz.com|~fc1adult.com|~gayshamesf.org|~heydouga.com|~hotellestilleuls-hasparren.com|~javxxx.me|~medicaltourexpert.com|~nukiez.tv|~scar2014.com|~sexy-parts.com|~tenmusume.com|~warashi-asian-pornstars.fr|~xn--eckveb0l002pve5b.com
-||cdn.storematch.jp^$3p
+!||cdn.storematch.jp^$3p
 ||dospara.co.jp/5img/side/bnr_
 ||ebook-assets.dmm.com^$3p,domain=~brodymag.com|~dmm.co.jp
 ||ezoic.net^
@@ -68,8 +71,8 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 @@||nicoad.nicovideo.jp/v1/nicoadgroups|$xhr,1p,badfilter
 @@||speee-ad.akamaized.net^$css,image,script,domain=saitama-np.co.jp,badfilter
 @@||tochinavi.net/ad/img/$image,1p,badfilter
-@@||www.google.*/search*tbm=shop$shide,badfilter
-@@||www.google.*/shopping/$shide,badfilter
+
+! ---------- Cosmetic for ads ----------
 ##body[id][class*=post-] section[class*=cta]
 2099.jp##.ugb-cta:not(.ugb-cta--design-plain)
 baysia-tokyo.com##.ctawidget
@@ -82,16 +85,16 @@ recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
 webike.net###pc_top_obi_2
 www.google.*##*:not([class^="sh-sr__shop-result-group"]) #kp-wp-tab-overview g-dropdown-menu:upward(#kp-wp-tab-overview > div):has(a[href*="/aclk?"][href$="adurl="])
 www.google.*##.sh-sr__shop-result-group .sh-sp__btn:matches-css(font-size: 13px):upward(.sh-sr__shop-result-group):has(a[href^="/aclk"][href$="adurl="])
-www.google.*#@#*:not([class^="sh-sr__shop-result-group"]) [href^="/aclk"][href$="adurl="]:upward(3)
 www.google.*#@#[href^="https://www.googleadservices.com/pagead/aclk?"][href$="adurl="]:upward(3)
 xn--cck1a7gsd645rnx7b.com##.thumbnail > iframe[src^="//adframe."]:upward(1)
 youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.playerAds)
-! commented out till 1.38
-!youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 ~2099.jp,~baysia-tokyo.com,~mazimazi-party.com##article[id][class*=post-] div[class*=cta]
+
+! ---------- Exception for ads ----------
 @@||abhd.co.jp/images/ad.jpg
 @@||ad-house.jp/images/ad-top_01.gif
 @@||aditalia.jp/images/ad-$image,1p
@@ -194,7 +197,7 @@ iwatetabi.jp##^#adbnr
 smart-flash.jp##^.adsBlock
 !#endif
 
-! Affiliate links
+! ---------- Affiliate links ----------
 ||aaaf.jp^
 ||ad-feed.com^
 ||ad-link.net^
@@ -233,6 +236,7 @@ smart-flash.jp##^.adsBlock
 ! Block ads on some videos while break other ones.
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tver.jp,badfilter
 
+! ---------- Analytics general ----------
 -adobe-analytics/
 -contrib-ads/
 .s_code.js$domain=cadillacjapan.com|chevroletjapan.com
@@ -271,56 +275,64 @@ smart-flash.jp##^.adsBlock
 ://lightning.*/launch/
 _omniture.$script,domain=mathworks.com
 
+! ---------- Analytics servers ----------
+||asadcdn.com^$3p
+||cdn-net.com^$3p
+||cedexis.net^$3p
+||ensighten.com^$3p
+! FP for the sake of security
+||fraudjs.io^$3p
+||geoip-js.com^$3p
+||ioam.de^
+||ip-api.com^$3p
+||ipapi.co^$3p
+||ipdata.co^$3p
+||ipify.org^$3p
+||lptag.liveperson.net^
+! github.com/AdguardTeam/AdguardFilters/pull/67992
+||mkto-*.com^$3p
+||monitor.azure.com^
+||rtoaster.jp^$3p
+||tags.tiqcdn.com^
+||tm.ma.future-shop.net^
+
+! ---------- Analytics specific ----------
 @@||bdash-cloud.com/out/recommendations?$script,3p,badfilter
 @@||bdash-cloud.com/recommend-script/$script,3p,badfilter
 @@||bdash-cloud.com/recommend-script/$script,domain=junonline.jp
 ||adobedtm.com^$3p,domain=~adobe.com
 ||api.nike.com/measure/uxevents/
 ||api.twitter.com^*/external_referer.json|
-||asadcdn.com^$3p
 ||blog.hubspot.jp/hs/cta/cta/current.js
 ||browser.pipe.aria.microsoft.com^
 ||carsensor.net/vos/
-||cdn-net.com^$3p
-||cedexis.net^$3p
 ||cleverbridge.com/*/cleverAnalytics.js^
+||collect.igodigital.com^$script
 ||cxense.com^$frame,script,xhr,3p
-||ensighten.com^$3p
 ||facebook.com/platform/scribe_endpoint.php/
-! FP for the sake of security
-||fraudjs.io^$3p
-||geoip-js.com^$3p
 ||gsght.com/twizards.js
-||ioam.de^
-||ip-api.com^$3p
-||ipapi.co^$3p
-||ipdata.co^$3p
-||ipify.org^$3p
 ||js.stripe.com/v3/fingerprinted/
 ||linkedin.com/li/track^
 ||livechatinc.com/tracking.js
-||lptag.liveperson.net^
 ||misumi-ec.com/vcommon/common/js/dtm-
-! github.com/AdguardTeam/AdguardFilters/pull/67992
-||mkto-*.com^$3p
-||monitor.azure.com^
 ||popin.cc/td_js_
 ||r.r10s.jp/com/rat/sc/
 ||rakuten-sec.co.jp/web/shared/js/amy-ai-chat/fingerprint*
 ||rakuten-sec.co.jp/web/shared/js/sc/
-||rtoaster.jp^$3p
 ||s.yimg.jp/images/chie/js/ChieRapid3Common
 ||s.yimg.jp/images/ds/yas/ya-$domain=yahoo.co.jp
 ||s.yimg.jp/images/rapid/
 ||securemvt.apple.com^
 ||silveregg.net^$3p
 ||snva.jp/javascripts/reco/$script
+||staff-start.com/js/track/
+||staff-start.com/track/
 ||tags.tiqcdn.com/utag/*/prod/utag.js$script,redirect-rule=noop.js
-||tags.tiqcdn.com^
-||tm.ma.future-shop.net^
 ||tower.jp/bundle/beacon|$script,1p
 ||travel.yahoo.co.jp^*/adobe_event.
 ||veoh.com/increment-view-count-by-id|
+
+! ---------- Cosmetic for analytics ----------
 ##[id^=silveregg]
 business.nikkei.com##.l-content_footer.recommendesInfomation:has-text(あなたにオススメ)
 emmi.jp###rec
@@ -339,6 +351,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 
 reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 
+! ---------- Exception for analytics ----------
 @@/friendbuy.min.js$script,domain=butcherbox.com
 @@||adobedtm.com/launch-$script,xhr
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=sbisec.co.jp
@@ -366,6 +379,7 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 @@||cdn.cxense.com^$script,domain=bizjournals.com|marketwatch.com
 @@||cdx.cedexis.net^$domain=bloomberg.*
 @@||cleverbridge.com/*/cleveranalytics.js^$domain=secure.ccleaner.com
+@@||collect.igodigital.com/collect.js$domain=enoteca.co.jp
 @@||cxense.com/cx.cce.js$script,domain=googirl.jp
 @@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|ure.pia.co.jp
 @@||disaportal.gsi.go.jp/maps/js/counter.js
@@ -386,6 +400,7 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 @@||scdn.cxense.com/cx.cce.js$script,domain=cinemacafe.net|grajapa.shueisha.co.jp|rbbtoday.com|wpb.shueisha.co.jp
 @@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|friday.kodansha.co.jp
 @@||snva.jp/javascripts/reco/$domain=concent.co.jp|mouse-jp.co.jp
+@@||staff-start.com/js/track/$domain=enoteca.co.jp|store.alpen-group.jp
 @@||tags.tiqcdn.com/utag/$script,domain=wineenthusiast.com
 @@||tags.tiqcdn.com/utag/*/utag.js$script,domain=hm.com
 @@||tags.tiqcdn.com/utag/cbsi/cbssportssite/prod/utag.js$script,domain=cbssports.com
