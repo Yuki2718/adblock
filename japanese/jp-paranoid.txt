@@ -466,7 +466,7 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 ?sharedid=$doc,removeparam,domain=msafflnk.net
 ?utm_campaign=$doc,removeparam=utm_campaign,domain=smfg.co.jp
 ?utm_source=google*&gclid=$doc,removeparam=/^utm_/
-?utm_source=tw$doc,removeparam=utm_source
+?utm_source=tw^$doc,removeparam=utm_source
 ^utm_source=$doc,removeparam=/^utm_/,domain=bunshun.jp|d-card.jp|e-3shop.com|nttdocomo.co.jp|rurubu.travel|u3h8.com
 ||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_ga=$doc,removeparam=/ga|_x?uid/
