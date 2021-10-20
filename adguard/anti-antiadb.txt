@@ -34,6 +34,10 @@
 /^https:\/\/[-a-z]{9,15}\.com\/400\/\d{7}$/$script,third-party
 /^https:\/\/[-a-z]{9,15}\.com\/500\/\d{7}\?/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{7,25}\.com\/v2(?=[-_0-9a-z]{0,76}[A-Z])(?=[-_a-zA-Z]{0,76}[0-9])(?=[0-9a-zA-Z]{0,76}[-_])[-_0-9a-zA-Z]{63,77}$/$script,third-party,match-case
+/^https:\/\/[a-z]{8,15}\.xyz(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\.html$/$subdocument,third-party,match-case
+/^https:\/\/[a-z]{8,15}\.xyz(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\/$/$popup,third-party,match-case
+/^https:\/\/[a-z]{8,15}\.xyz\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{8,15}\.xyz\/(?:bootstrap|bundle|index|jquery-ui|reset|styles?)\.css\?[0-9a-zA-Z]{48,64}$/$stylesheet,third-party,match-case
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
 /^https?:\/\/[a-z]{6,10}\.com\/4\/\d{7}\/?$/$document,popup
 /^https?:\/\/[a-z]{6,15}\.(?:com|xyz)\/1\/\d{7}\/\?var=\d{7}&/$document,popup
@@ -158,6 +162,7 @@ ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,
 @@||ads.twitter.com/favicon.ico
 @@||advertising.yahoo.com/favicon.ico
 @@||as.inbox.com/banner_ad.gif
+@@||crunchyroll.adclixx.net/vast?fg=
 @@||crunchyroll.adnetasia.com/vast?fg=
 @@||crunchyroll.adtrackers.net/vast?fg=
 @@||crunchyroll.bannertrack.net/vast?fg=
