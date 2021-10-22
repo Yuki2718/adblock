@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211020
+! Version: 20211023
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -243,10 +243,12 @@ smart-flash.jp##^.adsBlock
 /AdobeAnalyticsBundle.
 /AppMeasurement.js
 /AppMeasurement_Module_
+/amp-geo-
 /amplitude-*.js$script
 /analytics/event
 /analyticsmediator.
 /api/tracking/*
+/bugsnag.min.js
 /detm-container-
 /dtm/*/satellitelib-
 /firebase-performance-
@@ -279,6 +281,7 @@ _omniture.$script,domain=mathworks.com
 ||asadcdn.com^$3p
 ||cdn-net.com^$3p
 ||cedexis.net^$3p
+||d2wy8f7a9ursnm.cloudfront.net^
 ||ensighten.com^$3p
 ! FP for the sake of security
 ||fraudjs.io^$3p
@@ -361,6 +364,7 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 @@||adobedtm.com^*/mbox-contents-$script,domain=americanexpress.com|costco.com|lenovo.com|nfl.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|auspost.com.au|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|support.nec-lavie.jp|telegraph.co.uk|vanityfair.com|wired.com
+@@||ampproject.org/v0/amp-geo-$script,domain=9to5google.com|9to5mac.com|dronedj.com|electrek.co
 @@||api.cxense.com/document/search?$script,xhr,domain=friday.kodansha.co.jp|ntv.co.jp|tv-tokyo.co.jp
 @@||api.cxense.com/public/widget/click/$domain=api.cxense.com
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
