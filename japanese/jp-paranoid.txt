@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211023
+! Version: 20211024
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -243,6 +243,7 @@ smart-flash.jp##^.adsBlock
 /AdobeAnalyticsBundle.
 /AppMeasurement.js
 /AppMeasurement_Module_
+/Criteo/*$script
 /amp-geo-
 /amplitude-*.js$script
 /analytics/event
@@ -355,6 +356,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 
 ! ---------- Exception for analytics ----------
+/Criteo/*$badfilter
 @@/friendbuy.min.js$script,domain=butcherbox.com
 @@||adobedtm.com/launch-$script,xhr
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=sbisec.co.jp
@@ -397,6 +399,7 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 @@||ioam.de/iam.js$script,domain=bild.de
 @@||ipapi.co/json/$xhr,domain=168.dailymaverick.co.za|audius.co
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
+@@||justmyshop.com/gate/criteo/product-id.js$1p
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
 @@||lptag.liveperson.net/tag/tag.js$domain=uniqlo.com
 @@||playy.online/log_event$1p,xhr
