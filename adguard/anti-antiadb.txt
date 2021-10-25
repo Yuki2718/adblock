@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20211025
+! Version: 20211026
 
 .com/1?z=$script,third-party
 .com/2?z=$script,third-party
@@ -119,9 +119,10 @@
 ://a.*/warp/$script,third-party
 !!+ NOT_PLATFORM(android, ios, ext_ff, ext_safari, ext_android_cb)
 !://t.*.com/redirect/?spot_id=$script,third-party
+?a=1&e=*&if=0|$xmlhttprequest,third-party
 ?adl=1&id=$script,~third-party
 ?wl=0&event_id=$xmlhttprequest,third-party
-=eyJ.js|$script,third-party
+=eyJ.js^$script
 
 ||fundingchoicesmessages.google.com^$third-party
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
@@ -137,6 +138,7 @@
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 ##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height: 194px !important; cursor: pointer !important;"]:not([class])
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]:not([class])
+##div[style="position: fixed; display: block; width: 100%; height: 15%; top: 0; left: 0; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]
 ##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style*="transform: translateX(-50%); z-index: 2147483647; position: fixed"]:not([src])
 ##iframe[style$="box-sizing: border-box; position: fixed; inset: auto 0px 0px auto !important; overflow: hidden; z-index: 2147483647;"]:not([src])
 ##iframe[style*="opacity: 1 !important; max-width: 420px !important"][style*="position: fixed !important; display: block !important; z-index: 2147483647 !important"]:not([src])
