@@ -2,13 +2,14 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211027
+! Version: 20211029
 
 .biz/?auf=*&sub1=$document
 .biz/?p=*&sub1=$document
 .biz/?p=*&sub1=$popup,domain=www.google.co.jp|www.google.com
 .co/?go=*&cat=$document
 .com/c/*?s1=$document
+.com/smartlink/?a=$document
 .me/?go=*&cat=$document
 .net/c/*?s1=$document
 .ru/?u=*&o=$document
@@ -32,6 +33,7 @@
 /ck_winAlert.js|
 /click.php?key=*&cost=$document
 /fg/tds/ae?tds_campaign=$document
+/go.php?url=*&uclick=$document
 /index.html?clickid=*&uclickhash=$document
 /index555.php?sub=*&tel=&utm_source=$document
 /jscheck.php?enc=$xmlhttprequest
@@ -67,7 +69,7 @@
 /^https:\/\/xn--\d{4,5}-[a-z]{3}\.biz\/[0-9a-z]+\?key=/$document
 /^https:\/\/[-0-9a-z]{12,}\.life\/\?u=[0-9a-z]{7,}&o=[0-9a-z]{7,}&t=/$document
 /^https:\/\/[-a-z]{5,10}\d{4,6}\.[a-z]{5,18}\.cl\/[%_0-9a-zA-Z]{10,}\.html/$document
-/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?u=[0-9a-z]+&o=/$document
+/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?(?:cid=[0-9a-z]+&)?u=.+&o=/$document
 /^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?utm_campaign=\w{40,}&t=/$document
 /^https:\/\/[a-z]+\.[a-z]+prizes\.net\/[a-z]\/[0-9a-z]+\?s1=/$document
 /^https:\/\/[0-9a-z]{10,18}\.[a-z]{14,25}\.es\/\S{10,}\.html/$document
@@ -217,6 +219,7 @@
 ||best-hot-ladies1.com^$document
 ||best-prizehouse15.info^$document
 ||best-prizes-house.life^$all
+||best-sexy-partner1.com^$all
 ||best2019-games-web4.com^$document
 ||best2020-games-web1.com^$all
 ||bestbut.com^$all
@@ -339,6 +342,7 @@
 ||doubleadserve.com^$document
 ||downloads2020.com^$all
 ||downloads2021.com^$all
+||downlosaly.info^$all
 ||dracenic-gravinyl.icu^$all
 ||dracogne.ru^$document
 ||drupalthemes.website^$document

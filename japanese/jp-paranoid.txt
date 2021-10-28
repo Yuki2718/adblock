@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211027
+! Version: 20211029
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -199,6 +199,7 @@ smart-flash.jp##^.adsBlock
 ! ---------- Analytics general ----------
 -adobe-analytics/
 -contrib-ads/
+-google-analytics/$domain=~wordpress.org
 .s_code.js$domain=cadillacjapan.com|chevroletjapan.com
 /AdobeAnalyticsBundle.
 /AppMeasurement.js
@@ -406,6 +407,8 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 &linkCode=$doc,removeparam=linkCode,domain=amazon.*
 &sc2id=af_$doc,removeparam=sc2id,domain=rakuten.co.jp
 &ult_in=$doc,removeparam=ult_in,domain=realestate.yahoo.co.jp
+&utm_medium=twitter$doc,removeparam=utm_medium
+&utm_source=twitter_share$doc,removeparam=utm_source
 &usid=$doc,removeparam=usid,domain=d-card.jp
 &vcptn=$doc,removeparam=vcptn,domain=digi-tag.net
 *$doc,removeparam=mbid
@@ -432,6 +435,7 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 ?scid=af_$doc,removeparam=scid,domain=rakuten.co.jp
 ?sharedid=$doc,removeparam,domain=msafflnk.net
 ?utm_campaign=$doc,removeparam=utm_campaign,domain=smfg.co.jp
+?utm_campaign=post_article$doc,removeparam=utm_campaign
 ?utm_source=google*&gclid=$doc,removeparam=/^utm_/
 ?utm_source=tw^$doc,removeparam=utm_source
 ^utm_source=$doc,removeparam=/^utm_/,domain=bunshun.jp|d-card.jp|e-3shop.com|nttdocomo.co.jp|rurubu.travel|u3h8.com
