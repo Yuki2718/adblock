@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211101
+! Version: 20211102
 
 .biz/?auf=*&sub1=$document
 .biz/?p=*&sub1=$document
@@ -13,23 +13,24 @@
 .me/?go=*&cat=$document
 .net/c/*?s1=$document
 .ru/?u=*&o=$document
-.systems/signup?ad_domain=$all
+.systems/signup?ad_domain=$document,popup
 .xyz/?u=*&o=$document
 .xyz/v1/redirect?cid=$document
 /?clck=*&sid=$document
 /?fp=*&prvtof=
 /?ip=*&uclickhash=$document
 /?l=*&s=*&mprtr=$~third-party,xmlhttprequest
-/?phone=*&geo=$document
+/?phone=*&ip=$document
 /?r=*&a=*&icode=*$document,~third-party
 /?r=dir&zoneid=$all
 /?wm=*&t=onclick|$document
+/?{BV_SRCID}&$document
 /PVZ/PVZ.php?c=$document
 /aff.php?dynamicpage=*&_cbUrl=$document
 /antibot/ab.php|$xmlhttprequest,~third-party
 /antibot7.php|$xmlhttprequest,~third-party
 /bdv_rd.dbm?ownid=$doc
-/bdv_rd3.dbm?frdto=$all
+/bdv_rd3.dbm?frdto=$document,popup
 /ck_winAlert.js|
 /click.php?key=*&cost=$document
 /fg/tds/ae?tds_campaign=$document
@@ -50,7 +51,7 @@
 /templates/_assets/push-skin/skin.html
 /track/click.php?c=*&zoneid=$document
 /v2/a/pop/*$document
-/v2/a/skm/*$all
+/v2/a/skm/*$document,popup
 /^http:\/\/(?:\d{10}\.)?[-a-z]{13,}\.de\/(?:\d{6}|\S{10,})\.html/$document
 /^http:\/\/(?:\d{10}\.)?[a-z]{6}\.nl\/\d{6}\.html/$document
 /^http:\/\/(?:\d{9}|[-a-z]{25,})\.[a-z]{9,}\.it\//$document
@@ -65,13 +66,14 @@
 /^http:\/\/[a-z]{9,10}\.ddns/$document,domain=ddns.net
 /^https:\/\/capitalping\d{2}\.online\/\?u=/$doc,domain=online
 /^https:\/\/feedbackip\d{2}\.pw/$document
+/^https:\/\/moneymake\d{2}\.online\/\?u=/$document
 /^https:\/\/serch\d{2}\.biz\/\?p=/$document
 /^https:\/\/traffichub\d{2}\.[a-z]{2,6}\/\?u=/$document
 /^https:\/\/xn--\d{4,5}-[a-z]{3}\.biz\/[0-9a-z]+\?key=/$document
 /^https:\/\/[-0-9a-z]{12,}\.life\/\?u=[0-9a-z]{7,}&o=[0-9a-z]{7,}&t=/$document
 /^https:\/\/[-0-9a-z]{5,}\.com\/[0-9a-z]{9}\?shu=[0-9a-z]{150,}&pst=\d+.*&key=[0-9a-z]{32}/$document
 /^https:\/\/[-a-z]{5,10}\d{4,6}\.[a-z]{5,18}\.cl\/[%_0-9a-zA-Z]{10,}\.html/$document
-/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?(?:cid=[0-9a-z]+&)?u=.+&o=/$document
+/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?(?:cid=[0-9a-z]+&)?u=[0-9a-z]+&o=/$document
 /^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?utm_campaign=\w{40,}&t=/$document
 /^https:\/\/[a-z]+\.[a-z]+prizes\.net\/[a-z]\/[0-9a-z]+\?s1=/$document
 /^https:\/\/[0-9a-z]{10,18}\.[a-z]{14,25}\.es\/\S{10,}\.html/$document
@@ -85,10 +87,11 @@
 /^https?:\/\/(?:www\.)?[-0-9a-z]{14,}\.(?:biz|fun|live)\/[a-zA-Z]{10,}\.php/$document
 /^https?:\/\/[-0-9a-z]*prize[-0-9a-z]+\.live\/\?u=[0-9a-z]+&o=[0-9a-z]+/$document
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org\/page\d{1,4}/$document,domain=duckdns.org
-/^https?:\/\/[a-z]{6,10}\.com\/4\/\d{7}$/$all
+/^https?:\/\/[a-z]{6,10}\.com\/4\/\d{7}$/$document,popup
 ://0.*.biz/?p=$document
 ://0.*.biz/index.php?p=$document
 ://0.*.net/?p=$document
+?bid=0.*&search_referrer_domain=$document
 ||0265331.com^$document
 ||03ed9035a0801f.com^$document
 ||0globally594.ga^$all
@@ -96,7 +99,9 @@
 ||0rg.link^$all
 ||1111sale.us^$all
 ||123fastcdn.com^$document
-||143.244.169.239^$document
+||137.184.139.211^$document
+||147.182.181.235^$document
+||161.35.4.84^$document
 ||15dfjkbvdf.club^$all
 ||1919otokonosex.xyz^$document
 ||1919yarerunda.xyz^$document
@@ -231,6 +236,7 @@
 ||bestoffer21.info^$all
 ||bestprotection.site^$document
 ||bestsecretflirt.com^$all
+||besty-deals.com^$all
 ||beta-news.org^$all
 ||betchan19.com^$document
 ||betgorebysson.club^$document
@@ -245,6 +251,7 @@
 ||boraheadpupon.tk^$document
 ||boyssexlife.xyz^$document
 ||bq4w4ex8as.com^$document
+||brainychoose-captcha.top^$all
 ||brindle-breeder.com^$document
 ||bro4.biz^$document
 ||buddygays.com^$all
@@ -277,7 +284,6 @@
 ||click.expmediadirect.com^$all
 ||clicks.affstrack.com^$document
 ||clk.rtpdn*.com^$all
-||cloudfront.net/*/?phone=$all
 ||clubretro.com.pl^$document
 ||chatmilkprude.casa^$document
 ||checkingnotifications.org^$all
@@ -537,6 +543,7 @@
 ||kabooo.net^$all
 ||kakstitotako.com^$all
 ||karikubi.com^$document
+||kawakalyui.z11.web.core.windows.net^$all
 ||keitaro2.best^$document
 ||kense2.net^$document
 ||kiminosex.xyz^$document
@@ -594,6 +601,7 @@
 ||m7c4d5r7.stackpathcdn.com^$all
 ||ma-plastifieuse.info^$document
 ||magicapysanka.org^$document
+||magnus-beo.com^$all
 ||marabuportil.es^$document
 ||marcoizi.pt^$document
 ||mariananascimento.com^$document
@@ -694,7 +702,6 @@
 ||onmiccatania.it^$document
 ||onryshop.xyz^$document
 ||optica-art.ru^$document
-||optnx.co^$all
 ||orchideaonlus.it^$document
 ||orenoitimotu2020dekasacup.xyz^$document
 ||orenoitimotu2020katasacup.xyz^$document
@@ -852,7 +859,6 @@
 ||spitrental.nl^$document
 ||ssionsupre.fun^$all
 ||st-agnes-loevenich.de^$document
-||stackpathcdn.com/*/?phone=$all
 ||stalaerg.com^$document
 ||stay-notified.live^$all
 ||stfgx.hsjsclub.xyz^$document
@@ -872,6 +878,7 @@
 ||t-o-u-oubo.com^$document
 ||takaytry.z11.web.core.windows.net^$all
 ||tappling.jp^$document
+||tech4yougadgets.com^$all
 ||techevolution.work^$all
 ||teens2fcuk.net^$all
 ||tendermeets.com^$document
@@ -928,6 +935,7 @@
 ||vcdc.com^$document
 ||vcdew.com^$document
 ||ve9gv3d7ru.com^$document
+||veysag.com^$all
 ||vfgrse.com^$all
 ||vfiu.blognew.xyz^$document
 ||videowatchmore.com^$document
