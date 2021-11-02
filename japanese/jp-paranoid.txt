@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211029
+! Version: 20211102
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -23,6 +23,7 @@
 ! ---------- Ads general ----------
 -300x250-$~xhr
 .org/ad/$1p,domain=~playguide.org|~sonoyama.org|~ufcw870.org
+/banner728x90.
 /(https?:\/\/)\w{30,}.me\/\w{30,}\./$script,3p
 /^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,3p,match-case
 /^https:\/\/[a-z]{8}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)?$/$frame,3p,match-case
@@ -161,6 +162,7 @@ smart-flash.jp##^.adsBlock
 ||aaaf.jp^
 ||ad-feed.com^
 ||ad-link.net^
+||ad-seek.jp^
 ||ad.886644.com^
 ||ad.isaf.jp^
 ||adm.shinobi.jp^$1p
@@ -272,6 +274,8 @@ _omniture.$script,domain=mathworks.com
 ||browser.pipe.aria.microsoft.com^
 ||carsensor.net/vos/
 ||cleverbridge.com/*/cleverAnalytics.js^
+||cloudflare.com/cdn-cgi/trace$3p,domain=~isbgpsafeyet.com
+||cloudflare.com/cdn-cgi/trace$3p,xhr,redirect-rule=noop.txt
 ||collect.igodigital.com^$script
 ||cxense.com^$frame,script,xhr,3p
 ||facebook.com/platform/scribe_endpoint.php/
@@ -346,6 +350,7 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 @@||cdn.cxense.com^$script,domain=bizjournals.com|marketwatch.com
 @@||cdx.cedexis.net^$domain=bloomberg.*
 @@||cleverbridge.com/*/cleveranalytics.js^$domain=secure.ccleaner.com
+@@||cloudflare.com/cdn-cgi/trace$xhr,domain=54647.io
 @@||collect.igodigital.com/collect.js$domain=enoteca.co.jp
 @@||cxense.com/cx.cce.js$script,domain=googirl.jp
 @@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|ure.pia.co.jp
