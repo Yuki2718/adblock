@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211103
+! Version: 20211104
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -39,6 +39,7 @@
 ||m.media-amazon.com/images/I/$domain=yamahack.com
 ||m.youtube.com/*/ad.js$script
 ||m.youtube.com/get_midroll_$domain=youtube.com
+||news.nifty.com/smartphone/images/*_banner.$image,1p
 ||poiful.com/sdk/vrizeadsdk.
 ||pokemongo-master.com/wp-content/uploads/*/ad_manga_
 ||r10s.jp/com/img/banner/*_mno_1080x168.png$domain=search.rakuten.co.jp
@@ -266,6 +267,7 @@ kurashi-no.jp##.Ad_Rectangle
 kurashi-no.jp##div[id^="kurashino1_SP_article_"][style*="min-height: 280px"]
 libae.jp##.gmossp_con
 libae.jp##.sp_display > div.pink-title
+lifehacker.jp##.lh-wrapper > .lh-block > .powered_by_cx:upward(1)
 lnews.jp##.bnr250
 m.crank-in.net##.ad-area-header-top
 m.crank-in.net##.ad-area_pr
@@ -301,6 +303,8 @@ news.dwango.jp##.overlay-footer_ad
 news.livedoor.com##.ads-article
 news.livedoor.com##.ads-google300
 news.mynavi.jp##.c-sideBanner_articleBottom
+news.nifty.com##.mod_ad
+news.nifty.com##.mod_ad_nifty
 news.owata-net.com##.adnetwork.article-interstitial.overlay
 news.tbs.co.jp##.cp-spAd
 news.tennis365.net##._popIn_recommend_article_ad_reserved
@@ -497,6 +501,7 @@ youjizz.com##.top_pr
 zeiri4.com##div[class^="adContainer"]
 
 ! ---------- Extension ----------
+eigo.plus###global-header:style(margin-top: 0!important;)
 hentaidude.com##.mobile-il:style(visibility: hidden !important; height: 1px !important)
 news.mynavi.jp##.articleList-along:style(min-height: 0 !important;)
 news.mynavi.jp##.articleList-attention:style(min-height: 0 !important;)

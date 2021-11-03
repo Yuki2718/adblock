@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211103
+! Version: 20211104
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -39,6 +39,9 @@
 /^https?:\/\/[a-z0-9]{7,}\.online\/[a-z0-9]{7,}\.js$/$script,3p
 /wpsafelink.js
 _Ad300x250_
+
+! ---------- Ad servers - adult ----------
+||imlive.com^$script,3p,domain=~imnude.com
 
 ! ---------- Ads specific ----------
 ||4ka.net/images/top/banner/
@@ -93,6 +96,13 @@ youtube.com##+js(json-prune, playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.playerAds)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 ~2099.jp,~baysia-tokyo.com,~mazimazi-party.com##article[id][class*=post-] div[class*=cta]
+
+!#if !env_firefox
+gizmodo.jp,lifehacker.jp##.inner-buy-box
+!#endif
+!#if env_firefox
+gizmodo.jp,lifehacker.jp##^.inner-buy-box
+!#endif
 
 ! ---------- Exception for ads ----------
 @@||ad-house.jp/images/ad-top_01.gif

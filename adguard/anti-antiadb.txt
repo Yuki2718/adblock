@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20211102
+! Version: 20211104
 
 .com/1?z=$script,third-party
 .com/2?z=$script,third-party
@@ -118,6 +118,7 @@
 /v2/a/push/js/*$script,third-party
 /vast-im.js$script
 /wcm/?sh=$script,third-party
+/wp-content/plugins/wp-banners/js/wp-banners.js$important
 /zlk/zlk.js
 ://a.*/static?r=$script,third-party
 ://a.*/warp/$script,third-party
@@ -164,7 +165,7 @@ ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,
 @@/prebid-ads.js$script
 @@/shared/bannerpages/darttagsbanner.aspx?h=$script,third-party
 @@/static/image/ad_top_bg2.png?&ad_box_=$image,~third-party
-@@/wp-banners.js|$script
+@@/wp-banners.js^$script
 @@/wp-content/plugins/quick-adsense-reloaded/assets/js/ads.js
 @@||ads.twitter.com/favicon.ico
 @@||advertising.yahoo.com/favicon.ico
