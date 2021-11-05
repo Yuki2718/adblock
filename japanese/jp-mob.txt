@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211104
+! Version: 20211106
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -83,6 +83,7 @@
 *###WIX_ADS
 *##.ad-area
 *##.adPost
+*##.amp-ad
 *##.adWidget
 *##.interstitial-ad
 *##.quads-location
@@ -159,6 +160,7 @@ bengo4.com##div[style="min-width: 320px; min-height: 50px;"]
 bestcarweb.jp,goldenyokocho.jp,play-life.jp,nordot.app,watch.impress.co.jp##li > ._popIn_recommend_article_ad:upward(1)
 biz-journal.jp##div[style$="min-height:250px;"]
 biz-journal.jp##div[style^="min-height: 250px"]
+biz-journal.jp,gamesradar.com,laptopmag.com,livescience.com,musicradar.com,pcgamer.com,sankei.com,techradar.com,tomsguide.com,tomshardware.com,toptenreviews.com##amp-embed[type="taboola"]
 biz-journal.jp,realsound.jp##.adsenseArea
 blog.esuteru.com###article-1_5
 blog.goo.ne.jp##.article__ad
@@ -231,6 +233,8 @@ hoiclue.jp##.ad-SP
 hoiclue.jp##.adRectangleBase
 hosyusokuhou.jp###ovrss
 hosyusokuhou.jp##.rankbox
+independent.co.uk###stickyFooterRoot
+independent.co.uk##div[data-mpu1="true"]
 irasutoya.com##.mobilead
 itest.5ch.net###ad_network
 itest.5ch.net###ads
@@ -291,6 +295,7 @@ matomedane.jp###AdvHeader2
 matomedane.jp##.fam_hybrid_adv
 michill.jp,travel.navitime.com##.sherpa-component[data-ad_type]
 mildch.com###container > div.free-area > div[align="center"] > script[src*="adingo.jp"]:upward(2)
+mudainodocument.com###im_interstitial_panel
 navitime.co.jp##.footer-rect-ad-frame
 navitime.co.jp##div[style="display:flex;justify-content:center;align-items:center;height:120px;width:100%;"]
 negisoku.com###fluct_overlay
@@ -363,6 +368,8 @@ s.kakaku.com##.misetoku
 s.kakaku.com##.subCtsArea
 s.kakaku.com##.withIboxDb
 s.kakaku.com##div[style="background:#ddd; min-height:120px;"]
+sankei.com###sponsored
+sankei.com##.module_ad + section.module.secondary
 sankeibiz.jp##.module_pr:has(> div.module_content > div[id^="div-gpt-ad-Mobile_Trend"])
 shufu-job.jp,tsuiran.jp##.sp-ad
 sp.nicovideo.jp##.siteWide-BannerAd
@@ -507,6 +514,7 @@ zeiri4.com##div[class^="adContainer"]
 ! ---------- Extension ----------
 eigo.plus###global-header:style(margin-top: 0!important;)
 hentaidude.com##.mobile-il:style(visibility: hidden !important; height: 1px !important)
+mudainodocument.com##.fixed:style(overflow: auto!important; position: static!important;)
 news.mynavi.jp##.articleList-along:style(min-height: 0 !important;)
 news.mynavi.jp##.articleList-attention:style(min-height: 0 !important;)
 news.mynavi.jp##.articleList-related-article:style(min-height: 0 !important;)
@@ -520,14 +528,15 @@ aya0205.smart-douga.mobi##^.entry_more > div[style^="background-color: rgb(88, 1
 bakufu.jp##^.adList
 bakufu.jp##^table[width="100%"][cellspacing="0"][cellpadding="3"][border="0"]
 blog.goo.ne.jp##^.banner--marchel:upward(#msg-box-app-recommend)
+eiga.com##^#video_ad
 erodougameijin.com##^div[class^=flexbox]:not(.flexbox3)
 erogazou-pinkline.com##^#adnex-text-widget
 erogazooo.club##^.spad
 leaked.jp##^.dfad
 moeimg.net##^#overlay_frame
 tvjapan.net##^#bg-ad-mob
-xhamster.*##^script:has-text(popunder)
 weloma.net##^a[href="https://2048.biz/mobile/"]
+xhamster.*##^script:has-text(popunder)
 
 h-ken.net##+js(acis, onload, ad)
 m.hd21.com,m.nuvid.com##+js(set, player.postitialTimeout, 0)
