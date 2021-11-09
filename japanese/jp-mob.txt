@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211109
+! Version: 20211110
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -30,6 +30,7 @@
 ||cxpublic.com^$domain=googirl.jp
 ||dailyportalz.jp/api/dpz/adPosts|
 ||eigo.plus/wp-content/uploads/2020/09/680x143-2.png
+||freesoft-100.com/img/detail/*-300x250-$image,1p
 ||gacraft.jp^$domain=mainichikirei.jp
 ||gamerch.com/s3-assets/js/system/gcad/
 ||geekjob.jp/wp-content/themes/geekjob_theme_ver1.07/common/img/logo/sp/diagnosis_sp.
@@ -204,6 +205,7 @@ fandom.com##.ad-slot-wrapper
 ferret-plus.com##.ad-300x600
 forbes.com##.grid__ad-container--amp
 forbesjapan.com##.recommended-box
+freesoft-100.com##.banner_block
 front-row.jp##.after-btn-fb-nice-ad-sp
 front-row.jp##.ct-ad-2ndparag
 fukutubu.jp##.td-header-sp-recs
@@ -545,6 +547,7 @@ weloma.net##^a[href="https://2048.biz/mobile/"]
 xhamster.*##^script:has-text(popunder)
 
 h-ken.net##+js(acis, onload, ad)
+javmix.tv##+js(acis, addEventListener, style.display)
 m.hd21.com,m.nuvid.com##+js(set, player.postitialTimeout, 0)
 m.hd21.com,m.nuvid.com##+js(aopr, mobileAdvPop)
 m.sextvx.com##+js(acis, document.querySelectorAll, popMagic)
