@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211108
+! Version: 20211110
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -282,6 +282,7 @@ _omniture.$script,domain=mathworks.com
 ||adobedtm.com^$3p,domain=~adobe.com
 ||api.nike.com/measure/uxevents/
 ||api.twitter.com^*/external_referer.json|
+||apps.nhk.or.jp/assets/dtm/
 ||blog.hubspot.jp/hs/cta/cta/current.js
 ||browser.pipe.aria.microsoft.com^
 ||carsensor.net/vos/
@@ -335,10 +336,9 @@ reddit.com##+js(no-xhr-if, method:POST url:/^https:\/\/www\.reddit\.com$/)
 ! ---------- Exception for analytics ----------
 /Criteo/*$badfilter
 @@/friendbuy.min.js$script,domain=butcherbox.com
+@@||adobedtm.com/extensions/$script,domain=apple.com|foodnetwork.com
 @@||adobedtm.com/launch-$script,xhr
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=sbisec.co.jp
-@@||adobedtm.com^*/AppMeasurement.min.js$script,domain=apple.com|foodnetwork.com
-@@||adobedtm.com^*/AppMeasurement_Module_$script,domain=foodnetwork.com
 @@||adobedtm.com^*/launch-$script,xhr
 @@||adobedtm.com^*/mbox-contents-$script,domain=americanexpress.com|costco.com|lenovo.com|nfl.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
