@@ -37,7 +37,7 @@
 /^https:\/\/[-a-z]{9,15}\.com\/500\/\d{7}\?/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{10,16}\.xyz\/(?=[+/a-zA-Z]{0,140}\d)(?=[+/0-9a-z]{0,140}[A-Z])[+/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case
 /^https:\/\/[a-z]{10,16}\.xyz\/(?=[+/a-zA-Z]{0,400}\d)(?=[+/0-9a-z]{0,400}[A-Z])[+/0-9a-zA-Z]{400,}$/$subdocument,third-party,match-case
-/^https:\/\/[a-z]{7,25}\.com\/v2(?=[-_0-9a-z]{0,76}[A-Z])(?=[-_a-zA-Z]{0,76}[0-9])[-_0-9a-zA-Z]{63,77}$/$script,third-party,match-case
+/^https:\/\/[a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,76}[A-Z])(?=[-_a-zA-Z]{0,76}[0-9])[-_0-9a-zA-Z]{63,77}$/$script,third-party,match-case
 /^https:\/\/[a-z]{8,15}\.xyz(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\.html$/$subdocument,third-party,match-case
 /^https:\/\/[a-z]{8,15}\.xyz(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\/$/$popup,third-party,match-case
 /^https:\/\/[a-z]{8,15}\.xyz\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xmlhttprequest,third-party
@@ -97,6 +97,7 @@
 /nb/fe_ld.js
 /nb/frot_lod.js
 /nb/nb_script.js
+/ntv.json?key=$xmlhttprequest,third-party
 /player/html.php?aid=start_html&video_id=*&referer=$subdocument,~third-party
 /player/html.php?aid=pause_html&video_id=*&referer=$subdocument,~third-party
 /player/plugins/vast-*.js$script
@@ -107,6 +108,7 @@
 /preroll.engine?id=$xmlhttprequest,third-party,redirect=nooptext
 /pub/js_min.js|
 /q/tdl/95/dnt/*$script,third-party
+/ren.gif?sid=$image,third-party
 /s/s/custom.php?dw=
 /s/s/js/m/im.js?v=
 /s/s/sup.php

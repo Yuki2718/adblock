@@ -20,7 +20,6 @@
 /?fp=*&prvtof=
 /?ip=*&uclickhash=$document
 /?l=*&s=*&mprtr=$~third-party,xmlhttprequest
-/?phone=050-$document
 /?r=*&a=*&icode=*$document,~third-party
 /?r=dir&zoneid=$all
 /?wm=*&t=onclick|$document
@@ -53,6 +52,7 @@
 /track/click.php?c=*&zoneid=$document
 /v2/a/pop/*$document
 /v2/a/skm/*$document,popup
+/werrx01/?$document
 /^http:\/\/(?:\d{10}\.)?[-0-9a-z]{13,}\.de\/(?:\d{6}|\S{10,})\.html/$document
 /^http:\/\/(?:\d{10}\.)?[a-z]{6}\.nl\/\d{6}\.html/$document
 /^http:\/\/(?:\d{9,10}\.)?[-a-z]{5,25}\.(?:es|se)\/(?:\d{6}|\S{7,})\.html/$document
@@ -93,6 +93,7 @@
 ://0.*.biz/index.php?p=$document
 ://0.*.net/?p=$document
 ?bid=0.*&search_referrer_domain=$document
+^phone=050-$document
 ||0265331.com^$document
 ||03ed9035a0801f.com^$document
 ||0globally594.ga^$all
@@ -441,6 +442,7 @@
 ||freeprizes.site^$all
 ||frogrugby.com^$document
 ||ft2025.top^$all
+||fugles.net^$all
 ||fuokuo1.net^$document
 ||fw3d4yw9xb.com^$document
 ||g3xq4wr6bv.com^$document
@@ -633,6 +635,7 @@
 ||matchrile.com^$all
 ||matchx2.com^$document
 ||mattimityri.tk^$document
+||maxy-tax.com^$all
 ||mcm-unife.it^$document
 ||mebelprostore2.ru^$document
 ||mediamodern.biz^$all
@@ -902,7 +905,6 @@
 ||tahasepu.rest^$document
 ||takaytry.z11.web.core.windows.net^$all
 ||tappling.jp^$document
-||tech4yougadgets.com^$all
 ||techevolution.work^$all
 ||techgadgetsy.com^$all
 ||teens2fcuk.net^$all
@@ -1031,14 +1033,20 @@ eroeroeroeroblog.jp##[href*="/click/?"]
 ||mksarahf499.cocolog-nifty.com^$inline-script
 ||shotoku-zei-haito-kojo-ore.over-blog.com^$inline-script
 cocolog-nifty.com##^img[onerror^="document.location=`htt"]
+okashimag.com,tech4yougadgets.com##^meta[http-equiv="refresh"]
+okashimag.com,tech4yougadgets.com##^script[src^="data:text/javascript;base64,"]
 viserve.com##^responseheader(location)
 !#endif
 !#if adguard
 ||mksarahf499.cocolog-nifty.com^$csp=script-src 'self' 'unsafe-eval' http: https:
 ||shotoku-zei-haito-kojo-ore.over-blog.com^$csp=script-src 'self' 'unsafe-eval' http: https:
+okashimag.com,tech4yougadgets.com$$meta[http-equiv="refresh"]
+okashimag.com,tech4yougadgets.com$$script[src^="data:text/javascript;base64,"]
 cocolog-nifty.com$$img[onerror^="document.location=`htt"]
+||viserve.com^$removeheader=response:location
 !#endif
 
+okashimag.com,tech4yougadgets.com#%#//scriptlet('abort-on-property-read', 'Notification')
 podcast.svenskafans.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'error.php')
 sevencredit.com#%#//scriptlet('abort-current-inline-script', '_0x287a')
 
