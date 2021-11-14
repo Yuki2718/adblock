@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20211112
+! Version: 20211115
 
 .com/1?z=$script,third-party
 .com/2?z=$script,third-party
@@ -130,8 +130,7 @@
 /zlk/zlk.js
 ://a.*/static?r=$script,third-party
 ://a.*/warp/$script,third-party
-!!+ NOT_PLATFORM(android, ios, ext_ff, ext_safari, ext_android_cb)
-!://t.*.com/redirect/?spot_id=$script,third-party
+://t.*.com/redirect/?spot_id=$script,third-party
 ?a=1&e=*&if=0|$xmlhttprequest,third-party
 ?adl=1&id=$script,~third-party
 ?wl=0&event_id=$xmlhttprequest,third-party
