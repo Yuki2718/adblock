@@ -1,6 +1,24 @@
 [![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 [![syntax](https://img.shields.io/badge/syntax-uBlock%20Origin-%23c61300.svg)](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
 
+### Announcement (Nov. 16, 2021) - EOL of a few lists
+
+The following lists will soon become unavailable:
+- AdGuard Tracking Protection Plus
+- Placeholder Hider with no generic hiding for mobile
+- Yuki's uBlock Static Rules
+- Yuki's Blog parts filters - Adult
+
+AdGuard Tracking Protection Plus: Since I now have direct write access to AdGuardFilters, there's already not much sense for me to maintain this list.
+
+Placeholder Hider with no generic hiding for mobile: This is probably the least maintained list in this repo, and as I added some specific-generic filters to uBlock filters there's not much value for this list now.
+
+Yuki's uBlock Static Rules: Another less maintained list, now lots of duplicates with other popular lists
+
+Yuki's Blog parts filters - Adult: will be merged to Yuki's Blog parts filters.
+
+I'll wait for a week or so before removal, hoping those who happened to notice this to take an according action beforehand.
+
 # adblock
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
