@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211117
+! Version: 20211118
 
 .biz/?auf=*&sub1=$document
 .biz/?p=*&sub1=$document
@@ -74,6 +74,7 @@
 /^https:\/\/xn--\d{4,5}-[a-z]{3}\.biz\/[0-9a-z]+\?key=/$document
 /^https:\/\/[-0-9a-z]{12,}\.life\/\?u=[0-9a-z]{7,}&o=[0-9a-z]{7,}&t=/$document
 /^https:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[-0-9a-z]{5,}\.com\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}&pst=\d{10}&/$document
+/^https:\/\/[-a-z]{20,}\.cyou\/[-0-9a-f]{36}\/\?btd=/$document
 /^https:\/\/[-a-z]{5,10}\d{4,6}\.[a-z]{5,18}\.cl\/[%_0-9a-zA-Z]{10,}\.html/$document
 /^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?(?:cid=[0-9a-z]+&)?u=[0-9a-z]+&o=/$document
 /^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?utm_campaign=\w{40,}&t=/$document
@@ -87,9 +88,10 @@
 /^https:\/\/[a-z]{9,12}\d{2}\.[a-z]{4,}\.cl\/\S{7,}\.html/$document
 /^https?:\/\/(?:[a-z]{2}\d){3}[a-z]{2}\.com\//$document
 /^https?:\/\/(?:www\.)?[-0-9a-z]{14,}\.(?:biz|fun|live)\/[a-zA-Z]{10,}\.php/$document
+/^https?:\/\/trk\.(?:[a-z]{5,7}-){3}[a-z]{5,7}\.xyz\/[0-9a-z]{8}\?[a-z]?id=/$document
 /^https?:\/\/[-0-9a-z]*prize[-0-9a-z]+\.live\/\?u=[0-9a-z]+&o=[0-9a-z]+/$document
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org\/page\d{1,4}/$document,domain=duckdns.org
-/^https?:\/\/[a-z]{6,10}\.com\/4\/\d{7}$/$document,popup
+/^https?:\/\/[a-z]{6,10}\.(?:com|net)\/4\/\d{7}\/?(?:\?var=\S+)?$/$document,popup
 ://0.*.biz/?p=$document
 ://0.*.biz/index.php?p=$document
 ://0.*.net/?p=$document
@@ -135,10 +137,12 @@
 ||adating.link^$all
 ||aditserve.com^$all
 ||admntrk.com^$all
+||ads.sophiapoole.com^$document
 ||adsbtc.org^$all
 ||adsbtrk.com^$document
 ||adserveryo.xyz^$all
 ||adsrvtrk.biz^$document
+||adstellar.icu^$document
 ||adtr1.com^$all
 ||adultmovie.bar^$document
 ||adulttdates.com^$all
@@ -154,6 +158,7 @@
 ||ahitel.info^$document
 ||airdate.info/*.php?key=$document
 ||airreleaf.com^$document
+||aleks-avto-rnd.ru^$all
 ||algarve-lagos.nl^$document
 ||allbestsecurecn.com^$document
 ||allhugenewz.com^$all
@@ -179,9 +184,11 @@
 ||antivirus-prot.com^$all
 ||antivirus-protection.me^$all
 ||antivirus.landerhd.com^$all
+||antonioward.xyz^$document
 ||antwerp-japan.com^$document
 ||app-department.report^$all
 ||applesurgery.pl^$document
+||application-best-mine-installs.cyou^$all
 ||ar1ycc6htz.com^$document
 ||aramblin.com^$document
 ||arclk.net^$all
@@ -724,6 +731,7 @@
 ||onlineplus.click^$all
 ||onmiccatania.it^$document
 ||onryshop.xyz^$document
+||opalsantiago.com^$document
 ||optica-art.ru^$document
 ||optnx.co^$all
 ||orchideaonlus.it^$document
@@ -733,6 +741,7 @@
 ||ot1w4je3ql4c.com^$document
 ||otakarablog.com^$document
 ||ou8gfpea3fk.com^$document
+||ouhastay.net^$document
 ||ourhypewords.com^$all
 ||oz8q4de3al6c.com^$document
 ||p-provance.ru^$document
@@ -769,6 +778,7 @@
 ||privatesinglesmeet.com^$all
 ||profi-para.com^$all
 ||profumeriadame.it^$document
+||promisechase.xyz^$document
 ||protect-web.com^$all
 ||ps150.pl^$document
 ||pshtr.xyz^$all
@@ -971,10 +981,12 @@
 ||vfiu.blognew.xyz^$document
 ||videowatchmore.com^$document
 ||virpropcnow.xyz^$all
+||virusstair.xyz^$document
 ||vo2.qrlsx.com^$all
 ||volkerflecht-fotografie.de^$document
 ||vpnadefenceplus.com^$document
 ||vsemsnasti.ru^$document
+||vsoff.xyz^$document
 ||vun.fyi^$all
 ||vur.fyi^$all
 ||vyezda.ru^$document
@@ -985,6 +997,7 @@
 ||warming-need.xyz/*.php$document
 ||watch-video.net^$all
 ||wdeliv.net^$all
+||webapplicationminefree.cyou^$all
 ||webpushcloud.top^$document
 ||werkenbije-con.nl^$document
 ||wh6gp8vn6p.com^$document
@@ -1051,37 +1064,5 @@ cocolog-nifty.com$$img[onerror^="document.location=`htt"]
 okashimag.com,tech4yougadgets.com#%#//scriptlet('abort-on-property-read', 'Notification')
 podcast.svenskafans.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'error.php')
 sevencredit.com#%#//scriptlet('abort-current-inline-script', '_0x287a')
-
-! Ying Wang
-||achebetokoy.xyz^$document
-||alltheinvisiblechildrenmovie.com^$document
-||americanglutenfree.com^$document
-||emersonjapan.xyz^$document
-||genelemuel.xyz^$document
-||gifufire.xyz^$document
-||kidds.xyz^$document
-||kingpendleton.xyz^$document
-||kinseys.xyz^$document
-||okayamabreakfast.xyz^$document
-||philliss.xyz^$document
-||raineys.xyz^$document
-||salters.xyz^$document
-||surgeryconsultants.net^$document
-||takl.net^$document
-||tamoutlet.xyz^$document
-||thorntonok.xyz^$document
-||willoughbyabernathy.xyz^$document
-
-||buyjp.xyz^$document
-||cipco.xyz^$document
-||gojp.xyz^$document
-||hkart.xyz^$document
-||jplaw.xyz^$document
-||jplife.xyz^$document
-||jpshoppe.xyz^$document
-||jpstop.xyz^$document
-||shopjps.xyz^$document
-||sweetsshop.xyz^$document
-||watchyour.xyz^$document
 
 ||duckdns.org^$badfilter

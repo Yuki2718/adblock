@@ -1,6 +1,6 @@
 ### お知らせ（2021年11月16日）
 
-Yuki's Blog parts filters - Adultは近々Yuki's Blog parts filtersに統一します。また、日本でどれほどの利用者がいらっしゃるかわかりませんが、必要性の低下により以下のリストは近日中に公開停止いたします。
+Yuki's Blog parts filters - Adultは近々Yuki's Blog parts filtersに統合します。また、日本でどれほどの利用者がいらっしゃるかわかりませんが、必要性の低下により以下のリストは近日中に公開停止いたします。
 
 - AdGuard Tracking Protection Plus
 - Placeholder Hider with no generic hiding for mobile
@@ -237,15 +237,7 @@ Yuki's Blog parts filtersのアダルトサイト版です。
 
 #### 対象
 
-- Youtubeで一部の動画に表示される「プロモーションを含みます」
-- 侵襲的ではないが、必要性も低そうなチャットウィジェット
-- グランブルーファンタジー左側のバー
-- Twitter右側の「いまどうしてる？」
-- ニコニ広告
-- ニコニコ動画トップの「協賛」、「メディアパートナー」、「協力」
-- スポニチ競馬をFirefoxで閲覧したときのサポート外警告
-- Amazonカート内プロモーション
-- Avgle白文字の英文警告
+- リスト中に日本語でコメントを入れているので、それを見て判断してください。 
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances%2B">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances-plus.txt)
@@ -265,7 +257,7 @@ AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ�
 
 280blocker adblock filterは、できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、正規表現などの高度な文法を避け、互換性の高い記法で書かれています。ただ、このためにアプリの280blockerではブロック可能なビジターアンケート詐欺などの悪質サイトが完全にはブロックされません。当パッチはAdGuardとuBlock Originの高度な機能を使い、この点を補強します。また、ほかにも多くの悪質サイトを登録しています。AdGuardおよびuBlock Origin標準のフィルターリストに追加しても効果はありますが、Yuki's uBlock Japanese filtersご利用の場合は不要です。
 
-<strong>2021年9月現在、「信頼するフィルタ」のチェックは必須ではありません。ただ、ごく一部に信頼するフィルタ用の機能を使っているため、当サイトを信頼していただけるならチェックを推奨します。AdGuardの場合、信頼されたフィルタはページに様々なスクリプトを挿入することが可能になるため、本当に信頼できるのでなければチェックすべきではありません。</strong>
+<strong>ごく一部に信頼するフィルタ用の機能を使っているため、当サイトを信頼していただけるなら「信頼するフィルタ」のチェックを推奨します。AdGuardの場合、信頼されたフィルタはページに様々なスクリプトを挿入することが可能になるため、本当に信頼できるのでなければチェックすべきではありません。</strong>
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)

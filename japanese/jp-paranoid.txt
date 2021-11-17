@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211117
+! Version: 20211118
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -450,6 +450,8 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ?utm_campaign=post_article^$doc,removeparam=utm_campaign
 ?utm_source=google*&gclid=$doc,removeparam=/^utm_/
 ?utm_source=tw^$doc,removeparam=utm_source
+?zoneid=*&bannerid=$doc,removeparam=bannerid
+?zoneid=*&bannerid=$doc,removeparam=zoneid
 ^utm_source=$doc,removeparam=/^utm_/,domain=bunshun.jp|d-card.jp|e-3shop.com|nttdocomo.co.jp|rurubu.travel|u3h8.com
 ||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_ga=$doc,removeparam=_ga

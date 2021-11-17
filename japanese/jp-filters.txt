@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211117
+! Version: 20211118
 
 ! Temporal
 ||ascii.jp/elem/000/*/statistics-banner_
@@ -2722,6 +2722,7 @@ vkcdnservice.appspot.com^$3p
 ||mimilcnf.pro^
 ||mirnews.pro^
 ||misslk.com^
+||mltp.com^
 ||mncvjhg.com^$3p
 ||moatads.com^
 ||mobbahjug.com^
@@ -24654,6 +24655,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 &campaignid=$doc,removeparam=campaignid,domain=g123.jp
 &imp=$doc,removeparam=imp,domain=notamazgaming.com
 &ref=$doc,removeparam=ref,domain=buzzfeed.com|d-markets.net|news.2chblog.jp|nicovideo.jp|websearch.rakuten.co.jp
+&sub1=$doc,removeparam=/^sub\d=/,domain=ostlon.com
 &targetid=$doc,removeparam=targetid,domain=g123.jp
 &ugad=$doc,removeparam=ugad,domain=fod.fujitv.co.jp
 &utm_campaign=Feed%$doc,removeparam=utm_campaign
@@ -24694,6 +24696,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 ?banner_id=$doc,removeparam=banner_id,domain=onamae.com
 ?from=$doc,removeparam=from,domain=bilibili.com|yandex.com
 ?partner=feedburner^$doc,removeparam=partner
+?source_id=$doc,removeparam=source_id,domain=ostlon.com
 ?trackId=$doc,removeparam=netflix.com
 ?unique_op=af$doc,removeparam=unique_op,domain=dlsite.com
 ?utm_content=$doc,removeparam=utm_content,domain=zutto.co.jp
@@ -26405,8 +26408,9 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 /^https:\/\/[a-z]{9,12}\d{2}\.[a-z]{4,}\.cl\/\S{7,}\.html/$doc,domain=cl
 /^https?:\/\/(?:[a-z]{2}\d){3}[a-z]{2}\.com/$doc,domain=com
 /^https?:\/\/(?:www\.)?[-0-9a-z]{14,}\.(?:biz|fun|live)\/[a-zA-Z]{10,}\.php/$doc,domain=biz|fun|live
+/^https?:\/\/trk\.(?:[a-z]{5,7}-){3}[a-z]{5,7}\.xyz\/[0-9a-z]{8}\?[a-z]?id=/$doc,domain=xyz
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org/page\d{1,4}/$doc,domain=duckdns.org
-/^https?:\/\/[a-z]{6,10}\.com\/4\/\d{7}\/?$/$doc,popup
+/^https?:\/\/[a-z]{6,10}\.(?:com|net)\/4\/\d{7}\/?(?:\?var=\S+)?$/$doc,popup
 /^https?:\/\/[a-z]{6,15}\.(?:com|xyz)\/1\/\d{7}\/\?var=\d{7}&/$doc,popup
 /^https?:\/\/[-0-9a-z]*prize[-0-9a-z]+\.live\/\?u=[0-9a-z]+&o=[0-9a-z]+/$doc,domain=live
 ://0.*.biz/?p=$doc,domain=biz
@@ -26446,10 +26450,12 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 ||aditserve.com^$all
 ||admntrk.com^$all
 ||adop.co^
+||ads.sophiapoole.com^
 ||adsbtc.org^$all
 ||adsbtrk.com^
 ||adserveryo.xyz^$all
 ||adsrvtrk.biz^$doc
+||adstellar.icu^
 ||adtr1.com^$all
 ||adultmovie.bar^$doc
 ||adulttdates.com^$all
@@ -26465,6 +26471,7 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 ||ahitel.info^$doc
 ||airdate.info/*.php?key=$doc
 ||airreleaf.com^$doc
+||aleks-avto-rnd.ru^$all
 ||algarve-lagos.nl^$doc
 ||allbestsecurecn.com^$doc
 ||allhugenewz.com^$all
@@ -26486,6 +26493,7 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 ||antennash.com^
 ||antivirus-protection.me^$all
 ||antivirus.landerhd.com^$all
+||antonioward.xyz^$doc
 ||antwerp-japan.com^$doc
 ||app-department.report^$all
 ||applesurgery.pl^$doc
@@ -26993,12 +27001,14 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 ||onlineplus.click^$all
 ||onmiccatania.it^$doc
 ||onryshop.xyz^$doc
+||opalsantiago.com^$doc
 ||optica-art.ru^$doc
 ||optnx.co^$all
 ||orchideaonlus.it^$doc
 ||ot1w4je3ql4c.com^$doc
 ||otakarablog.com^$doc
 ||ou8gfpea3fk.com^$doc
+||ouhastay.net^
 ||ourhypewords.com^$all
 ||oz8q4de3al6c.com^$doc
 ||p-provance.ru^$doc
@@ -27034,6 +27044,7 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 ||profi-para.com^$all
 ||profitabletrustednetwork.com^
 ||profumeriadame.it^$doc
+||promisechase.xyz^$doc
 ||protect-web.com^$doc,popup
 ||protecttimeknew.live^$doc
 ||ps150.pl^$doc
@@ -27200,6 +27211,8 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 ||trellian.com^
 ||trfcbooost.com^$all
 ||trfrc.com^$all
+||trk.enemy-adult-scared-there.xyz^$all
+||trk.setting-nervous-steady-noted.xyz^$all
 ||trustedmeets.com^$all
 ||typiccor.com^$all
 ||ufetp.site^$doc
@@ -27227,10 +27240,12 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 ||vgw35hwr4w6x.com^
 ||videowatchmore.com^$doc
 ||virpropcnow.xyz^$all
+||virusstair.xyz^$doc
 ||vo2.qrlsx.com^$doc
 ||volkerflecht-fotografie.de^$doc
 ||vpnadefenceplus.com^$doc
 ||vsemsnasti.ru^$doc
+||vsoff.xyz^$doc
 ||vun.fyi^$all
 ||vur.fyi^$all
 ||vyezda.ru^$doc
@@ -27354,38 +27369,6 @@ okashimag.com,tech4yougadgets.com##+js(aopr, Notification)
 podcast.svenskafans.com##+js(acis, document.createElement, error.php)
 sevencredit.com##+js(acis, _0x287a)
 xemales.com##+js(acis, document.querySelectorAll, popMagic)
-
-! Ying Wang
-||achebetokoy.xyz^$doc
-||alltheinvisiblechildrenmovie.com^$doc
-||americanglutenfree.com^$doc
-||emersonjapan.xyz^$doc
-||genelemuel.xyz^$doc
-||gifufire.xyz^$doc
-||kidds.xyz^$doc
-||kingpendleton.xyz^$doc
-||kinseys.xyz^$doc
-||okayamabreakfast.xyz^$doc
-||philliss.xyz^$doc
-||raineys.xyz^$doc
-||salters.xyz^$doc
-||surgeryconsultants.net^$doc
-||takl.net^$doc
-||tamoutlet.xyz^$doc
-||thorntonok.xyz^$doc
-||willoughbyabernathy.xyz^$doc
-
-||buyjp.xyz^$doc
-||cipco.xyz^$doc
-||gojp.xyz^$doc
-||hkart.xyz^$doc
-||jplaw.xyz^$doc
-||jplife.xyz^$doc
-||jpshoppe.xyz^$doc
-||jpstop.xyz^$doc
-||shopjps.xyz^$doc
-||sweetsshop.xyz^$doc
-||watchyour.xyz^$doc
 
 ! Resource abuse
 -monero-miner-
