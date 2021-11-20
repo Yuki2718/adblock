@@ -247,6 +247,7 @@ secrettalk.me##.week_hot
 &ad_type=
 &adserver=
 &adslot=
+&crc=1|$xhr,3p
 *&token$media,redirect=noop-0.1s.mp3,domain=peekvids.com|playvids.com|pornflip.com|pornoeggs.com
 *&offer_id=$frame
 */?pu=$script
@@ -437,7 +438,8 @@ secrettalk.me##.week_hot
 /\/v\d\/a\/[a-z]{2,3}\/js\/\d{5,6}/$script,3p
 /\/wp-content\/uploads\/[a-z]{6,9}\.js(?:\?ver=[.0-9]+|,qver=[.0-9]+\.pagespeed\..+\.js)$/$script,1p
 /\/wp-content\/uploads\/[a-zA-Z]{12}\/[a-zA-Z]{12}\.js(?:\?ver=[.0-9]+|,qver=[.0-9]+\.pagespeed\..+\.js)$/$script,1p
-/^https:\/\/a\.[a-z]{9,16}\.(?:com|xyz)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
+/^https:\/\/a\.[-0-9a-z]{4,16}\.(?:club|com|cyou|net|ru|site|top?|xxx|xyz)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
+/^https:\/\/asg\.[0-9a-z]{4,21}\.(?:com|info|me|pro)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case,1p,domain=com|info|me|pro
 /^https:\/\/[-a-z]{9,15}\.com\/400\/\d{7}$/$script,3p
 /^https:\/\/[-a-z]{9,15}\.com\/500\/\d{7}\?/$xhr,3p
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$script,3p
@@ -452,6 +454,8 @@ secrettalk.me##.week_hot
 /^https:\/\/[a-z]{8,15}\.xyz\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xhr,3p
 /^https:\/\/[a-z]{8,15}\.xyz\/(?:bootstrap|bundle|index|jquery-ui|reset|styles?)\.css\?[\/0-9a-zA-Z]{46,}=?=?$/$css,3p,match-case
 /^https:\/\/[a-z]{8,15}\.xyz\/(?:brand|error|favicon|header|icon|image|logo|star|warning)\.png\?[0-9a-zA-Z]{46,}=?=?$/$image,3p,match-case
+/^https:\/\/[a-z]{8,16}\.(?:co|one|xyz)\/(?=[+\/a-zA-Z]{0,140}\d)(?=[+\/0-9a-z]{0,140}[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,3p,match-case
+/^https:\/\/[a-z]{8,16}\.(?:co|one|xyz)\/(?=[+\/a-zA-Z]{0,400}\d)(?=[+\/0-9a-z]{0,400}[A-Z])[+\/0-9a-zA-Z]{400,}$/$frame,3p,match-case
 /^https:\/\/[a-z]{8,9}\.com\/gamma\/\d{3,4}$/$xhr,3p
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,3p
 /^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[-a-z0-9]{5,}\.(?:com?|bid|cl(?:ick|ub)|li(?:nk|ve)|net|online|top)\/(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/$script,xhr,3p
@@ -2188,6 +2192,7 @@ vkcdnservice.appspot.com^$3p
 ||brrcaqvz.com^
 ||brydhoye.com^
 ||bshrdr.com^
+||bszmpfaj.com^
 ||bts05.site^
 ||budaicius.com^
 ||budvawshes.ru^
@@ -3308,6 +3313,7 @@ vkcdnservice.appspot.com^$3p
 ||zyrji.com^$3p
 
 ! ---------- Ad servers - foreign ----------
+||0i0i0i0.com^
 ||0zz0.com^$3p
 ||1rx.io^
 ||24vunvrv.com^
@@ -4068,6 +4074,7 @@ vkcdnservice.appspot.com^$3p
 ||fergemcot.com^
 ||ferociousvirtual.com^
 ||feyl4mh5to.com^
+||feyxyguwy.com^
 ||fgddl9szdof7.com^
 ||fhsmtrnsfnt.com^
 ||filetarget.net^
@@ -4795,6 +4802,7 @@ vkcdnservice.appspot.com^$3p
 ||questaurah.club^
 ||quitelyhabitat.com^
 ||r3adyt0download.com^
+||rabbitbreath.com^
 ||raceparent.com^
 ||raglogripsa.com^
 ||raigluce.net^
@@ -13674,6 +13682,8 @@ xtits.*##.spot-holder
 4ka.net,battle-one.com,cat.sc,dacelo.space,gurum.biz,haijin-boys.com,natsukimemo.com,news.biglobe.ne.jp,otonasalone.jp,sk-hanbai.com,sk-seisan.com,travelbook.co.jp,www-creators.com##.adsense
 4kb48akb.blog135.fc2.com##.sidemenu_body:has-text(/おすすめ|オススメ/)
 4meee.com###gtm_below_article_intro
+4ndan.com##.adtop
+4ndan.com##.sponserdlink
 4shared.com##.jsReklBlock
 4shared.com##.rekl_top
 4shared.com##.remove-rekl
@@ -24020,16 +24030,16 @@ anicloud.io##+js(aeld, ,0x)
 anicloud.io##+js(aopr, k75k67)
 animafan.biz##+js(acis, String.fromCharCode, delete window)
 anime-jl.net##+js(aopr, detector_launch)
+animecomplet.*,animeflv.*,animeflvnet.com,animeshouse.info,asianembed.com,bevru.club,bolssc.com,cartoonwire.to,charexempire.com,clipconverter.cc,cloudvideo.tv,cloudvideotv.*,databasegdriveplayer.*,dood.*,easylinks.*,eio.io,eririo.club,exe.app,exee.io,exey.io,files.im,freshi.site,fsapi.*,fullcinema.*,fullreal.*,gdriveplayer.*,gdtot.*,gogoplay1.com,goload.one,haodyu.com,hexupload.net,ilinks.in,jkanime.*,katflys.com,kiss-anime.*,kissmanga.*,letsupload.io,linkadshield.xyz,linkshub.*,mangahub.io,masteredutech.com,shorterall.com,shortlinkto.*,smoner.com,srek.net,st23q.com,streamz.*,streamzz.*,thevideome.com,tusfiles.com,up-load.io,uploadbox.cc,uploadhub.*,uppit.com,uqload.com,vevioz.com,vidembed.*,ylink.bid,yt1s.com##+js(acis, JSON.parse, break;case $.)
 animecurse.cz##+js(aost, Object, inlineScript)
 animeflv.*##+js(acis, jQuery, 'pp12')
-animeflv.*,animeflvnet.com,animeshouse.info,asianembed.com,bevru.club,bolssc.com,cartoonwire.to,charexempire.com,clipconverter.cc,cloudvideo.tv,cloudvideotv.*,databasegdriveplayer.*,dood.*,easylinks.*,eio.io,eririo.club,exe.app,exee.io,exey.io,files.im,freshi.site,fsapi.*,fullcinema.*,fullreal.*,gdriveplayer.*,gdtot.*,gogoplay1.com,goload.one,haodyu.com,hexupload.net,ilinks.in,jkanime.*,katflys.com,kiss-anime.*,kissmanga.*,letsupload.io,linkadshield.xyz,linkshub.*,mangahub.io,masteredutech.com,shorterall.com,shortlinkto.*,smoner.com,srek.net,st23q.com,streamz.*,streamzz.*,thevideome.com,tusfiles.com,up-load.io,uploadbox.cc,uploadhub.*,uppit.com,uqload.com,vevioz.com,vidembed.*,ylink.bid,yt1s.com##+js(acis, JSON.parse, break;case $.)
 animego.*,gogoanime.*,~animego.biz,~animego.org,~gogoanime.app,~gogoanime.pro,~gogoanime.sx##+js(set, String.prototype.charAt, noopFunc)
 animeindo.cc,anysex.com,babeporn.*,babestube.com,deviants.com,eroclips.org,fullxxxvideos.net,hentaifreak.org,img4fap.*,lesbian8.com,manytoon.com,momvids.com,nonktube.com,notube.net,pervclips.com,porn18sex.com,porndr.com,pornfuck.net,sexsaoy.com,sleazyneasy.com,thatav.net,uploadever.com,vivud.com,xnxx.com,xsober.com,xxgasm.com##+js(aopr, decodeURI)
 animeplanet.cc##+js(aopw, __C)
 animesa.*##+js(set, adblock_use, false)
 animesuge.io##+js(set, fired, true)
 animetw.*,asianclub.*,avhost.xyz,bazavox.com,cdn-myhdjav.info,dutrag.com,embed.casa,embed.media,embedsito.com,fembed.com,feurl.com,gaobook.review,javideo.pw,javip.pro,javjav.top,javlove.club,javstream.top,mavplay.*,mavplayer.xyz,mrdhan.com,playdoe.xyz,playvideo.best,smartshare.tv,steanplay.*,streamp1ay.*,streanplay.*,txxx.*,ujav.me,videogreen.xyz,watchgayporn.online,youtnbe.xyz##+js(aopr, jwplayer.utils.Timer)
-animetw.*,asianclub.*,avhost.xyz,bazavox.com,cloudemb.com,diasfem.com,dutrag.com,embed.casa,embed.media,embedsb.com,embedsito.com,fakyutube.com,fembed.*,findjav.com,fplayer.info,gaobook.review,iframejav.*,japopav.tv,javideo.pw,javip.pro,javjav.top,javlove.club,javmvp.com,javstream.top,juicywest.com,mavlecteur.com,mavplay.*,mavplayer.xyz,mediashore.org,mm9842.com,moviemaniac.org,mrdhan.com,pelistop.co,playdoe.xyz,playersb.com,sbembed1.com,sbembed2.com,sbplay.*,sbplay1.com,sbvideo.*,serverf4.org,smartshare.tv,streamm4u.club,streamsb.net,tubesb.com,ujav.me,vidcloud.fun,videogreen.xyz,vidsrc.*,watchgayporn.online,watchjavnow.xyz,xxxjaa.xyz,youtnbe.xyz##+js(aopr, __Y)
+animetw.*,asianclub.*,avhost.xyz,bazavox.com,cloudemb.com,diasfem.com,dutrag.com,embed.casa,embed.media,embedsb.com,embedsito.com,fakyutube.com,fembed.*,findjav.com,fplayer.info,gaobook.review,iframejav.*,japopav.tv,javideo.pw,javip.pro,javjav.top,javlove.club,javmvp.com,javstream.top,juicywest.com,mavlecteur.com,mavplay.*,mavplayer.xyz,mediashore.org,mm9842.com,moviemaniac.org,mrdhan.com,pelistop.co,playdoe.xyz,playersb.com,sbembed1.com,sbembed2.com,sbplay.*,sbplay1.com,sbvideo.*,serverf4.org,smartshare.tv,streamabc.xyz,streamm4u.club,streamsb.net,tubesb.com,ujav.me,vidcloud.fun,videogreen.xyz,vidsrc.*,watchgayporn.online,watchjavnow.xyz,xxxjaa.xyz,youtnbe.xyz##+js(aopr, __Y)
 anitube.*##+js(set, ATESTADO, 1)
 anitube.*,gdtot.*,hakaraw.com,mangovideo.*,sxyprn.*,torlook.info,uploadraja.com##+js(acis, document.createElement, 'script')
 anitube.*,eztvtorrent.org##+js(aopr, exoJsPop101)
@@ -24043,7 +24053,7 @@ bevru.club,eririo.club,exe.app,exey.io,freshi.site##+js(no-fetch-if, google)
 ashort1a-matik.tk,ashort1a.xyz,besthentaitube.com,cuturl.in,hdvid.*,ichineseporn.com,imgdawgknuttz.com,japaneseasmr.com,mitly.us,payskip.org,seg-ashort1a-ma.tk,shortenmm.cf,topchort.tk##+js(aopw, atOptions)
 ashort1a-matik.tk,ashort1a.xyz,seg-ashort1a-ma.tk,topchort.tk##+js(acis, document.createElement, ignielAdBlock)
 asiacenter.or.jp,flat35.com,jhf.go.jp,millvi.jp,sundai.ac.jp##+js(set, Eviry.Utils.Logger.log, noopFunc)
-asianclub.*,cdn-myhdjav.info,javhdporn.net,javhub.pro,javlove.club,javstream.top,redanimedatabase.cloud,sypl.xyz##+js(set, clientSide.adbDetect, noopFunc)
+asianclub.*,cdn-myhdjav.info,javhdporn.net,javlove.club,javstream.top,redanimedatabase.cloud,sypl.xyz##+js(set, clientSide.adbDetect, noopFunc)
 asianclub.tv,nuvid.com##+js(aeld, click, open)
 atlaq.com,gdriveplayer.*##+js(aopr, zfgformats)
 audiotag.info##+js(set, Global.adv, undefined)
@@ -26050,6 +26060,7 @@ _468x60.$badfilter
 @@/static/image/ad_top_bg2.png?&ad_box_=$image,1p
 @@/wp-banners.js^$script
 @@/wp-content/plugins/quick-adsense-reloaded/assets/js/ads.js
+@@/wp-content/plugins/wordpress-popup/assets/js/adb.min.js?$script,1p
 @@||47news.jp/public/bannerAd/$image,1p
 @@||actzero.jp/*/service/smm/txt_ad_achievement.png
 @@||ads-i.org/images/ads1.jpg
@@ -27277,6 +27288,7 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 ||winnertoday.site^$doc
 ||wiretek.cl^$doc
 ||wishuiuck.net^$all
+||withoughts.co^
 ||wkadrzezycia.pl^$doc
 ||womenforyou.net^$all
 ||womeniover.com^$all
@@ -27300,6 +27312,7 @@ xn--3yq508bn9ch6e2sbvis19bvl1bjte.jp#@#.ad-btn
 ||youtuba.com^$all
 ||youutube.com^$doc
 ||youvetube.com^$doc
+||yprocedent.co^
 ||zagroda-jezdziecka-mustang.pl^$doc
 ||zbysdw.com^$all
 ||zedplays.com^$all
