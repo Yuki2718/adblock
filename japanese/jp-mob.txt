@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211120
+! Version: 20211121
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -38,6 +38,7 @@
 ||japan.norton.com/blog/wp-content/uploads/2016/04/br_sp.jpg
 ||japancred.com/wp-content/uploads/2018/01/ebay30.jpg
 ||jmty.jp/s/geniee/rectangle_$frame,domain=jmty.jp
+||k-img.com/images/mobile_data/sim/banner/rnl/*_100_$domain=s.kakaku.com
 ||k-img.com/script/fixed_bnr_area.js$domain=s.kakaku.com
 ||m.media-amazon.com/images/I/$domain=yamahack.com
 ||m.youtube.com/*/ad.js$script
@@ -244,6 +245,8 @@ hensachiterrace.com##^.footer_overlay
 hinata.me##div[class*="AdManager__AdWrapper"]
 hoiclue.jp##.ad-SP
 hoiclue.jp##.adRectangleBase
+hoken.kakaku.com###headerAd
+hoken.kakaku.com##.p-publicBoard
 hosyusokuhou.jp###ovrss
 hosyusokuhou.jp##.rankbox
 independent.co.uk###stickyFooterRoot
@@ -316,6 +319,7 @@ mi-mollet.com,tutorialsforu.info###MM_SP_Billboard
 mi-mollet.com,tutorialsforu.info###MM_SP_readmore
 michill.jp,travel.navitime.com##.sherpa-component[data-ad_type]
 mildch.com###container > div.free-area > div[align="center"] > script[src*="adingo.jp"]:upward(2)
+motor-fan.jp##.ad_area
 msn.com##.stripeouter.news[data-section-id="stripe.special"]:has(.nativead)
 mudainodocument.com###im_interstitial_panel
 navitime.co.jp##.footer-rect-ad-frame
@@ -386,10 +390,21 @@ s.famitsu.com##.l-banner
 s.famitsu.com##.l-contents-block--tie-up-top + div.l-contents-block
 s.kakaku.com###frameFeedRandomAd
 s.kakaku.com###headerAd
+s.kakaku.com###priceMenuMakerSelect
+s.kakaku.com##.-pr.p-bnr
 s.kakaku.com##.misetoku
+s.kakaku.com##.mobileBillboardWrapper
+s.kakaku.com##.p-ad
+s.kakaku.com##.p-bnr span.c-global_pr:upward(.p-bnr)
+s.kakaku.com##.p-publicBoard
+s.kakaku.com##.p-ranking_link-feature
+s.kakaku.com##.p-sponsorShopArea
 s.kakaku.com##.subCtsArea
 s.kakaku.com##.withIboxDb
+s.kakaku.com##div[class^="pricePrArea"]
 s.kakaku.com##div[style="background:#ddd; min-height:120px;"]
+s.kakaku.com##li .icnPr:upward(li)
+s.kakaku.com##li.p-simplan_item span.p-rank-pr:upward(li)
 sankei.com###sponsored
 sankei.com##.module_ad + section.module.secondary
 sankeibiz.jp##.module_pr:has(> div.module_content > div[id^="div-gpt-ad-Mobile_Trend"])
@@ -416,6 +431,7 @@ washingtonpost.com##[data-qa="article-body-ad"]
 watch.impress.co.jp##.inline-rect
 watch.impress.co.jp##.movie.ad
 watch.impress.co.jp##div[style="min-height: 250px;"]
+waterserver.kakaku.com##li.unit > a[href*="/jump.asp?"][onclick^="onclickcatalysttopcs"]:upward(1)
 web.gekisaka.jp##.SP_NEWS_D_SP_ONLY
 webcg.net##.ad-box
 weblio.jp##.adBanner
