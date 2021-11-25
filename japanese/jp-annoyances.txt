@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211124
+! Version: 20211126
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -233,7 +233,6 @@ youtube-nocookie.com,youtube.com##.ytp-cards-teaser
 ||a.mailmunch.co/app/$script,3p
 ||app.hubspot.com/conversations-visitor$3p
 ||cdn.pn.vg^$3p
-||delivery.satr.jp^
 ||downloads.mailchimp.com/js/signup-forms/
 ||dspfapi.durasite.net/recommend|
 ||fanp.me^$3p
@@ -719,6 +718,7 @@ houyhnhnm.jp##.js-skip-content
 howtogeek.com##div[id^="v2campaignpopup"]
 hypebeast.com###newsletter-popup-fixed
 ig.com###sticky-footer
+ima55.biz##+js(nostif, #popup, 5000)
 imitsu.jp###cv_bottom_a
 imitsu.jp###modal_bg
 instagram.com###react-root ~ div[class*=" "][class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > div > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
@@ -1248,6 +1248,8 @@ webbu.jp##^#text-7
 ||disqus.com/recommendations.js
 ||fandom.com/f2/api/public/feed
 ||fandom.com/f2/api/public/hot-content-module
+||gamewith.jp/enquete/banner.png
+gamewith.jp##.gdb-enquete-banner
 ||gazoo.com/pages/_system/recommend/
 ||iteratehq.com^$3p
 ||itmedia.co.jp/js/enterprise/altblog/scranking_blog_2days.$domain=blogs.itmedia.co.jp
@@ -1383,6 +1385,8 @@ caribbeancom.com##.top-pr
 ||e-ohaka.com/img/pc_banner05.png
 ||e-ohaka.com/regist_resources/img/form_b_pc0818.png
 ||foxnews.com^*/fox-news/nation-promo/nation_promo_$image,1p
+||gamewith.jp/walkthrough/recruit/banner.png
+gamewith.jp##.walkthrough-recruit-banner:upward(1)
 ||goo-net.com/cache/common/bnr/bnr_carlease_600_500.png
 ||google.*/async/promos?$xhr
 ||gorin.jp/img/tver_banner/
@@ -1518,7 +1522,11 @@ nordot.app##^.sidebar__content > .brandModule
 !#if env_mobile
 ||alpen-group.jp/images/parts/banner/footer/ec_footter_SP_690_250.
 ||carsensor.net/static/sp/img/top/bnr.png
+||cityheaven.net/img/tiktok_footer_banner.jpg
+cityheaven.net##.tiktok_banner_box
 ||wowma.net/exuc/promotion/$domain=wowma.jp
+cityheaven.net###widget_recruit
+cityheaven.net###widget_recruitmens
 news.yahoo.co.jp##.MtoCTool
 recochoku.jp##^.header-campaign-bnr
 sbc-dental.com##.kotei-mob
