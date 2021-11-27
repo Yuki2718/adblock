@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211127
+! Version: 20211128
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -397,6 +397,9 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||tags.tiqcdn.com/utag/zurich-japan/main/prod/utag.js$script,domain=net.zurich.jp
 @@||toplay.biz/log_event$1p,xhr
 @@||ttutu.biz/log_event$1p,xhr
+!#if env_mobile
+||cxense.com/cx.js$script,redirect-rule=noop.js,domain=itmedia.co.jp
+!#endif
 
 ! ---------- Tracking links ----------
 -aff-*&clickid=$doc,domain=apple.com
