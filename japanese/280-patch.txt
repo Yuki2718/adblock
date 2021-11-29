@@ -2,14 +2,13 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211129
+! Version: 20211130
 
 .biz/?auf=*&sub1=$document
 .biz/?p=*&sub1=$document
 .biz/?p=*&sub1=$popup,domain=www.google.co.jp|www.google.com
 .co/?go=*&cat=$document
 .com/c/*?s1=$document
-.com/smartlink/?a=$document
 .me/?go=*&cat=$document
 .net/c/*?s1=$document
 .ru/?u=*&o=$document
@@ -40,6 +39,7 @@
 /jscheck.php?enc=$xmlhttprequest
 /jump/next.php?r=$document
 /jump?id=*&_tgUrl=$document
+/ll/click.php?key=$document
 /push-skin/skin.min.js
 /redirect.php?cid=*&click_price=$document
 /redirect?feed=$subdocument
@@ -47,6 +47,7 @@
 /script/i.php?stamat=$document
 /search/tsc.php?
 /site/redirectpage?ca=link&sid=$document
+/smartlink/?a=*&s1=$doc
 /step1.php?msg=1&cnv=NOPCODE&cnt=$document
 /tds/ae?tdsId=*&clickid=$document
 /templates/_assets/push-skin/skin.html
@@ -77,7 +78,7 @@
 /^https:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[-0-9a-z]{5,}\.com\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}&pst=\d{10}&/$document
 /^https:\/\/[-a-z]{20,}\.cyou\/[-0-9a-f]{36}\/\?btd=/$document
 /^https:\/\/[-a-z]{5,10}\d{4,6}\.[a-z]{5,18}\.cl\/[%_0-9a-zA-Z]{10,}\.html/$document
-/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?(?:cid=[0-9a-z]+&)?u=[0-9a-z]+&o=/$document
+/^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?(?:cid=[0-9a-z]+&)?u=[0-9a-z]+&/$document
 /^https:\/\/[0-9a-z]{3,}\.[-a-z]{10,}\.top\/[a-z]{8}\/\?utm_campaign=\w{40,}&t=/$document
 /^https:\/\/[a-z]+\.[a-z]+prizes\.net\/[a-z]\/[0-9a-z]+\?s1=/$document
 /^https:\/\/[0-9a-z]{10,18}\.[a-z]{14,25}\.es\/\S{10,}\.html/$document
@@ -205,6 +206,7 @@
 ||aslnk.link^$all
 ||asseco.ltd^$document
 ||asprm.ru^$document
+||astrazichostfilez2.xyz^$all
 ||aswaashopis.com^$document
 ||ationpeci.one^$document,popup
 ||atobarai-honpo.com^$document
@@ -252,6 +254,7 @@
 ||best2020-games-web1.com^$all
 ||bestbut.com^$all
 ||bestlifeblog.ru^$document
+||bestlifeoffer20.com^$all
 ||bestoffer21.info^$all
 ||bestprotection.site^$document
 ||bestsecretflirt.com^$all
