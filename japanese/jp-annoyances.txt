@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211127
+! Version: 20211201
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -32,6 +32,7 @@ cookpad.com###halloween2021_modal
 /?smpushprofile=load_frontend_push_js
 /OneSignalSDK-
 /OneSignalSDKWorker.
+/amp-user-notification-
 /amp-web-push-
 /imports/notifications.
 /jquery_notification_v
@@ -718,7 +719,6 @@ houyhnhnm.jp##.js-skip-content
 howtogeek.com##div[id^="v2campaignpopup"]
 hypebeast.com###newsletter-popup-fixed
 ig.com###sticky-footer
-ima55.biz##+js(nostif, #popup, 5000)
 imitsu.jp###cv_bottom_a
 imitsu.jp###modal_bg
 instagram.com###react-root ~ div[class*=" "][class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > div > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
@@ -1355,6 +1355,7 @@ response.jp,spyder7.com##^.sidebox-pickup
 !#endif
 !#if env_mobile
 app-liv.jp##.p-pr-carousel
+m.facebook.com###m_news_feed_stream article:has-text(/Suggested for You|おすすめ/)
 news.2chblog.jp###resid1 > div > div:last-child > span[style="font-size: 100%;"]:upward(1)
 automesseweb.jp###_popIn_ranking:upward(.code_php_in_widget)
 !#endif
