@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211202
+! Version: 20211203
 
 ! Temporal
 ||ascii.jp/elem/000/*/statistics-banner_
@@ -472,7 +472,7 @@ secrettalk.me##.week_hot
 /^https?:\/\/www\.[0-9a-z]{5,11}\.(?:com|name)\/ok\/ok\.js$/$script,1p,match-case,domain=com|name
 /^https?:\/\/[-.0-9a-z]+-ad\.(?:com|jp|net)[\/:]/$3p
 /^https?:\/\/[-.0-9a-z]+-ads\.com[\/:]/$3p
-/^https?:\/\/[0-9a-f]{53}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$xhr,3p
+/^https?:\/\/[0-9a-f]{50}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$xhr,3p
 /^https?:\/\/[a-z]{8,13}\.com\/5\/\d{7}$/$script,3p
 /^https?:\/\/[a-z]{8,11}\.(?:com|net)\/tag\.min\.js$/$script,3p
 /^https?:\/\/s3\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$script,3p,xhr,domain=~amazon.com
@@ -6920,7 +6920,6 @@ _Ad300x250_$domain=ckworks.jp
 ||media.complex.com/common/cmnunt.js
 ||megasoft.co.jp/mifes/seiki/img/navi_*_top.
 ||megaup.mobi/assets/scripts/$script,1p
-||megaup.net/imageads/$image,redirect-rule=noop.html,1p
 ||megaup.net/sw.js
 ||melga.jp/img/marubatsu_
 ||memesng.com/ads*$3p
@@ -10035,6 +10034,7 @@ _pop_under.js$domain=souko.pipii.tv
 /statcollector.
 /statcollector/*
 /statcounter-$script
+/statcounter.js
 /static/tracking.min.js
 /statistics/statistics.php
 /stats.*/tracker.
@@ -25823,7 +25823,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||juku-kyoiku.com/ads/img/ttl_category.gif
 @@||jwing.net/wp/wp-content/themes/child/css/ad.css
 @@||k-img.com/javascripts/modules/rst/analytics.js?$domain=tabelog.com
-! Not only for mobile e.g. hikkoshi
+! Not only for mobile e.g. hikkoshi; partly adobedtm dependent
 @@||k-img.com/script/analytics/s_code$script,domain=kakaku.com
 @@||kaitaro.jp/images/ad.gif
 @@||kakao.com^$xhr,1p
