@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211128
+! Version: 20211202
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -277,6 +277,8 @@ _omniture.$script,domain=mathworks.com
 ||tm.ma.future-shop.net^
 
 ! ---------- Analytics specific ----------
+! cf. https://github.com/Yuki2718/adblock/issues/40
+/^https:\/\/www\.uniqlo\.com\/[a-zA-Z]{6,}\/[-\/0-9a-zA-Z]{45}$/$script,1p,domain=uniqlo.com
 @@||bdash-cloud.com/out/recommendations?$script,3p,badfilter
 @@||bdash-cloud.com/recommend-script/$script,3p,badfilter
 @@||bdash-cloud.com/recommend-script/$script,domain=junonline.jp
@@ -366,7 +368,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||cxense.com/cx.cce.js$script,domain=googirl.jp
 @@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|ure.pia.co.jp
 @@||disaportal.gsi.go.jp/maps/js/counter.js
-@@||ensighten.com^*/Bootstrap.js$domain=americanexpress.com|britishairways.com|citi.com|dell.com|hp.com|t-mobile.com
+@@||ensighten.com^*/Bootstrap.js$domain=americanexpress.com|britishairways.com|citi.com|dell.com|hp.com|norton.com|t-mobile.com
 @@||ensighten.com^*/code/$script
 @@||ensighten.com^*/scode/$script,domain=norton.com
 @@||fplay.online/log_event$1p,xhr
@@ -437,6 +439,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 .com/lp/*^utm_source=$doc,removeparam=utm_source
 .com/lp/*^utm_term=$doc,removeparam=utm_term
 .jp/lp/*^utm_campaign=$doc,removeparam=utm_campaign
+.jp/lp/*^utm_medium=$doc,removeparam=utm_medium
 .jp/lp/*^utm_source=$doc,removeparam=utm_source
 .jp/lp/*?trcd=$doc,removeparam=trcd
 .jp/lp/*?waad=$doc,removeparam=waad

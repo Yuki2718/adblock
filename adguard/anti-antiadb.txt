@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20211201
+! Version: 20211202
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -43,6 +43,7 @@
 /^https:\/\/[a-z]{8,15}\.xyz\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{8,15}\.xyz\/(?:bootstrap|bundle|index|jquery-ui|reset|styles?)\.css\?[\/0-9a-zA-Z]{46,}=?=?$/$stylesheet,third-party,match-case
 /^https:\/\/[a-z]{8,15}\.xyz\/(?:brand|error|favicon|header|icon|image|logo|star|warning)\.png\?[0-9a-zA-Z]{46,}=?=?$/$image,third-party,match-case
+/^https:\/\/[a-z]{8,15}\.xyz\/[%0-9a-zA-Z]{170,}$/$script,third-party
 /^https:\/\/[a-z]{8,9}\.com\/gamma\/\d{3,4}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
 /^https?:\/\/[a-z]{6,10}\.com\/4\/\d{7}\/?$/$document,popup
