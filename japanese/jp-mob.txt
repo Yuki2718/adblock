@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211204
+! Version: 20211206
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -53,6 +53,7 @@
 ||recipe.rakuten.co.jp/webinfo/sp/ads/
 ||renote.jp/assets/sp_inline_ad_
 ||renote.jp/assets/sp_overlay_ad_
+||seesaa.net/common/under.html$domain=news4wide.net
 ||shufu-job.jp/news/wp-content/themes/s-job/img/common/flow-ad_
 ||smart-flash.jp/wp-content/themes/original/embed/FoneH
 ||src.gigafile.nu/banner/
@@ -184,10 +185,11 @@ blog.goo.ne.jp##.article__hideads
 blog.goo.ne.jp##.navbar__link--bottom
 blog.livedoor.com##.attention > ul.box > li.small > script:upward(1)
 bunshun.jp###sp_multiplex[style="min-width: 300px; min-height: 250px;"]
+burusoku-vip.com,negisoku.com###fluct_overlay
 buzzap.jp##.sp_inarticle
 camphack.nap-camp.com,runhack.jp,tsurihack.com,watch.impress.co.jp##._popIn_infinite_ad
 cardlifestyle.com##.related-ad-area
-chomagireko.blog.jp###lite_link
+chomagireko.blog.jp,news4wide.net###lite_link
 chronicle.wiki,ff4psp.jp,game-info.wiki,genron.blogos.com,jbbs.shitaraba.net,memo.wiki,playing.wiki,pokemasujikaku.com,seesaawiki.jp,shitamachi.world,sokuhou.wiki,sougouwiki.com,st12.jp##.ad-300_250
 chronicle.wiki,ff4psp.jp,game-info.wiki,genron.blogos.com,memo.wiki,playing.wiki,pokemasujikaku.com,seesaawiki.jp,shitamachi.world,sokuhou.wiki,st12.jp##.header-banner
 chansoku.com###article-contents > span:has-text(スポンサードリンク)
@@ -345,7 +347,6 @@ mudainodocument.com###im_interstitial_panel
 myanimelist.net##.anchor-ad
 navitime.co.jp##.footer-rect-ad-frame
 navitime.co.jp##div[style="display:flex;justify-content:center;align-items:center;height:120px;width:100%;"]
-negisoku.com###fluct_overlay
 newmofu.doorblog.jp##.content > #lite_link:first-of-type
 news-postseven.com##div[style$="text-align:center; margin-bottom: 5px; margin-top:-20px; min-height:245px;"]
 news-postseven.com##div[style$="text-align:center; min-height: 100px;"]
@@ -367,6 +368,8 @@ news.tennis365.net##._popIn_recommend_article_ad_reserved
 news.tv-asahi.co.jp###common-header > #adbanner_spheader:upward(1)
 news24.jp##.adText
 news4vip.livedoor.biz###f984a
+news4wide.net##.advertisement-position
+news4wide.net##.free-area script[src^="https://js.ad-"]:upward(.free-area)
 newsweekjapan.jp###induction-box
 nikkansports.com###MiddleAD
 nikkansports.com###TopAD
