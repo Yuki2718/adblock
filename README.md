@@ -262,7 +262,7 @@ Update: Since generic cosmetic filtering is disabled by default on mobile, some 
 
 [dbl.oisd.nl | Internet's #1 domain blocklist](https://oisd.nl/)
 
-[spirillen's uBlockOrigin Rules](https://gitlab.com/AnonymousPoster/ublockorigin-rules)
+[spirillen's uBlockOrigin Rules](https://mypdns.org/my-external-stuff/ublockorigin-rules)
 
 #### Acknowledgements
 
