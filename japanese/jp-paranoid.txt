@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211207
+! Version: 20211208
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -219,7 +219,6 @@ smart-flash.jp##^.adsBlock
 /AppMeasurement.js
 /AppMeasurement_Module_
 /Criteo/*$script
-/amp-geo-
 /amplitude-*.js$script,domain=~amplitude.com
 /analytics/event
 /analyticsmediator.
@@ -237,6 +236,7 @@ smart-flash.jp##^.adsBlock
 /js/stats.js
 /metaTag.min.js
 /mistats/*
+/newrelic.js
 /pageviews/*$domain=~pageviews.toolforge.org|~stats.wikimedia.org|~tools.wmflabs.org
 /rtoaster.js$script
 /s_code.$domain=4travel.jp|akiba-souken.com|asahibeer.co.jp|daiwa.jp|eiga.com|fontplus.jp|his-j.com|hpplus.jp|lake.jp|magaseek.com|nikon-image.com|nomura.co.jp|nttdocomo.co.jp|orbis.co.jp|peachjohn.co.jp|ponparemall.com|rakuten-bank.co.jp|service.mcafee.com|shop-yukimeg.jp|shopch.jp|smart-j.com|tabelog.com|www.smbc.co.jp|zexy-enmusubi.net
@@ -332,6 +332,8 @@ shoeisha.co.jp###rec-related-book-list
 storee.saisoncard.co.jp###block-top-recommend
 storee.saisoncard.co.jp##.block-recommend-container
 storee.saisoncard.co.jp##.mainframe_ > .event_
+topics.nintendo.co.jp###rt_topics_top_recommend
+topics.nintendo.co.jp##.topics-recommend__headline
 wpb.shueisha.co.jp##.js-cxense-widget-recommend
 
 ! ---------- Exception for analytics ----------
@@ -344,7 +346,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||adobedtm.com^*/mbox-contents-$script,domain=americanexpress.com|costco.com|lenovo.com|nfl.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|auspost.com.au|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|support.nec-lavie.jp|telegraph.co.uk|vanityfair.com|wired.com
-@@||ampproject.org/v0/amp-geo-$script,domain=9to5google.com|9to5mac.com|dronedj.com|electrek.co
 @@||api.cxense.com/document/search?$script,xhr,domain=friday.kodansha.co.jp|ntv.co.jp|tv-tokyo.co.jp
 @@||api.cxense.com/public/widget/click/$domain=api.cxense.com
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
@@ -380,6 +381,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||ipapi.co/json/$xhr,domain=168.dailymaverick.co.za|audius.co
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
 @@||justmyshop.com/gate/criteo/product-id.js$1p
+@@||kentucky.com/mistats/finalizestats.js$1p
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
 @@||lptag.liveperson.net/tag/tag.js$domain=uniqlo.com
 @@||playy.online/log_event$1p,xhr
