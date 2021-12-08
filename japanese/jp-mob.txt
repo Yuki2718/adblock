@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211208
+! Version: 20211209
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -411,6 +411,7 @@ realsound.jp##.paragraphAd
 realtime-chart.info##div[style="height:334px;width:100%;background:#000;font-size:38px"]
 recipe.rakuten.co.jp##.ads_recipe_middle_banner_pr
 recipe.rakuten.co.jp##p[style="color: rgb(160, 160, 160); font-size: 10px; text-align: center;"]
+reddit.com##shreddit-comments-page-ad
 reddit.com##.adLinkBar:upward(article[style="z-index: 1;"])
 reddit.com##article[id] > a[href^="https://alb.reddit.com/"] ~ *
 renote.jp##div[class$="ad__container"]
@@ -586,7 +587,9 @@ video.fc2.com##.list-spCont > li[style="line-height: 0; margin: 0; padding: 0; h
 video.fc2.com##center[style$="opacity: 1;"]
 video.fc2.com##div[style^="height:30px;text-align:center;background-color:black;"]
 vipcle2.com##body > div[id^="text-"] > div.textwidget:has(> div[class^="ad300"])
-xhamster.*,xhamster11.*##.thumb-list-mobile-item--widget
+xhwide1.com##.video-view-ads--full-page
+xhwide1.com##.wio-xspl-adshare
+xhamster.*,xhamster11.*,xhwide1.com##.thumb-list-mobile-item--widget
 xhamster.*,xhamster11.*##.wio-cbanner-container
 xn--r8jwklh769h2mc880dk1o431a.com##.clear_balloon + .spadtitle
 xn--r8jwklh769h2mc880dk1o431a.com##.etpickup
@@ -622,7 +625,7 @@ moeimg.net##^#overlay_frame
 rank-king.jp##^.banner
 tvjapan.net##^#bg-ad-mob
 weloma.net##^a[href="https://2048.biz/mobile/"]
-xhamster.*##^script:has-text(popunder)
+xhamster.*,xhwide1.com##^script:has-text(popunder)
 xn--w8jtkjf8c570x.com##^div[id$="mobile_banner_top"]
 
 h-ken.net##+js(acis, onload, ad)
@@ -659,6 +662,7 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 ||lucky4wins.club^$all
 ||momimomibokujo.xyz^$doc
 ||onanistic1919.xyz^$doc
+||phoneapplicationlabs.top^$all
 ||senzuri1919.xyz^$doc
 ||sexsex1919sex.*^$doc
 ||systemupdatix.club^$all

@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211208
+! Version: 20211209
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -279,6 +279,8 @@ _omniture.$script,domain=mathworks.com
 ||tm.ma.future-shop.net^
 
 ! ---------- Analytics specific ----------
+/\.(?:co(?:m|\.uk)|jp)\/[-_0-9a-zA-Z]{6,}\/[-\/_0-9a-zA-Z]{30,}$/$script,1p,domain=aa.com|americanairlines.jp|ana.co.jp|comptoirdescotonniers.co.jp|flypeach.com|helmutlang.com|hm.com|ibm.com|jal.co.jp|jetstar.com|santanderbank.com|shopdisney.*|theory.co.jp|zozo.jp
+/\.(?:com|cn|jp)\/[-_0-9a-zA-Z]{4,}\/[-\/_0-9a-zA-Z]{30,}$/$script,1p,domain=asos.com|zara.*
 @@||bdash-cloud.com/out/recommendations?$script,3p,badfilter
 @@||bdash-cloud.com/recommend-script/$script,3p,badfilter
 @@||bdash-cloud.com/recommend-script/$script,domain=junonline.jp

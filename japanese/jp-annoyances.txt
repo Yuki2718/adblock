@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211208
+! Version: 20211209
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -1433,6 +1433,8 @@ niigata-nippo.co.jp##.col_banners_inline
 ||p.dmm.co.jp/p/general/ds/bnr/
 ||pacopacomama.com/dyn/dla/images/pr/
 pacopacomama.com##.top-pr
+||r10s.jp/com/img/home/smart/top/ecosystem/bnr/$domain=rakuten-bank.co.jp
+rakuten-bank.co.jp###rc-gp-banner
 ||ranking.xgoo.jp^*/PC_650_80.png
 ||realsound.jp/wp-content/themes/realsound/img/rs-career/bnr-
 realsound.jp###rsCareer
@@ -1488,6 +1490,7 @@ mail.yahoo.co.jp##.balloon_box
 mdpr.jp##article.list-text .heading-a__pr:upward(article)
 mypage.sso.biglobe.ne.jp##.pr-main-guidance
 news.livedoor.com##.topicsList > li > i.pr:upward(1)
+nikkei.com##div[class^="adsArea_"] > section > div > div[class^="__item_"] img[alt="PR"]:upward(div[class^="__item_"]):remove()
 open.spotify.com##.GenericModal__overlay--afterOpen
 passmarket.yahoo.co.jp##.ptsGoToPromo
 rakko.tools##.rakkoma-widget-iframe
@@ -1532,6 +1535,8 @@ nordot.app##^.sidebar__content > .brandModule
 ||carsensor.net/static/sp/img/top/bnr.png
 ||cityheaven.net/img/tiktok_footer_banner.jpg
 cityheaven.net##.tiktok_banner_box
+||rakuten-bank.co.jp/shared/top/images/str-main/fbnr-
+rakuten-bank.co.jp###floating-bnr-area
 ||wowma.net/exuc/promotion/$domain=wowma.jp
 cityheaven.net###widget_recruit
 cityheaven.net###widget_recruitmens
@@ -1681,7 +1686,7 @@ otapol.com###balloonText
 ||vignette.wikia.nocookie.net^*/Nat195.$image,important,domain=yakusokunoneverland.fandom.com
 ||w.atwiki.jp/common/_js/preconnect.
 ||xhcdn.com/xh-desktop/*.parental-control.js
-fullxh.com,hamsterix.*,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhwebsite.com##+js(rc, xh-thumb-disabled, html)
+fullxh.com,hamsterix.*,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhwebsite.com,xhwide1.com##+js(rc, xh-thumb-disabled, html)
 abandonmail.com##+js(aopr, indexedDB.open)
 ac-illust.com##+js(set, ajaxCheckIsEnableSearch, noopFunc)
 ampmedia.jp##.article-vote-area
@@ -1693,6 +1698,13 @@ ironna.jp###side-theme-list
 jma.go.jp###jma_ad_config_button
 live2.nicovideo.jp##[class^=___player-display-header___]
 mycams.com,tabletporn.com,trannylivecams.com###over-18-notification
+silhouette-ac.com###download-countdown
+silhouette-ac.com###timer-modal-download-area[style="display:none"]:style(display: block!important;)
+silhouette-ac.com##.dl_wrapper:style(height: 43px!important;)
+silhouette-ac.com##.download:style(display: block!important;)
+silhouette-ac.com##.promotion-msg
+silhouette-ac.com##.timer-modal-img > img:style(opacity: 0.1!important;)
+silhouette-ac.com##.timer
 techcrunch.com##.homepage__event-promo, .upcoming-events
 top.gg###video-root
 top.gg###vote-root:style(display:block !important)
