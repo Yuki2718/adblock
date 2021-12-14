@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211214
+! Version: 20211215
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -525,6 +525,8 @@ renovefudosan.com##.st-FloatCampaign
 ||roboma.io/wp/wp-content/uploads/2019/07/*_334x280.png
 roboma.io##.pum-container
 ||ryugaku.kuraveil.jp/packs/floating_banner-
+||s3.amazonaws.com/uploads/production/survin/guide/image/1175/0711.png$domain=toyokeizai.net
+toyokeizai.net##div[class^="SURVIN_GUIDE_ELEMENT_SHOW_"]
 ||sazukari-shop.com/user_data/packages/*/float2.$image,1p
 ||secomapp.com/promotionpopup/$domain=oozeki-japan.com
 ||sftcdn.net/wp-content/uploads/sites/*-238x134.$image,domain=softonic.jp
@@ -568,6 +570,7 @@ biglobe.ne.jp###spage-main.btop-pop
 biglobe.ne.jp###spage-popup
 ||topcard.co.jp/images/address_pop*$image,1p
 ||tripla.jp/wp-content/uploads/*/shiryoudownload.png
+||tsuiran.jp/js/vendor/jquery.layerBoard.js
 ||ujack.co.jp/wp_ujack/wp-content/uploads/*-300x152.png
 ujack.co.jp##.afc_popup
 ||webukatu.com/wordpress/wp-content/uploads/*/banner_book0*$image,1p
@@ -633,6 +636,7 @@ bitflyer.com###modal-incoming
 bitflyer.com##body.modal-open:style(overflow:auto!important)
 bitstarz.com##.n-tesla
 bizmates.jp##.p-following
+blog-jp.janetter.net##.tmblr-iframe--follow-teaser
 blog.codecamp.jp##.l-recommendFooter
 blog.disqus.com,blog.hubspot.jp##.leadinModal
 bloomberg.com###fortress-preblocked-container-root
@@ -1002,6 +1006,7 @@ reddit.com##.XPromoBlockingModal
 reddit.com##.xPromoChoiceBanner
 reddit.com##.XPromoInFeed
 reddit.com##.XPromoPill
+reddit.com##shreddit-experience-tree
 yourmystar.jp##^.toast-banner-block
 zeiri4.com##.b-stickyShoukaiBanner
 !#endif
@@ -1161,6 +1166,7 @@ bio.nikkeibp.co.jp##.-mail.l-asideBanner
 bitwave.showcase-tv.com##.merumaga
 bizhint.jp##.sg-recommend-register-area
 bunshun.jp###mail-magazine
+businessinsider.jp###mail_mag-under_title
 cbsnews.com##.newsletter_signup
 cnn.com##.newsletter
 dailyshincho.jp##.l-contents__section > dl.p-entry
@@ -1723,12 +1729,6 @@ ampmedia.jp##.yarpp-related
 !#endif
 !#if env_firefox
 ampmedia.jp##^.yarpp-related
-!#endif
-!#if !adguard
-*$doc,removeparam=amp
-!#endif
-!#if adguard
-$removeparam=amp
 !#endif
 
 ! Exception
