@@ -308,7 +308,7 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 <details>
 <summary>註</summary>
 
-<sub>1: AdGuardで使用する場合、問題は一部の`:upward()`とスクリプトレットの非互換性、`domain=TLD`、script以外のHTMLフィルタ、汎用非表示例外のバグでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。PC/MacでAdGuardをご利用の場合、AdGuard標準のフィルタリストをご利用いただくのが最善と思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
+<sub>1: AdGuardで使用する場合、問題は一部の`:upward()`とスクリプトレットの非互換性、`domain=TLD`、script以外のHTMLフィルタ、汎用非表示例外のバグでしょう。また、json-pruneの互換性によりYoutubeで問題が生じます。さらにアプリ版AdGuardでは、CSSの優先度の問題により機能しない非表示ルールもあります。PC/MacでAdGuardをご利用の場合、AdGuard標準のフィルタリストをご利用いただくのが最善と思います。AdGuard日本語フィルタはかつて不評でしたが、近年大きく改善されてきています。</sub>
 
 <sub>2: いくつかの日本用フィルタと同様、日本語話者がよく利用すると思われる海外サイトにも対応しています（[FAQ A23](https://github.com/Yuki2718/adblock/wiki#q23-%E9%9B%AA%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%81%AE%E4%B8%AD%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%A8%E6%B5%B7%E5%A4%96%E3%82%B5%E3%82%A4%E3%83%88%E7%94%A8%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%8C%E7%B5%90%E6%A7%8B%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8C%E5%AF%BE%E8%B1%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)）。</sub>
 

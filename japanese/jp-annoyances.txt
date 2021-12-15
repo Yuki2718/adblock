@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211215
+! Version: 20211216
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -573,6 +573,9 @@ biglobe.ne.jp###spage-popup
 ||tsuiran.jp/js/vendor/jquery.layerBoard.js
 ||ujack.co.jp/wp_ujack/wp-content/uploads/*-300x152.png
 ujack.co.jp##.afc_popup
+||wacul-ai.com/blog/wp-content/uploads/2019/06/banner_modal_cv_aia.png
+wacul-ai.com##.modal-banner-cv
+wacul-ai.com##body.noscroll:style(position: static!important;overflow: auto!important;margin-top: 0!important;height: auto!imortant;)
 ||webukatu.com/wordpress/wp-content/uploads/*/banner_book0*$image,1p
 ||whotwi.com/whotwi_web/img/common/socialdog_modal.
 hoihoi.whotwi.com###cheetah_modal
@@ -642,6 +645,7 @@ blog.disqus.com,blog.hubspot.jp##.leadinModal
 bloomberg.com###fortress-preblocked-container-root
 bloomberg.com###newsletter-modal
 bloomberg.com##body[class^="noScroll"]:style(overflow: visible !important;)
+bluestacks.com###subscribe-modal
 boxil.jp###modal-appeal-download
 boxil.jp##body.modal-open:style(overflow: auto!important;)
 boxil.jp,finnishdesignshop.com,hoihoi.whotwi.com,honichi.com,kadoebi.co.jp,lec.medilink-study.com,nordvpn.com,razer.com,rebates.jp,service-safari.com,techacademy.jp,weloma.net##.modal-backdrop
@@ -1317,7 +1321,7 @@ oshiete.goo.ne.jp##.specialistAnswerArea
 otekomachi.yomiuri.co.jp###_popIn_right
 otekomachi.yomiuri.co.jp##.p-ads
 style.nikkei.com##.floating_related
-tasclap.jp##.l-action-button-recommend:upward(.l-action-wrapper)
+mens.tasclap.jp##.l-action-button-recommend
 tiktok.com##.feedback
 topics.or.jp##.recommend-article
 transit.yahoo.co.jp##.realestateSlink
@@ -1574,7 +1578,7 @@ cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
 
 ! ---------- Timer (CSS fix can be added to jp-filters if not likely to break site) ----------
 100count.net##+js(nano-sib, /sec--|timedisplay--/)
-123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coinunit.ashortstory.in,cpmlink.net,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,lootlinks.net,markipli.com,mik4mob.com,opensubtitles.org,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com##+js(nano-sib)
+123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coinunit.ashortstory.in,cpmlink.net,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,lootlinks.net,markipli.com,mik4mob.com,opensubtitles.org,raky.in,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com##+js(nano-sib)
 aapks.com##+js(nano-stb, countDown)
 ac-illust.com###timer-download:style(display: block!important;)
 ac-illust.com,photo-ac.com##.p402_hide > div#timer
@@ -1598,6 +1602,7 @@ ec.line.me##+js(nano-stb, goOutlink, 2800)
 federleqa.icu,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgirx.xyz,imgjut.buzz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoka.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,kekolangti.com,michaelemad.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
 file4go.*##+js(set, time, 0)
 gifans.com##+js(nano-sib, wpsafe-time)
+hdwallpapers.net##+js(nano-stb, seconds)
 highload.to##+js(nano-stb, counter)
 icutlink.com##+js(set, sec, 0)
 janusnotes.com##+js(nano-sib, , 100, 0)
@@ -1625,6 +1630,13 @@ ponta.abstractpainting.work##+js(set, NEXT_DELAY, 0)
 py.md##+js(nano-sib, countdown)
 romhustler.org##+js(nano-sib, timer.remove)
 shorten.sh##+js(nano-sib, ti--)
+silhouette-ac.com###download-countdown
+silhouette-ac.com###timer-modal-download-area[style="display:none"]:style(display: block!important;)
+silhouette-ac.com##.dl_wrapper:style(height: 43px!important;)
+silhouette-ac.com##.download:style(display: block!important;)
+silhouette-ac.com##.promotion-msg
+silhouette-ac.com##.timer-modal-img > img:style(opacity: 0.1!important;)
+silhouette-ac.com##.timer
 slreamplay.*##+js(nano-stb, grecaptcha.ready, *)
 streamtape.*##+js(set, towait, 0)
 aemenstore.com,aloass.com,alobyt.com,alocd.com,aloegg.com,alofps.com,alogum.com,aloguy.com,alohdd.com,byboe.com,cazzette.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,mikl4forex.com,newforex.online,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rodjulian.com,semawur.com,staaker.com,taisv.com,techmody.io,thegoneapp.com,truebrandy.com,uebnews.online,yoshare.net##+js(nano-sib, counter, 2000)
@@ -1632,6 +1644,8 @@ thetechywizard.com##+js(nano-sib, timer, 1500)
 toptechtalk.xyz##+js(nano-sib, waitTime, 1200)
 uploadking.net##+js(nano-stb, downloadbtn)
 upstore.net##+js(nano-sib, countDown, 1150, 0.5)
+wallpaper.dog##+js(nano-sib, count)
+wallpaperkiss.com,wallpaperuse.com##+js(nano-stb, clock)
 zeefiles.*##+js(nano-stb, tick)
 zegtrends.com##+js(nano-sib, time, 2500)
 
@@ -1711,13 +1725,6 @@ ironna.jp###side-theme-list
 jma.go.jp###jma_ad_config_button
 live2.nicovideo.jp##[class^=___player-display-header___]
 mycams.com,tabletporn.com,trannylivecams.com###over-18-notification
-silhouette-ac.com###download-countdown
-silhouette-ac.com###timer-modal-download-area[style="display:none"]:style(display: block!important;)
-silhouette-ac.com##.dl_wrapper:style(height: 43px!important;)
-silhouette-ac.com##.download:style(display: block!important;)
-silhouette-ac.com##.promotion-msg
-silhouette-ac.com##.timer-modal-img > img:style(opacity: 0.1!important;)
-silhouette-ac.com##.timer
 techcrunch.com##.homepage__event-promo, .upcoming-events
 top.gg###video-root
 top.gg###vote-root:style(display:block !important)
