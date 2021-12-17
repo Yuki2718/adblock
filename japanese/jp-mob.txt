@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211216
+! Version: 20211218
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -207,6 +207,7 @@ dailyportalz.jp##main > div > div.contents_title:first-child
 ddnavi.com,kakakumag.com##.article-ad
 detail.chiebukuro.yahoo.co.jp##aside[class*="ClapLv3SubList_Chie-SubList__ListItem--Ad__"]
 diamond.jp##.infeed
+dic.nicovideo.jp##.st-Header_Ad
 dic.pixiv.net###ad-d-sp-footer
 dic.pixiv.net###ad-d-sp-rectangle
 dic.pixiv.net###ad-d-sp-toparticle
@@ -326,6 +327,7 @@ m.crank-in.net##.ad-area_pr
 m.crank-in.net##.block-area > .OUTBRAIN:upward(1)
 m.crank-in.net##.news-list-area li > script[src^="https://js.mediams"]:upward(1)
 m.crank-in.net##div[id^="_popIn_trend_ranking"]:upward(1)
+m.huffingtonpost.jp##.advertisement
 m.investing.com##.adDrawer
 m.mail.yahoo.co.jp###ad_container_top
 mag.app-liv.jp##.p-overlay--upper-ad:style(bottom: 0!important;)
@@ -642,6 +644,7 @@ m.sextvx.com##+js(acis, document.querySelectorAll, popMagic)
 mudainodocument.com##+js(aeld, /^(?:mousewheel|touchmove)$/)
 supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 
+! ---------- Exception - blocking ----------
 @@||adcdn.goo.ne.jp/images/pix/2dwkwwau99.js$domain=news.goo.ne.jp
 @@||bwb101.goo.ne.jp/b.js$domain=news.goo.ne.jp
 @@||d-cache.microad.jp/js/td_iw_access.js$domain=watch.impress.co.jp
@@ -652,6 +655,9 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 @@||thumbnail.thench.net/thumb/$image,domain=itest.5ch.net
 @@||worldvision.jp/img/topSP/topFootBana_ad.gif|
 @@||www.googletagmanager.com^$domain=onlineshop.smt.docomo.ne.jp
+
+! ---------- Exception - cosmetic ----------
+kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-height:1px!important;margin:0!important;padding:0!important)
 
 ! ---------- Scam & Redirect ----------
 /^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
