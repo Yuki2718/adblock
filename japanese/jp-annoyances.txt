@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211218
+! Version: 20211219
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -252,6 +252,8 @@ youtube-nocookie.com,youtube.com##.ytp-cards-teaser
 ||rtoaster.jp^$3p,domain=takashimaya.co.jp
 ||s3.amazonaws.com/downloads.mailchimp.com/
 
+-banner-ad.$domain=any-video-converter.com
+any-video-converter.com##div[id^="banner_"]
 /images/banners/(?:bnr|popup)_.+/$image,1p,domain=naturum.co.jp
 naturum.co.jp###js-popup
 ||3ple.jp/3ple-static/3ple/pro/js/common/lib/popup/
@@ -1509,6 +1511,7 @@ mdpr.jp##article.list-text .heading-a__pr:upward(article)
 mypage.sso.biglobe.ne.jp##.pr-main-guidance
 news.livedoor.com##.topicsList > li > i.pr:upward(1)
 nikkei.com##div[class^="adsArea_"] > section > div > div[class^="__item_"] img[alt="PR"]:upward(div[class^="__item_"]):remove()
+nttdocomo.co.jp###header-banner
 open.spotify.com##.GenericModal__overlay--afterOpen
 passmarket.yahoo.co.jp##.ptsGoToPromo
 rakko.tools##.rakkoma-widget-iframe
