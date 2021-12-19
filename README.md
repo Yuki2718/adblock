@@ -1,9 +1,9 @@
 [![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 [![syntax](https://img.shields.io/badge/syntax-uBlock%20Origin-%23c61300.svg)](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
 
-### Announcement (Nov. 16, 2021) - EOL of a few lists
+### Announcement (Dec. 19, 2021) - EOL of a few lists
 
-The following lists will soon become unavailable:
+The following lists were removed:
 - AdGuard Tracking Protection Plus
 - Placeholder Hider with no generic hiding for mobile
 - Yuki's uBlock Static Rules
@@ -16,8 +16,6 @@ Placeholder Hider with no generic hiding for mobile: This is probably the least 
 Yuki's uBlock Static Rules: Another less maintained list, now lots of duplicates with other popular lists
 
 Yuki's Blog parts filters - Adult: will be merged to Yuki's Blog parts filters.
-
-I'll wait for a week or so before removal, hoping those who happened to notice this to take an according action beforehand.
 
 # adblock
 
@@ -153,13 +151,6 @@ Exclusion:
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt&title=Yuki's%20Blog%20parts%20filters">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt)
 
-### Yuki's Blog parts filters - Adult
-
-This is a variant of Yuki's Blog parts filters for adult sites. Included in Yuki's uBlock Japanese filters - Annoyances
-
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">Subscribe</a>
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
-
 ### Yuki's Blogroll filters
 
 Removes blogroll (feed-style mutual links) on Japanese sites. Included in Yuki's uBlock Japanese filters - Annoyances
@@ -215,20 +206,6 @@ A: See the purpose, this list is built to make as few breakage as possible for a
 
 <sub>1: I live in Japan and don't have full access to US, UK, etc. payment/shopping/banking services. Until you get accustomed to medium mode, it may be advisable to turn medium mode off on such sites. They anyway know much about you.</sub>
 
-### Yuki's uBlock Static Rules (static-rules.txt)
-
-WordPress plugins have been security nightmare and are usually implemented in first-party resource that bypasses medium mode. Although it's impossible to block thousands of these plugins without breaking too many sites, blocking those unwanted plugins won't be a bad idea<sup>2</sup>. While popular social and annoyances filters block many of them, they come with tons of unnecessary rules<sup>3</sup> and also occasionally cause false-positive. For these reasons I've settled down to AdGuard Social media filter and uBlock filters - Annoyances which are relatively small in size and rarely break pages; however, they only block minimal set of the plugins. This list includes 1) rules for the plugins not on Social media filter or other default filter lists, 2) rules almost equivalent to Noscript's Application Boundaries Enforcer (thanks to @gwarser), and 3) a regex rule focused only on the latest survey scam campaign. Want more protection? Assuming you've already using medium mode, you know default-deny approach well. @jawz101 provides a good [wordpress plugins whitelist](https://raw.githubusercontent.com/jawz101/ublockOrigin_wordpressWhitelist/master/my-ublock-static-filters_wordpressWhitelist.txt) which should be used with an entire block rule for the plugin directory.
-
-Exclusion:
-- Rules that caused or can cause false-positive
-- Rarely seen plugins such that used by less than 100 sites according to themesinfo.com or plugins used only on specific websites
-- CSS-only plugins
-
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/medium_mode/static-rules.txt)
-
-<sub>2: It doesn't make sense if the site was fully compromised, but in some other cases may protect you from malwarized plugins and some vulnerabilities.</sub>
-
-<sub>3: Unnecessary network rules if you use medium mode and tons of cosmetic rules; cosmetic rule has no security, privacy, or performance value.</sub>
 </details>
 
 <details>
@@ -246,15 +223,6 @@ Exclusion:
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt)
 
 <sub>1: Another side effect is any filter lists that heavily depend on generic cosmetic filters don't work well. An example of such lists is Fanboy Annoyances List.</sub>
-
-### Placeholder Hider with no generic hiding for mobile (phhider-mob.txt)
-
-See above, it's a mobile version of phhider-nogen.txt. Rules covered by AdGuard Mobile ads filter won't be added.
-
-Update: Since generic cosmetic filtering is disabled by default on mobile, some specific-generic filters were added to uBlock filters so the value of this list dropped (I already removed entries no more needed - actually I'm the one who proposed and added the filters to uBlock filters). I may stop providing this list in future once I find time to move them to uBlock filters with further check.
-
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding%20for%20mobile">Subscribe</a>
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider-mob.txt)
 
 </details>
 

@@ -208,13 +208,6 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt&title=Yuki's%20Blog%20parts%20filters">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts.txt)
 
-### Yuki's Blog parts filters - Adult
-
-Yuki's Blog parts filtersのアダルトサイト版です。
-
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt&title=Yuki's%20Blog%20parts%20filters%20-%20Adult">購読する</a>
-[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/blog-parts-adult.txt)
-
 ### Yuki's Blogroll filters
 
 ブログロール、相互RSSの類をブロックします。uBlock Origin専用で、Yuki's uBlock Japanese filtersとの併用を前提としています。
