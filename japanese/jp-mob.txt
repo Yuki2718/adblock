@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211220
+! Version: 20211222
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -47,6 +47,7 @@
 ||k-img.com/images/mobile_data/sim/banner/rnl/*_100_$domain=s.kakaku.com
 ||k-img.com/script/fixed_bnr_area.js$domain=s.kakaku.com
 ||kuchi-lab.com/wp-content/uploads/2021/10/whiteessence_
+||kurashinista.jp/images/common/banner/
 ||m.media-amazon.com/images/I/$domain=yamahack.com
 ||m.youtube.com/*/ad.js$script
 ||m.youtube.com/get_midroll_$domain=youtube.com
@@ -246,7 +247,7 @@ gameuxnews.com###mobile_text-4
 gamewith.jp###js-ad-jack
 gamewith.jp##.to-btn--bookmark
 geekjob.jp##.sp_camp_banner
-gendai.ismedia.jp##div[style="min-height:250px;"]
+gendai.ismedia.jp##[style="min-height:250px;"]
 ghacks.net##.box-banner
 gigafile.nu##div[style="border:1px solid #CCC;width:300px;margin:10px auto;"]
 gigazine.net###LB[style="position:sticky; top:0;"]
@@ -319,6 +320,7 @@ kuchi-lab.com###common-cta-sp
 kurashi-no.jp###kurashino1_SP_Billboard
 kurashi-no.jp##.Ad_Rectangle
 kurashi-no.jp##div[id^="kurashino1_SP_article_"][style*="min-height: 280px"]
+kurashinista.jp##.mod-overlay
 kyoko-np.net##.advert
 leaked.jp###content-w > div.post > subheading.point
 libae.jp##.gmossp_con
@@ -660,7 +662,7 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 @@||www.googletagmanager.com^$domain=onlineshop.smt.docomo.ne.jp
 
 ! ---------- Exception - cosmetic ----------
-kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-height:1px!important;margin:0!important;padding:0!important)
+kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important)
 
 ! ---------- Scam & Redirect ----------
 /^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org

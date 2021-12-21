@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211220
+! Version: 20211222
 
 ! General blocking
 /CookieInfo.
@@ -92,7 +92,9 @@
 ##.cc_banner
 ##.cookie-dialog-wrapper
 ##.cookie-law
+##.cookieAlertBox
 ##.cookieMessage:not(body):not(html)
+##.cookie_box
 ##.cookiealert
 ##.cookies-notification:not(html):not(body)
 ##.cookies-popup
@@ -117,6 +119,8 @@
 aiasahi.jp,bridge-net.jp,cnn.co.jp,japan.cnet.com,japan.techrepublic.com,japan.zdnet.com###gdpr_area
 askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com##.js-consent-banner
 bynogame.com,discord.me,grabify.link##.cookiealert
+haier.com##.cookie_box
+mhi.com##.cookieAlertBox
 navigraph.com,netcraft.com##.cookie-law
 neverware.com##.sqs-cookie-banner-v2
 nordvpn.com,omatomeloanhikaku.com##.cc-window[aria-label="cookieconsent"]
@@ -158,7 +162,7 @@ _eu_cookie_$domain=nbcsports.com
 ||cloudflare.com/ajax/libs/jquery-cookiebar/$domain=photo-ac.com
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||consensu.org^$third-party,domain=imgur.com|theguardian.com|travian.com
-||cookielaw.org^$third-party,domain=adobe.com|avast.com|avg.com|bab.la|behance.net|biomedcentral.com|cartoonnetwork.jp|cell.com|collegeboard.org|dazn.com|deloitte.com|discogs.com|esteelauder.jp|filehorse.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hp.com|ikea.com|mastercard.co.jp|mondotv.jp|nature.com|natureasia.com|olympics.com|omen.com|payoneer.com|slate.com|spotify.com|springer.com|springeropen.com|stellamccartney.com|tabichan.jp|telerik.com|tokyo2020.org|trados.com|unity.com|unity3d.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
+||cookielaw.org^$third-party,domain=adobe.com|avast.*|avg.com|bab.la|behance.net|biomedcentral.com|broadcom.com|cartoonnetwork.jp|cell.com|collegeboard.org|dazn.com|deloitte.com|discogs.com|esteelauder.jp|filehorse.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hp.com|ikea.com|mastercard.co.jp|mondotv.jp|nature.com|natureasia.com|olympics.com|omen.com|payoneer.com|slate.com|spotify.com|springer.com|springeropen.com|stellamccartney.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|trados.com|unity.com|unity3d.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
 ||cookies.joneslanglasalle.co.jp^
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||daijob.com/javascripts/gdpr/
@@ -203,7 +207,7 @@ dlink.com##.ub-emb-bar-frame
 ||transcend-info.com/dist/scripts/cookiegotop.js|
 ||ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
 ||usercentrics.eu^$third-party,domain=sennheiser.com
-0patch.com,jpradio.jp,rutube.ru,softbankhawksstore.jp##.cookie-consent
+0patch.com,jpradio.jp,rutube.ru,softbankhawksstore.jp,tmohentai.com##.cookie-consent
 1bit.space,mgnet.xyz###cookies-notice
 1fichier.com###cookie_box
 48idol.tv,doujinblog.org,soundorbis.com###cookie-law-info-bar
@@ -229,7 +233,7 @@ analog.com#$##cookie-consent-container { display:none !important }
 analog.com#$#.modal-backdrop { display:none !important }
 analog.com#$#body.modal-open { overflow:auto !important }
 android.com,asia.nikkei.com,britishairways.com,developer.chrome.com,ft.com,spyse.com##.cookie-banner
-animedeck.jp##.cookie-pop
+animedeck.jp,tencent.com##.cookie-pop
 answers.ea.com,nokia.com##.cookie_content
 answers.unity.com##.consent-banner
 anthropologie.com,urbanoutfitters.com##.cookie-message__cookieMessage
@@ -237,6 +241,7 @@ apkfab.com,deepfakeporn.net##.cookie-notice-container
 apkpure.com###policy-info
 aps.org##div[class^="app__cookie-footer"]
 arm.com##.c-policies
+asahi-kasei.com###box-cookie-01
 asrock.com###AcceptCookies
 asus.com###cookie-policy-info
 avast.*##.cookie-bar
@@ -341,6 +346,7 @@ goodpatch.com,sankei.com,zakzak.co.jp##.CookieConsent
 google.com##div[class*="chr-cookie-banner"]
 goto.jata-net.or.jp###cookie-modal
 gotogate.jp,mytrip.com##.etiCookieBanner
+guide.michelin.com##.js-cookie__popup
 gyazo.com##.sticker-gdpr
 hclips.com,privatehomeclips.com##.cookies-policy-block
 hdwallpapers.net,perfect-privacy.com###cookiebar
@@ -354,10 +360,11 @@ huawei.com##.huawei-convergent-cookie
 huffpost.com##.bf-toaster
 hwinfo.com##.cookie-agree-with-use
 hybrid-analysis.com###cookie-message-container
+hyundai.com###cookie-wrap
 ibexa.co###cookie-consent-banner
 ibispaint.com###agreementPane
 icegaytube.tv##.b-cookie
-idss.co.jp,malavida.com,monosnap.com,takeda.com,weddingpark.net,ytddownloader.com##.cookie
+idemitsu.com,idss.co.jp,malavida.com,monosnap.com,takeda.com,weddingpark.net,ytddownloader.com##.cookie
 imagefu.com###cook
 imobie.jp##.fixedbot
 inbox.lv###cmp-widget-wrapper
@@ -470,6 +477,7 @@ repro.io###js-cookie-usage-popup
 royalpanda.com###CookiePolicy
 rt.com##.cookies__banner
 rutube.ru##.eu-cookie-popup
+sawai.co.jp###name-ga-cookie-accept-bar
 scorchin.com,xhamsterlive.com##.cookies-reminder
 scrapestorm.com###gdpr-footer
 searchenginejournal.com###cooknote-div
@@ -494,6 +502,7 @@ sso.ss-blog.jp##.fixed-bottom
 start.me##.app__message
 style.nikkei.com###ccpa-block
 subaru.co.jp###gdpr-box
+sugi-net.jp##.wrap-gdpr
 synology.com###cookies_header
 telegraph.co.uk###_evidon_banner
 tetsudo.com###footer-gdpr-box
