@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211227
+! Version: 20211229
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -272,6 +272,7 @@ _omniture.$script,domain=mathworks.com
 ! github.com/AdguardTeam/AdguardFilters/pull/67992
 ||mkto-*.com^$3p
 ||monitor.azure.com^
+||recs.richrelevance.com^$3p
 ||rtoaster.jp^$3p
 ||sail-horizon.com^
 ||tags.tiqcdn.com^
@@ -291,7 +292,7 @@ _omniture.$script,domain=mathworks.com
 ||browser.pipe.aria.microsoft.com^
 ||carsensor.net/vos/
 ||cleverbridge.com/*/cleverAnalytics.js^
-||cloudflare.com/cdn-cgi/trace$3p,domain=~isbgpsafeyet.com
+||cloudflare.com/cdn-cgi/trace$3p,domain=~isbgpsafeyet.com|~wyndhamdestinations.com
 ||cloudflare.com/cdn-cgi/trace$3p,xhr,redirect-rule=noop.txt,domain=~funimation.com
 ||collect.igodigital.com^$script
 ||cxense.com^$frame,script,xhr,3p
