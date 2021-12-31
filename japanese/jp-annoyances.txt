@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20211231
+! Version: 20220101
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -637,6 +637,9 @@ alternativeto.net###bottomNotifier
 amp.reddit.com##.AppSelectorModal__body
 anime-japan.jp##.mfp-ready.mfp-bg, .mfp-ready.mfp-wrap
 anime-japan.jp##html[style*="overflow: hidden"]:style(overflow: auto!important)
+answers.ten-navi.com##.careerMenu
+answers.ten-navi.com##.cvMail
+answers.ten-navi.com##body[style="overflow: hidden;"]:style(overflow: auto!important;)
 anthropologie.com,urbanoutfitters.com###modal form#email-sign-up-form:upward(#modal)
 anthropologie.com,urbanoutfitters.com##body[style="overflow: hidden;"]:style(overflow: auto!important;)
 app.slack.com##.p-download_modal.c-fullscreen_modal.ReactModal__Overlay--after-open
@@ -741,6 +744,9 @@ gazoo.com##.footer-floatbanner-area
 gekkan-fukugyou.jp###modal-content
 gekkan-fukugyou.jp###modal-overlay
 gesoten.com###cboxOverlay
+gillette.jp##.dialog-search-popup
+gillette.jp##.fixed:style(position: static!important;)
+gillette.jp##.stop-scroll:style(overflow: auto!important;)
 gitlab.com###slpFreeTrialBanner
 gizmodo.com##.js_modal_exit_intent
 globalize.lifepepper.co.jp##div[id^="signupFormContainer_"]
@@ -825,6 +831,7 @@ news.yahoo.co.jp###newsFeed + div:has(a[data-ylk^="rsec:cmtfloat;"])
 nicovideo.jp##.LikeContainer-tips.LikeTeaching
 nishinippon.co.jp##.c-fixedContent
 note.*##.m-likeNoLogin
+nttdocomo.co.jp##.ppko-page > div#btnFixedBlock.js-scrollBtn
 nytimes.com,nytimes3xbfgragh.onion###modal-portal-regiwall
 nytimes.com,nytimes3xbfgragh.onion##.ReactModalPortal:has(.welcomeAd)
 nytimes.com,nytimes3xbfgragh.onion##.magnoliaDock
@@ -844,6 +851,9 @@ outlook.office.com###obf-ToastContainer
 !outlook.office.com##div[role="alertdialog"][aria-modal="true"][style="outline: none;"] .ms-Dialog-content > div > span > a[href^="https://go.microsoft.com/fwlink/p/?"][target="_blank"]:upward(div[role="alertdialog"][aria-modal="true"][style="outline: none;"])
 p-bandai.jp##.detailFnPop
 pastebin.com##.popup-box.-pro
+paypay.ne.jp##.is-modalContentsShow a.bannerModal__link[href^="https://paypay.ne.jp/event/"][data-eventaction]:upward(.is-modalContentsShow)
+paypay.ne.jp##body[style="overflow: hidden;"]:style(overflow: auto!important;)
+paypay.ne.jp##html[style="overflow: hidden;"]:style(overflow: auto!important;)
 pcdock24.com###bottom_nav
 photobank.mainichi.co.jp##.contact:has(.open_modal)
 piccoma.com##.PCM-jConfirm-appDlModal
@@ -975,6 +985,7 @@ zurich.co.jp###fixed-popup-cta, #floatnav
 4900.co.jp###ouibounce-modal
 anokoro30.com##.td-more-articles-box
 another-chance.love###bfb_content_pc
+answers.ten-navi.com##.modal
 bignox.com##.egg-section
 blog.hubspot.jp###slidebox > .hs-cta-wrapper:upward(1)
 buzip.net###linkerBanner
@@ -992,6 +1003,7 @@ usshi-na-life.com##.td-more-articles-box
 4900.co.jp##^#ouibounce-modal
 anokoro30.com##^.td-more-articles-box
 another-chance.love##^#bfb_content_pc
+answers.ten-navi.com##^.modal
 bignox.com##^.egg-section
 blog.hubspot.jp##^#slidebox > .hs-cta-wrapper:upward(1)
 buzip.net##^#linkerBanner
@@ -1195,7 +1207,8 @@ yamagata-np.jp###content_side > div > div:has(img[src^="/furusato/"])
 
 100life.jp###register
 agenda-note.com##.mail_box
-aps-web.jp##[id^=mc4wp_form_widget-]
+answers.ten-navi.com###sideForm
+aps-web.jp##[id^="mc4wp_form_widget-"]
 arstechnica.com##.ars-newsletter-callbox
 asia.nikkei.com###newsletter-signup
 assion.co.jp###sidebar > .affix
@@ -1448,8 +1461,13 @@ biglobe.ne.jp###spage-bnr
 caribbeancom.com##.top-pr
 ||cloudfront.net/uploads/banner/$domain=jmty.jp
 ||dhbr.net/mwimgs/*/3/300/img_
+||duckduckgo.com/assets/onboarding/bathroomguy/1-monster-v2--pre-animation.svg
+duckduckgo.com##.badge-link--full:style(visibility: hidden !important;)
+duckduckgo.com##.content-info
+duckduckgo.com##.onboarding-ed
 ||e-ohaka.com/img/pc_banner05.png
 ||e-ohaka.com/regist_resources/img/form_b_pc0818.png
+||ebook-assets.dmm.co.jp/p/bnr/dc/topics/large/book_
 ||foxnews.com^*/fox-news/nation-promo/nation_promo_$image,1p
 ||gamewith.jp/walkthrough/recruit/banner.png
 gamewith.jp##.walkthrough-recruit-banner:upward(1)
