@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220101
+! Version: 20220102
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -657,7 +657,7 @@ bee-music.jp###fix-contact-pc
 behance.net##.Popup-popup-T3F
 bestofcebuislandhopping.com##.penci-rltpopup-left
 beta.sankakucomplex.com##.MuiPaper-elevation1
-bilibili.com##.unlogin-popover:upward(.van-popper)
+!bilibili.com##.unlogin-popover:upward(.van-popper)
 bitbank.cc###register-area
 bitcoin.dmm.com###modal-overlay
 bitflyer.com###modal-incoming
@@ -1543,6 +1543,7 @@ smt-cinema.com##.tieupBanner
 star-ch.jp##.sc-footer__contents2
 ||strate.biz/wp-content/uploads/*/banner.
 ||thisisgallery.com/wp-content/themes/thisismedia/images/side/banner_
+||usefomo.com^$3p
 ||vector.co.jp/img_cache/tq/p/service/man/*_banner.
 ||wpb.shueisha.co.jp/data/banner/announcement/
 wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
@@ -1587,6 +1588,7 @@ passmarket.yahoo.co.jp##.ptsGoToPromo
 rakko.tools##.rakkoma-widget-iframe
 smartagri-jp.com##.relatedPosts > ul > .pc .pr:upward(.pc)
 sankei.com###piano_information_Article
+speakerdeck.com##.alert-banner
 sportiva.shueisha.co.jp##.block-widget-a-a__article__pr:upward(li.block-widget-a-a__article)
 sugi9532.com##.c-infoBar
 support.microsoft.com##.RailBanner
@@ -1801,7 +1803,7 @@ dailymail.co.uk##+js(aopr, Object.prototype.videoAdvertisingMode)
 dailyuploads.net##+js(ra, checked, input#chkIsAdd)
 game8.jp##+js(rc, async-hide, html)
 get.adobe.com##+js(ra, checked, #chrExtCheckbox)
-itreview.jp##+js(rc, blur-contents, div)
+itreview.jp##.blur-contents:style(filter: none!important;pointer-events: auto!important)
 itreview.jp##.float.itr-blur-login
 ironna.jp###side-theme-list
 jma.go.jp###jma_ad_config_button

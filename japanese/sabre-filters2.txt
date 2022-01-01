@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220101
+! Version: 20220102
 
 ! General blocking
 /CookieInfo.
@@ -163,6 +163,7 @@ _eu_cookie_$domain=nbcsports.com
 ||bt.com/consumer/cookie/
 ||business.twitter.com^*-data-protection-notice.$script,~third-party
 ||cdn.privacy-mgmt.com^$third-party,domain=thetimes.co.uk
+||cdn.trustcommander.net/privacy^$domain=danone.com
 ||civiccomputing.com^*/cookieControl-$domain=msi.com
 ||cloud.xm-cdn.com/assets/js/custom/cookie_popup.
 ||cloudflare.com/ajax/libs/jquery-cookiebar/$domain=photo-ac.com
@@ -212,7 +213,6 @@ dlink.com##.ub-emb-bar-frame
 ||storage.googleapis.com/app*/js/bottom.js$domain=herokuapp.com
 ||synology.com^*/syno_cookie_
 ||tags.tiqcdn.com/utag/*/prod/utag.js$script,redirect=noopjs,domain=total.com
-||trustcommander.net/privacy/$third-party,domain=danone.com
 ||transcend-info.com/dist/scripts/cookiegotop.js|
 ||ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
 ||usercentrics.eu^$third-party,domain=sennheiser.com|steinberg.net
@@ -243,7 +243,7 @@ analog.com#$#.modal-backdrop { display:none !important }
 analog.com#$#body.modal-open { overflow:auto !important }
 android.com,asia.nikkei.com,britishairways.com,developer.chrome.com,ft.com,spyse.com##.cookie-banner
 animedeck.jp,tencent.com##.cookie-pop
-anker.com,eufylife.com,seenebula.com,soundcore.com###shopify-section-fixed-message:has-text(cookie)
+anker.com,eufylife.com,seenebula.com,soundcore.com###shopify-section-fixed-message
 answers.ea.com,nokia.com##.cookie_content
 answers.unity.com##.consent-banner
 anthropologie.com,urbanoutfitters.com##.cookie-message__cookieMessage
@@ -421,7 +421,7 @@ mediafire.com###cookie-accept-footer
 mega.nz##.fm-dialog-overlay
 mega.nz#$#.overlayed .scroll-block { filter: none!important; -webkit-filter: none!important; }
 magic.wizards.com###__layout > div[style] > footer + .vue-portal-target + div[class^="css-"]
-merckgroup.com##.new-cookie
+merckgroup.com##.new-cookie__modal
 metadefender.opswat.com##.cookieWrapper
 mi.com##.J_agreeCookieModal
 microsoft.com###uhfCookieAlert
@@ -530,6 +530,7 @@ subaru.co.jp###gdpr-box
 sugi-net.jp##.wrap-gdpr
 supermicro.com##body > div#alert-container[style="z-index: 10000; display: block;"]
 synology.com###cookies_header
+tani6torico.com###cookieDialog
 teijin-china.com.cn,teijin.co.jp,teijin.com##.footer-policy
 teijin-pharma.co.jp,teijin-pharma.com##.js-policypopup
 telegraph.co.uk###_evidon_banner
