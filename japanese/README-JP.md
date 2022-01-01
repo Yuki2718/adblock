@@ -66,11 +66,11 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 <details>
 <summary><strong>併用可</strong></summary>
 
-日本人作者によるフィルタリストとして初、かつ現状唯一、EasyListなど標準フィルタリストとの併用を考慮しています。具体的にはブロック対象に違いがなく、パフォーマンスや誤爆の観点から問題がない場合、[EasyList](https://easylist.to/easylist/easylist.txt), [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt), [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php), [uBlock 内製フィルター](https://github.com/uBlockOrigin/uAssets), [AdGuard Base](https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt), [AdGuard Tracking Protection](https://filters.adtidy.org/extension/ublock/filters/3.txt), [AdGuard URL Tracking Protection](https://filters.adtidy.org/extension/ublock/filters/17.txt), [Fanboy Enhanced Tracking](https://www.fanboy.co.nz/enhancedstats.txt)など、標準リストおよび併用されることが多そうなリストとルールを統一しています<sup>10</sup>。これにより重複が排除され、フィルターリストでのフィルタ有効数<sup>11</sup>が正しく表示されるだけでなく、非表示フィルタの多重適用も回避できます。つまり単独でもご利用可能ですが、上述の各種リストと併用した場合でも無駄がありません<sup>12</sup>。逆にAdGurad Japaneseを除く他の日本用リストは標準リストとの併用が考慮されておらず、パフォーマンス上の影響に加え、まれに競合して不具合やアンチ広告ブロックの原因となることもあり<sup>13</sup>、Braveの日本用フィルタに採用されなかった[一因](https://github.com/brave/adblock-lists/issues/355#issuecomment-609680337)となっています。また、標準リストで発生する不具合が当該リストで修正されない場合、こちらで修正いたします。以下に主要なフィルタリストとYuki's uBlock Japanese filtersファミリーとの互換性をまとめました（同系統、たとえばAdGuard AnnoyancesならYuki's uBlock Japanese filters - Annoyancesを購読した場合です）。
+日本人作者によるフィルタリストとして初、かつ現状唯一、EasyListなど標準フィルタリストとの併用を考慮しています。具体的にはブロック対象に違いがなく、パフォーマンスや誤爆の観点から問題がない場合、[EasyList](https://easylist.to/easylist/easylist.txt), [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt), [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php), [uBlock 内製フィルター](https://github.com/uBlockOrigin/uAssets), [AdGuard Base](https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt), [AdGuard Tracking Protection](https://filters.adtidy.org/extension/ublock/filters/3.txt), [AdGuard URL Tracking Protection](https://filters.adtidy.org/extension/ublock/filters/17.txt), [Fanboy Enhanced Tracking](https://www.fanboy.co.nz/enhancedstats.txt)など、標準リストおよび併用されることが多そうなリストとルールを統一しています<sup>10</sup>。これにより重複が排除され、[フィルターリスト]ペインでのフィルタ有効数<sup>11</sup>が正しく表示されるだけでなく、非表示フィルタの多重適用も回避できます。つまり単独でもご利用可能ですが、上述の各種リストと併用した場合でも無駄がありません<sup>12</sup>。逆にAdGurad Japaneseを除く他の日本用リストは標準リストとの併用が考慮されておらず、パフォーマンス上の影響に加え、まれに競合して不具合やアンチ広告ブロックの原因となることもあり<sup>13</sup>、Braveの日本用フィルタに採用されなかった[一因](https://github.com/brave/adblock-lists/issues/355#issuecomment-609680337)となっています。また、標準リストで発生する不具合が当該リストで修正されない場合、こちらで修正いたします。以下に主要なフィルタリストとYuki's uBlock Japanese filtersファミリーとの互換性をまとめました（同系統、たとえばAdGuard AnnoyancesならYuki's uBlock Japanese filters - Annoyancesを購読した場合です）。
 
 | リスト名 | 互換性 | 説明 |
 |:---|:---:|:---:|
-| uBlock内製フィルター, EasyList, EasyPrivacy, Peter Lowe’s Ad and tracking server list, AdGuard Base, AdGuard Mobile Ads, AdGuard Social Media, uBlock filters – Annoyances, Block access to LAN | ◎ | 互換性が最大限考慮されており、併用しても無駄はほとんど生じない |
+| uBlock内製フィルター, EasyList, EasyPrivacy, Peter Lowe’s Ad and tracking server list, AdGuard Base, AdGuard Mobile Ads, AdGuard Social Media, uBlock filters – Annoyances, Block Outsider Intrusion into LAN | ◎ | 互換性が最大限考慮されており、併用しても無駄はほとんど生じない |
 | AdGuard Chinese, RU AdList, AdGuard URL Tracking Protection, Fanboy Enhanced Tracking, AdGuard Annoyances, EasyList Cookie, Fanboy’s Annoyance, Fanboy’s Social | ○ | 互換性がある程度考慮されており、多少の無駄は生じるがあまり問題ない（Fanboy系は互換性低め） |
 | もちフィルタ, もち拡張フィルタ, いちごフィルタ, ことりフィルタ, ねぎフィルタ, AdGuard Japanese | △ | 併用すると大量の無駄が生じるが、問題が生じるかは未確認 |
 | 豆腐フィルタ | × | 大量の無駄だけでなく、実際に問題が生じるため併用は非推奨 |
@@ -114,7 +114,7 @@ Android版Firefoxでご利用になる場合、Yuki's uBlock Japanese filtersに
 
 ## Yuki's uBlock Japanese filters - Paranoid （大雪フィルタ）
 
-Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。<strong>自己責任で使用してください</strong>。トラッキングパラメータも除去するほか、一部、トラッキングパラメータを含むリンクからの移動もブロックします。この場合、<strong>「uBlock Origin は、このページの読み込みをブロックしました」画面で右側の虫眼鏡アイコンをクリックすると、トラッキングパラメータを除いたURLが（場合によってはいくつか）表示され、そのままクリックできます。</strong>ただし、ブロックするとあまりに煩雑になる場合はブロックしません。また、gwarser氏の[Block access to LAN](https://github.com/gwarser/filter-lists/blob/master/lan-block.txt)フィルタによるLANへの攻撃を防ぐルールも含みます。
+Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不具合を覚悟でより強固にブロックします。<strong>自己責任で使用してください</strong>。トラッキングパラメータも除去するほか、一部、トラッキングパラメータを含むリンクからの移動もブロックします。この場合、<strong>「uBlock Origin は以下のページの読み込みを防ぎました」画面で右側の虫眼鏡アイコンをクリックすると、トラッキングパラメータを除いたURLが（場合によってはいくつか）表示され、そのままクリックできます。</strong>ただし、ブロックするとあまりに煩雑になる場合はブロックしません。また、[Block Outsider Intrusion into LAN](https://github.com/uBlockOrigin/uAssets/blob/master/filters/lan-block.txt)フィルタによるLANへの攻撃を防ぐルールも含みます。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Paranoid">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-paranoid.txt)
@@ -296,7 +296,7 @@ GithubのIssueか[掲示板](https://jbbs.shitaraba.net/internet/25463/)を通�
 
 ### 管理人について
 
-EasyListなどの国際的な広告ブロックコミュニティにボランティアとして一年以上貢献を続けており、uBlock内製フィルタおよびAdGuard公式フィルタの共同管理者でもあります。280blockerさん、もちフィルタさん、豆腐フィルタさんなどにも問題報告をすることがあります。AppleストアにあるYuki - Ad Blocker+ for YouTubeとは何の関係もありません、念のため。
+EasyListなどの国際的な広告ブロックコミュニティにボランティアとして二年以上貢献を続けており、uBlock内製フィルタおよびAdGuard公式フィルタの共同管理者でもあります。280blockerさん、もちフィルタさん、豆腐フィルタさんなどにも問題報告をすることがあります。AppleストアにあるYuki - Ad Blocker+ for YouTubeとは何の関係もありません、念のため。
 
 <details>
 <summary>註</summary>
@@ -321,7 +321,7 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 
 <sub>10: 当フィルタはCC BY-SA 4.0のもとに配布しており、これはuBlock内製フィルターと280blocker以外を正しく継承（デュアルライセンス、バージョン違い）しています。uBlock内製フィルターはGPLv3ですが、AdGuardなどと比較して癖のないルールであり、一般的なフィルタ作者が思いつく範囲だと思います（管理人はuBlock内製フィルターのメンテナーでもあるため、自ら追加したルールも多数あります）。280blockerはライセンス指定なしですが、参考にしているのはドメインリストのみであり、これは書き方がほぼ一意に決まってしまうため問題ないと考えます。また一部、[EasyList China](http://abpchina.org/forum/forum.php), [RU AdList](https://forums.lanik.us/viewforum.php?f=102), [Brave Unbreak](https://github.com/brave/adblock-lists)（MITライセンス）からとられたルールがある他、[豆腐フィルタ](http://tofukko.r.ribbon.to/abp.html)を参考にしたルールが少なからずあります（著作権上、そのままの使用はなるべく避けましたが、どうしても同じになってしまったものもあります）。AdGuard URL Tracking Protectionとの併用も可能ですが、同リストはutm系の一括削除などにより一部で不具合が起きるため、あまり初心者向けではないと考えています。Yuki's uBlock Japanese filtersおよびParanoidでは同リストを参考に問題がなさそうなものを個別に追加する一方、一部のルールはuBlock Originに最適化した形で置き換えています。</sub>
 
-<sub>11: 有効数には優先順位がありませんので、Yuki's uBlock Japanese filtersの内どれだけ使われているか知りたい場合、一度Yuki's uBlock Japanese filtersのチェックを外して他のフィルタを更新し、再度チェックを入れてください。なお、この方法で真の有効数がわかるのはYuki's uBlock Japanese filtersならではであり、ほかのフィルタではわかりません。同じブロック対象を別のルールでターゲットにするケースが多数生じるためで、この場合、優先順位の低いトークン化可能ブロックルールは「死んだルール」（メモリのみ消費）、トークン化不能ブロックルールやProcedural cosmetic filters、スクリプトレットルール等はパフォーマンス上の損失となります。ダッシュボードのフィルターリストの使用数は実際に使われるフィルタ数ではないということです。</sub>
+<sub>11: 有効数には優先順位がありませんので、Yuki's uBlock Japanese filtersの内どれだけ使われているか知りたい場合、一度Yuki's uBlock Japanese filtersのチェックを外して他のフィルタを更新し、再度チェックを入れてください。なお、この方法で真の有効数がわかるのはYuki's uBlock Japanese filtersならではであり、ほかのフィルタではわかりません。同じブロック対象を別のルールでターゲットにするケースが多数生じるためで、この場合、優先順位の低いトークン化可能ブロックルールは「死んだルール」（メモリのみ消費）、トークン化不能ブロックルールやProcedural cosmetic filters、スクリプトレットルール等はパフォーマンス上の損失となります。[フィルターリスト]ペインの使用数は実際に使われるフィルタ数ではないということです。</sub>
 
 <sub>12: これらのフィルタによる誤爆をより網羅的に修正していることもあり、既にEasyList等を併用されている方にはもっともおすすめできる日本用フィルタと言ってよいでしょう。ちなみに、日本以外の国や地域ではEasyListに各言語用のフィルタを追加して使うのが普通であり、各言語用フィルタはEasyListの併用を前提としたものとなっています。中国ではEasyList Liteというのを用意しており、中国語サイトを中心にみる場合はEasyListの代わりにこれを使ってもよいとされています。Yuki's uBlock Japanese filtersも、日本のサイトを中心に見るなら10万以上のルール数におよぶ標準リストの代わりに使えるものとして提供していますが、標準リストとの併用も可能としている点が異なります。実は、標準リストの変更に追随していくのが一番大変な作業です。</sub>
 
