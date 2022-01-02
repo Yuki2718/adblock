@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220102
+! Version: 20220103
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -75,7 +75,6 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 ! ---------- Cosmetic for ads ----------
 ##body[id][class*=post-] section[class*=cta]
 2099.jp##.ugb-cta:not(.ugb-cta--design-plain)
-baysia-tokyo.com##.ctawidget
 facebook.com##[aria-label*=Marketplace] object > a[href^="/ads/"] > span:not(:empty):upward(11)
 iwatetabi.jp###ad
 mazimazi-party.com###text-37
@@ -89,7 +88,7 @@ youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.playerAds)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
-~2099.jp,~baysia-tokyo.com,~mazimazi-party.com##article[id][class*=post-] div[class*=cta]
+~2099.jp,~mazimazi-party.com##article[id][class*=post-] div[class*=cta]
 
 !#if !env_firefox
 gizmodo.jp,lifehacker.jp##.inner-buy-box
