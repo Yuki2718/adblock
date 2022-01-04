@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220102
+! Version: 20220105
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -479,6 +479,12 @@ minden.co.jp###popup_contents
 ||minglass.jp/images/scroll/
 ||minglass.jp/images/scroll_layer/
 minglass.jp##.scroll-flow
+||movin.co.jp/newimg/firstbnr.png
+||movin.co.jp/newimg/foot_special.png
+||movin.co.jp/newimg/footadd_
+movin.co.jp###scrolhead
+||movin.co.jp/newimg/topbnr.png
+movin.co.jp##.Bnr
 ||msn.com^*irisbannerajax?
 ||mtame.jp/dcms_media/image/mailnewbannerresize.png
 mtame.jp###slide_window
@@ -1157,6 +1163,7 @@ honda.co.jp##.typesquare_option.footer-mail
 ||ismcdn.jp/common/ggo/images/v1/mailmagazine-$domain=gentosha-go.com
 ||japan.cnet.com^*/newsletter*$image,1p
 ||japanese.engadget.com/js/subscriptionHelper.
+||joinsubtext.com^$3p
 ||journey.wired.com^
 ||js.pelcro.com^$domain=newsweek.com
 ||livedoorblogstyle.jp/img/banner/ldbs_banner_
@@ -1373,6 +1380,7 @@ news.mynavi.jp##.articleList-attention
 news.webike.net###custom_html-3
 news.webike.net###custom_html-5
 oricon.co.jp##.cont-news-full > aside.block-recommend-list.wid80 > h3#related_musicstore_links:upward(1)
+oshiete.goo.ne.jp###recommend_info
 oshiete.goo.ne.jp##.specialistAnswerArea
 otekomachi.yomiuri.co.jp###_popIn_right
 otekomachi.yomiuri.co.jp##.p-ads
@@ -1528,6 +1536,8 @@ rakuten-bank.co.jp###rc-gp-banner
 realsound.jp###rsCareer
 ||reneelab.com/wp-content/uploads/sites/5/2019/05/renee-pdf-aide-new2.jpg
 reneelab.jp###text-123
+||report.clinic/theme/clinic/img/common/overhead_banner_app_
+report.clinic##.banner_campaign_app
 ||saisoncard.co.jp/html/7N/PC/iframe/pages/images/login_auth_bnr1802.
 ||saitama-np.co.jp/ad/
 ||sakigake.jp/images/btn_
@@ -1661,8 +1671,9 @@ cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
 100count.net##+js(nano-sib, /sec--|timedisplay--/)
 123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coinunit.ashortstory.in,cpmlink.net,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,lootlinks.*,markipli.com,mik4mob.com,opensubtitles.org,raky.in,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com##+js(nano-sib)
 aapks.com##+js(nano-stb, countDown)
-ac-illust.com###timer-download:style(display: block!important;)
-ac-illust.com,photo-ac.com##.p402_hide > div#timer
+ac-illust.com,photo-ac.com##+js(set, adsLoaded, true)
+ac-illust.com,photo-ac.com##+js(set, enable_dl_after_countdown, true)
+ac-illust.com,photo-ac.com##body.modal-open *:style(filter: none!important;)
 adfoc.us##+js(nano-sib, , 1100)
 adnit-tri.tk,adnit.xyz,sanos.xyz,toptap.website##+js(set, timedisplay, 0)
 android-apk.org,icutlink.com##+js(nano-sib, time)
