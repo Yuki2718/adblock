@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220105
+! Version: 20220106
 
 ! General blocking
 /CookieInfo.
@@ -30,6 +30,7 @@
 /jquery.ihavecookies.
 /jqueryCookieGuard.
 /js/cookienotice.js
+/js/nsd-cookie-banner/*
 /nu-cookie-banner
 /plugins/cookie-compliance/*
 /plugins/cookie-consent-plugin/*
@@ -67,14 +68,17 @@
 ||consent.cookiebot.com^$third-party,domain=~refinery29.com
 ||consent.trustarc.com^$third-party
 ||cookie-script.com^$third-party
+||gdpr-legal-cookie.beeclever.app^$third-party
 ||jimstatic.com/ckies.
 ||jsdelivr.net/npm/cookieconsent
 ||onetrust.com^$third-party
 ||pagesense.io^$third-party
 ||rating.happymod.com/cookie/cookies.js
 ||ressource.gdpr-banner.awsmpsa.com/js/tarteauxprunes.js
+||static.axept.io/sdk.js
 
 ! General hiding
+###CookieContainer
 ###CookieReportsPanel
 ###ac-cookie-compliance
 ###catapult-cookie-bar
@@ -134,6 +138,7 @@ dometic.com###CookieReportsPanel
 dsautomobiles.com##.layer_cookie
 haier.com##.cookie_box
 itopvpn.com##.pop-cookie
+metabo-hpt.com###CookieContainer
 mhi.com##.cookieAlertBox
 navigraph.com##.cookie-law
 neverware.com##.sqs-cookie-banner-v2
@@ -150,14 +155,14 @@ similarweb.com##.cookies-notification
 /cookie-banner$domain=airfrance.*|paypal.com|sedo.com|sugarsync.jp
 /cookie-consent.$domain=varonis.com|wolfram.com
 /cookie-consent/*$domain=noticiasesports.live|noweconomy.live|techgeek.digital
-/cookie-policy.js$domain=stanley.co.jp
+/cookie-policy.js$domain=qnap.com|stanley.co.jp
 /cookie-prompt.$domain=adblockplus.org
 /cookie_agree.$domain=takara-bio.co.jp|takara-bio.com
 /cookie_notice.$domain=sherdog.com
 /cookiebar-$domain=majorgeeks.com
 /cookiebar.$domain=astonmartin.com
 /cookieconsent.$domain=1cloudfile.com|acm.org|clove.co.uk|coinlyhub.com|crowdin.com|direct2u.jp|easylinks.*|imgtagram.com|javzh.com|jpower.co.jp|millisecond.com|safelinkplus.com|sex-jav.com|support.malwarebytes.com|uploadshare.net|webwhois.verisign.com
-/cookieconsent/*$domain=bain.com|ikea.com|portapps.io
+/cookieconsent/*$domain=bain.com|bormiolirocco.com|ikea.com|portapps.io
 /cookiepolicy.$domain=obayashi.co.jp|thisvid.com
 /cookies-enabler.$domain=javzh.com|sakurajav.com|sakuravrjav.com|sex-jav.com
 /eu_cookie_$script,stylesheet,domain=bayer.jp|bureauveritas.jp|sumitomoelectric.com|unicef.org|wizards.com
@@ -182,7 +187,7 @@ _eu_cookie_$domain=nbcsports.com
 ||cloudflare.com/ajax/libs/jquery-cookiebar/$domain=photo-ac.com
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||consensu.org^$third-party,domain=imgur.com|theguardian.com|travian.com
-||cookielaw.org^$third-party,domain=accenture.com|adobe.com|airbus.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|behance.net|bethesda.net|biomedcentral.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|cell.com|clarivate.com|collegeboard.org|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|filehorse.com|forever21.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hm.com|home.kpmg|honeywell.com|hp.com|ikea.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|stellamccartney.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|trados.com|unity.com|unity3d.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
+||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|adobe.com|airbus.com|all-clad.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|behance.net|bethesda.net|biomedcentral.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|cell.com|cisco.com|clarivate.com|collegeboard.org|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hm.com|home.kpmg|honeywell.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|stellamccartney.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|trados.com|unity.com|unity3d.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
 ||cookies.joneslanglasalle.co.jp^
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||daijob.com/javascripts/gdpr/
@@ -231,7 +236,7 @@ dlink.com##.ub-emb-bar-frame
 ||tags.tiqcdn.com/utag/*/prod/utag.js$script,redirect=noopjs,domain=total.com
 ||transcend-info.com/dist/scripts/cookiegotop.js|
 ||ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
-||usercentrics.eu^$third-party,domain=sennheiser.com|steinberg.net
+||usercentrics.eu^$third-party,domain=daimler.com|sennheiser.com|steinberg.net
 0patch.com,jpradio.jp,rutube.ru,softbankhawksstore.jp,tmohentai.com##.cookie-consent
 1bit.space,mgnet.xyz###cookies-notice
 1fichier.com###cookie_box
@@ -264,6 +269,7 @@ anker.com,eufylife.com,seenebula.com,soundcore.com###shopify-section-fixed-messa
 answers.ea.com,nokia.com##.cookie_content
 answers.unity.com##.consent-banner
 anthropologie.com,urbanoutfitters.com##.cookie-message__cookieMessage
+apachefriends.org###ot-sdk-btn
 apkfab.com,deepfakeporn.net##.cookie-notice-container
 apkpure.com###policy-info
 aps.org##div[class^="app__cookie-footer"]
@@ -311,7 +317,7 @@ china-airlines.com##.top-bar
 chocolatey.org###cookieNoticeAlert
 circle.ms##.cookie_grayL
 circle.ms,ikmultimedia.com,sarahah.com###cookieConsent
-circus-inc.com,dreamincubator.co.jp,foreignaffairs.com,novel.pixiv.net##.gdpr
+circus-inc.com,dreamincubator.co.jp,foreignaffairs.com,novel.pixiv.net,sanken-ele.co.jp##.gdpr
 citrusjapan.co.jp###agreement
 coinbase.com###root > div[class^="Layout__Container-"] + div[class]
 cointelegraph.com##.bottom-zone
@@ -322,10 +328,12 @@ costco.co.jp###gdprMessage
 credit-suisse.com###consent-cookie-container
 credit-suisse.com##.consent-cookie-overlay
 credit-suisse.com#$#body.m-consent-manager-open { overflow:auto !important }
+cryoutcreations.eu###cryout-cookies-notification
 cxense.com###cookieConsentDiv
 daicel.com##.js-gdpr-popup
 daiichisankyo-ep.co.jp,evaair.com,lunavpn.net###cookie
 dailymotion.com##div[class^="CookiePopup_"]
+dalton.co.jp###cookie-policy-modal
 dataprotection.com.ua,drweb-av.de,drweb-av.es,drweb-av.it,drweb-av.pl,drweb.cn,drweb.co.jp,drweb.com,drweb.fr,drweb.kz,drweb.ru###cookie_accept_msg_block
 deakin.edu.au##.popup-gdpr
 deepl.com###dl_cookieBanner
@@ -340,6 +348,7 @@ diplo.de##.c-cookie-banner--default
 dl.acm.org##.cookiePolicy-popup
 dnp.co.jp##.cookies-area
 dnschecker.org###cookie-box
+domaintools.com##.cookie-modal
 driver-web.jp##.addHead
 driver-web.jp##.addSide
 driver-web.jp##.articleDetailAdd
@@ -370,6 +379,7 @@ forum.thegradcafe.com###elGuestTerms
 france.fr##.cookies-banner
 flightradar24.com##.important-banner--cookies
 flyasiana.com,sexlikereal.com###cookieNotice
+formlabs.com##.cookieConsent
 foundryvtt.com###privacy-policy-prompt
 foxitsoftware.com,mossberg.com###cookie-policy
 foxnews.com##.notification-banner
@@ -394,6 +404,7 @@ hclips.com,privatehomeclips.com##.cookies-policy-block
 hdwallpapers.net,perfect-privacy.com###cookiebar
 hdzog.com,hotmovs.com,shemalez.com,tubepornclassic.com,vjav.*,voyeurhit.com##.header__cookie
 heroku.com###heroku-cookie-banner
+hilti.*##.m-smartbar-container
 home.kpmg##.privacy-container
 httpstatus.io##.snackbar.is-bottom-right
 huawei.com###cookieTipOut
@@ -409,8 +420,10 @@ icegaytube.tv##.b-cookie
 idemitsu.com,idss.co.jp,malavida.com,monosnap.com,takeda.com,weddingpark.net,ytddownloader.com##.cookie
 imagefu.com###cook
 imobie.jp##.fixedbot
+in-win.com###gdpr_container
 inbox.lv###cmp-widget-wrapper
 indeed.com##.gnav-CookiePrivacyNotice
+indexpro.co.jp###our_policy
 inoreader.com##.landing_promo_banner_top
 insideevs.com##.m1-footer-messages
 interconti.co.jp###first-impression
@@ -422,7 +435,7 @@ joyourself.com,liveprivates.com##.notifier-18
 jti.co.jp##.p-top_cookie-agreement
 juken-mikata.net###cookieAlt
 kaspersky.com##section[data-at-selector="cookie-banner"]
-kearney.com###cookie-banner
+kearney.com,stratasys.co.jp###cookie-banner
 kito.co.jp,mega.nz##.cookie-dialog
 kobayashi.co.jp##.GlobalCookie
 kornferry.com###acceptCookies
@@ -437,6 +450,7 @@ linuxsecurity.com###cadre_alert_cookies
 livejasmin.com##div[data-testid="Over18NotificationContainer"]
 lucidmotors.com###cookieHeight
 lukia.seikowatches.com##.disclaimer
+lulzbot.com##.gdpr_cookie_bar
 macpaw.com##div[data-banner="cookies"]
 malwaretips.com##.notice-content
 manga-raw.club###gdpr-cookie-message
@@ -451,6 +465,7 @@ magic.wizards.com###__layout > div[style] > footer + .vue-portal-target + div[cl
 merckgroup.com##.new-cookie__modal
 metadefender.opswat.com##.cookieWrapper
 mi.com##.J_agreeCookieModal
+microjet.com.tw###ck_footer
 microsoft.com###uhfCookieAlert
 mihoyo.com##.mihoyo-cookie-tips
 minitool.com##.bottom-cookie-wrap
@@ -597,6 +612,7 @@ wallhere.com##.policy-info
 wallpapershome.com##.cc-dialog
 weatheronline.co.uk###EUCookie
 weibo.com##.cookie-disclaimer
+whoisxmlapi.com##.cookie-message-block
 wilderssecurity.com##.noticeContent
 win-rar.com###cookiewarning
 wolframalpha.com###__next > div[class] > header ~ section[class]
