@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220106
+! Version: 20220107
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -201,6 +201,7 @@ smart-flash.jp##^.adsBlock
 ||t.afi-b.com^
 ||track.affiliate-b.com^
 ||tradedoubler.com^
+||uncn.jp^
 
 @@||epub-tw.com/reader/ad/banner_$image,1p,badfilter
 ! Block ads on some videos while break other ones.
@@ -437,6 +438,11 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 &ult_in=$doc,removeparam=ult_in,domain=realestate.yahoo.co.jp
 &usid=$doc,removeparam=usid,domain=d-card.jp
 &vcptn=$doc,removeparam=vcptn,domain=digi-tag.net
+*$doc,removeparam=ebisOther1
+*$doc,removeparam=ebisOther2
+*$doc,removeparam=ebisOther3
+*$doc,removeparam=ebisOther4
+*$doc,removeparam=ebisOther5
 *$doc,removeparam=mbid
 *$doc,removeparam=utm_brand
 .com/lp/*^utm_medium=$doc,removeparam=utm_medium
