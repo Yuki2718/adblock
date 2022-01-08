@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220108
+! Version: 20220109
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -77,6 +77,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||cleverpush.com^$3p
 ||cr-eam.com^$3p
 ||d2r1yp2w7bby2u.cloudfront.net^
+||device-api.indigitall.com^$3p
 ||digipush.io^$3p
 ||ecp.heydouga.com/common/notification/
 ||event.notifier.rakuten.co.jp^
@@ -593,6 +594,8 @@ the0123.com###floating-estimate
 biglobe.ne.jp###spage-main.btop-pop
 biglobe.ne.jp###spage-popup
 ||topcard.co.jp/images/address_pop*$image,1p
+||toyo-tos.co.jp/resource/img/onlineshop-banner.png
+toyo-tos.co.jp##.special-banner
 ||tripla.jp/wp-content/uploads/*/shiryoudownload.png
 ||tsuiran.jp/js/vendor/jquery.layerBoard.js
 ||ujack.co.jp/wp_ujack/wp-content/uploads/*-300x152.png
@@ -668,6 +671,9 @@ bitflyer.com###modal-incoming
 bitflyer.com##body.modal-open:style(overflow:auto!important)
 bitstarz.com##.n-tesla
 bizmates.jp##.p-following
+blackview.hk##.mfp-wrap.mfp-close-btn-in form.js_mail_agree:upward(.mfp-wrap)
+blackview.hk##.mfp-bg
+blackview.hk##html[style*="overflow: hidden"]:style(overflow: auto!important;)
 blog-jp.janetter.net##.tmblr-iframe--follow-teaser
 blog.codecamp.jp##.l-recommendFooter
 blog.disqus.com,blog.hubspot.jp##.leadinModal
@@ -1290,6 +1296,7 @@ webbu.jp###text-7
 webbu.jp##^#text-7
 !#endif
 !#if env_mobile
+cnn.co.jp##.line-news-banner
 newsweekjapan.jp###magazine-bnr
 !#endif
 
