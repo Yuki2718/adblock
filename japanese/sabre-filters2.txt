@@ -2,31 +2,27 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220109
+! Version: 20220110
 
 ! General blocking
-/CookieInfo.
+/CookieControl/ShowCookies?
+/CookieConsent/Settings/cookieLessGASettings.js
+/CookieConsent/userCookieConsent.js
 /amp-user-notification-
 /cc-cookie-consent/*
 /cm4all.com.widgets.CookiePolicy/show.
 /cookie-bar/*
 /cookie-consent-manager.js
-/cookie-notice/*$~stylesheet
 /cookie-notification.
 /cookie_law.js
-/cookiealert.js
-/cookiealert.min.js
-/cookiebanner.
+/cookiealert.$script
 /cookieconsent_
-/cookiecontrol.js
 /cookiemanagement.js
 /cookies-monster/*$script
 /css/cookienotice.min.css
 /didomi.js
 /eu-cookie-law/jquery-eu-cookie-law-popup.
 /gdpr-cookie-compliance/*
-/gdpr.js
-/evidon-sitenotice-tag.
 /jetpack/*/build/widgets/eu-cookie-law/*
 /jquery.ihavecookies.
 /jqueryCookieGuard.
@@ -35,15 +31,12 @@
 /nu-cookie-banner
 /plugins/cookie-compliance/*
 /plugins/cookie-consent-plugin/*
-/plugins/cookie-law-info/*
 /plugins/cookie-warning/*
-/plugins/creare-eu-cookie-law-banner/*
 /plugins/eu-cookie-law
 /plugins/gdpr/*
 /plugins/osm-cookie-consent/*
 /plugins/responsive-cookie-consent/*
 /plugins/simple-cookie-notification-bar/*
-/plugins/smart-cookie-kit/*
 /plugins/webtoffee-gdpr-cookie-consent/*
 /plugins/wf-cookie-consent/*
 /plugins/wp-modal-popup-with-cookie-integration/*
@@ -51,30 +44,28 @@
 /wp-content/plugins/cookie-popup/*
 /wp-content/plugins/easy-cookies-policy/*
 /wp-content/plugins/rdm-daac-notice/*
+/wp-content/plugins/smart-cookie-kit/*
 /wp-content/plugins/wp-gdpr-compliance/*
 /wp-cookie-allow/*$script,stylesheet
 /um-gdpr.
-/utag.$domain=prada.com
 ||ampproject.org/v0/amp-consent-
 ||cdn.ampproject.org/v0/amp-consent-*.*.js$badfilter
-||c0.wp.com^*/eu-cookie-law.min.js|$important
+||c0.wp.com^*/eu-cookie-law.min.js|
 ||cdn-cookieyes.com/client_data/*.js
 ||cdn.gravito.net/hmdcmp/$third-party
 ||choices.consentframework.com^$third-party
 ||cloudflare.com/ajax/libs/cookieconsent2/$domain=~download.pixelexperience.org|~sedus.com|~tinyurl.is|~xnview.com
 ||cloudflare.com/ajax/libs/jquery-cookiebar/
 ||cmp.osano.com^
+||cookie-script.com^$third-party
 ||cookieconsent.com^$third-party
 ||cookieinfoscript.com^$third-party
 ||cookiepro.com^$third-party
+||cookiereports.com^$third-party
 ||consent.cmp.oath.com^
-||consent.cookiebot.com^$third-party,domain=~refinery29.com
-||consent.trustarc.com^$third-party
-||cookie-script.com^$third-party
 ||gdpr-legal-cookie.beeclever.app^$third-party
-||jimstatic.com/ckies.
+||jimstatic.com/ckies.js
 ||jsdelivr.net/npm/cookieconsent
-||onetrust.com^$third-party
 ||pagesense.io^$third-party
 ||rating.happymod.com/cookie/cookies.js
 ||ressource.gdpr-banner.awsmpsa.com/js/tarteauxprunes.js
@@ -106,6 +97,7 @@
 ###shopify-section-cookies_law
 ##.cc-window[aria-label="cookieconsent"]
 ##.cc_banner
+##.cookie-accept-bar
 ##.cookie-alert
 ##.cookie-dialog-wrapper
 ##.cookie-law
@@ -145,11 +137,10 @@ blackview.hk###shopify-section-cookies_law
 bynogame.com,discord.me,grabify.link##.cookiealert
 convertstring.com###cookielaw
 dokumen.tips###cookie-law
-dometic.com###CookieReportsPanel
 dsautomobiles.com##.layer_cookie
 haier.com##.cookie_box
+happyhackingkb.com##.cookie-accept-bar
 itopvpn.com##.pop-cookie
-metabo-hpt.com###CookieContainer
 mhi.com##.cookieAlertBox
 navigraph.com##.cookie-law
 neverware.com##.sqs-cookie-banner-v2
@@ -166,17 +157,20 @@ similarweb.com##.cookies-notification
 /cookie-banner$domain=airfrance.*|paypal.com|sedo.com|sugarsync.jp
 /cookie-consent.$domain=varonis.com|wolfram.com
 /cookie-consent/*$domain=noticiasesports.live|noweconomy.live|techgeek.digital
+/cookie-optin.$domain=happyhackingkb.com
 /cookie-policy.js$domain=happyhackingkb.com|qnap.com|stanley.co.jp
 /cookie-prompt.$domain=adblockplus.org
+/cookie-raw.js$domain=abeam.com
 /cookie_agree.$domain=takara-bio.co.jp|takara-bio.com
 /cookie_notice.$domain=sherdog.com
 /cookiebar-$domain=majorgeeks.com
 /cookiebar.$domain=astonmartin.com
 /cookieconsent.$domain=1cloudfile.com|acm.org|clove.co.uk|coinlyhub.com|crowdin.com|direct2u.jp|easylinks.*|imgtagram.com|javzh.com|jpower.co.jp|millisecond.com|safelinkplus.com|sex-jav.com|support.malwarebytes.com|uploadshare.net|webwhois.verisign.com
-/cookieconsent/*$domain=bain.com|bormiolirocco.com|ikea.com|portapps.io
+/cookieconsent/*$domain=bormiolirocco.com
 /cookiepolicy.$domain=obayashi.co.jp|thisvid.com
 /cookies-enabler.$domain=javzh.com|sakurajav.com|sakuravrjav.com|sex-jav.com
-/eu_cookie_$script,stylesheet,domain=bayer.jp|bureauveritas.jp|sumitomoelectric.com|unicef.org|wizards.com
+/eu_cookie_$script,stylesheet,domain=bayer.jp|bureauveritas.jp|sumitomoelectric.com|ucl.ac.uk|unicef.org|wizards.com
+/global.cookieBanner.bundle.js$domain=optimumnutrition.com
 /themeIMGs/cookie*.jpg$image,1p,domain=javzh.com|sakurajav.com|sakuravrjav.com|sex-jav.com
 /uk-cookie-consent/*$domain=big-up.style|malware-guide.com|siliconangle.com
 /wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-cookies$domain=blog.kaspersky.co.jp|kasperskydaily.com|threatpost.com
@@ -230,6 +224,7 @@ _eu_cookie_$domain=nbcsports.com
 ||pages.ubembed.com/*/a.html?closedAt=$subdocument,domain=dlink.com
 dlink.com##.ub-emb-bar-frame
 ||parastorage.com/services/cookie-consent-banner-for-uou/
+||prada.com/utag/prada/
 ||privacy-center.org^$third-party,domain=askona.com
 ||production-cmp.isgprivacy.cbsi.com/cps/shamanNotifier.js$domain=last.fm
 ||radiko.jp/rg/policy/
@@ -239,6 +234,7 @@ dlink.com##.ub-emb-bar-frame
 ||researchgate.net/javascript/cookie-consent/
 ||reverso.net^*/cookiescript
 ||s-microsoft.com/mscc/
+||sawai.co.jp/lib/cmn-js/gdpr/
 ||say-move.org/style/js/gdpr/pp_agreement.
 ||smp.sankei.co.jp/js/privacy/cookieconsent
 ||spain.info/export/system/modules/*/cookie.js
@@ -247,8 +243,8 @@ dlink.com##.ub-emb-bar-frame
 ||storage.googleapis.com/app*/js/bottom.js$domain=herokuapp.com
 ||synology.com^*/syno_cookie_
 ||tags.tiqcdn.com/utag/*/prod/utag.js$script,redirect=noopjs,domain=total.com
-||transcend-info.com/dist/scripts/cookiegotop.js|
-||ucl.ac.uk^*/eu_cookie_compliance/js/eu_cookie_compliance.
+||transcend-info.com/dist/scripts/cookiegotop.js
+||tsurumi-global.com/js/agree_to_use_cookies.js
 ||usercentrics.eu^$third-party,domain=daimler.com|sennheiser.com|steinberg.net
 0patch.com,jpradio.jp,rutube.ru,softbankhawksstore.jp,tmohentai.com##.cookie-consent
 1bit.space,mgnet.xyz###cookies-notice
@@ -256,7 +252,6 @@ dlink.com##.ub-emb-bar-frame
 48idol.tv,doujinblog.org,soundorbis.com###cookie-law-info-bar
 4kdownload.com,hsbc.co.jp,icann.org##.cookie-notification
 7news.com.au##.cookie-consent--normal
-abeam.com###cookie-container
 about.fb.com###GDPRConsentBar
 ac-illust.com,amada.co.jp,ambafrance.org,freesound.org,lockheedmartin.com,osdn.net,x18.porn###cookie-bar
 accounts.crowdin.com,appsheet.com,coinrivet.com,dole.co.jp,linkvertise.com,nordvpn.com,pictame2.com##.cc-window[aria-label="cookieconsent"]
@@ -277,7 +272,7 @@ anaconda.com,cebupacificair.com,wordpress.com##.gdpr-banner
 analog.com#$##cookie-consent-container { display:none !important }
 analog.com#$#.modal-backdrop { display:none !important }
 analog.com#$#body.modal-open { overflow:auto !important }
-android.com,asia.nikkei.com,britishairways.com,developer.chrome.com,dymatize.com,ft.com,optimumnutrition.com,spyse.com##.cookie-banner
+android.com,asia.nikkei.com,britishairways.com,developer.chrome.com,dymatize.com,ft.com,spyse.com##.cookie-banner
 animedeck.jp,tencent.com##.cookie-pop
 anker.com,eufylife.com,seenebula.com,soundcore.com###shopify-section-fixed-message
 answers.ea.com,nokia.com##.cookie_content
@@ -349,7 +344,7 @@ credit-suisse.com#$#body.m-consent-manager-open { overflow:auto !important }
 cryoutcreations.eu###cryout-cookies-notification
 cxense.com###cookieConsentDiv
 daicel.com##.js-gdpr-popup
-daiichisankyo-ep.co.jp,evaair.com,lunavpn.net,macnica.co.jp###cookie
+daiichisankyo-ep.co.jp,evaair.com,lunavpn.net,macnica.co.jp,yoyogames.com###cookie
 dailymotion.com##div[class^="CookiePopup_"]
 dalton.co.jp###cookie-policy-modal
 darkflash.com,idemitsu.com,idss.co.jp,malavida.com,monosnap.com,takeda.com,weddingpark.net,ytddownloader.com##.cookie
@@ -496,7 +491,7 @@ money-viva.jp###floating_cookie
 moodle.org,smith-wesson.com##.eupopup-container
 mql5.com###floatVerticalPanel
 mri.co.jp###gdprArea
-msn.com,tsurumi-global.com##.cookieBanner
+msn.com##.cookieBanner
 mtg-jp.com###cookie-notice-box
 mwave.me##.cookie_banner
 my.kaspersky.com##wp-cookie-notification-banner
@@ -575,7 +570,6 @@ rolls-royce.com##.__cookieWrapper
 royalpanda.com###CookiePolicy
 rt.com##.cookies__banner
 rutube.ru##.eu-cookie-popup
-sawai.co.jp###name-ga-cookie-accept-bar
 scorchin.com,xhamsterlive.com##.cookies-reminder
 scrapestorm.com###gdpr-footer
 searchenginejournal.com###cooknote-div
@@ -675,4 +669,3 @@ gettr.com##.app-content > div[class^="jss"] > div > .MuiGrid-container > .MuiGri
 @@||cdn.cookielaw.org/scripttemplates/*.*.*/
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=cbsnews.com|cnn.com|epicgames.com|kawasaki.com|metacritic.com|shop.mango.com|trustpilot.com|vimeo.com|wargaming.net
 @@||cdn.cookielaw.org/skins^
-@@||jimstatic.com/cookieControl.js$domain=yaxi.jp
