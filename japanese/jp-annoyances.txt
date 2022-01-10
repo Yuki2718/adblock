@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220110
+! Version: 20220111
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -472,6 +472,10 @@ tenshoku.mynavi.jp##.fixedEntryBtn
 www.logicool.co.jp###wrapper
 ||marketing-campus.jp/script/mailbnr.
 ||marryjushop.com/wp-content/uploads/2020/03/side_pc_01.png
+||matchesfashion.com/join/3n2/signup-popup-new-no-image-
+matchesfashion.com##.mfp-wrap div#emailSignupPopup:upward(.mfp-wrap)
+matchesfashion.com##.mfp-bg
+matchesfashion.com##html[style*="overflow: hidden;"]:style(overflow: auto!important;)
 ||mens-qzin.jp/assets/*/common/footer/link-$image,1p
 ||mikihouse.jp/layout/ciao/assets/ciao/img/common/popup_min/
 mikihouse.jp###popupWrap
@@ -967,6 +971,7 @@ video.tv-tokyo.co.jp###jsiModalOverLayerShare
 video.tv-tokyo.co.jp##.md-question.js-modal-window
 video.tv-tokyo.co.jp##*:style(opacity: 1 !important;)
 vimeo.com###main > div[data-reactroot] > div[class^=_]:has-text(アップロード、)
+vox.com##div[id="toaster"][data-cdata*="Sign up"]
 vpnmentor.com##+js(nostif, bioEp.showPopup)
 washingtonpost.com###wall-bottom-drawer
 web-hikari.net##.follow_footer
@@ -1279,6 +1284,7 @@ picmix.com###newsletter
 qiita.com##.apm-Content
 sbssupport.jp##.mail_mag
 snrec.jp##.btn-black[href="https://www.snrec.jp/newsletter"]
+stackexchange.com##.js-dismissable-hero:has-text(Sign up)
 stream.co.jp##.base__widget
 techcrunch.com##.newsletter-signup-block
 techwave.jp##.jetpack_subscription_widget
@@ -1494,6 +1500,7 @@ duckduckgo.com##.onboarding-ed
 ||e-ohaka.com/img/pc_banner05.png
 ||e-ohaka.com/regist_resources/img/form_b_pc0818.png
 ||ebook-assets.dmm.co.jp/p/bnr/dc/topics/large/book_
+||embed.audioburst.com^$domain=gingerweb.jp
 ||foxnews.com^*/fox-news/nation-promo/nation_promo_$image,1p
 ||gamewith.jp/walkthrough/recruit/banner.png
 gamewith.jp##.walkthrough-recruit-banner:upward(1)
@@ -1828,7 +1835,7 @@ buzzfeed.com###mod-embed-1
 ||vignette.wikia.nocookie.net^*/Nat195.$image,important,domain=yakusokunoneverland.fandom.com
 ||w.atwiki.jp/common/_js/preconnect.
 ||xhcdn.com/xh-desktop/*.parental-control.js
-fullxh.com,hamsterix.*,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhwebsite.com,xhwide1.com##+js(rc, xh-thumb-disabled, html)
+fullxh.com,hamsterix.*,megaxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhwebsite.com,xhwide1.com##+js(rc, xh-thumb-disabled, html)
 abandonmail.com##+js(aopr, indexedDB.open)
 ac-illust.com##+js(set, ajaxCheckIsEnableSearch, noopFunc)
 ampmedia.jp##.article-vote-area
@@ -1842,6 +1849,7 @@ ironna.jp###side-theme-list
 jma.go.jp###jma_ad_config_button
 live2.nicovideo.jp##[class^=___player-display-header___]
 mycams.com,tabletporn.com,trannylivecams.com###over-18-notification
+social-unlock.com##form#link a.submit:style(opacity: 1 !important; pointer-events: auto !important;)
 techcrunch.com##.homepage__event-promo, .upcoming-events
 top.gg###video-root
 top.gg###vote-root:style(display:block !important)

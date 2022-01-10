@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220110
+! Version: 20220111
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -105,6 +105,7 @@
 ##.cookieMessage:not(body):not(html)
 ##.cookie_box
 ##.cookiealert
+##.cookies-notice
 ##.cookies-notification:not(html):not(body)
 ##.cookies-popup
 ##.ensureCookie
@@ -139,7 +140,6 @@ convertstring.com###cookielaw
 dokumen.tips###cookie-law
 dsautomobiles.com##.layer_cookie
 haier.com##.cookie_box
-happyhackingkb.com##.cookie-accept-bar
 itopvpn.com##.pop-cookie
 mhi.com##.cookieAlertBox
 navigraph.com##.cookie-law
@@ -149,6 +149,7 @@ nordvpn.com,omatomeloanhikaku.com##.cc-window[aria-label="cookieconsent"]
 oozeki-shop.com,projectcore.jp##.popup_confirmation_bar
 selectra.jp##.eu-cookie-compliance-banner
 similarweb.com##.cookies-notification
+zenoah.com##.cookies-notice
 
 ! Individual sites
 -cookie-law-popup.$domain=hqq.to|waaw.to
@@ -193,7 +194,7 @@ _eu_cookie_$domain=nbcsports.com
 ||cloudflare.com/ajax/libs/jquery-cookiebar/$domain=photo-ac.com
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||consensu.org^$third-party,domain=imgur.com|theguardian.com|travian.com
-||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|behance.net|bethesda.net|biomedcentral.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|cell.com|cisco.com|clarivate.com|collegeboard.org|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hm.com|home.kpmg|honeywell.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|stellamccartney.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|trados.com|unity.com|unity3d.com|viatris.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
+||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|behance.net|bethesda.net|biomedcentral.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|cell.com|cisco.com|clarivate.com|collegeboard.org|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hm.com|home.kpmg|honeywell.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|stellamccartney.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|touchvpn.net|trados.com|unity.com|unity3d.com|viatris.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
 ||cookies.joneslanglasalle.co.jp^
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||daijob.com/javascripts/gdpr/
@@ -344,7 +345,7 @@ credit-suisse.com#$#body.m-consent-manager-open { overflow:auto !important }
 cryoutcreations.eu###cryout-cookies-notification
 cxense.com###cookieConsentDiv
 daicel.com##.js-gdpr-popup
-daiichisankyo-ep.co.jp,evaair.com,lunavpn.net,macnica.co.jp,yoyogames.com###cookie
+daiichisankyo-ep.co.jp,evaair.com,gingerweb.jp,lunavpn.net,macnica.co.jp,yoyogames.com###cookie
 dailymotion.com##div[class^="CookiePopup_"]
 dalton.co.jp###cookie-policy-modal
 darkflash.com,idemitsu.com,idss.co.jp,malavida.com,monosnap.com,takeda.com,weddingpark.net,ytddownloader.com##.cookie
@@ -398,7 +399,7 @@ foundryvtt.com###privacy-policy-prompt
 foxitsoftware.com,mossberg.com###cookie-policy
 foxnews.com##.notification-banner
 ft.com##.o-cookie-message
-fullxh.com,hamsterix.*,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhwebsite.com,xhwide1.com##.cookie-announce
+fullxh.com,hamsterix.*,megaxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhwebsite.com,xhwide1.com##.cookie-announce
 furukawa.co.jp##.l-footer_cookieAlertBox
 gac-motor.com##.cookielayer
 gamepix.com,parisinfo.com##.CookieNotice
