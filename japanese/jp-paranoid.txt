@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220112
+! Version: 20220114
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -66,8 +66,11 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 ||webike.net/sys_images/saimg/*_1000_45.$domain=webike.net
 ||youtube.com^$csp=worker-src 'none'
 @@||adframe.kohsoku.info/ads/$frame,domain=xn--cck1a7gsd645rnx7b.com,badfilter
+@@||cdn.logly.co.jp^$image,domain=veryweb.jp,badfilter
 @@||click.speee-ad.jp^$script,domain=saitama-np.co.jp,badfilter
 @@||cloudfront.net/files/rcms_conv_webp/files/user/images/sidead/$domain=bcnretail.com,badfilter
+@@||logly.co.jp/lift$script,domain=veryweb.jp,badfilter
+veryweb.jp##.c-articleList > div[id^=logly]:upward(1)
 @@||nicoad.nicovideo.jp/v1/nicoadgroups|$xhr,1p,badfilter
 @@||speee-ad.akamaized.net^$css,image,script,domain=saitama-np.co.jp,badfilter
 @@||tochinavi.net/ad/img/$image,1p,badfilter
@@ -88,7 +91,7 @@ youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.playerAds)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
-~2099.jp,~mazimazi-party.com##article[id][class*=post-] div[class*=cta]
+~2099.jp,~bitly.com,~mazimazi-party.com##article[id][class*=post-] div[class*=cta]
 
 !#if !env_firefox
 gizmodo.jp,lifehacker.jp##.inner-buy-box
@@ -161,7 +164,7 @@ iwatetabi.jp##^#adbnr
 smart-flash.jp##^.adsBlock
 !#endif
 
-! ---------- Affiliate links ----------
+! ---------- Affiliate links/Click-through tracker ----------
 ||aaaf.jp^
 ||act.gro-fru.net^
 ||ad-feed.com^
@@ -202,6 +205,7 @@ smart-flash.jp##^.adsBlock
 ||smartaccess.biz^$doc
 ||t.afi-b.com^
 ||track.affiliate-b.com^
+||track.aftrk3.com^
 ||tradedoubler.com^
 ||uncn.jp^
 

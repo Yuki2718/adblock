@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220112
+! Version: 20220113
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -379,6 +379,8 @@ es-navi.com###mobileInformation
 ||finnishdesignshop.com/images/terms_and_info/
 finnishdesignshop.com###fdsNewsletterPrompt
 finnishdesignshop.com##body.modal-open:style(overflow:auto !important)
+||fireworktv.com/medias/*_CLASSY_3.mp4$media,domain=classy-online.jp
+classy-online.jp##fw-storyblock
 ||flipdesk.jp/chat/scenario-pc-button-images/$domain=7716wedding.com|calpis-shop.jp|hanesbrandsinc.jp|suntory-kenko.com
 7716wedding.com,calpis-shop.jp,hanesbrandsinc.jp,suntory-kenko.com###flipdesk-trigger
 ! potentially useful
@@ -692,6 +694,7 @@ bloomberg.com###fortress-preblocked-container-root
 bloomberg.com###newsletter-modal
 bloomberg.com##body[class^="noScroll"]:style(overflow: visible !important;)
 bluestacks.com###subscribe-modal
+book.toyokeizai.net##.trial_block
 boxil.jp###modal-appeal-download
 boxil.jp##body.modal-open:style(overflow: auto!important;)
 boxil.jp,finnishdesignshop.com,hoihoi.whotwi.com,honichi.com,kadoebi.co.jp,lec.medilink-study.com,nordvpn.com,razer.com,rebates.jp,service-safari.com,techacademy.jp,weloma.net##.modal-backdrop
@@ -837,6 +840,8 @@ mensfashion.cc##.add_line_link
 metabo-hpt.com###PopupSignupForm_0
 microsoft.com###email-newsletter-dialog
 microsoft.com###epb
+mine.toyokeizai.net##.free-modal
+mine.toyokeizai.net##.is-scroll-disabled:style(overflow: auto!important;)
 mobile.twitter.com##div[data-testid="sidebarColumn"] section[aria-label][role="region"]:upward(1)
 moca-news.net###guide
 monosnap.com##.modalSide
@@ -882,6 +887,7 @@ paypay.ne.jp##.is-modalContentsShow a.bannerModal__link[href^="https://paypay.ne
 paypay.ne.jp##body[style="overflow: hidden;"]:style(overflow: auto!important;)
 paypay.ne.jp##html[style="overflow: hidden;"]:style(overflow: auto!important;)
 pcdock24.com###bottom_nav
+pharma.mynavi.jp##.footer-fix-navi
 photobank.mainichi.co.jp##.contact:has(.open_modal)
 piccoma.com##.PCM-jConfirm-appDlModal
 picrew.me###agreed-to-terms
@@ -936,6 +942,7 @@ t.pia.jp##.Y15-follow-btn__block
 tabroid.jp##.pursue_header
 taotao-ex.com###modal
 tbs.co.jp##+js(set, NS_TVER_EQ.checkEndEQ, trueFunc)
+teams.qiita.com##.cvFLg_wrap
 tech-camp.in###js-popup
 techacademy.jp###trialEntry.fade.modal
 techacademy.jp##body.modal-open:style(overflow: auto!important)
@@ -1067,6 +1074,7 @@ girlschannel.net###popupModal
 jp.indeed.com##.jobsearch-JpProfileModalPromo
 jp.indeed.com##body[style="position: fixed; top: 0px;"]:style(position: static!important;top: auto!important;)
 jp.indeed.com##div[data-testid="sticky-jobs-cta-wrapper"]
+kanaloco.jp###rt_popup
 kurashiru.com###dly-LandingPopupBanner
 kurashiru.com##html.dly-modal-active:style(overflow: auto!important;)
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
@@ -1511,6 +1519,7 @@ duckduckgo.com##.onboarding-ed
 gamewith.jp##.walkthrough-recruit-banner:upward(1)
 ||gnst.jp/public/sales/header/img/$domain=gurutabi.gnavi.co.jp
 ||goo-net.com/cache/common/bnr/bnr_carlease_600_500.png
+||gooday.nikkei.co.jp/images/campaign/
 ||google.*/async/promos?$xhr
 ||gorin.jp/img/tver_banner/
 ||h0874.com/img/toy_824x179.jpg
@@ -1558,6 +1567,9 @@ niigata-nippo.co.jp##.col_banners_inline
 pacopacomama.com##.top-pr
 ||pdf.wondershare.jp/images/images2021/topic/protect.png
 pdf.wondershare.jp###icon-anchor-right
+||pharma.mynavi.jp/img/areabnr/bnr_top_
+||pharma.mynavi.jp/sp/img/bg_pr.gif
+pharma.mynavi.jp##.pr
 ||r10s.jp/com/img/home/smart/top/ecosystem/bnr/$domain=rakuten-bank.co.jp
 rakuten-bank.co.jp###rc-gp-banner
 ||ranking.xgoo.jp^*/PC_650_80.png
@@ -1585,6 +1597,7 @@ star-ch.jp##.sc-footer__contents2
 ||thisisgallery.com/wp-content/themes/thisismedia/images/side/banner_
 ||usefomo.com^$3p
 ||vector.co.jp/img_cache/tq/p/service/man/*_banner.
+||woman.nikkei.com/images/campaign/
 ||wpb.shueisha.co.jp/data/banner/announcement/
 wpb.shueisha.co.jp###js-side-column > .block-banner-b-a + div.helper--padding-top40[style="min-height: 200px;"]
 ||wwdjapan.com/wp-content/uploads/*_liteplan_top.jpg
@@ -1595,6 +1608,7 @@ wwdjapan.com##.wwdj-banner-top
 ||youtube.com/embed/_uTPHQMXGOM?list=*&mute=1$domain=airtrip.jp
 airtrip.jp##.top-page > .video-content
 @@||47news.jp/public/bannerAd/$image,1p,badfilter
+@@||medicalonline.jp/ad_img/$1p,badfilter
 @@||nikkon-hd.co.jp/images/ad/$image,1p,badfilter
 
 373news.com##.mns_bn
@@ -1696,6 +1710,7 @@ cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
 ||origin-touch.firebaseapp.com^$domain=i-m-c.co.jp
 ||widget.intercom.io^$3p,domain=similarweb.com
 ||windows.net/botchan/js/efoapp.$domain=receptionist.jp
+||ws.sense.healthcare^$domain=medicalonline.jp
 
 ! ---------- Timer (CSS fix can be added to jp-filters if not likely to break site) ----------
 100count.net##+js(nano-sib, /sec--|timedisplay--/)
@@ -1769,6 +1784,8 @@ thetechywizard.com##+js(nano-sib, timer, 1500)
 toptechtalk.xyz##+js(nano-sib, waitTime, 1200)
 uploadking.net##+js(nano-stb, downloadbtn)
 upstore.net##+js(nano-sib, countDown, 1150, 0.5)
+vecteezy.com##+js(nano-stb, dlAdCountdown)
+vectorified.com##+js(set, timeleft, 0)
 wallpaper.dog,wallpapertag.com##+js(nano-sib, count)
 wallpaperkiss.com,wallpaperuse.com##+js(nano-stb, clock)
 zedge.net##+js(nano-sib, (i-1))
@@ -1823,7 +1840,12 @@ otanew.jp##.bottom-top
 otapol.com###balloonText
 ||ovovx.com/wp-content/uploads/2015/08/ovovz2.png
 ||pcolle.jp/js/age_modal.
+||pha.medicalonline.jp/js/mol.cm.js
 ||player.anyclip.com^$script,3p
+||quoracdn.net/*.images.paywall_blur.TextBlurNormal.$image,domain=quora.com
+quora.com##.content-monetization-wall > div > .qu-overflowY--hidden:style(-webkit-mask-image: none!important; overflow-y: scroll!important)
+quora.com##.qu-zIndex--qtext_overlay
+quora.com##div[style*=".images.paywall_blur."]
 ||s3.amazonaws.com/widgets.stackcommerce.com/
 ||scdn.line-apps.com/stf/line-news/js/thirdparty/banner2.
 buzzfeed.com###mod-embed-1
@@ -1846,6 +1868,7 @@ ac-illust.com##+js(set, ajaxCheckIsEnableSearch, noopFunc)
 ampmedia.jp##.article-vote-area
 dailymail.co.uk##+js(aopr, Object.prototype.videoAdvertisingMode)
 dailyuploads.net##+js(ra, checked, input#chkIsAdd)
+dev.medicalonline.jp##+js(set, MOL.cm.is_exist_medical_staff_cookie, trueFunc)
 game8.jp##+js(rc, async-hide, html)
 get.adobe.com##+js(ra, checked, #chrExtCheckbox)
 itreview.jp##.blur-contents:style(filter: none!important;pointer-events: auto!important)

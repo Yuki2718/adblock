@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220112
+! Version: 20220114
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -80,6 +80,7 @@
 ||ebbs.jp/test_ad/
 ||erogazo-ngo.com/AD/$image,1p
 ||erogazopple.com/AD/$image,1p
+||fc2.com/h/a/n/hanahanahikari/nukinavi13.png$domain=okinilove.com
 ||fc2.com/video/js/u/sp/hdr/
 ||hentaidude.com/wp-content/themes/awp/assets/mobile.js
 ||img.hobonichielog.com/wp-content/themes/hobonichiesmh/$1p
@@ -166,6 +167,9 @@ appbank.net,getnews.jp,itmedia.co.jp,news.tennis365.net,utabito.jp##._popIn_reco
 applion.jp##a[href^="https://www.amazon.co.jp/exec/"][style="text-decoration:underline;"]
 apkdone.com##.adplaceholder-top
 aquarium-suisou.net,ba-ro-4869.com,jeep-m.jp,la-mere-poulard.jp,tabootube.xxx##.sponsor
+aria.nikkei.com##.prBox
+aria.nikkei.com##.panelIndent > ul.articleBoxList[style="margin-top:12px;margin-bottom:0;"]
+aria.nikkei.com##.panelIndent > ul.dag_visualbox:upward(1)
 asahi.com##.ArticleRectangleAd
 asahi.com##body > div.notPrint
 asahi.com##li > div[id^="ad-rellink"]:upward(1)
@@ -285,6 +289,8 @@ hoiclue.jp##.ad-SP
 hoiclue.jp##.adRectangleBase
 hoken.kakaku.com###headerAd
 hoken.kakaku.com##.p-publicBoard
+hokkaido-np.co.jp##.bnrBlock
+hokkaido-np.co.jp##.mainAdsense
 hosyusokuhou.jp###ovrss
 hosyusokuhou.jp##.rankbox
 ichacha.net##div[style="height:280px"]
@@ -331,6 +337,7 @@ karapaia.com##.ads-rect-o
 karapaia.com##.article_mid_v2
 karapaia.com##.content > header::after
 kissanime.mobi##.offads
+kobe-np.co.jp##div[id^="ad"][style="height: 65px;"]
 kobe-np.co.jp##div[id^="knsp-"]
 kt.wowkorea.jp##div[style="padding:30px 0px; text-align:center;"]
 kuchi-lab.com###common-cta-sp
@@ -397,7 +404,7 @@ news.owata-net.com##.adnetwork.article-interstitial.overlay
 news.tbs.co.jp##.cp-spAd
 news.tennis365.net##._popIn_recommend_article_ad_reserved
 news.tv-asahi.co.jp###common-header > #adbanner_spheader:upward(1)
-news24.jp##.adText
+news24.jp##.adText > ul
 news4vip.livedoor.biz###f984a
 news4wide.net##.advertisement-position
 news4wide.net##.free-area script[src^="https://js.ad-"]:upward(.free-area)
@@ -442,6 +449,7 @@ realsound.jp##.entryBottomAd
 realsound.jp##.paragraphAd
 realtime-chart.info##div[style="height:334px;width:100%;background:#000;font-size:38px"]
 recipe.rakuten.co.jp##.ads_recipe_middle_banner_pr
+recipe.rakuten.co.jp##.header_billboard
 recipe.rakuten.co.jp##p[style="color: rgb(160, 160, 160); font-size: 10px; text-align: center;"]
 reddit.com##shreddit-comments-page-ad
 reddit.com##.adLinkBar:upward(article[style="z-index: 1;"])
@@ -453,6 +461,8 @@ resemara.xbiz.jp,revolve-ysy.jp##.bfb_imgBanner
 rikeilabo.com###xeory-fixed-banner-sp
 rocketnews24.com##.ad-icons
 roomie.jp###secondary > .r-section:first-child
+ryukyushimpo.jp##.sp-ad-srv
+ryukyushimpo.jp##div[id*="sp_article_"][style*="min-height: 280px;"]
 ryutsuu.biz##.bnr300
 ryutsuu.biz##.bnr50
 s.ekiten.jp##.solid_ad_container
@@ -505,6 +515,8 @@ tech-camp.in##.header-banner-link
 thesaurus.weblio.jp##.adThesaurus
 tokyo-np.co.jp###flux-overlay
 tokyo-sports.co.jp##.ad-sp-bil
+topics.smt.docomo.ne.jp###ad_middle
+topics.smt.docomo.ne.jp##.banner
 travel.co.jp##.pickup_item--PR
 travel.co.jp##.pr-area
 tripnote.jp###button-booking
@@ -627,6 +639,7 @@ nan-net.com##div[style*="height:250px;"]
 nan-net.com##div[style="height:100px;"]
 niji-gazo.com###dmm-recommend
 nukemanga.com##.enhanced-text-widget
+okinilove.com###fixed_footer
 pakosen.com##.hentry > .widget_custom_html
 panchirarism.blog.fc2.com##.nav-wrap > br
 pantiragasuki.com##.ninja-recommend-block
@@ -706,6 +719,7 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 @@||thumbnail.thench.net/thumb/$image,domain=itest.5ch.net
 @@||worldvision.jp/img/topSP/topFootBana_ad.gif|
 @@||www.googletagmanager.com^$domain=onlineshop.smt.docomo.ne.jp
+@@||yads.c.yimg.jp/js/yads-async.js$domain=kobe-np.co.jp
 
 ! ---------- Exception - cosmetic ----------
 kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important)
