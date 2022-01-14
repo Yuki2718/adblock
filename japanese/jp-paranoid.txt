@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220114
+! Version: 20220115
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -301,7 +301,7 @@ _omniture.$script,domain=mathworks.com
 ||carsensor.net/vos/
 ||cleverbridge.com/*/cleverAnalytics.js^
 ||cloudflare.com/cdn-cgi/trace$3p,domain=~isbgpsafeyet.com|~wyndhamdestinations.com
-||cloudflare.com/cdn-cgi/trace$3p,xhr,redirect-rule=noop.txt,domain=~funimation.com
+||cloudflare.com/cdn-cgi/trace$3p,xhr,redirect-rule=noop.txt,domain=~1bit.space|~1bitspace.com|~funimation.com
 ||collect.igodigital.com^$script
 ||cxense.com^$frame,script,xhr,3p
 ||facebook.com/platform/scribe_endpoint.php/
@@ -413,6 +413,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||tags.tiqcdn.com/utag/vmware/myvmware-privacy/prod/utag.sync.js$script,domain=vmware.com
 @@||tags.tiqcdn.com/utag/wsjdn/$script,domain=marketwatch.com
 @@||tags.tiqcdn.com/utag/zurich-japan/main/prod/utag.js$script,domain=net.zurich.jp
+@@||tags.tiqcdn.com^$script,domain=adidas.*
 @@||toplay.biz/log_event$1p,xhr
 @@||ttutu.biz/log_event$1p,xhr
 !#if env_mobile
