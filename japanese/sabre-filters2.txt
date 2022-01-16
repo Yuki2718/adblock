@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220115
+! Version: 20220117
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -90,6 +90,7 @@
 ###cookieBar
 ###cookie_msg
 ###cookie_policy_alert
+###cookieinfo-container
 ###cookielaw
 ###cookienotice
 ###cookies_message
@@ -146,6 +147,7 @@ dokumen.tips###cookie-law
 dsautomobiles.com##.layer_cookie
 haier.com##.cookie_box
 ingress.com,pokemongolive.com##ark-cookiebar
+ionos.com###cookieinfo-container
 itopvpn.com##.pop-cookie
 mhi.com##.cookieAlertBox
 navigraph.com##.cookie-law
@@ -207,6 +209,7 @@ _eu_cookie_$domain=nbcsports.com
 ||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|bayer.com.au|behance.net|bethesda.net|biomedcentral.com|blackberry.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|cell.com|cisco.com|clarivate.com|collegeboard.org|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|foursquare.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hm.com|home.kpmg|honeywell.com|hotspotshield.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|ringcentral.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|steelcase.com|stellamccartney.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|touchvpn.net|trados.com|unity.com|unity3d.com|viatris.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
 ||cookies.joneslanglasalle.co.jp^
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
+||cutt.ly/scripts/cook_info.
 ||daijob.com/javascripts/gdpr/
 ||europol.europa.eu/sites/default/files/js/js_X*
 ||fc2.com/js/blogranking/pp_agreement
@@ -607,11 +610,13 @@ sekisuikasei.com###cookiePopup
 semanticscholar.org##.copyright-banner
 seagaia.co.jp###js-gdpr-box
 send.tresorit.com###notification-wrapper
+seobility.net##div[id^="cookieoptin"]
 shionogi-hc.co.jp##.js-cookie-panel
 shop.mango.com#$#body { overflow: auto!important; }
 sick.com###__tealiumGDPRecModal
 simcast.com##.gdpr-block
 similarsites.com##div[class^="PrivacyNotification_"]
+sitechecker.pro##.footer__cookie
 sixt.jp###cookiehint
 sketch.pixiv.net##.HeaderFixed > .PrivacyPolicyPrompt
 smallpdf.com###app > div > div[id^="__cond-"] + div[class]
@@ -644,6 +649,7 @@ threatintelligenceplatform.com###cookies-banner-block
 thurrott.com##.gdpr-cookie-banner
 tiendeo.jp###cookiesModal_bottom
 tinder.com##.App > div[class*="Pos(f)"][class*="Bxsh($bxsh-4-way-spread)"][class*="C($c-secondary)"]
+tinyurl.com##.alert
 toho-titanium.co.jp###cookieLicense
 tohotheater.jp##.optIn
 tokyuhotels.co.jp##.gdpr-float-banner
