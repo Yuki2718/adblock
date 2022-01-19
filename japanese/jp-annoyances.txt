@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220119
+! Version: 20220120
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -126,6 +126,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||truepush.com^$3p
 ||urbanairship.com^
 ||webpush.jp^$3p
+||webpushonline.com^$3p
 ||webpushr.com^$3p
 ||webpushs.com^$3p
 ||wpushsdk.com^$3p
@@ -1498,6 +1499,8 @@ store.alpen-group.jp##.footer-media
 apexlegends-news.com###fix_sidebar
 ||asahicom.jp/shukatsunavi/assets/images/column/prebiz_banner660x100px.jpg
 ||autoc-one.jp/article-assets/image/top/campaign_700x100.
+||azby.fmworld.net/misc_top/images/niftyhikari.png
+azby.fmworld.net###subContents > div.mrgB10:last-of-type
 ||bakusai.com/p/img/banner2/
 ||baraero.com/wp-content/uploads/2020/06/stayhome.$image,1p
 baraero.com##.content > div[style="float: none; margin:0px;"] > .entrydiscription
@@ -1765,6 +1768,10 @@ link.cgtips.org##+js(set, countdown, 0)
 linksht.com##+js(set, counter, 0)
 littlebyte.net##+js(nano-sib, freeRemind)
 maxurlz.com##+js(nano-sib, btn-success)
+makemoneywithurl.com###scroll.hidden, .footerLink.hidden:style(display: block!important)
+makemoneywithurl.com###next.getmylink
+makemoneywithurl.com##+js(set, timeSec, 0)
+makemoneywithurl.com##.box-main > div:not([class])
 megaup.net##+js(nano-sib, display())
 menjelajahi.com##+js(nano-sib, time, , 0)
 mixdrop.*##+js(nano-stb, disabled)

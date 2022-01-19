@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220118
+! Version: 20220120
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -168,6 +168,7 @@ zenoah.com##.cookies-notice
 /cookie-banner$domain=airfrance.*|paypal.com|sedo.com|scamvoid.net|sugarsync.jp|urlvoid.com
 /cookie-consent.$domain=varonis.com|wolfram.com
 /cookie-consent/*$domain=noticiasesports.live|noweconomy.live|techgeek.digital
+/cookie-law-$~script,domain=safer-networking.org
 /cookie-optin.$domain=happyhackingkb.com
 /cookie-policy.js$domain=happyhackingkb.com|qnap.com|stanley.co.jp
 /cookie-prompt.$domain=adblockplus.org
@@ -179,6 +180,7 @@ zenoah.com##.cookies-notice
 /cookieconsent.$domain=1cloudfile.com|acm.org|clove.co.uk|coinlyhub.com|crowdin.com|direct2u.jp|easylinks.*|imgtagram.com|javzh.com|jpower.co.jp|millisecond.com|safelinkplus.com|sex-jav.com|support.malwarebytes.com|uploadshare.net|webwhois.verisign.com
 /cookieconsent/*$domain=bormiolirocco.com
 /cookiecontrol-$domain=accord-healthcare.com|kensington.com
+/cookiecontrol.js$domain=w10privacy.de
 /cookiepolicy.$domain=obayashi.co.jp|thisvid.com
 /cookies-banner$script,domain=designevo.com
 /cookies-enabler.$domain=javzh.com|sakurajav.com|sakuravrjav.com|sex-jav.com
@@ -195,6 +197,7 @@ _eu_cookie_$domain=nbcsports.com
 ||acronis.com^*/cookies-note-v2.
 ||amazonaws.com/the-japan-news-public/cookieconsent$domain=the-japan-news.com
 ||amiunique.org/cookie-notice.js
+||artner.co.jp/_include_cookie/
 ||asus.com/js/*/alert-info.js
 ||av-comparatives.org/wp-content/themes/avc/js/cookie/jquery.cookie.
 ||bookwalker.jp/shared/gdpr/
@@ -209,7 +212,7 @@ _eu_cookie_$domain=nbcsports.com
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||consensu.org^$third-party,domain=imgur.com|theguardian.com|travian.com
 ||cookiebot.com^$domain=thaisim.jp
-||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|bayer.com.au|behance.net|bethesda.net|biomedcentral.com|blackberry.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|cell.com|cisco.com|clarivate.com|collegeboard.org|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|foursquare.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hm.com|home.kpmg|honeywell.com|hotspotshield.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|ringcentral.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|steelcase.com|stellamccartney.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|touchvpn.net|toyonut.co.jp|trados.com|unity.com|unity3d.com|viatris.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
+||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|bayer.com.au|behance.net|bethesda.net|biomedcentral.com|blackberry.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|cell.com|cisco.com|clarivate.com|collegeboard.org|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|foursquare.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hm.com|home.kpmg|honeywell.com|hotspotshield.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|ringcentral.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|steelcase.com|stellamccartney.com|superantispyware.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|touchvpn.net|toyonut.co.jp|trados.com|unity.com|unity3d.com|viatris.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
 ||cookies.joneslanglasalle.co.jp^
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||cutt.ly/scripts/cook_info.
@@ -326,12 +329,14 @@ bitstarz.com##.cookie-wrapper
 blockchain.com##div[class^="GdprBanner_"]
 blog.hatena.ne.jp###header-cookie-notify
 bloomberglaw.com##div[class^="CookieNotice_cookiesBar"]
+bluesound.com##.privacy-notice
 bmw.com##amp-consent
 board.perfect-privacy.com##.notice--cookie
 bose.co.jp##.bose-infoBar2016--cookie
 boy18tube.com,findgaytube.com,flashtranny.com,gayfuckporn.tv,gaymovievids.com,goldgay.tv,good-gay.tv,gogaytube.tv,icegay.tv,igayporn.tv,machogaytube.com,machotube.tv,me-gay.com,onlydudes.tv,shemaleporntube.tv,xgaytube.tv,xlgaytube.tv##.b-cookie
 boyfriendtv.com##.eu-cookies
 btimesonline.com###cookieAcceptBar
+builtbybel.com###easycookieinfo
 businessnetwork.jp###cookieLicense
 businesswire.com,healthitsecurity.com,themeum.com###cookie-consent
 callofwar.com###cookieNotificationMain
@@ -505,7 +510,7 @@ manga-raw.club###gdpr-cookie-message
 manga.club###adultConfirmModal
 manga.club,puratos.co.jp##.modal-backdrop
 marketing.nikkei.co.jp###dsopener
-matcha-jp.com##.cookie-info
+matcha-jp.com,tidal.com##.cookie-info
 md5hashing.net##.primary-container > .pp-footer
 mediafire.com###cookie-accept-footer
 mega.nz##.fm-dialog-overlay
