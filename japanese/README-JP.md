@@ -1,10 +1,7 @@
-### お知らせ（2021年11月16日）
+### お知らせ（2022年1月21日）
 
-Yuki's Blog parts filters - Adultは近々Yuki's Blog parts filtersに統合します。また、日本でどれほどの利用者がいらっしゃるかわかりませんが、必要性の低下により以下のリストは近日中に公開停止いたします。
-
-- AdGuard Tracking Protection Plus
-- Placeholder Hider with no generic hiding for mobile
-- Yuki's uBlock Static Rules
+現在のCoinhiveについて誤解がみられるようです。まず、Coinhiveは[2019年に閉鎖](https://www.itmedia.co.jp/news/articles/1902/27/news093.html)しています。現在、CoinhiveのドメインはTroy Hunt氏が[所有しており](https://www.troyhunt.com/i-now-own-the-coinhive-domain-heres-how-im-fighting-cryptojacking-and-doing-good-things-with-content-security-policies/)、Coinhiveのスクリプトが埋め込まれたサイトを訪問するとユーザーはTroy Hunt氏のページにリダイレクトされますが、マイニングは行われません。そのため、uBlock Originの標準リストでは現在Coinhiveはブロックしていません（AdGuard BaseやFanboy Annoyanceがブロックしています。Yuki's uBlock Japanese filtersにおいても迷惑要素の特例としてブロックしています）。
+（なお、Coinhiveに限らずほとんどのマイナーはサービス終了しており、Yuki's uBlock Japanese filtersでは実際に使用が確認されたリソース濫用コードのみブロックしています。）
 
 （2021年05月15日）
 
@@ -18,7 +15,7 @@ Youtubeの動画内広告について：各所で、また動画内広告がす�
 
 ## Yuki's uBlock Japanese filters （雪フィルタ）
 
-日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、**uBlock Origin専用**フィルタです。AdBlock, Adblock Plus, AdGuard, uBlock-for-firefox-legacy, Vivaldiなどでは**使わないで**ください<sup>1</sup>！
+日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、**最新版uBlock Origin専用**フィルタです。AdBlock, Adblock Plus, AdGuard, uBlock-for-firefox-legacy, Brave, Vivaldi, Berry Browser, Yuzu Browserなどでは**使わないで**ください<sup>1</sup>！
 
 - 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
 - Android版Firefoxでご利用の場合、Yuki's uBlock Japanese filters - Mobileを併用してください。
@@ -70,10 +67,10 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 
 | リスト名 | 互換性 | 説明 |
 |:---|:---:|:---:|
-| uBlock内製フィルター, EasyList, EasyPrivacy, Peter Lowe’s Ad and tracking server list, AdGuard Base, AdGuard Mobile Ads, AdGuard Social Media, uBlock filters – Annoyances, Block Outsider Intrusion into LAN | ◎ | 互換性が最大限考慮されており、併用しても無駄はほとんど生じない |
+| uBlock内製フィルター, EasyList, EasyPrivacy, Peter Lowe’s Ad and tracking server list, AdGuard Base, AdGuard Mobile Ads, AdGuard Social Media, uBlock filters – Annoyances, Block Outsider Intrusion into LAN, 280blocker domain filter | ◎ | 互換性が最大限考慮されており、併用しても無駄はほとんど生じない |
 | AdGuard Chinese, RU AdList, AdGuard URL Tracking Protection, Fanboy Enhanced Tracking, AdGuard Annoyances, EasyList Cookie, Fanboy’s Annoyance, Fanboy’s Social | ○ | 互換性がある程度考慮されており、多少の無駄は生じるがあまり問題ない（Fanboy系は互換性低め） |
 | もちフィルタ, もち拡張フィルタ, いちごフィルタ, ことりフィルタ, ねぎフィルタ, AdGuard Japanese | △ | 併用すると大量の無駄が生じるが、問題が生じるかは未確認 |
-| 豆腐フィルタ | × | 大量の無駄だけでなく、実際に問題が生じるため併用は非推奨 |
+| 豆腐フィルタ, 280blocker adblock filter | × | 大量の無駄だけでなく、実際に問題が生じるため併用は非推奨 |
 
 </details>
 
