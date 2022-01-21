@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220121
+! Version: 20220122
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -279,6 +279,7 @@ _omniture.$script,domain=mathworks.com
 ||ipapi.co^$3p
 ||ipdata.co^$3p
 ||ipify.org^$3p
+||kaptcha.com^$3p
 ! github.com/AdguardTeam/AdguardFilters/pull/67992
 ||mkto-*.com^$3p
 ||monitor.azure.com^
@@ -391,6 +392,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||ipapi.co/json/$xhr,domain=168.dailymaverick.co.za|audius.co
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
 @@||justmyshop.com/gate/criteo/product-id.js$1p
+@@||kaptcha.com/collect/sdk?$domain=wyze.com
 @@||kentucky.com/mistats/finalizestats.js$1p
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
 @@||lptag.liveperson.net/tag/tag.js$domain=uniqlo.com
