@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220122
+! Version: 20220123
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -329,6 +329,8 @@ career-adv.jp##.is-on.fltLp_wrap
 ||carnext.jp/img/index/index_img47.
 ||carnext.jp/img/index/index_img48.
 carnext.jp###fixed_footer
+||carservice.r10s.jp/img/top/floating-banner.png
+car.rakuten.co.jp##.portal-floating-banner
 ||carsensor.net/usedcar/inquiry_mm_popup.
 ||cdn.threadloom.com^$domain=forum.xda-developers.com
 ||cloudfront.net/docomo/modal/$domain=hiroba.dpoint.jp
@@ -560,12 +562,9 @@ qzin.jp##.js-fixed-bnr
 ||r10s.jp/com/bookmark/gadgets/bookmark-registration-popup/
 ||rarejob.com/cms/wp-content/themes/awaken/js/fix-banner.js
 ||rdlp.jp/wp/wp-content/themes/rdlp/img/banner_
-||rebates.jp/content/static/images/mobile/overlay/ichiba/
-rebates.jp###ichiba-overlay
-||rebates.jp/content/static/images/toolbar/overlay_
-rebates.jp###flashsale-overlay
-||rebates.jp/img/campaign_entity/*_sticky.jpg|
-rebates.jp##.footer-fixed
+||rebates.jp/assets/img/ichibaOverlayBg-
+rebates.jp###content > div[class^="css-"]:empty
+rebates.jp###overlayContent:upward(1)
 ||receptionist.jp^*/top_banner.png
 ||recipe.rakuten.co.jp/scripts/webpc/leftFloat.
 recipe.rakuten.co.jp###rcpAutoScrollPopover
@@ -763,6 +762,7 @@ enago.jp##.sgpb-popup-overlay
 eng-entrance.com##.left-bottom-float
 engineer-club.jp,hataraquest.com##.bfb-common-cta
 engineer-lab.findy-code.io##.popup
+event.rakuten.co.jp###pitari_mcw_flt
 evernote.com##.ReactModalPortal:has(#qa-GENERIC_LIGHTBOX_DIALOG_SUBMIT p[class^=_]:has-text(無料でお試し))
 evernote.com##.notifications-wrapper + div + div[class^=_] > div[class^=_]:has(div[class^=_] > span[class]:has-text(無料でお試し！))
 express.co.uk##.breaking-news-container
@@ -873,6 +873,8 @@ naifix.com,shukatsuhack.com##.boxzilla-bottom-right-container
 naitopi.com###age_check
 nature.com##.c-site-messages--nature-briefing
 nature.com##.c-site-messages--nature-briefing-email-variant
+network.mobile.rakuten.co.jp###js-fixed-btn
+network.mobile.rakuten.co.jp##.g-hikari-Footer_Cta
 news.yahoo.co.jp###newsFeed + div:has(a[data-ylk^="rsec:cmtfloat;"])
 nicovideo.jp##.LikeContainer-tips.LikeTeaching
 nikkei.com###slideIn
@@ -1407,6 +1409,7 @@ socom.yokohama###check-also-box
 @@||marryol.net/ad-arent-$xhr,1p,badfilter
 @@||popin.cc/popin_discovery/recommend?$script,domain=mainichikirei.jp,badfilter
 
+24.rakuten.co.jp##.WidgetForm-Form > div.Nps
 amazon.*##.shoppingCxFeedbackRootWidget
 arne.media###custom_html-4
 arne.media###custom_html-5
@@ -1526,6 +1529,9 @@ biglobe.ne.jp###spage-bnr
 ||blog.sideriver.com/flick/img_bnr/
 ||blog.ti-da.net/contents/tida_business/assets/img/bizplan_bnr300px.
 ||bnl.media/uploads/ECD_BNL_baner_
+||card-media.money.rakuten.co.jp/assets/contents/banner/
+card-media.money.rakuten.co.jp##.adbanner
+card-media.money.rakuten.co.jp##.rcardbox
 ||caribbeancom.com/images/banner_top/pr/
 caribbeancom.com##.top-pr
 ||cloudfront.net/images/company-top-banner-$domain=en-hyouban.com
@@ -1743,7 +1749,7 @@ cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
 
 ! ---------- Timer (CSS fix can be added to jp-filters if not likely to break site) ----------
 100count.net##+js(nano-sib, /sec--|timedisplay--/)
-123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coinunit.ashortstory.in,cpmlink.net,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,lootlinks.*,markipli.com,mik4mob.com,opensubtitles.org,raky.in,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com##+js(nano-sib)
+123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coinunit.ashortstory.in,cpmlink.net,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,likn.xyz,lootlinks.*,markipli.com,mik4mob.com,opensubtitles.org,raky.in,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com##+js(nano-sib)
 123lnk.xyz,aapks.com##+js(nano-stb, countDown)
 1apple.xyz,cararegistrasi.com,federleqa.icu,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgirx.xyz,imgjut.buzz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoka.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,kekolangti.com,michaelemad.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
 ac-illust.com,photo-ac.com##+js(set, enable_dl_after_countdown, true)

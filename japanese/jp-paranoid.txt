@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220122
+! Version: 20220123
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -26,10 +26,10 @@
 /banner728x90.
 /(https?:\/\/)\w{30,}.me\/\w{30,}\./$script,3p
 /^https:\/\/www\.[a-z]{8,14}\.c(?:om|lick)\/[a-z]{1,4}\.js$/$script,3p,match-case
-/^https:\/\/[a-z]{8}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)?$/$frame,3p,match-case
-/^https:\/\/[a-z]{8}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\/$/$popup,3p,match-case
-/^https:\/\/[a-z]{8}\.(?:com|net)\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xhr,3p
-/^https:\/\/[a-z]{8}\.(?:com|net)\/[0-9a-z]{10,}\.(?:json|php)$/$xhr,3p,match-case
+/^https:\/\/(?:[a-z]{8}|[a-z]{15})\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)?$/$frame,3p,match-case
+/^https:\/\/(?:[a-z]{8}|[a-z]{15})\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\/$/$popup,3p,match-case
+/^https:\/\/(?:[a-z]{8}|[a-z]{15})\.(?:com|net)\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xhr,3p
+/^https:\/\/(?:[a-z]{8}|[a-z]{15})\.(?:com|net)\/[0-9a-z]{10,}\.(?:json|php)$/$xhr,3p,match-case
 /^https?:\/\/[0-9a-z]{7,18}\.com\/(?:ace|animate|bootstrap(-datepicker)?|ckeditor|slick)\.min\.js\?1\d{6}$/$script,3p
 /adimg/*
 /banner468.$1p,domain=~3t1a.net|~9c25s.blog120.fc2.com|~a-head.cc|~and-shibuya.com|~angelino-lulu.com|~awatalia.com|~borero.net|~chiezobond.blog57.fc2.com|~chiyuudou.com|~clocknote.net|~crowsclaw.info|~digitalic-party.net|~dobuusagi.com|~emju.net|~f-g-s.net|~gairo4.blog133.fc2.com|~feltmusic.net|~forest306.com|~gameover25.web.fc2.com|~genkianamei.xxxxxxxx.jp|~golf.areasw.com|~hyakka.studio2x.com|~ironiac.com|~j-leskiss.com|~mandarin.dojin.com|~menesjapon.com|~navi1.x.fc2.com|~o-mikan.net|~otowaseinennkai.org|~red.redalice.net|~saisenturn.net|~shintamanegi.com|~sketchuprecordings.com|~stardust.studio2x.com|~yoccho.com
@@ -464,7 +464,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ?cid=$doc,removeparam=cid,domain=honto.jp|unext.jp
 ?g_clk=$doc,removeparam=g_clk,domain=cinematoday.jp
 ?sc_in=$doc,removeparam=sc_in,domain=realestate.yahoo.co.jp
-?scid=$doc,removeparam=scid,domain=rakuten.co.jp
 ?sharedid=$doc,removeparam,domain=msafflnk.net
 ?utm_campaign=$doc,removeparam=utm_campaign,domain=smfg.co.jp
 ?utm_campaign=post_article^$doc,removeparam=utm_campaign
