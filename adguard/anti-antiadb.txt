@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220123
+! Version: 20220124
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -118,6 +118,7 @@
 /pop1.js|$script,~third-party
 /preroll.engine?id=$xmlhttprequest,third-party,redirect=nooptext
 /q/tdl/95/dnt/*$script,third-party
+/rdrr/renderer.js$script,third-party
 /ren.gif?sid=$image,third-party
 /s/s/custom.php?dw=
 /s/s/js/m/im.js?v=
@@ -155,6 +156,7 @@
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect=nooptext
 ||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices-gpt
+||popcash.net^$xmlhttprequest,third-party,redirect=nooptext
 @@||fundingchoicesmessages.google.com^$script,domain=bbc.com|soranews24.com|youpouch.com
 
 ##.ad-placement:not(.afs_ads)
@@ -182,6 +184,7 @@ ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,
 
 @@/\/js\/[_0-9a-zA-Z]{4,12}\/(?:ad[-a-z]{4}|bannerpump|nugg\.min|transad|[a-z]{2}ads|[a-z]{3}-(?:adscript|inspire-ad|rail-ads))\.js\?_v=[0-9a-f]{8}$/$script,~third-party
 @@/ad/api/popunder.js|$script,~third-party
+@@/ads/pop.js|$script,~third-party
 @@/adv/ads/popunder.js?$script,~third-party
 @@/design/relaunch/gfx/elitepartner_|$script,third-party
 @@/dh-anti-adblocker/assets/js/ads-prebid.js?

@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220123
+! Version: 20220124
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -65,7 +65,6 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 ||rakuten-static.com/1/js/anl/$domain=member.id.rakuten.co.jp
 ||s3.reutersmedia.net/resources/*&rtn=$image
 ||webike.net/sys_images/saimg/*_1000_45.$domain=webike.net
-||youtube.com^$csp=worker-src 'none'
 @@||adframe.kohsoku.info/ads/$frame,domain=xn--cck1a7gsd645rnx7b.com,badfilter
 @@||cdn.logly.co.jp^$image,domain=veryweb.jp,badfilter
 @@||click.speee-ad.jp^$script,domain=saitama-np.co.jp,badfilter
@@ -263,6 +262,10 @@ smart-flash.jp##^.adsBlock
 ://ensighten.
 ://lightning.*/launch/
 _omniture.$script,domain=mathworks.com
+! breaks ahentai.top
+!#if !env_mobile
+/jquery.iframetracker.
+!#endif
 
 ! ---------- Analytics servers ----------
 ||asadcdn.com^$3p
