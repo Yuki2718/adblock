@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220124
+! Version: 20220126
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -26,10 +26,10 @@
 /banner728x90.
 /(https?:\/\/)\w{30,}.me\/\w{30,}\./$script,3p
 /^https:\/\/www\.[a-z]{8,14}\.c(?:om|lick)\/[a-z]{1,4}\.js$/$script,3p,match-case
-/^https:\/\/(?:[a-z]{8}|[a-z]{15})\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)?$/$frame,3p,match-case
-/^https:\/\/(?:[a-z]{8}|[a-z]{15})\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\/$/$popup,3p,match-case
-/^https:\/\/(?:[a-z]{8}|[a-z]{15})\.(?:com|net)\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xhr,3p
-/^https:\/\/(?:[a-z]{8}|[a-z]{15})\.(?:com|net)\/[0-9a-z]{10,}\.(?:json|php)$/$xhr,3p,match-case
+/^https:\/\/[a-z]{8,15}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)?$/$frame,3p,match-case
+/^https:\/\/[a-z]{8,15}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\/$/$popup,3p,match-case
+/^https:\/\/[a-z]{8,15}\.(?:com|net)\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xhr,3p
+/^https:\/\/[a-z]{8,15}\.(?:com|net)\/[0-9a-z]{10,}\.(?:json|php)$/$xhr,3p,match-case
 /^https?:\/\/[0-9a-z]{7,18}\.com\/(?:ace|animate|bootstrap(-datepicker)?|ckeditor|slick)\.min\.js\?1\d{6}$/$script,3p
 /adimg/*
 /banner468.$1p,domain=~3t1a.net|~9c25s.blog120.fc2.com|~a-head.cc|~and-shibuya.com|~angelino-lulu.com|~awatalia.com|~borero.net|~chiezobond.blog57.fc2.com|~chiyuudou.com|~clocknote.net|~crowsclaw.info|~digitalic-party.net|~dobuusagi.com|~emju.net|~f-g-s.net|~gairo4.blog133.fc2.com|~feltmusic.net|~forest306.com|~gameover25.web.fc2.com|~genkianamei.xxxxxxxx.jp|~golf.areasw.com|~hyakka.studio2x.com|~ironiac.com|~j-leskiss.com|~mandarin.dojin.com|~menesjapon.com|~navi1.x.fc2.com|~o-mikan.net|~otowaseinennkai.org|~red.redalice.net|~saisenturn.net|~shintamanegi.com|~sketchuprecordings.com|~stardust.studio2x.com|~yoccho.com
@@ -289,6 +289,7 @@ _omniture.$script,domain=mathworks.com
 ||recs.richrelevance.com^$3p
 ||rtoaster.jp^$3p
 ||sail-horizon.com^
+||thebrighttag.com^$3p
 ||tm.ma.future-shop.net^
 
 ! ---------- Analytics specific ----------
@@ -403,6 +404,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||quantcast.mgr.consensu.org^*tcfv2*cmp2.js?referer=$script
 @@||quantcast.mgr.consensu.org^*/cmp2.js$script,domain=dailyrecord.co.uk|express.co.uk|gamesradar.com|guitarplayer.com|independent.co.uk|laptopmag.com|livescience.com|mirror.co.uk|musicradar.com|nfl.com|pcgamer.com|researchgate.net|space.com|t3.com|techradar.com|tomsguide.com|tomshardware.com|tumblr.com|whathifi.com|whattowatch.com
 @@||rtoaster.jp^$script,domain=lexus.jp|melonbooks.co.jp
+@@||s.thebrighttag.com/tag?site=$domain=sephora.com
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
 @@||scdn.cxense.com/cx.cce.js$script,domain=cinemacafe.net|grajapa.shueisha.co.jp|rbbtoday.com|wpb.shueisha.co.jp
 @@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|friday.kodansha.co.jp
