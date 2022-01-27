@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220126
+! Version: 20220128
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -129,6 +129,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||webpushs.com^$3p
 ||wpushsdk.com^$3p
 
+/firebase-messaging.js$domain=ranking.goo.ne.jp
 ||3ple.jp/js/notification.
 ||4travel.jp/ssl_api/user/notifications
 ||a2zapk.com/js/notification.js
@@ -221,6 +222,7 @@ yahoo.co.jp###mhd_uhd_pc
 youtube-nocookie.com,youtube.com##.annotation.iv-branding
 youtube-nocookie.com,youtube.com##.ytp-cards-teaser
 youtube.com##.ytd-popup-container[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"] #details-text > yt-formatted-string:has-text(このチャンネルのメンバーシップを購入すると):upward(.ytd-popup-container)
+youtube.com##ytd-popup-container > .ytd-popup-container[style^="outline: currentcolor"][force-close-on-outside-click=true] #details-text:has-text(このチャンネルのメンバーになると):upward(.ytd-popup-container[force-close-on-outside-click=true])
 
 ! ---------- Popup/Banner ----------
 /bioep.js$script,domain=~tomshw.it
@@ -291,6 +293,8 @@ a-saas.com##.sideBnr_row
 ||akamaized.net/img/dpoint/pc/follow_btn_$domain=shift.games
 ||amanoshokudo.jp/common/images/upload/*/coupon_pc_
 amanoshokudo.jp##.popupBnr
+||amazonaws.com/cdn.progrit-media.jp/production/file_resources/files/000/000/041/original.png$domain=progrit-media.jp
+progrit-media.jp##a[id^="clickfooter1"]
 ||amazonaws.com/flipdesk/chat/images/1de113cc*$image,domain=flipdesk.jp
 flipdesk.jp###flipdesk-trigger
 ||archive.org/includes/build/js/donation-banner.

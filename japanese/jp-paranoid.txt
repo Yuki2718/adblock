@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220126
+! Version: 20220128
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -171,6 +171,7 @@ smart-flash.jp##^.adsBlock
 ||ad-seek.jp^
 ||ad.886644.com^
 ||ad.isaf.jp^
+||adjust.com^$doc
 ||adm.shinobi.jp^$1p
 ||adcent.jp^$doc
 ||admane.jp^
@@ -406,11 +407,12 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||s.thebrighttag.com/tag?site=$domain=sephora.com
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
 @@||scdn.cxense.com/cx.cce.js$script,domain=cinemacafe.net|grajapa.shueisha.co.jp|rbbtoday.com|wpb.shueisha.co.jp
-@@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|friday.kodansha.co.jp
+@@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net
 @@||snva.jp/javascripts/reco/$domain=concent.co.jp|mouse-jp.co.jp
 @@||staff-start.com/js/track/$domain=enoteca.co.jp|store.alpen-group.jp
 @@||toplay.biz/log_event$1p,xhr
 @@||ttutu.biz/log_event$1p,xhr
+||cxense.com/cx.js$script,redirect=noop.js,domain=friday.kodansha.co.jp,important
 !#if env_mobile
 ||cxense.com/cx.js$script,redirect-rule=noop.js,domain=itmedia.co.jp
 !#endif
