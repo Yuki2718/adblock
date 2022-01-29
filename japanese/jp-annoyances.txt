@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220129
+! Version: 20220130
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -168,7 +168,6 @@ imgur.com##.Transformation-tooltip--hovering
 ||ticker.teacup.com/rss2/
 ||tinami.com/js/jquery/tipsy/notify.
 ||townwork.net/js/register_sw.js
-||tsuiran.jp/js/vendor/jquery.layerBoard.js
 ||tr.twipple.jp/common/js/webpush_
 ||tv-asahi.co.jp/commons/1/json/notifications.
 ||udemy.com/api-2.0/notices/
@@ -274,7 +273,7 @@ naturum.co.jp###js-popup
 4900.co.jp##.fixedFooter
 ||5-fifth.com/user_data_sp/*_youtube_sp.jpg|
 5-fifth.com##.m-popup
-5-fifth.com##div.l-main:style(position: static!important)
+!5-fifth.com##div.l-main:style(position: static!important)
 ||55truck.com^*/truck/bg_side_slide_pittari_
 ||55truck.com^*/truck/img_banner_gyohan.
 55truck.com##.sideSlideInfo
@@ -670,8 +669,6 @@ zeiri4.com##.firmSearch__ctaBanner--sticky
 80c.jp##.td-more-articles-box
 abema.tv##.body--prevent-scroll:style(overflow: auto!important;)
 abema.tv##.com-onboarding-OnboardingModalContainerView--enter-done
-ac-illust.com,photo-ac.com###eachDownloadedModal
-ac-illust.com,photo-ac.com##.modal-backdrop
 affikatsu.com##.touchy-email-button
 affiliate-town.info,aquarium-suisou.net,game-para-dise.com,hunade.com,kaigaifx-research.com,repeat-drama.info###bfb_content_pc
 affitopic.com###mailmag_bnr
@@ -866,6 +863,7 @@ microsoft.com###email-newsletter-dialog
 microsoft.com###epb
 mine.toyokeizai.net##.free-modal
 mine.toyokeizai.net##.is-scroll-disabled:style(overflow: auto!important;)
+mizunoshop.net###sci-slide
 mobile.twitter.com##div[data-testid="sidebarColumn"] section[aria-label][role="region"]:upward(1)
 moca-news.net###guide
 monosnap.com##.modalSide
@@ -1107,6 +1105,7 @@ jp.indeed.com##div[data-testid="sticky-jobs-cta-wrapper"]
 kurashiru.com###dly-LandingPopupBanner
 kurashiru.com##html.dly-modal-active:style(overflow: auto!important;)
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
+m.qoo10.jp##+js(acis, $, layerpopup_mainBanner)
 m.youtube.com##.mealbar-promo-renderer
 pinterest.*###__PWS_ROOT__:style(overflow: auto !important)
 pinterest.*##+js(aopr, scrollTo)
@@ -1327,6 +1326,7 @@ pcgamer.com##.newsletter-signup
 picmix.com###newsletter
 qiita.com##.apm-Content
 sbssupport.jp##.mail_mag
+snidel.com##.block-mail
 snrec.jp##.btn-black[href="https://www.snrec.jp/newsletter"]
 stackexchange.com##.js-dismissable-hero:has-text(Sign up)
 stream.co.jp##.base__widget
@@ -1775,6 +1775,8 @@ adnit-tri.tk,adnit.xyz,sanos.xyz,toptap.website##+js(set, timedisplay, 0)
 android-apk.org,icutlink.com##+js(nano-sib, time)
 apkmaza.net##+js(nano-sib, downloadButton)
 apkmb.com##+js(nano-sib, show_download_links)
+apkmirror.com##+js(rc, disabled, , stay)
+apkmirror.com##.downloadCountdown
 basket.step.rakuten.co.jp##+js(ra, checked, .ratCustomEventForCheckbox[data-rat-key=ratcart])
 bdupload.*,best18vd.com,bestmoneysites.com,coolrom.com.au,hubfiles.ws,idea4cash.com,indishare.*,jptorrent.org,katfile.com,lnk2.cc,sourceforge.net,techmyntra.net,uploaded.net,uploadfiles.pw,uploadraja.com,uploadrar.*,userupload.*,zupload.me##+js(nano-stb)
 bestshort.xyz,forex-gold.net,world-trips.net##+js(nano-sib, timeleft)
