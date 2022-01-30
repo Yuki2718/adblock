@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220130
+! Version: 20220131
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -478,14 +478,15 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ?zoneid=*&bannerid=$doc,removeparam=bannerid
 ?zoneid=*&bannerid=$doc,removeparam=zoneid
 ^utm_source=$doc,removeparam=/^utm_/,domain=bunshun.jp|d-card.jp|e-3shop.com|nttdocomo.co.jp|rurubu.travel|u3h8.com
+||a-i-ad.com/api/click?ctid=*&aiad_request=$doc,removeparam=aiad_request
+||a-i-ad.com/api/click?ctid=*&aid=$doc,removeparam=aid
+||a-i-ad.com/api/click?ctid=*&urid=$doc,removeparam=urid
 ||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_ga=$doc,removeparam=_ga
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_uid=$doc,removeparam=_uid
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_xuid=$doc,removeparam=_xuid
 ||affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=$doc,removeparam=user_id
-||a-i-ad.com/api/click?ctid=*&aiad_request=$doc,removeparam=aiad_request
-||a-i-ad.com/api/click?ctid=*&aid=$doc,removeparam=aid
-||a-i-ad.com/api/click?ctid=*&urid=$doc,removeparam=urid
+||amazon.*&imp=$removeparam=imp
 ||alwys.net/contents/ard.php?id=*&adwares=$doc,removeparam=id
 ||buy-ap.piano.io/checkout/template/show?*&customCookies=$frame,removeparam=customCookies,domain=special.sankei.com
 ||buy-ap.piano.io/checkout/template/show?*&pageViewId=$frame,removeparam=pageViewId,domain=special.sankei.com
