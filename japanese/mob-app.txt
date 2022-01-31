@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220131
+! Version: 20220201
 
 /js/jquery.smartbanner.js
 /js/jquery.smartbanner.min.js
@@ -103,9 +103,8 @@ app-flamingo.com##.download_link
 ||d2r808veeagyam.cloudfront.net/images/*.jpg?Policy=$domain=ganma.jp
 ||dayout.today/assets/dayout_ios_icon
 dayout.today##.get_app_container
-||delishkitchen.tv/s/images/footer/app_
-||delishkitchen.tv/s/images/footer/footer_txt+
-||delishkitchen.tv/s/images/footer/google_
+||delishkitchen.tv/s/images/footer/footer_*_install@
+delishkitchen.tv##aside[class^="footer-app-banner-wrap"]:style(margin: 1em 0 0 !important; visibility: hidden !important; height: 0 !important;)
 ||delivery.rakuten.co.jp/data/static/delivery/special/app_download/
 delivery.rakuten.co.jp##.app-bnn
 ||dictionary.goo.ne.jp/img/app_promotion/
@@ -164,6 +163,8 @@ howcollect.jp##.footer-app
 magaseek.com###appArea
 ||jalan.net/assets/img/pages/top/*-app.png|
 ||jpnumber.com/img/android.png
+||k-img.com/assets/webpage/download-app/$domain=kinarino.jp
+kinarino.jp##.p-download-app
 ||k-img.com/images/smartphone/global_footer/premium/footer_banner_premium_$domain=s.tabelog.com
 ||kashinoen.com/img/app_
 ||kidsna.com/assets/img/app_
@@ -171,6 +172,8 @@ magaseek.com###appArea
 ||kidsna.com^*-app_phone_$image
 kidsna.com###store-link
 kidsna.com##.kidsna-app-banner-on-article-bottom
+||kikkoman.co.jp/common-kikkoman/img/application-banner
+kikkoman.co.jp##.application-banner
 ||kinarino.k-img.com/assets/webpage/download-app/$domain=kinarino.jp
 kinarino.jp##.p-download-app
 ||kiwi.com/images/qr/download_app_
@@ -393,6 +396,7 @@ collabo-cafe.com##.app__smart__dl
 ||doga.hikakujoho.com/assets/sp/img/common/aukana_app.png
 ||eggs.mu/v1/img/common/bt_google_l.png
 eggs.mu##.mainappBtn
+||excite.co.jp/jp/erecipe/common/footer/sp_appbanner2.png
 ||fc2.com/video/img/app/
 video.fc2.com##.c-app-sp2
 ||gamewith.jp/app/pr/
@@ -410,6 +414,9 @@ blog.kaspersky.co.jp###smartbanner.android
 ||noin.shop/_nuxt/img/icon_webapp.
 ||noin.shop/_nuxt/img/btn_webapp.
 noin.shop##.open-app
+||oceans-nadia.com/images/app_banner/
+oceans-nadia.com###app-banner02
+||oceans-nadia.com/smp/images/common/app_bnr3.jpg
 ||recipe.rakuten.co.jp/_nuxt/img/f9128cf.
 ||recipe.rakuten.co.jp/_nuxt/img/88b93f2.
 recipe.rakuten.co.jp##.rakuten_recipe_app
@@ -448,13 +455,20 @@ bangumi.org,neowing.co.jp###smartbanner.android
 ch.nicovideo.jp##.c-fixedAppBanner
 comic.pixiv.net##.bottom-0.fixed[style="bottom:env\(safe-area-inset-bottom\)"]
 cosme.com##.header-app
+delishkitchen.tv,low-ya.com##.app-banner
 dictionary.goo.ne.jp###app-promo-dialog
+erecipe.woman.excite.co.jp##.headerWebToApp
 gamewith.jp##.gdb-game-header-follow-btn-only
 gnavi.co.jp##.p-webapp
 instagram.com##.xZ2Xk:has-text(/App/)
-low-ya.com##.app-banner
 kakuyomu.jp###readWithApp
 kakuyomu.jp##.widget-dynamicLinksButton
+kinarino.jp###js-view-in-app
+kinarino.jp##.c-item__piece--target-app
+kinarino.jp##.l-header.have-banner:style(position: fixed!important;top: 0!important;)
+kinarino.jp##.l-header__banner
+kinarino.jp##.l-wrapper.have-banner:style(padding-top: 50px!important;)
+kinarino.jp##^#download-app
 kt.wowkorea.jp##.uz-ny ~ a[href*=".page.link/"] + br
 kt.wowkorea.jp##.uz-ny ~ a[href*=".page.link/"] + br + br
 kt.wowkorea.jp##div[style="background-color:#FFFFFF; border:1px solid #D4D4D4; width:95%;-webkit-border-radius:10px;-moz-border-radius:10px;"]
@@ -469,6 +483,9 @@ muji.com###header-app-link
 myoji-yurai.net###app_ad
 news.tv-asahi.co.jp##.sp-app-banner
 nhk.or.jp###appsbanner
+oceans-nadia.com###js-getAppHeader
+oceans-nadia.com##.l-header[style="margin-top: 60px;"]:style(margin-top: 0!important;)
+oceans-nadia.com##.footer-app
 pinkoi.com###g-app-bar
 pinkoi.com##.s-app-banner #m-mainview:style(padding-top: 51px!important;)
 prcm.jp###smart-banner
