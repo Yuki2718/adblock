@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220201
+! Version: 20220202
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -266,6 +266,8 @@ youtube.com##ytd-popup-container > .ytd-popup-container[style^="outline: current
 -banner-ad.$domain=any-video-converter.com
 any-video-converter.com##div[id^="banner_"]
 /images/banners/(?:bnr|popup)_.+/$image,1p,domain=naturum.co.jp
+/wp-content/plugins/popup-builder/*$domain=pikaichi.co.jp
+/wp-content/plugins/popups/*$domain=sellmarke.jp
 naturum.co.jp###js-popup
 ||3ple.jp/3ple-static/3ple/pro/js/common/lib/popup/
 ||3rdspring.jp/pc_img/linebanner.
@@ -586,6 +588,8 @@ roboma.io##.pum-container
 toyokeizai.net##div[class^="SURVIN_GUIDE_ELEMENT_SHOW_"]
 ||sazukari-shop.com/user_data/packages/*/float2.$image,1p
 ||secomapp.com/promotionpopup/$domain=oozeki-japan.com
+||sellmarke.jp/article/wp-content/themes/contents-box3/img/bnr_wpdl_
+sellmarke.jp###app_3
 ||sftcdn.net/wp-content/uploads/sites/*-238x134.$image,domain=softonic.jp
 softonic.jp##.article-next
 ||shingakunet.com/journal/img/scroll_pc_banner.
@@ -1110,7 +1114,7 @@ m.qoo10.jp##+js(acis, $, layerpopup_mainBanner)
 m.youtube.com##.mealbar-promo-renderer
 oceans-nadia.com###nadia-popup
 oceans-nadia.com###popup-overlay
-oceans-nadia.com##html[style="overflow: hidden;"]:style(overflow: auto!important;)
+oceans-nadia.com##html[style="overflow: hidden;"]:style(overflow: auto !important;)
 pinterest.*###__PWS_ROOT__:style(overflow: auto !important)
 pinterest.*##+js(aopr, scrollTo)
 pinterest.*##.Hsu.iyn.zI7.FNs
