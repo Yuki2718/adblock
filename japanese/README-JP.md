@@ -17,6 +17,7 @@ Youtubeの動画内広告について：各所で、また動画内広告がす�
 
 日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、**最新版uBlock Origin専用**フィルタです。AdBlock, Adblock Plus, AdGuard, uBlock-for-firefox-legacy, Brave, Vivaldi, Berry Browser, Yuzu Browserなどでは**使わないで**ください<sup>1</sup>！
 
+- ご利用の場合は、標準で有効のAdGuard Japaneseは無効にする（設定のフィルターリスト > 地域・言語でチェックを外す）ことをおすすめします。
 - 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
 - Android版Firefoxでご利用の場合、Yuki's uBlock Japanese filters - Mobileを併用してください。
 
