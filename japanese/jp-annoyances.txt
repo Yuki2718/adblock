@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220203
+! Version: 20220204
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -1519,7 +1519,8 @@ response.jp,spyder7.com##^.sidebox-pickup
 !#endif
 !#if env_mobile
 app-liv.jp##.p-pr-carousel
-m.facebook.com###m_news_feed_stream article:has-text(/Suggested for You|おすすめ/)
+m.facebook.com,mobile.facebook.com###m_news_feed_stream article:has-text(/Suggested for You|おすすめの投稿/)
+m.facebook.com,mobile.facebook.com##article[data-xt*="originated_from_recommendation"]
 news.2chblog.jp###resid1 > div > div:last-child > span[style="font-size: 100%;"]:upward(1)
 automesseweb.jp###_popIn_ranking:upward(.code_php_in_widget)
 !#endif
@@ -1720,6 +1721,7 @@ muromin.jp##.row > .bnr
 news.careerconnection.jp##.ccn-archive__sponsor-bnr
 news.careerconnection.jp##.ccn-side-ads
 nordot.app##.sidebar__content > .brandModule
+pc-koubou.jp##.banner-side
 !#endif
 !#if env_firefox
 amiami.jp##^.headerbanner
@@ -1734,6 +1736,7 @@ muromin.jp##^.row > .bnr
 news.careerconnection.jp##^.ccn-archive__sponsor-bnr
 news.careerconnection.jp##^.ccn-side-ads
 nordot.app##^.sidebar__content > .brandModule
+pc-koubou.jp##^.banner-side
 !#endif
 !#if env_mobile
 ||alpen-group.jp/images/parts/banner/footer/ec_footter_SP_690_250.
