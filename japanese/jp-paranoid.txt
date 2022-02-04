@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220202
+! Version: 20220205
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -227,6 +227,7 @@ smart-flash.jp##^.adsBlock
 /AppMeasurement_Module_
 /Criteo/*$script
 /analytics/event
+/analytics/v1/*$domain=~my.leadpages.net|~userzoom.com
 /analyticsmediator.
 /api/tracking/*
 /bugsnag.min.js
@@ -237,6 +238,7 @@ smart-flash.jp##^.adsBlock
 /frosmo.easy.js
 /geo.php?
 /geoLocationData/v1/*
+/js/access.js$domain=~expocity-mf.com|~smt-cinema.com
 /js/counter.js
 /js/optscript/script-$1p
 /js/tracking/*

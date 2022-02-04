@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220204
+! Version: 20220205
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -31,6 +31,7 @@
 /js/avia-snippet-cookieconsent.js
 /js/cookienotice.js
 /js/nsd-cookie-banner/*
+/media/plg_system_eprivacy
 /nu-cookie-banner
 /plugins/cookie-compliance/*
 /plugins/cookie-consent-plugin/*
@@ -216,7 +217,7 @@ _eu_cookie_$domain=nbcsports.com
 ||cloudflare.com/ajax/libs/jquery-cookiebar/$domain=photo-ac.com
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||consensu.org^$third-party,domain=imgur.com|theguardian.com|travian.com
-||cookiebot.com^$domain=thaisim.jp
+||cookiebot.com^$domain=sololearn.com|thaisim.jp
 ||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|bayer.com.au|behance.net|bethesda.net|biomedcentral.com|blackberry.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|ccleaner.com|cell.com|cisco.com|clarivate.com|collegeboard.org|connectwise.com|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|denso.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|foursquare.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hm.com|home.kpmg|honeywell.com|hotspotshield.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|ringcentral.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|steelcase.com|stellamccartney.com|superantispyware.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|touchvpn.net|toyonut.co.jp|trados.com|unity.com|unity3d.com|viatris.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
 ||cookies.joneslanglasalle.co.jp^
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
@@ -604,7 +605,7 @@ phys.org,techxplore.com###js-popup-cookies
 picrew.me##.st-Terms_Wrapper
 pinflix.lsl.com##.notifier-wrapper
 pixiko.com##.pix-cookie
-pixiv.net##div[class^="of"] > div[class^="of"] > span[class^="of"] + a[class^="of"][href="https://policies.pixiv.net/#privacy"]:upward(2)
+pixiv.net###root > div:not([class]) > div[class] > div[class] > span[class] + a[href="https://policies.pixiv.net/#privacy"]:upward(2)
 pixiv.net,pixivision.net##._gdpr-notify-header
 pixlr.com##.policies
 play.gll.gg###site-wrapper > div.Toastify + div[class^="sc-"]
