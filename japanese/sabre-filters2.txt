@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220209
+! Version: 20220210
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -101,6 +101,7 @@
 ###moove_gdpr_cookie_info_bar
 ###pc-cookie-notice
 ###shopify-section-cookies_law
+##.avia-cookie-consent-wrap
 ##.cc-window[aria-label="cookieconsent"]
 ##.cc_banner
 ##.cookie-accept-bar
@@ -146,6 +147,7 @@ bynogame.com,discord.me,grabify.link##.cookiealert
 convertstring.com###cookielaw
 dokumen.tips###cookie-law
 dsautomobiles.com##.layer_cookie
+gimatic.com##.avia-cookie-consent-wrap
 haier.com##.cookie_box
 ingress.com,nianticlabs.com,pokemongolive.com##ark-cookiebar
 ionos.com###cookieinfo-container
@@ -175,6 +177,7 @@ zenoah.com##.cookies-notice
 /cookie-prompt.$domain=adblockplus.org
 /cookie-raw.js$domain=abeam.com
 /cookie_agree.$domain=takara-bio.co.jp|takara-bio.com
+/cookie_flyout.$domain=festo.com
 /cookie_notice.$domain=sherdog.com
 /cookiebar-$domain=majorgeeks.com
 /cookiebar.$domain=astonmartin.com
@@ -217,7 +220,7 @@ _eu_cookie_$domain=nbcsports.com
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||consensu.org^$third-party,domain=imgur.com|theguardian.com|travian.com
 ||cookiebot.com^$domain=sololearn.com|thaisim.jp
-||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|bayer.com.au|behance.net|bethesda.net|biomedcentral.com|blackberry.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|ccleaner.com|cell.com|cisco.com|clarivate.com|collegeboard.org|connectwise.com|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|denso.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|foursquare.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|hm.com|home.kpmg|honeywell.com|hotspotshield.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|ringcentral.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|steelcase.com|stellamccartney.com|superantispyware.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|touchvpn.net|toyonut.co.jp|trados.com|unity.com|unity3d.com|viatris.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
+||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|ams.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|bayer.com.au|behance.net|bethesda.net|biomedcentral.com|blackberry.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|ccleaner.com|cell.com|cisco.com|clarivate.com|collegeboard.org|connectwise.com|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|denso.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|foursquare.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|henkel-adhesives.com|hm.com|home.kpmg|honeywell.com|hotspotshield.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|payoneer.com|pgpint.com|ringcentral.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|steelcase.com|stellamccartney.com|superantispyware.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|touchvpn.net|toyonut.co.jp|trados.com|unity.com|unity3d.com|viatris.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
 ||cookies.joneslanglasalle.co.jp^
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||cutt.ly/scripts/cook_info.
@@ -227,6 +230,7 @@ _eu_cookie_$domain=nbcsports.com
 ||fc2.com/share/js/gdpr/pp_agreement
 ||finnishdesignshop.com/app/dist/cookie-notice-bar.
 ||gdpr.fc2.com/share/js/gdpr/
+||gdpr.laxd.com^
 ||geo-assets.tedcdn.com/cookie-notice/
 ||global.oup.com/cookiealert/
 ||gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar
@@ -275,7 +279,7 @@ dlink.com##.ub-emb-bar-frame
 ||transcend-info.com/dist/scripts/cookiegotop.js
 ||tsurumi-global.com/js/agree_to_use_cookies.js
 ||unpkg.com/nu-cookie-banner$domain=backlog.com
-||usercentrics.eu^$third-party,domain=daimler.com|sennheiser.com|steinberg.net
+||usercentrics.eu^$third-party,domain=daimler.com|ifm.com|sennheiser.com|steinberg.net
 0patch.com,jpradio.jp,rustdesk.com,rutube.ru,softbankhawksstore.jp,tmohentai.com##.cookie-consent
 1bit.space,mgnet.xyz###cookies-notice
 1fichier.com,takeuchi-mfg.co.jp###cookie_box
@@ -326,6 +330,7 @@ atlasvpn.com##div[class^="cookie-consent_"]
 avast.*,countrylifevitamins.com,logodesign.net,tcl.com##.cookie-bar
 awrd.com##.js-cookie-disclaimer
 bain.com###cooky_policy
+bannerengineering.com##.cookie-banner-container
 barclays.co.jp##.parsys.cookies
 base64decode.net,circus-inc.com,dreamincubator.co.jp,foreignaffairs.com,hitachi-kenki.co.jp,novel.pixiv.net,sanken-ele.co.jp##.gdpr
 bbc.com,the.bbc###cookiePrompt
@@ -335,6 +340,7 @@ bethesda.net##cookie-policy
 biorxiv.org,unicef.org##.sliding-popup-bottom
 bitstarz.com##.cookie-wrapper
 blockchain.com##div[class^="GdprBanner_"]
+blocksite.co###elementor-popup-modal-1372
 blog.hatena.ne.jp###header-cookie-notify
 bloomberglaw.com##div[class^="CookieNotice_cookiesBar"]
 bluesound.com##.privacy-notice
@@ -426,6 +432,7 @@ ey.com###cookiePolicy
 faphouse.com,xhamsterpremium.com##.cookie-policy-agree
 fc2.com##div[class] > div[class$="_in"] > div[class$="_bt"] > button[name="gdpr_agree_btn"]:upward(3)
 fedex.com##div[class*="_cookie_notice"]
+festo.com###cookie_overlay
 figshare.com###ck-banner
 financial.nikkei.com##.f-privacy
 findicons.com##.navbar-qards
@@ -469,6 +476,7 @@ hdzog.com,hotmovs.com,shemalez.com,tubepornclassic.com,vjav.*,voyeurhit.com##.he
 heroku.com###heroku-cookie-banner
 hilti.*##.m-smartbar-container
 home.kpmg##.privacy-container
+home.neustar##.cookie-message:not(html):not(body)
 httpstatus.io##.snackbar.is-bottom-right
 huawei.com###cookieTipOut
 huawei.com##.cookie_statement
@@ -679,6 +687,7 @@ tadano.co.jp###headoption
 tani6torico.com###cookieDialog
 teijin-china.com.cn,teijin.*##.footer-policy
 teijin-pharma.co.jp,teijin-pharma.com##.js-policypopup
+tel.co.jp###cookie-alert-area
 telegraph.co.uk###_evidon_banner
 tetsudo.com###footer-gdpr-box
 thegay.com##.header__cookie
@@ -710,6 +719,7 @@ unscreen.com##.banner
 uploadcare.com##div[class^="CookieBanner_"]
 usenix.org##.sliding-popup-top
 userstyles.org##.NotificationLine
+ushio.co.jp##.footer-gdpr
 vagrantup.com,vaultproject.io##div[data-testid="consent-banner"]
 virusscan.jotti.org##.alert-dismissable
 virustotal.com##.disclaimers-container
