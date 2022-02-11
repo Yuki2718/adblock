@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220209
+! Version: 20220212
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -354,6 +354,7 @@ jprime.jp##.ad-top-header
 jprime.jp##.ad-undertitle
 kakakumag.com##.adbox
 kakakumag.com##.footer-ad
+kakolog.jp##.ad_header
 kanasoku.info##body > div[style^="width:320px; height:100px"]
 kango-roo.com##div[style="margin: 20px auto; text-align: center; height: 50px"]
 karapaia.com##.ads-rect-o
@@ -434,6 +435,7 @@ news.dwango.jp##.overlay-footer_ad
 news.livedoor.com##.ads-article
 news.livedoor.com##.ads-google300
 news.merumo.ne.jp##aside[style="min-height: 250px;"]
+news.mynavi.jp###iframeContent
 news.mynavi.jp##.c-sideBanner_articleBottom
 news.nifty.com##.mod_ad
 news.nifty.com##.mod_ad_nifty
@@ -559,6 +561,7 @@ sp.uta-net.com##.ad-kashi-bottom2
 sponichi.co.jp##.contents-pr
 sundaygamer.net###text-14
 supleks.jp###footer-banner
+tarosoku.com##.t_b > iframe
 tech-camp.in##.header-banner-link
 thesaurus.weblio.jp##.adThesaurus
 tokyo-np.co.jp###flux-overlay
@@ -655,7 +658,6 @@ hobonichielog.com##.banabox
 hobonichielog.com##.hoboboxb
 hobonichielog.com##.textwidget2
 hotscope.tv##div[style="height: 100px;"]
-hqporner.com###black_friday
 inporn.com##.video__wrapper > div.header__item
 itest.bbspink.com###float-bnr
 itest.bbspink.com###instant_ad
@@ -731,6 +733,8 @@ news.goo.ne.jp##div#NR-wrapper-in.cx:style(min-height: auto!important;)
 news.mynavi.jp##.articleList-along:style(min-height: 0 !important;)
 news.mynavi.jp##.articleList-attention:style(min-height: 0 !important;)
 news.mynavi.jp##.articleList-related-article:style(min-height: 0 !important;)
+news.mynavi.jp##body[style="overflow: hidden;"]:style(overflow: auto !important;)
+news.mynavi.jp##html[style="overflow: hidden;"]:style(overflow: auto !important;)
 news.owata-net.com##html[style="overflow: hidden;"]:style(overflow: auto!important;)
 seiga.nicovideo.jp##div[data-ads-name="sp_android_web_manga_viewer_lv3_300x250_south"]:upward(1):style(height: 82px !important;)
 shikotch.net##html.inv_scroll_cancel:style(overflow: auto!important;)
@@ -764,6 +768,7 @@ m.hd21.com,m.nuvid.com##+js(set, player.postitialTimeout, 0)
 m.hd21.com,m.nuvid.com##+js(aopr, mobileAdvPop)
 m.sextvx.com##+js(acis, document.querySelectorAll, popMagic)
 mudainodocument.com##+js(aeld, /^(?:mousewheel|touchmove)$/)
+news.mynavi.jp##+js(aeld, /^(?:scroll|touchmove|wheel)$/, preventDefault)
 supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 
 ! ---------- Exception - blocking ----------
