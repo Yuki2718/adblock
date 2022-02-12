@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220212
+! Version: 20220213
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -847,6 +847,7 @@ keyence.co.jp##.fixed_wrapper
 kin8tengoku.com##.active.timesale
 kingsoft.jp##.campaign.footer-wps
 kiwi.com##[class^=Modal__ModalBody]
+kuih.jp###popupBox > div > div.popup-inner-bottom > a.go-to-register:upward(3)
 kurumaerabi.com##.modal_common.modal_inquiry_easy
 kyounoryouri.jp###floating-banner
 lec.medilink-study.com###newsDialogWrapper
@@ -1534,6 +1535,8 @@ automesseweb.jp###_popIn_ranking:upward(.code_php_in_widget)
 
 ! ---------- Promo ----------
 /\/upload\/banner\/(?!sidebar).*/$image,1p,domain=alphapolis.co.jp
+||10mtv.jp/image/column/pc_ad*$image,1p
+10mtv.jp##div[style^="width:610px; height:260px"]
 ||alpen-group.jp/images/parts/banner/footer/ec_footter_PC_740_110.
 store.alpen-group.jp##.footer-media
 ||alphapolis.co.jp/business/series/*/head.png
@@ -1748,6 +1751,8 @@ nordot.app##^.sidebar__content > .brandModule
 pc-koubou.jp##^.banner-side
 !#endif
 !#if env_mobile
+||10mtv.jp/lp/img/inhouse_adv/
+10mtv.jp###contents > a[href*="?utm_source=ad_"]
 ||alpen-group.jp/images/parts/banner/footer/ec_footter_SP_690_250.
 ||carsensor.net/static/sp/img/top/bnr.png
 ||cityheaven.net/img/tiktok_footer_banner.jpg
@@ -1802,9 +1807,6 @@ adnit-tri.tk,adnit.xyz,sanos.xyz,toptap.website##+js(set, timedisplay, 0)
 android-apk.org,icutlink.com##+js(nano-sib, time)
 apkmaza.net##+js(nano-sib, downloadButton)
 apkmb.com##+js(nano-sib, show_download_links)
-apkmirror.com##+js(rc, disabled, .downloadButton, stay)
-apkmirror.com##+js(rc, hidden, #btnDismiss\, #btnSubmit, stay)
-apkmirror.com##.downloadCountdown
 basket.step.rakuten.co.jp##+js(ra, checked, .ratCustomEventForCheckbox[data-rat-key=ratcart])
 bdupload.*,best18vd.com,bestmoneysites.com,coolrom.com.au,hubfiles.ws,idea4cash.com,indishare.*,jptorrent.org,katfile.com,lnk2.cc,sourceforge.net,techmyntra.net,uploaded.net,uploadfiles.pw,uploadraja.com,uploadrar.*,userupload.*,zupload.me##+js(nano-stb)
 bestshort.xyz,forex-gold.net,world-trips.net##+js(nano-sib, timeleft)

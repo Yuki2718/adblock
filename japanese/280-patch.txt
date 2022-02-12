@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220212
+! Version: 20220213
 
 &atc=adterra&ad_id=$document
 &openExternalBrowser=1&exotracker=$document
@@ -79,6 +79,7 @@
 /^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
 /^http:\/\/[a-z]{4,13}(?:\d{8})?\.[-0-9a-z]{6,26}\.it\/\S{7,}\.html/$document
 /^http:\/\/[a-z]{9,10}\.ddns/$document,domain=ddns.net
+/^https:\/\/((?!www)[a-z]{3,5}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top)\/\?o=[0-9a-z]{7}&u=[0-9a-z]{7}/$document,match-case
 /^https:\/\/((?!www)[a-z]{3,5}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top)\/\?u=[0-9a-z]{7}&o=[0-9a-z]{7}/$document,match-case
 /^https:\/\/(?:[a-z]{10}\.)?(?!www)[a-z]{3,5}\.jp\.net\/[%0-9A-X]{30,}[_a-z]*\.html/$document
 /^https:\/\/cakemoney\d{3}\.space\/\?u=/$document
@@ -103,6 +104,7 @@
 /^https?:\/\/(?:[a-z]{2}\d){3}[a-z]{2}\.com\//$document
 /^https?:\/\/(?:www\.)?[-0-9a-z]{14,}\.(?:biz|fun|live)\/[a-zA-Z]{10,}\.php/$document
 /^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[-0-9a-z]{5,}\.com\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}&pst=\d{10}&/$document
+/^https?:\/\/adserver[0-9a-z]{1,2}.sbs\/\?sdomain=/$document
 /^https?:\/\/adserveryo\d\.xyz\/\?/$document
 /^https?:\/\/trk\.(?:[a-z]{5,7}-){3}[a-z]{5,7}\.xyz\/[0-9a-z]{8}\?[a-z]?id=/$document
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org\/page\d{1,4}/$document,domain=duckdns.org
@@ -175,6 +177,7 @@
 ||agriturismocolamarco.it^$document
 ||agrofermplast.ru^$document
 ||ahitel.info^$document
+||ainu-org.jp^$document
 ||airdate.info/*.php?key=$document
 ||airreleaf.com^$document
 ||aleks-avto-rnd.ru^$all
@@ -381,7 +384,7 @@
 ||dahlonegagoldcoins.net^$document
 ||date-till-late.us^$document
 ||date4u-today.com^$document
-||datedate.today^$document
+||datedate.today^$all
 ||datedats2.com^$all
 ||datesritual.com^$all
 ||dateszone.net^$document
@@ -961,6 +964,7 @@
 ||solmiru.cl^$document
 ||soupmc.gg^$all
 ||special-update.online^$all
+||specna.pl^$all
 ||spitrental.nl^$document
 ||ssionsupre.fun^$all
 ||st-agnes-loevenich.de^$document
@@ -999,6 +1003,7 @@
 ||tmo-kainan.jp^$document
 ||to6s.biz^$all
 ||todhamilton.pro^$document
+||together2night.com^$document
 ||top2-personal-loans-credits.com^$all
 ||toplov.com^$all
 ||topmatch4you.com^$all
