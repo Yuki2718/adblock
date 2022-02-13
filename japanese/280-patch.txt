@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220213
+! Version: 20220214
 
 &atc=adterra&ad_id=$document
 &openExternalBrowser=1&exotracker=$document
@@ -104,8 +104,6 @@
 /^https?:\/\/(?:[a-z]{2}\d){3}[a-z]{2}\.com\//$document
 /^https?:\/\/(?:www\.)?[-0-9a-z]{14,}\.(?:biz|fun|live)\/[a-zA-Z]{10,}\.php/$document
 /^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[-0-9a-z]{5,}\.com\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}&pst=\d{10}&/$document
-/^https?:\/\/adserver[0-9a-z]{1,2}.sbs\/\?sdomain=/$document
-/^https?:\/\/adserveryo\d\.xyz\/\?/$document
 /^https?:\/\/trk\.(?:[a-z]{5,7}-){3}[a-z]{5,7}\.xyz\/[0-9a-z]{8}\?[a-z]?id=/$document
 /^https?:\/\/[a-z]{4,8}\d{2}[a-z]{2,5}\.duckdns\.org\/page\d{1,4}/$document,domain=duckdns.org
 /^https?:\/\/[a-z]{6,10}\.(?:com|net)\/4\/\d{7}\/?(?:\?var=\S+)?$/$document,popup
@@ -159,9 +157,7 @@
 ||ads.sophiapoole.com^$document
 ||adsbtc.org^$all
 ||adsbtrk.com^$document
-||adserver7.sbs^$all
-||adservern.sbs^$all
-||adserveryo.xyz^$all
+||adserver*/?sdomain=$document,popup
 ||adsrvtrk.biz^$document
 ||adstellar.icu^$document
 ||adtr1.com^$all
@@ -997,6 +993,7 @@
 ||thebestgame2020.com^$document
 ||theshoparound.com^$all
 ||thesilkradiance.com^$all
+||tigerpush.net^$all
 ||timai-mao.com^^$document
 ||time4news.net^$document
 ||tm25.ru^$document

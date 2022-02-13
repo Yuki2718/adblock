@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220213
+! Version: 20220214
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -394,6 +394,8 @@ english.cheerup.jp###modal-overlay
 english.cheerup.jp###welcome-modal-content
 ||es-navi.com/include/index2/img/mobile-
 es-navi.com###mobileInformation
+||finebase.jp/img/*/fixed_btn.png
+finebase.jp###fixed_btn
 ||finnishdesignshop.com/images/terms_and_info/
 finnishdesignshop.com###fdsNewsletterPrompt
 finnishdesignshop.com##body.modal-open:style(overflow:auto !important)
@@ -965,6 +967,7 @@ skyscanner.jp##body[style^="overflow: hidden;"]:style(overflow:auto!important)
 slack.com##.purple_banner_style
 social-dog.net###banner
 somethingfun.co.jp##.js-pc_cta_wrap
+soundfun.co.jp##div[class^="cta"][style="display: block;"]
 sourceforge.net###newsletter-floating
 spalding.co.jp###mr-mailmagazine
 stackoverflow.com##.js-dismissable-hero
@@ -1015,6 +1018,7 @@ u.pcloud.link##div[class^="Modal__FadeTranstionContainer"]
 u.pcloud.link##html.g-modal-open:style(overflow: auto!important;)
 u.pcloud.link##html.g-modal-open body:style(overflow: auto!important;)
 udemy.benesse.co.jp##.cmn--contentCoursePopup
+urocca.jp###page_top > a[class$="Block"][href^="#"]
 uwl.weblio.jp###free-house-ad-on-load-modal-container, #free-house-ad-on-load-modal-overlay
 video.fc2.com##a[href^="http://fc2information"][data-link][style]:upward(1)
 video.tv-tokyo.co.jp###jsiModalOverLayerShare
@@ -1094,6 +1098,8 @@ usshi-na-life.com##^.td-more-articles-box
 !#if env_mobile
 ||bangumi.org/yahoo/info/info_ipg/YPJ_$domain=tv.yahoo.co.jp
 tv.yahoo.co.jp###prm_Modal
+||docomo.ne.jp/portal/dpoint/img/220213_497124_455276.png$domain=dpoint.jp
+dpoint.jp##.banner_block_modal.dispnone_wide
 ||gamewith.jp/bookmark/chrome.png
 gamewith.jp##.to-btn--bookmark
 ||res.office365.com/owalanding/*/images/outlook-mobile-apps-$domain=outlook.live.com
@@ -1185,6 +1191,7 @@ zeiri4.com##.b-stickyShoukaiBanner
 /td-newsletter/*
 /wp-content/plugins/icegram/*
 /wysija-newsletters/*
+||data.reachplc.com^
 ||subscription.ximera.com^$3p
 ||telegram.im/widget-button/
 ~dereferer.me###mc_embed_signup
@@ -1293,6 +1300,7 @@ yamagata-np.jp###content_side > div > div:has(img[src^="/furusato/"])
 agenda-note.com##.mail_box
 ams.com##.newsletter-info
 answers.ten-navi.com###sideForm
+apprev.smt.docomo.ne.jp##.container_btn_mail
 aps-web.jp##[id^="mc4wp_form_widget-"]
 arstechnica.com##.ars-newsletter-callbox
 asia.nikkei.com###newsletter-signup
@@ -1417,6 +1425,8 @@ wsj.com##amp-subscriptions-dialog
 ||gamewith.jp/enquete/banner.png
 gamewith.jp##.gdb-enquete-banner
 ||gazoo.com/pages/_system/recommend/
+||google.com/shopping/customerreviews/badge?*&position=BOTTOM_RIGHT&$domain=store.nanouniverse.jp
+store.nanouniverse.jp###___ratingbadge_0
 ||iteratehq.com^$3p
 ||itmedia.co.jp/js/enterprise/altblog/scranking_blog_2days.$domain=blogs.itmedia.co.jp
 ||japan.zdnet.com/parts/frame/recent_comp_info_
@@ -1794,7 +1804,7 @@ cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
 
 ! ---------- Timer (CSS fix can be added to jp-filters if not likely to break site) ----------
 100count.net##+js(nano-sib, /sec--|timedisplay--/)
-123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coinunit.ashortstory.in,cpmlink.net,diglink.blogspot.com,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,likn.xyz,lootlinks.*,markipli.com,mik4mob.com,opensubtitles.org,raky.in,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com##+js(nano-sib)
+123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coinunit.ashortstory.in,cpmlink.net,diglink.blogspot.com,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,likn.xyz,lootlinks.*,markipli.com,mik4mob.com,opensubtitles.org,raky.in,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com,wondervelocity.com##+js(nano-sib)
 123lnk.xyz,aapks.com##+js(nano-stb, countDown)
 1apple.xyz,cararegistrasi.com,federleqa.icu,financeflix.in,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgirx.xyz,imgjut.buzz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoka.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,kekolangti.com,michaelemad.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,studyranks.in,technoflip.in,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
 ac-illust.com,photo-ac.com##+js(set, enable_dl_after_countdown, true)
@@ -1830,6 +1840,8 @@ janusnotes.com##+js(nano-sib, , 100, 0)
 jpopsingles.eu,shortenbuddy.com##+js(nano-sib, downloadTimer)
 jpvariety.com##+js(nano-sib, skip-video)
 link.cgtips.org##+js(set, countdown, 0)
+linksht.com###getlink
+linksht.com###originalLink:style(display: block!important;)
 linksht.com##+js(set, counter, 0)
 littlebyte.net##+js(nano-sib, freeRemind)
 maxurlz.com##+js(nano-sib, btn-success)
@@ -1854,6 +1866,7 @@ ponta.abstractpainting.work##+js(set, NEXT_DELAY, 0)
 premiumebooks.xyz##+js(nano-stb, st2)
 proviralhost.com,urbharat.xyz##+js(nano-sib, timePassed, 1300)
 py.md##+js(nano-sib, countdown)
+retrostic.com##+js(nano-sib, timeLeft--, , 0.02)
 romhustler.org##+js(nano-sib, timer.remove)
 samfirms.com##+js(set, startfrom, 0)
 shorten.sh##+js(nano-sib, ti--)
