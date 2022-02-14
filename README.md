@@ -97,7 +97,7 @@ The most comprehensive, block-first, and efficient Japanese list **only for uBlo
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt)
 
-## Yuki's uBlock Japanese filters - Mobile
+### Yuki's uBlock Japanese filters - Mobile
 
 Add this if you use Yuki's uBlock Japanese filters with uBlock Origin on Firefox for Mobile.
 

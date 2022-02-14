@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220214
+! Version: 20220215
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -176,6 +176,7 @@ smart-flash.jp##^.adsBlock
 ||adm.shinobi.jp^$1p
 ||adcent.jp^$doc
 ||admane.jp^
+||ads-lite.net^
 ||adtrack.unext.jp^
 ||al.dmm.co.jp^$doc
 ||af.moshimo.com^$doc
@@ -440,22 +441,25 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||studentwalker.com/st-manager/click/track?id=$doc
 ||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=$doc
 
-&af_click_lookback=$doc,removeparam=af_click_lookback,domain=appsflyer.com
-&af_siteid=$doc,removeparam=af_siteid,domain=appsflyer.com
-&afult=$doc,removeparam=afult,domain=discas.net
 &event_callback_$doc,removeparam=/^event_callback_/,domain=adjust.com
 &linkCode=$doc,removeparam=linkCode,domain=amazon.*
 &sc2id=af_$doc,removeparam=sc2id,domain=rakuten.co.jp
-&ult_in=$doc,removeparam=ult_in,domain=realestate.yahoo.co.jp
-&usid=$doc,removeparam=usid,domain=d-card.jp
-&vcptn=$doc,removeparam=vcptn,domain=digi-tag.net
+*$doc,removeparam=af_click_lookback,domain=appsflyer.com
+*$doc,removeparam=af_siteid,domain=appsflyer.com
+*$doc,removeparam=afid,domain=nijichat.jp
+*$doc,removeparam=afult,domain=discas.net
+*$doc,removeparam=campaign,domain=adjust.com
 *$doc,removeparam=ebisOther1
 *$doc,removeparam=ebisOther2
 *$doc,removeparam=ebisOther3
 *$doc,removeparam=ebisOther4
 *$doc,removeparam=ebisOther5
 *$doc,removeparam=mbid
+*$doc,removeparam=sc_in,domain=realestate.yahoo.co.jp
+*$doc,removeparam=ult_in,domain=realestate.yahoo.co.jp
+*$doc,removeparam=usid,domain=d-card.jp
 *$doc,removeparam=utm_brand
+*$doc,removeparam=vcptn,domain=digi-tag.net
 .com/lp/*^utm_medium=$doc,removeparam=utm_medium
 .com/lp/*^utm_campaign=$doc,removeparam=utm_campaign
 .com/lp/*^utm_content=$doc,removeparam=utm_content
@@ -468,19 +472,12 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 .jp/lp/*?waad=$doc,removeparam=waad
 /entry_site.pl?SITE=$doc,removeparam=SITE,domain=discas.net
 /lp.php?p=*&adcd=$doc,removeparam=adcd
-?ITRACK_INFO=$doc,removeparam=ITRACK_INFO,domain=digi-tag.net
 ?_rt_ck=$doc,removeparam=_rt_ck
 ?aid=af_*&algokey=$doc,removeparam=aid,domain=rakuten-sec.co.jp
 ?aid=af_*&algokey=$doc,removeparam=algokey,domain=rakuten-sec.co.jp
-?afid=$doc,removeparam=afid,domain=nijichat.jp
-?campaign=$doc,removeparam=campaign,domain=adjust.com
-?cid=$doc,removeparam=cid,domain=honto.jp|lifeedly.com|unext.jp
-?g_clk=$doc,removeparam=g_clk,domain=cinematoday.jp
-?sc_in=$doc,removeparam=sc_in,domain=realestate.yahoo.co.jp
 ?sharedid=$doc,removeparam,domain=msafflnk.net
 ?utm_campaign=$doc,removeparam=utm_campaign,domain=bestvibe.jp|smfg.co.jp
 ?utm_campaign=post_article^$doc,removeparam=utm_campaign
-?utm_source=google*&gclid=$doc,removeparam=/^utm_/
 ?utm_source=tw^$doc,removeparam=utm_source
 ?zoneid=*&bannerid=$doc,removeparam=bannerid
 ?zoneid=*&bannerid=$doc,removeparam=zoneid
@@ -491,7 +488,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_ga=$doc,removeparam=_ga
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_uid=$doc,removeparam=_uid
-||ad.dmm.co.jp/ad/p/cs?_site=*&_xuid=$doc,removeparam=_xuid
 ||affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=$doc,removeparam=user_id
 ||amazon.*&imp=$doc,removeparam=imp
 ||alwys.net/contents/ard.php?id=*&adwares=$doc,removeparam=id
@@ -504,11 +500,8 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||duckduckgo.com/?t=$doc,removeparam=t
 ||google.com/travel/hotels/entity/*?tcfs=$doc,removeparam=tcfs
 ||google.com/travel/things-to-do/*&dest_src=$doc,removeparam=dest_src
-||hbol.jp^*?cx_clicks_art_mdl=$doc,removeparam=cx_clicks_art_mdl
-||hbol.jp^*?cx_clicks_series_mdl=$doc,removeparam=cx_clicks_series_mdl
 ||instagram.com^*?igshid=$doc,removeparam=igshid
 ||r18.com/videos/vod/*?nats=$doc,removeparam=nats
-||response.jp^*?from=$doc,removeparam=from
 ||wimax-broad.jp/?utm_source=lc&utm_medium=affiliate&ac_source=lc&ac_medium=affiliate$doc,removeparam
 
 ||instagram.com^$removeparam=igshid,badfilter

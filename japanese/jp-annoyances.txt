@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220214
+! Version: 20220215
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -200,6 +200,7 @@ news.biglobe.ne.jp##.push-area-btn
 news.biglobe.ne.jp##.push-bx
 news.tbs.co.jp##.__tbsLive.md-notificationItem
 news.yahoo.co.jp##li.newsFeed_item > div:has-text(あなたの興味や関心)
+onayamifree.com###push_like
 qiita.com##.ac-CampaignLink
 report.netcraft.com##.notification-sidebar
 search.rakuten.co.jp##.field > .dui-tooltip[data-tooltip-id=announcement-shipping]
@@ -1019,7 +1020,6 @@ u.pcloud.link##html.g-modal-open:style(overflow: auto!important;)
 u.pcloud.link##html.g-modal-open body:style(overflow: auto!important;)
 udemy.benesse.co.jp##.cmn--contentCoursePopup
 urocca.jp###page_top > a[class$="Block"][href^="#"]
-uwl.weblio.jp###free-house-ad-on-load-modal-container, #free-house-ad-on-load-modal-overlay
 video.fc2.com##a[href^="http://fc2information"][data-link][style]:upward(1)
 video.tv-tokyo.co.jp###jsiModalOverLayerShare
 video.tv-tokyo.co.jp##.md-question.js-modal-window
@@ -1807,11 +1807,12 @@ cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
 123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coinunit.ashortstory.in,cpmlink.net,diglink.blogspot.com,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,likn.xyz,lootlinks.*,markipli.com,mik4mob.com,opensubtitles.org,raky.in,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com,wondervelocity.com##+js(nano-sib)
 123lnk.xyz,aapks.com##+js(nano-stb, countDown)
 1apple.xyz,cararegistrasi.com,federleqa.icu,financeflix.in,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgirx.xyz,imgjut.buzz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoka.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,kekolangti.com,michaelemad.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,studyranks.in,technoflip.in,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
-ac-illust.com,photo-ac.com##+js(set, enable_dl_after_countdown, true)
-ac-illust.com,photo-ac.com##+js(set, isGGSurvey, true)
-ac-illust.com,photo-ac.com###eachDownloadedModal .ac-btn[href^="https://premium."]:upward(#eachDownloadedModal)
-ac-illust.com,photo-ac.com##.modal-backdrop
-ac-illust.com,photo-ac.com##body.modal-open *:style(filter: none!important;)
+ac-illust.com,photo-ac.com,silhouette-ac.com##+js(set, enable_dl_after_countdown, true)
+ac-illust.com,photo-ac.com,silhouette-ac.com##+js(set, isGGSurvey, true)
+ac-illust.com,photo-ac.com,silhouette-ac.com###eachDownloadedModal .ac-btn[href^="https://premium."]:upward(#eachDownloadedModal)
+ac-illust.com,photo-ac.com,silhouette-ac.com##.modal-backdrop
+ac-illust.com,photo-ac.com,silhouette-ac.com##body.modal-open *:style(filter: none !important;)
+ac-illust.com,photo-ac.com,silhouette-ac.com##body.modal-open:style(overflow: auto !important;)
 adfoc.us##+js(nano-sib, , 1100)
 adnit-tri.tk,adnit.xyz,sanos.xyz,toptap.website##+js(set, timedisplay, 0)
 android-apk.org,icutlink.com##+js(nano-sib, time)
@@ -1863,6 +1864,7 @@ ponta.abstractpainting.work##+js(nano-stb, [native code], 3000, 0.25)
 ponta.abstractpainting.work##+js(nano-stb, [native code], 4000, 0.2)
 ponta.abstractpainting.work##+js(set, FIRST_DELAY, 0)
 ponta.abstractpainting.work##+js(set, NEXT_DELAY, 0)
+portableapps.com##+js(nano-stb, countdown)
 premiumebooks.xyz##+js(nano-stb, st2)
 proviralhost.com,urbharat.xyz##+js(nano-sib, timePassed, 1300)
 py.md##+js(nano-sib, countdown)
@@ -1870,13 +1872,6 @@ retrostic.com##+js(nano-sib, timeLeft--, , 0.02)
 romhustler.org##+js(nano-sib, timer.remove)
 samfirms.com##+js(set, startfrom, 0)
 shorten.sh##+js(nano-sib, ti--)
-silhouette-ac.com###download-countdown
-silhouette-ac.com###timer-modal-download-area[style="display:none"]:style(display: block!important;)
-silhouette-ac.com##.dl_wrapper:style(height: 43px!important;)
-silhouette-ac.com##.download:style(display: block!important;)
-silhouette-ac.com##.promotion-msg
-silhouette-ac.com##.timer-modal-img > img:style(opacity: 0.1!important;)
-silhouette-ac.com##.timer
 slreamplay.*##+js(nano-stb, grecaptcha.ready, *)
 streamtape.*##+js(set, towait, 0)
 aemenstore.com,aloass.com,alobyt.com,alocd.com,aloegg.com,alofps.com,alogum.com,aloguy.com,alohdd.com,byboe.com,cazzette.com,dreamcheeky.com,fidlarmusic.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,mikl4forex.com,newforex.online,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rezence.com,rodjulian.com,semawur.com,staaker.com,taisv.com,techmody.io,thegoneapp.com,truebrandy.com,uebnews.online,yoshare.net##+js(nano-sib, counter, 2000)
@@ -1943,7 +1938,6 @@ otanew.jp##.bottom-top
 otapol.com###balloonText
 ||ovovx.com/wp-content/uploads/2015/08/ovovz2.png
 ||pcolle.jp/js/age_modal.
-||pha.medicalonline.jp/js/mol.cm.js
 ||player.anyclip.com^$script,3p
 ||quoracdn.net/*.images.paywall_blur.TextBlurNormal.$image,domain=quora.com
 quora.com##.content-monetization-wall > div > .qu-overflowY--hidden:style(-webkit-mask-image: none!important; overflow-y: scroll!important)
@@ -1982,12 +1976,15 @@ ironna.jp###side-theme-list
 jma.go.jp###jma_ad_config_button
 live2.nicovideo.jp##[class^=___player-display-header___]
 mycams.com,tabletporn.com,trannylivecams.com###over-18-notification
+pha.medicalonline.jp##+js(set, meteo.isMedicalWorker.hasCookie, trueFunc)
 social-unlock.com##form#link a.submit:style(opacity: 1 !important; pointer-events: auto !important;)
 symbolab.com##+js(set, _.subscribed, true)
 techcrunch.com##.homepage__event-promo, .upcoming-events
 top.gg###video-root
 top.gg###vote-root:style(display:block !important)
 topics.smt.docomo.ne.jp##.m-tickerArea
+twitter.com###layers div[data-testid="sheetDialog"]:upward(div[role="group"][tabindex="0"])
+twitter.com##html:style(overflow: auto !important;)
 websiteoutlook.com###wo_ext
 
 !#if !env_firefox
