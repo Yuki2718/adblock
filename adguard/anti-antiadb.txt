@@ -33,12 +33,14 @@
 /\/v\d\/a\/[a-z]{2,3}\/js\/\d{5,6}/$script,third-party
 /\/wp-content\/uploads\/[a-z]{6,9}\.js(?:\?ver=[.0-9]+|,qver=[.0-9]+\.pagespeed\..+\.js)$/$script,~third-party
 /\/wp-content\/uploads\/[a-zA-Z]{12}\/[a-zA-Z]{12}\.js(?:\?ver=[.0-9]+|,qver=[.0-9]+\.pagespeed\..+\.js)$/$script,~third-party
-/^https:\/\/a\.[-0-9a-z]{4,16}\.(?:club|com|cyou|net|ru|site|top?|xxx|xyz)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
+/^https:\/\/a\.[-0-9a-z]{4,16}\.(?:club|com|cyou|info|net|ru|site|top?|xxx|xyz)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
 /^https:\/\/asg\.[0-9a-z]{4,21}\.(?:com|info|me|pro)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case,~third-party
 /^https?:\/\/www\.[0-9a-z]{5,11}\.(?:com|name)\/ok\/ok\.js$/$script,~third-party,match-case
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$script,third-party
 /^https:\/\/[-a-z]{8,15}\.com\/400\/\d{7}$/$script,third-party
 /^https:\/\/[-a-z]{8,15}\.com\/500\/\d{7}\?/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{10,14}\.casa\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
+/^https:\/\/[a-z]{10,14}\.casa\/[\*=\?_0-9a-zA-Z]{1200,}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{4,5}\.xyz\/app\.js$/$script,third-party,match-case
 /^https:\/\/[a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,76}[A-Z])(?=[-_a-zA-Z]{0,76}[0-9])[-_0-9a-zA-Z]{63,77}$/$script,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.top(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$subdocument,third-party,match-case
@@ -80,6 +82,8 @@
 /bens/vinos6.js
 /bultykh/ipp24/7/bazinga/*$script,third-party
 /ceef/gdt3g0/tbt/*$xmlhttprequest,third-party
+/clientscript/popcode_v4.js$~third-party
+/clientscript/poptrigger_v5.js$~third-party
 /code/native.js?h=
 /code/pops.js?h=
 /code/silent.js?h=
