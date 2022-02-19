@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220219
+! Version: 20220220
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -314,6 +314,8 @@ _omniture.$script,domain=mathworks.com
 ||carsensor.net/vos/
 ||cart.ec-sites.jp/cart_accept/js/google-analytics.
 ||cleverbridge.com/*/cleverAnalytics.js^
+! FP for the sake of security
+||clixtell.com/track.js
 ||cloudflare.com/cdn-cgi/trace$3p,domain=~isbgpsafeyet.com|~wyndhamdestinations.com
 ||cloudflare.com/cdn-cgi/trace$3p,xhr,redirect-rule=noop.txt,domain=~1bit.space|~1bitspace.com|~funimation.com
 ||collect.igodigital.com^$script
