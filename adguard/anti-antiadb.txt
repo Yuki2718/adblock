@@ -21,6 +21,7 @@
 .com/pup.php?section=$script,third-party
 .com/script/compatibility.js|$third-party
 .com/script/ippg.js|$third-party
+.com/sfp.js|$script,third-party
 .com/slider.php?section=$script,third-party
 .com/v.js?v=3|$~third-party
 .info/drive.js?sid=$script,third-party
@@ -34,6 +35,7 @@
 /\/v\d\/a\/[a-z]{2,3}\/js\/\d{5,6}/$script,third-party
 /\/wp-content\/uploads\/[a-z]{6,9}\.js(?:\?ver=[.0-9]+|,qver=[.0-9]+\.pagespeed\..+\.js)$/$script,~third-party
 /\/wp-content\/uploads\/[a-zA-Z]{12}\/[a-zA-Z]{12}\.js(?:\?ver=[.0-9]+|,qver=[.0-9]+\.pagespeed\..+\.js)$/$script,~third-party
+/^https:\/\/1ts\d{2}\.top\/show\.php$/$script,third-party
 /^https:\/\/a\.[-0-9a-z]{4,16}\.(?:club|com|cyou|info|net|ru|site|top?|xxx|xyz)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
 /^https:\/\/aj\d{4}\.online\/[0-9a-z]{8}\.js$/$script,third-party
 /^https:\/\/asg\.[0-9a-z]{4,21}\.(?:com|info|me|pro)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case,~third-party
@@ -45,9 +47,10 @@
 /^https:\/\/[a-z]{10,14}\.casa\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
 /^https:\/\/[a-z]{10,14}\.casa\/[\*=\?_0-9a-zA-Z]{1200,}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,76}[A-Z])(?=[-_a-zA-Z]{0,76}[0-9])[-_0-9a-zA-Z]{63,77}$/$script,third-party,match-case
-/^https?:\/\/[a-z]{6,14}\.com?\/[ac][-\.\/A-Za-z][DHW][-\.\/_A-Za-z][9VZ][\.\/_A-Za-z][6yz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{34,162}$/$script,third-party,match-case
-/^https?:\/\/[a-z]{6,14}\.info\/[ac][-\.\/A-Za-z][DHW][-\.\/_A-Za-z][9VZ][\.\/_A-Za-z][6yz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{34,162}$/$script,third-party,match-case
-/^https?:\/\/[a-z]{6,14}\.pro\/[ac][-\.\/A-Za-z][DHW][-\.\/_A-Za-z][9VZ][\.\/_A-Za-z][6yz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{34,162}$/$script,third-party,match-case
+/^https?:\/\/[a-z]{6,14}\.com?\/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][9VZ][\.\/_A-Za-z][6yz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,third-party,match-case
+/^https?:\/\/[a-z]{6,14}\.info\/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][9VZ][\.\/_A-Za-z][6yz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,third-party,match-case
+/^https?:\/\/[a-z]{6,14}\.pro\/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][9VZ][\.\/_A-Za-z][6yz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,third-party,match-case
+/^https?:\/\/[a-z]{6,14}\.xyz\/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][9VZ][\.\/_A-Za-z][6yz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.top(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$subdocument,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.top\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xmlhttprequest,third-party
 /^https?:\/\/[a-z]{8,15}\.top\/[a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{41,}=?=?$/$stylesheet,third-party,match-case
@@ -138,6 +141,7 @@
 /script/native_server.js
 /script/preurl.php?r=
 /script/su.js$script,third-party
+/sdk/push_web/?zid=$script,third-party
 /serve/show.php?a=$subdocument,third-party
 /sweetie/hello.min.js?id=$script,third-party
 /t.js?i=*&cb=$script,third-party
@@ -167,6 +171,8 @@
 ||popcash.net^$xmlhttprequest,third-party,redirect=nooptext
 @@||fundingchoicesmessages.google.com^$script,domain=bbc.com|soranews24.com|youpouch.com
 
+###rvt-inline-0
+###rvt-inline-1
 ##.ad-placement:not(.adsbox):not(.afs_ads)
 ##a#mobile_pop.js-mob-popup
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 100%;"][style*="height: 100%;"]
