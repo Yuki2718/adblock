@@ -117,7 +117,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 
 ![subscription-ex4 ](https://user-images.githubusercontent.com/58900598/155576360-40ece2ab-89e7-4f6e-8d2d-5ce22825f3dc.png)
 
-<details>
+</details>
 
 ## Yuki's uBlock Japanese filters - Mobile （霜フィルタ）
 
