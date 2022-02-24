@@ -115,7 +115,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 
 4. 基本（モバイル）
 
-![subscription-ex4 ](https://user-images.githubusercontent.com/58900598/155583414-04b83311-f27f-4c0e-a968-881e2b29f62e.png)
+![subscription-ex4 ](https://user-images.githubusercontent.com/58900598/155583719-35afd5e1-8c5b-4023-9879-4fbfc6bbfb2d.png)
 
 </details>
 
