@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220224
+! Version: 20220225
 
 ! Temporal
 ||amazonaws.com/wp-content/uploads/2021/10/*/%E5%BA%83%E5%91%8A%E5%8B%9F%E9%9B%86%E4%B8%AD-%E5%B0%8F-$image,domain=digi-coco.com
@@ -725,6 +725,7 @@ secrettalk.me##.week_hot
 /adunit/*$domain=~propelmedia.com
 /adv.html
 /adv.php
+/adv/adv_js.php
 /adv_out.
 /advanced-ads-$domain=~wordpress.org
 /advanced-ads/*$domain=~wordpress.org
@@ -1261,6 +1262,7 @@ secrettalk.me##.week_hot
 /sidead/*
 /sideads.
 /siropu/am/core.min.js$script,important
+/site=*/viewid=*/size=
 /slider_ad.
 /smartad-
 /soralink.js
@@ -7324,7 +7326,6 @@ _Ad300x250_$domain=ckworks.jp
 ||lookmovie.top/kpwdz2.png
 ||lookmovie.top/kpwdz3.png
 ||lotohint.com/bana/
-||ltn.hitomi.la/7I90zwIh.js|
 ||lycos.com/catman/
 ||m-kirei.com/adbn/
 ||m.media-amazon.com/images/G/01/imdb/images/mptv_banner_$domain=imdb.com
@@ -8374,6 +8375,7 @@ _Ad300x250_$domain=ckworks.jp
 /\/uploads/\d{4}/\d{2}/(?:img[0-9a-zA-Z]{6}|o35807_12|[0-9a-f]{32})\./$image,domain=pink-ch.site
 /\/[0-9a-f]{12}\.js$/$script,1p,domain=camwhores.*|freeuseporn.com
 /^http:\/\/img[a-z]+\.(?:buzz|xyz)\/(?!shrinker).*/$script,1p,domain=buzz|xyz
+/^https:\/\/ltn\.hitomi\.la\/[A-Za-z]{4,7}\/(?=[a-z]{0,15}[A-Z])[A-Za-z]{10,16}\.js$/$script,1p,match-case,domain=hitomi.la
 /^https:\/\/www\.pussyspace\.(?:com|net)\/style\/\w{200,}$/$image,1p,domain=pussyspace.*
 /^https?:\/\/.*\/.*sw[0-9._].*/$script,xhr,domain=1vag.com|4tube.com|adult-channels.com|analdin.com|biguz.net|bogrodius.com|chikiporn.com|daftsex.com|fantasti.cc|fuqer.com|fux.com|hclips.com|heavy-r.com|megapornx.com|milfzr.com|mypornhere.com|niceporn.xxx|porn555.com|pornchimp.com|pornerbros.com|pornj.com|pornl.com|pornototale.com|porntube.com|sexu.com|sss.xxx|thisav.com|titkino.net|tubepornclassic.com|tuberel.com|tubev.sex|txxx.com|vidmo.org|vpornvideos.com|xozilla.com|youporn.lc|youpornhub.it|yourdailypornstars.com
 /^https?:\/\/[0-9a-z]{8,}\.com\/[0-9a-z]{8,}\?(?:key|shu)=[0-9a-z]+/$frame,3p,domain=buzz|xyz
@@ -8985,7 +8987,6 @@ _pop_under.js$domain=souko.pipii.tv
 ||hime-book.net^*/baner2.jpg|
 ||hime.me/logo/okini01.gif
 ||hitleap.com/assets/banner
-||hitomi.la/imGe/FvoYrtUWWk.js
 ||hk.sns-park.com/img.php?filename=b_$domain=hk.sns-park.com
 ||hkoku.sakura.ne.jp/sam/$domain=hk.sns-park.com
 ||hmk-temp.com/dmm/$image,domain=douga100ka.jp|manga100ka.jp
@@ -10241,6 +10242,7 @@ _pop_under.js$domain=souko.pipii.tv
 /getUniqueUserId|$xhr
 /get_geoip?
 /get_site_data?account_id=
+/get_site_data?requestUUID=
 /get_tracking_url.
 /getlog.
 /getlog?
@@ -15127,6 +15129,7 @@ amazon.co.jp,amazon.com##div[cel_widget_id="dpx-sponsored-products-detail_csm_in
 amazon.co.jp,amazon.com##div[cel_widget_id^="adplacements:"]
 amazon.co.jp,amazon.com##div[data-cel-widget="sims-consolidated-4_csm_instrumentation_wrapper"]
 amazon.co.jp,amazon.com##div[data-cel-widget="sp-shiptrack-desktop-carousel_desktop-yo-shiptrack_0"]
+amazon.co.jp,amazon.com##div[data-cel-widget^="MAIN-FEATURED_ASINS_LIST-"]
 amazon.co.jp,amazon.com##div[data-cel-widget^="multi-card-creative-desktop_loom-desktop-top-slot_"]
 amazon.co.jp,amazon.com##div[id^="sp_detail"]
 amazon.co.jp,amazon.com##span[cel_widget_id^="MAIN-loom-desktop-brand-footer-slot_hsa-id-CARDS-"]
@@ -26999,11 +27002,13 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 ||amazon.*&pd_rd_wg=$doc,removeparam=pd_rd_wg
 ||amazon.*&pf_rd_p=$doc,removeparam=pf_rd_p
 ||amazon.*&pf_rd_r=$doc,removeparam=pf_rd_r
-||amazon.*$plattr=$doc,removeparam=plattr
-||amazon.*&ref=$image,removeparam=ref
+||amazon.*&plattr=$doc,removeparam=plattr
 ||amazon.*&visitId=$xhr,removeparam=visitId
+||amazon.*/hz/contact-us/csp?source=$doc,removeparam=source
+||amazon.*^ref=$doc,image,removeparam=ref
 ||amazon.*^smid=$doc,removeparam=smid
 ||amazon.*^tag=$doc,frame,removeparam=tag
+||amazon.co.jp/message-us?*&muClientName=$doc,removeparam=muClientName
 ||api.cxense.com^*&cx_$doc,removeparam=/^cx_/
 ||api.cxense.com^*?pickup_list_$doc,removeparam=/^pickup_list_click/
 ||atype.jp/p/*.html?atv=$doc,removeparam=atv
@@ -27122,7 +27127,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 ! Replace AG rules on popular sites
 ||amazon.*$removeparam=ingress,badfilter
 ||amazon.*$removeparam=plattr,badfilter
-||amazon.$removeparam=tag,badfilter
+||amazon.*$removeparam=tag,badfilter
 ||amazon.*$removeparam=visitId,badfilter
 ||azby.fmworld.net^$removeparam=mc_pc,badfilter
 ||dailymotion.com/embed/video/*?ads_params=*&origin=$removeparam=ads_params,badfilter
