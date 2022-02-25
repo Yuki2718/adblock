@@ -332,7 +332,7 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 
 <sub>6: uBlock Originポップアップパネルの目玉アイコンをクリックして×印をつけると、ブロックされていない広告が見えてきます。元に戻すにはもう一度クリックして×印を外してください。</sub>
 
-<sub>7: 当サイトのフィルタは[specific-generic](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic)を利用したおそらく最初の公開フィルタです。なお、汎用非表示フィルタの数はパフォーマンスに[影響しません](https://github.com/uBlockOrigin/uBlock-issues/issues/738#issuecomment-619450820)。細かいことをいうとすべての汎用非表示が同列ではなく、大量の[High-high generic cosmetic filters](https://github.com/gorhill/uBlock/issues/909#issuecomment-154053169)は望ましくないでしょう。</sub>
+<sub>7: 当サイトのフィルタは[specific-generic](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic)を利用したおそらく最初の公開フィルタです。なお、汎用非表示フィルタの数はパフォーマンスに[影響しません](https://github.com/uBlockOrigin/uBlock-issues/issues/738#issuecomment-619450820)。細かいことをいうとすべての汎用非表示が同列ではなく、大量の[Highly generic cosmetic filters](https://github.com/uBlockOrigin/uBlock-issues/discussions/1998)は望ましくないでしょう。</sub>
 
 <sub>8: 簡単に言うと、リクエストとルールそれぞれから抽出したトークンを使ってマッチする見込みがありそうなルールを絞り込んでいます。一般的なリクエストに対して大部分のルールは無いも同然であり、計算量のオーダーはルール数に依存しません。理屈は検索エンジンの転置インデックスと同じです（ウェブサイトの数がいくら増えても検索にかかる時間は変わりません）。</sub>
 

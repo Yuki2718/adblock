@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220224
+! Version: 20220226
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -54,7 +54,7 @@
 /^https?:\/\/[a-z]{6,14}\.(?:com?|pro|info|xyz)\/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][9VZ][\.\/_A-Za-z][6yz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:top|xyz)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$subdocument,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:top|xyz)\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xmlhttprequest,third-party
-/^https?:\/\/[a-z]{8,15}\.(?:top|xyz)\/[a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{41,}=?=?$/$stylesheet,third-party,match-case
+/^https?:\/\/[a-z]{8,15}\.(?:top|xyz)\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{41,}=?=?$/$stylesheet,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:top|xyz)\/[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:top|xyz)\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{41,}=?=?$/$image,third-party,match-case
 /^https:\/\/[a-z]{8,15}\.xyz\/[%0-9a-zA-Z]{170,}$/$script,third-party
@@ -175,13 +175,12 @@
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 9"][style*="height: 9"][style*="z-index:"]
 ##a[id][href*="/PVZ/PVZ.php?c="][rel=nofollow][target=_blank]
 ##a[style="position: absolute; inset: 0px; display: block;"][href*="?promo="][target="_blank"]
+##a[style="position: absolute; inset: 0px; z-index: 170;"][href$="/?play=true"][target="_blank"]
 ##div[style="position: absolute; inset: 0px; overflow: hidden; z-index: 160; background: transparent none repeat scroll 0% 0%; display: block;"]
-##div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]
 ##div[style^="position: fixed; display: block"][style*="inset: 0px;"][style*="background-color: rgba(0, 0, 0, 0)"][style*="z-index"][style*="height: 100%"][style*="width: 100%"]:not([class])
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 ##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height: 194px !important; cursor: pointer !important;"]:not([class])
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]:not([class])
-##div[style="position: fixed; display: block; width: 100%; height: 15%; top: 0; left: 0; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]
 ##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style*="transform: translateX(-50%); z-index: 2147483647; position: fixed"]:not([src])
 ##iframe[style$="box-sizing: border-box; position: fixed; inset: auto 0px 0px auto !important; overflow: hidden; z-index: 2147483647;"]:not([src])
 ##iframe[style*="opacity: 1 !important; max-width: 420px !important"][style*="position: fixed !important; display: block !important; z-index: 2147483647 !important"]:not([src])
