@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220226
+! Version: 20220227
 
 &adspot_id=*&cost=0.$doc
 &atc=adterra&ad_id=$document
@@ -83,8 +83,7 @@
 /^http:\/\/[a-z]{10}\.duckdns/$document,domain=duckdns.org
 /^http:\/\/[a-z]{4,13}(?:\d{8})?\.[-0-9a-z]{6,26}\.it\/\S{7,}\.html/$document
 /^http:\/\/[a-z]{9,10}\.ddns/$document,domain=ddns.net
-/^https:\/\/((?!www)[a-z]{3,5}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top)\/\?o=[0-9a-z]{7}&u=[0-9a-z]{7}/$document,match-case
-/^https:\/\/((?!www)[a-z]{3,5}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top)\/\?u=[0-9a-z]{7}&o=[0-9a-z]{7}/$document,match-case
+/^https:\/\/(?:www\d\.)?[-a-z]{7,9}\.(?:com|org)\/(?=[-_a-zA-Z]{0,42}\d)(?=[-_0-9a-z]{0,42}[A-Z])[-_0-9a-zA-Z]{43}/\?cid=[_0-9a-zA-Z]{24,32}&sid=[_0-9a-f]{5,32}$/$document,match-case
 /^https:\/\/(?:[a-z]{10}\.)?(?!www)[a-z]{3,5}\.jp\.net\/[%0-9A-X]{30,}[_a-z]*\.html/$document
 /^https:\/\/cakemoney\d{3}\.space\/\?u=/$document
 /^https:\/\/feedbackip\d{2}\.pw/$document
@@ -105,6 +104,8 @@
 /^https:\/\/[a-z]{4,13}\d{2}\.[-0-9a-z]{6,32}\.(?:[a-z]{6,7}\.)?it\/\S{10,}\.html/$document
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
 /^https:\/\/[a-z]{9,12}\d{2}\.[a-z]{4,}\.cl\/\S{7,}\.html/$document
+/^https?:\/\/((?!www)[a-z]{3,5}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top)\/\?o=[0-9a-z]{7}&u=[0-9a-z]{7}/$document,match-case
+/^https?:\/\/((?!www)[a-z]{3,5}\.)?[-0-9a-z]{6,}\.(?:com|fun|guru|life|online|pw|site|space|top)\/\?u=[0-9a-z]{7}&o=[0-9a-z]{7}/$document,match-case
 /^https?:\/\/(?:[a-z]{2}\d){3}[a-z]{2}\.com\//$document
 /^https?:\/\/(?:www\.)?[-0-9a-z]{14,}\.(?:biz|fun|live)\/[a-zA-Z]{10,}\.php/$document
 /^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[-0-9a-z]{5,}\.com\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}&pst=\d{10}&/$document
@@ -418,6 +419,7 @@
 ||dolohen.com^$document
 ||donmilanipon.it^$document
 ||doprinplupr.com^$all
+||dougale.com^$all
 ||download-app.net^$all
 ||download-sistem.ru^
 ||downloadmobile.info^$all
@@ -433,6 +435,7 @@
 ||dsahoesa.jp^$document
 ||dsh1tr.info^$document
 ||dspultra.com^$document
+||duellosheliced.com^$all
 ||dy5g4ra4yk.com^$document
 ||eathical.co^$document
 ||echampion.info^$document
@@ -734,6 +737,7 @@
 ||mirinst.ru^$document
 ||mnvb.cl^$document
 ||modoki.jp^$document
+||mokedirect.xyz^$all
 ||momimomibokujo.xyz^$document
 ||mommygravelyslime.com^$all
 ||moneysstoryviolence.monster^$document
@@ -789,6 +793,7 @@
 ||notepad2.com^$document
 ||nowhookupshere.com^$document
 ||nowvisitor.rentalcgi.com/counter.php?
+||npcad.com^$document
 ||ntvpevnts.com^$all
 ||numbersleasteye.xyz^$document
 ||numerology9111.site^$document
@@ -852,6 +857,7 @@
 ||promisechase.xyz^$document
 ||pronbank.xyz^$document
 ||protect-web.com^$all
+||prtrackings.com^$document
 ||ps150.pl^$document
 ||pshtr.xyz^$all
 ||ptookaih.net^$all
@@ -859,6 +865,7 @@
 ||pubaka5.com^$document
 ||pumicer-unreturned-hemipteron.xyz^$all
 ||pupok.link^$all
+||push-news.org^$all
 ||pushmeup.art^$all
 ||pushnott.com^$all
 ||pushub.net^$all
@@ -978,6 +985,7 @@
 ||special-update.online^$all
 ||specna.pl^$all
 ||spitrental.nl^$document
+||srvpcn.com^$all
 ||ssionsupre.fun^$all
 ||st-agnes-loevenich.de^$document
 ||stalaerg.com^$document
