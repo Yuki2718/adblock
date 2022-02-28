@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220220
+! Version: 20220301
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -284,6 +284,7 @@ _omniture.$script,domain=mathworks.com
 ||fraudjs.io^$3p
 ||geoip-js.com^$3p
 ||geolocation-db.com^$3p
+||inpref.com^$3p
 ||ioam.de^
 ||ip-api.com^$3p
 ||ipapi.co^$3p
@@ -293,6 +294,7 @@ _omniture.$script,domain=mathworks.com
 ! github.com/AdguardTeam/AdguardFilters/pull/67992
 ||mkto-*.com^$3p
 ||monitor.azure.com^
+||ourl.link^
 ||recs.richrelevance.com^$3p
 ||rtoaster.jp^$3p
 ||sail-horizon.com^
@@ -416,6 +418,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||playy.online/log_event$1p,xhr
 @@||quantcast.mgr.consensu.org^*tcfv2*cmp2.js?referer=$script
 @@||quantcast.mgr.consensu.org^*/cmp2.js$script,domain=dailyrecord.co.uk|express.co.uk|gamesradar.com|guitarplayer.com|independent.co.uk|laptopmag.com|livescience.com|mirror.co.uk|musicradar.com|nfl.com|pcgamer.com|researchgate.net|space.com|t3.com|techradar.com|tomsguide.com|tomshardware.com|tumblr.com|whathifi.com|whattowatch.com
+@@||rtoaster.jp/Rtoaster.js$domain=satofull.jp
 @@||rtoaster.jp^$script,domain=lexus.jp|melonbooks.co.jp|store.united-arrows.co.jp
 @@||s.thebrighttag.com/tag?site=$domain=sephora.com
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
