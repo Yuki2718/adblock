@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220228
+! Version: 20220302
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -63,6 +63,7 @@
 ||seesaa.net/common/under.html$domain=news4wide.net
 ||shufu-job.jp/news/wp-content/themes/s-job/img/common/flow-ad_
 ||smart-flash.jp/wp-content/themes/original/embed/FoneH
+||songsterr.com/static/media/rra640en.2ff86105.png
 ||src.gigafile.nu/banner/
 ||tech-camp.in/note/wp-content/uploads/2021/10/TCB_bnr_header_height200-
 ||thumbnail.image.rakuten.co.jp/@0_mall/$domain=yamahack.com
@@ -148,7 +149,7 @@ amaebi.co##.interstitial-ad
 amazon.*###similarities_feature_div span.threepsl-sponsored:upward(#similarities_feature_div)
 ameblo.jp##.skinBody2.skinTextColor > aside[class^="_"] + div[class^="_"] > aside[class^="_"]:only-child > div[class^="_"]:last-child
 ameblo.jp##.skinBody2.skinTextColor > div.skinOpacity + div.skinBorderTopColor.skinOpacity[class^="_"]
-ameblo.jp##.skinBody2.skinTextColor > div[style="overflow: hidden;"]:last-child > main + div[class^="_"]:empty
+ameblo.jp##.skinBody2.skinTextColor > div[style^="overflow:"][style*="hidden"] > main + div[class^="_"]:empty
 ameblo.jp##.skinBody2.skinTextColor > div[style="overflow:hidden"] > div[style="height: 1px; margin-top: -1px;"] + div[class^="_"]:empty
 ameblo.jp##.skinBody2.skinTextColor > main + div[class^="_"]:empty
 ameblo.jp##article > div[class^="_"]:last-child > header[class^="_"] + div:not([class]) > div.skin-bd-color[class^="_"]:first-child > div[class^="_"]:only-child
@@ -218,6 +219,7 @@ blog.goo.ne.jp##.article__ad
 blog.goo.ne.jp##.article__hideads
 blog.goo.ne.jp##.navbar__link--bottom
 blog.livedoor.com##.attention > ul.box > li.small > script:upward(1)
+brandkagu-outlet.net##.flo_head
 bunshun.jp###sp_multiplex[style="min-width: 300px; min-height: 250px;"]
 bunshun.jp##.footer-overlay
 burusoku-vip.com,negisoku.com###fluct_overlay
@@ -246,6 +248,7 @@ dailyportalz.jp##main > div > div.contents_title:first-child
 ddnavi.com,kakakumag.com##.article-ad
 delishkitchen.tv##.gm-ad-top
 detail.chiebukuro.yahoo.co.jp##aside[class*="ClapLv3SubList_Chie-SubList__ListItem--Ad__"]
+diamond.jp###gpt-dol-infeed-ranking
 diamond.jp##.infeed
 dic.nicovideo.jp##.st-Header_Ad
 dic.pixiv.net###ad-d-sp-footer
@@ -306,6 +309,8 @@ girlschannel.net##.page-back-wrap > div[style="margin: 0 4px 20px;border-bottom:
 girlschannel.net##.topic-item-pr
 girlschannel.net##.topic-items > div[style="height:93px;"]
 girlschannel.net##body[topicid] > div[style^="border-top: 4px solid #c4b1fd;"][style$="text-align: center"]
+goguynet.jp##.mobileAdBox
+goguynet.jp##div[style$="height:250px; width: 300px;"]
 gooday.nikkei.co.jp##.pr-img + section.gdy-article-list
 googirl.jp##.newentry_in > li.“cf”
 gosunkugi.com###mobile_text-2
@@ -373,6 +378,7 @@ kakakumag.com##.adbox
 kakakumag.com##.footer-ad
 kakolog.jp##.ad_header
 kanasoku.info##body > div[style^="width:320px; height:100px"]
+kanetaya.com###st_mb
 kango-roo.com##div[style="margin: 20px auto; text-align: center; height: 50px"]
 karapaia.com##.ads-rect-o
 karapaia.com##.article_mid_v2
@@ -406,6 +412,7 @@ m.crank-in.net##div[id^="_popIn_trend_ranking"]:upward(1)
 m.huffingtonpost.jp##.advertisement
 m.mail.yahoo.co.jp###ad_container_top
 m.yahoo.co.jp###prem-ad
+ma-bank.net###ad_top_mob
 mag.app-liv.jp##.p-overlay--upper-ad:style(bottom: 0!important;)
 mag2.com,tripeditor.com##.page_bottom_fixed_ad_wap
 mainichi.jp##.articledetail-body-pr
@@ -414,6 +421,7 @@ mainichi.jp##div[id^="ad-sp-article-infeed_"]
 mainichi.jp##div[id^="ad-sp-channel-infeed_"]
 majikichi.com###article_bottom_v2 + aside#lite_link
 majikichi.com##.content > aside#lite_link
+map.goo.ne.jp##div[class^="gooad-spbadge300"]
 matomame.jp##.uk-text-center.uk-margin-bottom > ins.adsbygoogle:upward(1)
 matomedane.jp###AdvHeader2
 matomedane.jp##.fam_hybrid_adv
@@ -566,6 +574,8 @@ seiga.nicovideo.jp##div[data-ads-name="sp_android_web_manga_viewer_lv3_300x250_n
 shufu-job.jp,tsuiran.jp##.sp-ad
 smartlog.jp###smlg_footer_ad
 so-net.ne.jp###access_ad
+songsterr.com##div[id^="showroom"]
+songsterr.com###tablature + div[role="main"]
 sp.m.jiji.com##.spView > div[style^="margin"] > div[id^="div-gpt-ad"]:upward(1)
 sp.nicovideo.jp##.siteWide-BannerAd
 sp.okwave.jp##.adfunnel.message-wrap
@@ -616,6 +626,7 @@ wired.jp##.ld__ad-top
 withnews.jp##.sticky-sidebar
 worldfn.net###bzrs1_1
 www.google.*##:not(:matches-path(/^/search\?.*tbm=shop|^/shopping/)) a[href*="/aclk?"][data-al]:upward(2)
+yahoo.co.jp###ad-mmon
 yahoo.co.jp##.sn-modInterstitial
 yahoo.com###module-pencilAd
 yahoo.com###sda-WFPAD
@@ -767,6 +778,7 @@ zeiri4.com##div[class^="adContainer"]
 
 ! ---------- Extension ----------
 blog.goo.ne.jp###app > div.page[style="padding-top: 11rem"]:style(padding-top: 4.9rem !important;)
+brandkagu-outlet.net##div.uniqset div#Header:style(padding-top: 0 !important;)
 eigo.plus###global-header:style(margin-top: 0!important;)
 gigafile.nu###main_panel:style(height: 0!important)
 gigafile.nu###sp_container > div#main_panel.container[style^="height:"]:style(height: 0!important;)
@@ -791,6 +803,8 @@ aya0205.smart-douga.mobi##^.entry_more > div[style^="background-color: rgb(88, 1
 bakufu.jp##^.adList
 bakufu.jp##^table[width="100%"][cellspacing="0"][cellpadding="3"][border="0"]
 blog.goo.ne.jp##^.banner--marchel:upward(#msg-box-app-recommend)
+brandkagu-outlet.net##^.flo_ban
+diamond.jp##^.spdisplay
 eiga.com##^#video_ad
 eiga.com##^.header-pure-banner
 erodougameijin.com##^div[class^=flexbox]:not(.flexbox3)
@@ -805,6 +819,7 @@ tvjapan.net##^#bg-ad-mob
 weloma.net##^a[href="https://2048.biz/mobile/"]
 xhamster.*,xhwide1.com##^script:has-text(popunder)
 xn--w8jtkjf8c570x.com##^div[id$="mobile_banner_top"]
+zai.diamond.jp##^.sp-floating-banner
 
 h-ken.net##+js(acis, onload, ad)
 javmix.tv##+js(acis, addEventListener, style.display)
