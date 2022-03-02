@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220302
+! Version: 20220303
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -54,6 +54,7 @@
 ||m.youtube.com/*/ad.js$script
 ||m.youtube.com/get_midroll_$domain=youtube.com
 ||news.nifty.com/smartphone/images/*_banner.$image,1p
+||nimg.jp/img/common/blocked_premium_banner.jpg
 ||poiful.com/sdk/vrizeadsdk.
 ||pokemongo-master.com/wp-content/uploads/*/ad_manga_
 ||r10s.jp/com/img/banner/*_mno_1080x168.png$domain=search.rakuten.co.jp
@@ -147,6 +148,7 @@ allabout.co.jp##.aa_box-1st-banner
 altema.jp##.head_koukoku_wrapper
 amaebi.co##.interstitial-ad
 amazon.*###similarities_feature_div span.threepsl-sponsored:upward(#similarities_feature_div)
+amazon.*##div[data-csm-widget-type="sponsored-products-mobile-grid-card"]
 ameblo.jp##.skinBody2.skinTextColor > aside[class^="_"] + div[class^="_"] > aside[class^="_"]:only-child > div[class^="_"]:last-child
 ameblo.jp##.skinBody2.skinTextColor > div.skinOpacity + div.skinBorderTopColor.skinOpacity[class^="_"]
 ameblo.jp##.skinBody2.skinTextColor > div[style^="overflow:"][style*="hidden"] > main + div[class^="_"]:empty
@@ -358,6 +360,7 @@ itest.5ch.net##.ranking > div#js-topics-top.flex_center[style^="height: calc"]
 itest.5ch.net##.res_ad
 itest.5ch.net##div[class^=sproutad_]
 itest.5ch.net##[class*=js-ads-content-top_]
+itmedia.co.jp###ATF
 itopvpn.com##.itop-ad
 j-cast.com##.chumokujoho + .title-sec
 jalan.net##.jlnsp-banner-frame
@@ -577,6 +580,7 @@ so-net.ne.jp###access_ad
 songsterr.com##div[id^="showroom"]
 songsterr.com###tablature + div[role="main"]
 sp.m.jiji.com##.spView > div[style^="margin"] > div[id^="div-gpt-ad"]:upward(1)
+sp.nicovideo.jp###jsBlockedPremiumBottomFixedBannerContainer
 sp.nicovideo.jp##.siteWide-BannerAd
 sp.okwave.jp##.adfunnel.message-wrap
 sp.okwave.jp##.adfunnel_special
@@ -690,6 +694,7 @@ eromoji.com##.fam_sp_rec
 eroterest.net##.adNativeMgs
 fatede-go.com##.bnArea
 fatede-go.com##div[id^="ovl_"]
+fetishshrine.com,pornicom.com,vikiporn.com##.top-spot
 fyptt.to##.bottom-post-ad-space
 fyptt.to##.top-post-ad
 gaytail.com##.happy-before-list
@@ -751,7 +756,8 @@ panchirarism.blog.fc2.com##.nav-wrap > br
 pantiragasuki.com##.ninja-recommend-block
 porndoe.com##.-up-mobile
 pornhub.com,redtube.com,redtube.net##.adContainer
-pornicom.com##.top-spot
+porntrex.com##.pop-adv
+porntrex.com##.pop-fade
 shikotch.net###is_w_area
 shikotch.net##.sp-ads-01
 tabootube.xxx##.webcam_widget
@@ -767,6 +773,8 @@ vipcle2.com##body > div[id^="text-"] > div.textwidget:has(> div[class^="ad300"])
 weather.goo.ne.jp##.ads_h250
 xhwide1.com##.video-view-ads--full-page
 xhwide1.com##.wio-xspl-adshare
+xhamster.*##.wio-y
+xhamster.*##.wio-ypremium-overlay
 xhamster.*,xhamster11.*,xhwide1.com##.thumb-list-mobile-item--widget
 xhamster.*,xhamster11.*##.wio-cbanner-container
 xn--r8jwklh769h2mc880dk1o431a.com##.clear_balloon + .spadtitle
