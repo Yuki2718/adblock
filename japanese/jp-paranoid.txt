@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220301
+! Version: 20220304
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -232,6 +232,7 @@ smart-flash.jp##^.adsBlock
 /analyticsmediator.
 /api/tracking/*
 /bugsnag.min.js
+/cxense-candy.js
 /detm-container-
 /dtm/*/satellitelib-
 /firebase-performance-
@@ -278,6 +279,7 @@ _omniture.$script,domain=mathworks.com
 ||cdn-net.com^$3p
 ||cedexis.net^$3p
 ||d2wy8f7a9ursnm.cloudfront.net^
+||dcf.espn.com^
 ||ensighten.com^$3p
 ||extreme-ip-lookup.com^$3p
 ! FP for the sake of security
@@ -428,6 +430,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||staff-start.com/js/track/$domain=enoteca.co.jp|store.alpen-group.jp
 @@||toplay.biz/log_event$1p,xhr
 @@||ttutu.biz/log_event$1p,xhr
+@@||wsj.net/iweb/static_html_files/cxense-candy.js$script,domain=marketwatch.com
 ||cxense.com/cx.js$script,redirect=noop.js,domain=friday.kodansha.co.jp,important
 !#if env_mobile
 ||cxense.com/cx.js$script,redirect-rule=noop.js,domain=itmedia.co.jp
