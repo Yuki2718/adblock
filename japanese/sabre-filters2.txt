@@ -225,6 +225,7 @@ _eu_cookie_$domain=nbcsports.com
 ||consensu.org^$third-party,domain=imgur.com|theguardian.com|travian.com
 ||cookiebot.com^$domain=slamdunk-movie.jp|sololearn.com|thaisim.jp
 ||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|ams.com|avast.*|avg.com|axa.com|bab.la|baesystems.com|bayer.com.au|behance.net|bethesda.net|biomedcentral.com|blackberry.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|ccleaner.com|cell.com|cisco.com|clarivate.com|collegeboard.org|connectwise.com|crowdstrike.jp|cyberagent.co.jp|dazn.com|deloitte.com|denso.com|dhl.com|discogs.com|emojipedia.org|esteelauder.jp|fastly.com|filehorse.com|forever21.com|foursquare.com|gamesindustry.biz|get.adobe.com|goal.com|gqjapan.jp|henkel-adhesives.com|hm.com|home.kpmg|honeywell.com|hotspotshield.com|hp.com|ikea.com|imperva.com|ipswitch.com|loccitane.com|loreal.com|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|nature.com|natureasia.com|northropgrumman.com|olympics.com|omen.com|opendns.com|payoneer.com|pgpint.com|ringcentral.com|roche-diagnostics.jp|slate.com|spotify.com|springer.com|springeropen.com|steelcase.com|stellamccartney.com|superantispyware.com|tabichan.jp|takeda.com|telerik.com|tokyo2020.org|touchvpn.net|toyonut.co.jp|trados.com|unity.com|unity3d.com|viatris.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zoom.us
+||cookiepro.com^$third-party,domain=softgames.com
 ||cookies.joneslanglasalle.co.jp^
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||cutt.ly/scripts/cook_info.
@@ -399,7 +400,6 @@ darkflash.com,ddos-guard.net,idemitsu.com,idss.co.jp,ixxx.red,malavida.com,monos
 dataprotection.com.ua,drweb-av.de,drweb-av.es,drweb-av.it,drweb-av.pl,drweb.cn,drweb.co.jp,drweb.com,drweb.fr,drweb.kz,drweb.ru###cookie_accept_msg_block
 ddos-guard.net###cookie-agreement
 deakin.edu.au##.popup-gdpr
-deepl.com###dl_cookieBanner
 deepl.com##div[class^="cookieBanner-"]
 delta.com##.cookie-footer
 demae-can.com###line_popup
@@ -687,6 +687,7 @@ spankwire.com###js-react-cookie-policy
 square-enix.com##div[class^="notice_Notices_"]
 sso.ss-blog.jp##.fixed-bottom
 start.me##.app__message
+store.acer.com###notice-cookie-block
 style.nikkei.com###ccpa-block
 subaru.co.jp###gdpr-box
 sugi-net.jp##.wrap-gdpr
@@ -769,6 +770,9 @@ gettr.com#%#//scriptlet('set-local-storage-item', 'cookieAccepted', 'true')
 !#endif
 !#if ext_ublock
 gettr.com##.app-content > div[class^="jss"] > div > .MuiGrid-container > .MuiGrid-item > div > button.bold:upward(5):matches-css(z-index: 1400)
+!#endif
+!#if env_mobile
+deepl.com###dl_cookieBanner
 !#endif
 
 ! Exception
