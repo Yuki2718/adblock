@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220305
+! Version: 20220306
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -167,6 +167,7 @@ smart-flash.jp##^.adsBlock
 ! ---------- Affiliate links/Click-through tracker ----------
 ||aaaf.jp^
 ||act.gro-fru.net^
+||ad-arrow.com^
 ||ad-feed.com^
 ||ad-link.net^
 ||ad-seek.jp^
@@ -490,6 +491,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ?sharedid=$doc,removeparam,domain=msafflnk.net
 ?utm_campaign=$doc,removeparam=utm_campaign,domain=bestvibe.jp|smfg.co.jp
 ?utm_campaign=post_article^$doc,removeparam=utm_campaign
+?utm_medium=dmm_affiliate&$doc,removeparam=/^utm_/
 ?utm_source=tw^$doc,removeparam=utm_source
 ?zoneid=*&bannerid=$doc,removeparam=bannerid
 ?zoneid=*&bannerid=$doc,removeparam=zoneid
