@@ -95,6 +95,8 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 - アフィリエイトリンクの一般非表示（280blockerさんと同様の[理由](https://280blocker.net/advanced-settings/)）
 - 広告ブロッカー検知用の罠スクリプト
 - ファーストパーティーの単純なCGI/SSIアクセスカウンターで、広範に使われているもの以外
+- プッシュ通知（EasyPrivacyは一部ブロックしていますが、こちらでは悪質なもの以外はAnnoyancesで対応します）
+- タイマースキップ（uBlock filtersは対応していますが、まれに不具合を起こすため原則としてAnnoyancesで対応します）
 - Google Safe Browsingでカバーされている、またはモバイル限定の悪質サイト
 - 失効ドメイン
 
