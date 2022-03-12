@@ -75,6 +75,13 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 
 </details>
 
+<details>
+<summary><strong>柔軟性</strong></summary>
+
+uBlock Originはインストールしたての状態でも広告ブロッカーとして十分に機能しますが、「広告ブロッカーではなく広域ブロッカー」といっているように、多様な使い方ができます。Yuki's uBlock Japanese filtersファミリーでは様々な用途に合わせたリストを提供しているだけでなく、「ミディアムモード」や「汎用非表示フィルターを無視する」など、様々なコンフィギュレーションに最大限対応しています。
+
+</details>
+
 #### 対象
 - 広告、アフィリエイトリンク
 - 一部のプロモーションコンテンツ（ネイティブ広告）<sup>15</sup>
@@ -111,7 +118,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 
 ![subscription-ex2](https://user-images.githubusercontent.com/58900598/155576140-367daed6-4ef4-4a32-ac90-b72cc38ef5b6.png)
 
-3. ブロック対象拡大、非表示対象縮小
+3. ブロック対象拡大、汎用非表示無効
 
 ![subscription-ex3](https://user-images.githubusercontent.com/58900598/155576260-7a75e6f8-4fc8-454c-8dd6-4d17b157f8b4.png)
 

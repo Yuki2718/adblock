@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220311
+! Version: 20220313
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -158,6 +158,7 @@ imgur.com##.Transformation-tooltip--hovering
 ||news.biglobe.ne.jp/js/push/
 ||nipponrentacar.co.jp/notification/
 ||nishinippon.co.jp/serviceworker.js
+||oakley.com/utility/components/push-notification/
 ||pathee.com/mapi/data/notification|
 ||phys.org/push-sw.
 ||redditstatic.com/*/PushNotifications.
@@ -845,6 +846,7 @@ houyhnhnm.jp##.js-skip-content
 howtogeek.com##div[id^="v2campaignpopup"]
 hypebeast.com###newsletter-popup-fixed
 ig.com###sticky-footer
+imezi.jp##.promo-popup-wrapper
 imitsu.jp###cv_bottom_a
 imitsu.jp###modal_bg
 instagram.com###react-root ~ div[class*=" "][class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > div > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
@@ -924,6 +926,9 @@ nytimes.com,nytimes3xbfgragh.onion###modal-portal-regiwall
 nytimes.com,nytimes3xbfgragh.onion##.ReactModalPortal:has(.welcomeAd)
 nytimes.com,nytimes3xbfgragh.onion##.magnoliaDock
 nytimes.com,nytimes3xbfgragh.onion##body:style(overflow: initial !important)
+oakley.com###SignUpModal:upward(.fancybox-overlay)
+oakley.com##.fancybox-lock body:style(overflow: auto!important;)
+oakley.com##.fancybox-lock:style(overflow: auto!important;)
 oguemon.com###popup-box
 old.reddit.com##.read-next-container
 onecareer.jp##.v2-sign-up-footer
@@ -1019,6 +1024,7 @@ thetimes.co.uk###paywall-portal-page-footer
 ticket.co.jp##.js-list-fix-footer
 timeout.jp###PopupSignupForm_0
 tinami.com##.ui-dialog, .ui-widget-overlay
+tokyotokyo.jp##.popup-wrapper
 tora-tora.net##.btn-ctr
 tous.com###newsletter-modal___BV_modal_outer_
 tous.com##body.modal-open:style(overflow: auto!important;)
@@ -1600,6 +1606,7 @@ store.alpen-group.jp##.footer-media
 ||amazonaws.com^*/btbanner.png$domain=blog.best-teacher-inc.com
 ||apexlegends-news.com/wp-content/uploads/2021/08/pc.jpg
 apexlegends-news.com###fix_sidebar
+||aps-web.jp/wp-data/wp-content/uploads/2021/01/footer_banner_rt_
 ||asahicom.jp/shukatsunavi/assets/images/column/prebiz_banner660x100px.jpg
 ||autoc-one.jp/article-assets/image/top/campaign_700x100.
 ||azby.fmworld.net/misc_top/images/niftyhikari.png
@@ -1656,6 +1663,8 @@ iwate-np.co.jp##div[class$=-CMSbox]
 jj-blues.com###text-10
 ||k-img.com/images/bb/parts/$domain=review.kakaku.com
 ||k-img.com/images/id/id_benefit/bnr/bnr_id_benefit01_740x50.png$domain=review.kakaku.com
+||kai-you.net/img/banner/sidebanner_
+kai-you.net##.l-side-banner_list
 ||kamigame.jp/img/top/recruit.png
 ||kanaloco.jp/archives/013/201902/c07a4901b8bb49c86ec4edcddcf906c3.jpg
 ||komeri.com/include_html/include/cart/img/*_bnr_card.jpg
@@ -2052,7 +2061,6 @@ ampmedia.jp##^.yarpp-related
 @@||bostonherald.com^*/webpush.js$script,1p
 @@||braze.com/api/$domain=deezer.com
 @@||csm.cxpublic.com^$script,domain=tarzanweb.jp
-@@||oakley.com/_ui/dist/scripts/modules/notifications.js$script,1p
 @@||popin.cc/searchbox/action_$script,3p
 
 !#include blog-parts.txt
