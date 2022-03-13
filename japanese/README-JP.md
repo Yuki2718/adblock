@@ -17,7 +17,7 @@ Youtubeの動画内広告について：各所で、また動画内広告がす�
 
 日本語サイト閲覧者がPCで遭遇する広告・解析のほとんどを除去できる、**最新版uBlock Origin専用**フィルタです。AdBlock, Adblock Plus, AdGuard, uBlock-for-firefox-legacy, Brave, Vivaldi, Berry Browser, Yuzu Browserなどでは**使わないで**ください<sup>1</sup>！
 
-- ご利用の場合は、標準で有効のAdGuard Japaneseは無効にする（設定のフィルターリスト > 地域・言語でチェックを外す）ことをおすすめします。
+- **ご利用の場合は、標準で有効のAdGuard Japaneseは無効にする（設定のフィルターリスト > 地域・言語でチェックを外す）ことをおすすめします。**
 - 他所では広告ブロックフィルタでブロックしていても、当サイトでは迷惑要素に分類している場合もあります。ブロックに不足を感じられたら、Annoyancesの購読もご検討ください。
 - Android版Firefoxでご利用の場合、Yuki's uBlock Japanese filters - Mobileを併用してください。
 
@@ -33,7 +33,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 - 広告を目にしないことより、通信量の削減が第一
 - ある程度は悪質サイトやコインマイナーもブロックしてほしい
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">購読する</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">購読する（他の日本用リストは無効化推奨）</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt)
 
 #### 特徴
@@ -137,7 +137,7 @@ Android版Firefoxでご利用になる場合、Yuki's uBlock Japanese filtersに
 3. uBlock Origin標準リストによる不具合の修正を受けることができます。AdGuard Mobile Adsともルールを統一しており、無駄はほとんど生じません。
 4. uBlock Originをモバイルで使う場合に生じる枠や空白の消し残り等が少なくなります<sup>20</sup>。
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-mob.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Mobile">購読する</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-mob.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Mobile">購読する（Yuki's uBlock Japanese filtersの購読が前提）</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-mob.txt)
 
 ## Yuki's uBlock Japanese filters - Paranoid （大雪フィルタ）
