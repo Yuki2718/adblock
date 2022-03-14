@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220314
+! Version: 20220315
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -167,6 +167,7 @@ smart-flash.jp##^.adsBlock
 
 ! ---------- Affiliate links/Click-through tracker ----------
 ||aaaf.jp^
+||aas.information-portal.net^
 ||act.gro-fru.net^
 ||ad-arrow.com^
 ||ad-feed.com^
@@ -213,6 +214,7 @@ smart-flash.jp##^.adsBlock
 ||track.aftrk3.com^
 ||tradedoubler.com^
 ||uncn.jp^
+||viglink.com^
 
 @@||epub-tw.com/reader/ad/banner_$image,1p,badfilter
 ! Block ads on some videos while break other ones.
@@ -270,6 +272,7 @@ smart-flash.jp##^.adsBlock
 /v60.js
 /visilabs.min.js
 /webtrekk.js$domain=db.com
+/webtrends.min.
 ://ensighten.
 ://lightning.*/launch/
 _omniture.$script,domain=mathworks.com
@@ -359,6 +362,7 @@ codezine.jp,enterprisezine.jp,freemen.jp,markezine.jp##div[id^=cx_]
 emmi.jp###rec
 komachi.yomiuri.co.jp###_popIn_recommend
 komachi.yomiuri.co.jp###_popIn_recommend_tieup
+mail.google.com##+js(ra, data-saferedirecturl, a[data-saferedirecturl])
 office-com.jp###segg_disp_all
 office-com.jp###segg_disp_all2
 roomie.jp##.powered_by_cx:upward(1)
