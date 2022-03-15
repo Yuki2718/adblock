@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220315
+! Version: 20220316
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -34,6 +34,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 /?smpushprofile=load_frontend_push_js
 /OneSignalSDK-
 /OneSignalSDKWorker.
+! Allow redundancy with Sabre
 /amp-user-notification-
 /amp-web-push-
 /imports/notifications.
@@ -802,6 +803,7 @@ evernote.com##.ReactModalPortal:has(#qa-GENERIC_LIGHTBOX_DIALOG_SUBMIT p[class^=
 evernote.com##.notifications-wrapper + div + div[class^=_] > div[class^=_]:has(div[class^=_] > span[class]:has-text(無料でお試し！))
 express.co.uk##.breaking-news-container
 ext.hp.com##.cmnbox01 > div.repo
+ezgif.com##div[style$="min-height:90px;display:block"]
 facebook.com###pagelet_growth_expanding_cta
 fandom.com##.banner-notifications-placeholder
 fantia.jp##.fanclub-btns > div.popup-bar.is-clone
@@ -834,6 +836,7 @@ h-navi.jp###ModalContent, #ModalOverlay
 hatena.ne.jp##.u-bnr--trial
 help.ea.com##.helpfulness-bar-outer
 hikkoshi-sakai.co.jp##.fixed.fix-info
+hipdf.com##.extension
 hiroba.dpoint.jp###gtm-promotionModal-overlay
 hiroba.dpoint.jp###js-floating
 hiroba.dpoint.jp##.js-modal-promotion-banner
@@ -904,7 +907,7 @@ moca-news.net###guide
 monosnap.com##.modalSide
 movie-times.tv###newContactBanner
 mozilla.org##.mzp-c-sticky-promo
-mp3cut.net,online-audio-converter.com###allapps-extension-popup
+mp3cut.net,online-audio-converter.com,pdf.io###allapps-extension-popup
 music.apple.com##.banner-upsell
 music.youtube.com##ytmusic-mealbar-promo-renderer
 mypage.sso.biglobe.ne.jp##.pr-footer-notice
@@ -1518,6 +1521,8 @@ excite.co.jp##.linkaff
 facebook.com##div[data-pagelet*="FeedUnit"]:has-text(/Suggested for You|おすすめの投稿/)
 facebook.com##div[role="main"] div[style="height: 0px;"] + div[class] > div[class] > div[class] div[class] div[class][style*="border-radius"]
 fandom.com###SurveyModule
+finders.me##.__popin
+finders.me##.__recommendedPosts
 fujinkoron.jp##.recommend
 i-voce.jp##.recommendSlideSheetArea
 iphone-diary.com##.awasete_yomitai
@@ -1937,6 +1942,9 @@ portableapps.com##+js(nano-stb, countdown)
 premiumebooks.xyz##+js(nano-stb, st2)
 proviralhost.com,urbharat.xyz##+js(nano-sib, timePassed, 1300)
 py.md##+js(nano-sib, countdown)
+redirect.dafontvn.com###btngetlink:style(display: inline-block !important)
+redirect.dafontvn.com##.progress
+redirect.dafontvn.com##+js(nano-sib, distance)
 retrostic.com##+js(nano-sib, timeLeft--, , 0.02)
 romhustler.org##+js(nano-sib, timer.remove)
 samfirms.com##+js(set, startfrom, 0)
@@ -2047,6 +2055,9 @@ jma.go.jp###jma_ad_config_button
 live2.nicovideo.jp##[class^=___player-display-header___]
 norton.com##+js(window-close-if, /protect?)
 pha.medicalonline.jp##+js(set, meteo.isMedicalWorker.hasCookie, trueFunc)
+pornbest.org###warnModal
+pornbest.org##.modal-backdrop
+pornbest.org##body.modal-open:style(overflow: auto!important;)
 social-unlock.com##form#link a.submit:style(opacity: 1 !important; pointer-events: auto !important;)
 symbolab.com##+js(set, _.subscribed, true)
 techcrunch.com##.homepage__event-promo, .upcoming-events

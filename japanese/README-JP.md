@@ -1,6 +1,6 @@
 ### お知らせ（2022年1月21日）
 
-現在のCoinhiveについて誤解がみられるようです。まず、Coinhiveは[2019年に閉鎖](https://www.itmedia.co.jp/news/articles/1902/27/news093.html)しています。現在、CoinhiveのドメインはTroy Hunt氏が[所有しており](https://www.troyhunt.com/i-now-own-the-coinhive-domain-heres-how-im-fighting-cryptojacking-and-doing-good-things-with-content-security-policies/)、Coinhiveのスクリプトが埋め込まれたサイトを訪問するとユーザーはTroy Hunt氏のページにリダイレクトされますが、マイニングは行われません。そのため、uBlock Originの標準リストでは現在Coinhiveはブロックしていません（AdGuard BaseやFanboy Annoyanceがブロックしています。Yuki's uBlock Japanese filtersにおいても迷惑要素の特例としてブロックしています）。
+現在のCoinhiveについて誤解がみられるようです。まず、Coinhiveは[2019年に閉鎖](https://www.itmedia.co.jp/news/articles/1902/27/news093.html)しています。現在、CoinhiveのドメインはTroy Hunt氏が[所有しており](https://www.troyhunt.com/i-now-own-the-coinhive-domain-heres-how-im-fighting-cryptojacking-and-doing-good-things-with-content-security-policies/)、Coinhiveのスクリプトが埋め込まれたサイトを訪問するとユーザーはTroy Hunt氏のページにリダイレクトされますが、マイニングは行われません。そのため、uBlock Originの標準リストでは現在Coinhiveはブロックしていません（~~AdGuard Baseや~~Fanboy Annoyanceがブロックしています。Yuki's uBlock Japanese filtersにおいても迷惑要素の特例としてブロックしています　※3月15日修正：AdGuard Basaからルール削除）。
 （なお、Coinhiveに限らずほとんどのマイナーはサービス終了しており、Yuki's uBlock Japanese filtersでは実際に使用が確認されたリソース濫用コードのみブロックしています。）
 
 （2021年05月15日）

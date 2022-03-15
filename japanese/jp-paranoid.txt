@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220315
+! Version: 20220316
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -225,8 +225,6 @@ smart-flash.jp##^.adsBlock
 -adobe-analytics/
 -contrib-ads/
 -google-analytics/$domain=~wordpress.org
-! blocks consensu
-.js?referer=
 .s_code.js$domain=cadillacjapan.com|chevroletjapan.com
 /AdobeAnalyticsBundle.
 /AppMeasurement.js
@@ -397,7 +395,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||asadcdn.com/adlib/libmodules/desktop/instream.$script,domain=bild.de
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
 @@||assets.adobedtm.com^*/mbox-contents-$script,domain=nsat.collegeboard.org|sony.jp
-@@||bangumi.org/sdk/rakuraku.js?referer=$domain=bs11.jp
 @@||cdn-net.com/cc.js$script,domain=butterfieldonline.com|uber.com|ubereats.com
 @@||cdn.cxense.com/cx.cce.js$domain=tarzanweb.jp
 @@||cdn.cxense.com/cx.js$domain=tarzanweb.jp|wpb.shueisha.co.jp
@@ -427,7 +424,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
 @@||lptag.liveperson.net/tag/tag.js$domain=uniqlo.com
 @@||playy.online/log_event$1p,xhr
-@@||quantcast.mgr.consensu.org^*tcfv2*cmp2.js?referer=$script
 @@||quantcast.mgr.consensu.org^*/cmp2.js$script,domain=dailyrecord.co.uk|express.co.uk|gamesradar.com|guitarplayer.com|independent.co.uk|laptopmag.com|livescience.com|mirror.co.uk|musicradar.com|nfl.com|pcgamer.com|researchgate.net|space.com|t3.com|techradar.com|tomsguide.com|tomshardware.com|tumblr.com|whathifi.com|whattowatch.com
 @@||rtoaster.jp/Rtoaster.js$domain=satofull.jp
 @@||rtoaster.jp^$script,domain=lexus.jp|melonbooks.co.jp|store.united-arrows.co.jp
