@@ -1,17 +1,8 @@
-### お知らせ（2022年1月21日）
+### お知らせ（2022年3月17日）
 
-現在のCoinhiveについて誤解がみられるようです。まず、Coinhiveは[2019年に閉鎖](https://www.itmedia.co.jp/news/articles/1902/27/news093.html)しています。現在、CoinhiveのドメインはTroy Hunt氏が[所有しており](https://www.troyhunt.com/i-now-own-the-coinhive-domain-heres-how-im-fighting-cryptojacking-and-doing-good-things-with-content-security-policies/)、Coinhiveのスクリプトが埋め込まれたサイトを訪問するとユーザーはTroy Hunt氏のページにリダイレクトされますが、マイニングは行われません。そのため、uBlock Originの標準リストでは現在Coinhiveはブロックしていません（~~AdGuard Baseや~~Fanboy Annoyanceがブロックしています。Yuki's uBlock Japanese filtersにおいても迷惑要素の特例としてブロックしています　※3月15日修正：AdGuard Basaからルール削除）。
-（なお、Coinhiveに限らずほとんどのマイナーはサービス終了しており、Yuki's uBlock Japanese filtersでは実際に使用が確認されたリソース濫用コードのみブロックしています。）
+昨今のウクライナ情勢のあおりを受けてAdGuardのフィルター更新が停止するという噂が散見されますが、デマです。AdGuard 日本の[tweet](https://twitter.com/AdGuardJP/status/1497546997720489987)を拡大解釈してしまったのかもしれません。[こちら](https://github.com/AdguardTeam/AdguardFilters/commits/master)をみていただくとわかりますように、更新はこれまでとまったく変わりなく行われています（注1）。フィルターメンテナーの中にウクライナ在住のスタッフがいるのは事実で、これまでのところ普段と同様に仕事をしてくれていますが、心配です。逆に言えば、他のメンバーはウクライナ在住ではなく、最悪の事態になってもフィルター更新が完全に停止することはありません。なお、AdGuardがウクライナ製というデマについては@hirorptさんが[まとめて](https://min.togetter.com/DK8Ur6K)くださっています。
 
-（2021年05月15日）
-
-Youtubeの動画内広告について：各所で、また動画内広告がすり抜けてきたという報告が上がっています。一部では再生不具合も起こっているようです。今のところ、フィルター作者間（注1）ではEasyListメンテナーの一人がごく短時間不具合を再現したほかは再現しておらず、原因はわかりません。もしこの新型広告（？）の対象になってしまった場合、現状ではブラウザやアカウントを切り替える、ログアウトする等が最善かと思います。同じアカウントでも時間がたつと自然に回復（？）することもあるようです。ただし、これまでのすり抜け報告の大部分はフィルターや設定の問題、またはほかの拡張機能による干渉でした。まずはフィルター設定を見直し、uBlock Origin以外の広告・追跡ブロック拡張機能はすべて無効にしてください。またBlocktubeなどYoutube用のいくつかの拡張機能はuBlock filtersと干渉することが知られていますので、無効にしてください。Yuki's uBlock Japanese filtersとYuki's uBlock Japanese filters - Paranoidでは（注2）、すり抜けと再生不具合に対し実験的なフィルタを既に導入していますが、効果があるかはわかりません。なお、FAQでも[述べました](https://github.com/Yuki2718/adblock/wiki#q28-youtube%E3%81%A7%E6%A4%9C%E7%B4%A2%E3%81%8C%E6%A9%9F%E8%83%BD%E3%81%97%E3%81%AA%E3%81%84%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%81%8C%E9%96%8B%E3%81%91%E3%81%AA%E3%81%84%E6%8E%A5%E7%B6%9A%E3%81%8C%E9%80%94%E5%88%87%E3%82%8C%E3%82%8B%E3%81%AA%E3%81%A9%E4%B8%8D%E5%85%B7%E5%90%88%E3%81%8C%E5%87%BA%E3%81%BE%E3%81%99)が、Youtubeの広告はアカウントや諸条件により出方が違うため、「うちはこの設定で出ない」といった話の多くは当てになりません（丁寧に条件を分析した方からのフィードバックは歓迎いたします）。
-
-<sub>注1：Adblock Plus, AdGuard, EasyList, uBlock Origin, 各言語用フィルタの作者間では毎日活発に情報交換しており、Youtubeの広告などは共同で解析することもあります。</sub>
-
-<sub>注2：Paranoidの実験フィルタが効果を発揮するには、「ウェブサイトのオフライン作業用データ」を削除していただくか、`about:debugging#/runtime/this-firefox`または`chrome://inspect/#service-workers`からYoutubeのWorkerを解除していただく必要があります。なお、Fanboy Annoyanceにもほぼ同じ実験フィルタが含まれています。</sub>
-
-<sub>注3：これらの内、AdBlockは今でもABP Japanese filtersをデフォルトで有効にしており、Youtubeで接続の問題など様々な不具合を引き起こします。これはYoutubeの広告ブロック対策などではなく、単なるフィルタの誤爆です。</sub>
+<sub>注1：土日は以前よりほとんどの公式スタッフは休みです。また、これも以前より各メンバーが長期休暇を取ることもあります。</sub>
 
 ## Yuki's uBlock Japanese filters （雪フィルタ）
 
