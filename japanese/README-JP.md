@@ -276,7 +276,7 @@ AdGuard DNSフィルタの既知の不具合を独自に修正します。DNSフ
 - あらゆる不具合に対処する予定はありません。公式より緩い基準とはいえ、ブロック除外により漏れる広告が多い場合は対応しません
 - 今後とも、モバイルアプリの問題を積極的にサポートする予定はありません。メンテンナンスコストが高くなった場合、公開停止もあり得ます
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/dns-unbreak.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">購読する</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/dns-unbreak.txt&title=AdGuard%20DNS%20filter%20Unbreaker%20for%20Japanese">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/dns-unbreak.txt)
 
 ## 280blocker adblock filter 悪質サイト対策強化パッチ （公開停止予定）
