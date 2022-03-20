@@ -1,5 +1,8 @@
-### お知らせ（2022年3月17日）
+### お知らせ（2022年3月21日）
 
+AdGuard DNSフィルタ不具合修正パッチを公開しました。また、280blocker adblock filter 悪質サイト対策強化パッチは近々公開を停止いたします。ご利用の方は購読解除をお勧めいたします。
+
+（2022年3月17日）
 昨今のウクライナ情勢のあおりを受けてAdGuardのフィルター更新が停止するという噂が散見されますが、デマです。AdGuard 日本の[tweet](https://twitter.com/AdGuardJP/status/1497546997720489987)を拡大解釈してしまったのかもしれません。[こちら](https://github.com/AdguardTeam/AdguardFilters/commits/master)をみていただくとわかりますように、更新はこれまでとまったく変わりなく行われています（注1）。フィルターメンテナーの中にウクライナ在住のスタッフがいるのは事実で、これまでのところ普段と同様に仕事をしてくれていますが、心配です。逆に言えば、他のメンバーはウクライナ在住ではなく、最悪の事態になってもフィルター更新が完全に停止することはありません。なお、AdGuardがウクライナ製というデマについては@hirorptさんが[まとめて](https://min.togetter.com/DK8Ur6K)くださっています。
 
 <sub>注1：土日は以前よりほとんどの公式スタッフは休みです。また、これも以前より各メンバーが長期休暇を取ることもあります。</sub>
@@ -263,7 +266,20 @@ AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ�
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt)
 
-## 280blocker adblock filter 悪質サイト対策強化パッチ
+## AdGuard DNS filter Unbreaker for Japanese （AdGuard DNSフィルタ不具合修正パッチ）
+
+<strong>ブロックよりも不具合の低減を優先するユーザー向けです</strong>
+
+AdGuard DNSフィルタの既知の不具合を独自に修正します。DNSフィルタはブロックするかしないかの二択しかなく、融通が利きません。しかし、AndroidのAdGuard無料版ユーザーやiOSユーザーはこれを使わずにアプリ内広告をブロックする手段があまりなく、他に代替となるリストも多くはないと思われます。また、不具合を報告してもブロック漏れとの兼ね合いがあるため必ずしも対処されませんし、当管理人はDNSフィルタの編集権限を持たないためDNSフィルタの問題はあまり扱いたくないのが本音です。
+
+- 直接こちらに不具合を報告する前に、まずAdGuard公式に報告してください。メンテンナンスは主に、AdGuardに報告された問題の中から任意に行う予定です
+- あらゆる不具合に対処する予定はありません。公式より緩い基準とはいえ、ブロック除外により漏れる広告が多い場合は対応しません
+- 今後とも、モバイルアプリの問題を積極的にサポートする予定はありません。メンテンナンスコストが高くなった場合、公開停止もあり得ます
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/dns-unbreak.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">購読する</a>
+[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/dns-unbreak.txt)
+
+## 280blocker adblock filter 悪質サイト対策強化パッチ （公開停止予定）
 
 **AdGuard for AndroidおよびuBlock Origin専用**
 

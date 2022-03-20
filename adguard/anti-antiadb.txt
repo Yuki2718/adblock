@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220318
+! Version: 20220321
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -38,7 +38,7 @@
 /^https:\/\/1ts\d{2}\.top\/show\.php$/$script,third-party
 /^https:\/\/\d{4}\.[a-z]{10}\.name\/[-_0-9a-zA-Z]{90,}\?_=\d+/$script,third-party
 /^https:\/\/a\.[-0-9a-z]{4,16}\.(?:club|com|cyou|info|net|ru|site|top?|xxx|xyz)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
-/^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/\S{200,}$/$xmlhttprequest,third-party
+/^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/\S{100,}$/$xmlhttprequest,third-party
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/[0-9a-z]{8}\.js$/$script,third-party
 /^https:\/\/asg\.[0-9a-z]{4,21}\.(?:com|info|me|pro)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case,~third-party
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$script,third-party
@@ -187,10 +187,9 @@
 ##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height: 194px !important; cursor: pointer !important;"]:not([class])
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]:not([class])
 ##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style*="transform: translateX(-50%); z-index: 2147483647; position: fixed"]:not([src])
-##iframe[style$="box-sizing: border-box; position: fixed; inset: auto 0px 0px auto !important; overflow: hidden; z-index: 2147483647;"]:not([src])
 ##iframe[style*="opacity: 1 !important; max-width: 420px !important"][style*="position: fixed !important; display: block !important; z-index: 2147483647 !important"]:not([src])
 ##iframe[style*="z-index: 2147483647; min-width: 240px !important; display: block !important; max-width:"]:not([src])
-##iframe[style="width: 100% !important; height: 100% !important; margin: 0px; padding: 0px; border: medium none; outline: currentcolor none medium; box-sizing: border-box; position: fixed; inset: 0px; overflow: hidden; z-index: 2147483647;"]:not([src])
+##iframe[style^="width: 100% !important; height: 100% !important; margin: 0px; padding: 0px"][style$="overflow: hidden; z-index: 2147483647;"]:not([src])
 
 ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,one,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,wiki,win,work,world,xyz,yokohama#$#.div-gpt-ad { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
 ai,app,asia,bid,biz,black,blog,blue,cc,click,cloud,club,co,com,fun,guru,info,is,jp,life,link,live,me,media,mobi,money,nagoya,name,net,news,one,online,ooo,org,pics,pl,pro,pw,red,rocks,site,space,tech,today,tokyo,top,website,wiki,win,work,world,xyz,yokohama,~ff14angler.com,~html5.gamedistribution.com,~teemo.gg,~xtremestream.co#$#ins.adsbygoogle { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
