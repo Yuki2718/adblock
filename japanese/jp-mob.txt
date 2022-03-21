@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220321
+! Version: 20220322
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -158,6 +158,7 @@ am-our.com##div[style="min-height: 100px"]
 amaebi.co##.interstitial-ad
 amazon.*###similarities_feature_div span.threepsl-sponsored:upward(#similarities_feature_div)
 amazon.*##div[data-csm-widget-type="sponsored-products-mobile-grid-card"]
+amazon.co.jp,amazon.com##div[cel_widget_id="sp_phone_detail_thematic"]
 ameblo.jp###blogMegaPanelOfficial:empty:upward(1)
 ameblo.jp###entryLi > li.skin-mod-bg-color.skinOpacity
 ameblo.jp##.skinBody2.skinTextColor > aside[class^="_"] + div[class^="_"] > aside[class^="_"]:only-child > div[class^="_"]:last-child
@@ -924,7 +925,6 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 
 ! ---------- Exception - cosmetic ----------
 kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important)
-srad.jp#@#.ads-text
 
 ! ---------- Scam & Redirect ----------
 /^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
