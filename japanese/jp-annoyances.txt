@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220323
+! Version: 20220324
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -345,7 +345,12 @@ carnext.jp###fixed_footer
 car.rakuten.co.jp##.portal-floating-banner
 ||carsensor.net/usedcar/inquiry_mm_popup.
 ||cdn.threadloom.com^$domain=forum.xda-developers.com
-||cloudfront.net/docomo/modal/$domain=hiroba.dpoint.jp
+||cloudfront.net/docomo/floating/$domain=hiroba.dpoint.docomo.ne.jp
+hiroba.dpoint.docomo.ne.jp###js-floating
+||cloudfront.net/docomo/modal/$domain=hiroba.dpoint.docomo.ne.jp
+hiroba.dpoint.docomo.ne.jp###gtm-promotionModal-overlay
+hiroba.dpoint.docomo.ne.jp###wrapper:style(position: static !important;)
+hiroba.dpoint.docomo.ne.jp##.js-modal-promotion-banner
 ||cloudfront.net/image/buyer.png$domain=appbankstore.jp
 appbankstore.jp###amznpopup
 ||cloudfront.net/img/dotimg/btn/aishipr_bnr_$domain=aiship.jp
@@ -845,10 +850,6 @@ hatena.ne.jp##.u-bnr--trial
 help.ea.com##.helpfulness-bar-outer
 hikkoshi-sakai.co.jp##.fixed.fix-info
 hipdf.com##.extension
-hiroba.dpoint.jp###gtm-promotionModal-overlay
-hiroba.dpoint.jp###js-floating
-hiroba.dpoint.jp###wrapper:style(position: static !important;)
-hiroba.dpoint.jp##.js-modal-promotion-banner
 hitohana.tokyo###cta
 honichi.com###staticModal
 honichi.com##body.modal-open:style(overflow: auto !important)
@@ -1895,9 +1896,9 @@ cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
 
 ! ---------- Timer (CSS fix can be added to jp-filters if not likely to break site) ----------
 100count.net##+js(nano-sib, /sec--|timedisplay--/)
-123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coinunit.ashortstory.in,cpmlink.net,diglink.blogspot.com,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,likn.xyz,lootlinks.*,markipli.com,mik4mob.com,opensubtitles.org,raky.in,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com,wondervelocity.com##+js(nano-sib)
+123link.*,1ink.cc,7misr4day.com,al.ly,arhplyrics.in,aylink.co,coin-free.com,coinunit.ashortstory.in,cpmlink.net,diglink.blogspot.com,elil.cc,fcc.lc,fcdot.lc,freebitcoin.vip,freelitecoin.vip,gitizle.vip,informaxonline.com,kpopstan.com,leechall.*,likn.xyz,lootlinks.*,markipli.com,mik4mob.com,opensubtitles.org,raky.in,sama-pro.com,seowebnews.com,shon.xyz,short-url.link,shrtbtc.com,shtms.co,speedsatoshi.com,techrfour.com,underhentai.net,upfile.us,wallpaperaccess.com,wondervelocity.com##+js(nano-sib)
 123lnk.xyz,aapks.com##+js(nano-stb, countDown)
-1apple.xyz,cararegistrasi.com,federleqa.icu,financeflix.in,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgirx.xyz,imgjut.buzz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,kekolangti.com,michaelemad.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,studyranks.in,technoflip.in,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
+1apple.xyz,cararegistrasi.com,chooyomi.com,federleqa.icu,financeflix.in,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgirx.xyz,imgjut.buzz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,kekolangti.com,michaelemad.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,studyranks.in,technoflip.in,techware.online,theicongenerator.com,zentum.club##+js(nano-sib, timer)
 ac-illust.com,photo-ac.com,silhouette-ac.com##+js(set, enable_dl_after_countdown, true)
 ac-illust.com,photo-ac.com,silhouette-ac.com##+js(set, isGGSurvey, true)
 ac-illust.com,photo-ac.com,silhouette-ac.com###eachDownloadedModal .ac-btn[href^="https://premium."]:upward(#eachDownloadedModal)
@@ -1906,7 +1907,11 @@ ac-illust.com,photo-ac.com,silhouette-ac.com##body.modal-open *:style(filter: no
 ac-illust.com,photo-ac.com,silhouette-ac.com##body.modal-open:style(overflow: auto !important;)
 adfoc.us##+js(nano-sib, , 1100)
 adnit.xyz,toptap.website##+js(set, timedisplay, 0)
-aemenstore.com,aloass.com,alobyt.com,alocd.com,aloegg.com,alofps.com,alogum.com,aloguy.com,alohdd.com,byboe.com,cazzette.com,dreamcheeky.com,fidlarmusic.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,mikl4forex.com,newforex.online,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rezence.com,rodjulian.com,semawur.com,staaker.com,taisv.com,techmody.io,thegoneapp.com,truebrandy.com,uebnews.online##+js(nano-sib, counter, 2000)
+aemenstore.com,aloass.com,alobyt.com,alocd.com,alogum.com,aloguy.com,alohdd.com,anhdep24.com,byboe.com,cazzette.com,dreamcheeky.com,fidlarmusic.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rezence.com,rodjulian.com,staaker.com,truebrandy.com,uebnews.online,thegoneapp.com###link1s-generate
+aemenstore.com,aloass.com,alobyt.com,alocd.com,alogum.com,aloguy.com,alohdd.com,anhdep24.com,byboe.com,cazzette.com,dreamcheeky.com,fidlarmusic.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rezence.com,rodjulian.com,staaker.com,truebrandy.com,uebnews.online,thegoneapp.com###link1s-link
+aemenstore.com,aloass.com,alobyt.com,alocd.com,alogum.com,aloguy.com,alohdd.com,anhdep24.com,byboe.com,cazzette.com,dreamcheeky.com,fidlarmusic.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rezence.com,rodjulian.com,staaker.com,truebrandy.com,uebnews.online,thegoneapp.com###link1s-snp:style(display:block!important)
+aemenstore.com,aloass.com,alobyt.com,alocd.com,alogum.com,aloguy.com,alohdd.com,anhdep24.com,byboe.com,cazzette.com,dreamcheeky.com,fidlarmusic.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rezence.com,rodjulian.com,staaker.com,truebrandy.com,uebnews.online,thegoneapp.com###link1s-wait1
+aemenstore.com,aloass.com,alobyt.com,alocd.com,alogum.com,aloguy.com,alohdd.com,anhdep24.com,byboe.com,cazzette.com,dreamcheeky.com,fidlarmusic.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rezence.com,rodjulian.com,staaker.com,truebrandy.com,uebnews.online,thegoneapp.com##+js(nano-sib, counter, *)
 android-apk.org,icutlink.com##+js(nano-sib, time)
 apkmaza.net##+js(nano-sib, downloadButton)
 apkmb.com##+js(nano-sib, show_download_links)
@@ -1915,6 +1920,8 @@ bdupload.*,best18vd.com,bestmoneysites.com,coolrom.com.au,desiupload.*,hubfiles.
 bestshort.xyz,forex-gold.net,world-trips.net##+js(nano-sib, timeleft)
 bitefaucet.com##+js(nano-sib, timeLeft)
 bitmos.co.in,nstnews.net##+js(set, count, 0)
+codecomets.com###timeblock
+codecomets.com##+js(rc, disabled, a#enablebtn)
 coinlyhub.com##+js(nano-sib, seconds)
 coolrom.com.au##+js(set, time, 0)
 crypto-faucet.xyz,doctor-groups.com,short.mcmcryptos.xyz##+js(nano-sib, sec--)
@@ -1984,6 +1991,7 @@ vrcmods.com###app_msg:style(display: none !important;)
 wallpaper.dog,wallpapertag.com##+js(nano-sib, count)
 wallpaperkiss.com,wallpaperuse.com##+js(nano-stb, clock)
 webhostingpost.com##+js(nano-sib, clearInterval)
+ytsubme.com##+js(nano-stb, aTagChange, 12000)
 zedge.net##+js(nano-sib, (i-1))
 zeefiles.*##+js(nano-stb, tick)
 zegtrends.com##+js(nano-sib, time, 2500)
