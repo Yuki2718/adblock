@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220326
+! Version: 20220327
 
 ! Temporal
 ||amazonaws.com/wp-content/uploads/2021/10/*/%E5%BA%83%E5%91%8A%E5%8B%9F%E9%9B%86%E4%B8%AD-%E5%B0%8F-$image,domain=digi-coco.com
@@ -383,6 +383,7 @@ secrettalk.me##.week_hot
 .com/slider.php?section=$script,3p
 .com/script/compatibility.js|$3p
 .com/script/ippg.js|$3p
+.com/script/nsu.js|$3p
 .com/sfp.js|$script,3p
 .com/ufo/$script,3p
 .com/v.js?v=3|$1p
@@ -531,7 +532,7 @@ secrettalk.me##.week_hot
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$script,xhr,3p
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[fprt](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-4]\d{4}|[4-9]\d{3})(?:\?_=\d+)?$/$frame,script,xhr,popup,3p,match-case
 /^https?:\/\/cdn\.[0-9a-z]{3,6}\.xyz\/[a-z0-9]{8,}\.js$/$script,3p
-/^https?:\/\/cdn\.[a-z]{4,6}\.xyz\/app\.js$/$script,3p,match-case,domain=~jp
+/^https?:\/\/cdn\.[a-z]{4,6}\.xyz\/app\.js$/$script,3p,match-case
 /^https?:\/\/[-.0-9a-z]+-ad\.(?:com|jp|net)[\/:]/$3p
 /^https?:\/\/[-.0-9a-z]+-ads\.com[\/:]/$3p
 /^https?:\/\/[-0-9a-z]{4,}\.[a-z]{2,7}(\.[a-z]{2})?\/apis-\d\.js(\?v=\d)?$/$script,1p
@@ -1199,6 +1200,7 @@ secrettalk.me##.week_hot
 /pnovel_rand.
 /pop1.js|$script,1p
 /popunder-$script
+/popunder.gif|$image,3p
 /popunder?
 /popunders/*
 /popup-ad.
@@ -1816,7 +1818,6 @@ vkcdnservice.appspot.com^$3p
 ||i2ad.jp^
 ||image-rentracks.com^$3p
 ||imasdk.googleapis.com^
-||img-c.net^$3p
 ||img.ulti.jp^
 ||immortalsplashslob.com^
 ||impact-ad.jp^$3p
@@ -2433,6 +2434,7 @@ vkcdnservice.appspot.com^$3p
 ||clivads.com^
 ||clknrtrg.pro^
 ||clmcom.com^
+||cloudlogobox.com^
 ||cm-trk5.com^
 ||cn.dap.dmm.co.jp^
 ||comihon.com^
@@ -3550,6 +3552,7 @@ vkcdnservice.appspot.com^$3p
 ||7q1z79gxsi.global.ssl.fastly.net^
 ||7wtic7ru.com^
 ||8s32e590un.com^
+||9desires.xyz^
 ||9t5.me^
 ||a-ads.com^$3p
 ||a-mo.net^
@@ -3898,6 +3901,7 @@ vkcdnservice.appspot.com^$3p
 ||blogkiemtien.club^
 ||bloggerku.com^$3p
 ||blogtopsites.com^$3p
+||bloxplay.com^
 ||blueoyster.click^
 ||blueparrot.media^
 ||bmcdn1.com^
@@ -5715,6 +5719,7 @@ vkcdnservice.appspot.com^$3p
 ||asecv.xyz^
 ||eeco.xyz^
 ||fedsy.xyz^
+||rgrd.xyz^
 ! __htas
 ||ablenctionalle.info^$3p
 ||adjuve.info^
@@ -5807,7 +5812,9 @@ vkcdnservice.appspot.com^$3p
 ||dyh1wzegu1j6z.cloudfront.net^
 ||dzv1ekshu2vbs.cloudfront.net^
 ! globalThis/FingerprintJS
+||chookamookla.com^
 ||esmystem.com^
+||maalabaala.com^
 ||mableyable.com^
 ||mambkooocango.com^
 ||nkyouvery.fun^
@@ -5972,6 +5979,7 @@ vkcdnservice.appspot.com^$3p
 ||jomtingi.net^$popup
 ||jutyledu.pro^$popup
 ||kenomal.com^$popup
+||kesmatic.com^$popup
 ||ladsats.com^$3p,popup
 ||livejasmin.com^$popup
 ||lowseelan.com^$popup
@@ -6475,6 +6483,7 @@ _Ad300x250_$domain=ckworks.jp
 ||aspcenter.work/sr/pic/$domain=lotousen.kai-seki.net
 ||asset.fwcdn1.com/js/fwn.js
 ||asset.recipe-blog.jp/cache/images/banner/*.300x90.cut.
+||assets.msn.com/bundles/*/weather/latest/river-feed.
 ||assets.msn.com/bundles/v1/microsoftNews/latest/placement-manager.*.js$domain=microsoftnews.msn.com
 ||assets.webinfcdn.net/img/sponsored.gif
 ||assetshuluimcom-a.akamaihd.net/*.mp3$media,redirect=noop-0.1s.mp3,domain=hulu.com
@@ -6914,7 +6923,7 @@ _Ad300x250_$domain=ckworks.jp
 ||ec-platz.net/tochigiya/orders/ranking04.$frame
 ||ec2.images-amazon.com/images/I/$domain=fgamers.saikyou.biz|gogotorimaru.blog19.fc2.com|labo.tv|minkch.com|spring-fragrance.mints.ne.jp
 ||ecj.jp/ecimage/banner/180x135/
-||ecx.images-amazon.com/images/I/$domain=0taku.livedoor.biz|2nnlove.blog114.fc2.com|404nots.blog88.fc2.com|8543joho.jugem.jp|akb48ch.com|akb48mt.com|anteka.info|baiku-sokuho.info|blog.hushlogue.com|cloud.akibablog.net|ffnews2016matome.blog.fc2.com|fgamers.saikyou.biz|freesona.sakura.ne.jp|fullbokko.2chblog.jp|game-kc.com|gehasoku.com|gogotorimaru.blog19.fc2.com|gunji.blog.jp|hayablog00.blog.fc2.com|hokanko-alt.com|horahorazoon.blog134.fc2.com|insyoku.livedoor.biz|jbbs.shitaraba.net|joujakuvip2ch.doorblog.jp|jumpsokuhou.com|kannrininn.jugem.jp|karukantimes.com|koumuin-matome.blog.jp|kurihuji.sblo.jp|master-asia.livedoor.biz|matomate.blog133.fc2.com|magalog.doorblog.jp|minpuzz.com|mp5oshiete.jugem.jp|mudainodocument.com|nekomemo.com|noaboutsnote.hatenablog.com|nofootynolife.blog.fc2.com|onosakaemiri.blog.jp|oshiete-kun.net|rabitsokuhou.2chblog.jp|recosoku.com|repsoku.net|s2-log.com|shounan-s-sasaki.cocolog-nifty.com|sierblog.com|sow.blog.jp|studio-kingdom.com|suparobo.net|tabroid.jp|tbn17.com|tinatora.com|toanewsplus.blog.2nt.com|wara2ch.com|wugsoku.com|xno-imagex.jugem.jp
+||ecx.images-amazon.com/images/I/$domain=0taku.livedoor.biz|2nnlove.blog114.fc2.com|404nots.blog88.fc2.com|8543joho.jugem.jp|akb48ch.com|akb48mt.com|anteka.info|baiku-sokuho.info|blog.hushlogue.com|cloud.akibablog.net|ffnews2016matome.blog.fc2.com|fgamers.saikyou.biz|freesona.sakura.ne.jp|fullbokko.2chblog.jp|game-kc.com|gehasoku.com|gogotorimaru.blog19.fc2.com|gunji.blog.jp|hayablog00.blog.fc2.com|hokanko-alt.com|horahorazoon.blog134.fc2.com|insyoku.livedoor.biz|jbbs.shitaraba.net|joujakuvip2ch.doorblog.jp|jumpsokuhou.com|kannrininn.jugem.jp|karukantimes.com|koumuin-matome.blog.jp|kurihuji.sblo.jp|master-asia.livedoor.biz|matomate.blog133.fc2.com|magalog.doorblog.jp|minpuzz.com|mp5oshiete.jugem.jp|mudainodocument.com|nekomemo.com|newscrap-ss.doorblog.jp|noaboutsnote.hatenablog.com|nofootynolife.blog.fc2.com|onosakaemiri.blog.jp|oshiete-kun.net|rabitsokuhou.2chblog.jp|recosoku.com|repsoku.net|s2-log.com|shounan-s-sasaki.cocolog-nifty.com|sierblog.com|sow.blog.jp|studio-kingdom.com|suparobo.net|tabroid.jp|tbn17.com|tinatora.com|toanewsplus.blog.2nt.com|wara2ch.com|wugsoku.com|xno-imagex.jugem.jp
 ||ecx.images-amazon.com/images/I/*._SX160_.jpg$domain=blog.livedoor.jp
 ||edy.rakuten.co.jp/images/index_2015/floating/
 ||eegg.fun/ad_html/
@@ -9474,6 +9483,7 @@ _pop_under.js$domain=souko.pipii.tv
 ||nitroflare.com/img/banners/
 ||nomosaic.net/img/carib_06-200-
 ||nomosaic.net/img/muryou_movie.
+||nonline.club/frame/$frame,1p
 ||nozokix.com/blogparts_script.php
 ||nsfwalbum.com/efds435m432.js
 ||nsimg.net/cache/landing/pr/
@@ -9726,6 +9736,7 @@ _pop_under.js$domain=souko.pipii.tv
 ||tentacles.biz/wp-content/uploads/2019/10/hotpowers02.png
 ||tezfiles.com/images/i/tz00250x00250-
 ||tezfiles.com/js/links-to-preview.js
+||thedevs.cyou/hh/script-manager.js
 ||thehun.net/banners/
 ||theonlygames.com/ps_banner/
 ||theporndude.com/graphics/tpd-$3p
@@ -10147,6 +10158,7 @@ _pop_under.js$domain=souko.pipii.tv
 /analyzer.js
 /analyzer2.
 /anlz.php?
+/apTracker.
 /api/analytics|
 /api/cmp_tracker
 /api/increment-pv$xhr
@@ -11504,6 +11516,7 @@ cgi-bin/counter
 ||capture.condenastdigital.com^
 ||casalemedia.com^$3p
 ||cashfiesta.com^
+||catsys.jp^$3p
 ||cbdatatracker.com^$3p
 ||cc-api-data.adobe.io^
 ||cc.swiftype.com^
@@ -12623,6 +12636,7 @@ cgi-bin/counter
 ||sa-ga-so.net^$3p
 ||sabavision.com^$3p
 ||sadbmetrics.surinenglish.com^
+||salecycle.com^$3p
 ||salesmanago.pl^$3p
 ||sas.com^$3p
 ||sashare.com^
@@ -14942,7 +14956,7 @@ xtits.*##.spot-holder
 2chblog.jp##.plugin-memo > .side > .Default.amazon:last-of-type:upward(2)
 2chblog.jp,blog.jp,blog.livedoor.jp,blogo.jp,doorblog.jp,ldblog.jp,livedoor.biz##.plugin-memo > .side > .ad-center:upward(2)
 2chblog.jp,blog.jp,blog.livedoor.jp,blogo.jp,doorblog.jp,ldblog.jp,livedoor.blog##.plugin-memo > .side > script[src*="//adm."]:upward(2)
-2chblog.jp,blog.livedoor.jp,blogo.jp##.plugin-memo > .side > script[src^="//z-fe."]:upward(2)
+2chblog.jp,blog.livedoor.jp,blogo.jp,doorblog.jp##.plugin-memo > .side > script[src^="//z-fe."]:upward(2)
 2chcopipe.com###sub .plugin-memo:nth-of-type(n+4)
 2chcopipe.com,aobatushin-kankore.doorblog.jp,cherio199.blog120.fc2.com,tokitamaroku.blog.fc2.com##.AmaQuick-box
 2chcopipe.com,blog.jp,blog.livedoor.jp,doorblog.jp,vipstyle.tokyo##.plugin-memo > .side > .ninja-recommend-block:upward(2)
@@ -16308,50 +16322,44 @@ blog.jp,blog.livedoor.jp,doorblog.jp,livedoor.biz,youblog.jp##.plugin-memo > .si
 blog.jp,blog.livedoor.jp,ldblog.jp,livedoor.biz##.plugin-memo > .side > [href$="ziyu.net/"]:upward(2)
 blog.jp,blog.livedoor.jp,livedoor.biz##.plugin-memo > .side > script[src*="i-mobile"]:upward(2)
 blog.jp,chihosoku.com,dondonwork.com,kagekidan.net,kijobibouroku.com,kijonikki.net,livedoor.biz,nandemomatomedan.com,nijimoemoe.com,pachinkolist.com,raburaibu.com,shuraba.net,snackworld-sokuhou.com,toralucky.fun,uwasakijo.net,wiiups.com,xn--ss-ci4aa8ub2251exr3e.com##.main-container-ads
-blog.jp,livedoor.biz##.plugin-memo > .side > script[src^="//img-c."]:upward(2)
 blog.jp,livedoor.blog##.plugin-memo > .side > div[id^=im-]:upward(2)
 blog.jpsync.com##.g1-advertisement-inside-grid:upward(1)
 blog.jpsync.com,weibo.com##.g1-advertisement
 blog.linksfire.co##.link-details
 blog.linksfire.co##div.separator > b
 blog.linksfire.co,earnfasts.com##.ex2
-blog.livedoor.jp###Article > #boxA, #Article > #boxB
 blog.livedoor.jp###YDNA, #YDNB
 blog.livedoor.jp###main > section.clearfix + .h2-sub:first-of-type, .ad-tp
 blog.livedoor.jp###accessrank
-blog.livedoor.jp###article-options > a[name=comments] ~ div[align=center] > table[cellspacing="0"][cellpadding="0"][border="0"], .ad-bottom-outer
 blog.livedoor.jp###article-options > a[name=trackbacks] + .article-option
 blog.livedoor.jp###article-options > div.inline-block_2
-blog.livedoor.jp###aside > #fix_sidewrapper
 blog.livedoor.jp###blog-body-outer div[id$=t] > .sidetitle:has-text(スポンサー)
-blog.livedoor.jp###container > #cssmenu ~ div.main-container + aside.left-container[style^="position: "] > .left-column-inner:only-child > .plugin-memo:nth-child(2)
 blog.livedoor.jp###container > .blog-title-outer ~ .entry_box_left2
 blog.livedoor.jp###container > .blog-title-outer ~ .entry_box_left2 + .entry_box_right2
 blog.livedoor.jp###content-l > .left[style^="position: fixed"]
+blog.livedoor.jp###contents > #ad_rs + script[type] + .boxwrap + br + div[align=center]
 blog.livedoor.jp###entrybox > .entryheader:first-child + .entry-body + br + br + div[align=center]
 blog.livedoor.jp###extra .plugin-memo > .side > div[id]:only-child > script:not([src]):only-child:upward(3)
 blog.livedoor.jp###extra.column > .column-inner + #scroll.fixed
-blog.livedoor.jp###left > .plugin-memo:has(#gazoupickup_3)
-blog.livedoor.jp###left_wrapper > div.area01 > p[style="”font-size:5pt;"] + center:has-text(スポンサードリンク)
 blog.livedoor.jp###main > div[style="padding:0 8px 10px 0;"]:first-child
 blog.livedoor.jp###main-content > #side .widget-body:last-child, #side-ad
 blog.livedoor.jp###more > b[style="color: rgb(255, 0, 0); font-size: large;"], #more > span[style="font-size: 125%; color: rgb(255, 0, 0);"]
 blog.livedoor.jp###more > div[align=center] > .ninja-recommend-block + br + div[align=center]
-blog.livedoor.jp###pickrightcon > .right-container-ads
+blog.livedoor.jp###more table > tbody > tr > td:first-of-type > link[href$="/p.js"]:upward(4)
+blog.livedoor.jp###pickrightcon > .right-container-ads, .ninjasita, .right-container-adstop
 blog.livedoor.jp###poweredAdsBy
 blog.livedoor.jp###rt-outer, .article-body-more > .linkh, .link2, .sponsor_side_body
 blog.livedoor.jp###side > .side-tp:last-child
 blog.livedoor.jp###sidebar > .scroll > .side-ad:upward(1)
-blog.livedoor.jp###sidebara2.column > #sidebar-inner:first-child > .plugin-memo:first-child
 blog.livedoor.jp###sub .column-inner-2 > [href^="https://www.amazon.co.jp/gp/"]
 blog.livedoor.jp###sub .plugin-memo > .side > div[style="text-align:center;"] > script + script[src$="/show_ads.js"]:upward(3)
 blog.livedoor.jp##.ad-double
 blog.livedoor.jp##.ad-type-rect
 blog.livedoor.jp##.admore
+blog.livedoor.jp##.adplace
 blog.livedoor.jp##.adsencewaku, .adsencewaku2
 blog.livedoor.jp##.article-body > div.inline-block_3
 blog.livedoor.jp##.article-body-inner > .article-body-more + p[style="”font-size:5pt;"] + center
-blog.livedoor.jp##.article-body-inner > table[style=" border-style: none; width:300px;"]
 blog.livedoor.jp##.article-body-inner > table[width^="7"][height="250"][align=center], .article-outer-3 > .portal-links ~ div[align=center] > b:only-child, .article-outer-3 > .rss_bottom + hr + .recommend, .google-user-ad-bottom
 blog.livedoor.jp##.article-body-inner > [href^="https://px.a8.net/svt/ejp"]
 blog.livedoor.jp##.article-main2 > div[style^="margin: 60px 0px 20px;border: 1px solid "]
@@ -16366,10 +16374,8 @@ blog.livedoor.jp##.column-inner-2 > .plugin-memo:has(img[src^="https://doujin-as
 blog.livedoor.jp##.column-inner-2 > b > b > .entry_box10, a[name=more] + .entry_box110
 blog.livedoor.jp##.column-inner-2 > table[bordercolordark="#000000"][width="680"]
 blog.livedoor.jp##.container > div[style="float:right;"] > div[style="width:380px;text-align:center;background-color:#D4D0CA;font-size:20px;line-height:30px;font-family: Haettenschweiler,Charcoal;font-weight:bold;color:#666666;"]
-blog.livedoor.jp##.g-adover
 blog.livedoor.jp##.kiji_bottom + .menu_title3[style="text-align:center"]
 blog.livedoor.jp##.kijinakakoukoku
-blog.livedoor.jp##.ninjasita, .right-container-adstop
 blog.livedoor.jp##.plugin-memo > #gad-fixed-r2:upward(1)
 blog.livedoor.jp##.plugin-memo > .side > #ldb-user-ad-fixed:upward(2)
 blog.livedoor.jp##.plugin-memo > .side > #verticalrank:first-of-type:upward(2)
@@ -16382,8 +16388,11 @@ blog.livedoor.jp##.plugin-memo > .side > center > div[id^=i2i]:upward(3)
 blog.livedoor.jp##.plugin-memo > .side > center > script[src$="ziyu.net/js/dqnplus.js"]:upward(3)
 blog.livedoor.jp##.plugin-memo > .side > center > script[src^="//j.microad"]:upward(3)
 blog.livedoor.jp##.plugin-memo > .side > center:only-child > [href$="ziyu.net/"]:upward(3)
+blog.livedoor.jp##.plugin-memo > .side > div > b > img[src^="https://ir-jp."]:first-of-type:upward(4)
+blog.livedoor.jp##.plugin-memo > .side > div > div > #gazoupickup_3:upward(4)
+blog.livedoor.jp##.plugin-memo > .side > div > img[src^="https://ir-jp."]:first-of-type:upward(3)
+blog.livedoor.jp##.plugin-memo > .side > div[class^=fluct-]:upward(2)
 blog.livedoor.jp##.plugin-memo > .side > div[id^=gad-fixed]:upward(2)
-blog.livedoor.jp##.plugin-memo > .side > script[src$="/rakuten_widget.js"]:upward(2)
 blog.livedoor.jp##.plugin-memo > .side > script[src^="//static.criteo"]:upward(2)
 blog.livedoor.jp##.plugin-memo > .side > script[src^="http://cas.criteo"]:upward(2)
 blog.livedoor.jp##.plugin-memo > .side > script[src^="https://cdn-fluct"]:upward(2)
@@ -16402,6 +16411,7 @@ blog.livedoor.jp##:matches-path(/linkismt) .article-body-inner > center, .articl
 blog.livedoor.jp##:matches-path(/sokudokuex) .article-body-inner > center, .article-body-inner > center + hr
 blog.livedoor.jp##body > #pocket-btn-js + div[style="margin:0px;padding:0px;"][align=center]
 blog.livedoor.jp,bloomberg.com,pcworld.com,tonarinoyj.jp,webopixel.net##.page-ad
+blog.livedoor.jp,doorblog.jp##.plugin-memo > .side > script[src$="/rakuten_widget.js"]:upward(2)
 blog.livedoor.jp,doorblog.jp,ldblog.jp##.plugin-memo > .side > script[src^="//j.microad"]:upward(2)
 blog.livedoor.jp,livedoor.blog##.plugin-memo > .side > script[src*="//p.permalink-"]:upward(2)
 blog.livedoor.jp,moeruasia.net###fixR
@@ -16928,6 +16938,8 @@ coelacanth108.com##body > p > b
 coffee-terrace.com,hentai.9ketsuki.info###popup
 coinlyhub.com##div.highlight
 coinlyhub.com,dutchycorp.*##[class^="bmadblock"]
+coinmarketcap.com##.sponsoredMark
+coinmarketcap.com##.trending-sponsored
 coinpost.jp###header-area_wrap
 coinpost.jp##.googlead
 coinsearns.com###promo3
@@ -18412,6 +18424,7 @@ hlsloader.com##body > center > .adsbygoogle:upward(1)
 hlsloader.com##section > center > span[style="opacity:0.7;font-size:xx-small"]:upward(1)
 hmoeta.com##.entry_more > table:has(.dmm-widget-placement)
 hmv.co.jp##div[style="width: 700px; margin: 30px auto 0 auto; height: 250px;"]
+hobbylog.jp##.pbancut
 hochi.news##.ad[style*="color:#fff"]
 hochi.news##div[style^="width:600px; height:200px"]
 hoick.jp##.lazyload_ad
@@ -20311,6 +20324,7 @@ news4wide.net##.ad728-wrap
 news4wide.net##.module .js__fixed-link:upward(.module)
 newsbreak.com##.mask
 newsbreak.com##.outbrain-wrapper:upward(1)
+newscrap-ss.doorblog.jp##.plugin-memo > .side > a[href*="amazon.co.jp/exec/"]:first-of-type:upward(2)
 newsdigest.de###prbanner
 newsdigest.jp##.banner-header
 newsdigest.de##.moduletable_right_google
@@ -20477,6 +20491,7 @@ nya-su.doorblog.jp##.plugin-memo > .side > script[src^="http://spdeliver."]:upwa
 nya-su.doorblog.jp##.plugin-memo:nth-child(n+4)
 nya-su.doorblog.jp##script[src$="/rakuten_widget.js"]:upward(.article-option)
 nya-su.doorblog.jp##script[src^="http://pranking"]:upward(.article-option)
+nyankobiyori.com###side > .sidetitlebody:first-child
 nytimes.com,nytimes3xbfgragh.onion###app > div > div > div[data-testid="StandardAd"]:upward(1)
 nytimes.com,nytimes3xbfgragh.onion###bottom-wrapper
 nytimes.com,nytimes3xbfgragh.onion###top-wrapper
@@ -20871,6 +20886,7 @@ prepostseo.com###after_title_ad
 prepostseo.com###floorad-wrapper
 prepostseo.com###sidebar_ad_big
 presearch.org##.pr-4.max-w-2xl.mb-4.mt-4.md\:mt-0.md\:mb-6.ml-4
+presearch.org##[x-data*="{ keywordAdFirst:"]
 president.jp##.article-triple > div[id^=pc_pol_woman_recommend]:upward(1)
 president.jp##.information
 pressroom.jp,vtubersokuhou.com###custom_html-35
@@ -22988,20 +23004,16 @@ blog.goo.ne.jp##.dashboard--banners
 blog.goo.ne.jp##.mod-entry-set-goo-ad
 blog.goo.ne.jp##.post__end__app-group__image
 blog.hokanko-alt.com###extra
-blog.livedoor.jp###more > .AmaQuick-box
 blog.livedoor.jp##.MediumImage.amazon
 blog.livedoor.jp##.article-body-inner > #more > a[rel="noopener sponsored"][href^="https://www.dlsite.com/maniax/dlaf/"]
 blog.livedoor.jp##.article-body-more > .amazon
-blog.livedoor.jp##.article-outer-3 > .linkwithin_div + center > a
 blog.livedoor.jp##.article-outer-3 > .entry-content > [href^="https://www.amazon.co."]
 blog.livedoor.jp##.header_recommen_item, .kiji > div > .menu_cont3[style="text-align:center"] > table[width="100%"][border=""], .krb-amzlt-box
 blog.livedoor.jp##.left-column-inner > .plugin-recent_comments ~ .plugin-link + center, .main-column-inner > #ad_rs + .first-article[itemtype] ~ a[name=amazletlink]
 blog.livedoor.jp##.plugin-memo > .side #sc_dmm:upward(.plugin-memo)
 blog.livedoor.jp##.plugin-memo > .side > center > b > a[href^="https://amzn."]:first-of-type:upward(4)
-blog.livedoor.jp##.plugin-memo > .side .afi:upward(.plugin-memo)
+blog.livedoor.jp##.plugin-memo > .side > div[align=center] > a[href^="https://www.amazon.co."][target=_blank][title=""]:first-of-type:upward(3)
 blog.livedoor.jp##.right-column-inner > [href^="http://www.amazon.co.jp/exec/"]
-blog.livedoor.jp##.side-ama-outer
-blog.livedoor.jp##.uekokoku, .uekoukoku
 blog.livedoor.jp##div.amzimg
 bs-asahi.co.jp##.sup-banner-tag
 buildupp.net,maskedosukebe.com,pockecaoyako.com###st_custom_html_widget-3
@@ -25251,6 +25263,7 @@ streamporn.pw###overlays
 sugoihentai.work##.well > .widget-title:has-text(アクセスカウンター)
 sugumiru18.com###content > .ently_outline + .entry-header
 sukebei.nyaa.si##div[class*="-"] > ins.adsbyexoclick:upward(1)
+sukebeidlsnyaa.testdoujin.net##div[style$="height: 250px;width: 300px;float:left;"]
 sukebeshogun.com##.rightRbana
 sumomo-ch.com###right > .sidebar-t:has-text(/人気記事|ランキング/)
 sumomo-ch.com##.kizi-bookmark
@@ -25602,6 +25615,7 @@ animeerogame.com,sugumiru18.com###text-7
 bananavi.jp###rightMenu
 bijinkan0118.blog.fc2.com##.sidebox a[href*="://nuretubo."]:upward(.sidebox)
 bijyomato.com##.widget_sow-editor.widget-sidebar-standard
+blog.livedoor.jp###container > center + table[style="width: 0%"]
 blog.livedoor.jp###extra .plugin-tag_cloud ~ div[style="margin:0;padding:5px;font-size:12px;word-break: break-all;"]
 blog.livedoor.jp###extra center > [href^="http://550909."]
 blog.livedoor.jp###side_silk, .hfeed > #extra #side_links
@@ -25821,17 +25835,9 @@ beastmodeblock.blog.fc2.com##div[style="width:100%;height:840px; text-align:cent
 biz-journal.jp###footer:style(margin-top:0!important)
 bizocean.jp##.bo-filter-nav:style(margin-top: 0!important)
 bizocean.jp##.bo-layout-header:style(height: auto!important)
-blog.livedoor.jp###container > #cssmenu ~ div.main-container + aside.left-container[style^="position: fixed; margin-left"]:style(position: absolute!important;margin-left: 0!important;bottom: auto!important;left: 0!important)
-blog.livedoor.jp###content > #main + #sidebar.column[style^="position: fixed"]:style(position:static!important)
-blog.livedoor.jp###content > #main.hfeed + #sub.aside[style^="position: fixed"]:style(position:static!important)
-blog.livedoor.jp###content.hfeed > #main.column + #sub.column + #extra.column[style^="position: fixed; top: "]:style(position:absolute!important)
-blog.livedoor.jp###content-inner > #main.column + #sub.column[style^="position: fixed;"]:style(position:static!important)
-blog.livedoor.jp###content.hfeed > #main.column + #sub.column[style^="position: fixed; top: "]:style(position: static!important)
 blog.livedoor.jp###content.hfeed > #main.column + #extra.column[style^="position: fixed"]:style(position:static!important)
 blog.livedoor.jp###content.hfeed > #main.column[style] + #sub-c[style^="position: fixed"]:style(position:absolute!important)
-blog.livedoor.jp###main > #article + #aside[style^="position: fixed; margin: "]:style(position: static!important)
 blog.livedoor.jp##.main-container[style="margin-left: 10px;"] + aside.right-container[style^="position: fixed"]:style(position: static!important)
-blog.livedoor.jp##iframe[src$="diet2channel/rss01.htm"] ~ #extra[style^="position: fixed"]:style(position:absolute!important;top:auto!important;left:971px!important)
 blognews.in,model-tas-terbaru.com,moddingzone.in,rajsayt.xyz,therootdroid.com,veganab.co,worldappsstore.xyz###wpsafe-link:style(display: block !important)
 bs-tvtokyo.co.jp###common-head_4bs:style(height: 140px!important)
 buffaloesmatome.blomaga.jp###sidewrapper-tracking-box2[style^="position: fixed"]:style(position: static!important)
@@ -25954,7 +25960,6 @@ matometanews.com###left:style(position:static !important)
 mcphersonscenicdesign.com##.align-left > .page-box .link-box[style^="background-image:"]:style(background: none!important)
 mcphersonscenicdesign.com##.menu .link-box[style^="background-image"]:style(background: none!important)
 medibang.com##.pictureDetails__mainContents:style(min-height:auto!important)
-megaup.net##.imgAds,img[src^="https://megaup.net/imageads/"]:style(height:auto !important;display:block !important)
 military38.com###right_col[style^="position: fixed"]:style(position: static!important)
 minilinks.in###secondtext:style(display: block !important;)
 miniwebtool.com###videoad:style(position:absolute !important;left:-3000px !important)
@@ -26164,9 +26169,9 @@ blog.gamekana.com##^#sub
 blog.goo.ne.jp##^.dashboard--banners
 blog.goo.ne.jp##^.post__end__app-group__image
 blog.hokanko-alt.com##^#extra
+blog.livedoor.jp##^#container > center + table[style="width: 0%"]
 blog.livedoor.jp##^#extra center > [href^="http://550909."]
 blog.livedoor.jp##^#extra .plugin-tag_cloud ~ div[style="margin:0;padding:5px;font-size:12px;word-break: break-all;"]
-blog.livedoor.jp##^#more > .AmaQuick-box
 blog.livedoor.jp##^#side_silk, .hfeed > #extra #side_links
 blog.livedoor.jp##^#sidebar-inner > .plugin-memo:first-child > .side > div[style="margin:0;padding:5px;font-size:12px;word-break: break-all;"] > [href^="https://al.dmm"]:upward(3)
 blog.livedoor.jp##^.LargeImage.amazon
@@ -26174,16 +26179,13 @@ blog.livedoor.jp##^.MediumImage.amazon
 blog.livedoor.jp##^.article-body-inner > #more > a[rel="noopener sponsored"][href^="https://www.dlsite.com/maniax/dlaf/"]
 blog.livedoor.jp##^.article-body-more > .amazon
 blog.livedoor.jp##^.article-outer-3 > .entry-content > [href^="https://www.amazon.co."]
-blog.livedoor.jp##^.article-outer-3 > .linkwithin_div + center > a
 blog.livedoor.jp##^.header_recommen_item, .kiji > div > .menu_cont3[style="text-align:center"] > table[width="100%"][border=""], .krb-amzlt-box
 blog.livedoor.jp##^.kijiadleft2
 blog.livedoor.jp##^.left-column-inner > .plugin-recent_comments ~ .plugin-link + center, .main-column-inner > #ad_rs + .first-article[itemtype] ~ a[name=amazletlink]
 blog.livedoor.jp##^.right > .plugin-memo > .side > p:last-of-type > a[href*="amazon."]:first-of-type:upward(.plugin-memo)
-blog.livedoor.jp##^.side-ama-outer
-blog.livedoor.jp##^.uekokoku, .uekoukoku
 blog.livedoor.jp##^.plugin-memo > .side #sc_dmm:upward(.plugin-memo)
-blog.livedoor.jp##^.plugin-memo > .side .afi:upward(.plugin-memo)
 blog.livedoor.jp##^.plugin-memo > .side > center > b > a[href^="https://amzn."]:first-of-type:upward(4)
+blog.livedoor.jp##^.plugin-memo > .side > div[align=center] > a[href^="https://www.amazon.co."][target=_blank][title=""]:first-of-type:upward(3)
 blog.livedoor.jp##^.plugin-memo > .side > div[style^="margin:0;padding:5px;font-size:1"][style$="word-break: break-all;"]:first-of-type > a[href*="dmm.co.jp/"]:upward(3)
 blog.livedoor.jp##^.plugin-memo > .side > [href*="dmm.co.jp/"]:first-of-type:upward(2)
 blog.livedoor.jp##^.plugin-memo > .side [href*="//dlsoft.dmm.co.jp"]:first-of-type:upward(.plugin-memo)
@@ -26728,7 +26730,7 @@ calculator-online.net##+js(nostif, 'body')
 camarchive.tv##+js(no-fetch-if, popunder)
 cambay.tv,cambro.tv,caminspector.net,camporn.tube,camvideos.org,camwhorescloud.com,camwhorespy.com,camwhoria.com##+js(acis, crakPopInParams)
 cambay.tv,camflow.tv,camhoes.tv,caminspector.net,camporn.tube,camvideos.org,camwhorescloud.com,camwhoreshd.com,camwhorespy.com,gaytail.com##+js(acis, onload, onclick)
-cambay.tv,camflow.tv,camhoes.tv,gay4porn.com,xtits.*##+js(set, flashvars.adv_start_html, '')
+cambay.tv,camflow.tv,camhoes.tv,gay4porn.com,xhand.com,xtits.*##+js(set, flashvars.adv_start_html, '')
 cambay.tv,camgoddess.tv,camhoes.tv,caminspector.net,camthots.tv,camwhoreshd.com##+js(set, hasPoped, true)
 cambro.tv,gigaho.com##+js(aopr, onload)
 camcam.cc,isi7.net##+js(no-fetch-if, adsbygoogle)
@@ -26765,6 +26767,7 @@ connect.coron.tech##+js(aeld, load, dispatch)
 connectedgamestore.com##+js(set, noAdblock, true)
 coolpan.net##+js(aeld, error, adscript-error)
 coolpan.net##+js(set, flgDisplay, false)
+coolwallpapers.me##+js(nosiif, dfgh-adsbygoogle)
 coron.tech##+js(acis, document.getElementById, insertAdjacentHTML)
 coron.tech##+js(rc, post_content)
 cpomagazine.com##+js(aopr, advads_passive_groups)
@@ -27062,6 +27065,7 @@ ninjastream.to##+js(aeld, , 0x)
 ninjastream.to##+js(aopr, SmartPopunder)
 ninjastream.to##+js(nosiif, document['write'])
 nitroflare.com##+js(acis, $, window.open)
+nonline.club##+js(aopr, boxzilla_options)
 notube.net##+js(ra, onClick)
 noweconomy.live##+js(ra, disabled, button[id="invisibleCaptchaShortlink"])
 noweconomy.live##+js(set, adblockDetector, noopFunc)
@@ -27355,7 +27359,6 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 ||just-upload.com^$doc,csp=default-src 'unsafe-inline' 'unsafe-eval' 'self' *.google.com *.gstatic.com *.googleapis.com *.googletagmanager.com *.jquery.com *.bootstrapcdn.com *.jsdelivr.net *.cloudflare.com
 ||lnk.news^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
 ||lnk.parts^$csp=sandbox allow-forms allow-same-origin allow-scripts allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation
-||mangahub.io^$csp=frame-src *.facebook.com
 ||onlineproxy.eu^$csp=default-src 'self' 'unsafe-inline' *.googleapis.com *.google.com *.gstatic.com *.google-analytics.com
 ||send.cm^$csp=connect-src
 ||shon.xyz^$csp=script-src 'self' 'unsafe-inline' *.gstatic.com *.google.com *.googletagmanager.com *.googleapis.com;frame-src 'self' *.google.com;connect-src 'self'
@@ -28336,7 +28339,6 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=bloomberg.co.jp|bloomberg.com|vk.sportsbull.jp
 @@||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$domain=abcnews.go.com|brightcove.net
 @@||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$script,domain=reuters.com
-@@||img-c.net/output/$script,domain=blog.livedoor.jp
 @@||img.ak.impact-ad.jp/ut/$script,domain=www3.nissan.co.jp
 @@||img.ak.impact-ad.jp/sr/js/nissan_test_$script,domain=www3.nissan.co.jp
 @@||imgur.com/min/px.js$1p
@@ -28585,7 +28587,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||ribbon-career.work/assets/css_ver2/ads.css
 @@||ribbon-career.work/assets/img/ads/title_$image,1p
 @@||robot-tech.jp/banner/bnr_001.gif
-@@||rss.solty.biz^$script,3p
+@@||rss.solty.biz^$script,3p,domain=~gundam-futab.info
 @@||rtcstatic.dxlive.com^$frame,domain=h0874.com
 @@||rules.atgsvcs.com/EERules/view/$domain=lenovo.com
 @@||s.yimg.jp/images/listing/tool/yads/yads-timeline-ex.js$domain=yahoo.co.jp
@@ -28607,6 +28609,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
 @@||securegames.iwin.com/data/gtm.json$xhr,domain=securegames.iwin.com
 @@||securemetrics.apple.com/b/ss/$image
+@@||securenetsystems.net/*/ads/prebid.js$script,1p
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$script,domain=forbesjapan.com|game.goo.ne.jp|games.softgames.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$script,domain=dropgalaxy.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=dropgalaxy.com|forbesjapan.com|game.goo.ne.jp|today.line.me
