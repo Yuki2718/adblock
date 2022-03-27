@@ -79,6 +79,13 @@ Enhances anti anti-adblock capability of AdGuard by generic filters. Works on Ad
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt)
 
+## AdGuard DNS filter Unbreaker for Japanese
+
+This list fixes known problems in AdGuard DNS filter mostly for Japanese user. Do not report any problem of AdGuard DNS filter directly to this repo, but open an issue ticket in AdGuardSDNSFilter repo.
+
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/dns-unbreak.txt&title=AdGuard%20DNS%20filter%20Unbreaker%20for%20Japanese">Subscribe</a>
+[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/dns-unbreak.txt)
+
 </details>
 
 <details>
