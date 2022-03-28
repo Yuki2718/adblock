@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220328
+! Version: 20220329
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -21,7 +21,6 @@
 .com/pup.php?section=$script,third-party
 .com/script/compatibility.js|$third-party
 .com/script/ippg.js|$third-party
-.com/script/nsu.js|$third-party
 .com/sfp.js|$script,third-party
 .com/slider.php?section=$script,third-party
 .com/v.js?v=3|$~third-party
@@ -44,7 +43,7 @@
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/[0-9a-z]{8}\.js$/$script,third-party
 /^https:\/\/asg\.[0-9a-z]{4,21}\.(?:com|info|me|pro)\/(?=[a-z]{0,6}[0-9A-Z])(?=[0-9a-z]{0,6}[A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case,~third-party
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$script,third-party
-/^https:\/\/[-a-z]{8,15}\.com\/400\/\d{7}$/$script,third-party
+/^https:\/\/[-a-z]{8,15}\.com\/40[01]\/\d{7}$/$script,third-party
 /^https:\/\/[-a-z]{8,15}\.com\/500\/\d{7}\?/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{8,16}\.(?:com?|club|fun)\/(?=[%a-zA-Z]{0,170}\d)(?=[%0-9a-z]{0,170}[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
 /^https:\/\/[a-z]{8,16}\.(?:com?|one|xyz)\/(?=[+\/a-zA-Z]{0,140}\d)(?=[+\/0-9a-z]{0,140}[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case
@@ -122,6 +121,7 @@
 /nb/fe_ld.js
 /nb/frot_lod.js
 /nb/nb_script.js
+/nsu.js|$script,third-party
 /ntv.json?key=$xmlhttprequest,third-party
 /player/html.php?aid=start_html&video_id=*&referer=$subdocument,~third-party
 /player/html.php?aid=pause_html&video_id=*&referer=$subdocument,~third-party

@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220328
+! Version: 20220329
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -37,6 +37,9 @@
 /jquery.meerkat.
 /wpsafelink.js
 _Ad300x250_
+
+! ---------- Ad servers ----------
+||araklet.mediagene.co.jp^$3p
 
 ! ---------- Ad servers - adult ----------
 ||imlive.com^$script,3p,domain=~imnude.com
@@ -190,6 +193,7 @@ smart-flash.jp##^.adsBlock
 ||affiliateone.jp^
 ||asp.m-live.jp^
 ||cl.link-ag.net^
+||click.affiliate.ameba.jp^
 ||click.dtiserv2.com^
 ||click.duga.jp^
 ||cyber-ad01.cc^
@@ -234,6 +238,7 @@ smart-flash.jp##^.adsBlock
 /AppMeasurement.js
 /AppMeasurement_Module_
 /Criteo/*$script
+/adobe-analytics2.
 /analytics/event
 /analytics/v1/*$domain=~my.leadpages.net|~userzoom.com
 /analyticsmediator.
@@ -274,6 +279,7 @@ smart-flash.jp##^.adsBlock
 /utag_data.
 /v60.js
 /visilabs.min.js
+/web-js-telemetry-service/*
 /webtrekk.js$domain=db.com
 /webtrends.min.
 ://ensighten.
@@ -482,6 +488,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=usid,domain=d-card.jp
 *$doc,removeparam=utm_brand
 *$doc,removeparam=vcptn,domain=digi-tag.net
+*$doc,removeparam=vgo_ee
 .com/lp/*^utm_medium=$doc,removeparam=utm_medium
 .com/lp/*^utm_campaign=$doc,removeparam=utm_campaign
 .com/lp/*^utm_content=$doc,removeparam=utm_content
