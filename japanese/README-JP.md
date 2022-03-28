@@ -269,7 +269,7 @@ AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ�
 
 ## AdGuard DNS filter Unbreaker for Japanese （AdGuard DNSフィルタ不具合修正パッチ）
 
-<strong>ブロックよりも不具合の低減を優先するユーザー向けです</strong>
+<strong>ブロックよりも不具合の低減を優先するユーザー向けです。コンテンツブロック/ブロッカーではなくDNSフィルタに追加購読してください。</strong>
 
 AdGuard DNSフィルタの既知の不具合を独自に修正します。DNSフィルタはブロックするかしないかの二択しかなく、融通が利きません。しかし、AndroidのAdGuard無料版ユーザーやiOSユーザーはこれを使わずにアプリ内広告をブロックする手段があまりなく、他に代替となるリストも多くはないと思われます。また、不具合を報告してもブロック漏れとの兼ね合いがあるため必ずしも対処されませんし、当管理人はDNSフィルタの編集権限を持たないためDNSフィルタの問題はあまり扱いたくないのが本音です。
 
