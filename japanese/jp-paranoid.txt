@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220402
+! Version: 20220403
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -242,7 +242,6 @@ smart-flash.jp##^.adsBlock
 /analytics/v1/*$domain=~my.leadpages.net|~userzoom.com
 /analyticsmediator.
 /api/tracking/*
-/bili-collect.
 /bugsnag.min.js
 /cxense-candy.js
 /detm-container-
@@ -448,7 +447,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||ttutu.biz/log_event$1p,xhr
 @@||wsj.net/iweb/static_html_files/cxense-candy.js$script,domain=marketwatch.com
 ||cxense.com/cx.js$script,redirect=noop.js,domain=friday.kodansha.co.jp,important
-||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js$script,redirect-rule=noop.js,domain=bilibili.com
 !#if env_mobile
 ||cxense.com/cx.js$script,redirect-rule=noop.js,domain=itmedia.co.jp
 !#endif
