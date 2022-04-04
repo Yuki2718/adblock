@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220403
+! Version: 20220405
 
 /js/jquery.smartbanner.js
 /js/jquery.smartbanner.min.js
@@ -167,7 +167,6 @@ magaseek.com###appArea
 ||jpnumber.com/img/android.png
 ||k-img.com/assets/webpage/download-app/$domain=kinarino.jp
 kinarino.jp##.p-download-app
-||k-img.com/images/smartphone/global_footer/premium/footer_banner_premium_$domain=s.tabelog.com
 ||kashinoen.com/img/app_
 ||kidsna.com/assets/img/app_
 ||kidsna.com/assets/img/app/lp/*-btn-
@@ -180,7 +179,8 @@ kikkoman.co.jp##.application-banner
 kiwi.com##[class^=AppPromoBannercommonstyled__]
 ||kumanichi.com/assets/img/top/side_kumaview.
 ||kurashiru.com/production/assets/pc_footer-
-kurashiru.com##.FooterAppPc-adsWrapper
+kurashiru.com##.footer-image-wrapper
+||kurashiru.com/production/assets/web_to_app/
 ||lawsonbank.jp/images/lp/20210607/img_btn_
 ||lawsonbank.jp/images/lp/20210607/img_mockup.
 lawsonbank.jp##.m-following-conversion
@@ -439,7 +439,9 @@ globis.jp##.app_banner_for_android
 gu-global.com###smbn_app
 ||gunosy.com/assets/androidmarket/1_v5-75d32f587cef02f40e1f9d61c083d3d95eefe4b34d37a0bb4d61e828c474d6e1.png
 ||gunosy.com/assets/androidmarket/2_v4-2b16e16e5dab6a03b21147b2d68a835d93bdb23cc1fd3109dd6cce048a826a49.png
-gunosy.com##.footer_app_download
+gunosy.com##div[class*="_app_d"]
+||gunosy.com/assets/promotion/header_over_content_banner_
+gunosy.com##.download_link
 ||image-qoo10.jp/dp2016/JP/GMKT.IMG/Mobile/Intro/2021/05/25/1fbff093-f6ee-44b1-b71a-8323bd7b2090.png
 m.qoo10.jp##.app_download_banner
 ||indeed.com/m/_iphone/images/indeed_appicon.
@@ -554,7 +556,6 @@ ekitan.com##.header-app-invitation
 erecipe.woman.excite.co.jp##.headerWebToApp
 gamewith.jp##.gdb-game-header-follow-btn-only
 gnavi.co.jp##.p-webapp
-gunosy.com##.header_app_dl
 gunosy.com##.store_fixed_footer
 hatalike.jp##.hdr_app_wrap
 haveagood.holiday###androidAppBannerTop
@@ -572,7 +573,9 @@ kinarino.jp##^#download-app
 kt.wowkorea.jp##.uz-ny ~ a[href*=".page.link/"] + br
 kt.wowkorea.jp##.uz-ny ~ a[href*=".page.link/"] + br + br
 kt.wowkorea.jp##div[style="background-color:#FFFFFF; border:1px solid #D4D4D4; width:95%;-webkit-border-radius:10px;-moz-border-radius:10px;"]
-kurashiru.com##.AppLp-root
+kurashiru.com##.AppLp-content
+kurashiru.com##.DlySemiModal
+kurashiru.com##.SpApp-recipesShowFloatButton
 kurashiru.com##.header-app-banner
 limia.jp##.InductionOverlay
 lulucos.jp##.GlobalSmartAppBanner
@@ -584,7 +587,7 @@ mobile.twitter.com###layers div[dir="auto"] > span:has-text(/在应用上更好|
 muji.com###header-app-link
 myoji-yurai.net###app_ad
 nana-music.com##.heading-banner
-navitime.co.jp##.app_dl_banner_frame
+navitime.co.jp###smartapp-banner-area
 news.tv-asahi.co.jp##.sp-app-banner
 newspicks.com##.footer-app-lead
 nhk.or.jp###appsbanner

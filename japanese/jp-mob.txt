@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220403
+! Version: 20220405
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -30,6 +30,7 @@
 ||booklive.jp/resources/a/sp/v2/images/top/banner/palmie_640_90.png
 ||books.rakuten.co.jp/books/img/js/smart/sp-footer-ad-banner
 ||cdngc.net/web/portal/banner/bnr_600x500_pr_$domain=dokuha.jp
+||chesterstream.akamaized.net/chester-adcross/$domain=ameblo.jp
 ||cp.glico.jp/powerpro/wp-content/uploads/sp_750x118_
 ||cpcdn.com/assets/device/ad/$domain=cookpad.com
 ||cxpublic.com^$domain=googirl.jp
@@ -172,6 +173,7 @@ ameblo.jp##aside[class^="_"] > div[class^="_"] > div[class^="_"] > ul:last-child
 ameblo.jp##aside[class^="_"]:first-child > div:not([class]):empty + div[class^="_"]:empty
 ameblo.jp##aside[class^="_"]:only-child > aside[class^="_"] > div[class^="_"]:only-child > div[class^="_"]:only-child
 ameblo.jp##div[class^="_"] > aside[class^="_"] > div[class^="_"] > div[id*="adFooterMegaPanel"]:upward(3)
+ameblo.jp##div[data-slot-type="injectedAds"]
 ameblo.jp##div[style="overflow: hidden;"] > div[class^="_"]:last-of-type > aside[class^="_"]:only-child > div[class^="_"] > aside[class^="_"]:only-child > div > div:empty:upward(3)
 ameblo.jp##div[style="overflow: hidden;"] > main > div > div.LazyLoad[style="height: 80vw;"]:only-child
 ameblo.jp##div[style="overflow:hidden"] > div[class^="_"] > aside[class^="_"] > div:not([class]) > div[class^="_"]:empty
@@ -637,6 +639,8 @@ s.minkabu.jp##.ad_iframe_unset
 s.rbbtoday.com##.aside-box-ad
 s.response.jp##.aside-box-ifad
 s.response.jp##div[style*="width:100%;min-height:280px"]
+s.tabelog.com##.contents-ad
+s.tabelog.com##.js-floating-tieup-banner
 s.tabelog.com##.rsttop-ad
 sankei.com###sponsored
 sankei.com##.module_ad + section.module.secondary
@@ -651,6 +655,7 @@ sotokabe.net###footer_sticky_menu
 sp.m.jiji.com##.spView > div[style^="margin"] > div[id^="div-gpt-ad"]:upward(1)
 sp.netkeiba.com##.nk_AdvBox_sp_01
 sp.nicovideo.jp###jsBlockedPremiumBottomFixedBannerContainer
+sp.nicovideo.jp###jsBlockedPremiumMiddleBannerContainer
 sp.nicovideo.jp###jsTagRelatedBannerContainer
 sp.nicovideo.jp##.ads-FooterAdContainer
 sp.nicovideo.jp##.siteWide-BannerAd
@@ -939,6 +944,7 @@ zai.diamond.jp##^.sp-floating-banner
 
 h-ken.net##+js(acis, onload, ad)
 javmix.tv##+js(acis, addEventListener, style.display)
+phileweb.com##+js(rc, has-topbanner, header.has-topbanner)
 m.hd21.com,m.nuvid.com##+js(set, player.postitialTimeout, 0)
 m.hd21.com,m.nuvid.com##+js(aopr, mobileAdvPop)
 m.sextvx.com##+js(acis, document.querySelectorAll, popMagic)

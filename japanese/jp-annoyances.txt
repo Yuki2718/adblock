@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220404
+! Version: 20220405
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -1868,6 +1868,8 @@ pc-koubou.jp##^.banner-side
 ||carsensor.net/static/sp/img/top/bnr.png
 ||cityheaven.net/img/tiktok_footer_banner.jpg
 cityheaven.net##.tiktok_banner_box
+||k-img.com/images/smartphone/global_footer/premium/footer_banner_premium_$domain=s.tabelog.com
+s.tabelog.com##.p-global-footer__premium
 ||newspicks.com/images/top-premium-banner-
 newspicks.com###top-premium-banner-area
 ||rakuten-bank.co.jp/shared/top/images/str-main/fbnr-
@@ -1929,6 +1931,10 @@ aemenstore.com,aloass.com,alobyt.com,alocd.com,alogum.com,aloguy.com,alohdd.com,
 android-apk.org,icutlink.com##+js(nano-sib, time)
 apkmaza.net##+js(nano-sib, downloadButton)
 apkmb.com##+js(nano-sib, show_download_links)
+apps2app.com###timer
+apps2app.com##+js(nano-sib, gotolink)
+apps2app.com##+js(ra, disabled, button)
+apps2app.com##button:style(display: inline-block !important)
 appsmodz.com,mac-torrent-download.net,note1s.com##+js(ra, disabled, button)
 appsmodz.com##+js(rc, hidden, button)
 appsmodz.com###timer
@@ -2004,6 +2010,7 @@ simsdom.com##+js(nano-sib, clearInterval, *)
 skypng.com##+js(nano-sib, countdownElement)
 slreamplay.*##+js(nano-stb, grecaptcha.ready, *)
 streamtape.*##+js(set, towait, 0)
+techyreviewx.com##+js(nano-sib, timer, 1800)
 thetechywizard.com##+js(nano-sib, timer, 1500)
 tinyurl.is##+js(rc, disabled, #skip-btn)
 tinyurl.is##.navbar-brand
