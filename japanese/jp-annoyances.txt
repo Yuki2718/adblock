@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220406
+! Version: 20220407
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -24,6 +24,7 @@ gendai.ismedia.jp##[href="https://gendai.ismedia.jp/articles/-/81809"]
 ||cpcdn.com/assets/extensions/halloween2021_spweb_lead/halloween2021_modal_top_$domain=cookpad.com
 ||cpcdn.com/assets/extensions/halloween2021_spweb_lead/modal-$domain=cookpad.com
 cookpad.com###halloween2021_modal
+blog.livedoor.com##body[data-page="top"] > a[href="https://blog.livedoor.com/tag/"]
 instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 !#endif
 
@@ -1158,8 +1159,8 @@ tv.yahoo.co.jp###prm_Modal
 dpoint.jp##.banner_block_modal.dispnone_wide
 ||gamewith.jp/bookmark/chrome.png
 gamewith.jp##.to-btn--bookmark
-||k-img.com/packs/smartphone/image/tpoint_appli_2times_unmember_$domain=s.tabelog.com
-s.tabelog.com##.js-modal-overlay-clickarea > div#js-tpoint-appli-2times-modal:upward(1)
+||k-img.com/images/smartphone/webtoapp/$domain=s.tabelog.com
+s.tabelog.com##.js-modal-overlay-clickarea
 s.tabelog.com##html.is-overlay-visible:style(overflow-y: auto !important;)
 s.tabelog.com##html.is-overlay-visible body:style(overflow-y: auto !important;)
 ||kokoiko.smbc-card.com/sp/static/images/surface/sub_mall/
@@ -1187,6 +1188,7 @@ lulucos-bys.jp##.m-navi-expert
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
 m.qoo10.jp##+js(acis, $, layerpopup_mainBanner)
 m.youtube.com##.mealbar-promo-renderer
+magazine.tabelog.com##.tm-floating-banner
 media.rakuten-sec.net##.m-vote-banner
 oceans-nadia.com###nadia-popup
 oceans-nadia.com###popup-overlay
@@ -1208,6 +1210,8 @@ reddit.com##.scroll-is-blocked:style(overflow: auto !important;)
 reddit.com##div[style^="filter: blur"]:style(filter: none !important;)
 reddit.com##shreddit-experience-tree
 reddit.com##xpromo-untagged-content-blocking-modal
+s.tabelog.com##.p-webtoapp-banner
+s.tabelog.com##.rstlst-map-box__tabelog-appli
 songsterr.com###app > aside#promo
 yourmystar.jp##^.toast-banner-block
 zeiri4.com##.b-stickyShoukaiBanner
@@ -1895,6 +1899,7 @@ recochoku.jp##^.header-campaign-bnr
 s.response.jp##^.aside-box-pickup
 sbc-dental.com##.kotei-mob
 sp.m.jiji.com##.spView > div.banner
+special.goo.ne.jp###bfb_content_sp
 transit.yahoo.co.jp##.mdSidePromo
 watch.impress.co.jp##.extension > aside.special
 wowma.jp###promotionBanner
@@ -1971,6 +1976,7 @@ gifans.com##+js(nano-sib, wpsafe-time)
 hdwallpapers.net,uploadflix.org##+js(nano-stb, seconds)
 highload.to##+js(nano-stb, counter)
 icutlink.com##+js(set, sec, 0)
+itscybertech.com###capbtn,#gtbtn2:style(display: block !important)
 janusnotes.com##+js(nano-sib, , 100, 0)
 jpopsingles.eu,shortenbuddy.com##+js(nano-sib, downloadTimer)
 jpvariety.com##+js(nano-sib, skip-video)
@@ -2004,6 +2010,7 @@ ponta.abstractpainting.work##+js(nano-stb, [native code], 4000, 0.2)
 ponta.abstractpainting.work##+js(set, FIRST_DELAY, 0)
 ponta.abstractpainting.work##+js(set, NEXT_DELAY, 0)
 premiumebooks.xyz##+js(nano-stb, st2)
+premiumebooks.xyz##+js(nano-stb, subentry, 4000)
 proviralhost.com,urbharat.xyz##+js(nano-sib, timePassed, 1300)
 py.md##+js(nano-sib, countdown)
 redirect.dafontvn.com###btngetlink:style(display: inline-block !important)

@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220406
+! Version: 20220407
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -184,7 +184,7 @@
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 ##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height:"]:not([class])
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]:not([class])
-##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style*="transform: translateX(-50%); z-index: 2147483647; position: fixed"]:not([src])
+##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style*="z-index: 2147483647; position: fixed"]:not([src])
 ##iframe[style$="position: fixed !important; display: block !important; z-index: 2147483647 !important; inset: 0px 0px auto auto !important; background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0% !important; min-height: 100% !important;"]:not([src])
 ##iframe[style*="opacity: 1 !important; max-width: 420px !important"][style*="position: fixed !important; display: block !important; z-index: 2147483647 !important"]:not([src])
 ##iframe[style*="z-index: 2147483647; min-width: 240px !important; display: block !important; max-width:"]:not([src])
@@ -254,9 +254,11 @@
 #@##adAd
 #@##adTeaser
 #@##ads_iframe
+#@##banner-advert-container
 #@##glinkswrapper
 #@##outbrain-paid
 #@##sponsored_link
+#@#.ad-inserter
 #@#.ad-placement
 #@#.ads-iframe
 #@#.adsBox
