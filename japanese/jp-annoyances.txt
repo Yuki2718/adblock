@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220408
+! Version: 20220409
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -229,6 +229,10 @@ youtube-nocookie.com,youtube.com##.annotation.iv-branding
 youtube-nocookie.com,youtube.com##.ytp-cards-teaser
 youtube.com##.ytd-popup-container[style_="BUBBLE_HINT_STYLE_BLUE_TOOLTIP"] #details-text > yt-formatted-string:has-text(このチャンネルのメンバーシップを購入すると):upward(.ytd-popup-container)
 youtube.com##ytd-popup-container > .ytd-popup-container[style^="outline: currentcolor"][force-close-on-outside-click=true] #details-text:has-text(このチャンネルのメンバーになると):upward(.ytd-popup-container[force-close-on-outside-click=true])
+!#if env_mobile
+||cpcdn.com/assets/device/pro_recipe_service/bookmark/bookmark_android.png?$domain=cookpad.com
+cookpad.com##.js_bookmark
+!#endif
 
 ! ---------- Popup/Banner ----------
 /bioep.js$script,domain=~tomshw.it
@@ -1898,6 +1902,7 @@ pixiv.net##.premium-denki-t-footer
 recochoku.jp##^.header-campaign-bnr
 s.response.jp##^.aside-box-pickup
 sbc-dental.com##.kotei-mob
+smt.docomo.ne.jp###WrpAd
 sp.m.jiji.com##.spView > div.banner
 special.goo.ne.jp###bfb_content_sp
 transit.yahoo.co.jp##.mdSidePromo
@@ -1911,6 +1916,7 @@ yahoo.co.jp##.MtoCTool
 /unib0ts/unibots*/*/script.js$badfilter
 /unib0ts/unibots@*/script.js
 ||jivosite.com^$3p,domain=~jivosite.ru
+||showtalk.jp^$3p
 ||sinclo.jp^$3p
 
 ||cs.myjcom.jp/servlet/servlet.FileDownload$image
@@ -1953,7 +1959,6 @@ appsmodz.com###timer
 azmath.info,downfile.site,downphanmem.com,trangchu.news##+js(nano-stb, "#proceed", 9000)
 basket.step.rakuten.co.jp##+js(ra, checked, .ratCustomEventForCheckbox[data-rat-key=ratcart])
 bdupload.*,best18vd.com,bestmoneysites.com,coolrom.com.au,desiupload.*,hubfiles.ws,idea4cash.com,indishare.*,jptorrent.org,katfile.com,lnk2.cc,sourceforge.net,techmyntra.net,uploaded.net,uploadfiles.pw,uploadraja.com,uploadrar.*,userupload.*,zupload.me##+js(nano-stb)
-bestshort.xyz,forex-gold.net##+js(nano-sib, timeleft)
 bingotingo.com###please-wait
 bingotingo.com##+js(nano-sib, counter, , 0.02)
 bitefaucet.com##+js(nano-sib, timeLeft)
@@ -1971,6 +1976,7 @@ ez4mods.com,techmody.io,yoshare.net##+js(nano-sib, , *, 0)
 ec.line.me##+js(nano-stb, goOutlink, 2800)
 file4go.*##+js(set, time, 0)
 findicons.com##+js(nano-sib, wait_seconds)
+forex-gold.net##+js(nano-sib, timeleft)
 forexeen.us,getwallpapers.com,health-and.me,itscybertech.com,luutruhay.net,mobi2c.com,thaitrieuvi.live,uniqueten.net,yalla-shoot-now.us##+js(nano-sib, counter)
 hdwallpapers.net,uploadflix.org##+js(nano-stb, seconds)
 highload.to##+js(nano-stb, counter)
@@ -2119,7 +2125,7 @@ buzzfeed.com###mod-embed-1
 ||w.atwiki.jp/common/_js/preconnect.
 ||xhcdn.com/xh-desktop/*.parental-control.js
 fistia.proj.tokyo##.v-alert.info a.white--text[href="/about"]:upward(.info)
-fullxh.com,hamsterix.*,megaxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhwebsite.com,xhwide1.com##+js(rc, xh-thumb-disabled, html)
+fullxh.com,hamsterix.*,megaxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhtab2.com,xhwebsite.com,xhwide1.com##+js(rc, xh-thumb-disabled, html)
 abandonmail.com##+js(aopr, indexedDB.open)
 ac-illust.com##+js(set, ajaxCheckIsEnableSearch, noopFunc)
 ampmedia.jp##.article-vote-area
