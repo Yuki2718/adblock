@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220409
+! Version: 20220410
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -23,7 +23,7 @@
 
 ! ---------- Ads general ----------
 -300x250-$~xhr
-.org/ad/$1p,domain=~playguide.org|~sonoyama.org|~ufcw870.org
+.org/ad/$1p,domain=~playguide.org|~sonoyama.org|~ufcw870.org|~ylilauta.org
 /banner728x90.
 /^https:\/\/www\.[a-z]{8,14}\.c(?:om|lick)\/[a-z]{1,4}\.js$/$script,3p,match-case
 /^https?:\/\/[0-9a-z]{7,18}\.com\/(?:ace|animate|bootstrap(-datepicker)?|ckeditor|slick)\.min\.js\?1\d{6}$/$script,3p
@@ -303,6 +303,7 @@ _omniture.$script,domain=mathworks.com
 ||fraudjs.io^$3p
 ||geoip-js.com^$3p
 ||geolocation-db.com^$3p
+||h-cast.jp^$3p
 ||iesnare.com^
 ||inpref.com^$3p
 ||ioam.de^
