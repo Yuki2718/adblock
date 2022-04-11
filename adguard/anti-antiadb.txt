@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220411
+! Version: 20220412
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -60,7 +60,7 @@
 /^https:\/\/[a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,76}[A-Z])(?=[-_a-zA-Z]{0,76}[0-9])[-_0-9a-zA-Z]{54,77}$/$script,third-party,match-case
 /^https?:\/\/www\.[0-9a-z]{5,11}\.(?:com|name)\/ok\/ok\.js$/$script,~third-party,match-case
 /^https?:\/\/[-0-9a-z]{4,}\.[a-z]{2,7}(\.[a-z]{2})?\/apis-\d\.js(\?v=\d)?$/$script,~third-party
-/^https?:\/\/[a-z]{6,14}\.(?:com?|pro|info|xyz)\/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][9VZ][\.\/_A-Za-z][6yz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,third-party,match-case
+/^https?:\/\/[a-z]{6,14}\.(?:com?|pro|info|xyz)\/[ac][-\.\/_A-Za-z][DHW][-\.\/_A-Za-z][59VZ][-\.\/_A-Za-z][6wyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:top|xyz)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$subdocument,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:top|xyz)\/(?:ajax|articles|config|custom|data|menu|resources|validators)(?:\.json)?$/$xmlhttprequest,third-party
 /^https?:\/\/[a-z]{8,15}\.(?:top|xyz)\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{41,}=?=?$/$stylesheet,third-party,match-case
@@ -80,6 +80,7 @@
 /a/prl/vst/*
 /a/vsl/vst/*
 /ab/thejsfile.js
+/ajax/banner/list?page=$xmlhttprequest,~third-party
 /api/pop.php$xmlhttprequest,~third-party
 /api/spots/*&ev$script
 /api/spots/*&fill=$xmlhttprequest
@@ -178,7 +179,7 @@
 ###rvt-inline-1
 ##.ad-placement:not(.adsbox):not(.afs_ads)
 ##a#mobile_pop.js-mob-popup
-##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 100%;"][style*="height: 100%;"]
+##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="height: 100%;"][style*="z-index:"]
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="width: 9"][style*="height: 9"][style*="z-index:"]
 ##a[id][href*="/PVZ/PVZ.php?c="]
 ##a[style="position: absolute; inset: 0px; display: block;"][href*="?promo="][target="_blank"]
