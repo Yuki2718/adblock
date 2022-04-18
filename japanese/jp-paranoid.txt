@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220417
+! Version: 20220419
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -69,6 +69,7 @@ _Ad300x250_
 search.rakuten.co.jp##.keywordcontent.dui-card
 ||rakuten-static.com/1/js/anl/$domain=member.id.rakuten.co.jp
 ||s3.reutersmedia.net/resources/*&rtn=$image
+||storage.googleapis.com/img-pcolle/$domain=~pcolle.jp|~seihukujyosi.com
 ||webike.net/sys_images/saimg/*_1000_45.$domain=webike.net
 @@||adframe.kohsoku.info/ads/$frame,domain=xn--cck1a7gsd645rnx7b.com,badfilter
 @@||cdn.logly.co.jp^$image,domain=veryweb.jp,badfilter
@@ -103,9 +104,13 @@ youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 
 !#if !env_firefox
 gizmodo.jp,lifehacker.jp##.inner-buy-box
+iwate-np.co.jp##.news-box-article-list > li:has-text(広告)
+iwate-np.co.jp##.type1:has-text(広告)
 !#endif
 !#if env_firefox
 gizmodo.jp,lifehacker.jp##^.inner-buy-box
+iwate-np.co.jp##^.news-box-article-list > li:has-text(広告)
+iwate-np.co.jp##^.type1:has-text(広告)
 !#endif
 
 ! ---------- Exception for ads ----------
@@ -540,6 +545,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||cxense.com/public/widget/click/*?cx_$doc,removeparam=/^cx_/
 ||directededge.com/widget?*&tracking=$script,3p,removeparam=tracking
 ||duckduckgo.com/?t=$doc,removeparam=t
+||github.com/?tags=$doc,removeparam=tags
 ||google.com/travel/hotels/entity/*?tcfs=$doc,removeparam=tcfs
 ||google.com/travel/things-to-do/*&dest_src=$doc,removeparam=dest_src
 ||instagram.com^*?igshid=$doc,removeparam=igshid
