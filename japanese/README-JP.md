@@ -1,16 +1,21 @@
-### お知らせ（2022年3月21日）
+### お知らせ（2022年4月20日）
+
+**Chromium Manifest V3（MV3）への当レポジトリの対応予定（現時点、変更する可能性あり）**
+
+今年いっぱいでManifest V2（MV2）のサポートが終了し、Chrome, EdgeなどではuBlock Originが使えなくなることが予想されます。ユーザーの方はFirefoxに乗り換えていただくか、またはAdGuard拡張機能への切り替えを推奨します。以下は当レポジトリの現時点での対応予定です。
+
+以前アナウンスした内容になりますが、「MV2のサポート終了までにAdGuard日本語フィルタを強化する」という目標はある程度達成されつつあると思います。しかし依然としてYuki's uBlock Japanese filtersとの差はありますし、それを埋めるにも限界があります。そこでAdGuardのMV3対応Chrome拡張機能専用の、AdGuard日本語フィルタ強化パッチを作成しようかと思案しています。主な内容は
+
+- サイトのトラフィックなど、基準の違いによりAdGuard日本語フィルタで対応しない対象
+- AdGuard公式フィルタでの採用が難しい、強力な汎用ルール（一部はアンチ広告ブロック対策強化パッチに入れており、おそらくincludeします）
+
+Chrome拡張機能専用とすることでアプリ版特有の様々な問題を無視できますし、Baseと日本語フィルタの利用を前提とすることでスクリプトレットの干渉といった問題を無視できます。また、AdGuardではプライバシー用フィルタの適用は任意ですので、このパッチは広告と一部の過剰な迷惑要素にターゲットを絞ります（トラッキング用のパッチを別途作成するかは未定）。
+
+また、uBlock Origin文法と高い互換性があり、標準でuBlock Originのフィルタを採用しているBraveの広告ブロックをYuki's uBlock Japanese filtersのサポート対象に加えることも検討していますが、正規表現の制約などはすぐには解決しないでしょうし、Brave特有の問題も多いため機能制限版かつ限定的サポートという形になるでしょう。需要があればMV2終了を待たずにサポートを開始するかもしれませんが、最低でもドメインワイルドカードの問題が解決するまではサポートしません。
+
+（2022年3月21日）
 
 AdGuard DNSフィルタ不具合修正パッチを公開しました。また、280blocker adblock filter 悪質サイト対策強化パッチは近々公開を停止いたします。ご利用の方は購読解除をお勧めいたします。
-
-（2022年3月~~17~~30日修正　本文の誤読によるかはわかりませんが、不正確な情報が散見されるため記述を修正）
-
-昨今のウクライナ情勢のあおりを受けてAdGuardのフィルター更新が停止するという噂が散見されますが、デマです。AdGuard 日本の[tweet](https://twitter.com/AdGuardJP/status/1497546997720489987)を拡大解釈してしまったのかもしれませんが、「ほとんどがウクライナに在住」しているのはサポートスタッフであり開発者でもフィルターチームでもありません（注1）。[こちら](https://github.com/AdguardTeam/AdguardFilters/commits/master)をみていただくとわかりますように、更新はこれまでとまったく変わりなく行われています（注2）。フィルターチームの正規メンバーにウクライナ在住のスタッフがいるのは事実で、3月30日現在もウクライナで仕事をしています（注3）。一方、他のメンバーはウクライナ在住ではなく、最悪の事態になってもフィルター更新が完全に停止することはありません（直接コミット権を持つ外部ボランティアは当管理人だけです）。なお、AdGuardがウクライナ製というデマについては@hirorptさんが[まとめて](https://min.togetter.com/DK8Ur6K)くださっています。
-
-<sub>注1：開発者の多くはロシアにいましたが、全体の半数はキプロスに移動が完了しています。</sub>
-
-<sub>注2：土日は以前よりほとんどの公式スタッフは休みです。また、これも以前より各メンバーが長期休暇を取ることもあります。</sub>
-
-<sub>注3：ウクライナでは総動員令の影響で男性職員を避難させることはできませんが、AdGuard CTOによると本日30日の交渉で「よい兆候」（positive sign）が得られたとのことです。</sub>
 
 ## Yuki's uBlock Japanese filters （雪フィルタ）
 
@@ -32,7 +37,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 - 広告を目にしないことより、通信量の削減が第一
 - ある程度は悪質サイトやコインマイナーもブロックしてほしい
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">購読する（他の日本用リストは無効化推奨）</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">購読する（他の日本用リストは無効化推奨、AdGuardでは使わない）</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt)
 
 #### 特徴
@@ -106,7 +111,7 @@ uBlock Originはインストールしたての状態でも広告ブロッカー�
 - Google Safe Browsingでカバーされている、またはモバイル限定の悪質サイト
 - 失効ドメイン
 
-<details>
+<details open>
 <summary><strong>購読例</strong></summary>
 
 1. 基本

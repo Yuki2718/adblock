@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220419
+! Version: 20220420
 
 -rss.html|
 -rss2.html|
@@ -221,7 +221,9 @@ doucolle.net###right_b
 dougle.one##.ad-box
 ||dougle.one^$image,3p
 ||ds-ai.net/zxiywu/webroot/widgets/
-||eegg.fun/rssline*$frame,1p
+||eegg.fun/js/exfd*.js$script,1p
+||eegg.fun/js/sougo_list.js
+||eegg.fun/rssline.html
 ||elog-ch.com/news/newsbbs/
 ||enoge.org/js/blogroll_
 enoge.org###body-in-0
@@ -654,7 +656,10 @@ dougaslot.com##.top-contents
 dougle.one##.outlink
 doujin-eromanga.com##.rss_box
 doujinzone.com,gurum.biz,newtoku.jp##.blogroll
-eegg.fun##.innerframe iframe[src^="/rss"]:upward(.innerframe)
+eegg.fun##.innerframe > div.whiteboard > div > div.indent > center > div[id^="rss_"]:upward(5)
+eegg.fun##.innerframe > div.whiteboard > div > div.indent > div.gcl[data-gcl-entity="sougo-rank"]:upward(4)
+eegg.fun##.innerframe > div.whiteboard > div > div.indent > div.gcl[data-gcl-entity="top-area-ad-bottom"]:upward(4)
+eegg.fun##.innerframe > div.whiteboard > div > div.indent > div[id^="rss_"]:upward(4)
 eguinews.com##div[id^="_tangan_"]
 ekurere3.com,knowledgesokuhou.com##.plugin-memo
 erakokyu.net##.rss_feed
