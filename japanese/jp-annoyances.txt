@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220420
+! Version: 20220422
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -94,6 +94,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||nativesubscribe.pro^
 ||najva.com^$3p
 ||noticious.jp^$3p
+||notifpush.com^$3p
 ||notify.solutions^$3p
 ||notix.io^$3p
 ||onepush.app^$3p
@@ -1489,6 +1490,7 @@ webbu.jp###text-7
 webbu.jp##^#text-7
 !#endif
 !#if env_mobile
+||nli-research.co.jp/files/user/images/sp/common/icon_mailM.png
 cnn.co.jp##.line-news-banner
 newsweekjapan.jp###magazine-bnr
 wsj.com##amp-subscriptions-dialog
@@ -1811,6 +1813,7 @@ wwdjapan.com##.wwdj-banner-top
 ||xgoo.jp/top2018/ocn_under_vpoint_banner/$domain=ocn.ne.jp
 ||yamap.com/ads|
 ||yimg.jp/images/auct/salespromotion/*/728_50.png$domain=auctions.yahoo.co.jp
+||yimg.jp/images/finance/*/bnr/$domain=finance.yahoo.co.jp
 ||yimg.jp/images/yjtop-common/extension/promo/$domain=weather.yahoo.co.jp
 ||youtube.com/embed/_uTPHQMXGOM?list=*&mute=1$domain=airtrip.jp
 airtrip.jp##.top-page > .video-content
@@ -1831,6 +1834,7 @@ bravoporn.com,bravotube.net##.under-video2
 cyclist.sanspo.com###latest-news .sponsored:upward(li)
 dictionary.com##.marketing-message
 felia.373news.com###ticker-area
+finance.yahoo.co.jp##section[id^="pr_sub"]
 google.*###cnt > #appbar + div[class][data-gid][jsaction][style="height: 190px;"]
 imymac.com##.pmmProduct.sideProductBox
 inshokuten.com##.articleDetailPage__textAdTitle
@@ -1985,8 +1989,8 @@ bingotingo.com###please-wait
 bingotingo.com##+js(nano-sib, counter, , 0.02)
 bitefaucet.com,dramaworldhd.co##+js(nano-sib, timeLeft)
 bitmos.co.in,nstnews.net##+js(set, count, 0)
-codecomets.com###timeblock
-codecomets.com##+js(rc, disabled, a#enablebtn)
+codecomets.com,techxpulse.com###timeblock
+codecomets.com,techxpulse.com##+js(rc, disabled, a#enablebtn)
 coinlyhub.com##+js(nano-sib, seconds)
 coolrom.com.au##+js(set, time, 0)
 crypto-faucet.xyz,doctor-groups.com,short.mcmcryptos.xyz##+js(nano-sib, sec--)
@@ -2051,6 +2055,7 @@ simsdom.com##+js(nano-sib, clearInterval, *)
 skypng.com##+js(nano-sib, countdownElement)
 slreamplay.*##+js(nano-stb, grecaptcha.ready, *)
 streamtape.*##+js(set, towait, 0)
+techxpulse.com###msgblock:style(display: block !important)
 techyreviewx.com##+js(nano-sib, timer, 1800)
 thetechywizard.com##+js(nano-sib, timer, 1500)
 tinyurl.is##+js(rc, disabled, #skip-btn)
