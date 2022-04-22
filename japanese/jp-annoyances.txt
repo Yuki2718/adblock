@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220422
+! Version: 20220423
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -21,9 +21,6 @@ store.world.co.jp##.mod_message
 ||youtube.com/embed/3hhC4n3Dr6I|$domain=tamashii.jp
 gendai.ismedia.jp##[href="https://gendai.ismedia.jp/articles/-/81809"]
 !#if env_mobile
-||cpcdn.com/assets/extensions/halloween2021_spweb_lead/halloween2021_modal_top_$domain=cookpad.com
-||cpcdn.com/assets/extensions/halloween2021_spweb_lead/modal-$domain=cookpad.com
-cookpad.com###halloween2021_modal
 blog.livedoor.com##body[data-page="top"] > a[href="https://blog.livedoor.com/tag/"]
 instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 !#endif
@@ -1175,6 +1172,9 @@ usshi-na-life.com##^.td-more-articles-box
 !#if env_mobile
 ||bangumi.org/yahoo/info/info_ipg/YPJ_$domain=tv.yahoo.co.jp
 tv.yahoo.co.jp###prm_Modal
+||cpcdn.com/assets/extensions/*_spweb_lead/*_modal_top_$image,domain=cookpad.com
+||cpcdn.com/assets/extensions/*_spweb_lead/modal-$css,domain=cookpad.com
+cookpad.com##aside[id$="_modal"][data-key]
 ||docomo.ne.jp/portal/dpoint/img/220213_497124_455276.png$domain=dpoint.jp
 dpoint.jp##.banner_block_modal.dispnone_wide
 ||gamewith.jp/bookmark/chrome.png
@@ -1755,6 +1755,7 @@ make-up-solution.com###footerSpbanner
 ||mtame.jp/dcms_media/image/seminar_
 ||mtame.jp/dcms_media/image/webtame_banner_
 ||naturum.ne.jp/usr/n/a/t/*/naturum_accountcreate.png
+||navitime.co.jp/*/account/walk/proplus_myspot_banner.png
 ||netanswerplus.saisoncard.co.jp/WebPc/pages/images/person/login/*_520_230_CS_
 ||news.biglobe.ne.jp/img/bnr/
 news.biglobe.ne.jp###right-side-inner > .bnr > div > a[onclick]:upward(2)

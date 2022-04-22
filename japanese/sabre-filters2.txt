@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220422
+! Version: 20220423
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -100,6 +100,7 @@
 ###cookieinfo-container
 ###cookielaw
 ###cookienotice
+###cookiepop
 ###cookies_message
 ###cookiewrap
 ###eu-cookie-notifier
@@ -194,6 +195,7 @@ zenoah.com##.cookies-notice
 /cookie-prompt.$domain=adblockplus.org
 /cookie-raw.js$domain=abeam.com
 /cookie_agree.css$domain=nichicon.co.jp|takara-bio.*|tamura-ss.co.jp
+/cookie_agree.js$domain=nichicon.co.jp
 /cookie_flyout.$domain=festo.com
 /cookie_notice.$domain=sherdog.com
 /cookiebanner.$domain=sinanengroup.co.jp
@@ -278,7 +280,7 @@ _eu_cookie_$domain=nbcsports.com
 ||netgear.com/js/jquery-cookie/jquery.cookiecuttr
 ||nipponsteel.com/common/js/modal.cookie.control.js
 ||ocnk.net/js/confirmation-bar.js
-||onetrust.com^$third-party,domain=chelseafc.com|citizenwatch-global.com|fujifilm.com|glico.*|lion.co.jp|milbon.com|nkkswitches.co.jp|pixabay.com|powerproduction.jp|sportingnews.com|sumida.com
+||onetrust.com^$third-party,domain=chelseafc.com|citizenwatch-global.com|fujifilm.com|glico.*|lion.co.jp|milbon.com|nabtesco.com|nkkswitches.co.jp|pixabay.com|powerproduction.jp|sportingnews.com|sumida.com
 ||optanon.blob.core.windows.net^$domain=comodo.com
 ||ox.ac.uk/portal_javascripts/Turnkey%20Theme/resourcecollective.cookielawcookielaw_init
 ||pages.ubembed.com/*/a.html?closedAt=$subdocument,domain=dlink.com
@@ -438,9 +440,9 @@ cxense.com###cookieConsentDiv
 daicel.com##.js-gdpr-popup
 daiichisankyo-ep.co.jp,evaair.com,gingerweb.jp,gs-yuasa.com,lunavpn.net,macnica.co.jp,sinko-soko.jp,yoyogames.com###cookie
 dailymotion.com##div[class^="CookiePopup_"]
-daiwabo-holdings.com,satoshoji.co.jp##.ux_popup_cookie_warning
+daiwabo-holdings.com,.jsw.co.jp,satoshoji.co.jp##.ux_popup_cookie_warning
 dalton.co.jp###cookie-policy-modal
-darkflash.com,ddos-guard.net,idemitsu.com,idss.co.jp,ixxx.red,koreanair.com,malavida.com,monosnap.com,pdf.easeus.com,soft32.com,takeda.com,weddingpark.net,ytddownloader.com##.cookie
+darkflash.com,ddos-guard.net,idemitsu.com,idss.co.jp,ixxx.red,koreanair.com,malavida.com,monosnap.com,moriroku.co.jp,pdf.easeus.com,soft32.com,takeda.com,weddingpark.net,ytddownloader.com##.cookie
 dataprotection.com.ua,drweb-av.de,drweb-av.es,drweb-av.it,drweb-av.pl,drweb.cn,drweb.co.jp,drweb.com,drweb.fr,drweb.kz,drweb.ru###cookie_accept_msg_block
 dbschenker-seino.jp##div[data-privacy-components=""]
 dbschenker-seino.jp##[class*="no-scroll"]:style(overflow: auto !important; height: auto !important;)
@@ -547,6 +549,7 @@ ibispaint.com###agreementPane
 icegaytube.tv##.b-cookie
 idaireland.jp##.cookie-overlay
 ids-imaging.com###privacycheck
+ihi.co.jp###cookiepop
 imagefu.com###cook
 imezi.jp##.woodmart-cookies-popup
 imobie.jp##.fixedbot
@@ -565,6 +568,7 @@ jabref.org###animatedComponent[style="transform: translateY\(0px\);"] > div[data
 jae.com##.p-gdpr
 jamanetwork.com##.widget-GdprCookieBanner
 japanforunhcr.org,naturesway.com##.privacy-warning
+japex.co.jp##.c-gdpr
 javhd.com##.jcookie
 jica.go.jp###cookie_bnr
 joyourself.com,liveprivates.com##.notifier-18
@@ -658,6 +662,7 @@ nvidia.com###cookiePolicy-layer
 octoparse.jp###snackbar
 ohara-inc.co.jp###gdpr-notice
 okayaelec.co.jp###gdpr_notice
+olba.co.jp###cookieAgree
 online-convert.com###qg-toast
 onlyfans.com##.b-cookies-informer
 openspeedtest.com###cookieconsent
@@ -807,8 +812,10 @@ twitter.com##.u12-data-protection-notice
 txxx.*,upornia.*,xnxx.com,xvideos.com,vxxx.com##.cookie-notify
 ubisoft.com##.privacy__modal
 ubs.com##.privacysettings__banner
+ulvac.co.jp##.gdpr-area
 ungleich.ch###gdprBanner
 unicef.or.jp###js-cookie-notice
+united.com##div[class^="app-components-CookieDisclaimer"]
 unscreen.com##.banner
 uploadcare.com##div[class^="CookieBanner_"]
 usenix.org##.sliding-popup-top
@@ -844,6 +851,7 @@ xfreehd.com##.cookieAcceptBox
 xn--7gqs08ef7b.jp##.notice-banner
 yamaichi.co.jp###gdpr
 yaskawa-global.com##.gdpr_message
+ycp.com##div[x-data="configCookies()"]
 yokohamatoyopet.jp###GDPR
 york.ac.uk##.c-cookie-banner
 yubico.com##.cookie-notice-big
