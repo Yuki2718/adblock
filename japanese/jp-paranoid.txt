@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220423
+! Version: 20220424
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -364,6 +364,7 @@ _omniture.$script,domain=mathworks.com
 ||livechatinc.com/tracking.js
 ||misumi-ec.com/vcommon/common/js/dtm-
 ||news.mynavi.jp/assets/tagmanager_techplus-
+||nicovideo.jp/*/user/actions/video/watch-events.json?
 ||popin.cc/td_js_
 ||r.r10s.jp/com/rat/sc/
 ||rakuten-sec.co.jp/web/shared/js/amy-ai-chat/fingerprint*
@@ -491,6 +492,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 &linkCode=$doc,removeparam=linkCode,domain=amazon.*
 &sc2id=af_$doc,removeparam=sc2id,domain=rakuten.co.jp
 &utm_medium=game^$frame,removeparam=/^utm_/,domain=softgames.com
+*$doc,removeparam=CAMP_CD,domain=au-sonpo.co.jp
 *$doc,removeparam=af_click_lookback,domain=appsflyer.com
 *$doc,removeparam=af_id,domain=pampi.jp
 *$doc,removeparam=af_siteid,domain=appsflyer.com
