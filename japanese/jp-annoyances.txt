@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220423
+! Version: 20220424
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -679,7 +679,6 @@ biglobe.ne.jp###spage-popup
 ||topcard.co.jp/images/address_pop*$image,1p
 ||toyo-tos.co.jp/resource/img/onlineshop-banner.png
 toyo-tos.co.jp##.special-banner
-||tripla.jp/wp-content/uploads/*/shiryoudownload.png
 ||tsuiran.jp/js/vendor/jquery.layerBoard.js
 ||tunepat.jp/images/youtube-music-top-banner.png
 tunepat.jp###youtubemusicconverter
@@ -832,6 +831,7 @@ express.co.uk##.breaking-news-container
 ext.hp.com##.cmnbox01 > div.repo
 ezgif.com##div[style$="min-height:90px;display:block"]
 facebook.com###pagelet_growth_expanding_cta
+facebook.com##+js(aeld, scroll, showPopup)
 fandom.com##.banner-notifications-placeholder
 fantia.jp##.fanclub-btns > div.popup-bar.is-clone
 faq.support.biglobe.ne.jp###suMiniEnqueteWrapper
@@ -1031,6 +1031,7 @@ shanxivideo.net,video.fc2.com##.login-footer
 shimizu-koumuten.com###foot_fixed
 shingakunet.com##.l-footerFix
 shopping.yahoo.co.jp##.elSticky > .elBanner
+simchange.jp##.l-floatCta
 skyscanner.jp###modal-container:has(#pqs-form)
 skyscanner.jp##body[style^="overflow: hidden;"]:style(overflow:auto!important)
 slack.com##.purple_banner_style
@@ -1579,6 +1580,7 @@ encyclopedia.ushmm.org###open-feedback
 excite.co.jp##.linkaff
 facebook.com##div[data-pagelet*="FeedUnit"]:has-text(/Suggested for You|おすすめの投稿/)
 facebook.com##div[role="main"] div[style="height: 0px;"] + div[class] > div[class] > div[class] div[class] div[class][style*="border-radius"]
+facebook.com##fieldset > legend > div[style^="margin-start"] span > span[style$="-webkit-box"]:has-text(/^この情報は役に立ちましたか？$/):upward(fieldset)
 fandom.com###SurveyModule
 finders.me##.__popin
 finders.me##.__recommendedPosts
@@ -1949,6 +1951,7 @@ yahoo.co.jp##.MtoCTool
 ||jivosite.com^$3p,domain=~jivosite.ru
 ||showtalk.jp^$3p
 ||sinclo.jp^$3p
+||tripla.jp^$3p
 
 ||cs.myjcom.jp/servlet/servlet.FileDownload$image
 cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
