@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220426
+! Version: 20220427
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -79,6 +79,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||digipush.io^$3p
 ||ecp.heydouga.com/common/notification/
 ||event.notifier.rakuten.co.jp^
+||feedify.net^$3p
 ||fkondate.com^$3p
 ||foxpush.net^$3p
 ||gravitec.net^$3p
@@ -187,6 +188,7 @@ adult.contents.fc2.com##.dealArticleNotice
 baito.mynavi.jp##.alertWrap
 bible-cafe.com##.news-ticker
 bilibili.com##.login-tip
+cfg.smt.docomo.ne.jp##.hdr_bcpmes
 cookpad.com##.myfolder_button_wrapper > .notification
 dailymail.co.uk##+js(set, PushManager, undefined)
 drive.google.com##a[data-target=clientDownload]:upward(3)
@@ -231,6 +233,7 @@ youtube.com##ytd-popup-container > .ytd-popup-container[style^="outline: current
 !#if env_mobile
 ||cpcdn.com/assets/device/pro_recipe_service/bookmark/bookmark_android.png?$domain=cookpad.com
 cookpad.com##.js_bookmark
+id.smt.docomo.ne.jp##.header_posting
 !#endif
 
 ! ---------- Popup/Banner ----------
@@ -411,6 +414,14 @@ digitaldiy.jp##div[class^="boxzilla-"]
 ||digitalidentity.co.jp/blog/*/footer/bnr_$image,1p
 digitalidentity.co.jp##.bnr_floating01
 ||dlsoft.dmm.co.jp/js/des/notice.
+||dmarket.docomo.ne.jp/myd/common/img/img_myd_common_tutorial.jpg?
+dmarket.docomo.ne.jp###modalOverlay
+dmarket.docomo.ne.jp###tutorialModal
+dmarket.docomo.ne.jp##.modalLock:style(overflow: auto !important;)
+||dmarket.docomo.ne.jp/top/00_portal/layout_b/img/welcome-overlay_short.jpg?
+dmarket.docomo.ne.jp###container[style^="position: fixed"]:style(position: static !important;)
+dmarket.docomo.ne.jp###firstArea.welcome-cover
+dmarket.docomo.ne.jp##.jqmOverlay
 ||douga.geo-online.co.jp/cmn/js/campaign_misc.
 ||drip.ink/partials/footer_appeal_signup|
 ||e-sogi.com/assets/img/fixedbox/operator_overlay.
@@ -511,6 +522,8 @@ keiyaku-watch.jp##.display.side_dl
 knowledgewing.com##.m_linkBox
 ||kracie.co.jp/kampo/kampofullife/wp-content/themes/kampofullife/common/img/side/float_
 kracie.co.jp##.float_area
+||kuji.dmarket.docomo.ne.jp/assets/images/admin/floating_banner/
+kuji.dmarket.docomo.ne.jp###floating-banner
 ||kurumaerabi.com/images/banner/
 ||lec-jp.com/js/floating/
 lec-jp.com###floating
@@ -807,6 +820,10 @@ deviantart.com###root > header ~ div[class] > span.theme-light > a[href$="/users
 dhbr.net##.tool-box
 digitalocean.com##div[class^="ToastStyles__StyledWrapper-"][style]
 disqus.com##.is-footer.login-overlay__wrapper
+dmarket.docomo.ne.jp##.healthCareStepsBlockOverlay
+dmarket.docomo.ne.jp##.modalHealthCareContainer
+dmarket.docomo.ne.jp##.overlay
+dmarket.docomo.ne.jp##html[style="overflow: hidden;"]:style(overflow: auto !important;)
 dora-world.com###layer_board_area
 dsk-cloud.com###hs_cos_wrapper_Footer_CTA_Popup
 duckduckgo.com##.badge-link.ddg-extension-hide
@@ -1193,6 +1210,8 @@ s.tabelog.com##html.is-overlay-visible body:style(overflow-y: auto !important;)
 ||kokoiko.smbc-card.com/sp/static/images/surface/sub_mall/
 kokoiko.smbc-card.com##.surfaceFixedBanner
 ||res.office365.com/owalanding/*/images/outlook-mobile-apps-$domain=outlook.live.com
+||shufoo.net/s/img/banner/fuwa_fukidashi.png
+s.shufoo.net###okiniiri-fuwatto-banner
 outlook.live.com###mobile-speedbump
 outlook.live.com##body.locked:style(overflow: auto!important;)
 ||yugioh-card.com/yugiohdb/external/image_sp/ja/neuron_bottomimg.
@@ -1923,6 +1942,11 @@ newspicks.com###top-premium-banner-area
 rakuten-bank.co.jp###floating-bnr-area
 ||recochoku.jp/rc-p1/recommendpopup/
 recochoku.jp##.top-campaign-bnr
+||shufoo.net/s/contents/images/top/nyoki/bnr_
+s.shufoo.net##.nyoki
+s.shufoo.net###wrap[style^="margin-top"]:style(margin-top: 0 !important;)
+||shufoo.net/contents/upperBanner_chirashi/
+s.shufoo.net##.upperBnr
 ||wowma.net/exuc/promotion/$domain=wowma.jp
 ||zexy.net/s/contents/adjust/RMP_*/img_banner_
 zexy.net##.campain-banner--fixed
@@ -1993,7 +2017,7 @@ appsmodz.com,mac-torrent-download.net,note1s.com##+js(ra, disabled, button)
 appsmodz.com###timer
 appvn.com###info:style(display: block !important)
 appvn.com##.downloadtitle
-azmath.info,downfile.site,downphanmem.com,trangchu.news##+js(nano-stb, "#proceed", 9000)
+azmath.info,downfile.site,downphanmem.com,memangbau.com,trangchu.news##+js(nano-stb, "#proceed", 9000)
 basket.step.rakuten.co.jp##+js(ra, checked, .ratCustomEventForCheckbox[data-rat-key=ratcart])
 bdupload.*,best18vd.com,bestmoneysites.com,coolrom.com.au,desiupload.*,hubfiles.ws,idea4cash.com,indishare.*,jptorrent.org,katfile.com,lnk2.cc,sourceforge.net,techmyntra.net,uploaded.net,uploadfiles.pw,uploadraja.com,uploadrar.*,userupload.*,zupload.me##+js(nano-stb)
 bingotingo.com###please-wait
@@ -2041,6 +2065,8 @@ makemoneywithurl.com##.box-main > div:not([class])
 megaup.net##+js(nano-sib, display())
 menjelajahi.com##+js(nano-sib, time, , 0)
 mixdrop.*##+js(nano-stb, disabled)
+newforex.online###devozon-snp:style(display: block !important)
+newforex.online##[id^="devozon-wait"]
 nexusmods.com##+js(nano-stb, timer)
 note1s.com##.countdown
 ohyeah1080.site##+js(nano-sib, timer, 1100)
@@ -2070,6 +2096,9 @@ slreamplay.*##+js(nano-stb, grecaptcha.ready, *)
 streamtape.*##+js(set, towait, 0)
 techxpulse.com###msgblock:style(display: block !important)
 techyreviewx.com##+js(nano-sib, timer, 1800)
+tecmundo.net###yuidea-btn-before
+tecmundo.net###yuidea-btn:style(display: block !important)
+tecmundo.net##.percent:upward([id^="yuidea-wait"])
 thetechywizard.com##+js(nano-sib, timer, 1500)
 tinyurl.is##+js(rc, disabled, #skip-btn)
 tinyurl.is##.navbar-brand
