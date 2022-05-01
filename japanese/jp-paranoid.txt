@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220429
+! Version: 20220501
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -223,6 +223,7 @@ smart-flash.jp##^.adsBlock
 ||get.mobu.jp^
 ||i2idata.com^
 ||kqzyfj.com/click-$doc
+||menue.jp/ad/$doc
 ||mobadme.jp^$doc
 ||mybest.network^$doc
 ||onlyry.net^
@@ -370,6 +371,7 @@ _omniture.$script,domain=mathworks.com
 ||js.stripe.com/v3/fingerprinted/
 ||linkedin.com/li/track^
 ||livechatinc.com/tracking.js
+||mercari.jp/experiments/$xhr
 ||misumi-ec.com/vcommon/common/js/dtm-
 ||news.mynavi.jp/assets/tagmanager_techplus-
 ||nicovideo.jp/*/user/actions/video/watch-events.json?
@@ -520,6 +522,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=utm_brand
 *$doc,removeparam=vcptn,domain=digi-tag.net
 *$doc,removeparam=vgo_ee
+*$doc,removeparam=xuid,domain=k-manga.jp
 .com/lp/*^utm_medium=$doc,removeparam=utm_medium
 .com/lp/*^utm_campaign=$doc,removeparam=utm_campaign
 .com/lp/*^utm_content=$doc,removeparam=utm_content
