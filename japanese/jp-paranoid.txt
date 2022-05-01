@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220501
+! Version: 20220502
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -427,6 +427,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||api.cxense.com/public/widget/click/$domain=api.cxense.com
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
 @@||api.cxense.com/public/widget/data?$domain=cinemacafe.net|googirl.jp|marketwatch.com|wsj.com
+@@||api.cxense.com/public/widget/data?$script,domain=mainichi.jp
 @@||api.cxense.com/public/widget/data?*&ctx=https%3A%2F%2Fure.pia.co.jp$script,domain=cdn.cxpublic.com
 @@||api.cxense.com^$script,domain=bizjournals.com|ntv.co.jp
 @@||api.ipify.org^$xhr,domain=equinoxplus.com|speedcheck.ky
@@ -435,7 +436,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
 @@||assets.adobedtm.com^*/mbox-contents-$script,domain=nsat.collegeboard.org|sony.jp
 @@||cdn-net.com/cc.js$script,domain=butterfieldonline.com|uber.com|ubereats.com
-@@||cdn.cxense.com/cx.cce.js$domain=tarzanweb.jp
+@@||cdn.cxense.com/cx.cce.js$domain=mainichi.jp|tarzanweb.jp
 @@||cdn.cxense.com/cx.js$domain=tarzanweb.jp|wpb.shueisha.co.jp
 @@||cdn.cxense.com^$script,domain=bizjournals.com|bloombergquint.com|marketwatch.com
 @@||cdx.cedexis.net^$domain=bloomberg.*
@@ -470,8 +471,8 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||rum.perfops.net/rum.min.js$script,domain=cdnperf.com
 @@||s.thebrighttag.com/tag?site=$domain=sephora.com
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
-@@||scdn.cxense.com/cx.cce.js$script,domain=cinemacafe.net|grajapa.shueisha.co.jp|rbbtoday.com|wpb.shueisha.co.jp
-@@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net
+@@||scdn.cxense.com/cx.cce.js$script,domain=cinemacafe.net|grajapa.shueisha.co.jp|mainichi.jp|rbbtoday.com|wpb.shueisha.co.jp
+@@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|mainichi.jp
 @@||snva.jp/javascripts/reco/$domain=concent.co.jp|mouse-jp.co.jp
 @@||staff-start.com/js/track/$domain=enoteca.co.jp|francfranc.com|store.alpen-group.jp
 @@||toplay.biz/log_event$1p,xhr
