@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220502
+! Version: 20220503
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -85,6 +85,7 @@
 ###CookieContainer
 ###CookieReportsPanel
 ###ac-cookie-compliance
+###bannerCookie
 ###catapult-cookie-bar
 ###cliSettingsPopup
 ###cookie-disclaimer
@@ -170,6 +171,7 @@ dokumen.tips###cookie-law
 dsautomobiles.com##.layer_cookie
 etvos.com###cookieBox
 ffec.co.jp##.CookieNotification
+fresheye.com###bannerCookie
 gimatic.com##.avia-cookie-consent-wrap
 haier.com##.cookie_box
 ingress.com,nianticlabs.com,pokemongolive.com##ark-cookiebar
@@ -202,8 +204,8 @@ zenoah.com##.cookies-notice
 /cookie-banner$domain=airfrance.*|audioremover.com|brita.co.jp|docucompress.com|fileconverto.com|imagesmaller.com|mp3louder.com|paypal.com|sedo.com|scamvoid.net|sugarsync.jp|urlvoid.com|videosmaller.com|videotoconvert.com|youcompress.com
 /cookie-consent.$domain=varonis.com|wolfram.com
 /cookie-consent/*$domain=europa.eu|noticiasesports.live|noweconomy.live|techgeek.digital
-/cookie-law-$~script,domain=5cho-me.com|asahi-transnational.com|audacityteam.org|azbil.com|bunka-s.co.jp|chugai.co.jp|cyphertec.co.jp|dxr.jp|emergency-appeals-alliance.org|gaminplay.com|informaxonline.com|maedakosen.jp|mcury.jp|pornvibe.org|r-chapter.com|safer-networking.org|shinkokenzai.co.jp|toyoknife.co.jp|xigmanas.com|yukes.co.jp
-/cookie-law-info-public.js$domain=5cho-me.com|asahi-transnational.com|audacityteam.org|azbil.com|bunka-s.co.jp|chugai.co.jp|cyphertec.co.jp|dxr.jp|emergency-appeals-alliance.org|gaminplay.com|informaxonline.com|maedakosen.jp|mcury.jp|pornvibe.org|r-chapter.com|sgk.co.jp|shinkokenzai.co.jp|toyoknife.co.jp|xigmanas.com|yukes.co.jp
+/cookie-law-$~script,domain=5cho-me.com|asahi-transnational.com|audacityteam.org|azbil.com|bunka-s.co.jp|chugai.co.jp|cyphertec.co.jp|dxr.jp|emergency-appeals-alliance.org|gaminplay.com|informaxonline.com|maedakosen.jp|mcury.jp|nexa3d.com|pornvibe.org|r-chapter.com|safer-networking.org|shinkokenzai.co.jp|toyoknife.co.jp|xigmanas.com|yukes.co.jp
+/cookie-law-info-public.js$domain=5cho-me.com|asahi-transnational.com|audacityteam.org|azbil.com|bunka-s.co.jp|chugai.co.jp|cyphertec.co.jp|dxr.jp|emergency-appeals-alliance.org|gaminplay.com|informaxonline.com|maedakosen.jp|mcury.jp|nexa3d.com|pornvibe.org|r-chapter.com|sgk.co.jp|shinkokenzai.co.jp|toyoknife.co.jp|xigmanas.com|yukes.co.jp
 /cookie-notice/*$~css,domain=tokyo-np.co.jp
 /cookie-optin.$domain=happyhackingkb.com
 /cookie-policy.js$domain=happyhackingkb.com|qnap.com|stanley.co.jp
@@ -472,7 +474,7 @@ cxense.com###cookieConsentDiv
 daicel.com##.js-gdpr-popup
 daidan.co.jp,jae.com##.p-gdpr
 daidoh-limited.com##.cookieConsent:not(body):not(html)
-daiichisankyo-ep.co.jp,evaair.com,gingerweb.jp,gs-yuasa.com,lunavpn.net,macnica.co.jp,sinko-soko.jp,yoyogames.com###cookie
+daiichisankyo-ep.co.jp,evaair.com,gingerweb.jp,gs-yuasa.com,kurabo.co.jp,lunavpn.net,macnica.co.jp,sinko-soko.jp,yoyogames.com###cookie
 dailymotion.com##div[class^="CookiePopup_"]
 dalton.co.jp###cookie-policy-modal
 darkreading.com,ispa.org.uk,rhc.aero##.cookie-popup:not(body):not(html)
@@ -848,6 +850,7 @@ tohotheater.jp##.optIn
 tokion.jp##.tkn-cookie-accept__area
 tokyotokyo.jp##.annotation-area
 tokyuhotels.co.jp##.gdpr-float-banner
+tomtop.com##.m_privacy_statement
 toyo-eng.com###cookie_dialog
 tp-link.com###tp-cookie
 transcend-info.com###legal_notice
@@ -864,6 +867,7 @@ twitter.com##.u12-data-protection-notice
 txxx.*,upornia.*,xnxx.com,xvideos.com,vxxx.com##.cookie-notify
 ubisoft.com##.privacy__modal
 ubs.com##.privacysettings__banner
+ultimaker.com##.um-consent-bar
 ulvac.co.jp##.gdpr-area
 ungleich.ch###gdprBanner
 unicef.or.jp###js-cookie-notice
@@ -922,6 +926,7 @@ gettr.com##.app-content > div[class^="jss"] > div > .MuiGrid-container > .MuiGri
 !#endif
 !#if env_mobile
 deepl.com###dl_cookieBanner
+m.tomtop.com##div[name="confirm2"]
 !#endif
 
 ! Exception
