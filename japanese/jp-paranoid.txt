@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220503
+! Version: 20220505
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -41,11 +41,13 @@ _Ad300x250_
 
 ! ---------- Ad servers ----------
 ||araklet.mediagene.co.jp^$3p
+||ip.prvtx.net^
 
 ! ---------- Ad servers - adult ----------
 ||imlive.com^$script,3p,domain=~imnude.com
 
 ! ---------- Ads specific ----------
+/wp-content/uploads/*?w=620&ssl=1|$image,domain=megabrasil.jp
 ||4ka.net/images/top/banner/
 ||accuweather.com/bundles/prebid.$important
 ||aiasahi.jp/ads/$important
@@ -57,7 +59,6 @@ _Ad300x250_
 ||concert.io/lib/concert-ads/$script,3p,redirect=noop.js
 ||dospara.co.jp/5img/side/bnr_
 ||ebook-assets.dmm.com^$3p,domain=~brodymag.com|~dmm.co.jp
-||ezoic.net^
 ||facebook.com/ajax/bootloader-endpoint*Comet
 ||g.doubleclick.net/tag/js/gpt.js$important,domain=accuweather.com
 ||i5.walmartimages.com/dfw/4ff9c6c9-29f9/k2-$script
@@ -325,6 +326,7 @@ _omniture.$script,domain=mathworks.com
 ||h-cast.jp^$3p
 ||iesnare.com^
 ||inpref.com^$3p
+||inside-graph.com^$3p
 ||ioam.de^
 ||ip-api.com^$3p
 ||ipapi.co^$3p
@@ -338,7 +340,6 @@ _omniture.$script,domain=mathworks.com
 ||recs.richrelevance.com^$3p
 ||rtoaster.jp^$3p
 ||sail-horizon.com^
-||stlog.d.dmkt-sp.jp^
 ||thebrighttag.com^$3p
 ||tm.ma.future-shop.net^
 
@@ -473,6 +474,8 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
 @@||scdn.cxense.com/cx.cce.js$script,domain=cinemacafe.net|grajapa.shueisha.co.jp|mainichi.jp|rbbtoday.com|wpb.shueisha.co.jp
 @@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|mainichi.jp
+@@||sephora-track.inside-graph.com/gtm/$domain=sephora.com
+@@||sephora-track.inside-graph.com/ig.js$domain=sephora.com
 @@||snva.jp/javascripts/reco/$domain=concent.co.jp|mouse-jp.co.jp
 @@||staff-start.com/js/track/$domain=enoteca.co.jp|francfranc.com|store.alpen-group.jp
 @@||toplay.biz/log_event$1p,xhr
