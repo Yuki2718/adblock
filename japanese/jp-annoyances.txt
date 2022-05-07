@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220507
+! Version: 20220508
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -1139,6 +1139,7 @@ vpnmentor.com##+js(nostif, bioEp.showPopup)
 washingtonpost.com###wall-bottom-drawer
 web-hikari.net##.follow_footer
 web.bridge-net.jp##.fltBnr
+web.skype.com##.noFocusOutline > div > div > div > div > div[style^="position: relative; display: flex; flex-direction: column; flex-grow: 0; flex-shrink: 0; overflow: hidden; align-items: stretch; align-self: stretch; background-color"][style$="border-style: solid;"]
 webukatu.com##+js(nostif, isshowmodal, 3000)
 webprofessional.jp###js_footer
 weeklybcn.com###f_banner
@@ -1568,7 +1569,7 @@ wwdjapan.com##.wwdj-mail-magazine
 ||cdn.reamaze.com^$3p
 ||cxpublic.com^$3p,domain=~wpb.shueisha.co.jp
 ||d.rcmd.jp^
-||gacraft.jp^
+||gacraft.jp^$3p
 ||getsitecontrol.com^$3p
 ||gravityrd-services.com^$3p
 !||i.popincdn.com^
@@ -1927,12 +1928,12 @@ sugi9532.com##.c-infoBar
 support.microsoft.com##.RailBanner
 techacademy.jp##[href^="https://techacademy.jp/briefing-lp-webdesign-s"]
 techtarget.itmedia.co.jp##.cbox > .vendorcontents:upward(1)
+ufret.jp##.btn-lg[href="/signup.php"]
 video.fc2.com##.vod_price_off
 yamory.io##.should-show.scroll-follow-page-top
 
 !#if !env_firefox
 amiami.jp##.headerbanner
-asajo.jp##.choice-entry-content .pr-icon:upward(.choice-entry-content)
 audition-debut.com##div[id^=contents1000] > div[id^=contents1000]
 biglobe.ne.jp##.prom > a.prom-all:upward(1)
 dengekionline.com##.gNews_banner
@@ -1948,7 +1949,6 @@ pc-koubou.jp##.banner-side
 !#endif
 !#if env_firefox
 amiami.jp##^.headerbanner
-asajo.jp##^.choice-entry-content .pr-icon:upward(.choice-entry-content)
 audition-debut.com##^div[id^=contents1000] > div[id^=contents1000]
 biglobe.ne.jp##^.prom > a.prom-all:upward(1)
 dengekionline.com##^.gNews_banner
@@ -2237,6 +2237,7 @@ buzzfeed.com###mod-embed-1
 ||vignette.wikia.nocookie.net^*/Nat195.$image,important,domain=yakusokunoneverland.fandom.com
 ||w.atwiki.jp/common/_js/preconnect.
 ||xhcdn.com/xh-desktop/*.parental-control.js
+amateur8.com,bigtitslust.com,freeporn8.com,lesbian8.com,sortporn.com##+js(nostif, #ageverify)
 fistia.proj.tokyo##.v-alert.info a.white--text[href="/about"]:upward(.info)
 fullxh.com,hamsterix.*,megaxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster2.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhplanet1.com,xhtab2.com,xhwebsite.com,xhwide1.com##+js(rc, xh-thumb-disabled, html)
 abandonmail.com##+js(aopr, indexedDB.open)
@@ -2270,6 +2271,8 @@ topics.smt.docomo.ne.jp##.m-tickerArea
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion###layers div[role=group][tabindex="0"] div[data-testid=sheetDialog]:upward(div[role=group][tabindex="0"])
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##html:style(overflow: auto !important;)
 websiteoutlook.com###wo_ext
+xfantasy.su###overlay
+xfantasy.su##.o-hidden:style(overflow: auto!important)
 
 !#if !env_firefox
 ampmedia.jp##.yarpp-related

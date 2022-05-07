@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220506
+! Version: 20220508
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -117,6 +117,7 @@
 /js/ppndr.
 /jsa.hh?ext=$script,~third-party
 /jsa.hh?z=$script,~third-party
+/jss/external_pop.js?$~third-party
 /lvesnk.html?zoneid=
 /mbp/pre/*$script,third-party
 /multi?cs=$xmlhttprequest,third-party
@@ -164,6 +165,7 @@
 /watchnew?key=$subdocument,third-party
 /wcm/?sh=$script,third-party
 /wp-content/plugins/wp-banners/js/wp-banners.js$important
+/wrapper/cwrapper.min.js?v=$third-party
 /zlk/zlk.js
 ://a.*/static?r=$script,third-party
 ://a.*/warp/$script,third-party
@@ -200,11 +202,11 @@
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 ##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height:"]:not([class])
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]:not([class])
-##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style*="z-index: 2147483647; position: fixed"]:not([src])
-##iframe[style$="position: fixed !important; display: block !important; z-index: 2147483647 !important; inset: 0px 0px auto auto !important; background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0% !important; min-height: 100% !important;"]:not([src])
-##iframe[style*="opacity: 1 !important; max-width: 420px !important"][style*="position: fixed !important; display: block !important; z-index: 2147483647 !important"]:not([src])
-##iframe[style*="z-index: 2147483647; min-width: 240px !important; display: block !important; max-width:"]:not([src])
-##iframe[style^="width: 100% !important; height: 100% !important; margin: 0px; padding: 0px"][style$="overflow: hidden; z-index: 2147483647;"]:not([src])
+##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style*="z-index: 2147483647; position: fixed"]
+##iframe[style$="position: fixed !important; display: block !important; z-index: 2147483647 !important; inset: 0px 0px auto auto !important; background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0% !important; min-height: 100% !important;"]
+##iframe[style*="opacity: 1 !important; max-width: 420px !important"][style*="position: fixed !important; display: block !important; z-index: 2147483647 !important"]
+##iframe[style*="z-index: 2147483647; min-width: 240px !important; display: block !important; max-width:"]
+##iframe[style^="width: 100% !important; height: 100% !important; margin: 0px; padding: 0px"][style$="overflow: hidden; z-index: 2147483647;"]
 
 #$#.div-gpt-ad { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
 ~ff14angler.com,~downloads.descendant.me,~html5.gamedistribution.com,~paraphraser.io,~sekai-kabuka.com,~teemo.gg,~xtremestream.co#$#ins.adsbygoogle { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
