@@ -4,6 +4,8 @@
 
 [Brave Shield不具合簡易報告スレッド](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1651822005)を開設いたしました。Yuki's uBLock Japanese filtersファミリーで将来的にBrave組み込みの広告ブロック（Shield）をサポートするための情報収集を兼ねます。改めて強調しますが、**現時点ではサポートしていません**。Brave Shieldはブラウザ組み込みのブロッカーとしてはもっとも高度なものですが、[以前より](https://github.com/brave/brave-browser/issues/9625)uBlock Originでは生じない[固有の問題](https://github.com/brave/adblock-lists/issues/614)が多く（[現在発生中の例](https://github.com/brave/brave-browser/issues/22719)）、uBlock Originの文法解釈も[常に](https://github.com/brave/adblock-lists/pull/775)本家より一歩遅れているため、それによる問題がたびたび発生しています（[最近の例](https://github.com/easylist/easylist/pull/11918)）。現時点でYuki's uBLock Japanese filtersをBraveで利用されても性能を発揮できないばかりか、不具合のもとになります。
 
+3月21日の予告通り、280blocker adblock filter 悪質サイト対策強化パッチは公開停止いたしました。
+
 
 <details>
 <summary>（2022年4月20日）</summary>
@@ -301,21 +303,6 @@ AdGuard DNSフィルタの既知の不具合を独自に修正します。DNSフ
 - 今後とも、モバイルアプリの問題を積極的にサポートする予定はありません。メンテンナンスコストが高くなった場合、公開停止もあり得ます
 
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/dns-unbreak.txt)
-
-## 280blocker adblock filter 悪質サイト対策強化パッチ （公開停止予定）
-
-**AdGuard for AndroidおよびuBlock Origin専用**
-
-280blocker adblock filterは、できるだけ多くのプラットフォームをサポートしたいという280blockerさんの願いにより、正規表現などの高度な文法を避け、互換性の高い記法で書かれています。ただ、このためにアプリの280blockerではブロック可能なビジターアンケート詐欺などの悪質サイトが完全にはブロックされません。当パッチはAdGuardとuBlock Originの高度な機能を使い、この点を補強します。また、ほかにも多くの悪質サイトを登録しています。AdGuardおよびuBlock Origin標準のフィルターリストに追加しても効果はありますが、Yuki's uBlock Japanese filtersご利用の場合は不要です。
-
-<strong>ごく一部に信頼するフィルタ用の機能を使っているため、当サイトを信頼していただけるなら「信頼するフィルタ」のチェックを推奨します。AdGuardの場合、信頼されたフィルタはページに様々なスクリプトを挿入することが可能になるため、本当に信頼できるのでなければチェックすべきではありません。</strong>
-
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">購読する</a>
-[中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
-
-#### 対象外
-
-- Google Safe Browsingで既にブロックされているもの
 
 ## 不具合、ブロック漏れの報告
 

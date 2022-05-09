@@ -1,21 +1,9 @@
 [![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 [![syntax](https://img.shields.io/badge/syntax-uBlock%20Origin-%23c61300.svg)](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
 
-### Announcement (Dec. 19, 2021) - EOL of a few lists
+### Announcement (May. 10, 2022) 
 
-The following lists were removed:
-- AdGuard Tracking Protection Plus
-- Placeholder Hider with no generic hiding for mobile
-- Yuki's uBlock Static Rules
-- Yuki's Blog parts filters - Adult
-
-AdGuard Tracking Protection Plus: Since I now have direct write access to AdGuardFilters, there's already not much sense for me to maintain this list.
-
-Placeholder Hider with no generic hiding for mobile: This is probably the least maintained list in this repo, and as I added some specific-generic filters to uBlock filters there's not much value for this list now.
-
-Yuki's uBlock Static Rules: Another less maintained list, now lots of duplicates with other popular lists
-
-Yuki's Blog parts filters - Adult: will be merged to Yuki's Blog parts filters.
+Anti-scam enhancer for 280blocker adblock filter was removed.
 
 # adblock
 
@@ -170,13 +158,6 @@ Blocks mobile app banners. Included in Yuki's uBlock Japanese filters - Annoyanc
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/mob-app.txt&title=Yuki's%20Mobile%20App%20filters">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/mob-app.txt)
-
-### Anti-scam enhancer for 280blocker adblock filter（only for AdGuard for Android and uBlock Origin）
-
-Enhance anti-scam capability of [280blocker adblock filter](https://280blocker.net/download/) by utilizing advanced capability of AdGuard/uBlock Origin.
-
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt&title=280blocker%20AdblockPlus%E5%BD%A2%E5%BC%8F%20%E6%82%AA%E8%B3%AA%E3%82%B5%E3%82%A4%E3%83%88%E5%AF%BE%E7%AD%96%E5%BC%B7%E5%8C%96%E3%83%91%E3%83%83%E3%83%81">Subscribe</a>
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/280-patch.txt)
 
 </details>
 
