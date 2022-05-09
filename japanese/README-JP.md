@@ -2,7 +2,7 @@
 
 ※古いお知らせは随時消していきます。
 
-[Brave Shield不具合簡易報告スレッド](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1651822005)を開設いたしました。Yuki's uBLock Japanese filtersファミリーで将来的にBrave組み込みの広告ブロック（Shield）をサポートするための情報収集を兼ねます。改めて強調しますが、**現時点ではサポートしていません**。Brave Shieldはブラウザ組み込みのブロッカーとしてはもっとも高度なものですが、[以前より](https://github.com/brave/brave-browser/issues/9625)uBlock Originでは生じない[固有の問題](https://github.com/brave/adblock-lists/issues/614)が多く（[現在発生中のもの](https://github.com/brave/brave-browser/issues/22719)）、uBlock Originの文法解釈も[常に](https://github.com/brave/adblock-lists/pull/775)本家より一歩遅れているため、それによる問題がたびたび発生しています（[最近のもの](https://github.com/easylist/easylist/pull/11918)）。現時点でYuki's uBLock Japanese filtersをBraveで利用されても性能を発揮できないばかりか、不具合のもとになります。
+[Brave Shield不具合簡易報告スレッド](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1651822005)を開設いたしました。Yuki's uBLock Japanese filtersファミリーで将来的にBrave組み込みの広告ブロック（Shield）をサポートするための情報収集を兼ねます。改めて強調しますが、**現時点ではサポートしていません**。Brave Shieldはブラウザ組み込みのブロッカーとしてはもっとも高度なものですが、[以前より](https://github.com/brave/brave-browser/issues/9625)uBlock Originでは生じない[固有の問題](https://github.com/brave/adblock-lists/issues/614)が多く（[現在発生中の例](https://github.com/brave/brave-browser/issues/22719)）、uBlock Originの文法解釈も[常に](https://github.com/brave/adblock-lists/pull/775)本家より一歩遅れているため、それによる問題がたびたび発生しています（[最近の例](https://github.com/easylist/easylist/pull/11918)）。現時点でYuki's uBLock Japanese filtersをBraveで利用されても性能を発揮できないばかりか、不具合のもとになります。
 
 （2022年4月20日）
 
