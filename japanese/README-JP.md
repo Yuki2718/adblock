@@ -4,7 +4,9 @@
 
 [Brave Shield不具合簡易報告スレッド](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1651822005)を開設いたしました。Yuki's uBLock Japanese filtersファミリーで将来的にBrave組み込みの広告ブロック（Shield）をサポートするための情報収集を兼ねます。改めて強調しますが、**現時点ではサポートしていません**。Brave Shieldはブラウザ組み込みのブロッカーとしてはもっとも高度なものですが、[以前より](https://github.com/brave/brave-browser/issues/9625)uBlock Originでは生じない[固有の問題](https://github.com/brave/adblock-lists/issues/614)が多く（[現在発生中の例](https://github.com/brave/brave-browser/issues/22719)）、uBlock Originの文法解釈も[常に](https://github.com/brave/adblock-lists/pull/775)本家より一歩遅れているため、それによる問題がたびたび発生しています（[最近の例](https://github.com/easylist/easylist/pull/11918)）。現時点でYuki's uBLock Japanese filtersをBraveで利用されても性能を発揮できないばかりか、不具合のもとになります。
 
-（2022年4月20日）
+
+<details>
+<summary>（2022年4月20日）</summary>
 
 **Chromium Manifest V3（MV3）への当レポジトリの対応予定（現時点、変更する可能性あり）**
 
@@ -20,9 +22,14 @@ Chrome拡張機能専用とすることでアプリ版特有の様々な問題�
 
 また、uBlock Origin文法と高い互換性があり標準でuBlock Originのフィルタを採用しているBraveをYuki's uBlock Japanese filtersのサポート対象に加えることも検討していますが、正規表現の制約などはすぐには解決しないでしょうし、Brave特有の問題も多いため機能制限版かつ限定的サポートという形になるでしょう。なお、あまり知られていなさそうですがBraveの広告ブロックは標準ではファーストパーティー広告、つまり訪問したサイトから直接配信される広告（たとえば検索エンジンの広告）はブロックしません。Shields設定からブロックを「積極的」に変えることでそれらもブロックされるようになります。
 
-（2022年3月21日）
+</details>
+
+<details>
+<summary>（2022年3月21日）</summary>
 
 AdGuard DNSフィルタ不具合修正パッチを公開しました。また、280blocker adblock filter 悪質サイト対策強化パッチは近々公開を停止いたします。ご利用の方は購読解除をお勧めいたします。
+
+</details>
 
 ## Yuki's uBlock Japanese filters （雪フィルタ）
 
