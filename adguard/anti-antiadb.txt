@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220509
+! Version: 20220511
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -174,27 +174,16 @@
 ://go.*/smartpop/$subdocument,third-party
 ?a=1&e=*&if=0|$xmlhttprequest,third-party
 ?adl=1&id=$script,~third-party
+?bpem=*&refer=$popup,third-party
 ?wl=0&event_id=$xmlhttprequest,third-party
 =%*&v=&m=|$popup
 =eyJ.js^$script
 
-||adclixx.net^$script,third-party,redirect=nobab2.js,important
-||adnetasia.com^$script,third-party,redirect=nobab2.js,important
-||adtrackers.net^$script,third-party,redirect=nobab2.js,important
-||bannertrack.net^$script,third-party,redirect=nobab2.js,important
 ||fundingchoicesmessages.google.com^$third-party
-||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
-||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager-gtm
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication-adsbygoogle
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect-rule=nooptext
-||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices-gpt
-||popcash.net^$xmlhttprequest,third-party,redirect-rule=nooptext
-@@||fundingchoicesmessages.google.com^$script,domain=bbc.com|soranews24.com|youpouch.com
 
-###kt_player > a[target="_blank"]
 ###rvt-inline-0
 ###rvt-inline-1
-##.ad-placement:not(.adsbox):not(.afs_ads)
+##.ad-placement:not(.adsbox):not(.afs_ads):not(#ablockercheck)
 ##a#mobile_pop.js-mob-popup
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="height:"][style*="width:"][style*="inset:"][style*="z-index:"]
 ##a[id][href*="/PVZ/PVZ.php?c="]
@@ -239,6 +228,7 @@
 @@||crunchyroll.adnetasia.com/vast?fg=$script
 @@||crunchyroll.adtrackers.net/vast?fg=$script
 @@||crunchyroll.bannertrack.net/vast?fg=$script
+@@||fundingchoicesmessages.google.com^$script,domain=bbc.com|soranews24.com|youpouch.com
 @@||ox-d.adclixx.net/auid=$script
 @@||ox-d.adnetasia.com/auid=$script
 @@||ox-d.adtrackers.net/auid=$script
@@ -253,12 +243,24 @@
 @@||yahoo.adnetasia.com/serv?s=$script
 @@||yahoo.adtrackers.net/serv?s=$script
 @@||yahoo.bannertrack.net/serv?s=$script
-||ads.twitter.com/favicon.ico$image,third-party,redirect=32x32-transparent.png
-||advertising.yahoo.com/favicon.ico$image,third-party,redirect=32x32-transparent.png
-||as.inbox.com/banner_ad.gif|$image,redirect=1x1-transparent.gif
-||doubleclickbygoogle.com/favicon.ico$image,third-party,redirect=32x32-transparent.png
-||google.com/adsense/start/images/favicon.ico$image,third-party,redirect=32x32-transparent.png
-||gstatic.com/adx/doubleclick.ico|$image,redirect=32x32-transparent.png
+||adclixx.net^$script,third-party,redirect-rule=prevent-bab2
+||adnetasia.com^$script,third-party,redirect-rule=prevent-bab2
+||ads.twitter.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
+||adtrackers.net^$script,third-party,redirect-rule=prevent-bab2
+||advertising.yahoo.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
+||as.inbox.com/banner_ad.gif|$image,redirect-rule=1x1-transparent.gif
+||bannertrack.net^$script,third-party,redirect-rule=prevent-bab2
+||doubleclickbygoogle.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
+||google.com/adsense/start/images/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
+||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
+||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager-gtm
+||gstatic.com/adx/doubleclick.ico|$image,redirect-rule=32x32-transparent.png
+||nessainy.net/favicon.ico$image,redirect-rule=32x32-transparent.png
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication-adsbygoogle
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect-rule=nooptext
+||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices-gpt
+||popcash.net^$xmlhttprequest,third-party,redirect-rule=nooptext
+||surfe.pro/js/net.js$script,xmlhttprequest,redirect-rule=noopjs
 #@##Ad300x145
 ~tegaki.pipa.jp#@##Ad300x250
 #@##AdBox160

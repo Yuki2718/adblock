@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220510
+! Version: 20220511
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -193,7 +193,7 @@ antenna.gamedivers.com###AdOverlayBanner
 ap-siken.com,db-siken.com,fe-siken.com,itpassportsiken.com,nw-siken.com,pm-siken.com,sc-siken.com,sg-siken.com##.ad2
 app-liv.jp##.ad-area--pd
 app-liv.jp##.ads-wrapper
-app-liv.jp##.app-ranking > .c-app-card .app-ranking_label--pr:upward(.c-app-card)
+app-liv.jp##.c-app-card:not([class^="js-native-ranking-card"]):has(> div > span.app-ranking_label--pr)
 app-liv.jp##.p-richcard div.c-app-icon > a[data-ad-id]:upward(.p-richcard)
 app.famitsu.com###gam_sp_header_banner_1
 app.famitsu.com##.ad-agency-area
@@ -367,6 +367,8 @@ geekwire.com###ad-300x250_mobile
 gendai.ismedia.jp###MG_sp_sponsor_1:upward(1)
 gendai.ismedia.jp##[style="min-height:250px;"]
 genius.com##div[class^="StickyBannerAd__Container"]
+getnavi.jp##div[class="for-sp"][style="text-align: center;"]
+getnavi.jp##div[class="for-sp"][style^="text-align:center;"]
 ghacks.net##.box-banner
 gigafile.nu##div[style="border:1px solid #CCC;width:300px;margin:10px auto;"]
 gigazine.net###LB[style="position:sticky; top:0;"]
@@ -591,6 +593,7 @@ news.mynavi.jp##.c-sideBanner_articleBottom
 news.nifty.com##.mod_ad
 news.nifty.com##.mod_ad_nifty
 news.nifty.com##.pr
+news.ntv.co.jp##.contentsWrapper > div > div.OB-REACT-WRAPPER:upward(2)
 news.owata-net.com##.adnetwork.article-interstitial.overlay
 news.tbs.co.jp##.cp-spAd
 news.tennis365.net##._popIn_recommend_article_ad_reserved
@@ -989,6 +992,7 @@ xhwide1.com##.video-view-ads--full-page
 xhwide1.com##.wio-xspl-adshare
 xhamster.*##.wio-ypremium-overlay
 xhamster.*,xhamster11.*,xhwide1.com##.thumb-list-mobile-item--widget
+xhamster.com##main a[href^="https://xhamsterlive.com/api/external"]
 xn--r8jwklh769h2mc880dk1o431a.com##.clear_balloon + .spadtitle
 xn--r8jwklh769h2mc880dk1o431a.com##.etpickup
 xnxx.com###content-ad-top-zone-contener
