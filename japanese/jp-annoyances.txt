@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220515
+! Version: 20220516
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -1727,14 +1727,18 @@ yukawanet.com###custom_html-27
 
 !#if !env_firefox
 banger.jp##.l-popup
+bike-news.jp##.swiper-slide[data-history^=photo_extra]:remove()
 blog.goo.ne.jp##.block__shop
 diamond-fudosan.jp##.sc-recommend
+otonanswer.jp##.swiper-slide-extra:remove()
 response.jp,spyder7.com##.sidebox-pickup
 !#endif
 !#if env_firefox
 banger.jp##^.l-popup
+bike-news.jp##^.swiper-slide[data-history^=photo_extra]
 blog.goo.ne.jp##^.block__shop
 diamond-fudosan.jp##^.sc-recommend
+otonanswer.jp##^.swiper-slide-extra
 response.jp,spyder7.com##^.sidebox-pickup
 !#endif
 !#if env_mobile
@@ -1817,6 +1821,8 @@ h0874.com###channelBanner2
 ||iwate-np.co.jp/content/mekke/img/
 ||iwate-np.co.jp/page/content/media/
 iwate-np.co.jp##div[class$=-CMSbox]
+||jidoushatounan.com/wp/wp-content/uploads/2018/05/img-01.jpg
+||jidoushatounan.com/wp/wp-content/uploads/2020/05/ninteiten.jpg
 ||jj-blues.com/cms/wp-content/uploads/2018/04/585e852d2cfdd37d9e51e7564654f50f-1.jpg
 jj-blues.com###text-10
 ||k-img.com/images/bb/parts/$domain=review.kakaku.com
