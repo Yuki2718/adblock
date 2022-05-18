@@ -8,7 +8,7 @@
 
 
 <details>
-<summary>（2022年4月20日）</summary>
+<summary>（2022年4月20日：MV3への対応予定）</summary>
 
 **Chromium Manifest V3（MV3）への当レポジトリの対応予定（現時点、変更する可能性あり）**
 

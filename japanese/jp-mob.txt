@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220518
+! Version: 20220519
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -66,6 +66,7 @@
 ||m.youtube.com/get_midroll_$domain=youtube.com
 ||news.nifty.com/smartphone/images/*_banner.$image,1p
 ||nimg.jp/img/common/blocked_premium_banner.jpg
+||nyaasokuvip.net/wp-content/uploads/*/ad_manga_
 ||oricon.co.jp/sp/img/_parts/manual/yomurun/
 ||poiful.com/sdk/vrizeadsdk.
 ||pokemongo-master.com/wp-content/uploads/*/ad_manga_
@@ -109,6 +110,7 @@
 ||hentaidude.com/wp-content/themes/awp/assets/mobile.js
 ||img.hobonichielog.com/wp-content/themes/hobonichiesmh/$1p
 ||jav789.com/assets/love/index.js
+||kusuriyasan.org^$image,3p
 ||pics.dmm.co.jp^$domain=matomecup.com|niji-gazo.com
 ||nan-net.com/h/bbs/s/inc/$frame
 ||nan-net.com/show/bbs/s/inc/$frame
@@ -355,10 +357,12 @@ front-row.jp##.ct-ad-2ndparag
 fukutubu.jp##.td-header-sp-recs
 full-count.jp###piano_offer_popup
 fx-rashinban.com##.c-ad_smart
+fxstreet.com##.fxs_stickyAd-mobile
 gadget2ch.com###page > center
 gadget2ch.com##.hgooglead
 game.boom-app.com##div[style^="width: 300px;height: 110px"]
 game8.jp###several_prereg_ads
+game8.jp##.l-fixedTableOfContents__overlay
 game8.jp##.l-jack__top
 gamefavo.com##div[style$="min-height:250px;overflow:hidden;"]
 gamepedia.jp##.ad-article-bottom
@@ -372,6 +376,7 @@ gameuxnews.com###mobile_text-3
 gameuxnews.com###mobile_text-4
 gamewith.jp###js-ad-jack
 gamewith.jp##.to-btn--bookmark
+gamewith.jp##.to-btn-area
 geekjob.jp##.sp_camp_banner
 geekwire.com###ad-300x250_mobile
 gendai.ismedia.jp###MG_sp_sponsor_1:upward(1)
@@ -461,6 +466,7 @@ itest.5ch.net##div[class^=sproutad_]
 itest.5ch.net##[class*=js-ads-content-top_]
 itmedia.co.jp###ATF
 itmedia.co.jp###RECTANGL
+itmedia.co.jp###cmsBodyMain > div > div[style="text-align:center;margin-bottom:20px;"]
 itmedia.co.jp##.colBoxIndexAD
 itmedia.co.jp##div[id^="RECTNGL"]
 itopvpn.com##.itop-ad
@@ -579,6 +585,7 @@ morningstar.co.jp,morningstarjp.com##.footer_overlayad
 movies.yahoo.co.jp##div[class^="display-ad"]
 msn.com##.stripeouter.news[data-section-id="stripe.special"]:has(.nativead)
 mudainodocument.com###im_interstitial_panel
+my-best.com##.p-press_ad
 myanimelist.net##.anchor-ad
 myjitsu.jp##.ad-recommend-box
 nanj.an-matome.com##div[style$="height:100px;background-color:#000;"]
@@ -636,6 +643,9 @@ nordot.app##.page__ad:not(.page__ad--discoverMore)
 number.bunshun.jp##.container-banner-01
 number.bunshun.jp##.container-banner-02
 number.bunshun.jp##div[style="text-align:center; border-top: 1px solid #f3f3f3; border-bottom: 1px solid #f3f3f3;"]
+nyaasokuvip.net##.ad-label
+nyaasokuvip.net##.ad:not(center + div)
+nyaasokuvip.net##.imglink-box
 okbizcs.okwave.jp##.box_ad_rectangle_detail
 okinawatimes.co.jp##li > #sp_article_infeed_1st:upward(1)
 onepiece-consideration.com,umamusumelabo.com##.rectangle
@@ -652,7 +662,6 @@ oshiete.goo.ne.jp##div[id^="adcontainer"]
 otokomaeken.com##div[class^="yoneads"]
 otona-life.com##.ad_minh_sp
 outlook.live.com###OwaContainer
-outlook.live.com##main[aria-hidden] > div[class] > div[style] > div[class][style="position: absolute; left: 0px; top: 0px; height: 80px; width: 100%;"]:has(> div[class] > div[role="group"] > #OwaContainer)
 ovo.kyodo.co.jp##div[style$="bottom: 0; width: 100%; display: block; text-align: center; background-color: #000000;"]
 pixiv.net##.ad-container
 pixiv.net##.ad-frame-container
@@ -1025,6 +1034,8 @@ xn--r8jwklh769h2mc880dk1o431a.com##.clear_balloon + .spadtitle
 xn--r8jwklh769h2mc880dk1o431a.com##.etpickup
 xnxx.com###content-ad-top-zone-contener
 xnxx.com,xvideos.com###ad-header-mobile
+youjizz.com###underPlayerPr
+youjizz.com##.bottom_pr
 youjizz.com##.top_pr
 zeiri4.com##div[class^="adContainer"]
 
@@ -1094,6 +1105,8 @@ mudainodocument.com##+js(aeld, /^(?:mousewheel|touchmove)$/)
 news.mynavi.jp##+js(aeld, /^(?:scroll|touchmove|wheel)$/, preventDefault)
 smt.docomo.ne.jp##+js(acis, document.write, WrpAd)
 supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
+
+||game8.jp^*?follow=$doc,removeparam=follow
 
 ! ---------- Exception - blocking ----------
 @@||adcdn.goo.ne.jp/images/pix/2dwkwwau99.js$domain=news.goo.ne.jp

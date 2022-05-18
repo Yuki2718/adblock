@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220518
+! Version: 20220519
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -354,10 +354,14 @@ bookwalker.jp##.side-deals-wrap
 bbc.com##.tp-backdrop
 bbc.com##.tp-modal
 bbc.com##body.tp-modal-open:style(overflow: auto !important;)
+||buy.tinypass.com/checkout/template/cacheableShow?aid=*&iframeId=offer_*&displayMode=modal&pianoIdUrl=https%3A%2F%2Fauth.forbes.com%2Fid%2F&widget=template$frame,domain=www.forbes.com
+forbes.com##.tp-backdrop
+forbes.com##.tp-modal > div.tp-iframe-wrapper > iframe[id^="offer"]:upward(2)
+forbes.com##.tp-modal-open:style(overflow: auto !important; height: auto !important;)
 ||buy.tinypass.com/checkout/template/cacheableShow?*&iframeId=offer_*&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template$frame,3p,domain=thehindu.com
 thehindu.com##.tp-backdrop
 thehindu.com##.tp-modal:has(> div.tp-iframe-wrapper > iframe[id^="offer_"][src*="/cacheableShow?aid="][src*="offerId=fakeOfferId"][src$="widget=template"])
-thehindu.com##body.tp-modal-open:style(overflow: auto!important;height: auto!important;)
+thehindu.com##.tp-modal-open:style(overflow: auto !important; height: auto !important;)
 ||ca-rent.jp/common/js/footer_top.
 ||camerakaitori.jp/cms/wp-content/themes/camera_cms_v2/images/renewal/renewal_pc_bottom_btn_
 camerakaitori.jp###renewal_bottom_bnr
@@ -1274,6 +1278,7 @@ m.qoo10.jp##+js(acis, $, layerpopup_mainBanner)
 m.youtube.com##.mealbar-promo-renderer
 magazine.tabelog.com##.tm-floating-banner
 media.rakuten-sec.net##.m-vote-banner
+my-best.com##.p-item-part--footer
 nipponrentacar.co.jp##.noticeArea
 oceans-nadia.com###nadia-popup
 oceans-nadia.com###popup-overlay
@@ -1496,6 +1501,8 @@ giveawayoftheday.com##.subscribe_block
 gizmodo.com##.js_newsletter-form-inline
 globe.asahi.com##.module-article-mailmag
 gooday.nikkei.co.jp##.gdy-member-apply
+gqjapan.jp##.ticker-view
+gqjapan.jp##div[class^="LinkBannerMarquee-"]
 hivelocity.co.jp##.hvc-information
 honichi.com##.mailmag-text-banner
 honichi.com##.side-mailmag-box
@@ -1549,6 +1556,7 @@ theintercept.com##.NewsletterEmbed-container
 theregister.com##.newsletter_signup_unit
 usatoday.com##aside[aria-label="Newsletter signup form"]
 wired.com##.newsletter-subscribe-form
+wired.jp##.ticker-wrapper
 wisdommingle.com###post-end-optin-box
 wisdommingle.com###sidebar-optin-box
 wwdjapan.com###wwdj-mail-magazine-2
@@ -1593,6 +1601,7 @@ wwdjapan.com##.wwdj-mail-magazine
 ||cdn.reamaze.com^$3p
 ||cxpublic.com^$3p,domain=~wpb.shueisha.co.jp
 ||d.rcmd.jp^
+||disqus.com/recommendations.js
 ||gacraft.jp^$3p
 ||getsitecontrol.com^$3p
 ||gravityrd-services.com^$3p
@@ -1610,7 +1619,7 @@ wwdjapan.com##.wwdj-mail-magazine
 ||ameba.jp/blog/xml/mk_data/
 ||azby.fmworld.net/usage/images/banner_enquete.jpg
 ||cbsistatic.com/fly/js/components/tr-premium-promo$domain=zdnet.com
-||disqus.com/recommendations.js
+||docs.google.com/forms/*/viewform?embedded=true$domain=wired.jp
 ||fandom.com/f2/api/public/feed
 ||fandom.com/f2/api/public/hot-content-module
 ||gamewith.jp/enquete/banner.png
@@ -1674,6 +1683,7 @@ latimes.com##.Enhancement > .PromoSmall
 machicon.jp###_popIn_recommend
 media.moneyforward.com##.mp-recommends
 moyugenn.youblog.jp##.main-column-inner > span:has-text(おすすめ)
+msn.com##.floatingfeedback
 news.mynavi.jp##.articleList-attention
 news.webike.net###custom_html-3
 news.webike.net###custom_html-5
@@ -2065,6 +2075,7 @@ cs.myjcom.jp##.jss-bot.embeddedServiceHelpButton
 ||ws.sense.healthcare^$domain=medicalonline.jp
 
 bing.com###ev_talkbox_wrapper
+msn.com##.cwt-overlay-cta-button
 
 ! ---------- Timer (CSS fix can be added to jp-filters if not likely to break site) ----------
 100count.net##+js(nano-sib, /sec--|timedisplay--/)
