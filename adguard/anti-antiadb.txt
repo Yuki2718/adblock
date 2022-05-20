@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220519
+! Version: 20220521
 
 &crc=1|$xmlhttprequest,third-party
 .com/1?z=$script,third-party
@@ -191,10 +191,14 @@
 ||bannertrack.net^$script,third-party,redirect=prevent-bab2,important
 ||fundingchoicesmessages.google.com^$third-party
 
+###banner-advert-container:not(.ad-inserter):not(.adsense)
 ###rvt-inline-0
 ###rvt-inline-1
+##.SponsorAds:not(.adsense)
+##.ad-inserter:not(#banner-advert-container):not(.adsense)
 ##.ad-placement:not(.adsbox):not(.afs_ads):not(#ablockercheck)
 ##.adBanner:not(:empty)
+##.sponsor-ad:not(.adsense)
 ##a#mobile_pop.js-mob-popup
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="height:"][style*="width:"][style*="inset:"][style*="z-index:"]
 ##a[id][href*="/PVZ/PVZ.php?c="]
@@ -235,6 +239,7 @@
 @@/site_ads.js?ad_slot=*&ad_ids=$script,~third-party
 @@/static/image/ad_top_bg2.png?&ad_box_=$image,~third-party
 @@/wp-banners.js^$script
+@@/wp-content/plugins/imedia-basic/adserver-$script,~third-party
 @@/wp-content/plugins/quick-adsense-reloaded/assets/js/ads.js
 @@/wp-content/plugins/wordpress-popup/assets/js/adb.min.js?$script,~third-party
 @@||crunchyroll.adclixx.net/vast?fg=$script
@@ -292,6 +297,7 @@
 #@##glinkswrapper
 #@##outbrain-paid
 #@##sponsored_link
+#@#.SponsorAds
 #@#.ad-inserter
 #@#.ad-placement
 #@#.adBanner
@@ -301,6 +307,7 @@
 #@#.adsbygoogle
 #@#.display_ad
 #@#.div-gpt-ad
+#@#.sponsor-ad
 #@#div[class^="div-gpt-ad"]
 #@#div[id^="div-gpt-"]
 #@#[class^="div-gpt-ad"]

@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220520
+! Version: 20220521
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -38,6 +38,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 /amp-user-notification-
 /amp-web-push-
 /imports/notifications.
+/inpl.webpush.
 /jquery_notification_v
 /myPushDc.
 /notification-ext.
@@ -104,6 +105,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||notix.io^$3p
 ||onepush.app^$3p
 ||onesignal.com^$3p
+||ozmall.co.jp/scripts/js/user-notification.js
 ||provesrc.com^$3p
 ||pt.appirits.com^$3p
 ||push-free.com^$3p
@@ -141,9 +143,9 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||xedo.me^$3p
 
 /firebase-messaging.js$domain=ranking.goo.ne.jp
+/notification.js$domain=a2zapk.com|rt.com
 ||3ple.jp/js/notification.
 ||4travel.jp/ssl_api/user/notifications
-||a2zapk.com/js/notification.js
 ||akamaized.net/js/n/notifications-$domain=investing.com
 ||api-iam.intercom.io/messenger/
 ||assets.alicdn.com/*/nano-webpush-ui-
@@ -494,6 +496,8 @@ genius-web.co.jp##.floating_bnr
 ||gladiator.jp/defamation/wp-content/uploads/2019/01/pc-float2.png
 gladiator.jp##.pc-float
 ||glassdoor.com/app/static/js/dist/gd-user-hardsell-overlay.bundle.js
+||grcs.co.jp/hubfs/top/banner/top_srmt_wp_link.svg
+grcs.co.jp##.Bnr
 ||hamee-consulting.co.jp/common/images/btn_
 hamee-consulting.co.jp###contact_bar
 ||hayabusa.io/abema/channels/time/*/abema-news.w230.$domain=times.abema.tv
@@ -910,7 +914,9 @@ gizmodo.com##.js_modal_exit_intent
 globalize.lifepepper.co.jp##div[id^="signupFormContainer_"]
 gogoanime.*##div[class^="notice-"]
 google.*##mobile-promo
-h-navi.jp###ModalContent, #ModalOverlay
+grcs.co.jp##.top_fixed_menu
+h-navi.jp###ModalContent
+h-navi.jp###ModalOverlay
 hatena.ne.jp##.u-bnr--trial
 help.ea.com##.helpfulness-bar-outer
 hikkoshi-sakai.co.jp##.fixed.fix-info
@@ -1491,6 +1497,7 @@ bunshun.jp###mail-magazine
 businessinsider.jp###mail_mag-under_title
 buzzfeednews.com##div[class^="newsletter-"]
 cbsnews.com##.newsletter_signup
+cnet.com##.c-newsletterSticky
 cnet.com##.c-newsletterSubscribe
 cnn.com##.newsletter
 crea.bunshun.jp##.mail-magazine
@@ -1970,6 +1977,8 @@ nikkei.com##div[class^="adsArea_"] > section > div > div[class^="__item_"] img[a
 nttdocomo.co.jp###brandingSideBanner
 nttdocomo.co.jp###header-banner
 open.spotify.com##.GenericModal__overlay--afterOpen
+outlook.live.com##div[data-focuszone-id] + div > button > div > img[class][src$="/leftNavUpsellIcons/premium-diamond-01.svg"]:upward(2)
+outlook.live.com##div[id^="docking_InitVisiblePart_"] div[id^="virtualEditScroller"] + div[class] button[aria-label]
 passmarket.yahoo.co.jp##.ptsGoToPromo
 rakko.tools##.rakkoma-widget-iframe
 smartagri-jp.com##.relatedPosts > ul > .pc .pr:upward(.pc)
