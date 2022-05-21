@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220521
+! Version: 20220522
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -142,7 +142,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||wpushsdk.com^$3p
 ||xedo.me^$3p
 
-/firebase-messaging.js$domain=ranking.goo.ne.jp
+/firebase-messaging.js$domain=s.akiba-souken.com|ranking.goo.ne.jp
 /notification.js$domain=a2zapk.com|rt.com
 ||3ple.jp/js/notification.
 ||4travel.jp/ssl_api/user/notifications
@@ -917,6 +917,7 @@ google.*##mobile-promo
 grcs.co.jp##.top_fixed_menu
 h-navi.jp###ModalContent
 h-navi.jp###ModalOverlay
+hai2mail.jp##.cta-floating
 hatena.ne.jp##.u-bnr--trial
 help.ea.com##.helpfulness-bar-outer
 hikkoshi-sakai.co.jp##.fixed.fix-info
@@ -1325,6 +1326,7 @@ zeiri4.com##.b-stickyShoukaiBanner
 /ie-emulation-modes-warning.js
 /ie10-viewport-bug-workaround.js
 /jquery.alerts.js
+/outdatedbrowser.js
 /videojs-ie8.$script
 /plugins/advanced-browser-check/*
 ||americanairlines.jp/assets/js/legacy/plugins/aa-browser.
@@ -1497,6 +1499,8 @@ bunshun.jp###mail-magazine
 businessinsider.jp###mail_mag-under_title
 buzzfeednews.com##div[class^="newsletter-"]
 cbsnews.com##.newsletter_signup
+ciatr.jp##.article-footer-unit > h2.head-main:has-text(ニュースレター)
+ciatr.jp##.news-letter-item
 cnet.com##.c-newsletterSticky
 cnet.com##.c-newsletterSubscribe
 cnn.com##.newsletter
@@ -1745,6 +1749,9 @@ twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[
 !twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] h2 + div[style^=-webkit] > span:has-text(これらのトピックについてのトップツイートが):upward(div[style^="position: absolute"]) + div[style^="position: absolute"]
 ! プッシュ通知
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^=transform] h1 > span:has-text(プッシュ通知):upward(div[style^=transform])
+! 関連トピック
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: タイムラインを検索"] h2 > div[style^=-webkit] > span:has-text(関連トピック):upward(div[style^=transform])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: タイムラインを検索"] > div > div[style^=transform] > div > div > a[href^="/i/topics/"]
 wedge.ismedia.jp##.related-article
 www.nicovideo.jp##.FeedbackLink
 www.yahoo.co.jp###Service.ult__mods
@@ -2115,6 +2122,7 @@ apkmaza.net##+js(nano-sib, downloadButton)
 apkmb.com##+js(nano-sib, show_download_links)
 apkmodhub.in##.sdl_text
 apkmodhub.in##.show_download_links:style(display: block !important)
+apkmody.io##+js(nano-stb, download_loading, *)
 apps2app.com###timer
 apps2app.com##+js(nano-sib, gotolink)
 apps2app.com##+js(ra, disabled, button)
@@ -2348,8 +2356,9 @@ techcrunch.com##.homepage__event-promo, .upcoming-events
 top.gg###video-root
 top.gg###vote-root:style(display:block !important)
 topics.smt.docomo.ne.jp##.m-tickerArea
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[data-testid="sheetDialog"] > :not(div[data-testid="IntentLoginSheet_Login_Sheet"]) div[aria-label=""] > img[class^="css-"][src$="/privacy_cover.png"]:upward(div[role="group"])
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[data-testid="sheetDialog"] > :not(div[data-testid="IntentLoginSheet_Login_Sheet"]) div[role="button"]:not([data-testid]) + div[role="button"]:not([data-testid]):upward(div[role="group"])
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##html:style(overflow: auto !important;)
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##html:style(overflow: auto !important; padding-right: 0 !important;)
 websiteoutlook.com###wo_ext
 xfantasy.su###overlay
 xfantasy.su##.o-hidden:style(overflow: auto!important)

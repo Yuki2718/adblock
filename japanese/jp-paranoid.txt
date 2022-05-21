@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220521
+! Version: 20220522
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -112,12 +112,15 @@ youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 gizmodo.jp,lifehacker.jp##.inner-buy-box
 iwate-np.co.jp##.news-box-article-list > li:has-text(広告)
 iwate-np.co.jp##.type1:has-text(広告)
+iwatetabi.jp###adbnr
+smart-flash.jp##.adsBlock
 !#endif
 !#if env_firefox
 gizmodo.jp,lifehacker.jp##^.inner-buy-box
 iwate-np.co.jp##^.news-box-article-list > li:has-text(広告)
 iwate-np.co.jp##^.type1:has-text(広告)
-!#endif
+iwatetabi.jp##^#adbnr
+smart-flash.jp##^.adsBlock
 
 ! ---------- Exception for ads ----------
 @@||ad-house.jp/images/ad-top_01.gif
@@ -175,14 +178,74 @@ iwate-np.co.jp##^.type1:has-text(広告)
 @@||town.shisui.chiba.jp/_common/themes/shisui/piece/images/ad-bosyu.png
 @@||xn--68j3b118kc3c8tqzrlcrd9ts.jp/images/ad-arrow.jpg
 
-!#if !env_firefox
-iwatetabi.jp###adbnr
-smart-flash.jp##.adsBlock
-!#endif
-!#if env_firefox
-iwatetabi.jp##^#adbnr
-smart-flash.jp##^.adsBlock
-!#endif
+! Counter Rewards rules
+@@.com/upload_image/$image,domain=chobirich.com|dietnavi.com|gendama.jp|point.i2i.jp|pointtown.com,badfilter
+@@.jp/ad/$image,domain=chobirich.com|cmnw.jp|gendama.jp|moppy.jp|netmile.co.jp|pint.yattayo.net|pointi.jp|pointtown.com,badfilter
+@@.jp/af/$image,domain=chobirich.com|gendama.jp|manpukujima.com|netmile.co.jp|pointtown.com,badfilter
+@@.jp/affiliate/$image,domain=dietnavi.com|gendama.jp|manpukujima.com|moppy.jp|t-mall.tsite.jp,badfilter
+@@/300x250.$image,domain=gpoint.co.jp|point.i2i.jp,badfilter
+@@/ad_banner/*$image,domain=manpukujima.com,badfilter
+@@/advertise/*$image,domain=manpukujima.com,badfilter
+@@/assets/dist/img/general/top/img/ad/*$domain=afi-b.com|affiliate-b.com,badfilter
+@@/img/aff/*_300_250.$image,domain=lifemedia.jp,badfilter
+@@://affiliate.sonicsense.jp/data.php?$image,domain=yentame.net,badfilter
+@@://promo.norton.com/aff/banner/$image,domain=t-mall.tsite.jp,badfilter
+@@_160x600.$image,domain=elne.jp,badfilter
+@@_300_250$image,domain=chobirich.com|gpoint.co.jp,badfilter
+@@_300x250$image,domain=chobirich.com|elne.jp|gpoint.co.jp|point.i2i.jp,badfilter
+@@_728_90.$image,domain=moraerumall.com,badfilter
+@@_728_90_$image,domain=moraerumall.com,badfilter
+@@/ad_images/*$image,domain=dietnavi.com,badfilter
+@@||a8.net/svt/bgt$image,domain=chobirich.com|cmnw.jp|coreda.jp|dietnavi.com|ecnavi.jp|elne.jp|gendama.jp|lifemedia.jp|moppy.jp|pint.yattayo.net|point.i2i.jp|point.monocla.com|pointi.jp|pointtown.com|saito-s.com|t-mall.tsite.jp|yentame.net,badfilter
+@@||accesstrade.net^$image,domain=chobirich.com|cmnw.jp|coreda.jp|dietnavi.com|ecnavi.jp|elne.jp|gendama.jp|lifemedia.jp|manpukujima.com|moppy.jp|pint.yattayo.net|point-land.net|point.i2i.jp|pointi.jp|pointtown.com|t-mall.tsite.jp|yentame.net,badfilter
+@@||ad-leap.jp/ad_material/$image,domain=pointi.jp,badfilter
+@@||ad-track.jp/ad/p/img?$image,domain=elne.jp,badfilter
+@@||ad-track.jp/img/admin/$image,domain=elne.jp|gendama.jp|moppy.jp|pint.yattayo.net|pointtown.com,badfilter
+@@||adfactory.io^$image,domain=chobirich.com|dietnavi.com|netmile.co.jp,badfilter
+@@||advack.net/p/?ad=$image,domain=gendama.jp|pint.yattayo.net|point.i2i.jp,badfilter
+@@||af-110.com/banner/$image,domain=chobirich.com|dietnavi.com|ecnavi.jp|elne.jp|gendama.jp|lifemedia.jp|moppy.jp|netmile.co.jp|point-land.net|pointi.jp|point.i2i.jp|pointtown.com|yentame.net,badfilter
+@@||afi-b.com/upload_image/$domain=elne.jp|moppy.jp|point-land.net|pointi.jp,badfilter
+@@||afl.rakuten.co.jp^$image,domain=chobirich.com|coreda.jp|lifemedia.jp|netmile.co.jp|pointtown.com,badfilter
+@@||amazonaws.com/affiliate-img.docomo.ne.jp/banner/$image,domain=elne.jp|pointi.jp,badfilter
+@@||ascii.jp/img/ad/yayoi/rank_$image,1p,badfilter
+@@||atown.jp^$image,domain=chobirich.com|dietnavi.com|ecnavi.jp|elne.jp|gendama.jp|moppy.jp|netmile.co.jp|pint.yattayo.net|point.i2i.jp|pointi.jp|pointtown.com,badfilter
+@@||bellemaison.jp/pc/premoni/ad/$image,domain=chobirich.com|gendama.jp|moppy.jp,badfilter
+@@||camp-fire.jp/uploads/storage/ls_images/$domain=moppy.jp,badfilter
+@@||cf.smaad.net^$image,domain=chobirich.com|lifemedia.jp|point-land.net|pointi.jp,badfilter
+@@||cross-a.net^$image,domain=cmnw.jp|dietnavi.com|ecnavi.jp|elne.jp|gendama.jp|manpukujima.com|moppy.jp|netmile.co.jp|point-land.net|pointtown.com,badfilter
+@@||dell.com/images/jp/banners/$image,domain=chobirich.com,badfilter
+@@||digitalidentity.co.jp/blog/wp/wp-content/uploads/2021/03/sidebnr_ad01.png,badfilter
+@@||dtiserv2.com/cgi-bin/meta_search.cgi$script,domain=sexpixbox.com,badfilter
+@@||j-a-net.jp^$image,domain=chobirich.com|dietnavi.com|ecnavi.jp|elne.jp|gendama.jp|lifemedia.jp|moppy.jp|netmile.co.jp|pint.yattayo.net|point-land.net|point.i2i.jp|pointi.jp|pointtown.com|t-mall.tsite.jp|yentame.net,badfilter
+@@||linksynergy.com^$image,domain=chobirich.com|dietnavi.com|lifemedia.jp|manpukujima.com|moppy.jp|point.i2i.jp,badfilter
+@@||netmile.co.jp/ad/images/$image,badfilter
+@@||point-g.rakuten.co.jp/pg_assets/item/contets/*_300_250_$image,1p,badfilter
+@@||point-g.rakuten.co.jp/pg_assets/item/contets/*_300x250_$image,1p,badfilter
+@@||prf.hn/source/$image,domain=chobirich.com|gendama.jp|point.i2i.jp,badfilter
+@@||sjbd.jp/affiliate/LS/$image,domain=pointtown.com,badfilter
+@@||skyflag.jp/img/admin/$image,domain=gendama.jp|moppy.jp,badfilter
+@@||smart-c.jp/i?$image,domain=moppy.jp,badfilter
+@@||sofmap.com/ec/topics/linkshare/toppage/120x60.$image,domain=chobirich.com,badfilter
+@@||tcs-asp.net/imagesender$image,domain=chobirich.com|dietnavi.com|ecnavi.jp|gendama.jp|lifemedia.jp|moppy.jp|point.i2i.jp|yentame.net,badfilter
+@@||toysrus.co.jp/*/ls/120_$image,domain=t-mall.tsite.jp,badfilter
+@@||trafficgate.net/t/b/$image,domain=chobirich.com|dietnavi.com|ecnavi.jp|gendama.jp|lifemedia.jp|manpukujima.com|moppy.jp|moraerumall.com|netmile.co.jp|point.i2i.jp|pointi.jp|pointtown.com|t-mall.tsite.jp,badfilter
+@@||valuecommerce.com^$image,domain=chobirich.com|cmnw.jp|coreda.jp|dietnavi.com|ecnavi.jp|gendama.jp|lifemedia.jp|manpukujima.com|moppy.jp|netmile.co.jp|point.i2i.jp|pointi.jp|pointtown.com|t-mall.tsite.jp|yentame.net,badfilter
+@@||xmax.jp/trade/$image,domain=ecnavi.jp|lifemedia.jp|pointtown.com,badfilter
+
+! Counter Optout rules
+||omnitagjs.com^$1p
+@@||adtdp.com/optout.js$domain=smalgo.jp,badfilter
+@@||criteo.com/process/criteo_optout^$script,1p,badfilter
+@@||focas.jp/optout/optout.html$domain=adroute.froute.jp,badfilter
+@@||gmossp-sp.jp/js/optout/$frame,domain=akane-ad.com,badfilter
+@@||gmossp-sp.jp/optout/$frame,domain=akane-ad.com,badfilter
+@@||hlserve.com/delivery/iaboptout?$script,domain=criteo.com,badfilter
+@@||ladsp.com/optout/getoptout?$script,domain=so-netmedia.jp,badfilter
+@@||primecaster.net/adlogue/api/id|$script,1p,badfilter
+@@||primecaster.net/optout.css$1p,badfilter
+@@||primecaster.net/optout.html$domain=news-tv.jp,badfilter
+@@||privacy.criteo.com/api/iab/optoutstatus?$script,1p,badfilter
+@@||tag.ladsp.com/optout?$script,domain=so-netmedia.jp,badfilter
 
 ! ---------- Affiliate links/Click-through tracker ----------
 ||aaaf.jp^
@@ -344,6 +407,7 @@ _omniture.$script,domain=mathworks.com
 ! github.com/AdguardTeam/AdguardFilters/pull/67992
 ||mkto-*.com^$3p
 ||monitor.azure.com^
+||mps-gba.de^$3p
 ||ourl.link^
 ||recs.richrelevance.com^$3p
 ||rtoaster.jp^$3p
