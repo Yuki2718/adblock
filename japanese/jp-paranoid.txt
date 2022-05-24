@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220523
+! Version: 20220524
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -56,6 +56,8 @@ _Ad300x250_
 ||bwbx.io/s3/javelin/public/javelin/js/foundation/OverlayAd/$domain=bloomberg.com
 ||bwbx.io/s3/javelin/public/javelin/js/foundation/SuperburstAd/$domain=bloomberg.com
 ||caribbeancom.com^$3p,domain=~1pondo.tv|~adult-navi.net|~adult-websearch.net|~adultmovieplus.com|~caribbeancom-sample.com|~caribbeancomgirl.com|~d2pass.com|~docodemodouga.com|~eroking.net|~eroxjapanz.com|~fc1adult.com|~gayshamesf.org|~heydouga.com|~hotellestilleuls-hasparren.com|~javxxx.me|~medicaltourexpert.com|~nukiez.tv|~scar2014.com|~sexy-parts.com|~tenmusume.com|~warashi-asian-pornstars.fr|~xn--eckveb0l002pve5b.com
+! in case /concert-ads/ is blocked by external list
+||cdn.concert.io/lib/adblock/sbnation.html
 !||cdn.storematch.jp^$3p
 ||concert.io/lib/concert-ads/$script,3p,redirect=noop.js
 ||dospara.co.jp/5img/side/bnr_
@@ -87,6 +89,8 @@ veryweb.jp##.c-articleList > div[id^=logly]:upward(1)
 @@||tochinavi.net/ad/img/$image,1p,badfilter
 
 ! ---------- Cosmetic for ads ----------
+! in case /concert-ads/ is blocked by external list
+##.adblock-allowlist-messaging__wrapper
 ##.dfad
 ##body[id][class*=post-] section[class*=cta]
 2099.jp##.ugb-cta:not(.ugb-cta--design-plain)
