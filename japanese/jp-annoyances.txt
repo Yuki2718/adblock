@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220524
+! Version: 20220525
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -169,6 +169,9 @@ imgur.com##.Transformation-tooltip--hovering
 ||matcha-jp.com/renewal/js/push.
 ||mempf.yahoo.co.jp/offer?position=mhd_premium_pc,$domain=news.yahoo.co.jp
 ||news.biglobe.ne.jp/js/push/
+||nicoblomaga.jp/material/31/notinf180.gif$domain=kojikisokuhou.com
+kojikisokuhou.com##.notification
+||nicoblomaga.jp/material/31/tatefication.png$domain=kojikisokuhou.com
 ||nipponrentacar.co.jp/notification/
 ||nishinippon.co.jp/serviceworker.js
 ||oakley.com/utility/components/push-notification/
@@ -179,7 +182,7 @@ imgur.com##.Transformation-tooltip--hovering
 ||script1.kakaku.k-img.com/script/push.
 ||shikiho.jp/notice/
 ||shukatsu-mirai.com/notifications.
-||thetennisdaily.jp/assets/js/push-modal.
+||thetennisdaily.jp/assets/js/push-modal.js
 ||ticker.teacup.com/rss2/
 ||tinami.com/js/jquery/tipsy/notify.
 ||townwork.net/js/register_sw.js
@@ -209,7 +212,7 @@ kakaku.com###modalFrame
 kyodemo.net##.is-danger.message
 lmaga.jp##.header_headline
 macha795.com###notice-area-wrap
-mail.yahoo.co.jp##.main > div[class] > div[class] > a[href$="/settings/theme"][title=""][font-size="14"]:upward(2)
+mail.yahoo.co.jp##.main > div[class] > svg + div[class] > a[title=""][font-size="14"]:upward(2)
 mrs.living.jp###floating-max
 ndtv.com###___ndtvpushdiv
 news.biglobe.ne.jp##.push-area-btn
@@ -1532,6 +1535,7 @@ japan.zdnet.com##.article-mailmagizine
 japan.zdnet.com##.mailmagazine
 jbl.com##.mail-form
 jinjibu.jp##.l-registerarea
+kotaku.com##.js_newsletter-form-inline
 kwm.co.jp##.book_link
 lifehacker.com##.js_subscribe
 lnews.jp##.sp-btn-mail-magazine
@@ -2075,7 +2079,7 @@ special.goo.ne.jp###bfb_content_sp
 transit.yahoo.co.jp##.mdSidePromo
 watch.impress.co.jp##.extension > aside.special
 wowma.jp###promotionBanner
-yahoo.co.jp##.MtoCTool
+yahoo.co.jp##.MtoCLink
 !#endif
 
 ! ---------- Intrusive widgets ----------
