@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220525
+! Version: 20220526
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -699,6 +699,11 @@ shukatsu-mirai.com###webpush
 ||smith-wesson.com/popup-front$frame
 smith-wesson.com##.clrbox-singup
 ||soluna.co.jp/web09/wp-content/plugins/fix-call-button/
+||sougiya.biz/assets/img/pc/banner/footer-footbn-
+sougiya.biz##.sw-Footbn
+||sougiya.biz/assets/img/pc/banner/side-bana01.
+||sougiya.biz/assets/img/pc/banner/side-bana02.
+sougiya.biz##.sideBanner
 ||storage.googleapis.com/bosyu-jobs-production-public/$domain=hacknote.jp
 hacknote.jp##.show.floatwidget
 ||style.nikkei.com/static/js/Rtoaster_
@@ -844,6 +849,8 @@ creativecommons.org###deed-donate-slide
 cryptocurrency-jp.net,ictmakes.com###js-footer-cta
 d.tube##.sticky.centered > div.announcement[style="width: 100%;"]
 daiwa.jp##.mnyl-contact-btn
+deezer.com##.modal:has(> div.modal-wrapper > div.modal-dialog > div#modal_push_premium)
+deezer.com##.push-header:style(background: none!important)
 detail.chiebukuro.yahoo.co.jp###fuwa
 developer.android.com##devsite-snackbar a.devsite-snackbar-link[href^="https://developer.android.com/survey"]:upward(devsite-snackbar)
 developer.mozilla.org##.notification:has(a[href^="https://www.surveygizmo"])
@@ -1194,6 +1201,7 @@ yahoo.com###login-banner
 yahoo.com###mega-banner-wrapper
 yamareco.com##.attention_clap
 yandex.com##.zalogin-smart
+yoox.com###popupNewsletter
 yoriso.com##.footer-cta
 youtube.com##ytd-popup-container > .ytd-popup-container > #contentWrapper > .ytd-popup-container[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"]
 youtube4kdownloader.com###fixed-addon-banner
@@ -1379,7 +1387,7 @@ zeiri4.com##.b-stickyShoukaiBanner
 ||telegram.im/widget-button/
 ~dereferer.me###mc_embed_signup
 ! Ignore generic
-cinci.jp,majorgeeks.com###mc_embed_signup
+blogs.opera.com,cinci.jp,majorgeeks.com###mc_embed_signup
 ||buy-ap.piano.io/checkout/offer/show?displayMode=*&showCloseButton=false*&url=https%3A%2F%2Fwww.kyobun.co.jp%2Fnews%$frame,domain=kyobun.co.jp
 ||buy-ap.piano.io/checkout/offer/show?displayMode=*&showCloseButton=false*&hasLoginRequiredCallback=true$frame,domain=www.japantimes.co.jp
 japantimes.co.jp##.tp-backdrop
@@ -1498,6 +1506,7 @@ bio.nikkeibp.co.jp##.-mail.l-asideBanner
 bitwave.showcase-tv.com##.merumaga
 bizhint.jp##.sg-recommend-register-area
 bizmates.jp##.p-magazine
+blogs.opera.com###download-iframe--sticky-bar
 booking.com##.emk_footer_update
 bunshun.jp###mail-magazine
 businessinsider.jp###mail_mag-under_title
@@ -1965,6 +1974,8 @@ blog.hatena.ne.jp##.gmo-campaign-banner
 blog.hatena.ne.jp##.upgrade-pro
 bravoporn.com,bravotube.net##.under-video2
 cyclist.sanspo.com###latest-news .sponsored:upward(li)
+deezer.com##.alert-wrapper > div > div > div > a[href$="/offers"]:upward(4)
+deezer.com##.conversion-banner
 deview.co.jp##.pr
 dictionary.com##.marketing-message
 felia.373news.com###ticker-area
@@ -2266,6 +2277,12 @@ pornbest.org##.modal-backdrop
 pornbest.org##body.modal-open:style(overflow: auto!important;)
 rakuten.ne.jp##.AgeCheck
 
+! ---------- Donation ----------
+||cdnjs.buymeacoffee.com^$3p
+||dff.jp^$3p
+||patreon.com/becomePatronButton.bundle.js
+||yggdore.com/t4ubtn/
+
 ! ---------- Other ----------
 */snowfall.jquery.js$script
 /AC_RunActiveContent.js
@@ -2278,7 +2295,6 @@ rakuten.ne.jp##.AgeCheck
 /wp-content/plugins/sociallocker-
 ||apester.com^$3p
 ||as.datasign.co^
-||cdnjs.buymeacoffee.com^$3p
 ||js.driftt.com^$3p
 ||sspinc.io^
 
