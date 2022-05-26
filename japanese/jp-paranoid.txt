@@ -59,7 +59,6 @@ _Ad300x250_
 ! in case /concert-ads/ is blocked by external list
 ||cdn.concert.io/lib/adblock/sbnation.html
 !||cdn.storematch.jp^$3p
-||concert.io/lib/concert-ads/$script,3p,redirect=noop.js
 ||dospara.co.jp/5img/side/bnr_
 ||ebook-assets.dmm.com^$3p,domain=~brodymag.com|~dmm.co.jp
 ||facebook.com/ajax/bootloader-endpoint*Comet
@@ -90,7 +89,7 @@ veryweb.jp##.c-articleList > div[id^=logly]:upward(1)
 @@||tochinavi.net/ad/img/$image,1p,badfilter
 
 ! ---------- Cosmetic for ads ----------
-! in case /concert-ads/ is blocked by external list
+! in case /concert-ads/ is blocked by external list/medium mode
 ##.adblock-allowlist-messaging__wrapper
 ##.dfad
 ##body[id][class*=post-] section[class*=cta]
@@ -445,7 +444,11 @@ _omniture.$script,domain=mathworks.com
 ||cloudflare.com/cdn-cgi/trace$3p,xhr,redirect-rule=noop.txt,domain=~1bit.space|~1bitspace.com|~funimation.com
 ||collect.igodigital.com^$script
 ||cxense.com^$frame,script,xhr,3p
+||docomo.ne.jp/js_osp/common/sitesearch_log.js
+||docomo.ne.jp^*/js_osp/common/v2_accordion_log.js?
 ||dynamicyield.com/st?
+! omtrdc.net CNAME
+||edge.adobedc.net^$xhr,domain=docomo.ne.jp
 ||facebook.com/platform/scribe_endpoint.php/
 ||gsght.com/twizards.js
 ||jreast.co.jp/material/js/rt.js
@@ -654,6 +657,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||buy-ap.piano.io/checkout/template/show?*&visitId=$frame,removeparam=visitId,domain=special.sankei.com
 ||cxense.com/public/widget/click/*?cx_$doc,removeparam=/^cx_/
 ||directededge.com/widget?*&tracking=$script,3p,removeparam=tracking
+||docomo.ne.jp^*?icid=$doc,removeparam=icid
 ||duckduckgo.com/?t=$doc,removeparam=t
 ||google.com/travel/hotels/entity/*?tcfs=$doc,removeparam=tcfs
 ||google.com/travel/things-to-do/*&dest_src=$doc,removeparam=dest_src
