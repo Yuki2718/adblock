@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220528
+! Version: 20220529
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -131,6 +131,7 @@ _cookie_compliance.
 ##.cookie-dialog-wrapper
 ###cookie-information
 ##.cookie-law
+##.cookie-warn
 ##.cookieAlertBox
 ##.cookieBox
 ##.cookieDisclaimer
@@ -208,6 +209,7 @@ netgear.com##.cookiealert
 neverware.com##.sqs-cookie-banner-v2
 newsvideo.jp,nicehash.com##.Cookie--bottom
 nittagroup.com##.cookieBox
+nowcast.co.jp##.cookie-warn
 oozeki-shop.com,projectcore.jp##.popup_confirmation_bar
 siix.co.jp###cookiewrap
 similarweb.com##.cookies-notification
@@ -232,7 +234,7 @@ zenoah.com##.cookies-notice
 /checkcookie.$domain=nipponkayaku.co.jp
 /cookie-banner$domain=airfrance.*|audioremover.com|booking.com|brita.co.jp|docucompress.com|fileconverto.com|imagesmaller.com|mp3louder.com|paypal.com|sedo.com|scamvoid.net|sugarsync.jp|urlvoid.com|videosmaller.com|videotoconvert.com|youcompress.com
 /cookie-consent-$domain=spain.info
-/cookie-consent.$domain=varonis.com|wolfram.com
+/cookie-consent.$domain=varonis.com|wacom.com|wolfram.com
 /cookie-consent/*$domain=europa.eu|noticiasesports.live|noweconomy.live|techgeek.digital
 /cookie-law-$~script,domain=3deservice.com|5cho-me.com|a-people.com|asahi-transnational.com|audacityteam.org|azbil.com|baddiehub.com|bunka-s.co.jp|chugai.co.jp|cyphertec.co.jp|dxr.jp|emergency-appeals-alliance.org|ficjp.com|gaminplay.com|gluu.org|hanwha-security.com|hldc.co.jp|imaginationtech.com|informaxonline.com|itsec.co.jp|jmu-amtec.co.jp|kos21.co.jp|maedakosen.jp|mcury.jp|nexa3d.com|otsl.jp|pornvibe.org|portalcripto.com.br|r-chapter.com|rakuten-med.com|s-sawa.com|safer-networking.org|shinkokenzai.co.jp|toyoknife.co.jp|vektor-inc.co.jp|xigmanas.com|yukes.co.jp
 /cookie-law-info-public.js$domain=3deservice.com|5cho-me.com|a-people.com|asahi-transnational.com|audacityteam.org|azbil.com|baddiehub.com|bunka-s.co.jp|chugai.co.jp|cyphertec.co.jp|dxr.jp|emergency-appeals-alliance.org|ficjp.com|gaminplay.com|hanwha-security.com|imaginationtech.com|informaxonline.com|itsec.co.jp|jmu-amtec.co.jp|kos21.co.jp|maedakosen.jp|mcury.jp|nexa3d.com|otsl.jp|pornvibe.org|portalcripto.com.br|r-chapter.com|rakuten-med.com|s-sawa.com|sgk.co.jp|shinkokenzai.co.jp|toyoknife.co.jp|vektor-inc.co.jp|xigmanas.com|yukes.co.jp
@@ -300,6 +302,7 @@ _eu_cookie_$domain=nbcsports.com
 ||cbon.co.jp/js/cookieprivacy_pop.js
 ||cdn.privacy-mgmt.com^$third-party,domain=free-fonts.com|thetimes.co.uk
 ||cdn.trustcommander.net/privacy^$domain=danone.com
+||civiccomputing.com^*=cookie$third-party,domain=msi.com
 ||cloud.xm-cdn.com/assets/js/custom/cookie_popup.
 ||cmp.cdn.thesun.co.uk^
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
@@ -307,7 +310,7 @@ _eu_cookie_$domain=nbcsports.com
 ||consent.dropbox.com^
 ||consent.economist.com^
 ||consent.trustarc.com^$third-party,domain=bain.com|bcg.com|dsm.com|nera.jp|juniper.net|oracle.com|tuya.com|wtwco.com
-||cookiebot.com^$domain=atradius.jp|blancco.com|bltinc.co.jp|infobip.com|keyence.co.uk|kaizenplatform.com|koaglobal.com|lpkf.com|mediaite.com|mitsuichemicals.com|monsterhunter.com|nordson.com|onrobot.com|rolandberger.com|sculpteo.com|showadenko.com|slamdunk-movie.jp|sololearn.com|thaisim.jp|tsumura.co.jp|wizberry.biz
+||cookiebot.com^$domain=atradius.jp|blancco.com|bltinc.co.jp|hills.co.jp|infobip.com|keyence.co.uk|kaizenplatform.com|koaglobal.com|lpkf.com|mediaite.com|mitsuichemicals.com|monsterhunter.com|nordson.com|onrobot.com|rolandberger.com|sculpteo.com|showadenko.com|slamdunk-movie.jp|sololearn.com|thaisim.jp|tsumura.co.jp|wizberry.biz
 ||cookiefirst.com^$third-party,domain=hat-hd.co.jp
 ||cookieinformation.com^$third-party,domain=lundbeck.com
 ||cookielaw.org^$third-party,domain=3dsystems.com|accenture.com|accusonus.com|adobe.com|airbus.com|all-clad.com|ametek.co.jp|ams.com|apachefriends.org|atomico.com|avast.*|aveda.jp|avg.com|axa.com|bab.la|baesystems.com|balenciaga.com|bayer.*|behance.net|bethesda.net|binance.com|biomedcentral.com|blackberry.com|bobbibrown.jp|bodybuilding.com|broadcom.com|cartoonnetwork.jp|caterpillar.com|ccleaner.com|cell.com|cisco.com|clariant.com|clarivate.com|collegeboard.org|connectwise.com|crowdstrike.jp|cslbehring.co.jp|cyberagent.co.jp|dazn.com|delamer.jp|deliveroo.*|deloitte.com|denso.com|dhl.com|discogs.com|dksh.com|dolby.com|dow.com|emojipedia.org|eqp.co.jp|esteelauder.jp|eure.jp|fastly.com|filehorse.com|forever21.com|foursquare.com|gamesindustry.biz|get.adobe.com|gilead.co.jp|givenchybeauty.com|goal.com|gqjapan.jp|guerlain.com|haascnc.com|henkel-adhesives.com|hm.com|home.kpmg|honeywell.com|hotspotshield.com|hp.com|hypebeast.com|idolmaster-official.jp|ikea.com|imperva.com|inquirer.com|ipswitch.com|jnjvision.jp|joc.or.jp|jt-science.com|jti.com|kanebo-cosmetics.co.jp|kao.com|kos21.co.jp|loccitane.com|loreal.com|lvmh.co.jp|mastercard.co.jp|mckinsey.com|mondotv.jp|msd.co.jp|mt.com|murata.com|nature.com|natureasia.com|nba.com|netapp.com|newegg.com|nobelbiocare.com|nomorerules.net|northropgrumman.com|nypost.com|olympics.com|omen.com|omsystem.com|opendns.com|otis.com|pairs.lv|paloaltonetworks.jp|payoneer.com|pgpint.com|pmi.com|reckitt.com|ringcentral.com|rmkrmk.com|roche-diagnostics.jp|sao-game.jp|security.com|sensai-cosmetics.com|shop-givenchybeauty.jp|sigmaaldrich.com|slate.com|spotify.com|springer.com|springeropen.com|staubli.com|steelcase.com|stellamccartney.com|superantispyware.com|suqqu.com|tabichan.jp|takeda.com|tdk.com|telerik.com|tetrapak.com|tokyo2020.org|toofacedcosmetics.jp|touchvpn.net|toyonut.co.jp|trados.com|trendmicro.com|ul.com|unity.com|unity3d.com|vector.com|viatris.com|victorinox.com|vitacost.com|vogue.co.jp|voguegirl.jp|webex.com|wired.jp|worldcat.org|wowhead.com|zara.com|zarahome.com|zoom.us
@@ -349,7 +352,7 @@ _eu_cookie_$domain=nbcsports.com
 ||nipponsteel.com/common/js/modal.cookie.control.js
 ||niv.co.jp/common/js/cookie_
 ||ocnk.net/js/confirmation-bar.js
-||onetrust.com^$third-party,domain=bizrisk.iij.jp|cassina-ixc.jp|chelseafc.com|citizenwatch-global.com|daikin.co.jp|dunlop-motorcycletyres.com|dunlop-tyres.co.jp|dunlop.co.jp|falken.co.jp|flaticon.com|fujifilm.com|fujifilm-x.com|furyu.jp|geonet.co.jp|glico.*|grcs.co.jp|hitachi-hightech.com|irca.org|jetro.go.jp|job-gear.net|junijuni.jp|kairport.co.jp|kansai-airport.or.jp|kansai-airports.co.jp|kissei.co.jp|lidea.today|lion.co.jp|mainichi.jp|matsuo-sangyo.co.jp|max-ltd.co.jp|milbon.com|mitsubishichem-hd.co.jp|morinaga.co.jp|nabtesco.com|nkkswitches.co.jp|oki-ops.jp|oki-osk.jp|oki-otc.jp|oki.com|okidensen.co.jp|orbea.com|osaka-airport.co.jp|panasonic.com|pixabay.com|powerproduction.jp|prioritypass.com|shiseido.com|sme.co.jp|smp.ne.jp|sportingnews.com|srigroup.co.jp|sumida.com|tena.co.jp
+||onetrust.com^$third-party,domain=alcare.co.jp|bizrisk.iij.jp|cassina-ixc.jp|chelseafc.com|citizenwatch-global.com|daikin.co.jp|dunlop-motorcycletyres.com|dunlop-tyres.co.jp|dunlop.co.jp|falken.co.jp|flaticon.com|fujifilm.com|fujifilm-x.com|furyu.jp|geonet.co.jp|glico.*|grcs.co.jp|hitachi-hightech.com|irca.org|jetro.go.jp|job-gear.net|junijuni.jp|kairport.co.jp|kansai-airport.or.jp|kansai-airports.co.jp|kissei.co.jp|lidea.today|lion.co.jp|mainichi.jp|matsuo-sangyo.co.jp|max-ltd.co.jp|milbon.com|mitsubishichem-hd.co.jp|morinaga.co.jp|nabtesco.com|nkkswitches.co.jp|oki-ops.jp|oki-osk.jp|oki-otc.jp|oki.com|okidensen.co.jp|orbea.com|osaka-airport.co.jp|panasonic.com|pixabay.com|powerproduction.jp|prioritypass.com|shiseido.com|sme.co.jp|smp.ne.jp|sportingnews.com|srigroup.co.jp|sumida.com|tena.co.jp
 ||optanon.blob.core.windows.net^$domain=comodo.com
 ||ox.ac.uk/portal_javascripts/Turnkey%20Theme/resourcecollective.cookielawcookielaw_init
 ||pages.ubembed.com/*/a.html?closedAt=$subdocument,domain=dlink.com
