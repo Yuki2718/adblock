@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220531
+! Version: 20220601
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -197,9 +197,16 @@
 ||bannertrack.net^$script,third-party,redirect=prevent-bab2,important
 ||fundingchoicesmessages.google.com^$third-party
 
+###DivTopAd:not(:empty)
+###ad-zone-1:not(:empty)
+###ad_190x90:not(:empty)
+###ads-sticky:not(:empty)
 ###banner-advert-container:not(.ad-inserter):not(.adsense)
+###iqadtile5:not(:empty)
+###leftframeAD:not(:empty)
 ###rvt-inline-0
 ###rvt-inline-1
+###tobsideAd:not(:empty)
 ##.SponsorAds:not(.adsense)
 ##.ad-inserter:not(#banner-advert-container):not(.adsense)
 ##.ad-placement:not(.adsbox):not(.afs_ads):not(#ablockercheck)
@@ -295,15 +302,22 @@
 #@##DivAd3
 #@##DivAdB
 #@##DivAdC
+#@##DivTopAd
 #@##ad-frame
 #@##ad-lb
+#@##ad-zone-1
 #@##adAd
 #@##adTeaser
+#@##ad_190x90
+#@##ads-sticky
 #@##ads_iframe
 #@##banner-advert-container
 #@##glinkswrapper
+#@##iqadtile5
+#@##leftframeAD
 #@##outbrain-paid
 #@##sponsored_link
+#@##tobsideAd
 #@#.SponsorAds
 #@#.ad-inserter
 #@#.ad-placement
