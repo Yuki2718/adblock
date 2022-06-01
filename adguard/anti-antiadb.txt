@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220601
+! Version: 20220602
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -23,7 +23,9 @@
 .com/pup.php?section=$script,third-party
 .com/pub?id=$script,third-party
 .com/script/compatibility.js|$third-party
+.com/script/intrf.js|$third-party
 .com/script/ippg.js|$third-party
+.com/script/suv4r.js|$third-party
 .com/sfp.js|$script,third-party
 .com/slider.php?section=$script,third-party
 .com/v.js?v=3|$~third-party
@@ -74,7 +76,8 @@
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,third-party,match-case
 /^https:\/\/[a-z]{8,15}\.xyz\/[%0-9a-zA-Z]{170,}$/$script,third-party
-/^https:\/\/[a-z]{8,9}\.com\/gamma\/\d{3,4}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{8,15}\.com\/gamma\/\d{3,4}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{8,15}\.com\/omega\/\d{3,4}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
 /^https?:\/\/(?:ak\.)?[a-z]{6,10}\.(?:com|net)\/4\/\d{7}/$document,popup
 /^https?:\/\/[a-z]{6,15}\.(?:com|net|top|xyz)\/1\/\d{7}\/\?var=\d{7}&/$document,popup
@@ -156,7 +159,6 @@
 /safu/safu.js
 /sc4fr/rwff/f9ef/*$script,third-party
 /script/atg.js
-/script/java.php?z=$xmlhttprequest,third-party
 /script/nasu.js$third-party
 /script/native_render.js
 /script/native_server.js
@@ -207,10 +209,14 @@
 ###rvt-inline-0
 ###rvt-inline-1
 ###tobsideAd:not(:empty)
+##.BannerAd:not(#filter_ads_by_classname)
 ##.SponsorAds:not(.adsense)
 ##.ad-inserter:not(#banner-advert-container):not(.adsense)
+##.ad-placeholder:not(#filter_ads_by_classname)
 ##.ad-placement:not(.adsbox):not(.afs_ads):not(#ablockercheck)
 ##.adBanner:not(:empty)
+##.adbadge:not(#filter_ads_by_classname)
+##.ads_1:not(#filter_ads_by_classname)
 ##.sponsor-ad:not(.adsense)
 ##a#mobile_pop.js-mob-popup
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="height:"][style*="width:"][style*="inset:"][style*="z-index:"]
@@ -242,6 +248,7 @@
 @@/ads/pop.js|$script,~third-party
 @@/adsense.js?adsdata=$script,~third-party
 @@/adv/ads/popunder.js?$script,~third-party
+@@/adview_pic_cpc_cpm_cpa_guanggao_gg_ads_300x250.js|$script,~third-party
 @@/design/relaunch/gfx/elitepartner_|$script,third-party
 @@/dh-anti-adblocker/assets/js/ads-prebid.js?
 @@/js/ad_pop.js|$other,script,~third-party
@@ -318,13 +325,17 @@
 #@##outbrain-paid
 #@##sponsored_link
 #@##tobsideAd
+#@#.BannerAd
 #@#.SponsorAds
 #@#.ad-inserter
+#@#.ad-placeholder
 #@#.ad-placement
 #@#.adBanner
+#@#.adbadge
 #@#.ads-iframe
 #@#.adsBanner
 #@#.adsBox
+#@#.ads_1
 #@#.adsbygoogle
 #@#.display_ad
 #@#.div-gpt-ad

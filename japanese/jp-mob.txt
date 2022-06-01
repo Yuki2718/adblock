@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220601
+! Version: 20220602
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -83,6 +83,8 @@
 ||shufu-job.jp/news/wp-content/themes/s-job/img/common/flow-ad_
 ||smart-flash.jp/wp-content/themes/original/embed/FoneH
 ||songsterr.com/static/media/rra640en.2ff86105.png
+||sumaho-susume.com/wp-content/uploads/*-online-bunner.png
+||sumaho-susume.com/wp-content/uploads/2021/02/docomo-float-
 ||tech-camp.in/note/wp-content/uploads/2021/10/TCB_bnr_header_height200-
 ||ten-fortune.jp/ti/sp_images/startc_s.png
 ||thumbnail.image.rakuten.co.jp/@0_mall/$domain=yamahack.com
@@ -423,10 +425,12 @@ gourmet.aumo.jp###popin-ad-network-2
 grapee.jp##.box_outbrain
 grapee.jp##aside > div[class^="mod-ads-area"]:upward(1)
 grapee.jp##div[id^="guno-m"]
+gressive.jp##.sp-footer-banners
 gundamlog.com###article_head_v2
 h1g.jp##.recently-list2 > div#taboola-below-article-thumbnail-sp:upward(1)
 h1g.jp##.recently-list2 > script[src^="https://js.ad-stir.com/"]:upward(1)
 h1g.jp##.recently-list2 > ul[style="overflow-x: auto; white-space: nowrap;"]:upward(1)
+h1g.jp##div[align="center"] > a[href^="https://hb.afl.rakuten.co.jp/"]
 h1g.jp##div[id^="div_fam_async_"]
 h1g.jp##div[style$="width:300px; height:250px; text-align:center;"]
 h1g.jp##div[style*="width:336px; height:280px"]
@@ -809,6 +813,7 @@ sports.yahoo.co.jp###ad-smon
 sports.yahoo.co.jp###ydn-nm
 st.benesse.ne.jp###div-M_UP_bnr_320x50
 store.shopping.yahoo.co.jp###shp_store_dtl_mhd_sp
+sumaho-susume.com###sp-tokusetsu-bottom
 sundaygamer.net###text-14
 supleks.jp###footer-banner
 spur.hpplus.jp###ADHeader
@@ -931,6 +936,7 @@ ero-nuki.net##.afbnr_fam_index
 ero-nuki.net##.movie_bottom
 ero-nuki.net##div[id$="_adnex"]
 ero-tube.jp##.header-ad
+erobanach.com##.shiny-btn1
 erodougameijin.com##.sidebar-style > .s2:has-text(オススメ記事)
 erogazo-ngo.com###text-36
 erogazopple.com###ad06
@@ -968,6 +974,7 @@ gaytail.com##.happy-before-video
 gelbooru.com##div[style$="width: 300px;"]
 gelbooru.com##div[style="text-align: center; padding: 10px; border: 1px dotted #aaaaaa; margin: 10px;"]
 goodav17.com##.ads_mobile
+h-taikendan.net##div[style="height:250px;"]
 hanime.tv##.htvad[style^="width: 300px; display: block"]
 hentai-books.com##.sp-mieru
 hentai-cosplays.com,hentai-gif-anime.com,hentai-img.com,porn-images-xxx.com###adsense_center
@@ -1118,6 +1125,7 @@ brandkagu-outlet.net##^.flo_ban
 diamond.jp##^.spdisplay
 eiga.com##^#video_ad
 eiga.com##^.header-pure-banner
+erobanach.com##^.apad
 erodougameijin.com##^div[class^=flexbox]:not(.flexbox3)
 erogazou-pinkline.com##^#adnex-text-widget
 erogazooo.club##^.spad
@@ -1134,6 +1142,8 @@ xhamster.*,xhwide1.com##^script:has-text(popunder)
 xn--w8jtkjf8c570x.com##^div[id$="mobile_banner_top"]
 zai.diamond.jp##^.sp-floating-banner
 
+erobanach.com##+js(aeld, , returnAd)
+erobanach.com##+js(aopw, hidden)
 h-ken.net##+js(acis, onload, ad)
 javmix.tv##+js(acis, addEventListener, style.display)
 m.hd21.com,m.nuvid.com##+js(set, player.postitialTimeout, 0)
