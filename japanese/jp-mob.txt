@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220602
+! Version: 20220603
 
 ! ---------- Ads general ----------
 /lite2/ads.js
@@ -68,6 +68,7 @@
 ||m.youtube.com/get_midroll_$domain=youtube.com
 ||mysuki.jp/wp-content/themes/cocoon-child-master/images/sp-cta*$image,1p
 ||news.nifty.com/smartphone/images/*_banner.$image,1p
+||nicomanga.jp/thumb/8027436l|$domain=seiga.nicovideo.jp
 ||nimg.jp/img/common/blocked_premium_banner.jpg
 ||nyaasokuvip.net/wp-content/uploads/*/ad_manga_
 ||oricon.co.jp/sp/img/_parts/manual/yomurun/
@@ -248,6 +249,7 @@ baby-calendar.jp###sp
 baby-calendar.jp##div[id^="JP_BABY_sp_all_"]
 bakuwaro.com,jiwasoku.com##div[style*="padding: 0px; text-align: center; width: 100%; height: 3"]
 bbs.animanch.com###resList > div.inner
+beauty.biglobe.ne.jp###staticBalloonContent
 beauty.oricon.co.jp##aside[style="text-align:center;margin-top:3px;min-height:100px; margin-bottom: 20px;"]
 belcy.jp###Ad_Overlay
 belcy.jp##.Ad_widget
@@ -416,7 +418,8 @@ gizmodo.com,lifehacker.com##.atf_placeholder
 goguynet.jp##.mobileAdBox
 goguynet.jp##div[style$="height:250px; width: 300px;"]
 gooday.nikkei.co.jp##.pr-img + section.gdy-article-list
-googirl.jp##.newentry_in > li.“cf”
+googirl.jp##.newentry_in > li:not([class])
+googirl.jp##ul[class$="ad-ranking"]
 gori.me##.mobile_adsense_archive
 gosunkugi.com###mobile_text-2
 gosunkugi.com###mobile_text-3
@@ -498,8 +501,14 @@ jbpress.ismedia.jp##.rtTaoolaElem
 jbpress.ismedia.jp##div[style="min-height:280px;"]
 jbpress.ismedia.jp##.m-backnumber-list-item > div[id^="div-gpt-"]:upward(1)
 jiji.com##.RectangleAd
+jj-jj.net##.page-content > div[style="text-align:center;margin-bottom:20px;"]
 jorudan.co.jp###ad-bottom-1
 jorudan.co.jp##.com_pr_rmads_bottom
+josei-bigaku.jp###adSenseMin
+josei-bigaku.jp##.ad_related
+josei-bigaku.jp##.btm_ad
+josei-bigaku.jp##.heading_ad
+josei-bigaku.jp##.sponsored
 jp.sharp##.floating
 jpnumber.com##.sponsor-link1
 jprime.jp##.ad-overlay
@@ -601,6 +610,7 @@ minkara.carview.co.jp##.decoyauc
 minkara.carview.co.jp##.decoyshop
 minkara.carview.co.jp##.foot-banner > div[id^="\33 00X250_"]:upward(1)
 mobareco.jp##.footer-article
+moguravr.com##.mg-ads-mobile
 monomax.jp##.spacialArea01
 monomax.jp##div[style="min-height: 120px;"]
 mora.jp###topRank_adBox_resp
@@ -775,7 +785,6 @@ sankeibiz.jp###textAd_wpics
 sankeibiz.jp##.module_pr:has(> div.module_content > div[id^="div-gpt-ad-Mobile_Trend"])
 seiga.nicovideo.jp##.pickup_ads_container
 seiga.nicovideo.jp##div[data-ads-name]
-seiga.nicovideo.jp##div[data-ads-name="sp_android_web_manga_viewer_lv3_300x250_north"]:upward(1)
 sirogohan.com##.sp-banner
 smartlog.jp###smlg_footer_ad
 smbiz.asahi.com##.ad-sp-side-rect
@@ -841,6 +850,7 @@ twiman.net##.mx-auto[style="max-width:623px;"]
 utaten.com##.threeToOneRectangleBanner
 video.fc2.com##.ad_area_top
 viet-jo.com##.bd_bd > div[class^="text-top-tab1-"] > div.bd > div.bd_left[name]:has-text(PR):upward(2)
+vivi.tv##.bannerArea
 washingtonpost.com###mobile-footer-ad-wrapper
 washingtonpost.com##[data-qa="article-body-ad"]
 watch.impress.co.jp###ad-inline
@@ -1105,7 +1115,6 @@ news.owata-net.com##html[style="overflow: hidden;"]:style(overflow: auto!importa
 phileweb.com###sp_article_header:style(height: auto !important;)
 phileweb.com##body:style(padding-top: 100px !important;)
 phileweb.com##header.has-topbanner .header-in:style(height: auto !important;)
-seiga.nicovideo.jp##div[data-ads-name="sp_android_web_manga_viewer_lv3_300x250_south"]:upward(1):style(height: 82px !important;)
 w3schools.com###tryitLeaderboard ~ #container:style(top: 48px!important;)
 w3schools.com##.trytopnav:style(top: 0!important;)
 
@@ -1165,6 +1174,7 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 @@||googletagservices.com/tag/js/gpt.js$domain=koigaku.machicon.jp
 @@||log000.goo.ne.jp/js/VLTraceDMD.js$domain=news.goo.ne.jp
 @@||lupicia.com/sp/img/ad/$image,1p
+@@||res.ads.nicovideo.jp/assets/js/ads2.js$domain=sp.seiga.nicovideo.jp
 @@||suumo.jp/sp/js/beacon.js$script,1p
 @@||thumbnail.thench.net/thumb/$image,domain=itest.5ch.net
 @@||tpc.googlesyndication.com^$script,1p
