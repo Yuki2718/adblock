@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220603
+! Version: 20220604
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -72,6 +72,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 /webnotification.$badfilter
 /webnotification.$script
 /wp-content/plugins/push-notification/*
+/wp-content/plugins/shogakukan-push-service/*
 ||arc.io^$3p
 ||aswpsdkeu.com^$3p
 ||bildirt.com^$3p
@@ -133,6 +134,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||sdk.push7.jp^$3p,domain=~secret2.cygames.co.jp
 ||sendpulse.com^$3p
 ||sckxppzdm.com^$3p
+||shogakukan-push-service.net^$3p
 ||subscribers.com^$3p
 ||truenat.bid^$3p
 ||truepush.com^$3p
@@ -854,10 +856,13 @@ chocolatey.org##.show.fade.modal-backdrop
 chocolatey.org##body:style(overflow:auto !important)
 chrome.google.com##[role="dialog"][aria-labelledby="promo-header"]
 city.living.jp###area-select
+clubdam.com##.l-page-bottom__cv
 cnn.com##.sibling
 community.norton.com###block-norton-exit-poll-norton-poll-footer
 cosmopolitan.com###recommended-modal
 context.reverso.net###register-popup-bottom
+coolors.co###generator-tutorial-intro
+coolors.co##body.route-generate:style(overflow: auto !important; position: initial !important;)
 creativecommons.org###deed-donate-slide
 cryptocurrency-jp.net,ictmakes.com###js-footer-cta
 d.tube##.sticky.centered > div.announcement[style="width: 100%;"]
@@ -1703,6 +1708,7 @@ amazon.*##.shoppingCxFeedbackRootWidget
 arne.media###custom_html-4
 arne.media###custom_html-5
 b.kyodo.co.jp##.banner-area-entry + h3.category-title
+bepal.net##.modBlockAdsOsusume
 biteki.com##.btn_back_to_list + div > .recommend_title
 bunshun.jp##.block-header:has-text(SPECIAL)
 bunshun.jp##a[href$="?ref=special"]
@@ -2187,6 +2193,7 @@ bitmos.co.in,nstnews.net##+js(set, count, 0)
 bluemediafiles.com,onlyhgames.com##+js(nano-sib, i--)
 bluemediafiles.com##+js(set, Time_Start, 0)
 cararegistrasi.com,chooyomi.com,federleqa.icu,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgirx.xyz,imgjut.buzz,imgkaka.xyz,imgkane.buzz,imgkia.*,imgklx.xyz,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,kekolangti.com,michaelemad.com,nemenlake.icu,opalekr.icu,pikupalate.com,rtkenale.icu,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
+cashearn.cc##+js(nano-sib, #timer)
 codecomets.com,techxpulse.com###timeblock
 codecomets.com,techxpulse.com##+js(rc, disabled, a#enablebtn)
 coinlyhub.com##+js(nano-sib, seconds)

@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220603
+! Version: 20220604
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -11,6 +11,7 @@
 /amp-user-notification-
 /cc-cookie-consent/*
 /cm4all.com.widgets.CookiePolicy/show.
+/cookie-alert.
 /cookie-bar/*
 /cookie-consent-manager.js
 /cookie-notification.
@@ -115,6 +116,7 @@ _cookie_compliance.
 ###cookies_message
 ###cookiewrap
 ###eu-cookie-notifier
+###gdpr-cookie-message
 ###gdpr-cookie-notice
 ###gdpr_area
 ###moove_gdpr_cookie_info_bar
@@ -200,6 +202,7 @@ jcrpharm.co.jp###cookie_policy
 junichi-manga.com,nme-jp.com###cookie-notice
 laufenn.com##.cookie_notice
 mallinckrodt.com##.js-cookie-notice
+marketing-support.jp###gdpr-cookie-message
 mhi.com##.cookieAlertBox
 minebeamitsumi.com###cookie_agreement
 namepros.com##.notice--cookie:not(body):not(html)
@@ -232,6 +235,7 @@ zenoah.com##.cookies-notice
 /assets/cookies_$domain=algolia.com
 /checkcookie.$domain=nipponkayaku.co.jp
 /cookie-banner$domain=airfrance.*|audioremover.com|booking.com|brita.co.jp|docucompress.com|fileconverto.com|imagesmaller.com|mp3louder.com|paypal.com|sedo.com|scamvoid.net|sugarsync.jp|urlvoid.com|videosmaller.com|videotoconvert.com|youcompress.com
+/cookie-bnr.$domain=aspica.co.jp
 /cookie-consent-$domain=spain.info
 /cookie-consent.$domain=varonis.com|wacom.com|wolfram.com
 /cookie-consent/*$domain=europa.eu|noticiasesports.live|noweconomy.live|techgeek.digital
@@ -318,6 +322,7 @@ _eu_cookie_$domain=nbcsports.com
 ||cookiesaustorage.blob.core.windows.net/consent/$domain=qantas.com
 ||daijob.com/javascripts/gdpr/
 ||digitalocean.com/cookieConsent/
+||dydo-ghd.co.jp/check-cookie/
 ||e-cdns-assets.dzcdn.net/common/js/gdpr-appliance/$domain=deezer.com
 ||ensighten.com^$3p,domain=nisshin.com
 ||fc2.com/js/blogranking/pp_agreement
@@ -400,7 +405,7 @@ dlink.com##.ub-emb-bar-frame
 7r6.com###banner-cookie
 aa.com,americanairlines.*###aa_optoutmulti-Modal
 about.fb.com###GDPRConsentBar
-ac-illust.com,amada.co.jp,ambafrance.org,freesound.org,github.io,lockheedmartin.com,oanda.com,osdn.net,photo-ac.com,x18.porn###cookie-bar
+ac-illust.com,amada.co.jp,ambafrance.org,freesound.org,github.io,lockheedmartin.com,oanda.com,osdn.net,photo-ac.com,smallseotools.com,x18.porn###cookie-bar
 account.xiaomi.com##.mi-cookie-banner
 accounts.pixiv.net###js-privacy-policy-banner
 accuweather.com##.privacy-policy-banner
@@ -456,7 +461,7 @@ axalta.com##.cookieInfoBannercorp
 bain.com###cooky_policy
 bannerengineering.com,brita.co.jp##.cookie-banner-container
 barclays.co.jp##.parsys.cookies
-base64decode.net,circus-inc.com,dreamincubator.co.jp,foreignaffairs.com,hitachi-kenki.co.jp,kke.co.jp,novel.pixiv.net,sanken-ele.co.jp,thepack.co.jp,tocos-j.co.jp,wmg2021.jp##.gdpr
+base64decode.net,braskaruizawa.com,circus-inc.com,dreamincubator.co.jp,foreignaffairs.com,hitachi-kenki.co.jp,kke.co.jp,novel.pixiv.net,sanken-ele.co.jp,thepack.co.jp,tocos-j.co.jp,wmg2021.jp##.gdpr
 basf.com##.cookiepolicy
 bbc.com,the.bbc###cookiePrompt
 bbc.com##header[role="banner"] > div[class^="bbc-"] > div[class^="bbc-"][dir="ltr"]:not([class*="-Banner"])
@@ -727,6 +732,7 @@ l2db.info##.access-cookies
 lamborghini.com###disclaimer-cookie
 landrover.co.jp##.NotificationBar[data-expires="30"]
 lego.com##div[class^="AgeGatestyles__CookieDisclaimer-"]
+legoschool.jp###cookie-config
 leo-pharma.jp##body > div[id^="react_"] > div[data-reactroot] > div[class^="_"] > div.c_row > button[class^="_"]:upward(2)
 lexar.com###lexar-accept-cookie
 lilly.co.jp##.lds-cookie-consent
@@ -775,6 +781,7 @@ msn.com##.cookieBanner
 mt-pharma.co.jp##.acceptUseCookie
 mtg-jp.com###cookie-notice-box
 mundipharma.com###__cookieWrapper
+music-avenue.yamahamusic.jp##.bf_gdpr_box
 my.kaspersky.com##wp-cookie-notification-banner
 myair.resmed.com##.c-notification-pusher[style="height: 49px;"]
 myair.resmed.com##section[id^="alert-cookie-"]
