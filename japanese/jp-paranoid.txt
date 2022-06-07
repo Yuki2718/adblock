@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220604
+! Version: 20220608
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -239,6 +239,9 @@ smart-flash.jp##^.adsBlock
 
 ! Counter Optout rules
 ||omnitagjs.com^$1p
+@@optout$frame,script,domain=youronlinechoices.com,badfilter
+@@status$frame,domain=youronlinechoices.com,badfilter
+@@||ad.amgdgt.com/ads/js/$domain=ad.amgdgt.com,badfilter
 @@||adtdp.com/optout.js$domain=smalgo.jp,badfilter
 @@||criteo.com/process/criteo_optout^$script,1p,badfilter
 @@||focas.jp/optout/optout.html$domain=adroute.froute.jp,badfilter
@@ -246,6 +249,7 @@ smart-flash.jp##^.adsBlock
 @@||gmossp-sp.jp/optout/$frame,domain=akane-ad.com,badfilter
 @@||hlserve.com/delivery/iaboptout?$script,domain=criteo.com,badfilter
 @@||ladsp.com/optout/getoptout?$script,domain=so-netmedia.jp,badfilter
+@@||optout.mookie1.com/optout$badfilter
 @@||primecaster.net/adlogue/api/id|$script,1p,badfilter
 @@||primecaster.net/optout.css$1p,badfilter
 @@||primecaster.net/optout.html$domain=news-tv.jp,badfilter
@@ -397,7 +401,6 @@ _omniture.$script,domain=mathworks.com
 ! ---------- Analytics servers ----------
 ||asadcdn.com^$3p
 ||cdn-net.com^$3p
-||cedexis.net^$3p
 ||d2wy8f7a9ursnm.cloudfront.net^
 ||dcf.espn.com^
 ||ensighten.com^$3p
@@ -441,6 +444,7 @@ _omniture.$script,domain=mathworks.com
 ||carsensor.net/vos/
 ||cart.ec-sites.jp/cart_accept/js/google-analytics.
 ||ccpa.sp-prod.net/ccpa.js
+||cedexis.net^$script,3p
 ||cleverbridge.com/*/cleverAnalytics.js^
 ! FP for the sake of security
 ||clixtell.com/track.js

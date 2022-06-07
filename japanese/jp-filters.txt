@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220607
+! Version: 20220608
 
 ! Temporal
 ||30calclub.sakura.ne.jp/220402_
@@ -602,8 +602,8 @@ secrettalk.me##.week_hot
 /^https?:\/\/[a-z]{8,11}\.(?:com|net)\/tag\.min\.js$/$script,3p
 /^https?:\/\/[a-z]{8,13}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,3p
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)?$/$frame,3p,match-case,domain=~edu|~gov|~jp
+/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/(?!api|available)[a-z]{4,}\.json$/$xhr,3p,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$css,3p,match-case
-/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/[a-z]{4,}\.json$/$xhr,3p,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,3p,match-case
 /^https?:\/\/[a-z]{8,15}\.top(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$frame,3p,match-case
 /^https?:\/\/[a-z]{8,15}\.top\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$css,3p,match-case
@@ -1178,6 +1178,7 @@ secrettalk.me##.week_hot
 /js/popec.js|$1p
 /js/ppndr.
 /js/prebid-old.
+/js/prebid-v3.
 /js/prebid-video.
 /js/ulizahtml5-advertising.
 /js/xb.js$script,3p
@@ -1587,7 +1588,7 @@ secrettalk.me##.week_hot
 ://a.*/static?r=$script,3p
 ://a.*/warp/$script,3p
 ://a.*/warpim?id=$script,3p
-://ad.$domain=~ad.221616.com|~ad.55178.tw|~ad.8dm.tw|~ad.abematv.co.jp|~ad.acelandmark.com|~ad.aicloudedu.cn|~ad.ailv.biz|~ad.aisreview.com|~ad.alcodeit.com|~ad.alimama.com|~ad.alpinadigital.ru|~ad.americananthro.org|~ad.amministrazioneaccessibile.it|~ad.angel-live.com|~ad.autoepi.it|~ad.baitaibu.com|~ad.benesse.ne.jp|~ad.brrsd.org|~ad.bsbukgu.go.kr|~ad.cascaid.co.uk|~ad.chocure.com|~ad.co.pt|~ad.com.vn|~ad.cookpad.jp|~ad.cra.ac.th|~ad.creativelab.biz|~ad.cyclees.net|~ad.damh.cc|~ad.diamond.ne.jp|~ad.dlh.net|~ad.dlive.kr|~ad.dnoticias.pt|~ad.dogeza.me|~ad.dongju.ac.kr|~ad.dressmap.info|~ad.economia.cz|~ad.edmwork.work|~ad.edwardmellorpi.co.uk|~ad.embassies.net|~ad.esmplus.com|~ad.fafas.fi|~ad.fastapproach.ca|~ad.finpros.info|~ad.flowing.tel|~ad.fnal.gov|~ad.fowlersparts.co.uk|~ad.freepress.media|~ad.frissnet.hu|~ad.fsb.or.kr|~ad.ftcsc.org|~ad.games.dmm.*|~ad.gaprise.jp|~ad.geologic.co.jp|~ad.hanyangcyber.ac.kr|~ad.heally.co.kr|~ad.hellodream.me|~ad.herzbergimmobilien.de|~ad.hominem.info|~ad.idc.ai|~ad.iga.tw|~ad.ilcdn.fi|~ad.illusion1985.com|~ad.impress.co.jp|~ad.info.ro|~ad.infomaster.co.kr|~ad.infonear.co.jp|~ad.innovationeyeclinic.co.uk|~ad.intokustannus.fi|~ad.ipuli.tw|~ad.isotype.blue|~ad.job.id|~ad.kabarberita.me|~ad.kabutan.jp|~ad.kaizenplatform.net|~ad.keywordup.co.kr|~ad.knivesandtools.eu|~ad.kodansha.net|~ad.koko1.mobi|~ad.koredake.com|~ad.kpbma.or.kr|~ad.kyoai.ac.jp|~ad.kyobobook.co.kr|~ad.lahoo.ca|~ad.liblo.jp|~ad.linkedin.com|~ad.lnb.mobi|~ad.lsc.ac.cn|~ad.mbu.ac.th|~ad.mccinfo.de|~ad.meieki.news|~ad.mekuru.ne.jp|~ad.menuup.us|~ad.metrolagu.ru|~ad.mguwp.net|~ad.mica.edu|~ad.mobacure.com|~ad.moim.me|~ad.modellismo.it|~ad.naimojian.org|~ad.neuon.ai|~ad.nextvalue.site|~ad.nhipsongkhoe.vn|~ad.nisijp631.com|~ad.ntv.co.jp|~ad.omnius.co.kr|~ad.on.cc|~ad.org.br|~ad.org.nz|~ad.oudu.me|~ad.outlawgame.ir|~ad.pandacomm.ca|~ad.pay.media|~ad.qooza.hk|~ad.radost.us|~ad.rapidtest.jp|~ad.robata.org|~ad.ruralnet.or.jp|~ad.sachan.us|~ad.sankeiliving.co.jp|~ad.sekaibunka.com|~ad.sekkaku.net|~ad.seoxiehui.cn|~ad.sgames.org|~ad.shinoriku.com|~ad.silvena.net|~ad.singtao.ca|~ad.slvrbullet.com|~ad.smoothline.de|~ad.sphere.cz|~ad.statex.info|~ad.studioclassroom.com|~ad.studiodigital.hu|~ad.styleshare.kr|~ad.sweetgrass.jp|~ad.tabling.co.kr|~ad.taojiyun.com|~ad.timanetworks.mobi|~ad.tkw.cc|~ad.topease.net|~ad.touchnet.biz|~ad.tv24.vn|~ad.tv66.net|~ad.ubonab.ac.ir|~ad.univ.me|~ad.uoolu.com|~ad.vepmakers.xyz|~ad.vseveda.org|~ad.watchlakorn.in|~ad.weixuan.mobi|~ad.yanolja.com|~ad.youropia.gr|~ad.ysd.hk|~ad.yuhan.ac.kr|~ad.zukanpress.com|~ameba.jp|~ameblo.jp|~ckckk.com|~impress.co.jp|~jxnews.com.cn|~nwi.jp|~point-land.net
+://ad.$domain=~ad.221616.com|~ad.55178.tw|~ad.8dm.tw|~ad.abematv.co.jp|~ad.acelandmark.com|~ad.aicloudedu.cn|~ad.ailv.biz|~ad.aisreview.com|~ad.alcodeit.com|~ad.alimama.com|~ad.alpinadigital.ru|~ad.americananthro.org|~ad.amministrazioneaccessibile.it|~ad.angel-live.com|~ad.autoepi.it|~ad.baitaibu.com|~ad.benesse.ne.jp|~ad.brrsd.org|~ad.bsbukgu.go.kr|~ad.cascaid.co.uk|~ad.chocure.com|~ad.co.pt|~ad.com.vn|~ad.cookpad.jp|~ad.cra.ac.th|~ad.creativelab.biz|~ad.cyclees.net|~ad.damh.cc|~ad.diamond.ne.jp|~ad.dlh.net|~ad.dlive.kr|~ad.dnoticias.pt|~ad.dogeza.me|~ad.dongju.ac.kr|~ad.dressmap.info|~ad.economia.cz|~ad.edmwork.work|~ad.edwardmellorpi.co.uk|~ad.embassies.net|~ad.esmplus.com|~ad.fafas.fi|~ad.fastapproach.ca|~ad.finpros.info|~ad.flowing.tel|~ad.fnal.gov|~ad.fowlersparts.co.uk|~ad.freepress.media|~ad.frissnet.hu|~ad.fsb.or.kr|~ad.ftcsc.org|~ad.games.dmm.*|~ad.gaprise.jp|~ad.geologic.co.jp|~ad.hanyangcyber.ac.kr|~ad.heally.co.kr|~ad.hellodream.me|~ad.herzbergimmobilien.de|~ad.hominem.info|~ad.idc.ai|~ad.iga.tw|~ad.ilcdn.fi|~ad.illusion1985.com|~ad.impress.co.jp|~ad.info.ro|~ad.infomaster.co.kr|~ad.infonear.co.jp|~ad.innovationeyeclinic.co.uk|~ad.intokustannus.fi|~ad.ipuli.tw|~ad.isotype.blue|~ad.job.id|~ad.kabarberita.me|~ad.kabutan.jp|~ad.kaizenplatform.net|~ad.keywordup.co.kr|~ad.knivesandtools.eu|~ad.kodansha.net|~ad.koko1.mobi|~ad.koredake.com|~ad.kpbma.or.kr|~ad.kyoai.ac.jp|~ad.kyobobook.co.kr|~ad.lahoo.ca|~ad.liblo.jp|~ad.linkedin.com|~ad.lnb.mobi|~ad.lsc.ac.cn|~ad.mbu.ac.th|~ad.mccinfo.de|~ad.meieki.news|~ad.mekuru.ne.jp|~ad.menuup.us|~ad.metrolagu.ru|~ad.mguwp.net|~ad.mica.edu|~ad.mobacure.com|~ad.moim.me|~ad.modellismo.it|~ad.naimojian.org|~ad.neuon.ai|~ad.nextvalue.site|~ad.nhipsongkhoe.vn|~ad.nisijp631.com|~ad.ntv.co.jp|~ad.omnius.co.kr|~ad.on.cc|~ad.org.br|~ad.org.nz|~ad.oudu.me|~ad.outlawgame.ir|~ad.pandacomm.ca|~ad.pay.media|~ad.qooza.hk|~ad.radost.us|~ad.rapidtest.jp|~ad.robata.org|~ad.ruralnet.or.jp|~ad.sachan.us|~ad.sankeiliving.co.jp|~ad.sekaibunka.com|~ad.sekkaku.net|~ad.seoxiehui.cn|~ad.sgames.org|~ad.shinoriku.com|~ad.silvena.net|~ad.singtao.ca|~ad.slvrbullet.com|~ad.smoothline.de|~ad.sphere.cz|~ad.statex.info|~ad.studioclassroom.com|~ad.studiodigital.hu|~ad.styleshare.kr|~ad.sweetgrass.jp|~ad.tabling.co.kr|~ad.taojiyun.com|~ad.timanetworks.mobi|~ad.tkw.cc|~ad.topease.net|~ad.touchnet.biz|~ad.tv24.vn|~ad.tv66.net|~ad.ubonab.ac.ir|~ad.univ.me|~ad.uoolu.com|~ad.vepmakers.xyz|~ad.vseveda.org|~ad.watchlakorn.in|~ad.weixuan.mobi|~ad.yanolja.com|~ad.youropia.gr|~ad.ysd.hk|~ad.yuhan.ac.kr|~ad.zukanpress.com|~ameba.jp|~ameblo.jp|~ckckk.com|~fupa.net|~impress.co.jp|~jxnews.com.cn|~nwi.jp|~point-land.net|~skylinewebcams.com|~youronlinechoices.com
 ://ad1.$domain=~ad1.cheerup.jp|~ad1.dtiblog.com|~ad1.mandalayhotelsweb.com|~ad1.ureru-eigyo.com
 ://ads.$domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.bestprints.biz|~ads.bigbom.com|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.cableidp.jp|~ads.colombiaonline.com|~ads.comeon.com|~ads.cs.washington.edu|~ads.cvut.cz|~ads.d2c.ne.jp|~ads.dev.int.revelian.com|~ads.dollartree.com|~ads.elcarado.com|~ads.finance|~ads.gambinoslot.com|~ads.google.com|~ads.gree.net|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kazakh-zerno.net|~ads.lapalingo.com|~ads.listonic.com|~ads.lordlucky.com|~ads.lviv.ua|~ads.magalu.com|~ads.mba|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.mst.dk|~ads.nc|~ads.nimses.com|~ads.nipr.ac.jp|~ads.odesbuild.com|~ads.olx.pl|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.*|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.toplayaffiliates.com|~ads.typepad.jp|~ads.viksaffiliates.com|~ads.vk.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~satmetrix.com|~seriouswheels.com
 ://ads3.
@@ -2745,6 +2746,7 @@ vkcdnservice.appspot.com^$3p
 ||dqjazjbqrmrnhb.com^
 ||dqzuy.com^$3p
 ||dropkickmedia.com^$3p
+||drtladv.com^
 ||drtuproft.com^
 ||dsccams.com^$3p
 ||dtiserv2.com^$3p
@@ -6731,6 +6733,7 @@ _theme/build/js/script.min.php$domain=clik.pw|genpassword.top
 /inc_ad.$domain=artv.info
 /interstitial.js$domain=newsweekjapan.jp
 /jquery.bpopup.$domain=torkitty.com|torrentkitty.app|torrentkitty.io|torrentkitty.net|torrentkitty.se|torrentkitty.tv
+/js/prebid-$domain=breitbart.com|myjewishlearning.com|
 /kyodopress_cms/wp-content/themes/kyodopress/img_banner/*$image,domain=kyodo.co.jp
 /lily2_applink.js$domain=kijoume.net|kijyomatome.com
 /modal-dist/index.$css,script,domain=ananweb.jp|newsweekjapan.jp
@@ -7806,7 +7809,7 @@ _Ad300x250_$domain=ckworks.jp
 ||ilovemakingpics.com^$frame,3p
 ||imagazine.co.jp/wp-content/uploads/*/ad-trinity-
 ||imagazine.co.jp/wp-content/uploads/*_banner_$image,1p
-||image.ruliweb.com/view/view.js^$domain=ruliweb.com
+||image.ruliweb.com/view/view.js?zoneid=
 ||imageaws.popin.cc/discovery/
 ||imageflux.jp/default/image/banner/okaimonomarasonn_banner_$domain=hinata.me
 ||images-jp.amazon.com^$domain=nendai-blog.zerone.jp|jumpsokuhou.com
@@ -8769,8 +8772,6 @@ _Ad300x250_$domain=ckworks.jp
 ||tamapon.com^*/tamakaijobillshinryojo3.$image,1p
 ||taming.io/img/gain-resources.png
 ||taming.io/img/no-apple.png
-||tamrieltradecentre.com/Content/images/atlasvpn/
-||tamrieltradecentre.com/Content/images/nordvpn/
 ||tan-taka.com/diver-demo/wp-content/uploads/sites/3/2017/06/diver_ad_
 ||tanoshiiosake.jp/shared/*/banner_locopan.jpg
 ||tanoshiiosake.jp/shared/*/banner_newssuite.jpg
@@ -9214,6 +9215,7 @@ _Ad300x250_$domain=ckworks.jp
 /\.net\/[-a-z]{2,6}0\d{2}\.html$/$frame,1p,domain=2jigiri.net|pig109.net
 /\.tube\/[a-z]{8,12}\/[a-z]{8,12}\.js$/$script,1p,domain=bdsmx.tube
 /\/92x92\?https?:\/\/(?:click\.dtiserv2\.com|lovez\.jp|ora\.liplip\.cc|pcmax\.jp)/$image,3p,domain=all-mode.net
+/\/Content\/images\/[a-z]+\/[a-z]+\d\.jpeg/$image,1p,domain=tamrieltradecentre.com
 /\/aya7107\/(?:[a-z]{3,6}\d{3}jp|\d{12,13})\.jpg$/$image,3p,domain=aya0205.smart-douga.mobi
 /\/blogimg\.jp\/(?:dnsyaku5963-af|lcbaron|yousay5963-gazo(777)?)\/imgs\/[0-9a-z]/[0-9a-z]/[0-9a-z]{8}\.jpg$/$image,3p,domain=av-baron.com
 /\/cumshots777/(?:1_\d{10}_[0-9a-z]{1,2}_[0-9a-zA-Z]{4,5}|20\d{6}[0-9a-z]{9}|agx\.|apex_bana[1-9]|c\d{5}|digiket_banner_|men_large_)/$image,3p,domain=shasei.jp
@@ -12291,6 +12293,7 @@ cgi-bin/counter
 ||analytics.test.cheggnet.com^
 ||analytics.tiendaenoferta.com^
 ||analytics.tiktok.com^
+||analytics.tio.ch^
 ||analytics.twitter.com^
 ||analytics.webgains.io^
 ||analytics.webpushr.com^
@@ -12616,6 +12619,7 @@ cgi-bin/counter
 ||cudasvc.com^$3p
 ||curalate.com^$3p
 ||customer.io^$3p
+||customfingerprints.bablosoft.com^
 ||cv.gunosy.com^
 ||cvt1.sibnet.ru^
 ||cvtr.makerepeater.jp^
@@ -15655,6 +15659,7 @@ _webtrends/$domain=zurichlife-jp.force.com
 ||yottaa.com/rapid.min.js
 ||you.com/api/events
 ||youku.com^*/click.php?
+||youronlinechoices.com/images/pixel.png
 ||youtube-nocookie.com/api/stats/delayplay?
 ||youtube-nocookie.com/api/stats/qoe?
 ||youtube-nocookie.com/ptracking?
@@ -16019,7 +16024,7 @@ corriente.top,sundaygamer.net##.adbox
 dennsisyosekisokuhou.com,mizuhonokuni2ch.com,morningstar.co.jp##.ninja_onebutton
 detective-conan-blog.com,kurieisha.com##.widget_swell_ad_widget
 dewimg.*,imgtown.*,imgviu.*,javtiful.com,mazpic.*,outletpic.*,picrok.*##[href^="//"][rel="nofollow norefferer noopener"]
-dougarider.com,gacomedia01.com,pochisoku.net,ygkb.jp##.widget_common_ad
+dougarider.com,gacomedia01.com,nihongoka.com,pochisoku.net,ygkb.jp##.widget_common_ad
 eromanga-school.com##.adarea-box
 firestorage.jp,gigafile.nu,netkeiba.com,railf.jp###geniee_overlay_outer
 fiveslot777.com,konoyubitomare.jp,ocsoku.com##.google-user-ad-728
@@ -19301,6 +19306,8 @@ free-fonts.com##div[id^="freefonts_billboard"]
 free.foto.ne.jp##.ad_full
 free.foto.ne.jp##.list_base_nom > li > .adsbygoogle:upward(1)
 freeconvert.com##.ads-in-page
+freecycle.org##.header-banner-ad
+freecycle.org##.in-body-ad-row
 freeeedouga.blog35.fc2.com##table[summary=plugin1] img[src*="j-a-net"]:upward(table[summary=plugin1])
 freeeedouga.blog35.fc2.com##.left_outline > .menu_title:has-text(hulu)
 freeeedouga.blog35.fc2.com,nantuka.blog119.fc2.com##.right_outline
@@ -28220,8 +28227,8 @@ mozakin.com###wrap01:style(height: 2205px!important)
 mozakin.com##.tabpain[style="left: -260px; top: 280px;"]:style(top: 0!important)
 mozakin.com##.tabpain[style="top: 550px; left: 0px;"]:style(top: -1120px!important)
 musenboya.com##.ad-area:style(position: absolute!important; left: -4000px!important)
-musenboya.com##div[id] > .ad-wrap:upward(1):style(display: block!important;height: 1px!important)
-musenboya.com##div[id] > div[id^=im-] > script[src^="https://imp-"]:upward(2):style(display: block!important;height:10px!important)
+musenboya.com##div[id] > .ad-wrap:upward(1):style(display: block!important;height: 2px!important)
+musenboya.com##div[id] > div[id^=im-] > script[src^="https://imp-"]:upward(2):style(display: block!important;height:2px!important)
 news.2chblog.jp###side-r:style(position:static!important)
 news.jorudan.co.jp##div.wrapper:style(margin-top:122px!important)
 news.mynavi.jp##.articleList-attention[style^="min-height"]:style(min-height: auto!important)
@@ -31586,6 +31593,9 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 
 ! Optout
 ||omnitagjs.com^$badfilter
+@@/optout/*$frame,script,domain=youronlinechoices.com
+@@status$frame,domain=youronlinechoices.com
+@@||ad.amgdgt.com/ads/js/$domain=ad.amgdgt.com
 @@||adtdp.com/optout.js$domain=smalgo.jp
 @@||criteo.com/process/criteo_optout^$script,1p
 @@||focas.jp/optout/optout.html$domain=adroute.froute.jp
@@ -31593,6 +31603,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 @@||gmossp-sp.jp/optout/$frame,domain=akane-ad.com
 @@||hlserve.com/delivery/iaboptout?$script,domain=criteo.com
 @@||ladsp.com/optout/getoptout?$script,domain=so-netmedia.jp
+@@||optout.mookie1.com/optout
 @@||primecaster.net/adlogue/api/id|$script,1p
 @@||primecaster.net/optout.css$1p
 @@||primecaster.net/optout.html$domain=news-tv.jp
