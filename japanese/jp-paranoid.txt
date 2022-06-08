@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220608
+! Version: 20220609
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -352,7 +352,7 @@ smart-flash.jp##^.adsBlock
 /cxense-candy.js
 /detm-container-
 /dtm/*/satellitelib-
-/dynatrace.$domain=~dynatrace.com|~github.com|~github.io
+/dynatrace.$1p,domain=~dynatrace.com|~dynatrace.udemy.com|~dynatrace.zoom.us|~github.com|~github.io
 /fe_logger?
 /firebase-performance-
 /friendbuy.min.js
@@ -403,6 +403,7 @@ _omniture.$script,domain=mathworks.com
 ||cdn-net.com^$3p
 ||d2wy8f7a9ursnm.cloudfront.net^
 ||dcf.espn.com^
+||dynatrace-managed.com^$3p
 ||ensighten.com^$3p
 ||extreme-ip-lookup.com^$3p
 ! FP for the sake of security
@@ -510,7 +511,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 /Criteo/*$badfilter
 @@/friendbuy.min.js$script,domain=butcherbox.com
 @@||accounts.intuit.com/fe_logger?$1p
-@@||adobedtm.com/*-source.min.js$script,domain=bose.com|churchofjesuschrist.org|news.sky.com
+@@||adobedtm.com/*-source.min.js$script,domain=bose.com|churchofjesuschrist.org|hilton.com|news.sky.com
 @@||adobedtm.com/extensions/$script,domain=apple.com|foodnetwork.com
 @@||adobedtm.com/launch-$script,xhr
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=sbisec.co.jp
