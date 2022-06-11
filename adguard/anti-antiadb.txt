@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220611
+! Version: 20220612
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -50,10 +50,8 @@
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/\S{100,}$/$xmlhttprequest,third-party
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/[0-9a-z]{8}\.js$/$script,third-party
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$script,third-party
-/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}$/$script,third-party
-/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}$/$script,third-party
 /^https:\/\/[-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?/$xmlhttprequest,third-party
-/^https:\/\/[-a-z]{8,15}\.com\/40[01]\/\d{7}$/$script,third-party
+/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/40[01]\/\d{7}$/$script,third-party
 /^https:\/\/[a-z]{6,10}\.com\/script\/n[a-z]su\.js$/$script,third-party
 /^https:\/\/[a-z]{8,16}\.(?:com?|club|fun)\/(?=[%a-zA-Z]{0,170}\d)(?=[%0-9a-z]{0,170}[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
 /^https:\/\/[a-z]{8,16}\.(?:com?|one|xyz)\/(?=[+\/a-zA-Z]{0,140}\d)(?=[+\/0-9a-z]{0,140}[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case

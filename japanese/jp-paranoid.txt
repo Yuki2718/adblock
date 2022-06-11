@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220611
+! Version: 20220612
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -43,6 +43,7 @@ _Ad300x250_
 ||ip.prvtx.net^
 
 ! ---------- Ad servers - adult ----------
+||cn.dap.dmm.co.jp^
 ||imlive.com^$script,3p,domain=~imnude.com
 
 ! ---------- Ads specific ----------
@@ -87,6 +88,9 @@ veryweb.jp##.c-articleList > div[id^=logly]:upward(1)
 @@||nicoad.nicovideo.jp/v1/nicoadgroups|$xhr,1p,badfilter
 @@||speee-ad.akamaized.net^$css,image,script,domain=saitama-np.co.jp,badfilter
 @@||tochinavi.net/ad/img/$image,1p,badfilter
+
+! ---------- Ads specific -adult ----------
+||dap.dmm.*/dmm-c-sdk.js$domain=~book.dmm.co.jp
 
 ! ---------- Cosmetic for ads ----------
 ! in case /concert-ads/ is blocked by external list/medium mode
@@ -680,6 +684,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||nytimes.com^*&user_id=$doc,removeparam=user_id
 ||nytimes.com^*?instance_id=$doc,removeparam=instance_id
 ||r18.com/videos/vod/*?nats=$doc,removeparam=nats
+||store.hpplus.jp^*/?aid=$doc,removeparam=aid
 ||support.github.com/?tags=$doc,removeparam=tags
 ||townwork.net^*?opf=PR1$doc,removeparam=opf
 ||wimax-broad.jp/?utm_source=lc&utm_medium=affiliate&ac_source=lc&ac_medium=affiliate$doc,removeparam

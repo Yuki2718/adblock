@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220611
+! Version: 20220612
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -237,6 +237,7 @@ thetimes.co.uk##.is-fixed.Tooltip--arrow-topLeft
 thetimes.co.uk##.js-channelsTooltip
 translate.google.co.jp,translate.google.com##.tlid-notification-container
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^="position: absolute;"] > div > div > div > div[role=button] > div[dir=auto] > span > span:has-text(通知をオンにする):upward(5)
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[role=dialog] div[role=group][tabindex="0"] > div[data-testid=sheetDialog] div[dir=auto] > span > span:has-text(通知をオンにする):upward(div[role=dialog])
 w3q.jp###news-ticker-wrapper
 wowgame.jp###tubiaWalkthroughNotification
 www.dropbox.com##.callout-container--bottom-left:has(.callout-content-title:has-text(編集しますか？))
@@ -951,6 +952,7 @@ google.*##mobile-promo
 grcs.co.jp##.top_fixed_menu
 h-navi.jp###ModalContent
 h-navi.jp###ModalOverlay
+hachimanga.com,mangagohan.me###wpd-bubble-wrapper
 hai2mail.jp##.cta-floating
 hatena.ne.jp##.u-bnr--trial
 help.ea.com##.helpfulness-bar-outer
@@ -1018,7 +1020,6 @@ m.soundcloud.com##body:style(overflow: auto !important;)
 makeshop.jp###overlay
 manga-zero.com##.float-navigation
 manga-zero.com##.vue-portal-target
-mangagohan.me###wpd-bubble-wrapper
 matsui.co.jp##.ly-fixed-inquiry
 media.io##.rating-container
 medibang.com##.asModal__announce
@@ -2291,6 +2292,8 @@ simsdom.com##+js(nano-sib, clearInterval, *)
 skypng.com##+js(nano-sib, countdownElement)
 slreamplay.*##+js(nano-stb, grecaptcha.ready, *)
 streamtape.*##+js(set, towait, 0)
+sub1s.com##+js(nano-stb, fa-unlock, 3000)
+sub1s.com##+js(ra, href, .unlock-step-link)
 techxpulse.com###msgblock:style(display: block !important)
 techyreviewx.com##+js(nano-sib, timer, 1800)
 tecmundo.net###yuidea-btn-before
@@ -2366,6 +2369,8 @@ sapporobeer.jp##.agegate-bg
 ||js.driftt.com^$3p
 ||sspinc.io^
 
+##.grecaptcha-badge
+
 ||abeagle-public.buzzfeed.com/public/v2/experiment_variants?
 ||asahibeer.co.jp/agecheck/js/agechk.
 ||audioburst.com^$domain=goetheweb.jp
@@ -2420,6 +2425,9 @@ buzzfeed.com###mod-embed-1
 ||video.tv-tokyo.co.jp/common/js/pc/ddrating.
 ||vignette.wikia.nocookie.net^*/Nat195.$image,important,domain=yakusokunoneverland.fandom.com
 ||w.atwiki.jp/common/_js/preconnect.
+||yimg.jp/images/slink/highlightsearch/1.0/img/pop_spr_$domain=chiebukuro.yahoo.co.jp
+chiebukuro.yahoo.co.jp###yjSearchPop
+
 fistia.proj.tokyo##.v-alert.info a.white--text[href="/about"]:upward(.info)
 abandonmail.com##+js(aopr, indexedDB.open)
 ac-illust.com##+js(set, ajaxCheckIsEnableSearch, noopFunc)
@@ -2442,7 +2450,9 @@ pha.medicalonline.jp##+js(set, meteo.isMedicalWorker.hasCookie, trueFunc)
 pornhub.*##+js(cookie-remover, views)
 social-unlock.com##form#link a.submit:style(opacity: 1 !important; pointer-events: auto !important;)
 symbolab.com##+js(set, _.subscribed, true)
-techcrunch.com##.homepage__event-promo, .upcoming-events
+techcrunch.com##.homepage__event-promo
+techcrunch.com##.upcoming-events
+tocana.jp###cyzo_sbox
 top.gg###video-root
 top.gg###vote-root:style(display:block !important)
 topics.smt.docomo.ne.jp##.m-tickerArea
