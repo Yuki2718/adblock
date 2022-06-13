@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220613
+! Version: 20220614
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -79,7 +79,6 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 ||bildirt.com^$3p
 ||braze.com^$3p
 ||browserpush.net^$3p
-||cdn.pn.vg^$3p
 ||cdn.usefulcontentsites.com/js/push/subscribe.js
 ||checke.biz^$3p
 ||cleverpush.com^$3p
@@ -507,6 +506,8 @@ genius-web.co.jp##.floating_bnr
 ||gladiator.jp/defamation/wp-content/uploads/2019/01/pc-float2.png
 gladiator.jp##.pc-float
 ||glassdoor.com/app/static/js/dist/gd-user-hardsell-overlay.bundle.js
+||gmotech.jp/semlabo/wp-content/uploads/2021/10/Banner01-mailmagazine_
+gmotech.jp###bannerParts
 ||gpado.jp/static/img/top/bannerpop_lottery_gpado.png
 gpado.jp###lottery-popup
 ||grcs.co.jp/hubfs/top/banner/top_srmt_wp_link.svg
@@ -1355,7 +1356,6 @@ reddit.com##div[style^="filter: blur"]:style(filter: none !important;)
 reddit.com##shreddit-experience-tree
 reddit.com##xpromo-untagged-content-blocking-modal
 s.cinemacafe.net###danglingList
-s.tabelog.com##.p-webtoapp-banner
 s.tabelog.com##.rstlst-map-box__tabelog-appli
 songsterr.com###app > aside#promo
 swarmapp.com###modalDialogBox
@@ -1643,6 +1643,7 @@ webbu.jp##^#text-7
 !#endif
 !#if env_mobile
 ||nli-research.co.jp/files/user/images/sp/common/icon_mailM.png
+||thesun.co.uk/simwidgets/v1/sim$frame
 
 booking.com##.hide-newsletter-menu-tab
 cnn.co.jp##.line-news-banner
@@ -1989,6 +1990,8 @@ smt-cinema.com##.tieupBanner
 ||star-ch.jp/resources/img/banners/*_300x200$image,1p
 star-ch.jp##.sc-footer__contents2
 ||strate.biz/wp-content/uploads/*/banner.
+||suruga-ya.jp/drupal/sites/default/files/banner/*-ad_
+suruga-ya.jp##.pad0 > .ad_wraper:upward(1)
 ||tech-camp.in/note/wp-content/uploads/2021/10/TCB_bnr_header_height140.png
 tech-camp.in##.header-banner-link
 ||thisisgallery.com/wp-content/themes/thisismedia/images/side/banner_
@@ -2072,6 +2075,8 @@ video.fc2.com##.vod_price_off
 yamory.io##.should-show.scroll-follow-page-top
 
 !#if !env_firefox
+automaton-media.com##.td-big-grid-meta > .td-post-category[href$="/articles/pr/"]:upward(.td-big-grid-post)
+automaton-media.com##.td_block_social_counter ~ .td_block_2
 amiami.jp##.headerbanner
 audition-debut.com##div[id^=contents1000] > div[id^=contents1000]
 biglobe.ne.jp##.prom > a.prom-all:upward(1)
@@ -2091,6 +2096,8 @@ sure-i.co.jp##.contents > div > .c-list-banner-1col:upward(2)
 !#if env_firefox
 amiami.jp##^.headerbanner
 audition-debut.com##^div[id^=contents1000] > div[id^=contents1000]
+automaton-media.com##^.td-big-grid-meta > .td-post-category[href$="/articles/pr/"]:upward(.td-big-grid-post)
+automaton-media.com##^.td_block_social_counter ~ .td_block_2
 biglobe.ne.jp##^.prom > a.prom-all:upward(1)
 bunshun.jp##^.list-thumb > li .pr:upward(li)
 dengekionline.com##^.gNews_banner
@@ -2117,6 +2124,8 @@ lulucos-bys.jp##.m-block-article-item span.a-icon-pr--gray:upward(.m-block-artic
 ||join.biglobe.ne.jp/mobile/sim/gurashi/wp-content/uploads/2021/11/SP_355_70_5.png
 ||k-img.com/images/smartphone/global_footer/premium/footer_banner_premium_$domain=s.tabelog.com
 s.tabelog.com##.p-global-footer__premium
+||live.fc2.com/img/mobile/bnr/
+live.fc2.com##.ad-list
 ||newspicks.com/images/top-premium-banner-
 newspicks.com###top-premium-banner-area
 ||rakuten-bank.co.jp/shared/top/images/str-main/fbnr-
@@ -2235,7 +2244,7 @@ file4go.*##+js(set, time, 0)
 files.im,zeefiles.*##+js(nano-stb, tick)
 findicons.com##+js(nano-sib, wait_seconds)
 forex-gold.net##+js(nano-sib, timeleft)
-hdwallpapers.net,uploadflix.org,uploadmaza.com##+js(nano-stb, seconds)
+hdwallpapers.net,uploadflix.org,uploadmaza.com,uptomega.*##+js(nano-stb, seconds)
 highload.to##+js(nano-stb, counter)
 icutlink.com##+js(set, sec, 0)
 imgadult.com,imgdrive.net,imgtaxi.com,imgwallet.com##+js(nano-stb, redirect, 4000)
@@ -2278,6 +2287,8 @@ ponta.abstractpainting.work##+js(set, FIRST_DELAY, 0)
 ponta.abstractpainting.work##+js(set, NEXT_DELAY, 0)
 premiumebooks.xyz##+js(nano-stb, st2)
 premiumebooks.xyz##+js(nano-stb, subentry, 4000)
+promo-visits.site,satoshi-win.xyz,shorterall.com##.btn-primary:style(visibility: visible !important;)
+promo-visits.site,satoshi-win.xyz,shorterall.com##+js(ra, disabled, .btn-primary)
 proviralhost.com,urbharat.xyz##+js(nano-sib, timePassed, 1300)
 py.md##+js(nano-sib, countdown)
 redirect.dafontvn.com###btngetlink:style(display: inline-block !important)
@@ -2374,7 +2385,6 @@ sapporobeer.jp##.agegate-bg
 ||abeagle-public.buzzfeed.com/public/v2/experiment_variants?
 ||asahibeer.co.jp/agecheck/js/agechk.
 ||audioburst.com^$domain=goetheweb.jp
-||biteki.com/wp-content/themes/biteki_new/common/img/iphone_img_
 ||bs4.jp/assets/images/top/babchu.png
 ||bs4.jp/assets/js/top_character.js
 bs4.jp###ch_wrap
