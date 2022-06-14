@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220612
+! Version: 20220615
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -272,6 +272,7 @@ smart-flash.jp##^.adsBlock
 ||ad-seek.jp^
 ||ad.886644.com^
 ||ad.isaf.jp^
+||adgocoo.com^
 ||adjust.com^$doc
 ||adpon.net^
 ||adm.shinobi.jp^$1p
@@ -286,12 +287,14 @@ smart-flash.jp##^.adsBlock
 ||affiliate.suruga-ya.jp^$doc
 ||affiliateone.jp^
 ||asp.m-live.jp^
+||blogroll.livedoor.net/ad_redirect?$doc
 ||cir.io^
 ||cl.link-ag.net^
 ||click.affiliate.ameba.jp^
 ||click.dsiads.mopo.jp^
 ||click.dtiserv2.com^
 ||click.duga.jp^
+||click.pacrimlink.net^
 ||cyber-ad01.cc^
 ||decotra.tokyo^
 ||digi-tag.net^$doc
@@ -505,6 +508,7 @@ shoeisha.co.jp###rec-related-book-list
 storee.saisoncard.co.jp###block-top-recommend
 storee.saisoncard.co.jp##.block-recommend-container
 storee.saisoncard.co.jp##.mainframe_ > .event_
+stripe-club.com###recommendItem
 topics.nintendo.co.jp###rt_topics_top_recommend
 topics.nintendo.co.jp##.topics-recommend__headline
 usagi-online.com##.recommend-list
@@ -611,11 +615,9 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 &utm_medium=game^$frame,removeparam=/^utm_/,domain=softgames.com
 *$doc,removeparam=CAMP_CD,domain=au-sonpo.co.jp
 *$doc,removeparam=_from,domain=mbga.jp
-*$doc,removeparam=af_click_lookback,domain=appsflyer.com
-*$doc,removeparam=af_id,domain=pampi.jp
-*$doc,removeparam=af_siteid,domain=appsflyer.com
 *$doc,removeparam=afid,domain=nijichat.jp
 *$doc,removeparam=afult,domain=discas.net
+*$doc,removeparam=aid,domain=contents.fc2.com|store.hpplus.jp
 *$doc,removeparam=campaign,domain=adjust.com
 *$doc,removeparam=cid,domain=kinarino-mall.jp
 *$doc,removeparam=ebisOther1
@@ -633,32 +635,26 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=vcptn,domain=digi-tag.net
 *$doc,removeparam=vgo_ee
 *$doc,removeparam=xuid,domain=k-manga.jp
-.com/lp/*^utm_medium=$doc,removeparam=utm_medium
-.com/lp/*^utm_campaign=$doc,removeparam=utm_campaign
-.com/lp/*^utm_content=$doc,removeparam=utm_content
-.com/lp/*^utm_source=$doc,removeparam=utm_source
-.com/lp/*^utm_term=$doc,removeparam=utm_term
-.jp/lp/*^utm_campaign=$doc,removeparam=utm_campaign
-.jp/lp/*^utm_medium=$doc,removeparam=utm_medium
-.jp/lp/*^utm_source=$doc,removeparam=utm_source
-.jp/lp/*?trcd=$doc,removeparam=trcd
-.jp/lp/*?waad=$doc,removeparam=waad
+/lp/*?trcd=$doc,removeparam=trcd
+/lp/*?waad=$doc,removeparam=waad
+/lp/*^utm_campaign=$doc,removeparam=utm_campaign
+/lp/*^utm_content=$doc,removeparam=utm_content
+/lp/*^utm_medium=$doc,removeparam=utm_medium
+/lp/*^utm_source=$doc,removeparam=utm_source
+/lp/*^utm_term=$doc,removeparam=utm_term
 /entry_site.pl?SITE=$doc,removeparam=SITE,domain=discas.net
 /lp.php?p=*&adcd=$doc,removeparam=adcd
 ?_rt_ck=$doc,removeparam=_rt_ck
 ?aid=af_*&algokey=$doc,removeparam=aid,domain=rakuten-sec.co.jp
 ?aid=af_*&algokey=$doc,removeparam=algokey,domain=rakuten-sec.co.jp
 ?cpt_s=onlineads&$doc,removeparam=/^cpt_/,domain=page.auctions.yahoo.co.jp
-?sharedid=$doc,removeparam,domain=msafflnk.net
 ?utm_campaign=$doc,removeparam=utm_campaign,domain=bestvibe.jp|smfg.co.jp
 ?utm_campaign=post_article^$doc,removeparam=utm_campaign
-?utm_medium=dmm_affiliate&$doc,removeparam=/^utm_/
 ?utm_source=tw^$doc,removeparam=utm_source
 ?zoneid=*&bannerid=$doc,removeparam=bannerid
 ?zoneid=*&bannerid=$doc,removeparam=zoneid
 ^utm_source=$doc,removeparam=/^utm_/,domain=bunshun.jp|d-card.jp|e-3shop.com|nttdocomo.co.jp|rurubu.travel|u3h8.com
 ||a-i-ad.com/api/click?ctid=*&aiad_request=$doc,removeparam=aiad_request
-||a-i-ad.com/api/click?ctid=*&aid=$doc,removeparam=aid
 ||a-i-ad.com/api/click?ctid=*&urid=$doc,removeparam=urid
 ||ac.ebis.ne.jp/tr_set.php?argument=*&ai=$doc,removeparam=ai
 ||ad.dmm.co.jp/ad/p/cs?_site=*&_ga=$doc,removeparam=_ga
@@ -666,11 +662,11 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||affiliate.suruga-ya.jp/modules/af/af_jump.php?user_id=$doc,removeparam=user_id
 ||amazon.*&imp=$doc,removeparam=imp
 ||alwys.net/contents/ard.php?id=*&adwares=$doc,removeparam=id
+||belluna.jp^*/?s_cid=$doc,removeparam=s_cid
 ||buy-ap.piano.io/checkout/template/show?*&customCookies=$frame,removeparam=customCookies,domain=special.sankei.com
 ||buy-ap.piano.io/checkout/template/show?*&pageViewId=$frame,removeparam=pageViewId,domain=special.sankei.com
 ||buy-ap.piano.io/checkout/template/show?*&trackingId=$frame,removeparam=trackingId,domain=special.sankei.com
 ||buy-ap.piano.io/checkout/template/show?*&visitId=$frame,removeparam=visitId,domain=special.sankei.com
-||cxense.com/public/widget/click/*?cx_$doc,removeparam=/^cx_/
 ||directededge.com/widget?*&tracking=$script,3p,removeparam=tracking
 ||docomo.ne.jp^*?icid=$doc,removeparam=icid
 ||duckduckgo.com/?t=$doc,removeparam=t
@@ -684,7 +680,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||nytimes.com^*&user_id=$doc,removeparam=user_id
 ||nytimes.com^*?instance_id=$doc,removeparam=instance_id
 ||r18.com/videos/vod/*?nats=$doc,removeparam=nats
-||store.hpplus.jp^*/?aid=$doc,removeparam=aid
 ||support.github.com/?tags=$doc,removeparam=tags
 ||townwork.net^*?opf=PR1$doc,removeparam=opf
 ||wimax-broad.jp/?utm_source=lc&utm_medium=affiliate&ac_source=lc&ac_medium=affiliate$doc,removeparam
@@ -693,3 +688,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||game8.jp^*?follow=$doc,removeparam=follow
 !#endif
 ||instagram.com^$removeparam=igshid,badfilter
+
+! ---------- Exception for trackparam ----------
+@@||duckduckgo.com/tty^$removeparam=t
