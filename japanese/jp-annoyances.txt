@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220615
+! Version: 20220616
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -18,6 +18,7 @@ comic.pixiv.net##.fixed.my-0.mx-auto.rounded-8 > div > a[href$="/1108"]:upward(2
 point.rakuten.co.jp##.modal-invest-over5million
 ||store.world.co.jp/res/p/common/img/top/bnr/30w/pop200721_sale.
 store.world.co.jp##.mod_message
+||techacademy.jp/wp-content/uploads/2022/01/13162935/0b86f2f6e01de9dfa67e093e0918962a.png$image,1p
 ||webike.net/sys_images/caimg/20210813_redbaron_for_r.jpg
 ||yimg.jp/images/premium/takarabako/bnr/$domain=www.yahoo.co.jp
 ||youtube.com/embed/3hhC4n3Dr6I|$domain=tamashii.jp
@@ -700,6 +701,8 @@ softonic.jp##.article-next
 shingakunet.com###banner_area
 ||shippo.co.jp/neko/img/qapop5.
 ||shirofune.com/wp-content/themes/shirofune/img/pop_
+||shopify.com/s/*/22s_popup_1000x.jpg$domain=carhartt-wip.jp
+carhartt-wip.jp###shopify-section-ja-index-popup:has(div.newsletter-submit)
 ||shopify.com/s/*/files/pop_$image,domain=17kg.shop
 17kg.shop###popup
 17kg.shop##.fancybox-overlay
@@ -1142,6 +1145,7 @@ skyscanner.jp##body[style^="overflow: hidden;"]:style(overflow:auto!important)
 slack.com##.purple_banner_style
 smhn.info###share
 social-dog.net###banner
+softbank.jp##.mobile-b3s-sticky-cvr-type01-01
 somethingfun.co.jp##.js-pc_cta_wrap
 soundfun.co.jp##div[class^="cta"][style="display: block;"]
 sourceforge.net###newsletter-floating
@@ -1247,6 +1251,8 @@ zurich.co.jp###floatnav
 zurich.co.jp##.panel-floatnav
 
 !#if !env_firefox
+||yimg.jp/images/search/perorin/chrome/appeal_address_bar.png$domain=search.yahoo.co.jp
+search.yahoo.co.jp##.sw-Perorin
 3473a.jp,louvre2013.jp,meathunter.jp,netemosametemo.jp,orthomolecularmedicine.jp,samurai-zero.jp,thehack.jp,tokyo1964.jp###check-also-box
 4900.co.jp###ouibounce-modal
 anokoro30.com##.td-more-articles-box
@@ -1421,8 +1427,11 @@ zeiri4.com##.b-stickyShoukaiBanner
 ||mailerlite.com^$3p,domain=~howtosucceed.at|~riavrn.ru
 ||subscription.ximera.com^$3p
 ||telegram.im/widget-button/
+##.plugin-oa_notifier_qr_code
 ~dereferer.me###mc_embed_signup
+
 ! Ignore generic
+2chblog.jp,crx7601.com,vipnews.jp##.plugin-oa_notifier_qr_code
 blogs.opera.com,cinci.jp,majorgeeks.com###mc_embed_signup
 ||buy-ap.piano.io/checkout/offer/show?displayMode=*&showCloseButton=false*&url=https%3A%2F%2Fwww.kyobun.co.jp%2Fnews%$frame,domain=kyobun.co.jp
 ||buy-ap.piano.io/checkout/offer/show?displayMode=*&showCloseButton=false*&hasLoginRequiredCallback=true$frame,domain=www.japantimes.co.jp
@@ -1451,7 +1460,7 @@ rarejob.com##.mailmagArea
 ||compass-media.tokyo^*/mail_magagine_
 ||d.newsweek.com^*/starting5-homepage.$image,1p
 ||g.newsweek.com/img/newsletter/subscribe-img-
-newsweek.com##.subscribe-block-wrapper
+newsweek.com##.subscribe-block
 ||diamond.jp/common/images/zai/v2/common/header-tools-btn.
 ||dorei-yakata.com/img/bnr_maga.
 ||enfant.living.jp/wp-content/themes/enfant/common/img/sidebar/mailmagazine.
@@ -1744,6 +1753,8 @@ finders.me##.__recommendedPosts
 fujinkoron.jp##.recommend
 google.*###google-hats-survey
 i-voce.jp##.recommendSlideSheetArea
+! おすすめ （タイムライン）
+instagram.com##main > section > div > div div > span + a[href="/explore/people/"]:upward(2)
 iphone-diary.com##.awasete_yomitai
 j-cast.com##.pickup8
 joins.com##.popin
@@ -2438,8 +2449,8 @@ buzzfeed.com###mod-embed-1
 ||video.tv-tokyo.co.jp/common/js/pc/ddrating.
 ||vignette.wikia.nocookie.net^*/Nat195.$image,important,domain=yakusokunoneverland.fandom.com
 ||w.atwiki.jp/common/_js/preconnect.
-||yimg.jp/images/slink/highlightsearch/1.0/img/pop_spr_$domain=chiebukuro.yahoo.co.jp
-chiebukuro.yahoo.co.jp###yjSearchPop
+||yimg.jp/images/slink/highlightsearch/1.0/img/pop_spr_
+yahoo.co.jp###yjSearchPop
 
 fistia.proj.tokyo##.v-alert.info a.white--text[href="/about"]:upward(.info)
 abandonmail.com##+js(aopr, indexedDB.open)
@@ -2463,6 +2474,7 @@ pha.medicalonline.jp##+js(set, meteo.isMedicalWorker.hasCookie, trueFunc)
 pornhub.*##+js(cookie-remover, views)
 social-unlock.com##form#link a.submit:style(opacity: 1 !important; pointer-events: auto !important;)
 symbolab.com##+js(set, _.subscribed, true)
+techacademy.jp##+js(aeld, beforeunload, a.type?void)
 techcrunch.com##.homepage__event-promo
 techcrunch.com##.upcoming-events
 tocana.jp###cyzo_sbox

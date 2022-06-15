@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220615
+! Version: 20220616
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -261,6 +261,8 @@ smart-flash.jp##^.adsBlock
 @@||tag.ladsp.com/optout?$script,domain=so-netmedia.jp,badfilter
 
 ! ---------- Affiliate links/Click-through tracker ----------
+||a8.net^$doc
+||a8clk.xserver.ne.jp^
 ||aaaf.jp^
 ||aas.information-portal.net^
 ||act.gro-fru.net^
@@ -518,7 +520,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 /Criteo/*$badfilter
 @@/friendbuy.min.js$script,domain=butcherbox.com
 @@||accounts.intuit.com/fe_logger?$1p
-@@||adobedtm.com/*-source.min.js$script,domain=bose.com|churchofjesuschrist.org|hilton.com|news.sky.com
+@@||adobedtm.com/*-source.min.js$script,domain=bose.com|churchofjesuschrist.org|hilton.com|ingrammicro.com|news.sky.com
 @@||adobedtm.com/extensions/$script,domain=apple.com|foodnetwork.com
 @@||adobedtm.com/launch-$script,xhr
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=sbisec.co.jp

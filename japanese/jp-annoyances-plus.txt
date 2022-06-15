@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220612
+! Version: 20220616
 
 ! YT プロモーションを含みます
 youtube-nocookie.com,youtube.com##.ytp-paid-content-overlay
@@ -43,6 +43,11 @@ twitter.com##div[data-testid=sidebarColumn] div > div > div > section > div[aria
 ! その他のツイート
 twitter.com##div[aria-label="タイムライン: 会話"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(その他のツイート):upward(div[style^=transform])
 twitter.com##div[aria-label="タイムライン: 会話"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(その他のツイート):upward(div[style^=transform]) ~ div[style^=transform]
+! Twitter アカウント作成ウィジェット https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1598352715/320
+twitter.com##div[data-testid=sidebarColumn] section[aria-label=アカウント作成]
+
+! Instagram おすすめ サイド
+instagram.com##main > section > div[style^="left"] > div > div > a[href="/explore/people/"]:upward(2)
 
 ! ニコニ広告
 ||nicoad.nicovideo.jp^$domain=www.nicovideo.jp
@@ -78,9 +83,6 @@ www.yahoo.co.jp###Service.ult__mods
 ! nog.ccアーカイブ通知 https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1598352715/621
 ||ifs.nog.cc/mini_about.html
 ifs.nog.cc###ifs-notifier
-
-! Twitter アカウント作成ウィジェット https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1598352715/320
-twitter.com##div[data-testid=sidebarColumn] section[aria-label=アカウント作成]
 
 ! さとふる キャンペーンバナー
 ||satofull.jp/static/packages/default/images/banner/bothsides/
