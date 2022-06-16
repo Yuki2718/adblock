@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220616
+! Version: 20220617
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -53,6 +53,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 /pushJs/*$3p,script
 /push-notification-
 /push-notification.
+/push-notifications.$~css
 /push-notifications/*
 /push-wrap.js
 /push_app.js
@@ -988,6 +989,9 @@ ipinfo.io###overlay
 j-island.net##.l-pickup
 jartic.or.jp###termsModal
 javascript.info###notify-translate-tutorial-local
+javnow.net##.adp-popup
+javnow.net##.adp-popup-overlay
+javnow.net##.adp-popup-scroll-hidden:style(overflow: auto !important; width: auto !important;)
 jbpress.ismedia.jp##.m-popup
 jobshot.jp##.modal__mask
 johnnypri.com###f-bar
@@ -1756,6 +1760,7 @@ i-voce.jp##.recommendSlideSheetArea
 ! おすすめ （タイムライン）
 instagram.com##main > section > div > div div > span + a[href="/explore/people/"]:upward(2)
 iphone-diary.com##.awasete_yomitai
+itmedia.co.jp###cx_article
 j-cast.com##.pickup8
 joins.com##.popin
 jstage.jst.go.jp###right-feedback-btn
@@ -1834,6 +1839,7 @@ banger.jp##.l-popup
 bike-news.jp##.swiper-slide[data-history^=photo_extra]:remove()
 blog.goo.ne.jp##.block__shop
 diamond-fudosan.jp##.sc-recommend
+nordot.app##.brandModule
 otonanswer.jp##.swiper-slide-extra:remove()
 response.jp,spyder7.com##.sidebox-pickup
 !#endif
@@ -1842,6 +1848,7 @@ banger.jp##^.l-popup
 bike-news.jp##^.swiper-slide[data-history^=photo_extra]
 blog.goo.ne.jp##^.block__shop
 diamond-fudosan.jp##^.sc-recommend
+nordot.app##^.brandModule
 otonanswer.jp##^.swiper-slide-extra
 response.jp,spyder7.com##^.sidebox-pickup
 !#endif
@@ -2055,6 +2062,7 @@ imymac.com##.pmmProduct.sideProductBox
 inshokuten.com##.articleDetailPage__textAdTitle
 inshokuten.com##.articleDetailPage__textAds
 inside-games.jp##.osusume > .pickup-list > li.item .title:has-text(【PR):upward(li)
+itmedia.co.jp###ISALCT
 j-town.net##aside.section_content > .section_title > .pr-list:upward(2)
 jabank.jp###noticeModal > div > div > div > p.fwb:has-text(右上のログイン):upward(4)
 jabank.jp##.modal-backdrop
