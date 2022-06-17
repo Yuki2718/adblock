@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220617
+! Version: 20220618
 
 ! ---------- Ads general ----------
 /heji/mei00*.js
@@ -373,6 +373,7 @@ fandom.com##.ad-slot-wrapper
 fashion-press.net##.fp_list_each.mobile_only > div.mobile_only_ad:upward(1)
 fashion-press.net##.mobile_only_ad
 ferret-plus.com##.ad-300x600
+fgo.news###gStickyAd
 finance.yahoo.co.jp##div[aria-live="polite"] > ul > li > div > div#MMON:upward(2)
 finance.yahoo.co.jp##div[aria-live="polite"] > ul > li > div[id^="infeedAd"]:upward(1)
 finance.yahoo.co.jp##main > section#artcldtl + div[class^="_"] > div[id^="ad_"]:upward(1)
@@ -1214,11 +1215,12 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 
 ! ---------- Exception - blocking ----------
 @@||adcdn.goo.ne.jp/images/pix/2dwkwwau99.js$domain=news.goo.ne.jp
+@@||asahicom.jp/ad/js/sp/default_top.js
 @@||bwb101.goo.ne.jp/b.js$domain=news.goo.ne.jp
 @@||g.doubleclick.net/tag/js/gpt.js$domain=koigaku.machicon.jp
 @@||g.doubleclick.net/gpt/pubads_impl_$script,domain=koigaku.machicon.jp
 @@||g.doubleclick.net/gampad/ads?$xhr,domain=koigaku.machicon.jp
-@@||googletagmanager.com/gtm.js$script,domain=book.impress.co.jp|sankei.com|watch.impress.co.jp
+@@||googletagmanager.com/gtm.js$script,domain=book.impress.co.jp|sankei.com|watch.impress.co.jp|www.asahi.com
 @@||googletagservices.com/tag/js/gpt.js$domain=koigaku.machicon.jp
 @@||log000.goo.ne.jp/js/VLTraceDMD.js$domain=news.goo.ne.jp
 @@||lupicia.com/sp/img/ad/$image,1p
@@ -1237,6 +1239,7 @@ kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!importan
 /^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
 /^http:\/\/[a-z]{9,10}\.ddns/$doc,domain=ddns.net
 /^https:\/\/[-a-z]{20,}\.cyou\/[-0-9a-f]{36}\/\?btd=/$doc,domain=cyou
+/index.php?key=*&t1=$doc
 /japanpost.apk^$doc
 ||66niue3tyt.online^$doc
 ||anarusex1919.tokyo^$doc
