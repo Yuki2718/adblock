@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220618
+! Version: 20220619
 
 ! ---------- Ads general ----------
 /heji/mei00*.js
@@ -82,6 +82,7 @@
 ||recipe.rakuten.co.jp/webinfo/sp/ads/
 ||renote.jp/assets/sp_inline_ad_
 ||renote.jp/assets/sp_overlay_ad_
+||s.famitsu.com/img/1812/logo/
 ||s.mycar-life.com/amp-itd.html
 ||s.mycar-life.com/amp-side-special01.html
 ||seesaa.net/common/under.html$domain=news4wide.net
@@ -231,6 +232,8 @@ appbank.net,getnews.jp,itmedia.co.jp,news.tennis365.net,utabito.jp##._popIn_reco
 appget.com##.adh0
 appget.com##.header_ad
 applion.jp##a[href^="https://www.amazon.co.jp/exec/"][style="text-decoration:underline;"]
+appllio.com##.ad-appllio-Bottom
+appllio.com##.ad-appllio-Title
 appmedia.jp##.ad_sp_header
 apkdone.com##.adplaceholder-top
 aquarium-suisou.net,ato5more5.net,ba-ro-4869.com,jeep-m.jp,la-mere-poulard.jp,tabootube.xxx##.sponsor
@@ -792,6 +795,8 @@ s.dietclub.jp##.hTag2 > span[class^="icon-list"]:has-text(/Ads|おすすめ記�
 s.ekiten.jp##.solid_ad_container
 s.famitsu.com##.banner-header-video
 s.famitsu.com##.banner-window-jack-wrapper
+s.famitsu.com##.header-brand::after
+s.famitsu.com##.header-brand__jack
 s.famitsu.com##.l-banner
 s.famitsu.com##.l-contents-block--tie-up-top + div.l-contents-block
 s.kakaku.com###frameFeedRandomAd
@@ -1236,7 +1241,9 @@ supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
 kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important)
 
 ! ---------- Scam & Redirect ----------
+/KDDI%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3.apk^$doc
 /^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
+/^http:\/\/[a-z]{5}\.[a-z]{5}\.com\/[a-z]{10}\.apk$/$doc,match-case,domain=com
 /^http:\/\/[a-z]{9,10}\.ddns/$doc,domain=ddns.net
 /^https:\/\/[-a-z]{20,}\.cyou\/[-0-9a-f]{36}\/\?btd=/$doc,domain=cyou
 /index.php?key=*&t1=$doc
