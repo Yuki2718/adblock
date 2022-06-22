@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220616
+! Version: 20220623
 
 ! YT プロモーションを含みます
 youtube-nocookie.com,youtube.com##.ytp-paid-content-overlay
@@ -115,3 +115,21 @@ labaq.com###banner:style(height: 150px!important)
 labaq.com###logo,#logosub:style(top: 5px!important)
 labaq.com###logoarcs
 labaq.com###logochar:style(top: 0!important)
+
+! Google検索 - PC
+! 他のキーワード
+www.google.*###bres, div[id][data-abe][data-hveid]
+! 他の人はこちらも質問
+www.google.*##div[data-initq][data-it=rq]
+! 動画
+www.google.*###rso > div > div[jscontroller][data-hveid]:has(video-voyager)
+! 人気商品
+www.google.*###rso > div > div[jscontroller][data-hveid][data-ved] > g-card
+! トップニュース
+www.google.*##div[aria-level="2"]:has-text(トップニュース):upward([data-hveid][data-ved])
+
+! Google検索 - モバイル
+! 関連キーワード、他の人はこちらも検索/質問
+www.google.*###main > div > div[class] > div[class] > span:first-child > div:has-text(/^(?:他の人はこちらも|関連キーワード)/):upward(3)
+! トップニュース
+www.google.*##div[data-hveid] > div > div > div[class] > span:has-text(トップニュース):upward(3)
