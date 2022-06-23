@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220623
+! Version: 20220624
 
 ! Temporal
 ||30calclub.sakura.ne.jp/220402_
@@ -6811,6 +6811,7 @@ _theme/build/js/script.min.php$domain=clik.pw|genpassword.top
 /js/prebid-$domain=breitbart.com|myjewishlearning.com|
 /kyodopress_cms/wp-content/themes/kyodopress/img_banner/*$image,domain=kyodo.co.jp
 /lily2_applink.js$domain=kijoume.net|kijyomatome.com
+/media/ad/*$domain=jst.go.jp
 /modal-dist/index.$css,script,domain=ananweb.jp|newsweekjapan.jp
 /module/ads/*$domain=seikatsu-hyakka.com
 /mwimgs/*/300/*$image,1p,domain=diamond.jp|number.bunshun.jp
@@ -14049,6 +14050,7 @@ cgi-bin/counter
 ||stat.ustore.bz^
 ||stat.wioau.com^$3p
 ||statcounter.com^$3p
+||stated.io^$3p
 ||stathat.com^$3p
 ||static-tracking.klaviyo.com^
 ||static.herr.io^$3p
@@ -19119,7 +19121,7 @@ ecj.jp##aside > div[id^=sidebn]
 ecnavi.jp##.c_adnw
 ecnomikata.com##.g-ad
 economist.com###piano-ribbon
-economist.com,ftopx.com,stileproject.com,videogameschronicle.com##.advert
+economist.com,ftopx.com,jst.go.jp,stileproject.com,videogameschronicle.com##.advert
 edit-anything.com##.header_adsense
 edition.cnn.com##section[data-zone-label="Watch It"]
 edtechzine.jp###AdSpecialContents
@@ -20873,6 +20875,8 @@ jptrp.com##div[id^=triip-]
 jptrp.com,wikiprocedure.com##div[id^="ezoic-pub-ad-"]
 js-furniture.jp##.dividerTop > .widget_custom_html
 jscore.co.jp##.article_card--list > li > a[id^=pc_ad_]:upward(1)
+jst.go.jp##.ad_comment
+jst.go.jp##.similar_ad
 judo-ch.jp###ad_banner
 juken-mikata.net##.anchor-ad
 juken-mikata.net##.related_pc
@@ -23577,6 +23581,8 @@ shindanmaker.com##.ads_rect
 shinmai.co.jp##.c-ad-billboard
 shinmai.co.jp##.c-ad-rectangle-list
 shinumae.oops.jp##.ad > .textwidget > center > .adsbygoogle:upward(3)
+shinuwakaeng.com###sidebar > .widget-sidebar:first-child
+shinuwakaeng.com##div[id^=shinu-]
 shiri-tai.net###rek_fixed
 shironeko-guild.blog.jp##.js-modal
 shironeko-guild.blog.jp##.plugin-memo > .side > a[href^="https://bitflyer"]:upward(2)
@@ -24151,6 +24157,7 @@ thinkit.co.jp##.region-top-ad
 threadreaderapp.com##.ad-on-top
 throwawaymail.com###promotion_modal
 throwawaymail.com##.promotion_row
+thumbsnap.com##.ts-blurb-wrap
 tiendeo.jp###advertising_div
 tiermaker.com##.desktop-sticky
 tikgadget.com###amgatti_sk-2 > .amagetti-tabs-container
@@ -29831,8 +29838,8 @@ mrdeepfakes.com##+js(acis, document.getElementsByTagName, script)
 mrdeepfakes.com##+js(aopw, ReactAds)
 mrdeepfakes.com##+js(aopw, phtData)
 mrunblock.*##+js(acis, decodeURIComponent, atob)
+musenboya.com##+js(acis, document.getElementById, detect)
 musenboya.com##+js(nostif, /location\.href|document\./)
-musenboya.com##+js(set, scerr, 2)
 my1ink.*,myl1nk.*,myli3k.*,mylink.*##+js(acis, decodeURIComponent, 'shift')
 my1ink.*,myl1nk.*,myli3k.*,mylink.*##+js(nosiif, /0x|google|ecoded|==/)
 myair2.resmed.com##+js(no-xhr-if, cloudflare.com/cdn-cgi/trace)
@@ -30589,6 +30596,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 ||aliexpress.*&terminal_id=$doc,removeparam=terminal_id
 ||aliexpress.*?dp=$doc,removeparam=dp
 ||aliexpress.*?spm=$doc,removeparam=spm
+||amada-f.or.jp/?x-jg-referer=$doc,removeparam=x-jg-referer
 ||amazon.*&field-lbr_brands_browse-bin=$doc,removeparam=field-lbr_brands_browse-bin
 ||amazon.*&ingress=$xhr,removeparam=ingress
 ||amazon.*&pd_rd_r=$doc,removeparam=pd_rd_r
@@ -31871,12 +31879,14 @@ $removeparam=/^at_custom/,domain=bbc.com|bbc.co.uk,badfilter
 ||googletagmanager.com/gtm.js$script,redirect-rule=noop.js,domain=hudsonvalleypost.com|seacoastcurrent.com|popcrush.com,important
 ||gstatic.com/adx/doubleclick.ico|$image,redirect-rule=32x32.png
 ||harta.jp/bib/i/extensions/analytics/analytics.js$script,redirect-rule=noop.js
+||i-mobile.co.jp/script/v1/spot.js$script,redirect-rule=noop.js,domain=musenboya.com
 ||imasdk.googleapis.com/js/sdkloader/$script,redirect-rule=noop.js,domain=timesnowhindi.com|tvid.in
 ||imdb.com/tr/*pageHit$xhr,redirect=noop.js,domain=imdb.com
 ||jsdelivr.net^*/fp.min.js$script,redirect-rule=fingerprint3.js:10
 ||matystudios.github.io/banner_ad.png$image,redirect-rule=2x2.png
 ||media.net^$object,redirect-rule=noop.js
 ||myaccount.chicagotribune.com/assets/scripts/tag-manager/googleTag.js$script,redirect=googletagmanager_gtm.js,important
+||nend.net/js/nendAdLoader.js$script,redirect-rule=noop.js,domain=musenboya.com
 ||npttech.com/advertising.js$important,script,redirect=nofab.js
 ||nsfw.xxx/vendor/fingerprint/fingerprint2.min.js$script,redirect=fingerprint2.js,important
 ||oakley.com/_ui/dist/scripts/vendor/tealium.js$script,1p,redirect=noop.js,important
