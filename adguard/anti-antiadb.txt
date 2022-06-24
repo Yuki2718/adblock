@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220623
+! Version: 20220625
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -140,6 +140,7 @@
 /nsu.js|$script,third-party
 /ntv.json?key=$xmlhttprequest,third-party
 /out/300x250.php#$subdocument
+/out/b.html#$subdocument,~third-party
 /player/html.php?aid=start_html&video_id=*&referer=$subdocument,~third-party
 /player/html.php?aid=pause_html&video_id=*&referer=$subdocument,~third-party
 /player/plugins/vast-*.js$script
@@ -289,6 +290,7 @@ _spot_id=*&zone_id=$script,~third-party
 @@||yahoo.adnetasia.com/serv?s=$script
 @@||yahoo.adtrackers.net/serv?s=$script
 @@||yahoo.bannertrack.net/serv?s=$script
+||adblockanalytics.com/ads.js$script,redirect-rule=noopjs
 ||ads.twitter.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||advertising.yahoo.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||as.inbox.com/banner_ad.gif|$image,redirect-rule=1x1-transparent.gif
