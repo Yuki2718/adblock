@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220625
+! Version: 20220626
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -294,7 +294,8 @@ id.smt.docomo.ne.jp##.header_posting
 ||pop.unitedgate.co.jp^
 ||reproio.com^
 ||rtoaster.jp^$3p,domain=style.nikkei.com|takashimaya.co.jp
-||s3.amazonaws.com/downloads.mailchimp.com/
+! https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1652115193/218
+!||s3.amazonaws.com/downloads.mailchimp.com/
 
 -banner-ad.$domain=any-video-converter.com
 any-video-converter.com##div[id^="banner_"]
@@ -2327,6 +2328,7 @@ retrostic.com##+js(nano-sib, timeLeft--, , 0.02)
 romhustler.org##+js(nano-sib, timer.remove)
 romsgames.net,romsget.io##+js(nano-stb, submit, 5000)
 samfirms.com##+js(set, startfrom, 0)
+satoshi-win.xyz##+js(ra, onclick, .btn-success.get-link, stay)
 shorten.sh##+js(nano-sib, ti--)
 simsdom.com##+js(nano-sib, clearInterval, *)
 skypng.com##+js(nano-sib, countdownElement)
@@ -2377,7 +2379,7 @@ budweiser.jp##.ac-container
 budweiser.jp##.ac-overlay
 bimbim.com,mycams.com,tabletporn.com,trannylivecams.com###over-18-notification
 clubjt.jp###jtoc-adult-auth-modal
-fullxh.com,hamsterix.*,megaxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhday.com,xhplanet1.com,xhtab2.com,xhwebsite.com,xhwide1.com##.parental-control
+fullxh.com,hamsterix.*,megaxh.com,unlockxh4.com,xhamster.*,xhamster1.*,xhamster10.*,xhamster11.*,xhamster12.*,xhamster13.*,xhamster14.*,xhamster15.*,xhamster16.*,xhamster17.*,xhamster18.*,xhamster19.*,xhamster2.*,xhamster3.*,xhamster4.*,xhamster46.com,xhamster5.*,xhamster7.*,xhamster8.*,xhday.com,xhplanet1.com,xhtab2.com,xhwebsite.com,xhwide1.com##.parental-control-dialog:upward(2)
 iqos.com###age-gate-overlay
 iqos.com##.q-overflow-hidden:style(overflow: auto!important)
 paypaymall.yahoo.co.jp###CheckDialog
