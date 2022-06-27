@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220627
+! Version: 20220628
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -61,6 +61,7 @@ _Ad300x250_
 ! in case /concert-ads/ is blocked by external list
 ||cdn.concert.io/lib/adblock/sbnation.html
 !||cdn.storematch.jp^$3p
+||codexa.net/wp-content/uploads/2020/04/codexa_banner02.png
 ||dospara.co.jp/5img/side/bnr_
 ||ebook-assets.dmm.com^$3p,domain=~brodymag.com|~dmm.co.jp
 ||facebook.com/ajax/bootloader-endpoint*Comet
@@ -498,6 +499,7 @@ _omniture.$script,domain=mathworks.com
 ||yottaa.com/rapid.min.js
 
 ! ---------- Cosmetic for analytics ----------
+baycrews.jp##.d-recommendBox
 business.nikkei.com##.l-content_footer.recommendesInfomation:has-text(あなたにオススメ)
 codezine.jp,enterprisezine.jp,freemen.jp,markezine.jp##div[id^=cx_]
 emmi.jp###rec
@@ -565,6 +567,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||fplay.online/log_event$1p,xhr
 @@||geoip-js.com/js/apis/geoip2/$script,domain=freshdesk.com|web.aw.ca
 @@||geoip-js.com^*/me?referrer=$xhr,domain=freshdesk.com|ibanez.com
+@@||geolocation-db.com/json/$xhr,domain=filepress.xyz
 @@||geolocation-db.com/jsonp$script,domain=parts.hp.com
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
 @@||ioam.de/iam.js$script,domain=bild.de
