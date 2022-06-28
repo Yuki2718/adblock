@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220628
+! Version: 20220629
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -26,6 +26,7 @@
 .com/js/jquery/1.4.1/jquery-*.min.js?v=2.3.20|$script,1p,match-case,domain=com
 .org/ad/$1p,domain=~playguide.org|~sonoyama.org|~ufcw870.org|~ylilauta.org
 /banner728x90.
+/js/safe.ob.min.js$script,1p
 /^https?:\/\/cdn\.[a-z]{5,7}\.com\/app\.js$/$script,3p,match-case
 /^https?:\/\/[0-9a-z]{7,18}\.com\/(?:ace|animate|bootstrap(-datepicker)?|ckeditor|slick)\.min\.js\?1\d{6}$/$script,3p
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}\/$/$popup,3p,match-case
@@ -109,6 +110,7 @@ mazimazi-party.com###text-37
 news.mynavi.jp##.headerNav_listNode-hisamitsu
 news.mynavi.jp##.headerNav_sponsored
 recipe.cotta.jp##+js(aopr, NEW_CUSTOMER_MODAL)
+slate.com##aside#cxense-recs-in-article
 webike.net###pc_top_obi_2
 xn--cck1a7gsd645rnx7b.com##.thumbnail > iframe[src^="//adframe."]:upward(1)
 youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
@@ -438,6 +440,7 @@ _omniture.$script,domain=mathworks.com
 ||recs.richrelevance.com^$3p
 ||rtoaster.jp^$3p
 ||sail-horizon.com^
+||tag.aticdn.net^
 ||tm.ma.future-shop.net^
 
 ! ---------- Analytics specific ----------
@@ -594,6 +597,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||sephora-track.inside-graph.com/ig.js$domain=sephora.com
 @@||snva.jp/javascripts/reco/$domain=concent.co.jp|mouse-jp.co.jp
 @@||staff-start.com/js/track/$domain=enoteca.co.jp|francfranc.com|store.alpen-group.jp
+@@||tag.aticdn.net^*/smarttag.js$domain=rte.ie
 @@||threatbook.cn/public/asset/js/zhugeio.
 @@||toplay.biz/log_event$1p,xhr
 @@||ttutu.biz/log_event$1p,xhr
