@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220629
+! Version: 20220701
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -300,6 +300,7 @@ smart-flash.jp##^.adsBlock
 ||click.dsiads.mopo.jp^
 ||click.dtiserv2.com^
 ||click.duga.jp^
+||click.gamingtrk.com^
 ||click.pacrimlink.net^
 ||cyber-ad01.cc^
 ||decotra.tokyo^
@@ -363,6 +364,7 @@ smart-flash.jp##^.adsBlock
 /api/analytics/*
 /api/tracking/*
 /bugsnag.min.js
+/comscore.
 /cxense-candy.js
 /detm-container-
 /dtm/*/satellitelib-
@@ -574,6 +576,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||geolocation-db.com/json/$xhr,domain=filepress.xyz
 @@||geolocation-db.com/jsonp$script,domain=parts.hp.com
 @@||gstatic.com^*/firebase-performance-standalone.js$script,domain=flightradar24.com
+@@||images.news18.com^*/comscore.min.js$script,1p
 @@||ioam.de/iam.js$script,domain=bild.de
 @@||ipapi.co/json/$xhr
 @@||js.monitor.azure.com/scripts/$script,domain=microsoft.com
@@ -582,6 +585,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||kentucky.com/mistats/finalizestats.js$1p
 @@||last.fm/static/js-build/tracking/tealium-utag-set.js$script,1p
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
+@@||live.bbc.co.uk^*/comscore.js$script,1p
 @@||lptag.liveperson.net/tag/tag.js$domain=uniqlo.com
 @@||mpsnare.iesnare.com/snare.js$domain=login.skype.com
 @@||playy.online/log_event$1p,xhr
@@ -645,6 +649,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=mbid
 *$doc,removeparam=sc2id,domain=rakuten.co.jp
 *$doc,removeparam=sc_in,domain=realestate.yahoo.co.jp
+*$doc,removeparam=snr,domain=steamcommunity.com|steamgames.com|steampowered.com
 *$doc,removeparam=src,domain=dropbox.com
 *$doc,removeparam=ult_in,domain=realestate.yahoo.co.jp
 *$doc,removeparam=usid,domain=d-card.jp
