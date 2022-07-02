@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220702
+! Version: 20220703
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -13,6 +13,7 @@
 /cm4all.com.widgets.CookiePolicy/show.
 /cookie-alert.
 /cookie-bar/*
+/cookie-compliance.
 /cookie-consent-manager.js
 /cookie-notification.
 /cookie-policy-
@@ -26,6 +27,7 @@
 /css/cookienotice.min.css
 /didomi.js
 /eu-cookie-law/jquery-eu-cookie-law-popup.
+/flytools-plugins/cookiefly/*
 /ga-cookie-opt-in.
 /gdpr-cookie-compliance/*
 /ipc_show_cookie_banner.js
@@ -86,6 +88,7 @@ _cookie_compliance.
 ||pagesense.io^$third-party
 ||rating.happymod.com/cookie/cookies.js
 ||ressource.gdpr-banner.awsmpsa.com/js/tarteauxprunes.js
+||securiti.ai/consent/
 ||static.axept.io/sdk.js
 ||widgets.openli.com^
 
@@ -166,6 +169,7 @@ _cookie_compliance.
 ##.pop-cookie
 ##.popup_confirmation_bar
 ##.sqs-cookie-banner-v2
+##.thb-cookie-bar
 ##.ux_popup_cookie_warning
 ##.widget_eu_cookie_law_widget
 ##ark-cookiebar
@@ -269,6 +273,7 @@ zenoah.com##.cookies-notice
 /cookie-prompt.$domain=adblockplus.org
 /cookie-raw.js$domain=abeam.com
 /cookie.$script,stylesheet,~third-party,domain=np-nippan.co.jp|takemotopkg.com|toshiba-teli.co.jp
+/cookieConsent-$domain=aerotime.aero
 /cookieModal.$domain=nsg.co.jp
 /cookie_agree.css$domain=nichicon.co.jp|takara-bio.*|tamura-ss.co.jp
 /cookie_agree.js$domain=nichicon.co.jp
@@ -329,6 +334,7 @@ _eu_cookie_$domain=nbcsports.com
 ||cdn.trustcommander.net/privacy^$domain=danone.com
 ||civiccomputing.com^*=cookie$third-party,domain=msi.com
 ||cloud.xm-cdn.com/assets/js/custom/cookie_popup.
+||cloudfront.net/one-trust/$domain=employers.indeed.com
 ||cmp.cdn.thesun.co.uk^
 ||comic.pixiv.net/api/app/gdpr/messages|$xmlhttprequest
 ||consensu.org^$third-party,domain=imgur.com|rssing.com|theguardian.com|travian.com
@@ -993,6 +999,8 @@ spiceworks.com###zdprivacy-content
 square-enix.com##div[class^="notice_Notices_"]
 sso.ss-blog.jp##.fixed-bottom
 start.me##.app__message
+stickypassword.com###StickieCookies
+stickypassword.com##body:style(overflow: visible!important;)
 store.acer.com###notice-cookie-block
 store.wacoal.jp##.spm-toast[style="display: block; animation-duration: 250ms; left: 0px; right: 0px; margin-left: auto; margin-right: auto;"]
 studyinjapan.go.jp###js_cookie_modal
