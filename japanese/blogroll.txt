@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220703
+! Version: 20220704
 
 -rss.html|
 -rss2.html|
@@ -87,6 +87,7 @@ _rsslink.html|
 ||3site-rss.s3-ap-northeast-1.amazonaws.com^
 ||adult-rss.com^
 ||antennasync.me^
+||blog.livedoor.jp/plugin/ldblog_rss_plugin.
 ||blogroll.livedoor.net^
 !||bp2-antena.com^$~css,domain=gacha.blog.jp|i.best-hit.tv|isekaitraffic.livedoor.biz
 ||bp2-antena.com^$~css,3p
@@ -136,7 +137,6 @@ _rsslink.html|
 !##.plugin-popular_articles_with_image
 ##.plugin-recent_comments
 ##.plugin-rss
-##div[id^="ldblog_related_articles"]
 ~mindhack2ch.com##.blogroll-channel
 ! For Ignore generic
 blog.fc2.com##.blogroll_wrapper
@@ -251,7 +251,6 @@ eromangram.com##.pc_area.link
 ||everydayissunday.livedoor.blog/js/up.$script,1p
 ||exawarosu.net^$frame,1p
 exawarosu.net##.img-links
-exawarosu.net##.l-popular-bottom
 exawarosu.net##.l-rss-top
 ||fate-rpg.jp/img/rss_
 fate-rpg.jp##.main-column-inner > .clearfix[style$="width:660px;"]
@@ -471,7 +470,7 @@ youskbe.com##.main > .row > div > aside
 2chcopipe.com##.entry_box3
 2chcopipe.com##.entry_box_left
 2chcopipe.com##.entry_box_right
-2chmatome.net,akb48matomemory.com,anicobin.ldblog.jp,aramame.net,checkmate-blog.com,girlsvip-matome.com,gahalog.2chblog.jp,hattatu-matome.ldblog.jp,kemochan.com,keyaki.tech,kokopyon.net,kijomatomelog.com,mojomojo-licarca.com,morikinoko.com,netamesi.com,okusama-kijyo.com,s2-log.com,saikyo-jump.com,seiyufan.livedoor.biz,squallchannel.com,uwakitaiken.com##[class^="rss"]
+2chmatome.net,akb48matomemory.com,aramame.net,checkmate-blog.com,girlsvip-matome.com,gahalog.2chblog.jp,hattatu-matome.ldblog.jp,kemochan.com,keyaki.tech,kokopyon.net,kijomatomelog.com,mojomojo-licarca.com,morikinoko.com,netamesi.com,okusama-kijyo.com,s2-log.com,saikyo-jump.com,seiyufan.livedoor.biz,squallchannel.com,uwakitaiken.com##[class^="rss"]
 2chmatome.net,vippers.jp###topRss
 2chmeshi.net##.bottom_ad
 2chmeshi.net##div[id^="diver_widget_pcsp-2"]
@@ -514,6 +513,8 @@ androidken.blog.fc2.com,bandai11.blog.fc2.com,barukanlog.blog31.fc2.com,erogletv
 androidken.blog.fc2.com,nyafu.livedoor.biz###left
 anichil.com###rssbox, .rss10
 anichil.com,greemas.doorblog.jp##.rss1
+anicobin.ldblog.jp##.rss-column-middle
+anicobin.ldblog.jp##.rss-wrapper2:style(height: 0 !important;background: none !important;padding-bottom: 0 !important;)
 anige-sokuhouvip.com###main-box > div[style^="border : 2px solid gray;"]
 anige-sokuhouvip.com##div[id^="top_center"]
 anigenai.blog.fc2.com###rss-roll-01
@@ -573,7 +574,7 @@ blog.livedoor.jp###blog-body-outer > #left-t:style(margin-top: 0!important;)
 blog.livedoor.jp###container > .blog-title-outer + div[class^=entry_box_left], #container > div[class^=entry_box_left] + div[class^=entry_box_right], #main > .column-inner:only-child > .column-inner-2:only-child > .entry_box101:nth-child(-n+2), #main > .column-inner > .column-inner-2 > div[class^=entry_box102], .article-body-more > div[style^="padding: 1px; margin-top: 0px; margin-bottom: 20px; overflow:hidden;"]
 blog.livedoor.jp###container > center:first-child > table[bgcolor="#ffffff"]
 blog.livedoor.jp###container > div[style$="scrollbar-track-color:#ffffff;"]
-blog.livedoor.jp###container > div[style^="width:1105px;height:270px;overflow:auto;background-color:#ffffff;"], .article-body > div[style^="width:685px;height:540px;overflow:auto;background-color:#fafad2"], .article-body-inner > div[style^="width:685px;height:460px;overflow:auto;background-color:#FFEEFF;"], .article-outer-3 > div[style^="width:758px;height:460px;overflow:auto;background-color:#fafad2;"], .column-inner-2 div[style^="width:758px;height:500px;overflow:auto;background-color:#FFEEFF;"]
+blog.livedoor.jp###container > div[style^="width:1105px;height:300px;overflow:auto;background-color:#ffffff;"], .article-body > div[style^="width:685px;height:540px;overflow:auto;background-color:#fafad2"], .article-body-inner > div[style^="width:685px;height:460px;overflow:auto;background-color:#FFEEFF;"], .article-outer-3 > div[style^="width:758px;height:460px;overflow:auto;background-color:#fafad2;"], .column-inner-2 div[style^="width:758px;height:500px;overflow:auto;background-color:#FFEEFF;"]
 blog.livedoor.jp###article_rss, #popular1
 blog.livedoor.jp###container > #cssmenu ~ .main-container > .main-column-inner > div[style^="width:720px;"]
 blog.livedoor.jp###content > font[size="1"] + center > div[style^="margin:0px;"][style$="background-color:#FFFFFF;"]:only-child
@@ -596,6 +597,7 @@ blog.livedoor.jp##.RSS05
 blog.livedoor.jp##.article-body2 > div > div[style="margin:0px;padding:0px;line-height:1.4;width:100%;background-color:#ddf4e1;"]
 blog.livedoor.jp##.article-bottom-rss, .bottom-rss, .bottom-rss-pick, .middle-rss_wrapper, .top-rss-pick
 blog.livedoor.jp##.article-outer-3 > .entry-content > .google-2ad-b + h3 + .read-area-footer.social + h3, .article-outer-3 > .entry-content > .read-area-footer.social + h3 + .bottom-rss-pick + h3
+blog.livedoor.jp##.article-sub-rss
 blog.livedoor.jp##.blog_osusume, .kiji > b > span[style="font-size: 19px;"], .message-board-outer, .rss_top, .rss_top6
 blog.livedoor.jp##.blogroll-box
 blog.livedoor.jp##.blogroll_innner2, .blogroll_innner3
@@ -706,7 +708,6 @@ f1jouhou2.blog.fc2.com##.top-rss-under
 fate-grandorder-go.blog.jp,geinoutopics-plus.blog.jp,hanshintigers1.blog.jp,ideal2ch.livedoor.biz,mh-xr-matome.blog.jp##.rss-blogroll2
 fesoku.net###right
 fesoku.net###touter
-fesoku.net##.cls
 ffnews2016matome.blog.fc2.com##.plugin2_outline > div > .p2d_description > #harudakeMutualLink:upward(3)
 fgo.news###widget-index-top
 fiveslot777.com###extra[style^="position: fixed"]:style(position: absolute!important;top: auto!important;)
@@ -847,7 +848,6 @@ ikarishintou.com##.RSScon
 ikimonomatometyou.com###content > center:first-child
 ikimonomatometyou.com###main > center
 ikimonomatometyou.com###sub
-ikinuki2ch.blog.jp##.ninki
 ikuji-news.com,kichimama.com,kimagure-kijyo.com,uwasakijo.net##.ifram
 ikuji-news.com,kichimama.com,kimagure-kijyo.com,shuraba.net,uwasakijo.net##.pickup
 imas-cg.net##.titleRssBottom
@@ -1246,8 +1246,6 @@ revuestarlightre.com##[class^="kiji-sita-rss"]
 russianbeauties.jp##+js(aopr, document.write)
 russianbeauties.jp#@#+js(acis, document.write, LinkURL)
 saikyo-jump.com##.plugin-memo > .side > script[src$="/comic.js"]:upward(2)
-sakarabo.blog.jp##.hot_message
-sakarabo.blog.jp##.hot_message ~ hr
 scienceplus2ch.com###ads_1
 scienceplus2ch.com###ads_2
 scienceplus2ch.com###rss-roll-01
@@ -1314,6 +1312,7 @@ urapic.com##.row-footer + br ~ br
 usi32.com##.rss-outer_bottom
 uwakich.com##.article-body-inner > .icon-h4
 uwakich.com##.links-navy1
+vipnews.jp##.custom-rss-container
 vippers.jp###relevantPost
 vippers.jp##.headerImgRss
 vippers.jp##.aside:last-child

@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220703
+! Version: 20220704
 
 ! ---------- Ads general ----------
 /heji/mei00*.js
@@ -27,6 +27,7 @@
 ||amazon-adsystem.com/widgets/$important,domain=dqname.jp
 ||amazonaws.com/assets/images/banners/*_affili_320x100.png$domain=arine.jp
 ||amazonaws.com/wp-content/uploads/*/banner_$image,domain=news.careerconnection.jp
+||amebame.com/pub/ads/adx/*.jpg?width=576&height=256&option=crop^$domain=ameblo.jp
 ||app-liv.jp/js/sp/detect_adblock.js
 ||applion.jp/pg/image.php?id=
 ||asahicom.jp/sp/js/and_infeedad.js$script,redirect=noop.js
@@ -210,7 +211,7 @@ ameblo.jp##article > div[class^="_"]:last-child > header[class^="_"] + div:not([
 ameblo.jp##aside[class^="_"] > div[class^="_"] > div[class^="_"] > ul:last-child > div:empty
 ameblo.jp##aside[class^="_"]:only-child > aside[class^="_"] > div[class^="_"]:only-child > div[class^="_"]:only-child
 ameblo.jp##div[class^="_"] > aside[class^="_"] > div[class^="_"] > div[id*="adFooterMegaPanel"]:upward(3)
-ameblo.jp##div[class^="_"] > aside[class^="_"] section[class] > div[class^="_"] > a[href^="https://dokusho-ojikan.jp/ameba_manga_login"]:only-child
+ameblo.jp##div[class^="_"] > aside[class^="_"] section > div[class^="_"] > a[href^="https://dokusho-ojikan.jp/ameba_manga_login"]:only-child:upward(1)
 ameblo.jp##div[class^="_"]:empty
 ameblo.jp##div > div[class^="_"] > aside[class^="_"]:first-child > div[class^="_"] > aside[class^="_"]:only-child > div[class^="_"][class$="_"]:only-child > div:not([class]):only-child:empty:upward(3)
 ameblo.jp##div[data-slot-type="injectedAds"]
@@ -316,6 +317,7 @@ chronicle.wiki,ff4psp.jp,game-info.wiki,memo.wiki,playing.wiki,pokemasujikaku.co
 chansoku.com###article-contents > span:has-text(スポンサードリンク)
 chansoku.com##.lattice-interres-standby > span:has-text(スポンサードリンク)
 chansoku.com##.pcNone
+chocolat.work##.fixed_footer
 chunichi.co.jp##.widget.cscmp-bnr:not(:last-child)
 chunichi.co.jp,tokyo-np.co.jp###flux-overlay
 cinema.ne.jp,jma.go.jp,novelup.plus##.ad-sp
@@ -534,6 +536,7 @@ jbpress.ismedia.jp##div[style="min-height:280px;"]
 jbpress.ismedia.jp##.m-backnumber-list-item > div[id^="div-gpt-"]:upward(1)
 jiji.com##.RectangleAd
 jj-jj.net##.page-content > div[style="text-align:center;margin-bottom:20px;"]
+job-chocolat.jp##.campaign_stickybar
 jorudan.co.jp###ad-bottom-1
 jorudan.co.jp##.com_pr_rmads_bottom
 josei-bigaku.jp###adSenseMin
