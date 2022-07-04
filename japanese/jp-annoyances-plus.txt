@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220623
+! Version: 20220704
 
 ! YT プロモーションを含みます
 youtube-nocookie.com,youtube.com##.ytp-paid-content-overlay
@@ -133,3 +133,7 @@ www.google.*##div[aria-level="2"]:has-text(トップニュース):upward([data-h
 www.google.*###main > div > div[class] > div[class] > span:first-child > div:has-text(/^(?:他の人はこちらも|関連キーワード)/):upward(3)
 ! トップニュース
 www.google.*##div[data-hveid] > div > div > div[class] > span:has-text(トップニュース):upward(3)
+
+! ライブドアブログ 関連記事
+||blog.livedoor.jp/js/related_articles.
+##div[id^="ldblog_related_articles"]
