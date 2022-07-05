@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220705
+! Version: 20220706
 
 ! ---------- Ads general ----------
 /heji/mei00*.js
@@ -393,7 +393,7 @@ forbes.com##.grid__ad-container--amp
 forbesjapan.com##.recommended-box
 forbesjapan.com##.stream-article > div[id^="div-gpt-"]:upward(1)
 forbesjapan.com##div[class^="sp_ad"]
-fpsjp.net,ryukyushimpo.jp###sp_top_header
+fpsjp.net###widget-container-top-mobile
 freesoft-100.com##.banner_block
 front-row.jp##.after-btn-fb-nice-ad-sp
 front-row.jp##.ct-ad-2ndparag
@@ -798,6 +798,7 @@ rikeilabo.com###xeory-fixed-banner-sp
 rocketnews24.com##.ad-icons
 rookie.shonenjump.com##.ad-container
 roomie.jp###secondary > .r-section:first-child
+ryukyushimpo.jp###sp_top_header
 ryukyushimpo.jp##.sp-ad-srv
 ryukyushimpo.jp##div[id*="sp_article_"][style*="min-height: 280px;"]
 ryutsuu.biz##.bnr300
@@ -1235,16 +1236,16 @@ zai.diamond.jp##^.sp-floating-banner
 
 erobanach.com##+js(aopw, hidden)
 erobanach.com,openloadpro.com##+js(aeld, , returnAd)
-h-ken.net##+js(acis, onload, ad)
-javmix.tv##+js(acis, addEventListener, style.display)
+h-ken.net##+js(acs, onload, ad)
+javmix.tv##+js(acs, addEventListener, style.display)
 m.hd21.com,m.nuvid.com##+js(set, player.postitialTimeout, 0)
 m.hd21.com,m.nuvid.com##+js(aopr, mobileAdvPop)
-m.sextvx.com##+js(acis, document.querySelectorAll, popMagic)
-m.sunporno.com##+js(acis, $, exoMobilePop)
+m.sextvx.com##+js(acs, document.querySelectorAll, popMagic)
+m.sunporno.com##+js(acs, $, exoMobilePop)
 mudainodocument.com##+js(aeld, /^(?:mousewheel|touchmove)$/)
 news.mynavi.jp##+js(aeld, /^(?:scroll|touchmove|wheel)$/, preventDefault)
-smt.docomo.ne.jp##+js(acis, document.write, WrpAd)
-supleks.jp##+js(acis, document.getElementsByClassName, adBlocked)
+smt.docomo.ne.jp##+js(acs, document.write, WrpAd)
+supleks.jp##+js(acs, document.getElementsByClassName, adBlocked)
 
 ! ---------- Exception - blocking ----------
 @@||adcdn.goo.ne.jp/images/pix/2dwkwwau99.js$domain=news.goo.ne.jp
@@ -1277,7 +1278,6 @@ kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!importan
 /index.php?key=*&t1=$doc
 /japanpost.apk^$doc
 ||66niue3tyt.online^$doc
-||9-7dj93-caz5.com^$all
 ||anarusex1919.tokyo^$doc
 ||application-best-mine-installs.cyou^$all
 ||aramblin.com^$doc
@@ -1301,7 +1301,6 @@ kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!importan
 ||prelandappslab.com^$all
 ||senzuri1919.xyz^$doc
 ||sexsex1919sex.*^$doc
-||sxg2tfdgs6y8.com^$all
 ||systemupdatesy.life^$all
 ||systemupdatix.club^$all
 ||syuinsex1919.tokyo^$doc

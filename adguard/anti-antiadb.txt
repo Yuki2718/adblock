@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220704
+! Version: 20220706
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -228,11 +228,11 @@ _spot_id=*&zone_id=$script,~third-party
 ##.href_
 ##.sponsor-ad:not(.adsense)
 ##a#mobile_pop.js-mob-popup
+##a[dont][style$="position: absolute; z-index: 2147483647;"]
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="height:"][style*="width:"][style*="inset:"][style*="z-index:"]
 ##a[id][href*="/PVZ/PVZ.php?c="]
 ##a[style="position: absolute; inset: 0px; display: block;"][href*="?promo="][target="_blank"]
 ##body > div[class][style*="bottom: 0px; left: 0px;"][style*="z-index:"][style*="background-color:"][style*="display: flex; justify-content: center;"]
-##div[id^="chp_ads_block"]
 ##div[id][style^="position: fixed; inset: 0px; z-index: 2147483647; background: black none repeat scroll 0% 0%; opacity: 0.01"]
 ##div[style="position: absolute; inset: 0px; overflow: hidden; z-index: 160; background: transparent none repeat scroll 0% 0%; display: block;"]
 ##div[style^="position: fixed; display: block"][style*="inset: 0px;"][style*="background-color: rgba(0, 0, 0, 0)"][style*="z-index"][style*="height: 100%"][style*="width: 100%"]:not([class])
@@ -300,11 +300,13 @@ _spot_id=*&zone_id=$script,~third-party
 ||advertising.yahoo.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||as.inbox.com/banner_ad.gif|$image,redirect-rule=1x1-transparent.gif
 ||cxense.com/cx.js$script,redirect-rule=noopjs
+||doubleclick.net^$xmlhttprequest,redirect=nooptext,domain=~d3ward.github.io
 ||doubleclickbygoogle.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||google.com/adsense/start/images/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
 ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager-gtm
 ||gstatic.com/adx/doubleclick.ico|$image,redirect-rule=32x32-transparent.png
+||media.fastclick.net^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||nessainy.net/favicon.ico$image,redirect-rule=32x32-transparent.png
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication-adsbygoogle,domain=~zipextractor.app
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect-rule=nooptext

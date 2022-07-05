@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220705
+! Version: 20220706
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -235,7 +235,6 @@ search.rakuten.co.jp##.field > .dui-tooltip[data-tooltip-id=announcement-shippin
 similarweb.com##.top-notification
 similarweb.com##+js(rc, top-notification-parent, body, stay)
 slashdot.org###announcement
-shrinkzzy.link##+js(acis, firebase.initializeApp)
 sony.jp##.s5-frontLogin__notificationItem--favorite
 thetimes.co.uk##.is-fixed.Tooltip--arrow-topLeft
 thetimes.co.uk##.js-channelsTooltip
@@ -257,6 +256,12 @@ youtube.com##ytd-popup-container > .ytd-popup-container[style^="outline: current
 ||cpcdn.com/assets/device/pro_recipe_service/bookmark/bookmark_android.png?$domain=cookpad.com
 cookpad.com##.js_bookmark
 id.smt.docomo.ne.jp##.header_posting
+!#endif
+!#if ext_ublock
+shrinkzzy.link##+js(acs, firebase.initializeApp)
+!#endif
+!#if adguard
+shrinkzzy.link#%#//scriptlet('abort-current-inline-script', 'firebase.initializeApp')
 !#endif
 
 ! ---------- Popup/Banner ----------
@@ -993,6 +998,8 @@ investing.com###PromoteSignUpPopUp
 investing.com##.bp3-elevation-3
 investing.com##.bp3-portal
 investing.com##.generalOverlay
+iobit.com##.rabbitpopfree
+iobit.com##.rabbitpopfree:style(background: none!important)
 ipinfo.io###overlay
 j-island.net##.l-pickup
 jartic.or.jp###termsModal
@@ -1034,6 +1041,8 @@ low-ya.com##.v--modal-overlay
 lrm.jp##.pick-flex
 m.soundcloud.com##div[class^="Tooltip_TooltipOverlay__"]
 m.soundcloud.com##body:style(overflow: auto !important;)
+makeabooking.flyscoot.com###volantio-smartalerts-root-container > div > div > div#react-aria-modal-dialog[aria-label="Watch prices"]:upward(3)
+makeabooking.flyscoot.com##html:style(position: static !important;overflow: auto !important;)
 makeshop.jp###overlay
 manga-zero.com##.float-navigation
 manga-zero.com##.vue-portal-target
@@ -1358,7 +1367,6 @@ kurashiru.com###dly-LandingPopupBanner
 kurashiru.com##html.dly-modal-active:style(overflow: auto!important;)
 lulucos-bys.jp##.m-navi-expert
 m.facebook.com##[data-sigil=loggedout_mobile_cta_footer]
-m.qoo10.jp##+js(acis, $, layerpopup_mainBanner)
 m.youtube.com##.mealbar-promo-renderer
 magazine.tabelog.com##.tm-floating-banner
 media.rakuten-sec.net##.m-vote-banner
@@ -1398,6 +1406,12 @@ townwork.net##.js-chatApplyBanner
 yellowhat.jp##.floatingCommon
 yourmystar.jp##^.toast-banner-block
 zeiri4.com##.b-stickyShoukaiBanner
+!#endif
+!#if ext_ublock
+m.qoo10.jp##+js(acs, $, layerpopup_mainBanner)
+!#endif
+!#if adguard
+m.qoo10.jp#%#//scriptlet('abort-current-inline-script', '$', 'layerpopup_mainBanner')
 !#endif
 
 ! ---------- Browser check ----------
@@ -1667,6 +1681,7 @@ theintercept.com##.Newsletter
 theintercept.com##.NewsletterEmbed-container
 theregister.com##.newsletter_signup_unit
 usatoday.com##aside[aria-label="Newsletter signup form"]
+vectorenewables.com##.eb-inst.eb-bottom-right
 wikihow.jp##.newsletter
 wired.com##.newsletter-subscribe-form
 wired.jp##.ticker-wrapper
@@ -2285,10 +2300,10 @@ bdupload.*,best18vd.com,bestmoneysites.com,coolrom.com.au,desiupload.*,hubfiles.
 bingotingo.com###please-wait
 bingotingo.com##+js(nano-sib, counter, , 0.02)
 bitefaucet.com,consoleroms.com,dramaworldhd.co,edummm.xyz,romspedia.com##+js(nano-sib, timeLeft)
-bitmos.co.in,nstnews.net##+js(set, count, 0)
+bitmos.co.in##+js(set, count, 0)
 bluemediafiles.com,onlyhgames.com##+js(nano-sib, i--)
 bluemediafiles.com##+js(set, Time_Start, 0)
-cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
+cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgokr.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
 cashearn.cc##+js(nano-sib, #timer)
 codecomets.com,techxpulse.com###timeblock
 codecomets.com,techxpulse.com##+js(rc, disabled, a#enablebtn)
@@ -2517,7 +2532,6 @@ dev.medicalonline.jp##+js(set, MOL.cm.is_exist_medical_staff_cookie, trueFunc)
 game8.jp##+js(rc, async-hide, html)
 get.adobe.com##+js(ra, checked, #chrExtCheckbox)
 hpplus.jp##+js(set, $.cookie, trueFunc)
-investorvillage.com##+js(acis, update_visit_count)
 itreview.jp##.blur-contents:style(filter: none!important;pointer-events: auto!important)
 itreview.jp##.float.itr-blur-login
 ironna.jp###side-theme-list
@@ -2545,6 +2559,12 @@ ampmedia.jp##.yarpp-related
 !#endif
 !#if env_firefox
 ampmedia.jp##^.yarpp-related
+!#endif
+!#if ext_ublock
+investorvillage.com##+js(acs, update_visit_count)
+!#endif
+!#if adguard
+investorvillage.com#%#//scriptlet('abort-current-inline-script', ' update_visit_count')
 !#endif
 
 ! Exception

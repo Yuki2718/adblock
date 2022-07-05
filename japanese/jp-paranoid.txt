@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220704
+! Version: 20220706
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -71,6 +71,8 @@ _Ad300x250_
 ||i5.walmartimages.com/dfw/4ff9c6c9-29f9/k2-$script
 ||i5.walmartimages.com/dfw/4ff9c6c9-6451/k2-$script
 ||img.gcolle.net^$3p,domain=~ckclike.com|~contentking.tokyo|~cosfeti2.blog.fc2.com|~ebi-chan.info|~face3210.com|~fechicolle.com|~fetishism.tokyo|~gcolle.xyz|~gesumogura.com|~gripav.biz|~hentai4610.com|~ikenaikoto.com|~javdig.com|~jkcosplay.tokyo|~kmc-av.com|~machidoriwalker.com|~machifechi.com|~plus-love.net|~porns7.com|~sanzis-ffs.blog|~seisyakai.com|~street-legs.blog.jp|~sukebe48.com|~tamago-chan.com|~videooyaji.net|~xn--gcolle-um2j928d.net|~zuma-rakuen.com|~zumalife.info
+||iobit.com/wp-content/themes/iobit/img/summer/store-pop-
+iobit.com##.rabbit-store-pop
 ||jinjibu.jp/updir/adv_web_banner/
 ||keisan-mondai.com/pgm/ad-main.php
 ||kenoh.com/banner/
@@ -650,6 +652,8 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=from,domain=dic.nicovideo.jp|englishcentral.com
 *$doc,removeparam=lid,domain=kakaku.com|kakakumag.com
 *$doc,removeparam=mbid
+! needed to get discount
+*$doc,removeparam=ref,domain=iobit.com
 *$doc,removeparam=sc2id,domain=rakuten.co.jp
 *$doc,removeparam=sc_e,domain=paypaymall.yahoo.co.jp|shopping.yahoo.co.jp
 *$doc,removeparam=sc_in,domain=realestate.yahoo.co.jp
