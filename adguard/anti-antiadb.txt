@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220708
+! Version: 20220709
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -223,6 +223,7 @@ _spot_id=*&zone_id=$script,~third-party
 ###tobsideAd:not(:empty)
 ##.BannerAd:not(#filter_ads_by_classname):not(#detect)
 ##.SponsorAds:not(.adsense)
+##.ad-300x250:not(.ads)
 ##.ad-inserter:not(#banner-advert-container):not(.adsense)
 ##.ad-placeholder:not(#filter_ads_by_classname):not(#detect)
 ##.ad-placement:not(.adsbox):not(.afs_ads):not(#ablockercheck)
@@ -348,6 +349,7 @@ _spot_id=*&zone_id=$script,~third-party
 #@##tobsideAd
 #@#.BannerAd
 #@#.SponsorAds
+#@#.ad-300x250
 #@#.ad-inserter
 #@#.ad-placeholder
 #@#.ad-placement

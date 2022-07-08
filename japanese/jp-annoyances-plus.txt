@@ -135,9 +135,14 @@ www.google.*###main > div > div[class] > div[class] > span:first-child > div:has
 ! トップニュース
 www.google.*##div[data-hveid] > div > div > div[class] > span:has-text(トップニュース):upward(3)
 
-! ライブドアブログ 関連記事
+! ライブドアブログ
+! 関連記事
 ||blog.livedoor.jp/js/related_articles.
 ##div[id^="ldblog_related_articles"]
+! 最新コメント
+/_/recent_comments.json?
+||blog.livedoor.jp/js/recent_comments.
+##.plugin-recent_comments
 
 ! シノドス フッター固定化解除 https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1652115193/283
 synodos.jp###footer-nav.sticky:style(position: unset!important)

@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220708
+! Version: 20220709
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -221,6 +221,7 @@ kyodemo.net##.is-danger.message
 lmaga.jp##.header_headline
 macha795.com###notice-area-wrap
 mail.yahoo.co.jp##.main > div[class] > svg + div[class] > a[title=""][font-size="14"]:upward(2)
+manymv.com##.alert-secondary
 mrs.living.jp###floating-max
 ndtv.com###___ndtvpushdiv
 news.biglobe.ne.jp##.push-area-btn
@@ -1073,6 +1074,7 @@ movie-times.tv###newContactBanner
 mozilla.org##.mzp-c-sticky-promo
 music.apple.com##.banner-upsell
 music.youtube.com##ytmusic-mealbar-promo-renderer
+mycloudminers.com##.body_overlay
 mypage.sso.biglobe.ne.jp##.pr-footer-notice
 naitopi.com###age_check
 nature.com##.c-site-messages--nature-briefing
@@ -1218,9 +1220,12 @@ tripadvisor.jp##body[style="overflow: hidden;"]:style(overflow: auto !important)
 tripadvisor.jp##div[class^=_][style="background-color: white;"] button.primary:has-text(今すぐチェック):upward(5):matches-css(overflow: auto)
 tripadvisor.jp##div[class^=_][style^="position: fixed; inset: auto"] span:has-text(でのご予約はいかがでしたか？):upward(4):matches-css(width: 360px)
 try-it.jp##+js(aeld, load, event.dispatch.apply)
+tumblr.com###glass-container > div[aria-modal="true"]:has(a[href="/register?source=login_register_center"])
 tumblr.com##.road-block
 tumblr.com##.tmblr-iframe--follow-teaser
+tumblr.com##body:style(overflow: auto !important;)
 tumblr.com##div[style^="background: rgb(124, 92, 255)"][style*="color: rgb(255, 255, 255);"]
+tumblr.com##div[style="background:#7c5cff;color:#ffffff"]
 tv.netkeiba.com##.DetailIntroArea01, .TvIntroOverlay
 twitch.tv###twilight-sticky-footer-root
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion###layers > div[class] > div[class] > div[class] > div[class]:has(> div[class] > div[class] > div[class] > div[class] > div[class] > a[href="/login"])
@@ -1523,6 +1528,8 @@ globis.jp##.news_letter
 ||honda.co.jp/layout/footer/img/btn_footer_mail
 honda.co.jp##.typesquare_option.footer-mail
 ||honda.co.jp^*/banner-02.png
+||hotokami.jp/img/parts/top/DSC09263.jpg
+hotokami.jp##.mail_magazine_form--container
 ||idcfcloud.net/dn_items/bnr/20201209_mail.jpg$domain=domonet.jp
 ||imd-net.com/files/img/mag_btn.
 ||ismcdn.jp/common/ggo/images/v1/mailmagazine-$domain=gentosha-go.com
@@ -1538,6 +1545,8 @@ mag2.com##.sidebar-content > section#text-18.widget_text
 ||marketingnative.jp^*/mailmagazine_$image
 ||media-platform.com/bi/dist/images/2020/06/06/H2_300-$domain=businessinsider.jp
 businessinsider.jp##.p-mailmag
+||minimized.hotokami.jp/*/s3-hotokami-contents.s3.amazonaws.com/img/banner/banner.png$image,1p
+hotokami.jp##.register-banner
 ||mwcm.nytimes.com/capi/metered_assets/
 ||native-store.net/medias/sys_master/root/ha8/hfc/
 ||navi.kamuitracker.com/wp-content/themes/kamunavi/images/footer_kamuitracker
@@ -1819,6 +1828,7 @@ komachi.yomiuri.co.jp##._popIn_recommend_tieup
 komachi.yomiuri.co.jp##.topi-popin-relation
 latimes.com##.Enhancement > .PromoSmall
 machicon.jp###_popIn_recommend
+mbs.jp##.common-wrap--ranking
 media.moneyforward.com##.mp-recommends
 moyugenn.youblog.jp##.main-column-inner > span:has-text(おすすめ)
 msn.com##.floatingfeedback
@@ -1919,6 +1929,7 @@ automesseweb.jp###_popIn_ranking:upward(.code_php_in_widget)
 
 ! ---------- Promo ----------
 ||fwcdn1.com/js/storyblock.js
+||i.bcicdn.com/promotions/
 ||usefomo.com^$3p
 
 /\/upload\/banner\/(?!sidebar).*/$image,1p,domain=alphapolis.co.jp
@@ -2094,6 +2105,7 @@ airtrip.jp##.top-page > .video-content
 @@||nikkon-hd.co.jp/images/ad/$image,1p,badfilter
 
 373news.com##.mns_bn
+amazon.co.jp,amazon.com###nav-swmslot
 anna-media.jp##.home.column3-list li .icon-pr:upward(li)
 answers.microsoft.com##.rail-banner
 archive.is##div[style^="display:table;background-color:white;border:3px black dashed"]
@@ -2307,7 +2319,7 @@ bitefaucet.com,consoleroms.com,dramaworldhd.co,edummm.xyz,romspedia.com##+js(nan
 bitmos.co.in##+js(set, count, 0)
 bluemediafiles.com,onlyhgames.com##+js(nano-sib, i--)
 bluemediafiles.com##+js(set, Time_Start, 0)
-cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
+cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgiut.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
 cashearn.cc##+js(nano-sib, #timer)
 codecomets.com,techxpulse.com###timeblock
 codecomets.com,techxpulse.com##+js(rc, disabled, a#enablebtn)
