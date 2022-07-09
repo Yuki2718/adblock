@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220708
+! Version: 20220710
 
 ! YT プロモーションを含みます
 youtube-nocookie.com,youtube.com##.ytp-paid-content-overlay
@@ -136,13 +136,19 @@ www.google.*###main > div > div[class] > div[class] > span:first-child > div:has
 www.google.*##div[data-hveid] > div > div > div[class] > span:has-text(トップニュース):upward(3)
 
 ! ライブドアブログ
-! 関連記事
+! 関連/最新記事
 ||blog.livedoor.jp/js/related_articles.
 ##div[id^="ldblog_related_articles"]
+aqua2ch.net,blog.livedoor.jp,blogo.jp,fesoku.net,ldblog.jp,livedoor.biz,matometanews.com##.related-articles
+xn--h9jtah1gvb5bc.com##.related-articles-outer
 ! 最新コメント
 /_/recent_comments.json?
 ||blog.livedoor.jp/js/recent_comments.
 ##.plugin-recent_comments
+! 人気記事/記事ランキング
+||blog.livedoor.jp/*/popular_articles.
+blog.livedoor.jp##.plugin-popular_articles
+blog.livedoor.jp##.plugin-popular_articles_with_image
 
 ! シノドス フッター固定化解除 https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1652115193/283
 synodos.jp###footer-nav.sticky:style(position: unset!important)
