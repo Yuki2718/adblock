@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220710
+! Version: 20220711
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -221,7 +221,6 @@ kakaku.com###modalFrame
 kyodemo.net##.is-danger.message
 lmaga.jp##.header_headline
 macha795.com###notice-area-wrap
-mail.yahoo.co.jp##.main > div[class] > svg + div[class] > a[title=""][font-size="14"]:upward(2)
 manymv.com##.alert-secondary
 mrs.living.jp###floating-max
 ndtv.com###___ndtvpushdiv
@@ -894,6 +893,7 @@ d.tube##.sticky.centered > div.announcement[style="width: 100%;"]
 daiwa.jp##.mnyl-contact-btn
 deezer.com##.modal:has(> div.modal-wrapper > div.modal-dialog > div#modal_push_premium)
 deezer.com##.push-header:style(background: none!important)
+defenseone.com,govexec.com,nextgov.com,route-fifty.com##+js(set, GEMG.ConversionModule, noopFunc)
 detail.chiebukuro.yahoo.co.jp###fuwa
 developer.android.com##devsite-snackbar a.devsite-snackbar-link[href^="https://developer.android.com/survey"]:upward(devsite-snackbar)
 developer.mozilla.org##.notification:has(a[href^="https://www.surveygizmo"])
@@ -1348,8 +1348,9 @@ kokoiko.smbc-card.com##.surfaceFixedBanner
 ||res.office365.com/owalanding/*/images/outlook-mobile-apps-$domain=outlook.live.com
 ||shufoo.net/s/img/banner/fuwa_fukidashi.png
 s.shufoo.net###okiniiri-fuwatto-banner
-outlook.live.com###mobile-speedbump
-outlook.live.com##body.locked:style(overflow: auto!important;)
+||t-mall.tsite.jp/modal/intro.png
+t-mall.tsite.jp###cboxOverlay
+t-mall.tsite.jp###colorbox img[src="/modal/intro.png"]:upward(#colorbox)
 ||yugioh-card.com/yugiohdb/external/image_sp/ja/neuron_bottomimg.
 yugioh-card.com###neuron_bottomimg
 
@@ -1383,6 +1384,8 @@ nipponrentacar.co.jp##.noticeArea
 oceans-nadia.com###nadia-popup
 oceans-nadia.com###popup-overlay
 oceans-nadia.com##html[style="overflow: hidden;"]:style(overflow: auto !important;)
+outlook.live.com###mobile-speedbump
+outlook.live.com##body.locked:style(overflow: auto!important;)
 pinterest.*###__PWS_ROOT__:style(overflow: auto !important)
 pinterest.*##+js(aopr, scrollTo)
 pinterest.*##.Hsu.iyn.zI7.FNs
@@ -2324,7 +2327,7 @@ bitefaucet.com,consoleroms.com,dramaworldhd.co,edummm.xyz,romspedia.com##+js(nan
 bitmos.co.in##+js(set, count, 0)
 bluemediafiles.com,onlyhgames.com##+js(nano-sib, i--)
 bluemediafiles.com##+js(set, Time_Start, 0)
-cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgiut.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
+cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgiut.buzz,imgizw.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
 cashearn.cc##+js(nano-sib, #timer)
 codecomets.com,techxpulse.com###timeblock
 codecomets.com,techxpulse.com##+js(rc, disabled, a#enablebtn)
@@ -2343,6 +2346,7 @@ file4go.*##+js(set, time, 0)
 files.im,zeefiles.*##+js(nano-stb, tick)
 findicons.com##+js(nano-sib, wait_seconds)
 forex-gold.net##+js(nano-sib, timeleft)
+forex-golds.com,forex-trnd.com,gawbne.com##+js(nano-sib, counter, 2000)
 hdwallpaperim.com##+js(nano-stb, x.css, 3000, 0.02)
 hdwallpapers.net,uploadflix.org,uploadmaza.com,uptomega.*##+js(nano-stb, seconds)
 highload.to,shavetape.*,strcloud.*,streamadblockplus.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*##+js(nano-stb, counter)
@@ -2481,7 +2485,11 @@ sapporobeer.jp##.agegate-bg
 /wp-content/plugins/sociallocker-
 ||apester.com^$3p
 ||as.datasign.co^
+! origin check (not analytics)
+||bousai-parts.kyodo-d.jp/contents/static/js/access.js
 ||js.driftt.com^$3p
+! miner on consent
+||online.gather.network/gather.app.js$3p
 ||sspinc.io^
 
 ##.grecaptcha-badge
