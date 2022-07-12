@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220709
+! Version: 20220713
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -196,6 +196,7 @@
 ?a=1&e=*&if=0|$xmlhttprequest,third-party
 ?adl=1&id=$script,~third-party
 ?bpem=*&refer=$popup,third-party
+?gcflkd=*&key=$popup,third-party
 ?key=*&psid=https://$popup,third-party
 ?oo=1^$xmlhttprequest,third-party
 ?spot_id=*&psid=https://$popup,third-party
@@ -259,11 +260,13 @@ _spot_id=*&zone_id=$script,~third-party
 -prebid.$script,badfilter
 /ad-300x250.jpg$image,redirect-rule=1x1-transparent.gif
 /adblockdetect/*$~image,badfilter
+/ads-prebid.js$script,redirect-rule=prebid-ads
 /assets/js/sailthru.js?ver=
 /sailthru.js$badfilter
+/prebid-ads.js$script,redirect-rule=prebid-ads,domain=~exey.io
 @@/\/js\/[_0-9a-zA-Z]{4,12}\/(?:ad[-a-z]{4}|bannerpump|nugg\.min|transad|[a-z]{2}ads|[a-z]{3}-(?:adscript|inspire-ad|rail-ads))\.js\?_v=[0-9a-f]{8}$/$script,~third-party
 @@/ad/api/popunder.js|$script,~third-party
-@@/ads-prebid.js$script
+@@/ads-prebid.js$script,~third-party
 @@/ads/pop.js|$script,~third-party
 @@/adsense.js?adsdata=$script,~third-party
 @@/adv/ads/popunder.js?$script,~third-party
@@ -274,7 +277,7 @@ _spot_id=*&zone_id=$script,~third-party
 @@/js/adv/fuckadblock.js?$script,~third-party
 @@/libs/advertisement.js?ad_ids=*&show_ad=$script,~third-party
 @@/player/player_ads.html?advertising_id=$subdocument,~third-party
-@@/prebid-ads.js$script
+@@/prebid-ads.js$script,xmlhttprequest,~third-party
 @@/shared/bannerpages/darttagsbanner.aspx?h=$script,third-party
 @@/site_ads.js?ad_slot=*&ad_ids=$script,~third-party
 @@/static/image/ad_top_bg2.png?&ad_box_=$image,~third-party
