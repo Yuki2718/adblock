@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220713
+! Version: 20220714
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -647,6 +647,10 @@ nikkei.com##.ant-notification-bottomRight
 nintendo.co.jp##div[id$=-purchase]
 ||nordcdn.com/nordvpn/media/*/popups/$domain=nordvpn.com
 nordvpn.com##div[id^="popup_"]
+||nycgo.com/images/uploads/newsletter/backgrounds/Modal-copy-
+nycgo.com###newsletter-modal-wrapper
+nycgo.com##.modal-backdrop
+nycgo.com##.modal-open:style(overflow: auto !important;)
 ||o.prod.theintercept.com/checkout/template/show
 theintercept.com###third-party--viewport-takeover
 ||ogs.google.*/widget/callout?
@@ -859,7 +863,7 @@ boohoo.jp##body:style(overflow: auto !important;)
 book.toyokeizai.net##.trial_block
 books.rakuten.co.jp##.rMessageFloating
 boxil.jp###modal-appeal-download
-boxil.jp##body.modal-open:style(overflow: auto!important;)
+boxil.jp##body:style(overflow: auto!important; padding-right: 0!important;)
 boxil.jp,finnishdesignshop.com,hoihoi.whotwi.com,honichi.com,kadoebi.co.jp,lec.medilink-study.com,nordvpn.com,razer.com,rebates.jp,service-safari.com,techacademy.jp,weloma.net##.modal-backdrop
 books.rakuten.co.jp###js-rMessageFloating
 brave.com##.announcement-banner
@@ -1366,6 +1370,9 @@ bookwalker.jp##.footer-coupon
 boxil.jp##^.magModal__bottomSpace--small.appealMultiDownloadSmallModalWrapper
 career.levtech.jp##.js-fixedGuideCta
 dldlinks.com,dldshare.net##+js(aopr, age_gate_params)
+dokuha.jp###modal-comicday-desc
+dokuha.jp##.modal-backdrop
+dokuha.jp##.modal-open:style(overflow: auto !important;)
 game8.jp##.l-fixedFunctionLinkContainer
 girlschannel.net###popupModal
 hoken.zexy.net##.formbtn.reserve
@@ -1662,6 +1669,7 @@ japan.zdnet.com##.article-mailmagizine
 japan.zdnet.com##.mailmagazine
 jbl.com##.mail-form
 jinjibu.jp##.l-registerarea
+kawashima-ya.jp###fix_sidebar
 kotaku.com##.js_newsletter-form-inline
 kwm.co.jp##.book_link
 lifehacker.com##.js_subscribe
@@ -1815,6 +1823,7 @@ bunshun.jp##.block-header:has-text(SPECIAL)
 bunshun.jp##a[href$="?ref=special"]
 crank-in.net##.right_in [id^=_popIn_trend]:upward(.right_in)
 crank-in.net##section .uz-ny:upward(1)
+cybozu.help###enquete
 cs.myjcom.jp###enq_fixed
 deloitte.com###poll-bar
 dengekionline.com##.gRankMoreNav
@@ -2336,7 +2345,7 @@ bitefaucet.com,consoleroms.com,dramaworldhd.co,edummm.xyz,romspedia.com##+js(nan
 bitmos.co.in##+js(set, count, 0)
 bluemediafiles.com,onlyhgames.com##+js(nano-sib, i--)
 bluemediafiles.com##+js(set, Time_Start, 0)
-cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgiut.buzz,imgizw.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imguytx.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxann.buzz,imgxaqq.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
+cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgiut.buzz,imgizw.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imguytx.buzz,imguz.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxann.buzz,imgxaqq.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
 cashearn.cc##+js(nano-sib, #timer)
 codecomets.com,techxpulse.com###timeblock
 codecomets.com,techxpulse.com##+js(rc, disabled, a#enablebtn)

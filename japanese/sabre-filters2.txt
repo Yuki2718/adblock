@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220713
+! Version: 20220714
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -217,6 +217,7 @@ convertstring.com###cookielaw
 cybermap.kaspersky.com##.gdprPopup
 daido.co.jp##.cookiebox
 daiwabo-holdings.com,jsw.co.jp,satoshoji.co.jp,se-corp.com##.ux_popup_cookie_warning
+dan.com###cookie-popup
 dokumen.tips###cookie-law
 dsautomobiles.com##.layer_cookie
 dynamicwallpaper.club##.cookieControl
@@ -355,6 +356,7 @@ _eu_cookie_$domain=nbcsports.com
 ||consensu.org^$third-party,domain=imgur.com|rssing.com|theguardian.com|travian.com
 ||consent.dropbox.com^
 ||consent.economist.com^
+||consent.trustarc.com/notice$script
 ||consent.trustarc.com^$third-party,domain=bain.com|bcg.com|cloudera.com|dsm.com|hills.co.jp|ibm.com|juniper.net|nera.jp|oracle.com|tuya.com|wtwco.com
 ||consent.truste.com^$third-party,domain=iherb.com
 ||content-hcs.com/wu-cont/cssstyles/cookie_$domain=whatuni.com
@@ -459,7 +461,7 @@ account.xiaomi.com##.mi-cookie-banner
 accounts.pixiv.net###js-privacy-policy-banner
 accuweather.com##.privacy-policy-banner
 ad-maven.com##.notification
-add0n.com,daiichisankyo-ep.co.jp,eiken.co.jp,evaair.com,fict-g.com,gingerweb.jp,goetheweb.jp,gs-yuasa.com,iar.com,icom.co.jp,inet.co.jp,kurabo.co.jp,lunavpn.net,macnica.co.jp,rinspo.jp,sinko-soko.jp,toyo-seikan.co.jp,yoyogames.com###cookie
+add0n.com,daiichisankyo-ep.co.jp,eiken.co.jp,evaair.com,fict-g.com,gingerweb.jp,goetheweb.jp,gs-yuasa.com,iar.com,icom.co.jp,inet.co.jp,kurabo.co.jp,lifescience.net,lunavpn.net,macnica.co.jp,rinspo.jp,sinko-soko.jp,toyo-seikan.co.jp,yoyogames.com###cookie
 adf.ly###cookie_notice
 adjust.com##div[data-testid="common.cookie-panel-main"]
 adlittle.*,groupeseb.com###tarteaucitronRoot
@@ -472,7 +474,7 @@ airvpn.org###cookieLaw
 ajinomoto.co.jp##.gdpr-message
 allergan.jp##.agn-cookie-consent-outer-wrapper
 alphacoders.com,insidermedia.com,kiwi.com###cookie_consent
-amd.com,apnews.com,bsigroup.com,businesswire.com,cookielaw.org,credit-suisse.com,freepeople.com,hyland.com,midomi.com,msn.com,shop.mango.com,siemens.com,sony.*,soundcloud.com,staubli.com,treasuredata.co.jp,trivago.jp,trustpilot.com,vimeo.com###onetrust-consent-sdk
+amd.com,apnews.com,backcountry.com,bsigroup.com,businesswire.com,cookielaw.org,credit-suisse.com,freepeople.com,hyland.com,midomi.com,msn.com,shop.mango.com,siemens.com,sony.*,soundcloud.com,staubli.com,treasuredata.co.jp,trivago.jp,trustpilot.com,vimeo.com###onetrust-consent-sdk
 amgen.co.jp,japanforunhcr.org,naturesway.com,starrcompanies.jp##.privacy-warning
 amity.co.jp,darkflash.com,ddos-guard.net,dw.com,fujiyakuhin.co.jp,idemitsu.com,idss.co.jp,ixxx.red,koreanair.com,malavida.com,monosnap.com,moriroku.co.jp,pdf.easeus.com,sharingbeauty.co.jp,soft32.com,takeda.com,takemotopkg.com,thatskygame.com,weddingpark.net,ytddownloader.com##.cookie
 amundi.co.jp,leonardocompany.com##.cookie-policy-dialog
@@ -522,7 +524,7 @@ bilibilicomics.com,bitstarz.com##.cookie-wrapper
 biorxiv.org,unicef.org##.sliding-popup-bottom
 bitstamp.net,domaintools.com##.cookie-modal
 bittrex.com,optimumnutrition.com,trial-net.co.jp##.cookie-banner:not(body):not(html)
-blockchain.com##div[class^="GdprBanner_"]
+blockchain.com##body div[class^="TrackingProvider__Banner"]
 blocksite.co###elementor-popup-modal-1372
 blog.hatena.ne.jp###header-cookie-notify
 bloomberglaw.com##div[class^="CookieNotice_cookiesBar"]
@@ -765,6 +767,8 @@ incyte.jp###topHeader > div.banner
 indeed.com##.gnav-CookiePrivacyNotice
 indexpro.co.jp###our_policy
 inflightcloud.com##ui-cookie-advisory-banner
+infomaniak.com##body:style(overflow: auto !important;)
+infomaniak.com##module-rgpd-component
 inoreader.com##.landing_promo_banner_top
 insideevs.com##.m1-footer-messages
 interconti.co.jp###first-impression

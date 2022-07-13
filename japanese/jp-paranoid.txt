@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220713
+! Version: 20220714
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -353,6 +353,7 @@ smart-flash.jp##^.adsBlock
 -contrib-ads/
 -google-analytics/$domain=~wordpress.org
 .s_code.js$domain=cadillacjapan.com|chevroletjapan.com
+/1.gif?$image,frame,script,xhr
 /AdobeAnalyticsBundle.
 /AppMeasurement.js
 /AppMeasurement.min.js
@@ -541,7 +542,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 /Criteo/*$badfilter
 @@/friendbuy.min.js$script,domain=butcherbox.com
 @@||accounts.intuit.com/fe_logger?$1p
-@@||adobedtm.com/*-source.min.js$script,domain=bose.com|churchofjesuschrist.org|hilton.com|ingrammicro.com|news.sky.com
+@@||adobedtm.com/*-source.min.js$script,domain=americanexpress.com|bose.com|churchofjesuschrist.org|hilton.com|ingrammicro.com|news.sky.com
 @@||adobedtm.com/extensions/$script,domain=apple.com|foodnetwork.com
 @@||adobedtm.com/launch-$script,xhr
 @@||adobedtm.com^*-libraryCode_source.min.js$script,domain=sbisec.co.jp
@@ -551,6 +552,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|auspost.com.au|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|support.nec-lavie.jp|telegraph.co.uk|vanityfair.com|wired.com
 @@||api.cxense.com/document/search?$script,xhr,domain=friday.kodansha.co.jp|ntv.co.jp|tv-tokyo.co.jp
 @@||api.cxense.com/public/widget/click/$domain=api.cxense.com
+@@||api.cxense.com/public/widget/data$domain=friday.gold
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
 @@||api.cxense.com/public/widget/data?$domain=cinemacafe.net|googirl.jp|marketwatch.com|wsj.com
 @@||api.cxense.com/public/widget/data?$script,domain=mainichi.jp
@@ -608,8 +610,10 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|mainichi.jp
 @@||sephora-track.inside-graph.com/gtm/$domain=sephora.com
 @@||sephora-track.inside-graph.com/ig.js$domain=sephora.com
+@@||smushcdn.com^*/1.gif$domain=retrounlim.com
 @@||snva.jp/javascripts/reco/$domain=concent.co.jp|mouse-jp.co.jp
 @@||staff-start.com/js/track/$domain=enoteca.co.jp|francfranc.com|store.alpen-group.jp
+@@||steamstatic.com/steam/apps/$image,domain=store.steampowered.com
 @@||tag.aticdn.net^*/smarttag.js$domain=rte.ie
 @@||threatbook.cn/public/asset/js/zhugeio.
 @@||toplay.biz/log_event$1p,xhr
