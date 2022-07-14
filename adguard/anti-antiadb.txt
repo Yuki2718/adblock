@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220714
+! Version: 20220715
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -310,6 +310,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||ads.twitter.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||advertising.yahoo.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||as.inbox.com/banner_ad.gif|$image,redirect-rule=1x1-transparent.gif
+||cloudfront.net/videojs/videojs-contrib-ads.js$script,redirect-rule=noopjs
 ||cxense.com/cx.js$script,redirect-rule=noopjs
 ||doubleclick.net^$xmlhttprequest,redirect=nooptext,domain=~d3ward.github.io
 ||doubleclickbygoogle.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
@@ -317,6 +318,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
 ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager-gtm
 ||gstatic.com/adx/doubleclick.ico|$image,redirect-rule=32x32-transparent.png
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima3
 ||media.fastclick.net^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||nessainy.net/favicon.ico$image,redirect-rule=32x32-transparent.png
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication-adsbygoogle,domain=~zipextractor.app
