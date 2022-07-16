@@ -1,8 +1,15 @@
-### お知らせ（2022年6月12日：4月20日分の追記）
+### お知らせ（2022年7月17日：ChromiumでのYoutube広告について）
 
 ※古いお知らせは随時消していきます。
 
+Chrome, Edgeなどではブラウザの起動直後はYoutube広告を確実にブロックできません。この問題でお悩みのuBlock Originユーザーは、オプションの「フィルターリスト」下にある「フィルターリストをすべて読み込むまで、ネットワークアクティビティを停止する」にチェックを入れることで対応できます。ただし、[別の問題](https://github.com/uBlockOrigin/uBlock-issues/issues/1973)が起こる可能性もあります。
+
+<details>
+<summary>（2022年6月12日：4月20日分の追記）</summary>
+
 Braveは以前よりChromiumのManifest V2（MV2）サポート終了後もMV2のサポートを継続すると[明言](https://github.com/brave/brave-browser/issues/20059)していましたが、本当にできるのかはまだわかりません。実際にuBlock Originが2023年1月以降もBraveで利用可能なのであれば、Yuki's uBLock Japanese filtersファミリーでのBraveのサポートは見送るかもしれません。
+
+</details>
 
 <details>
 <summary>（2022年5月10日：Brave Shield不具合簡易報告スレッドの開設）</summary>
@@ -59,7 +66,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 - 広告を目にしないことより、通信量の削減が第一
 - ある程度は悪質サイトやコインマイナーもブロックしてほしい
 
-<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">購読する（他の日本用リストは無効化推奨、AdGuardでは使わない）</a>
+<a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt&title=Yuki's%20uBlock%20Japanese%20filters">購読する（他の日本用リストは無効化推奨、uBlock Origin以外で使わない）</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-filters.txt)
 
 #### 特徴
@@ -327,9 +334,11 @@ GithubのIssueか[掲示板](https://jbbs.shitaraba.net/internet/25463/)を通�
 
 - 誤爆かどうかの判定が難しいケースもあります。そのような場合、そのサイトを日常的に使う人を想定するため、たまたま訪れた人には判定が甘い（広告漏れ）ように映るかもしれません。できるだけ最大公約数をとるように努力しますが、そもそも万人向けのフィルタなどありません。可能でしたら、適宜`$badfilter`, `$important`や例外などで対応してください。
 
-- 他フィルタとルールを統一する場合を除き、一般ルールの使用を最小限に抑えています。ルールを一般化するのは原則、1) 少なくとも3か所以上で使われており、2) 他の場所でも使われる見込みが高く、3)かつ、誤爆する見込みが低い場合のみです。１つでも既知の誤爆がある場合は極力避けています。
+- 他フィルタとルールを統一する場合を除き、汎用ルールの使用を最小限に抑えています。ルールを汎用化するのは原則、1) 少なくとも3か所以上で使われており、2) 他の場所でも使われる見込みが高く、3)かつ、誤爆する見込みが低い場合のみです。１つでも既知の誤爆がある場合は極力避けています。
 
 - 失効ドメインや不要になったルールは見つけ次第取り除く方針です。失効ドメインでもリクエストは発生するため、ほかのフィルタよりブロックが少なく見えることがあり得ます。
+
+- Yuki's uBlock Japanese filtersファミリーでは日本のサイトと、日本人が訪れる一部の海外サイトを対象としています。後者の詳細は[こちら](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q26-%E9%9B%AA%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%81%AE%E4%B8%AD%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%A8%E6%B5%B7%E5%A4%96%E3%82%B5%E3%82%A4%E3%83%88%E7%94%A8%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%8C%E7%B5%90%E6%A7%8B%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8C%E5%AF%BE%E8%B1%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)をご覧ください。
 
 - ブロッカー検知用の罠スクリプトは意図的にブロックから除外しています。初心者の方にはこれがブロック漏れにみえるようです（[例1](https://github.com/easylist/easylist/issues/6407)、[例2](https://github.com/AdguardTeam/AdguardFilters/issues/67785)）。報告は実際の問題に対して行うか、せめてスクリプトの内容を確認してからにしてください。
 
