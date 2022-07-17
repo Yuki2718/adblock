@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220716
+! Version: 20220718
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -55,6 +55,7 @@
 /plugins/wp-modal-popup-with-cookie-integration/*
 /plugins/wps-cookie-consent/*
 /smile-gdpr-bundle-$script,stylesheet
+/tcf-cmp-resources/*
 /wp-content/plugins/cookie-notice/*
 /wp-content/plugins/cookie-popup/*
 /wp-content/plugins/dsgvo-tools-cookie-hinweis-datenschutz/*
@@ -112,6 +113,7 @@ _cookie_compliance.
 ###cookie-msg
 ###cookie-notice
 ###cookie-notifier
+###cookie-opt-in
 ###cookie-policy-banner
 ###cookie-pop
 ###cookie-ue
@@ -226,6 +228,7 @@ dokumen.tips###cookie-law
 dsautomobiles.com##.layer_cookie
 dynamicwallpaper.club##.cookieControl
 eizone.info###moove_gdpr_cookie_info_bar
+falcom.co.jp###cookie-opt-in
 ffec.co.jp##.CookieNotification
 fresenius-kabi.com###cookie-notifier
 fresheye.com###bannerCookie
@@ -318,9 +321,9 @@ zenoah.com##.cookies-notice
 /eu_cookie_$script,stylesheet,domain=bayer.jp|bureauveritas.jp|core.co.jp|omron.com|safran-group.com|solvay.jp|sumitomoelectric.com|ucl.ac.uk|unicef.org|wizards.com
 /evidon-sitenotice-tag.$domain=dropbox.com
 /gdpr-appliance.$domain=deezer.com
-/gdpr.css$domain=bsy.co.jp|cheekysch.jp|matsuda-sangyo.co.jp|omo.jp.net|yoshimoto.co.jp
+/gdpr.css$domain=beamie.jp|bsy.co.jp|cheekysch.jp|matsuda-sangyo.co.jp|omo.jp.net|yoshimoto.co.jp
 /gdpr.html$domain=ns-kenzai.co.jp
-/gdpr.js$domain=bsy.co.jp|cheekysch.jp|fany.lol|fresh-food.jp|fujifilm-x.com|kanto.co.jp|kcsj.komatsu|khi.co.jp|komatsu.jp|laugh-out.com|mani.co.jp|matsuda-sangyo.co.jp|mitsubishisteel.co.jp|ngfworld.com|nippon.com|nipponpaint-holdings.com|nipponseika.co.jp|omo.jp.net|sansha.co.jp|sanwa-hldgs.co.jp|siriusvision.jp|sponichi.co.jp|yoshimoto.co.jp
+/gdpr.js$domain=beamie.jp|bsy.co.jp|cheekysch.jp|fany.lol|fresh-food.jp|fujifilm-x.com|kanto.co.jp|kcsj.komatsu|khi.co.jp|komatsu.jp|laugh-out.com|mani.co.jp|matsuda-sangyo.co.jp|mitsubishisteel.co.jp|ngfworld.com|nippon.com|nipponpaint-holdings.com|nipponseika.co.jp|omo.jp.net|sansha.co.jp|sanwa-hldgs.co.jp|siriusvision.jp|sponichi.co.jp|yoshimoto.co.jp
 /gdprpopup.$domain=polyplastics-global.com|polyplastics.com
 /global.cookieBanner.bundle.js$domain=optimumnutrition.com
 /iCookie.$domain=fileinfo.jp
@@ -411,7 +414,7 @@ _eu_cookie_$domain=nbcsports.com
 ||nipponsteel.com/common/js/modal.cookie.control.js
 ||niv.co.jp/common/js/cookie_
 ||ocnk.net/js/confirmation-bar.js
-||onetrust.com^$third-party,domain=alcare.co.jp|bell-face.com|bizrisk.iij.jp|calpis-shop.jp|cassina-ixc.jp|chelseafc.com|citizenwatch-global.com|daikin.co.jp|digimon-partners.net|dunlop-motorcycletyres.com|dunlop-tyres.co.jp|dunlop.co.jp|edsp.co.jp|expo2025.or.jp|falken.co.jp|flaticon.com|fujifilm.com|fujifilm-x.com|furyu.jp|geonet.co.jp|glico.*|grcs.co.jp|h2o-retailing.co.jp|hitachi-hightech.com|housefoods-group.com|housefoods.jp|intellilink.co.jp|irca.org|jetro.go.jp|job-gear.net|junijuni.jp|kairport.co.jp|kansai-airport.or.jp|kansai-airports.co.jp|kissei.co.jp|kuraray.co.jp|lidea.today|lion.co.jp|lixil.com|mainichi.jp|matsuo-sangyo.co.jp|max-ltd.co.jp|mcframe.com|milbon.com|mitsubishichem-hd.co.jp|morinaga.co.jp|myna.go.jp|nabtesco.com|networksolutions.com|newscientist.com|nisshinfire.co.jp|njpwworld.com|nkkswitches.co.jp|oki-ops.jp|oki-osk.jp|oki-otc.jp|oki-oxt.jp|oki.com|okidensen.co.jp|optimusgroup.co.jp|orbea.com|osaka-airport.co.jp|panasonic.com|pixabay.com|powerproduction.jp|ppih.co.jp|prioritypass.com|shiseido.com|sme.co.jp|smp.ne.jp|sportingnews.com|srigroup.co.jp|start-line.jp|sumida.com|tena.co.jp|tokio-mednet.co.jp|tokiomarineam.co.jp
+||onetrust.com^$third-party,domain=alcare.co.jp|bell-face.com|bizrisk.iij.jp|calpis-shop.jp|cassina-ixc.jp|chelseafc.com|citizenwatch-global.com|daikin.co.jp|digimon-partners.net|dunlop-motorcycletyres.com|dunlop-tyres.co.jp|dunlop.co.jp|edsp.co.jp|expo2025.or.jp|falken.co.jp|flaticon.com|fujifilm.com|fujifilm-x.com|furyu.jp|geonet.co.jp|glico.*|grcs.co.jp|h2o-retailing.co.jp|hitachi-hightech.com|housefoods-group.com|housefoods.jp|intellilink.co.jp|irca.org|jetro.go.jp|job-gear.net|junijuni.jp|kairport.co.jp|kansai-airport.or.jp|kansai-airports.co.jp|kissei.co.jp|kuraray.co.jp|lidea.today|lion.co.jp|lixil.com|mainichi.jp|matsuo-sangyo.co.jp|max-ltd.co.jp|mcframe.com|milbon.com|mitsubishichem-hd.co.jp|morinaga.co.jp|myna.go.jp|nabtesco.com|networksolutions.com|newscientist.com|nisshinfire.co.jp|njpwworld.com|nkkswitches.co.jp|oki-ops.jp|oki-osk.jp|oki-otc.jp|oki-oxt.jp|oki.com|okidensen.co.jp|optimusgroup.co.jp|orbea.com|osaka-airport.co.jp|osaka-airterminal-hotel.com|panasonic.com|pixabay.com|powerproduction.jp|ppih.co.jp|prioritypass.com|shiseido.com|sme.co.jp|smp.ne.jp|sportingnews.com|srigroup.co.jp|start-line.jp|sumida.com|tena.co.jp|tokio-mednet.co.jp|tokiomarineam.co.jp|yamaha-motor.com
 ||optanon.blob.core.windows.net^$domain=comodo.com|havas.com|havascx.com
 ||osh-management.com/js/cookie-yes.js
 ||ox.ac.uk/portal_javascripts/Turnkey%20Theme/resourcecollective.cookielawcookielaw_init
@@ -809,6 +812,7 @@ juken-mikata.net###cookieAlt
 kaggle.com###site-content + div
 kansa.or.jp,subaru.co.jp###gdpr-box
 kaspersky.com##section[data-at-selector="cookie-banner"]
+kddi.com##.add-get-cookie
 kearney.com,stratasys.co.jp,wallpapersden.com###cookie-banner
 keepass.info###consent_c
 keisei.co.jp,komeri.com###cookiePolicy

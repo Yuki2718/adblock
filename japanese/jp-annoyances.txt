@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220717
+! Version: 20220718
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -60,6 +60,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 /push-wrap.js
 /push_app.js
 /push_notification.
+/push_notification_
 /push_notification/*
 /pushes/notification.
 /pushnotification.
@@ -215,6 +216,7 @@ cookpad.com##.myfolder_button_wrapper > .notification
 dailymail.co.uk##+js(set, PushManager, undefined)
 drive.google.com##a[data-target=clientDownload]:upward(3)
 drive.google.com##body > [aria-labelledby$=".afp"]
+facebook.com###ssrb_stories_end ~ div[class] > div[class] > div[class*=" "] > div[class] > div[class] > div[style*="border-radius"][class]
 fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon > .message[data-wikiabarcontent*="Bingebot"])
 japancred.com##.timeline-header
 kakaku.com###modalFrame
@@ -373,6 +375,10 @@ bodyarchi.com###topfloatingBnr
 bookoffonline.co.jp##.footer-banner-fixed-area
 ||bookwalker.jp/bob/img/couponbanner2.
 bookwalker.jp##.side-deals-wrap
+||buy.tinypass.com/checkout/offer/show?displayMode=modal&*&hideCompletedFields=true&showCloseButton=false&*&hasLoginRequiredCallback=true&initMode=context&$frame,domain=washingtontimes.com
+washingtontimes.com##.tp-modal
+washingtontimes.com##.tp-backdrop
+washingtontimes.com##.tp-modal-open:style(overflow: auto !important;height: auto !important;)
 ||buy.tinypass.com/checkout/template/cacheableShow?*&displayMode=modal&widget=template$frame,domain=www.bbc.com
 bbc.com##.tp-backdrop
 bbc.com##.tp-modal
@@ -889,6 +895,7 @@ chocolatey.org##.show.fade.modal-backdrop
 chocolatey.org##body:style(overflow:auto !important)
 chrome.google.com##[role="dialog"][aria-labelledby="promo-header"]
 cinemacafe.net###danglingList
+city.inazawa.aichi.jp##.animation-loading
 city.living.jp###area-select
 clubdam.com##.l-page-bottom__cv
 cnn.com##.sibling
@@ -911,6 +918,7 @@ deviantart.com###root > header ~ div[class] > span.theme-light > a[href$="/users
 dhbr.net##.tool-box
 diehardtales.com,note.calbee.jp,note.com,note.jp,note.kagg.jp,note.linemusic.jp,note.yamap.com##.m-animationBalloon.m-likeNoLogin
 digitalocean.com##div[class^="ToastStyles__StyledWrapper-"][style]
+discussionsjapan.apple.com##.notification
 disqus.com##.is-footer.login-overlay__wrapper
 dmarket.docomo.ne.jp##.healthCareStepsBlockOverlay
 dmarket.docomo.ne.jp##.modalHealthCareContainer
@@ -1259,6 +1267,7 @@ vimeo.com###main > div[data-reactroot] > div[class^=_]:has-text(アップロー�
 vox.com##div[id="toaster"][data-cdata*="Sign up"]
 vpnmentor.com##+js(nostif, bioEp.showPopup)
 washingtonpost.com###wall-bottom-drawer
+washingtontimes.com##.pn-sticky
 web-hikari.net##.follow_footer
 web.bridge-net.jp##.fltBnr
 web.skype.com##.noFocusOutline > div > div > div > div > div[style^="position: relative; display: flex; flex-direction: column; flex-grow: 0; flex-shrink: 0; overflow: hidden; align-items: stretch; align-self: stretch; background-color"][style$="border-style: solid;"]
@@ -2030,6 +2039,7 @@ gamewith.jp##.walkthrough-recruit-banner:upward(1)
 ||h0874.com/img/toy_824x179.jpg
 h0874.com###channelBanner2
 ||hnavi.co.jp/wp-content/themes/hnavi/assets/img/site/new-3step-alt02.jpg
+||hrpro.co.jp/images/banner_img/sp_
 ||idcf.jp/sevice_shared/img/*/bnr_
 ||ibarakinews.jp/image/banner/
 ||isenp.co.jp/images/regmie.
@@ -2208,6 +2218,7 @@ biglobe.ne.jp##.prom > a.prom-all:upward(1)
 bunshun.jp##.list-thumb > li .pr:upward(li)
 dengekionline.com##.gNews_banner
 dw.diamond.ne.jp###campaign-bar
+eroduma.com###sub .plugin-memo:first-child
 famitsu.com##.banner-ad-mark:upward(1)
 j-town.net##.advertisement-list
 kids.gakken.co.jp##.feed_item .pr_tag:upward(.feed_item)
@@ -2227,6 +2238,7 @@ biglobe.ne.jp##^.prom > a.prom-all:upward(1)
 bunshun.jp##^.list-thumb > li .pr:upward(li)
 dengekionline.com##^.gNews_banner
 dw.diamond.ne.jp##^#campaign-bar
+eroduma.com##^#sub .plugin-memo:first-child
 famitsu.com##^.banner-ad-mark:upward(1)
 j-town.net##^.advertisement-list
 kids.gakken.co.jp##^.feed_item .pr_tag:upward(.feed_item)
@@ -2355,13 +2367,13 @@ bitefaucet.com,consoleroms.com,dramaworldhd.co,edummm.xyz,romspedia.com##+js(nan
 bitmos.co.in##+js(set, count, 0)
 bluemediafiles.com,onlyhgames.com##+js(nano-sib, i--)
 bluemediafiles.com##+js(set, Time_Start, 0)
-cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgiut.buzz,imgizw.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
+cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,imgalor.xyz,imgbbd.buzz,imgewe.buzz,imgiut.buzz,imgizw.buzz,imgizx.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqte.buzz,imgtrw.buzz,imguiwe.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net,imslp.org,michaelemad.com,studyranks.in,technoflip.in,techware.online,theicongenerator.com,world-trips.net,zentum.club##+js(nano-sib, timer)
 cashearn.cc##+js(nano-sib, #timer)
 codecomets.com,techxpulse.com###timeblock
 codecomets.com,techxpulse.com##+js(rc, disabled, a#enablebtn)
 coinlyhub.com##+js(nano-sib, seconds)
 coolrom.com.au##+js(set, time, 0)
-crypto-faucet.xyz,doctor-groups.com,short.mcmcryptos.xyz##+js(nano-sib, sec--)
+crypto-faucet.xyz,doctor-groups.com,luckydice.net,short.mcmcryptos.xyz##+js(nano-sib, sec--)
 deportealdia.live,noticiasesports.live,noweconomy.live,techgeek.digital##+js(nano-sib, , 1200, 0)
 downloadr.in,portableapps.com##+js(nano-stb, countdown)
 droidmirror.com,forexeen.us,getwallpapers.com,health-and.me,itscybertech.com,ixpap.com,luutruhay.net,mobi2c.com,thaitrieuvi.live,uniqueten.net,yalla-shoot-now.us##+js(nano-sib, counter)
@@ -2398,6 +2410,7 @@ maxurlz.com##+js(nano-sib, btn-success)
 makemoneywithurl.com###scroll.hidden, .footerLink.hidden:style(display: block!important)
 makemoneywithurl.com###next.getmylink
 makemoneywithurl.com##.box-main > div:not([class])
+mcrypto.club##+js(nano-stb, countdown, 10000)
 menjelajahi.com##+js(nano-sib, time, , 0)
 mhma12.tech##+js(set, timeset, 0)
 mhma12.tech,thetechywizard.com##+js(nano-sib, timer, 1500)
