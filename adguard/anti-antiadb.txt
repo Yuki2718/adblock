@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220718
+! Version: 20220719
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -257,6 +257,7 @@ _spot_id=*&zone_id=$script,~third-party
 ##iframe[style*="opacity: 1 !important; max-width: 420px !important"][style*="position: fixed !important; display: block !important; z-index: 2147483647 !important"]
 ##iframe[style*="z-index: 2147483647; min-width: 240px !important; display: block !important; max-width:"]
 ##iframe[style^="width: 100% !important; height: 100% !important; margin: 0px; padding: 0px"][style$="overflow: hidden; z-index: 2147483647;"]
+##in-page-message[id][doskip]
 
 #$#.div-gpt-ad { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
 ~ff14angler.com,~downloads.descendant.me,~html5.gamedistribution.com,~paraphraser.io,~sekai-kabuka.com,~tamrieltradecentre.com,~teemo.gg,~xtremestream.co#$#ins.adsbygoogle { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
@@ -327,7 +328,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
 ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager-gtm
 ||gstatic.com/adx/doubleclick.ico|$image,redirect-rule=32x32-transparent.png
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima3
+!||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima3
 ||media.fastclick.net^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||nessainy.net/favicon.ico$image,redirect-rule=32x32-transparent.png
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication-adsbygoogle,domain=~zipextractor.app
