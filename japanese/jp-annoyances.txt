@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220718
+! Version: 20220720
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -80,6 +80,7 @@ instagram.com##.HcJZg.L-sTb._4EzTm.eGOV_.rBNOH.Igw0E.qF0y9
 /wp-content/plugins/push-notification/*
 /wp-content/plugins/shogakukan-push-service/*
 ||amazonaws.com/cdn.aimtell.com/
+||api-push.com^$3p
 ||arc.io^$3p
 ||aswpsdkeu.com^$3p
 ||bildirt.com^$3p
@@ -1133,6 +1134,7 @@ outlook.office.com###obf-ToastContainer
 !outlook.office.com##body[class*="css-"][style*="overflow: hidden"]:style(overflow-x: auto!important;)
 !outlook.office.com##div[role="alertdialog"][aria-modal="true"][style="outline: none;"] .ms-Dialog-content > div > span > a[href^="https://go.microsoft.com/fwlink/p/?"][target="_blank"]:upward(div[role="alertdialog"][aria-modal="true"][style="outline: none;"])
 p-bandai.jp##.detailFnPop
+paper-view.net,tumblr.com##.tmblr-iframe--follow-teaser
 pastebin.com##.popup-box.-pro
 paypay.ne.jp##.is-modalContentsShow a.bannerModal__link[href^="https://paypay.ne.jp/event/"][data-eventaction]:upward(.is-modalContentsShow)
 paypay.ne.jp##body[style*="overflow: hidden"]:style(overflow: auto!important;)
@@ -1242,7 +1244,6 @@ tripadvisor.jp##div[class^=_][style^="position: fixed; inset: auto"] span:has-te
 try-it.jp##+js(aeld, load, event.dispatch.apply)
 tumblr.com###glass-container > div[aria-modal="true"]:has(a[href="/register?source=login_register_center"])
 tumblr.com##.road-block
-tumblr.com##.tmblr-iframe--follow-teaser
 tumblr.com##body:style(overflow: auto !important;)
 tumblr.com##div[style^="background: rgb(124, 92, 255)"][style*="color: rgb(255, 255, 255);"]
 tumblr.com##div[style="background:#7c5cff;color:#ffffff"]
@@ -1981,6 +1982,7 @@ automesseweb.jp###_popIn_ranking:upward(.code_php_in_widget)
 store.alpen-group.jp##.footer-media
 ||alphapolis.co.jp/business/series/*/head.png
 ||amazonaws.com/ledge-assets/media/*/techblog_banner.$domain=ledge.ai
+||amazonaws.com/qumeru-media/production/file_resources/files/000/000/$image,domain=qumeru.com
 ||amazonaws.com^*/btbanner.png$domain=blog.best-teacher-inc.com
 ||apexlegends-news.com/wp-content/uploads/2021/08/pc.jpg
 apexlegends-news.com###fix_sidebar
