@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220721
+! Version: 20220722
 
 ! ---------- Ads general ----------
 /heji/mei00*.js
@@ -75,6 +75,7 @@
 ||m.youtube.com/get_midroll_$domain=youtube.com
 ||mjk-r.net/common/sample/smart01/img/bnr_
 ||mobile-hoken.com/blog/cms/wp-content/uploads/*/sp_bnr_
+||my-best.com/anchor_banners/
 ||mysuki.jp/wp-content/themes/cocoon-child-master/images/sp-cta*$image,1p
 ||news.nifty.com/smartphone/images/*_banner.$image,1p
 ||nicomanga.jp/thumb/8027436l|$domain=seiga.nicovideo.jp
@@ -143,6 +144,8 @@
 ||spankbang.com/official/serve_a?
 ||sunporno.com/bs.php
 ||xn--r8jwklh769h2mc880dk1o431a.com/mimages/kijishita-shoukai/
+||yimg.jp/images/finance/bnr/202204/paypayam-01.png$domain=finance.yahoo.co.jp
+||yimg.jp/images/finance/bnr/202207/line-01.png$domain=finance.yahoo.co.jp
 
 ! ---------- Analytics servers ----------
 ||goo-access-analytics.appspot.com^
@@ -266,6 +269,7 @@ asahi.com##li.FeatureBox_list
 asajikan.jp##.banner-mobile
 asajo.jp###text-15
 asajo.jp##.ad-area-upper
+ascii.jp##.post > script[src^="//i.socdm.com"]:upward(1)
 auctions.yahoo.co.jp##aside[class^="Component-sc-"] > div > article > a[data-ylk^="rsec:pr_"]:upward(3)
 auctions.yahoo.co.jp##li[class^="ListItem-sc-"] img[src$="_stop/376_376.png"]:upward(li)
 automaton-media.com##.code-block.ai-viewport-3
@@ -404,6 +408,8 @@ fgo.news###gStickyAd
 finance.yahoo.co.jp##div[aria-live="polite"] > ul > li > div > div#MMON:upward(2)
 finance.yahoo.co.jp##div[aria-live="polite"] > ul > li > div[id^="infeedAd"]:upward(1)
 finance.yahoo.co.jp##main > section#artcldtl + div[class^="_"] > div[id^="ad_"]:upward(1)
+finance.yahoo.co.jp##main > section#pr_main1
+finance.yahoo.co.jp##main > section#pr_main3
 finders.me##.__ad-sp
 forbes.com##.grid__ad-container--amp
 forbesjapan.com##.recommended-box
@@ -687,6 +693,7 @@ morningstar.co.jp,morningstarjp.com##.footer_overlayad
 movies.yahoo.co.jp##div[class^="display-ad"]
 msn.com##.stripeouter.news[data-section-id="stripe.special"]:has(.nativead)
 mudainodocument.com###im_interstitial_panel
+my-best.com##.l-footer__fixed
 my-best.com##.p-press_ad
 myanimelist.net##.anchor-ad
 myjitsu.jp##.ad-recommend-box
@@ -923,6 +930,8 @@ taishu.jp##.ad-top
 tarosoku.com##.t_b > iframe
 tech-camp.in##.header-banner-link
 theriver.jp##.ranking-widget + .widget_text
+thesaurus.weblio.jp###adHeadNativeId
+thesaurus.weblio.jp##.adSmpBnrFtBtSp
 thesaurus.weblio.jp##.adThesaurus
 tokyo-sports.co.jp##.ad-sp-bil
 topics.smt.docomo.ne.jp##.banner
