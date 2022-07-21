@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220719
+! Version: 20220721
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -41,6 +41,7 @@
 _Ad300x250_
 
 ! ---------- Ad servers ----------
+||adxcel-ec2.com^$3p
 ||araklet.mediagene.co.jp^$3p
 ||ip.prvtx.net^
 
@@ -153,6 +154,7 @@ smart-flash.jp##^.adsBlock
 @@||bry.jp/images/ad-d_$image,1p
 @@||careerspot.jp/images/ad-$image,1p
 @@||d-n-a.co.jp/wp-content/themes/dna/images/ad-solid.svg
+@@||data.adxcel-ec2.com^$image,domain=laguardia.edu
 @@||dct-group.co.jp/images/ad-001.jpg
 @@||dentrepair.jp/images/ad-d_$image,1p
 @@||doujin-assets.dmm.co.jp/p/pf/service/logotype/doujin_r18.svg
@@ -326,6 +328,7 @@ smart-flash.jp##^.adsBlock
 ||mobadme.jp^$doc
 ||mybest.network^$doc
 ||onlyry.net^
+||ojrq.net^$doc
 ||pr.dmm.co.jp^
 ||refer.ccbill.com^
 ||rs6.net^
@@ -673,6 +676,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=ult_in,domain=realestate.yahoo.co.jp
 *$doc,removeparam=usid,domain=d-card.jp
 *$doc,removeparam=utm_brand
+*$doc,removeparam=utm_session
 *$doc,removeparam=vcptn,domain=digi-tag.net
 *$doc,removeparam=vgo_ee
 *$doc,removeparam=xuid,domain=k-manga.jp
