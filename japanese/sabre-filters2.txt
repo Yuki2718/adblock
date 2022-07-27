@@ -478,7 +478,9 @@ account.xiaomi.com##.mi-cookie-banner
 accounts.pixiv.net###js-privacy-policy-banner
 accuweather.com##.privacy-policy-banner
 ad-maven.com##.notification
-add0n.com,daiichisankyo-ep.co.jp,eiken.co.jp,evaair.com,fict-g.com,gingerweb.jp,goetheweb.jp,gs-yuasa.com,iar.com,icom.co.jp,inet.co.jp,kurabo.co.jp,lifescience.net,lunavpn.net,macnica.co.jp,rinspo.jp,sinko-soko.jp,toyo-seikan.co.jp,yoyogames.com###cookie
+add0n.com,daiichisankyo-ep.co.jp,eiken.co.jp,fict-g.com,gingerweb.jp,goetheweb.jp,gs-yuasa.com,iar.com,icom.co.jp,inet.co.jp,kurabo.co.jp,lifescience.net,lunavpn.net,macnica.co.jp,rinspo.jp,sinko-soko.jp,toyo-seikan.co.jp,yoyogames.com###cookie
+! https://github.com/easylist/easylist/commit/a71ed6c20a5cba82070a36392ebfda880edc390f
+! evaair.com###cookie
 adf.ly###cookie_notice
 adjust.com##div[data-testid="common.cookie-panel-main"]
 adlittle.*,groupeseb.com###tarteaucitronRoot
@@ -790,7 +792,7 @@ incyte.jp###topHeader > div.banner
 indeed.com##.gnav-CookiePrivacyNotice
 indexpro.co.jp###our_policy
 inflightcloud.com##ui-cookie-advisory-banner
-infomaniak.com##body:style(overflow: auto !important;)
+infomaniak.com#$#body { overflow: auto !important; }
 infomaniak.com##module-rgpd-component
 inoreader.com##.landing_promo_banner_top
 insideevs.com##.m1-footer-messages
@@ -843,6 +845,9 @@ legoschool.jp###cookie-config
 leo-pharma.jp##body > div[id^="react_"] > div[data-reactroot] > div[class^="_"] > div.c_row > button[class^="_"]:upward(2)
 lexar.com###lexar-accept-cookie
 license.kato-works.co.jp###pop-up
+lifepointspanel.com###cookie-modal-box
+lifepointspanel.com#$#body.modal-open { overflow: auto !important; padding-right: 0 !important; }
+lifepointspanel.com,manga.club,puratos.co.jp##.modal-backdrop
 lilly.co.jp##.lds-cookie-consent
 linkfly.to###linkfly-ctx
 lintec.co.jp###FooterPolicy
@@ -859,7 +864,6 @@ mainichi.jp##.popuppanel4
 malwaretips.com##.notice-content
 manga-yomeru.com###tc_cookie_opt
 manga.club###adultConfirmModal
-manga.club,puratos.co.jp##.modal-backdrop
 manychat.com##div[class^="CookieBumper-module--wrap--"]
 marketing.nikkei.co.jp###dsopener
 marubun.co.jp##.l-cookie-consent-popup
@@ -926,7 +930,7 @@ nipponsteel.com###privacy
 nipponsteel.com##.js-cookie-consent
 nissui-pharm.co.jp##.cookie_footer
 niv.co.jp###cookiePolicySec
-nmsu.edu##body.modal-open:style(overflow: auto !important; padding-right: 0 !important;)
+nmsu.edu#$#body.modal-open { overflow: auto !important; padding-right: 0 !important; }
 nobelpharma.co.jp##.top-cookie
 nordot.app##.js-page__gdpr
 nordot.app##.page__gdpr
@@ -1061,7 +1065,7 @@ square-enix.com##div[class^="notice_Notices_"]
 sso.ss-blog.jp##.fixed-bottom
 start.me##.app__message
 stickypassword.com###StickieCookies
-stickypassword.com##body:style(overflow: visible!important;)
+stickypassword.com#$#body { overflow: visible!important; }
 store.acer.com###notice-cookie-block
 store.wacoal.jp##.spm-toast[style="display: block; animation-duration: 250ms; left: 0px; right: 0px; margin-left: auto; margin-right: auto;"]
 studyinjapan.go.jp###js_cookie_modal
@@ -1148,6 +1152,9 @@ vagrantup.com,vaultproject.io##div[data-testid="consent-banner"]
 vectorenewables.com##.eb-inst.eb-bottom-right
 vervesex.com###cookiepolicy_area
 viagogo.jp###gdprHeader
+vietnamairlines.com##.cookie-accept-box
+vietnamairlines.com#$#body.cookie-accept-required::before { content: none !important; }
+vietnamairlines.com#$#body { overflow: visible !important; }
 virusscan.jotti.org##.alert-dismissable
 virustotal.com##.disclaimers-container
 vision-net.co.jp##.pp-cookie
