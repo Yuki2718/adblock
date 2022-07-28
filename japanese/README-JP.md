@@ -89,7 +89,7 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 <details>
 <summary><strong>高効率</strong></summary>
 
-ほとんどのルールがuBlock Originに最適化された、現状唯一の日本用フィルタです。uBlock Originはトークン化という仕組みにより高速処理を実現しています[^8]。ルールがトークン化可能なら、ルール数は[処理時間に](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)[影響しません](https://twitter.com/i/web/status/1289255976198123520)。uBlock Originにおける限り、ルールが多いと重くなるという議論は[ナイーブな直感に基づいた完全な誤りです](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-204#post-2975580)が[^9]、ユーザーの体感に[一番影響するのはそうした誤った信念](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-162#post-2849890)のようです。当フィルタはできるだけトークン化を意識したルールを心がけており[^10]、整形フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないフィルタを使うよう心がけているつもりです。さらに、数か月ごとに冗長なルールとデッドドメインのチェックを行い無駄を省いているほか、スクリプトレットフィルタについてはプロパティや関数のチェックをできる限り行い、不要なルールを追加しないようにしています。
+ほとんどのルールがuBlock Originに最適化された、現状唯一の日本用フィルタです。uBlock Originはトークン化という仕組みにより高速処理を実現しています[^8]。ブロックルールがトークン化可能なら、全体のルール数は[処理時間に](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-155#post-2831026)[影響しません](https://twitter.com/i/web/status/1289255976198123520)。uBlock Originにおける限り、ルールが多いと重くなるという議論は[ナイーブな直感に基づいた完全な誤りです](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-204#post-2975580)が[^9]、ユーザーの体感に[一番影響するのはそうした誤った信念](https://www.wilderssecurity.com/threads/ublock-a-lean-and-fast-blocker.365273/page-162#post-2849890)のようです。当フィルタはできるだけトークン化を意識したルールを心がけており[^10]、整形フィルタについても[最小マッチング](https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters#important)の原則を満たしつつ、できるだけ高速で誤爆の少ないフィルタを使うよう心がけているつもりです。さらに、数か月ごとに冗長なルールとデッドドメインのチェックを行い無駄を省いているほか、スクリプトレットフィルタについてはプロパティや関数のチェックをできる限り行い、不要なルールを追加しないようにしています。
 
 </details>
 
@@ -246,10 +246,10 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 - 一般のチャットウィジェット
 - コロナウイルス関係で、一般的な通知ブロックで防げないもの（一時的なものなので）
 
-モバイルサイトは限定的に対応します、メインはPCです。モバイルで使用する場合、Android版FirefoxにuBlock Originを入れてご利用ください。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初、Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。
+モバイルサイトは限定的に対応します、メインはPCです。モバイルで使用する場合、Android版FirefoxにuBlock Originを入れてご利用ください。迷惑度のとくに高いものはYuki's uBlock Japanese filtersでブロックすることもあります。たとえば忍者レコメンドは当初、Annoyancesに入れていましたが、動画中に画像を挿入するケースなどが散見されたため方針を変えました。なお、AnnoyancesはAdGuardとも許容範囲といえる程度の互換性がありますが、`if`構文で囲ったルールが機能しないなど対応は不完全ですので推奨はしません。基本的にuBlock Origin向けです。一部のサブフィルタのみ、完全な互換性があります。
 
 <details>
-<summary><strong>みぞれフィルタのサブフィルタ</strong></summary>
+<summary><strong>Annoyancesのサブフィルタ</strong></summary>
 
 特定の迷惑要素だけをブロックしたい場合、みぞれフィルタの代わりにサブフィルタ（の組み合わせ）をご利用いただくこともできます[^22]。
 

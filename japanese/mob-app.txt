@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220727
+! Version: 20220729
 
 ! Temporal
 ||rarejob.com/cms/wp-content/uploads/2022/03/smartmethod_bnr.png
@@ -99,6 +99,7 @@ camp-fire.jp##.app
 bizhint.jp###sg-footer-app-pc
 ||cloudfront.net/assets/images/base/pc_bannerFooter.jpg$domain=greensnap.jp
 greensnap.jp##.officalApp
+||cloudfront.net/rev_2022/07/28/134120/*_download.png$domain=makuake.com
 ||cloudfront.net/torte_web/assets/img/common/icon/img-store.$domain=mixch.tv
 mixch.tv##.inner > .footer_ad + .bnr
 ||cocokarafine.co.jp/images/howto/floatingBnr_app_
@@ -463,8 +464,11 @@ store.shopping.yahoo.co.jp##.elItemEntryLink[data-ylk^="slk:applnk"]
 tiktok.com##.app-promotion
 video.tv-tokyo.co.jp##.adApp-wrapper
 
+! Temp limited to this rule only: https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2146
 !#if env_mobile
 *##amp-app-banner
+!#endif
+##amp-app-banner
 ||antenna.jp/assets/store/antenna_android-
 antenna.jp##.sp-install-link-block
 ||assets-cosme.net/_nuxt/img/top_app_$domain=cosme.net
@@ -660,12 +664,15 @@ kashikoi.with.is##.top-banner
 ||xgoo.jp/img/portal/misc/footer_app_recommend/
 blog.goo.ne.jp###msg-box-app-recommend
 blog.goo.ne.jp##.app_induction
+||yimg.jp/images/carnavi/promo/banner/canv_*600x120.png$domain=yahoo.co.jp
 ||yimg.jp/images/finance/bnr/*/appBanner.png$domain=finance.yahoo.co.jp
-finance.yahoo.co.jp##div[class^="_"] > a[href="https://app.adjust.com/nr7n4gu"]:upward(1)
+finance.yahoo.co.jp##div[class^="_"] > a[href^="https://app.adjust.com/"]
 ||yimg.jp/images/ks/clap/image/banner/app/$domain=chiebukuro.yahoo.co.jp
 chiebukuro.yahoo.co.jp###app_bnr
 ||yimg.jp/images/mail/appicon/mail144.$domain=login.yahoo.co.jp
 login.yahoo.co.jp###appAndroid
+||yimg.jp/images/map/promo/map_pr/banner/map_navi600x120.png$domain=roadway.yahoo.co.jp
+||yimg.jp/images/map/promo/renewal/bnr/mapbnr_renewal_300x60.png$domain=map.yahoo.co.jp
 ||yimg.jp/images/paypaymall/app/common/SAB/191202/download_zozo.png$domain=paypaymall.yahoo.co.jp
 paypaymall.yahoo.co.jp###SAB
 ||yimg.jp/images/serp/ts/banner/10min/serp_carousel/android/480x600/$domain=search.yahoo.co.jp
@@ -890,7 +897,6 @@ yahoo.co.jp##.sn-modAd
 yourmystar.jp##.navbar-header[style^="top:"]:style(top: 0!important;)
 yourmystar.jp##.smart-app-banner-block
 zara.com##.native-app-banner
-!#endif
 
 ! Exception
 @@/wp-content/plugins/bwp-minify/min/?*/jquery.smartbanner.$css,script,1p

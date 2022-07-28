@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220727
+! Version: 20220729
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -127,6 +127,7 @@ _cookie_policy_
 ###cookie_agreement
 ###cookie_box
 ###cookie_msg
+###cookie_notice
 ###cookie_policy
 ###cookie_policy_alert
 ###cookie_popup
@@ -239,6 +240,7 @@ fresenius-kabi.com###cookie-notifier
 fresheye.com###bannerCookie
 gimatic.com##.avia-cookie-consent-wrap
 haier.com##.cookie_box
+harley-davidson.co.jp###cookie_notice
 ingress.com,nianticlabs.com,pokemongolive.com##ark-cookiebar
 ionos.com###cookieinfo-container
 itopvpn.com##.pop-cookie
@@ -395,8 +397,9 @@ _eu_cookie_$domain=nbcsports.com
 ||gdpr.privacymanager.io^$third-party,domain=thenextweb.com
 ||geo-assets.tedcdn.com/cookie-notice/
 ||global.oup.com/cookiealert/
-||gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar
+||gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_
 ||hanwa.co.jp/ms/ms-sttn/themes/hkthm16/js/ga_gdpr.js
+||happymod.com/cookie/
 ||htmlgames.com/cookie/consent.
 ||hyojito.co.jp/cookie-agreement/
 ||iij.ad.jp/common/js/cookiebnr.js
@@ -858,6 +861,7 @@ lovense.com##.u-cookie
 lucidmotors.com###cookieHeight
 lukia.seikowatches.com##.disclaimer
 lulzbot.com###cookies-manager-msg
+m.tomtop.com##div[name="confirm2"]
 macpaw.com##div[data-banner="cookies"]
 macupdate.com##.mu_cookie
 mainichi.jp##.popuppanel4
@@ -1206,9 +1210,6 @@ gettr.com#%#//scriptlet('set-local-storage-item', 'cookieAccepted', 'true')
 !#endif
 !#if ext_ublock
 gettr.com##.app-content > div[class^="jss"] > div > .MuiGrid-container > .MuiGrid-item > div > button.bold:upward(5):matches-css(z-index: 1400)
-!#endif
-!#if env_mobile
-m.tomtop.com##div[name="confirm2"]
 !#endif
 
 ! Exception
