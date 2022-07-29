@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220729
+! Version: 20220730
 
 ! Temporal
 ||30calclub.sakura.ne.jp/220402_
@@ -12345,6 +12345,7 @@ _pop_under.js$domain=souko.pipii.tv
 /stats/xmsg_
 /stats?blog_
 /stats?callback=
+/stats?referer=
 /stats_img.png?
 /statsna.js
 /statstracker.
@@ -16396,6 +16397,7 @@ _webtrends/$domain=zurichlife-jp.force.com
 ||yandex.ru/clck/click
 ||yandex.ru/clck/counter
 ||yandex.ru/cycounter?
+||yandex.ru/log?
 ||yandexcdn.com/ajax.php
 ||yandexcdn.com/cdn-cgi/trace$xhr,1p
 ||yelp.com/bunsen/
@@ -16721,6 +16723,7 @@ _webtrends/$domain=zurichlife-jp.force.com
 ##a[style="position: absolute; inset: 0px; display: block;"][href*="?promo="][target="_blank"]
 ##body > div[class][style*="bottom: 0px; left: 0px;"][style*="z-index:"][style*="background-color:"][style*="display: flex; justify-content: center;"]
 ##div#spot-holder.spot-holder[style="display: block;"]
+##div[class^=_][style="bottom: 10px;"] > iframe[scrolling=no][class]:not([src])
 ##div[class][style^="pointer-events: none; position: absolute; top: 0px; left: 0px; width"][style$="z-index: 2147483647;"]
 ##div[class][style="cursor: pointer;"] > img[src^="//"]
 ##div[class][data-index][style^="float: none;"]
@@ -16730,6 +16733,7 @@ _webtrends/$domain=zurichlife-jp.force.com
 ##div[style="position: absolute; inset: 0px; overflow: hidden; z-index: 160; background: transparent none repeat scroll 0% 0%; display: block;"]
 ##div[style="position: fixed; display: block; width: 100%; height: 15%; top: 0; left: 0; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]
 ##div[style^="display: block; position: fixed; z-index: 2147483647; margin: 0px; padding: 0px; border: 0px none; border-radius: 0px; font-size: 0px; animation: 0s ease 0s 1 normal none running none; transition: none 0s ease 0s; user-select: none;"]
+##div[style^="height: 255px; width: 343px; z-index: 2147483647; top:"][style$="position: fixed;"]
 ##div[style^="position: fixed; display: block"][style*="inset: 0px;"][style*="background-color: rgba(0, 0, 0, 0)"][style*="z-index"][style*="height: 100%"][style*="width: 100%"]
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 ##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height:"]
@@ -19736,6 +19740,7 @@ dreamnavi.jp###st-header-under-widgets-box
 drive.com.au##.adSpacing_drive-ad-spacing__g09um
 drive.google.com##.a-ee-zh-k
 drive.jafnavi.jp##.sec-advertise
+drivers-work.com##.bottom_cta
 drivetraffic.jp##.contentsBnr1
 driveplaza.com##.box-contentAd
 driverwork.xyz,kate7.sakura.ne.jp,kyomohot.com,nankaokiro.com###side_col > .widget_text:first-child
@@ -31731,6 +31736,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 *$doc,removeparam=rb_clickid
 *$doc,removeparam=rclk,domain=jinjibu.jp
 *$doc,removeparam=ref,domain=animecomic-pass.blog.jp|animember.net|animesoku.com|asahi.com|bipblog.com|buzzfeed.com|buzzfeednews.com|chokaigi.jp|cnn.co.jp|coconala.com|contec.com|cryptomininggame.com|d-markets.net|dokusho-ojikan.jp|facebook.com|fc2.com|fellatiojapan.com|goodreads.com|handjobjapan.com|himasoku.com|jin115.com|laxd.com|legsjapan.com|livedoor.biz|news.2chblog.jp|nico.ms|nicovideo.jp|rawupdate.net|reddit.com|shein.com|sinkan.jp|sokmil.com|speee-ad.jp|spermmania.com|tokyo-np.co.jp|tokyofacefuck.com|uralesbian.com|websearch.rakuten.co.jp
+*$doc,removeparam=refId,domain=linkedin.com
 *$doc,removeparam=ref_cd,domain=oricon.co.jp
 *$doc,removeparam=ref_id,domain=hentaiheroes.com
 *$doc,removeparam=ref_kind,domain=coconala.com
@@ -32140,6 +32146,8 @@ $removeparam=/^at_custom/,domain=bbc.com|bbc.co.uk,badfilter
 ||google.*/websearch$removeparam=visit_id,badfilter
 ||instagram.com^$removeparam=ig_rid,badfilter
 ||instagram.com^$removeparam=igshid,badfilter
+||linkedin.com^$removeparam=original_referer,badfilter
+||linkedin.com^$removeparam=refId,badfilter
 ||linkedin.com^$removeparam=trackingId,badfilter
 ||livedoor.biz^$removeparam=ref,badfilter
 ||mag2.com^$removeparam=trflg,badfilter
@@ -34048,6 +34056,7 @@ stepride.jp#@#.bannerBox
 ://amazon.co.jp.*.com/ap/signin|$doc
 ://amnin.*.cn/ap/signin|$doc
 ://anazom.*/ap/signin|$doc
+://ts3card.*.cn/webapp/index.php?$doc
 ://www.amaonazon.*/ap/signin|$doc
 ://www.amazon.jp.*.com/ap/signin|$doc
 ://www.amazoninfots.*.com/ap/signin|$doc
@@ -34410,6 +34419,7 @@ stepride.jp#@#.bannerBox
 ||fly-unicorn.com^$doc
 ||fmicard12.top^$doc
 ||fmvs.jp^$doc
+||for-soft.com^$all
 ||forlumineontor.com^
 ||foteko-hosune.club^$all
 ||founderfit.es^$doc
@@ -34671,6 +34681,7 @@ stepride.jp#@#.bannerBox
 ||nyalacornily.cam^$all
 ||oasisjournal.org^$doc
 ||occustantwidity.com^$all
+||of-soft.com^$all
 ||okay-dating.com^$all
 ||omciecoa37tw4.com^
 ||omgtnc.com^$all
