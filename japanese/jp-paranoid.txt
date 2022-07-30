@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220730
+! Version: 20220731
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -89,6 +89,7 @@ search.rakuten.co.jp##.keywordcontent.dui-card
 @@||cdn.logly.co.jp^$image,domain=veryweb.jp,badfilter
 @@||click.speee-ad.jp^$script,domain=saitama-np.co.jp,badfilter
 @@||cloudfront.net/files/rcms_conv_webp/files/user/images/sidead/$domain=bcnretail.com,badfilter
+@@||cookpad-ads.com/d/1.json?$xhr,domain=cookpad.com,badfilter
 @@||logly.co.jp/lift$script,domain=veryweb.jp,badfilter
 veryweb.jp##.c-articleList > div[id^=logly]:upward(1)
 @@||nicoad.nicovideo.jp/v1/nicoadgroups|$xhr,1p,badfilter
@@ -105,6 +106,7 @@ veryweb.jp##.c-articleList > div[id^=logly]:upward(1)
 ##.dfad
 ##body[id][class*=post-] section[class*=cta]
 2099.jp##.ugb-cta:not(.ugb-cta--design-plain)
+cookpad.com##.side_banner_wrapper
 softonic.com##+js(aeld, , [native code])
 facebook.com##[aria-label*=Marketplace] object > a[href^="/ads/"] > span:not(:empty):upward(11)
 iwatetabi.jp###ad
@@ -668,7 +670,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=ebisOther3
 *$doc,removeparam=ebisOther4
 *$doc,removeparam=ebisOther5
-*$doc,removeparam=from,domain=dic.nicovideo.jp|englishcentral.com
+*$doc,removeparam=from,domain=englishcentral.com|nicovideo.jp
 *$doc,removeparam=lid,domain=kakaku.com|kakakumag.com
 *$doc,removeparam=mbid
 ! needed to get discount
