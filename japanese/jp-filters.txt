@@ -572,6 +572,7 @@ secrettalk.me##.week_hot
 /^https:\/\/1ts\d{2}\.top\/show\.php$/$script,3p
 /^https:\/\/(?:[a-z]{2}\.)?[a-z]{8,14}\.com\/style\.css\?cb=\d{6,7}$/$css,3p
 /^https:\/\/a\.[-0-9a-z]{4,16}\.(?:club|com|cyou|info|net|ru|site|top?|xxx|xyz)\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
+/^https:\/\/abc\.[0-9a-z]{6}\.(?:co|top)\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/[-_0-9a-zA-Z]{70,}$/$frame,3p
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/[0-9a-z]{8}\.js$/$script,3p
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/\S{100,}$/$xhr,3p
@@ -1076,6 +1077,7 @@ secrettalk.me##.week_hot
 /exnb/froloa.js
 /exo/ExoNative
 /exoclick.$~script,domain=~exoclick.bamboohr.co.uk|~exoclick.com|~exoclick.kayako.com
+/exoclick.js
 /exopop.js
 /exopopunderdesktop.js
 /exosrv.js$script
@@ -6124,6 +6126,7 @@ vkcdnservice.appspot.com^$3p
 ||a.streamoupload.com^
 ||a.streamoupload.xyz^
 ||abc.comick.top^
+||abc.manga9.co^
 ||adspy.javrank.com^
 ||adultsclips.com^$3p
 ||all-usanomination.com^$3p
@@ -6792,8 +6795,7 @@ vkcdnservice.appspot.com^$3p
 *$frame,script,3p,denyallow=bootstrapcdn.com|consensu.org|google.com|gstatic.com|hcaptcha.com|hwcdn.net|jquery.com|recaptcha.net|wp.com,domain=faupto.com
 *$frame,script,3p,denyallow=cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|hcaptcha.com|jsdelivr.net|fastly.net|recaptcha.net,domain=mangasee123.com
 *$frame,script,3p,denyallow=cloudflare.com|codepen.io|google.com|googleapis.com|gstatic.com|hcaptcha.com|recaptcha.net,domain=dulinks.co|lyricsbot.pw
-*$frame,script,3p,denyallow=consensu.org|google.com|gstatic.com|recaptcha.net,domain=birdurls.com
-*$frame,script,3p,denyallow=consensu.org|google.com|gstatic.com|recaptcha.net|quantcast.com,domain=owllink.net
+*$frame,script,3p,denyallow=consensu.org|google.com|gstatic.com|recaptcha.net|quantcast.com,domain=birdurls.com|owllink.net
 *$frame,script,3p,denyallow=google.com|googleapis.com|gstatic.com|hcaptcha.com|recaptcha.net,domain=savelink.site
 *$frame,script,3p,denyallow=google.com|gstatic.com|hcaptcha.com|recaptcha.net,domain=adsh.cc|coin.mg|gibit.xyz
 *$frame,script,3p,denyallow=google.com|gstatic.com|recaptcha.net,domain=bitfly.io|shrinkhere.xyz
@@ -8107,7 +8109,7 @@ _ad_frame.$domain=synk-casualgames.com
 ||i.daily.jp/top/uma36_450-
 ||i.gyazo.com^$domain=fc-lc.com|megalink.vip|pantira.info|payskip.org|up-load.one
 ||i.ibb.co/SVJdhLF/qJpGKf7.png$domain=tlin.me
-||i.ibb.co^$image,domain=birdurls.com|defaultfreeshort.in|illink.net|owllink.net|voiranime.org
+||i.ibb.co^$image,domain=defaultfreeshort.in|illink.net|owllink.net|voiranime.org
 ||i.imgur.com^$domain=1link.vip|1shorten.com|bitfly.io|cutpaid.com|easylinkref.com|fc-lc.com|fmovies.app|lite-link.*|luutruhay.net|megalink.*|samfw.com|shrtvip.com|stfly.me|thaitrieuvi.live|upfile.us|vidcloud.*|vidstreamz.online
 ||i.imgur.com^$image,domain=anhdep24.com|dreamcheeky.com|fidlarmusic.com|kiemlua.com|lucidcam.com|mcloud.to|nousdecor.com|publicananker.com|rezence.com|rodjulian.com|up-load.one|vizcloud.*|vizcloud2.*
 ||i.postimg.cc^$image,domain=freebitcoin.vip|freelitecoin.vip|klmanga.com
@@ -18775,7 +18777,7 @@ blogspot.com##.HTML.widget > div > script[src^="//z-fe."]:upward(2)
 bloomberg.*##.rail__ad
 bloomberg.*##.story-ad
 bloomberg.*##div[data-ad-placeholder]
-bloomberg.*,britannica.com,coromoo.com,eow.alc.co.jp,instadp.com,kanmsu.com,manetatsu.com,mapfan.com,novel.prcm.jp,onmsft.com##.header-ad
+bloomberg.*,britannica.com,coromoo.com,eow.alc.co.jp,instadp.com,kanmsu.com,kotobank.jp,manetatsu.com,mapfan.com,novel.prcm.jp,onmsft.com##.header-ad
 bloomberg.*,exchangewire.jp##.leaderboard-wrapper
 bloomberg.*,gamesindustry.biz,newscientist.com##.leaderboard-container
 bloomberg.com##div[id^="google_ads_iframe_"]
@@ -30629,7 +30631,7 @@ zukobako.com##^#topnews > dl .smp:upward(dl)
 9908ww.com,adelaidepawnbroker.com,bztube.com,disputeresolutionfinance.uk,hotovs.com,insuredhome.org,nudegista.com,pornhub.*,pornluck.com,redtube.*,tube8.*,vidd.se,you-porn.com,youporn.*,youporngay.com##+js(set, page_params.holiday_promo, true)
 9anime.*##+js(acs, window.open, Cookie)
 9hentai.*##+js(aeld, click, saveLastEvent)
-9xupload.*,avgle.com,imgbew.buzz,imgewe.buzz,imgeza.buzz,imgiut.buzz,imgizw.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqew.buzz,imgtorrnt.in,imguo.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxxxx.buzz,imgzzzz.buzz,letmejerk.com,letmejerk6.com,letmejerk7.com,limetorrents.*,tube8.*,uploadhub.*,userload.co,youx.xxx##+js(aeld, , _0x)
+9xupload.*,avgle.com,imgbew.buzz,imgewe.buzz,imgeza.buzz,imgiut.buzz,imgizw.buzz,imgkuz.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqew.buzz,imgtorrnt.in,imguo.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxxxx.buzz,imgzzzz.buzz,letmejerk.com,letmejerk6.com,letmejerk7.com,limetorrents.*,tube8.*,uploadhub.*,userload.co,youx.xxx##+js(aeld, , _0x)
 adblockstreamtape.*,adblockstrtape.link,adblockstrtech.link,extralinks.*,kmo.to,pewgame.com,piraproxy.app,stape.fun,strcloud.*,streamtapeadblock.*,streamta.*,streamtape.*,streamadblockplus.*,strtape.*,strtapeadblocker.*,strtpe.*,theproxy.*##+js(aost, Math.random, /\st\.[a-zA-Z]*\s/)
 adblockstreamtape.*,adblockstrtape.link,adblockstrtech.link,stape.fun,strcloud.*,streamadblockplus.*,streamta.*,streamtape.*,strtape.*,strtapeadblocker.*,strtpe.*##+js(nosiif, adblock)
 adblockstreamtape.*,adblockstrtape.link,adblockstrtech.link,animeheaven.pro,mavanimes.*,stape.fun,strcloud.*,streamadblockplus.*,streamta.*,streamtape.*,strtape.*,strtpe.*,streamtapeadblock.*,strtapeadblock.*##+js(acs, JSON.parse, Promise)
@@ -30871,7 +30873,7 @@ fastconverter.net##+js(nosiif, Click)
 fastconverter.net,filerio.in##+js(ra, onclick, , stay)
 fc.lc,freeplayervideo.com,javjunkies.com,junihd.com,nazarickol.com,player-cdn.com,wstream.*##+js(nowoif, /^/, 1)
 fcc.lc,wwwfotografgotlin.blogspot.com##+js(set, fuckAdBlock._options.baitClass, null)
-imgalor.xyz,imgbew.buzz,imgewe.buzz,imgeza.buzz,imgiut.buzz,imgizw.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoka.buzz,imgkuiw.xyz,imglina.xyz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqew.buzz,imgtrw.buzz,imguiwe.buzz,imguo.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgveni.xyz,imgweika.buzz,imgwex.buzz,imgwia.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxxxx.buzz,imgzer.net,imgzzzz.buzz##+js(nowoif, !/prcf.fiyar|themes|pixsense|.jpg/)
+imgalor.xyz,imgbew.buzz,imgewe.buzz,imgeza.buzz,imgiut.buzz,imgizw.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoka.buzz,imgkuiw.xyz,imglina.xyz,imgoiu.buzz,imgokr.buzz,imgkuz.buzz,imgowk.buzz,imgqew.buzz,imgtrw.buzz,imguiwe.buzz,imguo.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgveni.xyz,imgweika.buzz,imgwex.buzz,imgwia.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxxxx.buzz,imgzer.net,imgzzzz.buzz##+js(nowoif, !/prcf.fiyar|themes|pixsense|.jpg/)
 imgbbd.buzz,imgizx.buzz,imgjut.buzz,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imglkju.buzz,imgqte.buzz,imglqw.buzz,imgpekele.buzz,imguiwe.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwia.buzz,imgxvd.buzz,imgyng.buzz,imgyvdw.buzz,imgzer.net##+js(set, hold_click, false)
 igg-games.com,imgalor.xyz,imgjut.buzz,imgkane.buzz,imgkia.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imglina.xyz,imgtrw.buzz,imguiwe.buzz,imgveni.xyz,imgweika.buzz,imgwex.buzz,imgwia.buzz##+js(nostif, _0x)
 ffmovies.*##+js(acs, String.fromCharCode, break;)
@@ -30939,7 +30941,7 @@ giveawayoftheday.com##+js(nosiif, _checkBait)
 gmailnator.com##+js(acs, onload, Adblock)
 go-mp3.com##+js(nowoif, !clickmp3)
 go.fire-link.net,mega4up.*,zeefiles.*##+js(ra, onclick, [onclick^="window.open"])
-gogoanimetv.*,imgbew.buzz,imgewe.buzz,imgeza.buzz,imgiut.buzz,imgizw.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqew.buzz,imguo.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxxxx.buzz,imgzzzz.buzz,javfull.net,playhydrax.com##+js(nosiif, _0x)
+gogoanimetv.*,imgbew.buzz,imgewe.buzz,imgeza.buzz,imgiut.buzz,imgizw.buzz,imgkuz.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqew.buzz,imguo.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxxxx.buzz,imgzzzz.buzz,javfull.net,playhydrax.com##+js(nosiif, _0x)
 gogoplay1.com,goload.pro##+js(aeld, click, 0x)
 goldencocco.jp,katfile.com,lnk2.cc,mottonoutore.jp,t-mall.cmnw.jp##+js(set, adblock, false)
 goodav17.com##+js(aopr, popunder)
@@ -34733,6 +34735,7 @@ stepride.jp#@#.bannerBox
 ||nyalacornily.cam^$all
 ||oasisjournal.org^$doc
 ||occustantwidity.com^$all
+||oculal.top^$doc
 ||of-soft.com^$all
 ||okay-dating.com^$all
 ||omciecoa37tw4.com^
