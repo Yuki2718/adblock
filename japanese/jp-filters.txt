@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220731
+! Version: 20220801
 
 ! Temporal
 ||30calclub.sakura.ne.jp/220402_
@@ -572,7 +572,7 @@ secrettalk.me##.week_hot
 /^https:\/\/1ts\d{2}\.top\/show\.php$/$script,3p
 /^https:\/\/(?:[a-z]{2}\.)?[a-z]{8,14}\.com\/style\.css\?cb=\d{6,7}$/$css,3p
 /^https:\/\/a\.[-0-9a-z]{4,16}\.(?:club|com|cyou|info|net|ru|site|top?|xxx|xyz)\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
-/^https:\/\/abc\.[0-9a-z]{6}\.(?:co|top)\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
+/^https:\/\/abc\.[0-9a-z]{6,8}\.(?:co|top)\/(?=[a-z]{0,6}[0-9A-Z])[0-9a-zA-Z]{7}\.js$/$script,match-case
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/[-_0-9a-zA-Z]{70,}$/$frame,3p
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/[0-9a-z]{8}\.js$/$script,3p
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/\S{100,}$/$xhr,3p
@@ -13920,6 +13920,7 @@ cgi-bin/counter
 ||lr-in.com^
 ||lr-ingest.io^$3p
 ||ls.srvcs.tumblr.com^
+||lsdm.co^
 ||luckyorange.com^$3p
 ||luckyorange.net^$3p
 ||lumberamount.com^$3p
@@ -17795,6 +17796,7 @@ apkmb.com###sticky-ad
 apkmb.com,apkmodhub.in##.ads_single_center
 apkmb.com,apkmodhub.in##.ads_single_top
 apkmirror.com###bottom-slider
+apkmirror.com##.ains
 apkmirror.com##span.advertisement-text
 apkmirror.com,impress.co.jp,jpost.com,mynavi.jp,suntimes.com##.OUTBRAIN
 apkpure.com##.ad-box-auto
@@ -31859,6 +31861,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 *$removeparam=gclsrc
 *$removeparam=utm_referrer
 *$xhr,removeparam=ref,domain=tnaflix.com
+*$xhr,removeparam=ref_url,domain=javplaya.com
 /?rb=*&zoneid=$removeparam
 /index.php?t=*&l_url_1=$doc,removeparam
 ?ad=disp&$doc,removeparam=ad
