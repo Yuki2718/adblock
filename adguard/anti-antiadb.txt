@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220731
+! Version: 20220802
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -245,11 +245,12 @@ _spot_id=*&zone_id=$script,~third-party
 ##.ad-placeholder:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
 ##.ad-placement:not(.adsbox):not(.afs_ads):not(#ablockercheck)
 ##.ad-refresh:not(.adsbox)
-##.adBanner:not(:empty)
+##.adBanner:not(:empty):not(.testAd)
 ##.adbadge:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
 ##.adde_modal_detector
 ##.adde_modal-overlay
 ##.ads_1:not(#filter_ads_by_classname):not(#detect)
+##.google-ad:not(.testAd)
 ##.href_
 ##.sponsor-ad:not(.adsense)
 ##a#mobile_pop.js-mob-popup
@@ -403,6 +404,7 @@ _spot_id=*&zone_id=$script,~third-party
 #@#.adsbygoogle
 #@#.display_ad
 #@#.div-gpt-ad
+#@#.google-ad
 #@#.sponsor-ad
 #@#div[class^="div-gpt-ad"]
 #@#div[id^="div-gpt-"]
