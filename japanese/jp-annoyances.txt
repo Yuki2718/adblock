@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220805
+! Version: 20220806
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -236,6 +236,7 @@ news.yahoo.co.jp##li.newsFeed_item > div:has-text(あなたの興味や関心)
 onayamifree.com###push_like
 pro.logitec.co.jp###industry
 qiita.com##.ac-CampaignLink
+reddit.com##+js(set, Notification.requestPermission, noopFunc)
 report.netcraft.com##.notification-sidebar
 search.brave.com##.callout.svelte-10n95qb
 search.rakuten.co.jp##.field > .dui-tooltip[data-tooltip-id=announcement-shipping]
@@ -920,6 +921,7 @@ city.inazawa.aichi.jp##.animation-loading
 city.living.jp###area-select
 clubdam.com##.l-page-bottom__cv
 cnn.com##.sibling
+comemo.nikkei.com,diehardtales.com,kobedx.kobe-np.co.jp,note.bcnretail.com,note.calbee.jp,note.com,note.kagg.jp,note.jp,note.linemusic.jp,note.minne.com,note.montblanc.design,note.smartnews-ads.com,note.yamap.com,refalover-note.mainichi.jp##.m-animationBalloon.m-likeNoLogin
 community.norton.com###block-norton-exit-poll-norton-poll-footer
 cosmopolitan.com###recommended-modal
 context.reverso.net###register-popup-bottom
@@ -937,7 +939,6 @@ developer.android.com##devsite-snackbar a.devsite-snackbar-link[href^="https://d
 developer.mozilla.org##.notification:has(a[href^="https://www.surveygizmo"])
 deviantart.com###root > header ~ div[class] > span.theme-light > a[href$="/users/login"]:upward(header ~ div[class])
 dhbr.net##.tool-box
-diehardtales.com,note.calbee.jp,note.com,note.jp,note.kagg.jp,note.linemusic.jp,note.yamap.com##.m-animationBalloon.m-likeNoLogin
 digitalocean.com##div[class^="ToastStyles__StyledWrapper-"][style]
 discussionsjapan.apple.com##.notification
 disqus.com##.is-footer.login-overlay__wrapper
@@ -1533,6 +1534,7 @@ m.qoo10.jp#%#//scriptlet('abort-current-inline-script', '$', 'layerpopup_mainBan
 ||telegram.im/widget-button/
 ##.plugin-oa_notifier_qr_code
 ##.plugin-qr_code
+##.widget_blog_subscription
 ~dereferer.me###mc_embed_signup
 
 ! Ignore generic

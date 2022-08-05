@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220805
+! Version: 20220806
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -39,6 +39,7 @@
 .pro/sdk/push_web/?zid=
 .xyz/h/?$script,third-party
 .xyz/pub?id=$script,third-party
+/\.xxx\/re(?:k|tr)\/[0-9a-z]{4,6}\.js$/$script,~third-party,match-case
 /\/js\/\d{3}eka\d{2,3}\.js$/$script,~third-party
 /\/nb\/(?=[a-z]{0,9}[A-Z])[a-zA-Z]{10}\.js/$script,~third-party,match-case
 /\/nb\/[a-z]{4}\.js$/$script,~third-party,match-case
@@ -153,12 +154,13 @@
 /pn21ywqw/z/sc/scssx/*$script,third-party
 /pop1.js|$script,~third-party
 /pop_8/pop_8_$script,~third-party
-/popunder_$script,redirect-rule=noopjs
 /preroll.engine?id=$xmlhttprequest,third-party,redirect=nooptext
 /q/tdl/95/dnt/*$script,third-party
 /rci?tr=false^$xmlhttprequest,third-party
 /rdrr/renderer.js$script,third-party
 /ren.gif?sid=$image,third-party
+/rek/?s=1|$script,~third-party
+/retr/?s=1|$script,~third-party
 /rtbfeed.php?$image,third-party
 /s/s/custom.php?dw=
 /s/s/js/m/im.js?v=
@@ -284,6 +286,7 @@ _spot_id=*&zone_id=$script,~third-party
 #$#div[id^="div-gpt-"]:not([id^="div-gpt-ad"]) { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
 
 -prebid.$script,badfilter
+.tv/ads.$xmlhttprequest,redirect-rule=prebid-ads
 /ad-300x250.jpg$image,redirect-rule=1x1-transparent.gif
 /adblockdetect/*$~image,badfilter
 /ads-prebid.js$script,redirect-rule=prebid-ads
@@ -291,8 +294,7 @@ _spot_id=*&zone_id=$script,~third-party
 /ads.html$subdocument,redirect-rule=noopframe
 /adsEnd.$badfilter
 /adsense1.$badfilter
-/assets/js/sailthru.js?ver=
-/sailthru.js$badfilter
+/popunder_$script,redirect-rule=noopjs
 /prebid-add.js$script,redirect-rule=prebid-ads
 /prebid-ads.js$script,redirect-rule=prebid-ads,domain=~exey.io
 @@/\/js\/[_0-9a-zA-Z]{4,12}\/(?:ad[-a-z]{4}|bannerpump|nugg\.min|transad|[a-z]{2}ads|[a-z]{3}-(?:adscript|inspire-ad|rail-ads))\.js\?_v=[0-9a-f]{8}$/$script,~third-party
