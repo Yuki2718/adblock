@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220803
+! Version: 20220807
 
 -rss.html|
 -rss2.html|
@@ -391,6 +391,7 @@ morikinoko.com##.img_link2
 mpizapoteto.com###text-9
 ||mudainodocument.com^$frame,1p
 ||mutyun.com/rss/
+||mv-mindhack2ch.up.seesaa.net/common/image_feed.js
 ||nadarenews.com^$frame,1p
 ||nekosoku.xyz/js/thread_
 ||nekowan.com/fuku/$script
@@ -1110,8 +1111,8 @@ nanjhistory.2chblog.jp##.kiji-ue-rss
 nantuka.blog119.fc2.com###header > center
 nantuka.blog119.fc2.com##font > center
 negisoku.com###main .column-inner-2 > [href^="https://e-gaming."]
-negisoku.com###rss-box
 negisoku.com###rss-box ~ br
+negisoku.com,sonicch.com###rss-box
 nekowan.com###more > span:has-text(新着記事)
 nekowan.com##.rsshead
 nekowan.com##[class^=rss_comsita_saigo]
@@ -1288,6 +1289,7 @@ sierblog.com##.column-inner-2 > hr
 siokan5000.blog.fc2.com##.blogroll_content
 siokan5000.blog.fc2.com##.blogroll_content ~ br
 skematomemon.com###more > .t_h > script + br
+sonicch.com###tangan_box2
 squallchannel.com###article_single > b > span[style="color: rgb(0, 0, 255);"]
 squallchannel.com###article_single > span[style="font-size: medium; color: rgb(0, 153, 0);"] > b
 srwmatome.blog.jp###more > span[style] ~ br
@@ -1616,7 +1618,8 @@ xn--r8jwklh769h2mc880dk1o431a.com##^.underbox
 !#if env_firefox
 mindhack2ch.com##.rss
 !#endif
-!#if env_mobile
+! temp disabled for AG
+!!#if env_mobile
 /sp_rss_iframe.html
 ||doujincafe.com/doujincafe.$frame
 ||ero-mangalife.com/eromangalife.$frame
@@ -1646,6 +1649,7 @@ kimootoko.net##div[class^="blogroll_Smartphone"]
 kisslog2.com###custom_html-6
 lifeantenna.com##.highlight-entry
 manga1blog.com##div[id*="rss"]
+mindhack2ch.com##.rss-article
 moeimg.net###sp-pickup-link-frame
 moeimg.net##.post-single > div.entryblock.sp_only
 newsoku.blog##.headrsssp
@@ -1664,4 +1668,4 @@ workingnews.blog117.fc2.com##.im_headerad
 xn--r8jwklh769h2mc880dk1o431a.com##.footer > .spadtitle2
 xn--r8jwklh769h2mc880dk1o431a.com##.headlinewra
 xn--r8jwklh769h2mc880dk1o431a.com##div[id^="div_fam_"] + .spadtitle2
-!#endif
+!!#endif
