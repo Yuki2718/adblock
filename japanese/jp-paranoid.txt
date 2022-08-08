@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220807
+! Version: 20220808
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -485,7 +485,7 @@ _omniture.$script,domain=mathworks.com
 ||clixtell.com/track.js
 ||cloudflare.com/cdn-cgi/trace$3p,domain=~isbgpsafeyet.com|~wyndhamdestinations.com
 ||cloudflare.com/cdn-cgi/trace$3p,xhr,redirect-rule=noop.txt,domain=~1bit.space|~1bitspace.com|~funimation.com
-||collect.igodigital.com^$script
+||collect.igodigital.com/collect.js
 ||cxense.com^$frame,script,xhr,3p
 ||docomo.ne.jp/js_osp/common/sitesearch_log.js
 ||docomo.ne.jp^*/js_osp/common/v2_accordion_log.js?
@@ -684,7 +684,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=sc_in,domain=realestate.yahoo.co.jp
 *$doc,removeparam=snr,domain=steamcommunity.com|steamgames.com|steampowered.com
 *$doc,removeparam=src,domain=dropbox.com
-*$doc,removeparam=source,domain=facebook.com
 *$doc,removeparam=tag,domain=contents.fc2.com
 *$doc,removeparam=ult_in,domain=realestate.yahoo.co.jp
 *$doc,removeparam=usid,domain=d-card.jp
@@ -743,6 +742,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||r18.com/videos/vod/*?nats=$doc,removeparam=nats
 ||support.github.com/?tags=$doc,removeparam=tags
 ||townwork.net^*?opf=PR1$doc,removeparam=opf
+||use.typekit.net^$font,removeparam=~/^(primer|subset_id)=/,badfilter
 ||web.c4connect.co.jp/Home?yj_r=$doc,removeparam=yj_r
 ||wimax-broad.jp/?utm_source=lc&utm_medium=affiliate&ac_source=lc&ac_medium=affiliate$doc,removeparam
 ||zexy.net^*&inrlead=$doc,removeparam=inrlead
