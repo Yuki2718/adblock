@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220808
+! Version: 20220809
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -1104,6 +1104,7 @@ medibang.com##.stickyBanner
 medibang.com##body.modal-open:style(overflow: auto !important;)
 medilink-study.com##.style-newsDialog
 meetup.com##.banner-wrapper:has(a.banner-link[data-element-name="banner-aapiSupport-click"])
+meetup.com##.subscribe-modal
 mens.tasclap.jp##.c-notice
 mensfashion.cc##.add_line_link
 menta.work###promotion-modal
@@ -1419,6 +1420,8 @@ dldlinks.com,dldshare.net##+js(aopr, age_gate_params)
 dokuha.jp###modal-comicday-desc
 dokuha.jp##.modal-backdrop
 dokuha.jp##.modal-open:style(overflow: auto !important;)
+flipboard.com##.app > div > div.modal-overlay:has(> section > div.mobile-gate)
+flipboard.com##body:style(overflow: visible!important; position: static!important;)
 game8.jp##.l-fixedFunctionLinkContainer
 girlschannel.net###popupModal
 hoken.zexy.net##.formbtn.reserve
