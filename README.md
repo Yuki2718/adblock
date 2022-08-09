@@ -1,7 +1,7 @@
 [![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 [![syntax](https://img.shields.io/badge/syntax-uBlock%20Origin-%23c61300.svg)](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
 
-### Announcement (July. 14, 2022) 
+### Announcement (Jul. 14, 2022) 
 
 I'm planning to unmaintain Placeholder Hider with no generic hiding list, unless I see evidence that *substantial numbers* of users are actually using the list. When-to-do is not determined yet. If you are an actual user of the list and want it to be maintained, please give us feedback by opening an issue about that.
 
@@ -9,7 +9,7 @@ I'm planning to unmaintain Placeholder Hider with no generic hiding list, unless
 
 <strong>Personal filters and rules for AdGuard/uBlock Origin</strong>
 
-I can't guarantee these filers won't cause problems. If you found problems, report it by filling in all the mandatory items in Issue template; otherwise reports can be ignored. Anyone who uses any of my filters/codes shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/codes. Unless Subscribe link is provided these filters are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard).
+I can't guarantee these filers won't cause problems. If you found problems, report that by filling in all the mandatory items in Issue template; otherwise reports may not be addressed. Anyone who uses my filters/rules shall be deemed to have agreed that I have no responsibility or liability for costs, losses, damages, etc. arising from the use of the filters/rules. Unless Subscribe link is provided, these filters/rules are assumed to be copied and pasted, or imported, into My filters/rules (uBlock Origin) or User Rules (AdGuard).
 
 <details>
 <summary><strong>adguard</strong></summary>
@@ -31,32 +31,6 @@ Exclusion:
 
 <a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt&title=AdGuard%20Social%20media%20Plus">Subscribe</a>
 [View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/social-plus.txt)
-
-### AdGuard Tracking Protection Plus
-
-**Update** (2021-03-16): Many things have changed since I published this list. Now I'm a maintainer of the official AdGuard lists so tend to add trackers directly to AdGuard Tracking Protection filter. Therefore, Tracking Protection Plus became more of an experiment field for rules I'm not much sure about false positive. When I published this list, there were many unique entries not found in any other lists, but EasyPrivacy has caught up and to avoid redundancy for those who use all the AdGuard Tracking Protection, EasyPrivacy, and this list I consolidated to EasyPrivacy's writing as far as the likelihood of false positive by doing so is not high. As a result, now this list has many duplicates with EasyPrivacy.
-
-[AdGuard Tracking Protection filter](https://kb.adguard.com/en/general/adguard-ad-filters#privacy) is probably the least false-positive prone anti-tracking list; however, it comes with its own cost of less coverage on average which this filter aims to complement. Some of bug reports are commented out but you can add them to User Rules without the initial `!`. Some rules are taken from [EasyPrivacy](https://easylist.to/) after I confirmed they 1) are actually in use, 2) are not covered by AdGuard Tracking Protection filter, and 3) apparently haven't caused false positives on my regular browsing.
-
-Inclusion criteria:
-- Didn't and less likely to cause false-positive
-- Useful to English user
-- Useful to default-deny script settings such as uBlock Origin medium mode
-
-Exclusion:
-- Trackers covered by Simplified domain names filter or Firefox tracking protection
-- Trackers blocked by uBlock Origin medium mode with /medium_mode/ublock-dynamic-rules.txt minus EasyPrivacy & Peter Lowe's list
-
-**About CNAME tracker:** 
-
-**Update** (2021-03-16): Many people now know AdGuard published CNAME tracker lists. As I wrote below, one should note even without such lists or CNAME uncloaking EasyPrivacy already blocked at least 70% of CNAME tracker all over the world. From the perspective of a filter author, CNAME tracker is no different from other tracker - we inspect script or request and if it sends unnecessary user data we block it unless doing so causes trouble. In fact, I am the first one opened an issue in the AdGuard's CNAME tracker repository to expand its coverage - some of CNAME tracker I proposed were not blocked not only by AdGuard but also by other services such as NextDNS because the trackers were unknown to them. CNAME uncloaking is done by checking the tracker's canonical name in known tracker database so is helpless against unknown tracker, and there are always such trackers out there.
-
-I really don't understand why it's so special to some people. Apparently they still believe subscribing a dedicated anti CNAME tracker list is mandatory to block them if a DNS-level blocker is not deployed on an other layer. The fact is EasyPrivacy alone, or the combination of AdGuard Tracking Protection and my list, blocks about [70% of CNAME tracker](https://blog.apnic.net/2020/08/04/characterizing-cname-cloaking-based-tracking/) while DEFINITELY many other analytics and trackers have slipped whatever your lists through, as long as you visit many sites. You prefer to double-lock a window and keep the door open? CNAME tracker is NOT at all harder to block and filter authors know much more serious circumvention. Of note, Google provides [Server-side Tagging](https://developers.google.com/tag-manager/serverside) as [announced](https://twitter.com/SimoAhava/status/1222459714614841346?s=20) in early 2020. This utilizes A or AAAA record, which is very well expected at the time of the CNAME fuss<sup>1</sup>. It's weird those who made fuss about CNAME cloaking seem to be silent about this. All these remind me that many people keep NoCoin despite EasyPrivacy + uBlock filters - Resource abuse covers 99% of them, and that others keep Adblock Warning Removal with a completely wrong assumption it has something to do with anti-adblock wall. Don't be fooled by misinformation on the Internet.
-
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt&title=AdGuard%20Tracking%20Protection%20Plus">Subscribe</a>
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/tracking-plus.txt)
-
-<sub>1: uBlock Origin can now fight against this by [strict3p](https://github.com/gorhill/uBlock/commit/bde3164eb445a4e74acca303ec9fa07f82ba1b1c) option.</sub>
 
 ### Anti Anti-adblock Enhancer for AdGuard
 

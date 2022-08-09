@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220808
+! Version: 20220810
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -693,6 +693,8 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=vcptn,domain=digi-tag.net
 *$doc,removeparam=vgo_ee
 *$doc,removeparam=xuid,domain=k-manga.jp
+*$script,removeparam=afid,domain=player.theplatform.com
+/?pid=Social Twitter^$doc,removeparam=pid
 /lp/*?trcd=$doc,removeparam=trcd
 /lp/*?waad=$doc,removeparam=waad
 /lp/*^utm_campaign=$doc,removeparam=utm_campaign
