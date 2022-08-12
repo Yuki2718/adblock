@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220810
+! Version: 20220813
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -736,6 +736,8 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||instagram.com^*?igshid=$doc,removeparam=igshid
 ||meetsidekick.com/?utm_campaign=$doc,removeparam=utm_campaign
 ||msn.com^*?ocid=$doc,removeparam=ocid
+||netflix.com^*?trackId=$doc,removeparam=trackId
+||netflix.com^*&tctx=$doc,removeparam=tctx
 ||nuro.jp/campaign/rmd/?recomndNo=$doc,removeparam=recomndNo
 ||nytimes.com^*&regi_id=$doc,removeparam=regi_id
 ||nytimes.com^*&segment_id=$doc,removeparam=segment_id
@@ -752,6 +754,8 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||game8.jp^*?follow=$doc,removeparam=follow
 !#endif
 ||instagram.com^$removeparam=igshid,badfilter
+||netflix.com^$removeparam=trackId,badfilter
+||netflix.com^$removeparam=tctx,badfilter
 ||rakuten.co.jp^$removeparam=sc2id,badfilter
 
 ! ---------- Exception for trackparam ----------
