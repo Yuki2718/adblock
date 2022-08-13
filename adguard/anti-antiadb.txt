@@ -296,12 +296,15 @@ _spot_id=*&zone_id=$script,~third-party
 /ads.html$subdocument,redirect-rule=noopframe
 /adsEnd.$badfilter
 /adsense1.$badfilter
+/peel1.js$badfilter
 /popunder_$script,redirect-rule=noopjs
 /prebid-add.js$script,redirect-rule=prebid-ads
 /prebid-ads.js$script,redirect-rule=prebid-ads,domain=~exey.io
 /px.gif?$image,redirect-rule=1x1-transparent.gif
 @@/\/js\/[_0-9a-zA-Z]{4,12}\/(?:ad[-a-z]{4}|bannerpump|nugg\.min|transad|[a-z]{2}ads|[a-z]{3}-(?:adscript|inspire-ad|rail-ads))\.js\?_v=[0-9a-f]{8}$/$script,~third-party
 @@/ad/api/popunder.js|$script,~third-party
+@@/ad/banner/_adsense_/_adserver/_adview_.ad.js?adzone=$script,~third-party
+@@/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,~third-party
 @@/ads-prebid.js$script,~third-party
 @@/ads/pop.js|$script,~third-party
 @@/adsense.js?adsdata=$script,~third-party
