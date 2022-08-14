@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220814
+! Version: 20220815
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -660,6 +660,9 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||studentwalker.com/st-manager/click/track?id=$doc
 ||valuecommerce.ne.jp^*/entry.php?ITRACK_INFO=$doc
 
+&afl=*&openExternalBrowser=1&SUBID=$doc,removeparam=SUBID
+&afl=*&openExternalBrowser=1&SUBID=$doc,removeparam=afl
+&afl=*&openExternalBrowser=1&SUBID=$doc,removeparam=openExternalBrowser
 &event_callback_$doc,removeparam=/^event_callback_/,domain=adjust.com
 &linkCode=$doc,removeparam=linkCode,domain=amazon.*
 &utm_medium=game^$frame,removeparam=/^utm_/,domain=softgames.com
