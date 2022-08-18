@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220818
+! Version: 20220819
 
 ! ---------- Ads general ----------
 /heji/mei00*.js
@@ -51,6 +51,7 @@
 ||nikki.ne.jp/contents/iPhone/toppage/img/bnr-itnavi.png
 ||gacraft.jp^$domain=mainichikirei.jp
 ||game8.jp/6763119/dfb7db337629b9c4b471a66811e47a7f.png/original|
+||gamewith.jp/ad/$frame,image,media,1p
 ||gamewith.jp/bookmark/chrome.png
 ||gamerch.com/s3-assets/js/system/gcad/
 ||geekjob.jp/wp-content/themes/geekjob_theme_ver1.07/common/img/logo/sp/diagnosis_sp.
@@ -463,6 +464,7 @@ gameuxnews.com###mobile_text-3
 gameuxnews.com###mobile_text-4
 gamewith.jp###js-ad-jack
 gamewith.jp##._native_ad_item
+gamewith.jp##.ad-header-creative-wrapper
 gamewith.jp##.bbs-banner-ad
 gamewith.jp##.to-btn--bookmark
 gamewith.jp##.to-btn-area
@@ -1229,7 +1231,9 @@ moeimg.net##div[class^="sp_ad"]
 momoniji.com###content-bottom > #mobile_text-11:upward(1)
 momoniji.com###mobile_text-3
 msn.com###taboola-mobile-article-thumbnails
-nan-net.com##div[style="height:100px;"]
+nan-net.com##.bbs_box[style="height:50px;"]
+nan-net.com##a[href="https://search.nan-net.com/bbslist.php"] + div.bbs_box
+nan-net.com##body > div[style="background-color:#333;margin-bottom:-20px;"]
 nan-net.com##div[style^="background-color:#f5f5f5; margin-top:0px"] > div[style$="height:40px;"]
 niji-gazo.com###dmm-recommend
 niji-gazo.com##.partner-rotate-block
