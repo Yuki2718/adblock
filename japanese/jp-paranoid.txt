@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220819
+! Version: 20220820
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -302,6 +302,7 @@ smart-flash.jp##^.adsBlock
 ||affiliate.suruga-ya.jp^$doc
 ||affiliateone.jp^
 ||asp.m-live.jp^
+||ba.afl.rakuten.co.jp/items/list?$doc
 ||blogroll.livedoor.net/ad_redirect?$doc
 ||cir.io^
 ||cl.link-ag.net^
@@ -363,6 +364,7 @@ smart-flash.jp##^.adsBlock
 -contrib-ads/
 -google-analytics/$domain=~wordpress.org
 .s_code.js$domain=cadillacjapan.com|chevroletjapan.com
+/\.com\/(?=[a-z]{0,7}[0-9A-Z])[0-9A-Za-z]{8}\/init\.js$/$script,1p,match-case,domain=com
 /1.gif?$image,frame,script,xhr
 /AdobeAnalyticsBundle.
 /AppMeasurement.js
@@ -444,6 +446,7 @@ _omniture.$script,domain=mathworks.com
 ! FP for the sake of security
 ||fraudjs.io^$3p
 ||geoip-js.com^$3p
+||geoip.cookieyes.com^
 ||geolocation-db.com^$3p
 ||h-cast.jp^$3p
 ||iesnare.com^
@@ -570,6 +573,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||adobedtm.com^*/mbox-contents-$script,domain=americanexpress.com|costco.com|lenovo.com|nfl.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|auspost.com.au|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|support.nec-lavie.jp|telegraph.co.uk|vanityfair.com|wired.com
+@@||akamaihd.net/nbad/player/*/appmeasurement.js$domain=watch.nba.com
 @@||api.cxense.com/document/search?$script,xhr,domain=friday.kodansha.co.jp|ntv.co.jp|tv-tokyo.co.jp
 @@||api.cxense.com/public/widget/click/$domain=api.cxense.com
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.gold|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
@@ -617,7 +621,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||last.fm/static/js-build/tracking/tealium-utag-set.js$script,1p
 @@||linksynergy.com/minified_logic.js$xhr,3p,badfilter
 @@||live.bbc.co.uk^*/comscore.js$1p
-@@||lptag.liveperson.net/tag/tag.js$domain=uniqlo.com
 @@||mpsnare.iesnare.com/snare.js$domain=login.skype.com
 @@||mpsnare.iesnare.com/snare.js$script,domain=lenovo.com
 @@||mpsnare.iesnare.com/script/logo.js$domain=lenovo.com
@@ -684,7 +687,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=ebisOther3
 *$doc,removeparam=ebisOther4
 *$doc,removeparam=ebisOther5
-*$doc,removeparam=from,domain=englishcentral.com|nicovideo.jp
+*$doc,removeparam=from,domain=englishcentral.com|nicovideo.jp|rosebud-web.com
 *$doc,removeparam=lid,domain=kakaku.com|kakakumag.com
 *$doc,removeparam=mbid
 ! needed to get discount
