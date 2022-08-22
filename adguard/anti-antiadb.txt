@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220822
+! Version: 20220823
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -130,8 +130,7 @@
 /js/bxsp.js|$~third-party
 /js/popec.js|$~third-party
 /js/ppndr.
-/jsa.hh?ext=$script,~third-party
-/jsa.hh?z=$script,~third-party
+/jsa.hh?$script,~third-party
 /jss/external_pop.js?$~third-party
 /lvesnk.html?zoneid=
 /mbp/pre/*$script,third-party
@@ -362,6 +361,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
 ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager-gtm
 ||gstatic.com/adx/doubleclick.ico|$image,redirect-rule=32x32-transparent.png
+||htlbid.com/*/htlbid.js$script,redirect-rule=noopjs
 !||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima3
 ||media.fastclick.net^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||nessainy.net/favicon.ico$image,redirect-rule=32x32-transparent.png

@@ -113,11 +113,11 @@ Yuki's uBlock Japanese filtersファミリーが適しているのは以下の�
 <details>
 <summary><strong>併用可</strong></summary>
 
-日本人作者によるフィルタリストとして初、かつ現状唯一、EasyListなど標準フィルタリストとの併用を考慮しています。具体的にはブロック対象に違いがなく、パフォーマンスや誤爆の観点から問題がない場合、[EasyList](https://easylist.to/easylist/easylist.txt), [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt), [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php), [uBlock 内製フィルター](https://github.com/uBlockOrigin/uAssets), [AdGuard Base](https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt), [AdGuard Tracking Protection](https://filters.adtidy.org/extension/ublock/filters/3.txt), [AdGuard URL Tracking Protection](https://filters.adtidy.org/extension/ublock/filters/17.txt), [Fanboy Enhanced Tracking](https://www.fanboy.co.nz/enhancedstats.txt)など、標準リストおよび併用されることが多そうなリストとルールを統一しています[^11]。これにより重複が排除され、[フィルターリスト]ペインでのフィルタ有効数[^12]が正しく表示されるだけでなく、整形フィルタの多重適用も回避できます。つまり単独でもご利用可能ですが、上述の各種リストと併用した場合でも無駄がありません[^13]。逆にAdGurad Japaneseを除く他の日本用リストは標準リストとの併用が考慮されておらず、パフォーマンス上の影響に加え、まれに競合して不具合やアンチ広告ブロックの原因となることもあり[^14]、Braveの日本用フィルタに採用されなかった[一因](https://github.com/brave/adblock-lists/issues/355#issuecomment-609680337)となっています。また、標準リストで発生する不具合が当該リストで修正されない場合、こちらで修正いたします。以下に主要なフィルタリストとYuki's uBlock Japanese filtersファミリーとの互換性をまとめました（同系統、たとえばAdGuard AnnoyancesならYuki's uBlock Japanese filters - Annoyancesを購読した場合です）。
+日本人作者によるフィルタリストとして初、かつ現状唯一、EasyListなど標準フィルタリストとの併用を考慮しています。具体的にはブロック対象に違いがなく、パフォーマンスや誤爆の観点から問題がない場合、[EasyList](https://easylist.to/easylist/easylist.txt), [EasyPrivacy](https://easylist.to/easylist/easyprivacy.txt), [Peter Lowe's Ad and tracking server list](https://pgl.yoyo.org/adservers/serverlist.php), [uBlock₀ 内製フィルター](https://github.com/uBlockOrigin/uAssets), [AdGuard Base](https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt), [AdGuard Tracking Protection](https://filters.adtidy.org/extension/ublock/filters/3.txt), [AdGuard URL Tracking Protection](https://filters.adtidy.org/extension/ublock/filters/17.txt), [Fanboy Enhanced Tracking](https://www.fanboy.co.nz/enhancedstats.txt)など、標準リストおよび併用されることが多そうなリストとルールを統一しています[^11]。これにより重複が排除され、[フィルターリスト]ペインでのフィルタ有効数[^12]が正しく表示されるだけでなく、整形フィルタの多重適用も回避できます。つまり単独でもご利用可能ですが、上述の各種リストと併用した場合でも無駄がありません[^13]。逆にAdGurad Japaneseを除く他の日本用リストは標準リストとの併用が考慮されておらず、パフォーマンス上の影響に加え、まれに競合して不具合やアンチ広告ブロックの原因となることもあり[^14]、Braveの日本用フィルタに採用されなかった[一因](https://github.com/brave/adblock-lists/issues/355#issuecomment-609680337)となっています。また、標準リストで発生する不具合が当該リストで修正されない場合、こちらで修正いたします。以下に主要なフィルタリストとYuki's uBlock Japanese filtersファミリーとの互換性をまとめました（同系統、たとえばAdGuard AnnoyancesならYuki's uBlock Japanese filters - Annoyancesを購読した場合です）。
 
 | リスト名 | 互換性 | 説明 |
 |:---|:---:|:---:|
-| uBlock内製フィルター, EasyList, EasyPrivacy, Peter Lowe’s Ad and tracking server list, AdGuard Base, AdGuard Mobile Ads, AdGuard Social Media, uBlock filters – Annoyances, Block Outsider Intrusion into LAN, 280blocker domain filter | ◎ | 互換性が最大限考慮されており、併用しても無駄はほとんど生じない |
+| uBlock内製フィルター, EasyList, EasyPrivacy, Peter Lowe’s Ad and tracking server list, AdGuard Base, AdGuard Mobile Ads, AdGuard Social Media, uBlock₀ filters – Annoyances, Block Outsider Intrusion into LAN, 280blocker domain filter | ◎ | 互換性が最大限考慮されており、併用しても無駄はほとんど生じない |
 | AdGuard Chinese, RU AdList, AdGuard URL Tracking Protection, Fanboy Enhanced Tracking, AdGuard Annoyances, EasyList Cookie, Fanboy’s Annoyance, Fanboy’s Social, Fanboy's Notifications Blocking List | ○ | 互換性がある程度考慮されており、多少の無駄は生じるがあまり問題ない（Fanboy系は互換性低め） |
 | もちフィルタ, もち拡張フィルタ, いちごフィルタ, ことりフィルタ, ねぎフィルタ, AdGuard Japanese | △ | 併用すると大量の無駄が生じるが、問題が生じるかは未確認 |
 | 豆腐フィルタ, 280blocker adblock filter | × | 大量の無駄だけでなく、実際に問題が生じるため併用は非推奨 |
@@ -152,7 +152,7 @@ uBlock Originはインストールしたての状態でも広告ブロッカー�
 - 広告ブロッカー検知用の罠スクリプト
 - ファーストパーティーの単純なCGI/SSIアクセスカウンターで、広範に使われているもの以外
 - プッシュ通知（EasyPrivacyは一部ブロックしていますが、こちらでは悪質なもの以外はAnnoyancesで対応します）
-- タイマースキップ（uBlock filtersは対応していますが、まれに不具合を起こすため原則としてAnnoyancesで対応します）
+- タイマースキップ（uBlock₀ filtersは対応していますが、まれに不具合を起こすため原則としてAnnoyancesで対応します）
 - Google Safe Browsingでカバーされている、またはモバイル限定の悪質サイト
 - 失効ドメイン
 
@@ -226,7 +226,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 ## Yuki's uBlock Japanese filters - Annoyances （みぞれフィルタ）
 
-広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt), [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances), [uBlock filters – Annoyances](https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt), および[Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances)と共通のルールもあります。AdGuard AnnoyancesおよびuBlock filters – Annoyancesとの互換性を意識していますが、Socialの場合ほどではありません（併用可能ですが、多少の無駄が生じます）。
+広告以外の迷惑要素をブロックするフィルタで、Yuki's uBlock Japanese filtersとの併用を前提とします。一部、[Fanboy's Annoyance List](https://easylist.to/easylist/fanboy-annoyance.txt), [AdGuard Annoyances](https://kb.adguard.com/en/general/adguard-ad-filters#annoyances), [uBlock₀ filters – Annoyances](https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt), および[Web Annoyances Ultralist](https://github.com/yourduskquibbles/webannoyances)と共通のルールもあります。AdGuard AnnoyancesおよびuBlock₀ filters – Annoyancesとの互換性を意識していますが、Socialの場合ほどではありません（併用可能ですが、多少の無駄が生じます）。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt&title=Yuki's%20uBlock%20Japanese%20filters%20-%20Annoyances">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/japanese/jp-annoyances.txt)
@@ -316,7 +316,7 @@ Yuki's uBlock Japanese filtersに追加できるフィルタで、多少の不�
 
 <strong>「信頼するフィルタ」のチェックが必要です。また、DNSフィルタリングが有効の場合、効果が半減します（リソースリダイレクトの問題）。とはいえDNSフィルタリングにはメリットもあるため、各自の優先項目に応じて総合的に判断してください</strong>
 
-AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ拡張機能専用です。AdGuard for Safari, AdGuard for iOS, AdGuardコンテンツブロッカーではあまり機能しません。AdGuardのアンチ広告ブロック対策機能を汎用フィルタで底上げします。個別対策はしませんので、対応漏れはこちらではなくAdGuard公式に報告してください（表示崩れなどの不具合報告は受けつけます）。一部アダルトサイト、違法コンテンツサイト、短縮リンクなどでよくみられる悪質ポップアップも軽減します。AdGuard標準フィルタリストへの追加を想定しています。uBlock filtersから取られたルールが多いため、ライセンスはGPLv3としています。
+AdGuard for Windows, AdGuard for Android, AdGuard for Mac, AdGuardブラウザ拡張機能専用です。AdGuard for Safari, AdGuard for iOS, AdGuardコンテンツブロッカーではあまり機能しません。AdGuardのアンチ広告ブロック対策機能を汎用フィルタで底上げします。個別対策はしませんので、対応漏れはこちらではなくAdGuard公式に報告してください（表示崩れなどの不具合報告は受けつけます）。一部アダルトサイト、違法コンテンツサイト、短縮リンクなどでよくみられる悪質ポップアップも軽減します。AdGuard標準フィルタリストへの追加を想定しています。uBlock₀ filtersから取られたルールが多いため、ライセンスはGPLv3としています。
 
 <a href="https://subscribe.adblockplus.org?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt&title=Anti%20Anti-adblock%20Enhancer%20for%20AdGuard">購読する</a>
 [中身を見る](https://raw.githubusercontent.com/Yuki2718/adblock/master/adguard/anti-antiadb.txt)
@@ -395,4 +395,4 @@ EasyListなどの国際的な広告ブロックコミュニティにボランテ
 [^19]: AdGuard Japaneseにおいても、当管理人がコミットする場合はできるだけuBlock Originでも最適となるようフィルタを書いていますが、AdGuardの仕様の違いやフィルターポリシーの違いなどにより、そうできないケースもあります。
 [^20]: モバイルでは「汎用整形フィルターを無視する」がデフォルトで有効になります。これによりパフォーマンスが向上しますが、消し残り等も出てくるためuBlock Originチーム内でディスカッションした結果、いくつかの汎用性の高い整形フィルタをspecific-genericとして内製フィルタに追加しました。これらのフィルタの選定はAdGuard社のフィルタ統計を参考にしながら当管理人が行いましたが、国際的なサイトや英語サイトが中心となっています。一方、国際的にはマイナーでも日本のサイトでよく問題になるものもあり、これまで内製フィルタやAdGuard Japaneseで対応してきましたが、AdGuardのフィルタでuBlock Origin固有の問題をどこまで対応すべきなのか、内製フィルタで日本固有の問題をどこまで対応すべきなのか、という問題がありました。Yuki's uBlock Japanese filters - Mobileでは、日本のサイトでよく問題になるものをspecific-genericに追加しています。uBlock Origin開発者によれば、何千もの汎用整形フィルタを挿入するのが問題なのであって、数十程度ならパフォーマンス上の懸念はありません。
 [^21]: クリック後に外のサイトを経由するもので、本文中に挿入されているなど迷惑度が高いものはブロックすることがあります。
-[^22]: ポップアップ、サブスクリプション、プロモーションについては個別のサブリスト化は困難です。AdGuard Annoyancesでもそうですが、ポップアップという括りは「表示形式がポップアップであるあらゆる迷惑要素」ぐらいの意味しかなく、サブスクリプションやプロモーションにも分類可能なものが含まれているからです。プッシュ通知はサブリスト化可能ですが、Fanboy's Annoyanceのサブリストである[Fanboy's Notifications Blocking List](https://easylist-downloads.adblockplus.org/fanboy-notifications.txt)と大部分重複しており、そちらを購読していただければよいと思います。ターゲットが明確でルールも少ないため、Fanboy系にしては不具合は少ないです（2022年8月12日追記：最近、モバイルアプリのバナー通知も対象とするなど範囲が拡大しており、要注視）。Othersに含めているカウントダウン系もサブリスト化可能ですが、uBlock filtersで標準対応しているため需要が低いと思います。こちらで標準対応しないのは、広告でないことに加えてまれに不具合を起こすためです。
+[^22]: ポップアップ、サブスクリプション、プロモーションについては個別のサブリスト化は困難です。AdGuard Annoyancesでもそうですが、ポップアップという括りは「表示形式がポップアップであるあらゆる迷惑要素」ぐらいの意味しかなく、サブスクリプションやプロモーションにも分類可能なものが含まれているからです。プッシュ通知はサブリスト化可能ですが、Fanboy's Annoyanceのサブリストである[Fanboy's Notifications Blocking List](https://easylist-downloads.adblockplus.org/fanboy-notifications.txt)と大部分重複しており、そちらを購読していただければよいと思います。ターゲットが明確でルールも少ないため、Fanboy系にしては不具合は少ないです（2022年8月12日追記：最近、モバイルアプリのバナー通知も対象とするなど範囲が拡大しており、要注視）。Othersに含めているカウントダウン系もサブリスト化可能ですが、uBlock₀ filtersで標準対応しているため需要が低いと思います。こちらで標準対応しないのは、広告でないことに加えてまれに不具合を起こすためです。

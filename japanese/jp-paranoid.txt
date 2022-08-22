@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220820
+! Version: 20220823
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -336,13 +336,11 @@ smart-flash.jp##^.adsBlock
 ||onlyry.net^
 ||ojrq.net^$doc
 ||pr.dmm.co.jp^
-||refer.ccbill.com^
 ||rs6.net^
 ||samuraiclick.com^$doc
 ||send.microad.jp^
 ||smart-a.jp^
 ||smart-c.jp^$doc
-||smartaccess.biz^$doc
 ||t.afi-b.com^
 ||taxel.jp^
 ||tonxton.com/advertisementLog/$doc
@@ -352,7 +350,6 @@ smart-flash.jp##^.adsBlock
 ||tracker-pm2.konibet.com^
 ||tradedoubler.com^
 ||uncn.jp^
-||viglink.com^
 ||wlink.golden-gateway.com^
 ||xii-iix.info^
 
@@ -377,7 +374,6 @@ smart-flash.jp##^.adsBlock
 /abstat.
 /adobe-analytics2.
 /analytics/event
-/analytics/v1/*$domain=~my.leadpages.net|~userzoom.com
 /analyticsmediator.
 /api/analytics/*
 /api/tracking/*
@@ -389,13 +385,12 @@ smart-flash.jp##^.adsBlock
 /dynatrace/*$domain=~dynatrace-managed.com|~dynatrace.com|~github.com|~github.io
 /fe_logger?
 /firebase-performance-
-/friendbuy.min.js
 /frosmo.easy.js
 /geo.php?
 /geoLocationData/v1/*
 /js/access.js$domain=~expocity-mf.com|~smt-cinema.com
-/js/counter.js
 /js/optscript/script-$1p
+/js/tracking/ga_initial_visit.$badfilter
 /js/tracking/*
 .jp/assets/js/Stats.js|$script,1p,badfilter
 /js/stats.js
@@ -418,7 +413,6 @@ smart-flash.jp##^.adsBlock
 /streamsense.min.js
 /tealeaf.js
 /tealium-utag-
-/utag_data.
 /v60.js
 /visilabs.min.js
 /web-js-telemetry-service/*
@@ -439,7 +433,6 @@ _omniture.$script,domain=mathworks.com
 ||asadcdn.com^$3p
 ||cdn-net.com^$3p
 ||d2wy8f7a9ursnm.cloudfront.net^
-||dcf.espn.com^
 ||dynatrace-managed.com^$3p
 ||ensighten.com^$3p
 ||extreme-ip-lookup.com^$3p
@@ -462,7 +455,6 @@ _omniture.$script,domain=mathworks.com
 ||monitor.azure.com^
 ||mps-gba.de^$3p
 ||ourl.link^
-||recs.richrelevance.com^$3p
 ||rtoaster.jp^$3p
 ||sail-horizon.com^
 ||tag.aticdn.net^
@@ -496,14 +488,11 @@ _omniture.$script,domain=mathworks.com
 ||docomo.ne.jp/js_osp/common/sitesearch_log.js
 ||docomo.ne.jp^*/js_osp/common/v2_accordion_log.js?
 ||dynamicyield.com/st?
-! omtrdc.net CNAME
-||edge.adobedc.net^$xhr,domain=docomo.ne.jp
 ||facebook.com/platform/scribe_endpoint.php/
 ||gsght.com/twizards.js
 ||hello.myfonts.net/count/
 ||jreast.co.jp/material/js/rt.js
 ||linkedin.com/li/track^
-||livechatinc.com/tracking.js
 ||maxmind.com/geoip/$3p
 ||maxmind.com^*/geoip2.js
 ||mercari.jp/experiments/$xhr
@@ -560,7 +549,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 
 ! ---------- Exception for analytics ----------
 /Criteo/*$badfilter
-@@/friendbuy.min.js$script,domain=butcherbox.com
 @@||accounts.intuit.com/fe_logger?$1p
 @@||adobedtm.com/*-libraryCode_source.min.js$script,domain=americanexpress.com
 @@||adobedtm.com/*-source.min.js$script,domain=americanexpress.com|bose.com|churchofjesuschrist.org|cibc.com|hilton.com|ingrammicro.com|news.sky.com
@@ -574,6 +562,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satelliteLib-$script,domain=americanexpress.com|auspost.com.au|collegeboard.org|costco.com|lenovo.com|mathworks.com|nbcnews.com|nfl.com|oracle.com|radiko.jp|sony.jp|support.nec-lavie.jp|telegraph.co.uk|vanityfair.com|wired.com
 @@||akamaihd.net/nbad/player/*/appmeasurement.js$domain=watch.nba.com
+@@||apc-pli.com/api/tracking/$xhr,1p
 @@||api.cxense.com/document/search?$script,xhr,domain=friday.kodansha.co.jp|ntv.co.jp|tv-tokyo.co.jp
 @@||api.cxense.com/public/widget/click/$domain=api.cxense.com
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.gold|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
@@ -582,6 +571,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||api.cxense.com/public/widget/data?*&ctx=https%3A%2F%2Fure.pia.co.jp$script,domain=cdn.cxpublic.com
 @@||api.cxense.com^$script,domain=bizjournals.com|ntv.co.jp
 @@||api.ipify.org^$xhr,domain=equinoxplus.com|speedcheck.ky
+@@||asadcdn.com/adlib/$css,domain=bild.de
 @@||asadcdn.com/adlib/pages/bild.js$script,domain=bild.de
 @@||asadcdn.com/adlib/libmodules/desktop/instream.$script,domain=bild.de
 @@||assets.adobedtm.com^*-librarycode_source.min.js$script,domain=mora.jp
@@ -600,7 +590,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||cxense.com/cx.cce.js$script,domain=googirl.jp
 @@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|ure.pia.co.jp
 @@||dashboard.unity.com/dist/udash/app/assets/services/analytics/$1p
-@@||disaportal.gsi.go.jp/maps/js/counter.js
 @@||ensighten.com^*/Bootstrap.js$domain=americanexpress.com|britishairways.com|citi.com|dell.com|hp.com|norton.com|t-mobile.com
 @@||ensighten.com^*/code/$script
 @@||ensighten.com^*/scode/$script,domain=norton.com
@@ -661,7 +650,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||is.accesstrade.net/cgi-bin/*?rk=$doc
 ||lightfx.jp/LP/fx/?AffiCode=$doc
 ||pc-koubou.jp/cgi-bin/linklp/linklp.cgi?siteID=$doc
-||samuraiclick.com/lp/*.php?m=$doc
 ||search.rakuten.co.jp/search/mall/*&l-id=$doc
 ||shingon.jp/p.php?pr=*&i=$doc
 ||stepupbuzz.club/st-manager/click/track?id=$doc
@@ -692,7 +680,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 *$doc,removeparam=mbid
 ! needed to get discount
 *$doc,removeparam=ref,domain=iobit.com
-*$doc,removeparam=refId,domain=linkedin.com
 *$doc,removeparam=sc2id,domain=rakuten.co.jp
 *$doc,removeparam=sc_e,domain=paypaymall.yahoo.co.jp|shopping.yahoo.co.jp
 *$doc,removeparam=sc_iid,domain=dhc.co.jp
@@ -749,7 +736,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||github.com^*?notification_referrer_id=$doc,removeparam=notification_referrer_id
 ||google.com/travel/hotels/entity/*?tcfs=$doc,removeparam=tcfs
 ||google.com/travel/things-to-do/*&dest_src=$doc,removeparam=dest_src
-||instagram.com^*?igshid=$doc,removeparam=igshid
 ||meetsidekick.com/?utm_campaign=$doc,removeparam=utm_campaign
 ||msn.com^*?ocid=$doc,removeparam=ocid
 ||netflix.com^*?trackId=$doc,removeparam=trackId
@@ -769,7 +755,6 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 !#if !env_mobile
 ||game8.jp^*?follow=$doc,removeparam=follow
 !#endif
-||instagram.com^$removeparam=igshid,badfilter
 ||netflix.com^$removeparam=trackId,badfilter
 ||netflix.com^$removeparam=tctx,badfilter
 ||rakuten.co.jp^$removeparam=sc2id,badfilter
