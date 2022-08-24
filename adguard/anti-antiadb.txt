@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220823
+! Version: 20220825
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -218,30 +218,12 @@ _spot_id=*&zone_id=$script,~third-party
 ||bannertrack.net^$script,third-party,redirect=prevent-bab2,important
 ||fundingchoicesmessages.google.com^$third-party
 
-###DivTopAd:not(:empty)
-###ad-zone-1:not(:empty)
-###adMid1:not(:empty)
-###ad_190x90:not(:empty)
-###ad_feature:not(:empty)
-###ads-sticky:not(:empty)
 ###adtagfooter:not(:empty)
-###banner-advert-container:not(.ad-inserter):not(.adsense)
-###docmainad:not(:empty)
-###im_popupFixed:not(.ad-inserter)
 ###iqadtile5:not(:empty)
-###leftframeAD:not(:empty)
-###myAd:not(:empty)
 ###rvt-inline-0
 ###rvt-inline-1
-###sideadbox:not(:empty)
-###travel_ad:not(:empty)
-###tobsideAd:not(:empty)
-##.BannerAd:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
-##.SponsorAds:not(.adsense)
 ##.ad-300x250:not(.ads)
-~flat-ads.com,~lastpass.com##.ad-img:not(.ad-inserter)
-##.ad-index:not(.ad-inserter)
-##.ad-inserter:not(#banner-advert-container):not(.adsense)
+##.ad-content:not(:empty)
 ##.ad-left:not(.adsbox)
 ##.ad-link:not(.adsbox)
 ##.ad-loading:not(.adsbox)
@@ -252,13 +234,10 @@ _spot_id=*&zone_id=$script,~third-party
 ##.ad-unit:not(.text-ad)
 ##.adBanner:not(:empty):not(.testAd)
 ##.ad_unit:not(.text-ad)
-##.adbadge:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
 ##.adde_modal_detector
 ##.adde_modal-overlay
-##.ads_1:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect)
 ##.google-ad:not(.testAd)
 ##.href_
-##.sponsor-ad:not(.adsense)
 ##a#mobile_pop.js-mob-popup
 ##a[dont][style$="position: absolute; z-index: 2147483647;"]
 ##a[href^="//"][rel="nofollow norefferer noopener"][style*="position: fixed;"][style*="height:"][style*="width:"][style*="inset:"][style*="z-index:"]
@@ -279,7 +258,7 @@ _spot_id=*&zone_id=$script,~third-party
 ##ins[style*="cursor:"][style*="user-select: none;"][style*="z-index:"]
 
 #$#.div-gpt-ad { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
-~ff14angler.com,~downloads.descendant.me,~html5.gamedistribution.com,~paraphraser.io,~sekai-kabuka.com,~tamrieltradecentre.com,~teemo.gg,~xtremestream.co#$#ins.adsbygoogle { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
+~anydebrid.com,~ff14angler.com,~downloads.descendant.me,~hotdebrid.com,~html5.gamedistribution.com,~paraphraser.io,~sekai-kabuka.com,~tamrieltradecentre.com,~teemo.gg,~xtremestream.co#$#ins.adsbygoogle { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
 #$#[class^="div-gpt-ad"] { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
 ~dropgalaxy.com,~kurashiru.com,~saitama-np.co.jp#$#[id^="div-gpt-ad"] { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
 #$#div[id^="div-gpt-"]:not([id^="div-gpt-ad"]) { width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important }
@@ -355,8 +334,10 @@ _spot_id=*&zone_id=$script,~third-party
 ||bebi.com/js/plugins.js$script,redirect-rule=noopjs
 ||cloudfront.net/videojs/videojs-contrib-ads.js$script,redirect-rule=noopjs
 ||cxense.com/cx.js$script,redirect-rule=noopjs
+||doubleclick.net/tag/js/gpt.js$redirect-rule=googletagservices-gpt
 ||doubleclick.net^$xmlhttprequest,redirect=nooptext,domain=~d3ward.github.io
 ||doubleclickbygoogle.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
+||google-analytics.com/analytics.js$redirect-rule=google-analytics
 ||google.com/adsense/start/images/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
 ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager-gtm
@@ -364,6 +345,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||htlbid.com/*/htlbid.js$script,redirect-rule=noopjs
 !||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima3
 ||media.fastclick.net^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
+||media.net/dmedianet.js$redirect-rule=noopjs
 ||nessainy.net/favicon.ico$image,redirect-rule=32x32-transparent.png
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication-adsbygoogle,domain=~zipextractor.app
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect-rule=nooptext
@@ -388,31 +370,13 @@ _spot_id=*&zone_id=$script,~third-party
 #@##ad-lb
 #@##ad-zone-1
 #@##adAd
-#@##adMid1
 #@##adTeaser
-#@##ad_190x90
-#@##ad_feature
-#@##ads-sticky
-#@##ads_iframe
-#@##adtagfooter
-#@##banner-advert-container
-#@##docmainad
 #@##glinkswrapper
-#@##im_popupFixed
 #@##iqadtile5
-#@##leftframeAD
-#@##myAd
 #@##outbrain-paid
-#@##sideadbox
 #@##sponsored_link
-#@##travel_ad
-#@##tobsideAd
-#@#.BannerAd
-#@#.SponsorAds
 #@#.ad-300x250
-#@#.ad-img
-#@#.ad-index
-#@#.ad-inserter
+~backcar.fr,~flat-ads.com,~job.inshokuten.com##.ad-content:not(:empty)
 #@#.ad-left
 #@#.ad-link
 #@#.ad-loading
@@ -422,16 +386,13 @@ _spot_id=*&zone_id=$script,~third-party
 #@#.ad-unit
 #@#.adBanner
 #@#.ad_unit
-#@#.adbadge
 #@#.ads-iframe
 #@#.adsBanner
 #@#.adsBox
-#@#.ads_1
 #@#.adsbygoogle
 #@#.display_ad
 #@#.div-gpt-ad
 #@#.google-ad
-#@#.sponsor-ad
 #@#div[class^="div-gpt-ad"]
 #@#div[id^="div-gpt-"]
 #@#[class^="div-gpt-ad"]
