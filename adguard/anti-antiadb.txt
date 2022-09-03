@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220903
+! Version: 20220904
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -232,7 +232,8 @@ _spot_id=*&zone_id=$script,~third-party
 ##.ad-placement:not(.adsbox):not(.afs_ads):not(#ablockercheck)
 ##.ad-refresh:not(.adsbox)
 ##.ad-unit:not(.text-ad)
-##.adBanner:not(:empty):not(.testAd)
+##.adBanner:not(:empty):not(.testAd):not(#wrapfabtest > .adBanner)
+~hdfcbank.com##.adbanner:not(#rb-adbanner)
 ##.ad_unit:not(.text-ad)
 ##.adde_modal_detector
 ##.adde_modal-overlay
@@ -330,8 +331,10 @@ _spot_id=*&zone_id=$script,~third-party
 ||adsafeprotected.com/favicon.ico$xmlhttprequest,redirect-rule=nooptext
 ||advertising.yahoo.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||advice-ads.s3.amazonaws.com^$xmlhttprequest,redirect-rule=nooptext
+||arc.io/widget.min.js$script,redirect-rule=noopjs
 ||as.inbox.com/banner_ad.gif|$image,redirect-rule=1x1-transparent.gif
 ||bebi.com/js/plugins.js$script,redirect-rule=noopjs
+||cdn.purpleads.io^$script,redirect-rule=noopjs
 ||cloudfront.net/videojs/videojs-contrib-ads.js$script,redirect-rule=noopjs
 ||coinad.org/display/items.php$script,redirect-rule=noopjs
 ||cxense.com/cx.js$script,redirect-rule=noopjs
@@ -350,10 +353,13 @@ _spot_id=*&zone_id=$script,~third-party
 ||nessainy.net/favicon.ico$image,redirect-rule=32x32-transparent.png
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication-adsbygoogle,domain=~zipextractor.app
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,redirect-rule=nooptext
+||pagead2.googlesyndication.com/pagead/show_ads.js$script,redirect-rule=noopjs
 ||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices-gpt
 ||popcash.net^$xmlhttprequest,third-party,redirect-rule=nooptext
 ||surfe.pro/js/net.js$script,xmlhttprequest,redirect-rule=noopjs
+||thisiswaldo.com/static/js/$script,redirect-rule=noopjs
 ||wpadmngr.com/static/adManager.js$script,redirect-rule=noopjs
+||wtg-ads.com/publisher/$script,redirect-rule=noopjs
 #@##Ad300x145
 ~tegaki.pipa.jp#@##Ad300x250
 #@##AdBox160
@@ -386,6 +392,7 @@ _spot_id=*&zone_id=$script,~third-party
 #@#.ad-refresh
 #@#.ad-unit
 #@#.adBanner
+#@#.adbanner
 #@#.ad_unit
 #@#.ads-iframe
 #@#.adsBanner
