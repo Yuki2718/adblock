@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220905
+! Version: 20220906
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -75,6 +75,7 @@
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$stylesheet,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,third-party,match-case
 /^https:\/\/[a-z]{8,15}\.xyz\/[%0-9a-zA-Z]{170,}$/$script,third-party
+/^https:\/\/[a-z]{8,15}\.com\/beta\/\d{3,4}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{8,15}\.com\/gamma\/\d{3,4}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{8,15}\.com\/omega\/\d{3,4}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
@@ -267,7 +268,6 @@ _spot_id=*&zone_id=$script,~third-party
 -prebid.$script,badfilter
 .com/ads.$subdocument,redirect-rule=noopframe
 .tv/ads.$xmlhttprequest,redirect-rule=prebid-ads
-/ad-300x250.jpg$image,redirect-rule=1x1-transparent.gif
 /ad_ads_advert_advertisement_adform_pub_300x250.png$image,xmlhttprequest,redirect-rule=1x1-transparent.gif
 /adblockdetect/*$~image,badfilter
 /addons/ads/*$script,redirect-rule=prebid-ads
@@ -326,6 +326,7 @@ _spot_id=*&zone_id=$script,~third-party
 @@||yahoo.bannertrack.net/serv?s=$script
 ||adblockanalytics.com/ads.js$script,redirect-rule=noopjs
 ||ads.facebook.com^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
+||ads.reddit.com^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||ads.twitter.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||ads.youtube.com^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||adsafeprotected.com/favicon.ico$xmlhttprequest,redirect-rule=nooptext

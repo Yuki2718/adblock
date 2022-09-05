@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220905
+! Version: 20220906
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -226,7 +226,7 @@ dailymail.co.uk##+js(set, PushManager, undefined)
 drive.google.com##a[data-target=clientDownload]:upward(3)
 drive.google.com##body > [aria-labelledby$=".afp"]
 facebook.com###ssrb_stories_end ~ div[class] > div[class] > div[class*=" "] > div[class] > div[class] > div[style*="border-radius"][class]
-fandom.com#?##WikiaBar:-abp-has(> #WikiaBarWrapper > .wikia-bar-anon > .message[data-wikiabarcontent])
+fandom.com#?##WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon > .message[data-wikiabarcontent])
 japancred.com##.timeline-header
 kakaku.com###modalFrame
 kyodemo.net##.is-danger.message
@@ -257,8 +257,8 @@ twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[role=dialog] div[data-testid=sheetDialog] div[dir=auto] > span[dir] > span:has-text(通知をオンにする):upward(div[role=dialog])
 w3q.jp###news-ticker-wrapper
 wowgame.jp###tubiaWalkthroughNotification
-www.dropbox.com#?#.callout-container--bottom-left:-abp-has(.callout-content-title:-abp-contains(編集しますか？))
-www.dropbox.com#?#.maestro-secondary-sidebar:-abp-has(.continuous-onboarding__heading__text:-abp-contains(新しいおすすめ))
+www.dropbox.com#?#.callout-container--bottom-left:has(.callout-content-title:has-text(編集しますか？))
+www.dropbox.com#?#.maestro-secondary-sidebar:has(.continuous-onboarding__heading__text:has-text(新しいおすすめ))
 www.google.*##div[data-notice="SAFESEARCH"]
 www.nicovideo.jp##.MylistContainer-premiumBanner
 yahoo.co.jp###mhd_uhd_pc
@@ -401,7 +401,7 @@ forbes.com##.tp-modal-open:style(overflow: auto !important; height: auto !import
 ||buy.tinypass.com/checkout/template/cacheableShow?*&iframeId=offer_*&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template$frame,3p,domain=thehindu.com
 thehindu.com##.tp-backdrop
 thehindu.com##.tp-modal-open:style(overflow: auto !important; height: auto !important;)
-thehindu.com#?#.tp-modal:-abp-has(> div.tp-iframe-wrapper > iframe[id^="offer_"][src*="/cacheableShow?aid="][src*="offerId=fakeOfferId"][src$="widget=template"])
+thehindu.com#?#.tp-modal:has(> div.tp-iframe-wrapper > iframe[id^="offer_"][src*="/cacheableShow?aid="][src*="offerId=fakeOfferId"][src$="widget=template"])
 ||ca-rent.jp/common/js/footer_top.
 ||camerakaitori.jp/cms/wp-content/themes/camera_cms_v2/images/renewal/renewal_pc_bottom_btn_
 camerakaitori.jp###renewal_bottom_bnr
@@ -941,7 +941,7 @@ cryptocurrency-jp.net,ictmakes.com###js-footer-cta
 d.tube##.sticky.centered > div.announcement[style="width: 100%;"]
 daiwa.jp##.mnyl-contact-btn
 deezer.com##.push-header:style(background: none!important)
-deezer.com#?#.modal:-abp-has(> div.modal-wrapper > div.modal-dialog > div#modal_push_premium)
+deezer.com#?#.modal:has(> div.modal-wrapper > div.modal-dialog > div#modal_push_premium)
 defenseone.com,govexec.com,nextgov.com,route-fifty.com##+js(set, GEMG.ConversionModule, noopFunc)
 democracynow.org###daily_digest_modal
 detail.chiebukuro.yahoo.co.jp###fuwa
@@ -979,8 +979,8 @@ eng-entrance.com##.left-bottom-float
 engineer-lab.findy-code.io##.popup
 equl.jp,naifix.com,shukatsuhack.com##.boxzilla-bottom-right-container
 event.rakuten.co.jp###pitari_mcw_flt
-evernote.com#?#.ReactModalPortal:-abp-has(#qa-GENERIC_LIGHTBOX_DIALOG_SUBMIT p[class^=_]:-abp-contains(無料でお試し))
-evernote.com#?#.notifications-wrapper + div + div[class^=_] > div[class^=_]:-abp-has(div[class^=_] > span[class]:-abp-contains(無料でお試し！))
+evernote.com#?#.ReactModalPortal:has(#qa-GENERIC_LIGHTBOX_DIALOG_SUBMIT p[class^=_]:has-text(無料でお試し))
+evernote.com#?#.notifications-wrapper + div + div[class^=_] > div[class^=_]:has(div[class^=_] > span[class]:has-text(無料でお試し！))
 express.co.uk##.breaking-news-container
 ext.hp.com##.cmnbox01 > div.repo
 ezgif.com##div[style$="min-height:90px;display:block"]
@@ -1051,7 +1051,7 @@ imitsu.jp###modal_bg
 informer.com###wi-plugin-corner
 instagram.com###react-root ~ div[class$=" "][role="presentation"]:has(a[href^="/accounts/"][href*="signup/"]):not(:has(button[type="button"] > div > svg[aria-label][width="18"][height="18"][viewBox*="48"]))
 instagram.com##+js(set, _sharedData.is_whitelisted_crawl_bot, true)
-instagram.com##.ZUqME:has(a[href^="/accounts/emailsignup/"])
+instagram.com##.cugdjhsh > div[class*="_"][style="width: 100%;"]
 instagram.com##body:style(overflow: visible!important;)
 instapage.com##.cpro-overlay
 investing.com###PromoteSignUpPopUp
@@ -1062,6 +1062,7 @@ iobit.com##.new-top
 iobit.com##.rabbitpopfree
 iobit.com##.rabbitpopfree:style(background: none!important)
 ipinfo.io###overlay
+islamchannel.tv###sub_news_wrapper
 j-island.net##.l-pickup
 jartic.or.jp###termsModal
 javascript.info###notify-translate-tutorial-local
@@ -1171,7 +1172,7 @@ orion-tour.co.jp,protocol.com###popup
 osf.io##.footBanners
 oshiete.goo.ne.jp###are_search_footer_popup
 otetsutabi.com##body[style$="overflow: hidden;"]:style(overflow: auto!important)
-otetsutabi.com#?#body[style$="overflow: hidden;"] > div[class^=MuiDialog-root-][elevation]:-abp-has(h6.text-break-all:-abp-contains(＼ おてつたびへようこそ！／))
+otetsutabi.com#?#body[style$="overflow: hidden;"] > div[class^=MuiDialog-root-][elevation]:has(h6.text-break-all:has-text(＼ おてつたびへようこそ！／))
 outlook.office.com###obf-ToastContainer
 !outlook.office.com##.ms-Overlay--dark
 !outlook.office.com##body[class*="css-"][style*="overflow: hidden"]:style(overflow-x: auto!important;)
@@ -1296,7 +1297,7 @@ tumblr.com##div[style^="background: rgb(124, 92, 255)"][style*="color: rgb(255, 
 tumblr.com##div[style="background:#7c5cff;color:#ffffff"]
 tv.netkeiba.com##.DetailIntroArea01, .TvIntroOverlay
 twitch.tv###twilight-sticky-footer-root
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion#?##layers > div[class] > div[class] > div[class] > div[class]:-abp-has(> div[class] > div[class] > div[class] > div[class] > div[class] > div[class] > a[href="/login"])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion#?##layers > div[class] > div[class] > div[class] > div[class]:has(> div[class] > div[class] > div[class] > div[class] > div[class] > div[class] > a[href="/login"])
 u.pcloud.link##div[class^="Modal__FadeTranstionContainer"]
 u.pcloud.link##html.g-modal-open:style(overflow: auto!important;)
 u.pcloud.link##html.g-modal-open body:style(overflow: auto!important;)
@@ -1334,8 +1335,8 @@ wizcase.com###bio_ep, #bio_ep_bg
 wizcase.com##body[style="overflow: hidden;"]:style(overflow:auto !important)
 wordpress.com###marketingbar
 www.dropbox.com##.dig-Menu-backdrop, .waffle-menu__backdrop
-www.dropbox.com#?##upsell-home-modal:-abp-has(.confirm-button:-abp-contains(/Business をお試し|アプリをダウンロード/))
-www.dropbox.com#?#.persistent-footer:-abp-has(> .persistent-footer__footer-ctas > .persistent-footer__signup-button)
+www.dropbox.com#?##upsell-home-modal:has(.confirm-button:has-text(/Business をお試し|アプリをダウンロード/))
+www.dropbox.com#?#.persistent-footer:has(> .persistent-footer__footer-ctas > .persistent-footer__signup-button)
 www.elecom.co.jp###js-business-panel
 www.icloud.com##.notice-view-container
 www.microsoft.com##body.p_onestore.deferred-popup:style(overflow:visible !important)
@@ -1351,6 +1352,7 @@ yoriso.com##.footer-cta
 youtube.com##yt-mealbar-promo-renderer
 youtube.com##ytd-popup-container > .ytd-popup-container > #contentWrapper > .ytd-popup-container[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"]
 youtube4kdownloader.com###fixed-addon-banner
+zaif.jp##.banner-account-wrap
 zerohedge.com##+js(aeld, mouseout)
 zexybaby.zexy.net###fixed_btn
 zoom-support.nissho-ele.co.jp##.fixedBn
@@ -1443,7 +1445,7 @@ dldlinks.com,dldshare.net##+js(aopr, age_gate_params)
 dokuha.jp###modal-comicday-desc
 dokuha.jp##.modal-backdrop
 dokuha.jp##.modal-open:style(overflow: auto !important;)
-flipboard.com#?#.app > div > div.modal-overlay:-abp-has(> section > div.mobile-gate)
+flipboard.com#?#.app > div > div.modal-overlay:has(> section > div.mobile-gate)
 flipboard.com##body:style(overflow: visible!important; position: static!important;)
 game8.jp##.l-fixedFunctionLinkContainer
 girlschannel.net###popupModal
@@ -1775,7 +1777,7 @@ marketing-campus.jp##.mod_mailbox
 markezine.jp##.l-sidebar_inner > div.c-ctabox
 mashingup.jp##div[class$="MailMagazine"]
 moongift.jp##.pre_text.mg-no-premium
-motorsport.com#?#.ms-footer > div.ms-footer_top:-abp-has(> div.ms-footer_top-start > a[href="/info/newsletter/"])
+motorsport.com#?#.ms-footer > div.ms-footer_top:has(> div.ms-footer_top-start > a[href="/info/newsletter/"])
 mrcasinova.com##.email-subscribe
 mtame.jp##.e_zine_box
 mylohas.net##.s-Present
@@ -1834,7 +1836,6 @@ wsj.com##.type-InsetNewsletterSignup
 wwdjapan.com###wwdj-registration-2
 www.asahi.com##.p-news + .p-info
 xda-developers.com###newsletter-sidebar-subscribe
-zdnet.com##div[data-component="newsletterWidget"]
 
 !#if !env_firefox
 webbu.jp###text-7
@@ -2157,6 +2158,7 @@ gamewith.jp##.walkthrough-recruit-banner:upward(1)
 h0874.com###channelBanner2
 ||hnavi.co.jp/wp-content/themes/hnavi/assets/img/site/new-3step-alt02.jpg
 ||hrpro.co.jp/images/banner_img/sp_
+||ict-enews.net/img/banner/
 ||idcf.jp/sevice_shared/img/*/bnr_
 ||ibarakinews.jp/image/banner/
 ||isenp.co.jp/images/regmie.
@@ -2433,7 +2435,7 @@ cityheaven.net###widget_recruitmens
 gamewith.jp##.gdb-ranking-slider.is-pr
 goo.ne.jp##.header-blow
 lulucos-bys.jp##.m-banner-download-app-top-fixed
-m.crank-in.net#?#.latest_news > li > article:-abp-has(> a[href] > .ci_list_all > .ci_list_all_discription-area > p > .insert_pr)
+m.crank-in.net#?#.latest_news > li > article:has(> a[href] > .ci_list_all > .ci_list_all_discription-area > p > .insert_pr)
 m.mail.yahoo.co.jp###bnr_f2
 m.qoo10.jp###signup_popup
 pixiv.net##.premium-denki-t-footer
@@ -2482,7 +2484,7 @@ ac-illust.com,photo-ac.com,silhouette-ac.com###eachDownloadedModal .ac-btn[href^
 ac-illust.com,photo-ac.com,silhouette-ac.com##.modal-backdrop
 ac-illust.com,photo-ac.com,silhouette-ac.com##body.modal-open *:style(filter: none !important;)
 ac-illust.com,photo-ac.com,silhouette-ac.com##body.modal-open:style(overflow: auto !important;)
-adblockeronstape.*,adblockeronstreamtape.*,highload.to,shavetape.*,strcloud.*,streamadblockplus.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*##+js(nano-stb, counter)
+adblockeronstape.*,adblockeronstreamtape.*,adblockplustape.com,highload.to,shavetape.*,strcloud.*,streamadblockplus.*,streamta.*,streamtape.*,strtape.*,strtapeadblock.*##+js(nano-stb, counter)
 adfoc.us,bitmos.co.in##+js(set, count, 0)
 adnit.xyz,toptap.website##+js(set, timedisplay, 0)
 aemenstore.com,aloass.com,alobyt.com,alocd.com,alogum.com,aloguy.com,alohdd.com,anhdep24.com,byboe.com,cazzette.com,dreamcheeky.com,fidlarmusic.com,hookeaudio.com,jncojeans.com,kiemlua.com,kingsleynyc.com,lucidcam.com,nousdecor.com,pennbookcenter.com,publicananker.com,restorbio.com,rezence.com,rodjulian.com,staaker.com,truebrandy.com,uebnews.online,thegoneapp.com###link1s-generate
@@ -2507,6 +2509,7 @@ appsmodz.com,mac-torrent-download.net,note1s.com,paste1s.com##+js(ra, disabled, 
 appvn.com###info:style(display: block !important)
 appvn.com##.downloadtitle
 azmath.info,downfile.site,downphanmem.com,memangbau.com,trangchu.news##+js(nano-stb, "#proceed", 9000)
+baketax.com,play.possiblewithelementor.com###myClickButton:others()
 baketax.com,play.possiblewithelementor.com##+js(nano-stb, [native code])
 baketax.com,play.possiblewithelementor.com##+js(nano-stb, recurseMyFunction)
 baketax.com,play.possiblewithelementor.com##+js(nano-stb, myCount)
@@ -2586,6 +2589,7 @@ ponta.abstractpainting.work##+js(set, FIRST_DELAY, 0)
 ponta.abstractpainting.work##+js(set, NEXT_DELAY, 0)
 premiumebooks.xyz##+js(nano-stb, st2)
 premiumebooks.xyz##+js(nano-stb, subentry, 4000)
+privatemoviez.fun##+js(nano-sib, countc)
 promo-visits.site,satoshi-win.xyz,shorterall.com##.btn-primary:style(visibility: visible !important;)
 promo-visits.site,satoshi-win.xyz,shorterall.com##+js(ra, disabled, .btn-primary)
 proviralhost.com,urbharat.xyz##+js(nano-sib, timePassed, 1300)
