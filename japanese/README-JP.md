@@ -11,9 +11,9 @@ Chrome, Edge上でuBlock Originをご利用の方は、主に３つの選択肢�
 
 - Braveブラウザに移行する
 
-  <sup>ブラウザ組込みのブロッカーとしては唯一、uBlock Originに[準ずる性能](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q3-%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E7%B5%84%E8%BE%BC%E3%81%BF%E3%81%AE%E3%83%96%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%81%AF%E3%81%A9%E3%81%86%E3%81%A7%E3%81%99%E3%81%8B)があります</sup>
+  <sup>ブラウザ組込みのブロッカーとしては唯一、uBlock Originに[準ずる性能](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q1-3-%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E7%B5%84%E8%BE%BC%E3%81%BF%E3%81%AE%E3%83%96%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%81%AF%E3%81%A9%E3%81%86%E3%81%A7%E3%81%99%E3%81%8B)があります</sup>
 
-（[FAQ A4](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q4-chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AEmanifest-v3mv3%E7%A7%BB%E8%A1%8C%E3%81%A7%E5%BA%83%E5%91%8A%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E6%8B%A1%E5%BC%B5%E3%81%AF%E4%BD%BF%E3%81%88%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E3%81%A8%E8%81%9E%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F)も参照）
+（[FAQ A1-4](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q1-4-chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AEmanifest-v3mv3%E7%A7%BB%E8%A1%8C%E3%81%A7%E5%BA%83%E5%91%8A%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E6%8B%A1%E5%BC%B5%E3%81%AF%E4%BD%BF%E3%81%88%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E3%81%A8%E8%81%9E%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F)も参照）
 
 ### お知らせ（2022年7月27日：Youtube広告および不具合について）
 
@@ -354,7 +354,7 @@ GithubのIssueか[掲示板](https://jbbs.shitaraba.net/internet/25463/)を通�
 
 - 失効ドメインや不要になったルールは見つけ次第取り除く方針です。失効ドメインでもリクエストは発生するため、ほかのフィルタよりブロックが少なく見えることがあり得ます。
 
-- Yuki's uBlock Japanese filtersファミリーでは日本のサイトと、日本人が訪れる一部の海外サイトを対象としています。後者の詳細は[こちら](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q26-%E9%9B%AA%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%81%AE%E4%B8%AD%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%A8%E6%B5%B7%E5%A4%96%E3%82%B5%E3%82%A4%E3%83%88%E7%94%A8%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%8C%E7%B5%90%E6%A7%8B%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8C%E5%AF%BE%E8%B1%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)をご覧ください。
+- Yuki's uBlock Japanese filtersファミリーでは日本のサイトと、日本人が訪れる一部の海外サイトを対象としています。後者の詳細は[こちら](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q4-1-%E9%9B%AA%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%81%AE%E4%B8%AD%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%A8%E6%B5%B7%E5%A4%96%E3%82%B5%E3%82%A4%E3%83%88%E7%94%A8%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%8C%E7%B5%90%E6%A7%8B%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8C%E5%AF%BE%E8%B1%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)をご覧ください。
 
 - ブロッカー検知用の罠スクリプトは意図的にブロックから除外しています。初心者の方にはこれがブロック漏れにみえるようです（[例1](https://github.com/easylist/easylist/issues/6407)、[例2](https://github.com/AdguardTeam/AdguardFilters/issues/67785)）。報告は実際の問題に対して行うか、せめてスクリプトの内容を確認してからにしてください。
 
@@ -375,7 +375,7 @@ GithubのIssueか[掲示板](https://jbbs.shitaraba.net/internet/25463/)を通�
 EasyListなどの国際的な広告ブロックコミュニティにボランティアとして二年以上貢献を続けており、uBlock内製フィルタおよびAdGuard公式フィルタの共同管理者でもあります。280blockerさん、もちフィルタさん、豆腐フィルタさんなどにも問題報告をすることがあります。AppleストアにあるYuki - Ad Blocker+ for YouTubeとは何の関係もありません、念のため。
 
 [^1]: AdGuardはuBlock Origin文法と高い互換性を持っているとはいえ、Yuki's uBlock Japanese filtersはAdGuardで機能しない書き方を多数用いています（例：末尾以外の`:upward()`）。また、スクリプトレットなどのリソースの互換性やAdGuard標準リストとの干渉によって不具合やポップアップ、アンチ広告ブロックを惹起するケースが多数ある上、AdGuard for Android/Windowsなどアプリ版ではCSSの優先度やルール処理の優先順位など別の問題もあり、誤爆の危険もあります。AdGuardで標準のリストをご利用の場合、Yuki's uBlock Japanese filtersとの差をいくらか埋め合わせるアンチ広告ブロック対策強化パッチも提供しています。なお、uBlock OriginはVivaldiを[公式にサポートしていません]((https://www.reddit.com/r/uBlockOrigin/comments/l2ik0b/excessive_ads_count_on_youtube_gets_really_heavy/gk8fxt4/))が、Yuki's uBlock Japanese filtersファミリーはVivaldi上のuBlock Originをサポートしており、Vivaldi固有の問題にも対応しています。Vivaldi内臓のブロッカーはサポートしません。
-[^2]: いくつかの日本用フィルタと同様、日本語話者がよく利用すると思われる海外サイトにも対応しています（[FAQ A27](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q27-%E9%9B%AA%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%81%AE%E4%B8%AD%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%A8%E6%B5%B7%E5%A4%96%E3%82%B5%E3%82%A4%E3%83%88%E7%94%A8%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%8C%E7%B5%90%E6%A7%8B%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8C%E5%AF%BE%E8%B1%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)）。ただし、日本できわめてメジャーなサイトを除き多少の空白、枠残りなどは許容するものとします。
+[^2]: いくつかの日本用フィルタと同様、日本語話者がよく利用すると思われる海外サイトにも対応しています（[FAQ A4-1](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q4-1-%E9%9B%AA%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%81%AE%E4%B8%AD%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%A8%E6%B5%B7%E5%A4%96%E3%82%B5%E3%82%A4%E3%83%88%E7%94%A8%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AB%E3%81%8C%E7%B5%90%E6%A7%8B%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%B5%E3%82%A4%E3%83%88%E3%81%8C%E5%AF%BE%E8%B1%A1%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)）。ただし、日本できわめてメジャーなサイトを除き多少の空白、枠残りなどは許容するものとします。
 [^3]: 後述のようにEasyListやEasyPrivacyなどから多くのルールを取り入れているものの、誤爆率の高いルールは除外しています。EasyPrivacyではレコメンドウィジェットやプッシュ通知などもブロックしていますが、これには異論もあるためこちらではAnnoyancesに分類しています。また私の知るこれらのフィルタによる誤爆で、未報告または報告済みだが未対処のものにも対応しています。一方、EasyPrivacyなどに含まれていないアクセス解析も（誤爆率の高そうなもの以外）多く盛り込んでいます。
 [^4]: これまでに`match-case`, `matches-path`などの新機能を追加してもらっているほか、Issueや内部的なやりとりを通してスクリプトレットやリダイレクトリソースの追加・強化を多数依頼し、ほぼすべて了承されています。
 [^5]: 「要素をブロック」機能でマイフィルターを作っている人も同様です。画像についてはブロックしてくれることもありますが、イニシエイターはお手上げです。非表示についても質の低いルールが多いです。同機能は[あくまで補助であり](https://github.com/uBlockOrigin/uBlock-issues/issues/1058#issuecomment-631459847)、過剰に頼るべきではありません。

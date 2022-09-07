@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220906
+! Version: 20220908
 
 ! YouTube プロモーションを含みます
 youtube-nocookie.com,youtube.com##.ytp-paid-content-overlay
@@ -25,6 +25,7 @@ youtube-nocookie.com,youtube.com##.ytp-paid-content-overlay
 ||ekr.zdassets.com/compose/zopim_chat/
 ||helpscout.net^$3p
 ||hitobo.io/chat.js
+||hokende.com/pcsp/*/widget/avatar_room_block/
 ||j-net21.smrj.go.jp/common/chatbot/js/esodan-banner.js
 j-net21.smrj.go.jp###esodan-banner
 ||js.zohocdn.com/salesiq/js/floatbutton_*.js
@@ -51,12 +52,14 @@ j-net21.smrj.go.jp###esodan-banner
 game.granbluefantasy.jp##body.jssdk > div[class^=_2]:first-child > div[class^=_2]:first-child > div[data-reactid=".0"]:only-child > div[data-menubar-container][data-reactid=".0.0"]
 
 ! Twitter いまどうしてる？
-twitter.com##div[data-testid=sidebarColumn] div > div > div > section > div[aria-label="タイムライン: トレンド"]:upward(3)
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[data-testid=sidebarColumn] div > div > div > section > div[aria-label="タイムライン: トレンド"]:upward(3)
 ! その他のツイート
-twitter.com##div[aria-label="タイムライン: 会話"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(その他のツイート):upward(div[style^=transform])
-twitter.com##div[aria-label="タイムライン: 会話"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(その他のツイート):upward(div[style^=transform]) ~ div[style^=transform]
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 会話"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(その他のツイート):upward(div[style^=transform])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 会話"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(その他のツイート):upward(div[style^=transform]) ~ div[style^=transform]
 ! Twitter アカウント作成ウィジェット https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1598352715/320
 twitter.com##div[data-testid=sidebarColumn] section[aria-label=アカウント作成]
+! 〇〇さんのツイートをさらに表示 副作用：新規ツイート読み込めず（CSPによりこれ以上の対応不可）
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[role=dialog] div[data-testid=sheetDialog] div[dir=auto] > span > span > span:has-text(Twitterなら、「いま」):upward(div[role=dialog])
 
 ! Instagram おすすめ サイド
 instagram.com##main > section > div[style^=left] > div > div > a[href="/explore/people/"]:upward(2)
@@ -115,7 +118,8 @@ nhk.or.jp##.p-topicSideComment
 
 ! クッキーダイアログ 副作用あり
 ! Bloomberg https://github.com/uBlockOrigin/uAssets/issues/463#issuecomment-345464753
-/wrapperMessagingWithoutDetection.js$domain=bloomberg.*
+! https://github.com/easylist/easylist/commit/e3ec14eb1ff2be65d235ec649254449bc9c0ca3e
+/wrapperMessagingWithoutDetection.js$domain=bloomberg.*|sky.com
 ! Guardian https://github.com/uBlockOrigin/uAssets/issues/7377#issuecomment-1181702076
 ||cdn.privacy-mgmt.com/consent/$domain=sourcepoint.theguardian.com,important
 theguardian.com##div[id^="sp_message_"]
