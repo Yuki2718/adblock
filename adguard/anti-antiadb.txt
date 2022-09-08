@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220906
+! Version: 20220908
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -253,6 +253,7 @@ _spot_id=*&zone_id=$script,~third-party
 ##div[style^="z-index: 2147483647 !important; position: fixed !important; width: 420px !important; height:"]
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]
 ##iframe[class][scrolling=no][sandbox="allow-same-origin allow-scripts allow-popups"][style*="z-index: 2147483647; position: fixed"]
+##iframe[src^="//tsyndicate.com/iframes2/"]
 ##iframe[style*="opacity: 1 !important; max-width:"][style*="position: fixed !important; display: block !important; z-index: 2147483647 !important; inset:"]
 ##iframe[style*="z-index: 2147483647; min-width: 240px !important; display: block !important; max-width:"]
 ##iframe[style^="width: 100% !important; height: 100% !important; margin: 0px; padding: 0px"][style$="overflow: hidden; z-index: 2147483647;"]
@@ -269,6 +270,7 @@ _spot_id=*&zone_id=$script,~third-party
 .com/ads.$subdocument,redirect-rule=noopframe
 .tv/ads.$xmlhttprequest,redirect-rule=prebid-ads
 /ad_ads_advert_advertisement_adform_pub_300x250.png$image,xmlhttprequest,redirect-rule=1x1-transparent.gif
+/adblock_detector.$script,redirect-rule=noopjs
 /adblockdetect/*$~image,badfilter
 /addons/ads/*$script,redirect-rule=prebid-ads
 /ads-min.$badfilter
