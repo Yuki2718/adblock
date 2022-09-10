@@ -16,7 +16,7 @@ Chrome, Edge上でuBlock Originをご利用の方は、主に３つの選択肢�
 <details>
 <summary>移行先として不適当なもの</summary>
 
-あくまで、uBlock Originの移行先としては問題があるという意味で、個人的に満足しているなら問題ありません。
+あくまで、uBlock Originからの移行先としては問題があるという意味で、個人的に満足しているなら問題ありません。
 
 - Vivaldiの組込みブロッカー
 
