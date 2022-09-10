@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220910
+! Version: 20220911
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -1194,6 +1194,9 @@ picsart.com##[class^="pa-monetization"]
 pinterest.*##body:style(overflow-y: scroll !important;)
 pinterest.*##div[data-test-id="giftWrap"]
 pinterest.*##div[style="visibility: visible; top: 80px; left: 99px;"]:has-text(探したい)
+pixlr.com##.blur:style(filter: none !important;)
+pixlr.com##a[href="/pricing/"][style^="display:flex;padding:0px 30px;gap:30px;justify-content:center;align-items: center;height:80px;width:100%;z-index:99;position:absolute"]
+pixlr.com#?#.modal:has(> div.news-dialog)
 plus.nhk.jp##div > div.dialog > div.popup > div.popup--options > a[class=""][href*="?playlist_id"]:upward(4)
 polygon.com##.c-toaster[data-cdata*="Polygon Weekly Update Newsletter"]
 ppc-master.jp##.banner1
