@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220911
+! Version: 20220912
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -578,8 +578,8 @@ blockchain.com##body div[class^="TrackingProvider__Banner"]
 blocksite.co###elementor-popup-modal-1372
 blog.hatena.ne.jp###header-cookie-notify
 bloomberg.*##html.sp-message-open > body:style(position: unset !important; overflow: unset !important; margin-top: 0 !important)
+bloomberg.*##body:not(:has(div[class*="player" i][class*="_container"], #root .datastrip)) > div[id^="sp_message_container"]
 bloomberg.*##html.sp-message-open:style(width: initial !important)
-bloomberg.*#?#body:not(:has(div[class*="player" i][class*="_container"], #root .datastrip)) > div[id^="sp_message_container"]
 bloomberglaw.com##div[class^="CookieNotice_cookiesBar"]
 bluesound.com##.privacy-notice
 bmw.com##amp-consent
@@ -823,7 +823,7 @@ i.mi.com##div[class^="order-"][class*="policy-"]
 ibexa.co,indexexchange.com###cookie-consent-banner
 ibispaint.com###agreementPane
 icegaytube.tv##.b-cookie
-iconscout.com#?##__layout > div > div.font-size-sm.rounded:has(> div > a[href="/legal/privacy-policy"])
+iconscout.com###__layout > div > div.font-size-sm.rounded:has(> div > a[href="/legal/privacy-policy"])
 idaireland.jp##.cookie-overlay
 ids-imaging.com###privacycheck
 ihi.co.jp###cookiepop
@@ -1192,7 +1192,7 @@ transcend-info.com###legal_notice
 transfermarkt.jp##+js(aopr, window._sp_)
 travel2be.com###alertCookies
 trendmicro.com##.cookie_verif
-tresorit.com#?#footer + aside[class^="cM_"]:has(> div > div > img[alt="Cookie"])
+tresorit.com##footer + aside[class^="cM_"]:has(> div > div > img[alt="Cookie"])
 trustsign.com.br##.privacy-policy-container
 tskg-hd.com##.box_gdpr
 ttoday.it##.cli-barmodal-open:style(overflow: auto !important;)

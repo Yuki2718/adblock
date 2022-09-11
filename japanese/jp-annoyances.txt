@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220911
+! Version: 20220912
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -226,7 +226,7 @@ dailymail.co.uk##+js(set, PushManager, undefined)
 drive.google.com##a[data-target=clientDownload]:upward(3)
 drive.google.com##body > [aria-labelledby$=".afp"]
 facebook.com###ssrb_stories_end ~ div[class] > div[class] > div[class*=" "] > div[class] > div[class] > div[style*="border-radius"][class]
-fandom.com#?##WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon > .message[data-wikiabarcontent])
+fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon > .message[data-wikiabarcontent])
 japancred.com##.timeline-header
 kakaku.com###modalFrame
 kyodemo.net##.is-danger.message
@@ -401,7 +401,7 @@ forbes.com##.tp-modal-open:style(overflow: auto !important; height: auto !import
 ||buy.tinypass.com/checkout/template/cacheableShow?*&iframeId=offer_*&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid.tinypass.com%2Fid%2F&widget=template$frame,3p,domain=thehindu.com
 thehindu.com##.tp-backdrop
 thehindu.com##.tp-modal-open:style(overflow: auto !important; height: auto !important;)
-thehindu.com#?#.tp-modal:has(> div.tp-iframe-wrapper > iframe[id^="offer_"][src*="/cacheableShow?aid="][src*="offerId=fakeOfferId"][src$="widget=template"])
+thehindu.com##.tp-modal:has(> div.tp-iframe-wrapper > iframe[id^="offer_"][src*="/cacheableShow?aid="][src*="offerId=fakeOfferId"][src$="widget=template"])
 ||ca-rent.jp/common/js/footer_top.
 ||camerakaitori.jp/cms/wp-content/themes/camera_cms_v2/images/renewal/renewal_pc_bottom_btn_
 camerakaitori.jp###renewal_bottom_bnr
@@ -589,6 +589,8 @@ jpss.jp###jpss2017r-mod-directregistbox
 jsco-cpg.jp##.popmake-overlay
 ||jyukunavi.jp/img2/common/brand_detail/scr_cambnr_
 jyukunavi.jp##.js-modal-window.js-scroll-campbnr
+||kaitori.bikebros.co.jp/img/freetel_fixed.gif
+kaitori.bikebros.co.jp##.freetel
 ||kaitoricollector.com/devlop/wp-content/themes/nhc001/common/images/top/footer_
 kaitoricollector.com##.footer_contact
 ||keiyaku-watch.jp/dcms_media/image/side_dl.
@@ -942,8 +944,8 @@ creativecommons.org###deed-donate-slide
 cryptocurrency-jp.net,ictmakes.com###js-footer-cta
 d.tube##.sticky.centered > div.announcement[style="width: 100%;"]
 daiwa.jp##.mnyl-contact-btn
+deezer.com##.modal:has(> div.modal-wrapper > div.modal-dialog > div#modal_push_premium)
 deezer.com##.push-header:style(background: none!important)
-deezer.com#?#.modal:has(> div.modal-wrapper > div.modal-dialog > div#modal_push_premium)
 defenseone.com,govexec.com,nextgov.com,route-fifty.com##+js(set, GEMG.ConversionModule, noopFunc)
 democracynow.org###daily_digest_modal
 detail.chiebukuro.yahoo.co.jp###fuwa
@@ -1195,8 +1197,8 @@ pinterest.*##body:style(overflow-y: scroll !important;)
 pinterest.*##div[data-test-id="giftWrap"]
 pinterest.*##div[style="visibility: visible; top: 80px; left: 99px;"]:has-text(探したい)
 pixlr.com##.blur:style(filter: none !important;)
+pixlr.com##.modal:has(> div.news-dialog)
 pixlr.com##a[href="/pricing/"][style^="display:flex;padding:0px 30px;gap:30px;justify-content:center;align-items: center;height:80px;width:100%;z-index:99;position:absolute"]
-pixlr.com#?#.modal:has(> div.news-dialog)
 plus.nhk.jp##div > div.dialog > div.popup > div.popup--options > a[class=""][href*="?playlist_id"]:upward(4)
 polygon.com##.c-toaster[data-cdata*="Polygon Weekly Update Newsletter"]
 ppc-master.jp##.banner1
@@ -1304,7 +1306,7 @@ tumblr.com##div[style="background:#7c5cff;color:#ffffff"]
 tv.netkeiba.com##.DetailIntroArea01, .TvIntroOverlay
 twitch.tv###twilight-sticky-footer-root
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion###layers > div[class] > div[class] > div[class] > div[class] > div[class] > div[dir] > span:has-text(Twitterアプリで開く):upward(3)
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion#?##layers > div[class] > div[class] > div[class] > div[class]:has(> div[class] > div[class] > div[class] > div[class] > div[class] > div[class] > a[href="/login"])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion###layers > div[class] > div[class] > div[class] > div[class]:has(> div[class] > div[class] > div[class] > div[class] > div[class] > div[class] > a[href="/login"])
 u.pcloud.link##div[class^="Modal__FadeTranstionContainer"]
 u.pcloud.link##html.g-modal-open:style(overflow: auto!important;)
 u.pcloud.link##html.g-modal-open body:style(overflow: auto!important;)
@@ -1342,8 +1344,8 @@ wizcase.com###bio_ep, #bio_ep_bg
 wizcase.com##body[style="overflow: hidden;"]:style(overflow:auto !important)
 wordpress.com###marketingbar
 www.dropbox.com##.dig-Menu-backdrop, .waffle-menu__backdrop
+www.dropbox.com##.persistent-footer:has(> .persistent-footer__footer-ctas > .persistent-footer__signup-button)
 www.dropbox.com#?##upsell-home-modal:has(.confirm-button:has-text(/Business をお試し|アプリをダウンロード/))
-www.dropbox.com#?#.persistent-footer:has(> .persistent-footer__footer-ctas > .persistent-footer__signup-button)
 www.elecom.co.jp###js-business-panel
 www.icloud.com##.notice-view-container
 www.microsoft.com##body.p_onestore.deferred-popup:style(overflow:visible !important)
@@ -1452,7 +1454,7 @@ dldlinks.com,dldshare.net##+js(aopr, age_gate_params)
 dokuha.jp###modal-comicday-desc
 dokuha.jp##.modal-backdrop
 dokuha.jp##.modal-open:style(overflow: auto !important;)
-flipboard.com#?#.app > div > div.modal-overlay:has(> section > div.mobile-gate)
+flipboard.com##.app > div > div.modal-overlay:has(> section > div.mobile-gate)
 flipboard.com##body:style(overflow: visible!important; position: static!important;)
 game8.jp##.l-fixedFunctionLinkContainer
 girlschannel.net###popupModal
@@ -1786,7 +1788,7 @@ marketing-campus.jp##.mod_mailbox
 markezine.jp##.l-sidebar_inner > div.c-ctabox
 mashingup.jp##div[class$="MailMagazine"]
 moongift.jp##.pre_text.mg-no-premium
-motorsport.com#?#.ms-footer > div.ms-footer_top:has(> div.ms-footer_top-start > a[href="/info/newsletter/"])
+motorsport.com##.ms-footer > div.ms-footer_top:has(> div.ms-footer_top-start > a[href="/info/newsletter/"])
 mrcasinova.com##.email-subscribe
 mtame.jp##.e_zine_box
 mylohas.net##.s-Present
@@ -1940,7 +1942,7 @@ bepal.net##.modBlockAdsOsusume
 biteki.com##.btn_back_to_list + div > .recommend_title
 bunshun.jp##.block-header:has-text(SPECIAL)
 bunshun.jp##a[href$="?ref=special"]
-crank-in.net##.right_in [id^=_popIn_trend]:upward(.right_in)
+crank-in.net##.right_in:has(div[id^=_popIn_trend])
 crank-in.net##section .uz-ny:upward(1)
 cybozu.help###enquete
 cs.myjcom.jp###enq_fixed
@@ -1956,6 +1958,7 @@ facebook.com##fieldset > legend > div[style^="margin-start"] span > span[style$=
 fandom.com###SurveyModule
 finders.me##.__popin
 finders.me##.__recommendedPosts
+forbesjapan.com##.main-article-padding > .stream-body-container > .sticky_column_wrap:has(.ad-rail)
 fujinkoron.jp##.recommend
 google.*###google-hats-survey
 i-voce.jp##.recommendSlideSheetArea
@@ -1998,20 +2001,20 @@ tiktok.com##.feedback
 topics.or.jp##.recommend-article
 transit.yahoo.co.jp##.realestateSlink
 ! おすすめのツイート
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##article[data-testid=tweet] span[aria-label^="おすすめトピック:"][data-testid=socialContext]:upward(article)
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##article[data-testid=tweet]:has(span[aria-label^="おすすめトピック:"][data-testid=socialContext])
 ! おすすめユーザー
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##aside[aria-label=おすすめユーザー]:upward(1)
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^=transform] > div a[href^="/i/connect_people?"]
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"]  > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(おすすめユーザー):upward(div[style^=transform])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"]  > div > div[style^=transform]:has(div[aria-label^=フォロー][role=button] > div > span > span)
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 話題を検索"] > div > div[style^=transform] > div a[href^="/i/connect_people?"]
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 話題を検索"] > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 話題を検索"] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(おすすめユーザー):upward(div[style^=transform])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 話題を検索"] > div > div[style^=transform]:has(div[aria-label^=フォロー][role=button] > div > span > span)
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] > div a[href^="/i/connect_people?"]
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] h2 > div[style^="-webkit"] > span:has-text(おすすめユーザー):upward(div[style^=transform])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform]:has(div[aria-label^=フォロー][role=button] > div > span > span)
 ! リツイートをもとにおすすめ
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^=transform] a[id][href^="/i/topics/"] > span[aria-label^=おすすめトピック]:upward(div[style^=transform])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"] > div > div[style^=transform]:has(a[id][href^="/i/topics/"] > span[aria-label^=おすすめトピック])
 ! おすすめトピック
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: "] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[aria-label="タイムライン: "])
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] > div a[href^="/i/topics/picker/home"]
@@ -2020,8 +2023,8 @@ twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[style^=transform])
 ! リストを見つける
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 自分のリスト"] > div > div[style^=transform] > div a[href="/i/lists/suggested"]
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 自分のリスト"] > div > div[style^=transform] > div > div > div[role=link] div[role=button] > div > span > span:upward(div[style^=transform])
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 自分のリスト"] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text(新しいリストを見つける):upward(div[style^=transform])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: 自分のリスト"] > div > div[style^=transform]:has(> div > div > div[role=link] div[role=button] > div > span > span)
 ! タイムラインにトピックも表示しましょう
 !twitter.com##div[style^="position: absolute"] section > div[aria-label="タイムライン: Carousel"] > nav div[role=presentation]:first-child > div > div:first-child div[aria-label^="トピック「"]:upward(div[style^="position: absolute"])
 !twitter.com##div[aria-label="タイムライン: ホームタイムライン"] > div[style] > div[style^="position: absolute"] div > a[href="/i/topics/picker/home"]:upward(div[style^="position: absolute"])
@@ -2030,7 +2033,7 @@ twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[
 ! プッシュ通知
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label^="タイムライン: "] > div > div[style^=transform] h1 > span:has-text(プッシュ通知):upward(div[style^=transform])
 ! カスタマイズした広告
-twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"]  > div > div[style^=transform] span > a[href="/settings/account/personalization"]:upward(div[style^=transform])
+twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: ホームタイムライン"]  > div > div[style^=transform]:has(span > a[href="/settings/account/personalization"])
 ! 関連トピック
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: タイムラインを検索"] h2 > div[style^=-webkit] > span:has-text(関連トピック):upward(div[style^=transform])
 twitter.com,twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion##div[aria-label="タイムライン: タイムラインを検索"] > div > div[style^=transform] > div > div > a[href^="/i/topics/"]
@@ -2447,7 +2450,7 @@ cityheaven.net###widget_recruitmens
 gamewith.jp##.gdb-ranking-slider.is-pr
 goo.ne.jp##.header-blow
 lulucos-bys.jp##.m-banner-download-app-top-fixed
-m.crank-in.net#?#.latest_news > li > article:has(> a[href] > .ci_list_all > .ci_list_all_discription-area > p > .insert_pr)
+m.crank-in.net##.latest_news > li > article:has(> a[href] > .ci_list_all > .ci_list_all_discription-area > p > .insert_pr)
 m.mail.yahoo.co.jp###bnr_f2
 m.qoo10.jp###signup_popup
 pixiv.net##.premium-denki-t-footer
@@ -2534,7 +2537,7 @@ bloggertheme.xyz###getlink, #pop-button:style(display: block !important;)
 bloggertheme.xyz##+js(nano-stb, waiting, 5000)
 bluemediafiles.com,onlyhgames.com##+js(nano-sib, i--)
 bluemediafiles.com##+js(set, Time_Start, 0)
-cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,hfneiott.buzz,imgalor.xyz,imgbbd.buzz,imgbew.buzz,imgbjryy.buzz,imgewe.buzz,imgeza.buzz,imgiut.buzz,imgizw.buzz,imgizx.buzz,imgjetr.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imgkuz.buzz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgmth.buzz,imgnfhr.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqew.buzz,imgqte.buzz,imgqwt.buzz,imgtrw.buzz,imgtwq.buzz,imguiwe.buzz,imguo.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxelz.buzz,imgxhfr.buzz,imgxvd.buzz,imgxxxx.buzz,imgyng.buzz,imgyvdw.buzz,imgzzzz.buzz,imslp.org,lgjreelqq.buzz,michaelemad.com,mrlzqoe.buzz,pyotinle.buzz,studyranks.in,technoflip.in,techware.online,theicongenerator.com,utinwpqqui.buzz,world-trips.net,xmbme.buzz,zentum.club##+js(nano-sib, timer)
+cararegistrasi.com,chooyomi.com,financeflix.in,flightsim.to,forex-trnd.com,hfneiott.buzz,imgalor.xyz,imgbbd.buzz,imgbew.buzz,imgbjryy.buzz,imgewe.buzz,imgeza.buzz,imgiut.buzz,imgizw.buzz,imgizx.buzz,imgjetr.buzz,imgjut.buzz,imgkane.buzz,imgkia.*,imgkoc.buzz,imgkoka.buzz,imgkorle.buzz,imgkuiw.xyz,imgkuz.buzz,imglina.xyz,imglkju.buzz,imglqw.buzz,imgmeno.buzz,imgmth.buzz,imgnfhr.buzz,imgoiu.buzz,imgokr.buzz,imgowk.buzz,imgqew.buzz,imgqte.buzz,imgqwt.buzz,imgtrw.buzz,imgtwq.buzz,imguiwe.buzz,imguo.buzz,imgux.buzz,imguytx.buzz,imguz.buzz,imgveni.xyz,imgwang.buzz,imgweika.buzz,imgwer.buzz,imgwex.buzz,imgwia.buzz,imgxann.buzz,imgxaqq.buzz,imgxbe.buzz,imgxelz.buzz,imgxhfr.buzz,imgxvd.buzz,imgxxxx.buzz,imgyng.buzz,imgyvdw.buzz,imgzzzz.buzz,imslp.org,lgjreelqq.buzz,michaelemad.com,mrlzqoe.buzz,pyotinle.buzz,studyranks.in,technoflip.in,techware.online,theicongenerator.com,utinwpqqui.buzz,velnibug.buzz,world-trips.net,xmbme.buzz,zentum.club##+js(nano-sib, timer)
 cashearn.cc##+js(nano-sib, #timer)
 codecomets.com,techxpulse.com###timeblock
 codecomets.com,techxpulse.com##+js(rc, disabled, a#enablebtn)
