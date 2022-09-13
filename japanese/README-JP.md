@@ -30,10 +30,6 @@ Chrome, Edge上でuBlock Originをご利用の方は、主に３つの選択肢�
 
   <sup>フィルタスタッフが日本語用フィルタを準備中ですが、外国人にどこまでできるか懸念が残ります。また、方針としてアンチ広告ブロックに対応しません</sup>
 
-- uBO Minus
-
-  <sup>少なくとも現時点では一種の概念実証であり、実用性は考慮されていません。また、よほどのことがなければ実用的なMV3ブロッカーになることはないと思います</sup>
-
 </details>
 
 （[FAQ A1-4](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q1-4-chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AEmanifest-v3mv3%E7%A7%BB%E8%A1%8C%E3%81%A7%E5%BA%83%E5%91%8A%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E6%8B%A1%E5%BC%B5%E3%81%AF%E4%BD%BF%E3%81%88%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E3%81%A8%E8%81%9E%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F)も参照）
