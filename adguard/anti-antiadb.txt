@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220912
+! Version: 20220914
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -36,12 +36,10 @@
 .net/js/popup.js?v=1.$script,~third-party
 .net/js/popup.js?ver=1.$script,~third-party
 .org/script/compatibility.js|$third-party
-.pro/sdk/push_web/?zid=
 .xyz/h/?$script,third-party
 .xyz/pub?id=$script,third-party
 /\.xxx\/re(?:k|tr)\/[0-9a-z]{4,6}\.js$/$script,~third-party,match-case
 /\/js\/\d{3}eka\d{2,3}\.js$/$script,~third-party
-/\/nb\/(?=[a-z]{0,9}[A-Z])[a-zA-Z]{10}\.js/$script,~third-party,match-case
 /\/nb\/[a-z]{4}\.js$/$script,~third-party,match-case
 /\/v\d\/a\/[a-z]{2,3}\/js\/\d{5,6}/$script,third-party
 /\/wp-content\/uploads\/[a-z]{6,9}\.js(?:\?ver=[.0-9]+|,qver=[.0-9]+\.pagespeed\..+\.js)$/$script,~third-party
@@ -53,31 +51,20 @@
 /^https:\/\/\d{4}\.[a-z]{10}\.name\/[-_0-9a-zA-Z]{90,}\?_=\d+/$script,third-party
 /^https:\/\/aj[0-9a-z]{2}\d{2}\.online\/\S{100,}$/$xmlhttprequest,third-party
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$script,third-party
-/^https:\/\/[0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,84}[A-Z])(?=[-_a-zA-Z]{0,84}[0-9])[-_0-9a-zA-Z]{54,85}(#\?v=[0-9a-f]{32})?$/$ping,script,xmlhttprequest,third-party,match-case
 /^https:\/\/[-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?/$xmlhttprequest,third-party
 /^https:\/\/[-a-z]{8,15}\.(?:com|net)\/40[01]\/\d{7}$/$script,third-party
 /^https:\/\/[a-z]{6,10}\.com\/script\/n[a-z]su\.js$/$script,third-party
-/^https:\/\/[a-z]{7,16}\.(?:buzz|com?|lol|one|xyz)\/(?=[+\/a-zA-Z]{0,400}\d)(?=[+\/0-9a-z]{0,400}[A-Z])[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party,match-case
-/^https:\/\/[a-z]{7,16}\.(?:buzz|com?|lol|one|xyz)\/(?=[+\/a-zA-Z]{0,140}\d)(?=[+\/0-9a-z]{0,140}[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case
-/^https:\/\/[a-z]{8,16}\.(?:com?|club|fun|hair)\/(?=[%a-zA-Z]{0,170}\d)(?=[%0-9a-z]{0,170}[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
 /^https:\/\/[a-z]{8}\.com\/sdk\.js\?sid=[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/$script,third-party
 /^https:\/\/[a-z]{8}\.xyz\/main\.js$/$script,third-party
-/^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{10,14}\.ca(?:m|sa)\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{10,14}\.casa\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
-/^https:\/\/[a-z]{10,14}\.casa\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
-/^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]{0,1000}\*)(?=[%\*=\?_a-zA-Z]{0,1000}\d)(?=[%\*=\?_0-9a-z]{0,1000}[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{10,14}\.fun\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https?:\/\/www\.[0-9a-z]{5,11}\.(?:com|name)\/ok\/ok\.js$/$script,~third-party,match-case
 /^https?:\/\/[-0-9a-z]{4,}\.[a-z]{2,7}(\.[a-z]{2})?\/apis-\d\.js(\?v=\d)?$/$script,~third-party
 /^https?:\/\/[a-z]{6,14}\.(?:com?|pro|info|xyz)\/[acd][-\.\/_A-Za-z][DHWm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6wyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,xmlhttprequest,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$subdocument,third-party,match-case
-/^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/(?!api|available)[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case
-/^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$stylesheet,third-party,match-case
-/^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,third-party,match-case
 /^https:\/\/[a-z]{8,15}\.xyz\/[%0-9a-zA-Z]{170,}$/$script,third-party
-/^https:\/\/[a-z]{8,15}\.com\/beta\/\d{3,4}$/$xmlhttprequest,third-party
-/^https:\/\/[a-z]{8,15}\.com\/gamma\/\d{3,4}$/$xmlhttprequest,third-party
-/^https:\/\/[a-z]{8,15}\.com\/omega\/\d{3,4}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{8,15}\.com\/(?:beta|gamma|omega)\/\d{3,4}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
 /^https?:\/\/(?:ak\.)?[a-z]{6,10}\.(?:com|net)\/4\/\d{7}/$document,popup
 /^https?:\/\/[a-z]{6,15}\.(?:com|net|top|xyz)\/1\/\d{7}\/\?var=\d{7}&/$document,popup
@@ -99,13 +86,7 @@
 /asset/angular.min.js?t=$xmlhttprequest,~third-party
 /asset/jquery/slim-3.2.min.js?*&t=$xmlhttprequest,~third-party
 /asset/vue.min.js?ts=1&_=$xmlhttprequest,~third-party
-/bens/vinos.js
-/bens/vinos3.js
-/bens/vinos4.js
-/bens/vinos5.js
-/bens/vinos6.js
-/bens/vinos7.js
-/bens/vinos8.js
+/bens/vinos$script
 /ceef/gdt3g0/tbt/*$xmlhttprequest,third-party
 /click?pid=*&sub1=$popup,third-party
 /clientscript/popcode_v4.js$~third-party
@@ -143,12 +124,10 @@
 /nb/f_ls.js
 /nb/fe_ld.js
 /nb/nb_script.js
-/nsu.js|$script,third-party
 /ntv.json?key=$xmlhttprequest,third-party
 /out/300x250.php#$subdocument
 /out/b.html#$subdocument,~third-party
-/player/html.php?aid=start_html&video_id=*&referer=$subdocument,~third-party
-/player/html.php?aid=pause_html&video_id=*&referer=$subdocument,~third-party
+/player/html.php?aid=*_html&video_id=*&referer=$subdocument,~third-party
 /player/plugins/vast-*.js$script
 /plugins/poppy/poppy.js$third-party
 /pn21ywqw/z/sc/scssx/*$script,third-party
@@ -188,7 +167,6 @@
 /vast.php?p=$xmlhttprequest,third-party
 /watchnew?key=$subdocument,third-party
 /wcm/?sh=$script,third-party
-/wp-content/plugins/wp-banners/js/wp-banners.js$important
 /wrapper/cwrapper.min.js?v=$third-party
 /yzfdmoan.js
 /zlk/zlk.js
@@ -272,7 +250,6 @@ _spot_id=*&zone_id=$script,~third-party
 /adblock_detector.$script,redirect-rule=noopjs
 /adblockdetect/*$~image,badfilter
 /addons/ads/*$script,redirect-rule=prebid-ads
-/ads-min.$badfilter
 /ads-prebid.js$script,redirect-rule=prebid-ads
 /ads.css$badfilter
 /ads.html$subdocument,redirect-rule=noopframe
@@ -285,8 +262,7 @@ _spot_id=*&zone_id=$script,~third-party
 /px.gif?$image,redirect-rule=1x1-transparent.gif
 @@/\/js\/[_0-9a-zA-Z]{4,12}\/(?:ad[-a-z]{4}|bannerpump|nugg\.min|transad|[a-z]{2}ads|[a-z]{3}-(?:adscript|inspire-ad|rail-ads))\.js\?_v=[0-9a-f]{8}$/$script,~third-party
 @@/ad/api/popunder.js|$script,~third-party
-@@/ad/banner/_adsense_/_adserver/_adview_.ad.js?adzone=$script,~third-party
-@@/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest,~third-party
+@@/ad/banner/_adsense_/_adserver/_adview_.ad.js$script,xmlhttprequest,~third-party
 @@/ads-prebid.js$script,~third-party
 @@/adsense.js?adsdata=$script,~third-party
 @@/adv/ads/popunder.js?$script,~third-party
@@ -302,29 +278,9 @@ _spot_id=*&zone_id=$script,~third-party
 @@/shared/bannerpages/darttagsbanner.aspx?h=$script,third-party
 @@/site_ads.js?ad_slot=*&ad_ids=$script,~third-party
 @@/static/image/ad_top_bg2.png?&ad_box_=$image,~third-party
-@@/wp-banners.js^$script
 @@/wp-content/plugins/imedia-basic/adserver-$script,~third-party
 @@/wp-content/plugins/quick-adsense-reloaded/assets/js/ads.js
 @@/wp-content/plugins/wordpress-popup/assets/js/adb.min.js?$script,~third-party
-@@||crunchyroll.adclixx.net/vast?fg=$script
-@@||crunchyroll.adnetasia.com/vast?fg=$script
-@@||crunchyroll.adtrackers.net/vast?fg=$script
-@@||crunchyroll.bannertrack.net/vast?fg=$script
-@@||fundingchoicesmessages.google.com^$script,domain=bbc.com|soranews24.com|youpouch.com
-@@||ox-d.adclixx.net/auid=$script
-@@||ox-d.adnetasia.com/auid=$script
-@@||ox-d.adtrackers.net/auid=$script
-@@||ox-d.bannertrack.net/auid=$script
-@@||serve.adclixx.net/promoload?d=$script
-@@||serve.adnetasia.com/promoload?d=$script
-@@||serve.adtrackers.net/promoload?d=$script
-@@||serve.bannertrack.net/promoload?d=$script
-@@||torrentz.adnetasia.com/mgid/ad.js|
-@@||torrentz.adtrackers.net/mgid/ad.js|
-@@||torrentz.bannertrack.net/mgid/ad.js|
-@@||yahoo.adnetasia.com/serv?s=$script
-@@||yahoo.adtrackers.net/serv?s=$script
-@@||yahoo.bannertrack.net/serv?s=$script
 ||adblockanalytics.com/ads.js$script,redirect-rule=noopjs
 ||ads-api.twitter.com^$xmlhttprequest,redirect-rule=nooptext,domain=~twitter.com
 ||ads.facebook.com^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
@@ -410,3 +366,34 @@ _spot_id=*&zone_id=$script,~third-party
 #@#div[id^="div-gpt-"]
 #@#[class^="div-gpt-ad"]
 #@#[id^="div-gpt-ad"]
+
+!!#if (!adguard_ext_chromium)
+/\/nb\/(?=[a-z]{0,9}[A-Z])[a-zA-Z]{10}\.js/$script,~third-party,match-case
+/^https:\/\/[0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,84}[A-Z])(?=[-_a-zA-Z]{0,84}[0-9])[-_0-9a-zA-Z]{54,85}(#\?v=[0-9a-f]{32})?$/$ping,script,xmlhttprequest,third-party,match-case
+/^https:\/\/[a-z]{7,16}\.(?:buzz|com?|lol|one|xyz)\/(?=[+\/a-zA-Z]+\d)(?=[+\/0-9a-z]+[A-Z])[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party,match-case
+/^https:\/\/[a-z]{7,16}\.(?:buzz|com?|lol|one|xyz)\/(?=[+\/a-zA-Z]+\d)(?=[+\/0-9a-z]+[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case
+/^https:\/\/[a-z]{8,16}\.(?:com?|club|fun|hair)\/(?=[%a-zA-Z]+\d)(?=[%0-9a-z]+[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
+/^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]{0,1000}\*)(?=[%\*=\?_a-zA-Z]{0,1000}\d)(?=[%\*=\?_0-9a-z]{0,1000}[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
+/^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/(?!api|available)[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case
+/^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$stylesheet,third-party,match-case
+/^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,third-party,match-case
+@@||crunchyroll.adclixx.net/vast?fg=$script
+@@||crunchyroll.adnetasia.com/vast?fg=$script
+@@||crunchyroll.adtrackers.net/vast?fg=$script
+@@||crunchyroll.bannertrack.net/vast?fg=$script
+@@||fundingchoicesmessages.google.com^$script,domain=bbc.com|soranews24.com|youpouch.com
+@@||ox-d.adclixx.net/auid=$script
+@@||ox-d.adnetasia.com/auid=$script
+@@||ox-d.adtrackers.net/auid=$script
+@@||ox-d.bannertrack.net/auid=$script
+@@||serve.adclixx.net/promoload?d=$script
+@@||serve.adnetasia.com/promoload?d=$script
+@@||serve.adtrackers.net/promoload?d=$script
+@@||serve.bannertrack.net/promoload?d=$script
+@@||torrentz.adnetasia.com/mgid/ad.js|
+@@||torrentz.adtrackers.net/mgid/ad.js|
+@@||torrentz.bannertrack.net/mgid/ad.js|
+@@||yahoo.adnetasia.com/serv?s=$script
+@@||yahoo.adtrackers.net/serv?s=$script
+@@||yahoo.bannertrack.net/serv?s=$script
+!!#endif
