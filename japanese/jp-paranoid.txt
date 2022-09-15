@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220914
+! Version: 20220916
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -76,6 +76,7 @@ canvas0.blog26.fc2.com##.sidemenu_body:has(img[src^="http://aria-soft."])
 ||img.gcolle.net^$3p,domain=~ckclike.com|~contentking.tokyo|~cosfeti2.blog.fc2.com|~ebi-chan.info|~face3210.com|~fechicolle.com|~fetishism.tokyo|~gcolle.xyz|~gesumogura.com|~gripav.biz|~hentai4610.com|~ikenaikoto.com|~javdig.com|~jkcosplay.tokyo|~kmc-av.com|~machidoriwalker.com|~machifechi.com|~plus-love.net|~porns7.com|~sanzis-ffs.blog|~seisyakai.com|~street-legs.blog.jp|~sukebe48.com|~tamago-chan.com|~videooyaji.net|~xn--gcolle-um2j928d.net|~zuma-rakuen.com|~zumalife.info
 ||iobit.com/wp-content/themes/iobit/img/summer/store-pop-
 iobit.com##.rabbit-store-pop
+||itmedia.co.jp/images/rc/
 ||jinjibu.jp/updir/adv_web_banner/
 ||keisan-mondai.com/pgm/ad-main.php
 ||kenoh.com/banner/
@@ -447,8 +448,6 @@ _omniture.$script,domain=mathworks.com
 ||dynatrace-managed.com^$3p
 ||ensighten.com^$3p
 ||extreme-ip-lookup.com^$3p
-! FP for the sake of security
-||fraudjs.io^$3p
 ||geoip-js.com^$3p
 ||geoip.cookieyes.com^
 ||geolocation-db.com^$3p
@@ -476,6 +475,11 @@ _omniture.$script,domain=mathworks.com
 ||tms.americanexpress.com^
 ||ukw.jp^$3p
 ||ws.audioeye.com^
+
+!"security" tracker
+||cshield.io^$3p
+||fraudjs.io^$3p
+
 
 ! ---------- Analytics specific ----------
 /\.(?:co(?:m|\.uk)|jp)\/[-_0-9a-zA-Z]{6,}\/[-\/_0-9a-zA-Z]{30,}$/$script,1p,domain=aa.com|americanairlines.jp|ana.co.jp|comptoirdescotonniers.co.jp|flyasiana.com|flypeach.com|helmutlang.com|hm.com|ibm.com|jal.co.jp|jetstar.com|santanderbank.com|shopdisney.*|theory.co.jp|zozo.jp
