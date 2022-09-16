@@ -11,7 +11,7 @@ Chrome, Edge上でuBlock Originをご利用の方は、主に３つの選択肢�
  
 - AdGuard for Windows/Macに移行
 
-　<sup>uBlock Origin並みのフィルタリング精度を得るにはHTTPSフィルタリングを有効にしてください</sup>
+  <sup>uBlock Origin並みのフィルタリング精度を得るにはHTTPSフィルタリングを有効にしてください</sup>
 
 - Braveブラウザに移行する
 
