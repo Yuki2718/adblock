@@ -5,9 +5,13 @@ Chrome, Edge上でuBlock Originをご利用の方は、主に３つの選択肢�
 
   <sup>FirefoxもいずれMV3に移行しますが、それによりuBlock Originが使えなくなることはありません</sup>
 
-- AdGuardのMV3対応拡張機能を待つか、AdGuard for Windows/Macに移行
+- AdGuard MV3かuBlock Origin Liteが完成するのを待つ
+
+  <sup>現時点ではいずれもベータ版以前の状態です</sup>
  
-  <sup>AdGuardはMV3拡張の[プロトタイプを作成しており、MV3に対応します](https://adguard.com/en/blog/adguard-mv3.html)</sup>
+- AdGuard for Windows/Macに移行
+
+　<sup>uBlock Origin並みのフィルタリング精度を得るにはHTTPSフィルタリングを有効にしてください</sup>
 
 - Braveブラウザに移行する
 
