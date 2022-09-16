@@ -7,7 +7,7 @@ Chrome, Edge上でuBlock Originをご利用の方は、主に３つの選択肢�
 
 - AdGuard MV3かuBlock Origin Liteが完成するのを待つ
 
-  <sup>現時点ではいずれもベータ版以前の状態です</sup>
+  <sup>現時点ではいずれもベータ版以前の状態です。完成しても性能は今より落ちます。</sup>
  
 - AdGuard for Windows/Macに移行
 
