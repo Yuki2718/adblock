@@ -1,6 +1,6 @@
 ### Chromium Manifest V3（MV3）について
 
-Chrome, Edge上でuBlock Originをご利用の方は、主に３つの選択肢があります
+Chrome, Edge上でuBlock Originをご利用の方は、主に４つの選択肢があります
 - ブラウザをBraveかFirefoxに移行し、uBlock Originを使う
 
   <sup>FirefoxもいずれMV3に移行しますが、それによりuBlock Originが使えなくなることはありません</sup>
