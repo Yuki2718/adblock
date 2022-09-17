@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220917
+! Version: 20220918
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -256,7 +256,6 @@ _spot_id=*&zone_id=$script,~third-party
 /ads.html$subdocument,redirect-rule=noopframe
 /adsEnd.$badfilter
 /adsense1.$badfilter
-/banner_ads.$image,redirect-rule=32x32-transparent.png
 /peel1.js$badfilter
 /popunder_$script,redirect-rule=noopjs
 /prebid-add.js$script,redirect-rule=prebid-ads
@@ -271,6 +270,7 @@ _spot_id=*&zone_id=$script,~third-party
 @@/adview_pic_cpc_cpm_cpa_guanggao_gg_ads_300x250.js|$script,~third-party
 @@/design/relaunch/gfx/elitepartner_|$script,third-party
 @@/dh-anti-adblocker/assets/js/ads-prebid.js?
+@@/dnsads.js?dfp=$script,~third-party
 @@/includes/ads/js/ads.js|$script,~third-party
 @@/js/ad_pop.js|$other,script,~third-party
 @@/js/adv/fuckadblock.js?$script,~third-party
@@ -283,10 +283,12 @@ _spot_id=*&zone_id=$script,~third-party
 @@/wp-content/plugins/imedia-basic/adserver-$script,~third-party
 @@/wp-content/plugins/quick-adsense-reloaded/assets/js/ads.js
 @@/wp-content/plugins/wordpress-popup/assets/js/adb.min.js?$script,~third-party
+||a.pub.network^$script,redirect-rule=noopjs
 ||adblockanalytics.com/ads.js$script,redirect-rule=noopjs
 ||ads-api.twitter.com^$xmlhttprequest,redirect-rule=nooptext,domain=~twitter.com
 ||ads.facebook.com^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||ads.reddit.com^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
+||ads.sportslocalmedia.com^$script,redirect-rule=noopjs
 ||ads.twitter.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||ads.youtube.com^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||adsafeprotected.com/favicon.ico$xmlhttprequest,redirect-rule=nooptext
@@ -298,10 +300,12 @@ _spot_id=*&zone_id=$script,~third-party
 ||cdn.purpleads.io^$script,redirect-rule=noopjs
 ||cloudfront.net/videojs/videojs-contrib-ads.js$script,redirect-rule=noopjs
 ||coinad.org/display/items.php$script,redirect-rule=noopjs
+||connect.facebook.net/en_US/fbevents.js$script,redirect-rule=noopjs
 ||cxense.com/cx.js$script,redirect-rule=noopjs
 ||doubleclick.net/tag/js/gpt.js$redirect-rule=googletagservices-gpt
 ||doubleclick.net^$xmlhttprequest,redirect=nooptext,domain=~d3ward.github.io
 ||doubleclickbygoogle.com/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
+||dsh7ky7308k4b.cloudfront.net^$script,redirect-rule=noopjs
 ||google-analytics.com/analytics.js$redirect-rule=google-analytics
 ||google.com/adsense/start/images/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
@@ -309,6 +313,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||gstatic.com/adx/doubleclick.ico|$image,redirect-rule=32x32-transparent.png
 ||htlbid.com/*/htlbid.js$script,redirect-rule=noopjs
 !||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima3
+||js.wpadmngr.com/static/adManager.js$script,redirect-rule=noopjs
 ||media.fastclick.net^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||media.net/dmedianet.js$redirect-rule=noopjs
 ||nessainy.net/favicon.ico$image,redirect-rule=32x32-transparent.png
@@ -317,11 +322,9 @@ _spot_id=*&zone_id=$script,~third-party
 ||pagead2.googlesyndication.com/pagead/show_ads.js$script,redirect-rule=noopjs
 ||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices-gpt
 ||popcash.net^$xmlhttprequest,third-party,redirect-rule=nooptext
-||pub.network^$script,redirect-rule=noopjs
 ||surfe.pro/js/net.js$script,xmlhttprequest,redirect-rule=noopjs
 ||taboola.com/libtrc/*/loader.js$script,redirect-rule=noopjs
 ||thisiswaldo.com/static/js/$script,redirect-rule=noopjs
-||wpadmngr.com^$script,redirect-rule=noopjs
 ||wtg-ads.com/publisher/$script,redirect-rule=noopjs
 #@##Ad300x145
 ~tegaki.pipa.jp#@##Ad300x250
