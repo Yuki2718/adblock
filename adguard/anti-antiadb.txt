@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220918
+! Version: 20220919
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -67,7 +67,7 @@
 /^https:\/\/[a-z]{8,15}\.xyz\/[%0-9a-zA-Z]{170,}$/$script,third-party
 /^https:\/\/[a-z]{8,15}\.com\/(?:beta|gamma|omega)\/\d{3,4}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
-/^https?:\/\/(?:ak\.)?[a-z]{6,10}\.(?:com|net)\/4\/\d{7}/$document,popup
+/^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,subdocument,popup
 /^https?:\/\/[a-z]{6,15}\.(?:com|net|top|xyz)\/1\/\d{7}\/\?var=\d{7}&/$document,popup
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,third-party
@@ -155,6 +155,7 @@
 /script/wait.php?q=$xmlhttprequest,third-party
 /serve/show.php?a=$subdocument,third-party
 /sppc.php|$script,third-party
+/ssp/req/*/?pb=$script,third-party
 /sweetie/hello.min.js?id=$script,third-party
 /t.js?i=*&cb=$script,third-party
 /t/9/heis/svewg/*$script,third-party
@@ -198,10 +199,61 @@ _spot_id=*&zone_id=$script,~third-party
 ||bannertrack.net^$script,third-party,redirect=prevent-bab2,important
 ||fundingchoicesmessages.google.com^$third-party
 
+###Ad300x250:not([style^="position: absolute; left: -5000px"])
+###Ad728x90:not([style^="position: absolute; left: -5000px"])
+###AdArea:not([style^="position: absolute; left: -5000px"])
+###AdBox160:not([style^="position: absolute; left: -5000px"])
+~lalovings.com###AdContainer:not([style^="position: absolute; left: -5000px"])
+~lalovings.com###AdContainer:not([style^="position: absolute; left: -5000px"])
+###AdDiv:not([style^="position: absolute; left: -5000px"])
+###AdImage:not([style^="position: absolute; left: -5000px"])
+###AdFrame1:not([style^="position: absolute; left: -5000px"])
+###AdFrame2:not([style^="position: absolute; left: -5000px"])
+###AdFrame4:not([style^="position: absolute; left: -5000px"])
+###AdLayer1:not([style^="position: absolute; left: -5000px"])
+###AdLayer2:not([style^="position: absolute; left: -5000px"])
+###DivAd:not([style^="position: absolute; left: -5000px"])
+###ad-container:not([style^="position: absolute; left: -5000px"])
+###ad-container-1:not([style^="position: absolute; left: -5000px"])
+###ad-container-2:not([style^="position: absolute; left: -5000px"])
+###ad-footer:not([style^="position: absolute; left: -5000px"])
+###ad-frame:not([style^="position: absolute; left: -5000px"])
+~apnaohio.com,~miradiorumba.com###ad-header:not([style^="position: absolute; left: -5000px"])
+###ad-img:not([style^="position: absolute; left: -5000px"])
+###ad-label:not([style^="position: absolute; left: -5000px"])
+###ad-lb:not([style^="position: absolute; left: -5000px"])
+###ad-left:not([style^="position: absolute; left: -5000px"])
+###adAd:not([style^="position: absolute; left: -5000px"])
+###adBanner:not([style^="position: absolute; left: -5000px"])
+###adBannerWrap:not([style^="position: absolute; left: -5000px"])
+###adTeaser:not([style^="position: absolute; left: -5000px"])
+###ad_300:not([style^="position: absolute; left: -5000px"])
+###ad_728:not([style^="position: absolute; left: -5000px"])
+###ad_area:not([style^="position: absolute; left: -5000px"])
+###ad_big:not([style^="position: absolute; left: -5000px"])
+###ad_box:not([style^="position: absolute; left: -5000px"])
+###ad_channel:not([style^="position: absolute; left: -5000px"])
+###ad_footer:not([style^="position: absolute; left: -5000px"])
+###ad_slot:not([style^="position: absolute; left: -5000px"])
+~streetinsider.com###ad_space:not([style^="position: absolute; left: -5000px"])
+###adbanner:not([style^="position: absolute; left: -5000px"])
+###adframe:not(frameset):not([style^="position: absolute; left: -5000px"])
+###adheader:not([style^="position: absolute; left: -5000px"])
+###ads-1:not([style^="position: absolute; left: -5000px"])
+###ads-banner:not([style^="position: absolute; left: -5000px"])
+###ads-footer:not([style^="position: absolute; left: -5000px"])
+###adslot:not([style^="position: absolute; left: -5000px"])
+~ma-bank.net,~video.tv-tokyo.co.jp###adspace:not([style^="position: absolute; left: -5000px"])
+###adsquare:not([style^="position: absolute; left: -5000px"])
 ###adtagfooter:not(:empty)
+###banner468:not([style^="position: absolute; left: -5000px"])
+###banner728x90:not([style^="position: absolute; left: -5000px"])
+###google_ad:not([style^="position: absolute; left: -5000px"])
 ###iqadtile5:not(:empty)
+###outbrain-paid:not([style^="position: absolute; left: -5000px"])
 ###rvt-inline-0
 ###rvt-inline-1
+###sponsored_link:not([style^="position: absolute; left: -5000px"])
 ##.ad-300x250:not(.ads)
 ##.ad-content:not(:empty)
 ##.ad-left:not(.adsbox)
@@ -309,6 +361,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||google-analytics.com/analytics.js$redirect-rule=google-analytics
 ||google.com/adsense/start/images/favicon.ico$image,third-party,redirect-rule=32x32-transparent.png
 ||googleads.g.doubleclick.net/pagead/id^$xmlhttprequest,redirect=nooptext
+||googlesyndication.com/favicon.ico$image,redirect-rule=1x1-transparent.gif
 ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager-gtm
 ||gstatic.com/adx/doubleclick.ico|$image,redirect-rule=32x32-transparent.png
 ||htlbid.com/*/htlbid.js$script,redirect-rule=noopjs
@@ -326,25 +379,57 @@ _spot_id=*&zone_id=$script,~third-party
 ||taboola.com/libtrc/*/loader.js$script,redirect-rule=noopjs
 ||thisiswaldo.com/static/js/$script,redirect-rule=noopjs
 ||wtg-ads.com/publisher/$script,redirect-rule=noopjs
-#@##Ad300x145
+||yieldmo.com/ym.adv.$script,redirect-rule=noopjs
 ~tegaki.pipa.jp#@##Ad300x250
+#@##Ad728x90
+#@##AdArea
 #@##AdBox160
+#@##AdContainer
+#@##AdDiv
+#@##AdImage
 #@##AdFrame1
 #@##AdFrame2
 #@##AdFrame4
+#@##AdLayer1
+#@##AdLayer2
 #@##DivAd
-#@##DivAd1
-#@##DivAd2
-#@##DivAd3
-#@##DivAdB
-#@##DivAdC
 #@##DivTopAd
+#@##ad-container
+#@##ad-container-1
+#@##ad-container-2
+#@##ad-footer
 #@##ad-frame
+#@##ad-header
+#@##ad-img
+#@##ad-label
 #@##ad-lb
+#@##ad-left
 #@##ad-zone-1
 #@##adAd
+#@##adBanner
+#@##adBannerWrap
 #@##adTeaser
-#@##glinkswrapper
+#@##ad_300
+#@##ad_728
+#@##ad_area
+#@##ad_big
+#@##ad_box
+#@##ad_channel
+#@##ad_footer
+#@##ad_slot
+#@##ad_space
+#@##adbanner
+#@##adframe:not(frameset)
+#@##adheader
+#@##ads-1
+#@##ads-banner
+#@##ads-footer
+#@##adslot
+#@##adspace
+#@##adsquare
+#@##banner468
+#@##banner728x90
+#@##google_ad
 #@##iqadtile5
 #@##outbrain-paid
 #@##sponsored_link
