@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220919
+! Version: 20220920
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -305,6 +305,7 @@ _spot_id=*&zone_id=$script,~third-party
 /ads-prebid.js$script,redirect-rule=prebid-ads
 /ads.css$badfilter
 /ads.html$subdocument,redirect-rule=noopframe
+/ads/dfp/banner300x250/ads.js$xmlhttprequest,redirect-rule=1x1-transparent.gif
 /adsEnd.$badfilter
 /adsense1.$badfilter
 /peel1.js$badfilter
