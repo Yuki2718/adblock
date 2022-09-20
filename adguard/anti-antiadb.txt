@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220920
+! Version: 20220921
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -254,7 +254,7 @@ _spot_id=*&zone_id=$script,~third-party
 ###rvt-inline-1
 ###sponsored_link:not([style^="position: absolute; left: -5000px"])
 ##.ad-300x250:not(.ads)
-##.ad-content:not(:empty)
+~backcar.fr,~flat-ads.com,~job.inshokuten.com##.ad-content:not(:empty)
 ##.ad-left:not(.adsbox)
 ##.ad-link:not(.adsbox)
 ##.ad-loading:not(.adsbox)
@@ -375,6 +375,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||pagead2.googlesyndication.com/pagead/show_ads.js$script,redirect-rule=noopjs
 ||pagead2.googlesyndication.com/tag/js/gpt.js$script,redirect=googletagservices-gpt
 ||popcash.net^$xmlhttprequest,third-party,redirect-rule=nooptext
+||privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$script,redirect-rule=noopjs
 ||surfe.pro/js/net.js$script,xmlhttprequest,redirect-rule=noopjs
 ||taboola.com/libtrc/*/loader.js$script,redirect-rule=noopjs
 ||thisiswaldo.com/static/js/$script,redirect-rule=noopjs
@@ -434,7 +435,7 @@ _spot_id=*&zone_id=$script,~third-party
 #@##outbrain-paid
 #@##sponsored_link
 #@#.ad-300x250
-~backcar.fr,~flat-ads.com,~job.inshokuten.com##.ad-content:not(:empty)
+#@#.ad-content
 #@#.ad-left
 #@#.ad-link
 #@#.ad-loading
