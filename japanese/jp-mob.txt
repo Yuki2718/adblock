@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20220922
+! Version: 20220923
 
 ! ---------- Ads general ----------
 /heji/mei00*.js
@@ -335,6 +335,7 @@ blogger.ameba.jp##.p-adBanner
 blogtag.ameba.jp###app > aside[class^="sc-"] > div[class]:empty
 blogtag.ameba.jp##main > ul > div[class]:empty
 books.j-cast.com##div[style$="min-width: 320px; min-height: 100px;"]
+books.rakuten.co.jp##.adNetwork
 boom-app.wiki##.banner-header
 boom-app.wiki,game.boom-app.com##.banner-footer
 brandkagu-outlet.net##.flo_head
@@ -1443,10 +1444,10 @@ kurashiru.com#@#[id^="div-gpt-ad"]:style(width:1px!important;height:1px!importan
 
 ! ---------- Scam & Redirect ----------
 /KDDI%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3.apk^$doc
-/^http:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
 /^http:\/\/[a-z]{5}\.[a-z]{5}\.com\/[a-z]{10}\.apk$/$doc,match-case,domain=com
 /^http:\/\/[a-z]{9,10}\.ddns/$doc,domain=ddns.net
 /^https:\/\/[-a-z]{20,}\.cyou\/[-0-9a-f]{36}\/\?btd=/$doc,domain=cyou
+/^https?:\/\/[a-z]{10}\.duckdns/$doc,domain=duckdns.org
 /index.php?key=*&t1=$doc
 /japanpost.apk^$doc
 ||66niue3tyt.online^$doc
