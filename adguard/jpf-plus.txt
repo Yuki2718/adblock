@@ -1,4 +1,4 @@
-! Title: AdGuard Japanese filter Plus for Chrome (UNDER DEVELOPMENT)
+! Title: AdGuard Japanese filter Plus (UNDER DEVELOPMENT)
 ! Expires: 2 days (update frequency)
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
@@ -6,7 +6,19 @@
 
 ! ---------- Ads general ----------
 /300x250.html?targetUrl=$subdocument
+/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,third-party
 /fp-interstitial.js
 /frms/NTV$subdocument,~third-party
+/pub?id=$script,third-party
+_300_250_
 
-!#include anti-antiadb.txt
+! ---------- Exception: blocking ----------
+/player/stats.php?$image,1p,redirect-rule=1x1.gif
+@@||point-g.rakuten.co.jp/pg_assets/item/contets/*_300_250_$image,~third-party
+
+!#if adguard
+!#include jpfp-adguard.txt
+!#endif
+!#if ext_ublock
+!#include jpfp-ublock.txt
+!#endif

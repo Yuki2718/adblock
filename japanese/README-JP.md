@@ -1,3 +1,20 @@
+### 重要なお知らせ
+
+管理人の環境変化により、来年からこれまでのようにフィルタを提供することが難しくなります。**そのため、Yuki's uBlock Japanese filtersファミリーなどの更新・公開を10月いっぱいを目途に停止する**つもりです。申し訳ありませんが、ユーザーの方はAdGuard Japanese<sup>1</sup>などへの乗り換えをご検討ください。現時点で公開を停止する予定のものは、
+
+- Yuki's uBlock Japanese filters
+- Yuki's uBlock Japanese filters - Paranoid
+- Yuki's uBlock Japanese filters - Mobile
+- Yuki's uBlock Japanese filters - Social
+- Yuki's uBlock Japanese filters - Annoyancesとそのサブリスト
+- Yuki's uBlock Japanese filters - Annoyances Plus
+- Anti Anti-adblock Enhancer for AdGuard (AdGuard Japanese filter Plusに組込み予定)
+- Placeholder Hider with no generic hiding （他リストより早く公開停止予定）
+
+です。**AdGuardやuBlock Originのフィルターへの貢献は続けます**が、規模は縮小することになるでしょう。また、AdGuard MV3用にAdGuard Japanese filterの強化パッチを準備中ですが、これの構成を少し変えてuBlock OriginやuBlock Origin Liteでも使えるようにします。したらばの雪フィルタ簡易報告スレッドはアーカイブ化し、メンテナンスを続けるリスト用に新たなスレッドを作る予定です。なお、これらのリストはGPLv3のAnti Anti-adblock Enhancer for AdGuardを除きすべてCC BY-SA 4.0ですので、それぞれのライセンス要件を満たす限り改変、再配布は自由です。これまで貢献いただいた方にはお詫びいたしますとともに、ご理解を願います。質問やご要望等ございましたら、[したらば](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1652115193/)（本来、問題報告用ですがこの件については例外とします）か管理人の[Twitter](https://twitter.com/Yuki27183)にコメントいただければ可能な範囲で対応いたします。
+
+<sub>1: AdGuard Japaneseは単独使用を想定していませんので、内製やEasyListの併用が必要です。</sub>
+
 ### Chromium Manifest V3（MV3）について
 
 Chrome, Edge上でuBlock Originをご利用の方は、主に４つの選択肢があります
@@ -63,25 +80,6 @@ Braveは以前よりChromiumのManifest V2（MV2）サポート終了後もMV2�
 [Brave Shield不具合簡易報告スレッド](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1651822005/)を開設いたしました。Yuki's uBLock Japanese filtersファミリーで将来的にBrave組み込みの広告ブロック（Shield）をサポートするための情報収集を兼ねます。改めて強調しますが、**現時点ではサポートしていません**。Brave Shieldはブラウザ組み込みのブロッカーとしてはもっとも高度なものですが、[以前より](https://github.com/brave/brave-browser/issues/9625)uBlock Originでは生じない[固有の問題](https://github.com/brave/adblock-lists/issues/614)が多く（[現在発生中の例](https://github.com/brave/brave-browser/issues/22719)）、uBlock Originの文法解釈も[常に](https://github.com/brave/adblock-lists/pull/775)本家より一歩遅れているため、それによる問題がたびたび発生しています（[最近の例](https://github.com/easylist/easylist/pull/11918)）。現時点でYuki's uBLock Japanese filtersをBraveで利用されても性能を発揮できないばかりか、不具合のもとになります。
 
 3月21日の予告通り、280blocker adblock filter 悪質サイト対策強化パッチは公開停止いたしました。
-
-</details>
-
-<details>
-<summary>（2022年4月20日：MV3への対応予定）</summary>
-
-**Chromium Manifest V3（MV3）への当レポジトリの対応予定（現時点、変更する可能性あり）**
-
-今年いっぱいでManifest V2（MV2）のサポートが終了し、Chrome, EdgeなどではuBlock Originが使えなくなることが予想されます。ユーザーの方はFirefoxに乗り換えていただくか、またはAdGuard拡張機能への切り替えを推奨します。以下は当レポジトリの現時点での対応予定です。
-
-以前アナウンスした内容になりますが、「MV2のサポート終了までにAdGuard日本語フィルタを強化する」という目標はある程度達成されつつあると思います。しかし依然としてYuki's uBlock Japanese filtersとの差はありますし、それを埋めるにも限界があります。そこで一歩上のブロックを求める人向けにAdGuardのMV3対応Chrome拡張機能専用の、AdGuard日本語フィルタ強化パッチを作成しようかと思案しています。主な内容は
-
-- サイトのトラフィックなど、基準の違いによりAdGuard日本語フィルタで対応しない対象
-- AdGuard公式フィルタでの採用が難しい、強力な汎用ルール（一部はアンチ広告ブロック対策強化パッチに入れており、おそらくincludeします）
-- AdGurad公式フィルタでは非表示で済ましている対象のブロック
-
-Chrome拡張機能専用とすることでアプリ版特有の様々な問題を無視できますし、Baseと日本語フィルタの利用を前提とすることでスクリプトレットの干渉といった問題を無視できます。また、AdGuardではプライバシー用フィルタの適用は任意ですので、このパッチは広告と一部の過剰な迷惑要素にターゲットを絞ります（トラッキング用のパッチを別途作成するかは未定）。
-
-~~また、uBlock Origin文法と高い互換性があり標準でuBlock Originのフィルタを採用しているBraveをYuki's uBlock Japanese filtersのサポート対象に加えることも検討していますが、正規表現の制約などはすぐには解決しないでしょうし、Brave特有の問題も多いため機能制限版かつ限定的サポートという形になるでしょう。~~なお、あまり知られていなさそうですがBraveの広告ブロックは標準ではファーストパーティー広告、つまり訪問したサイトから直接配信される広告（たとえば検索エンジンの広告）はブロックしません。Shields設定からブロックを「積極的」に変えることでそれらもブロックされるようになります。
 
 </details>
 

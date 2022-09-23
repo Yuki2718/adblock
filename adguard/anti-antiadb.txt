@@ -2,11 +2,10 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220921
+! Version: 20220924
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
-.click/pub?id=$script,third-party
 .com/1?z=$script,third-party
 .com/2?z=$script,third-party
 .com/a.js|$script,~third-party
@@ -21,7 +20,6 @@
 .com/jsb/js_script.js|$~third-party
 .com/npt/banner/*&psprogram=$image,third-party
 .com/pup.php?section=$script,third-party
-.com/pub?id=$script,third-party
 .com/script/compatibility.js|$third-party
 .com/script/intrf.js|$third-party
 .com/script/ippg.js|$third-party
@@ -30,15 +28,12 @@
 .com/slider.php?section=$script,third-party
 .com/v.js?v=3|$~third-party
 .info/drive.js?sid=$script,third-party
-.lol/pub?id=$script,third-party
 .net/custom|$xmlhttprequest,third-party
 .net/event|$xmlhttprequest,third-party
 .net/js/popup.js?v=1.$script,~third-party
 .net/js/popup.js?ver=1.$script,~third-party
-.online/pub?id=$script,third-party
 .org/script/compatibility.js|$third-party
 .xyz/h/?$script,third-party
-.xyz/pub?id=$script,third-party
 /\.xxx\/re(?:k|tr)\/[0-9a-z]{4,6}\.js$/$script,~third-party,match-case
 /\/js\/\d{3}eka\d{2,3}\.js$/$script,~third-party
 /\/nb\/[a-z]{4}\.js$/$script,~third-party,match-case
@@ -69,8 +64,8 @@
 /^https:\/\/[a-z]{8}\.net\/1\/\d{7}\/\?var=/$popup,third-party
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,subdocument,popup
 /^https?:\/\/[a-z]{6,15}\.(?:com|net|top|xyz)\/1\/\d{7}\/\?var=\d{7}&/$document,popup
-/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,third-party
+/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party
 /1clkn/*$script
 /a/ban/iframe/*
 /a/isv/js/*
@@ -135,6 +130,7 @@
 /pop1.js|$script,~third-party
 /pop_8/pop_8_$script,~third-party
 /preroll.engine?id=$xmlhttprequest,third-party,redirect=nooptext
+/pub?id=$script,third-party
 /q/tdl/95/dnt/*$script,third-party
 /rci?tr=false^$xmlhttprequest,third-party
 /rdrr/renderer.js$script,third-party
@@ -310,6 +306,7 @@ _spot_id=*&zone_id=$script,~third-party
 /adsense1.$badfilter
 /peel1.js$badfilter
 /popunder_$script,redirect-rule=noopjs
+/player/stats.php?$image,1p,redirect-rule=1x1.gif
 /prebid-add.js$script,redirect-rule=prebid-ads
 /prebid-ads.js$script,redirect-rule=prebid-ads,domain=~exey.io
 /px.gif?$image,redirect-rule=1x1-transparent.gif
