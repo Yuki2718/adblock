@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20220924
+! Version: 20220927
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -57,7 +57,7 @@
 /^https:\/\/[a-z]{10,14}\.fun\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https?:\/\/www\.[0-9a-z]{5,11}\.(?:com|name)\/ok\/ok\.js$/$script,~third-party,match-case
 /^https?:\/\/[-0-9a-z]{4,}\.[a-z]{2,7}(\.[a-z]{2})?\/apis-\d\.js(\?v=\d)?$/$script,~third-party
-/^https?:\/\/[a-z]{6,14}\.(?:com?|pro|info|xyz)\/[acd][-\.\/_A-Za-z][DHWm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6wyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,xmlhttprequest,third-party,match-case
+/^https?:\/\/[a-z-]{6,16}\.(?:com?|pro|info|xyz)\/[acd][-\.\/_A-Za-z][DHWm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6wyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,xmlhttprequest,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$subdocument,third-party,match-case
 /^https:\/\/[a-z]{8,15}\.xyz\/[%0-9a-zA-Z]{170,}$/$script,third-party
 /^https:\/\/[a-z]{8,15}\.com\/(?:beta|gamma|omega)\/\d{3,4}$/$xmlhttprequest,third-party
@@ -304,7 +304,6 @@ _spot_id=*&zone_id=$script,~third-party
 /ads/dfp/banner300x250/ads.js$xmlhttprequest,redirect-rule=1x1-transparent.gif
 /adsEnd.$badfilter
 /adsense1.$badfilter
-/peel1.js$badfilter
 /popunder_$script,redirect-rule=noopjs
 /player/stats.php?$image,1p,redirect-rule=1x1.gif
 /prebid-add.js$script,redirect-rule=prebid-ads
@@ -320,6 +319,7 @@ _spot_id=*&zone_id=$script,~third-party
 @@/design/relaunch/gfx/elitepartner_|$script,third-party
 @@/dh-anti-adblocker/assets/js/ads-prebid.js?
 @@/dnsads.js?dfp=$script,~third-party
+@@/inc/embed/ads.js|$script,~third-party
 @@/includes/ads/js/ads.js|$script,~third-party
 @@/js/ad_pop.js|$other,script,~third-party
 @@/js/adv/fuckadblock.js?$script,~third-party
