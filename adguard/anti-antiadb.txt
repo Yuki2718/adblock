@@ -347,6 +347,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||as.inbox.com/banner_ad.gif|$image,redirect-rule=1x1-transparent.gif
 ||bebi.com/js/plugins.js$script,redirect-rule=noopjs
 ||cdn.purpleads.io^$script,redirect-rule=noopjs
+||cloudfront.net/prebid_$script,redirect-rule=noopjs
 ||cloudfront.net/videojs/videojs-contrib-ads.js$script,redirect-rule=noopjs
 ||coinad.org/display/items.php$script,redirect-rule=noopjs
 ||connect.facebook.net/en_US/fbevents.js$script,redirect-rule=noopjs
@@ -462,6 +463,7 @@ _spot_id=*&zone_id=$script,~third-party
 /^https:\/\/[a-z]{7,16}\.(?:buzz|com?|lol|one|xyz)\/(?=[+\/a-zA-Z]+\d)(?=[+\/0-9a-z]+[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case
 /^https:\/\/[a-z]{8,16}\.(?:com?|club|fun|hair)\/(?=[%a-zA-Z]+\d)(?=[%0-9a-z]+[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
 /^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]{0,1000}\*)(?=[%\*=\?_a-zA-Z]{0,1000}\d)(?=[%\*=\?_0-9a-z]{0,1000}[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/(?!api|available)[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$stylesheet,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,third-party,match-case
