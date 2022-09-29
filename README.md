@@ -1,9 +1,21 @@
 [![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 [![syntax](https://img.shields.io/badge/syntax-uBlock%20Origin-%23c61300.svg)](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
 
-### Announcement (Jul. 14, 2022) 
+### Important Announcement (Sept. 30, 2022) 
 
-I'm planning to unmaintain Placeholder Hider with no generic hiding list, unless I see evidence that *substantial numbers* of users are actually using the list. When-to-do is not determined yet. If you are an actual user of the list and want it to be maintained, please give us feedback by opening an issue about that.
+Due to changes in my life, I'm going to unmaintain following lists until late October:
+
+- Yuki's uBlock Japanese filters
+- Yuki's uBlock Japanese filters - Paranoid
+- Yuki's uBlock Japanese filters - Mobile
+- Yuki's uBlock Japanese filters - Social
+- Yuki's uBlock Japanese filters - Annoyances and its sublists
+- Yuki's uBlock Japanese filters - Annoyances Plus
+- Anti Anti-adblock Enhancer for AdGuard
+
+I approgize for current user and all the contributor of these lists, but it's unavoidable. I hope you can find a good alternatives. I'll create and maintain AdGuard Japanese filter Plus which will to some extent compensate the difference between Yuki's uBlock Japanese filters and AdGuard Japanese filter.
+
+Now Placeholder Hider with no generic hiding is deprecated and removed from this repo.
 
 # adblock
 

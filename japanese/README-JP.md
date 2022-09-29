@@ -20,7 +20,7 @@
 Chrome, Edge上でuBlock Originをご利用の方は、主に４つの選択肢があります
 - ブラウザをBraveかFirefoxに移行し、uBlock Originを使う
 
-  <sup>FirefoxもいずれMV3に移行しますが、それによりuBlock Originが使えなくなることはありません</sup>
+  <sup>FirefoxもいずれMV3に移行しますが、それによりuBlock Originが使えなくなることはありません※</sup>
 
 - AdGuard MV3かuBlock Origin Liteが完成するのを待つ
 
@@ -52,6 +52,8 @@ Chrome, Edge上でuBlock Originをご利用の方は、主に４つの選択肢�
   <sup>フィルタスタッフが日本語用フィルタを準備中ですが、外国人にどこまでできるか懸念が残ります。また、方針としてアンチ広告ブロックに対応しません</sup>
 
 </details>
+
+ <sup>※ 誤解がみられるので追記：blocking webRequestを当面維持するからしばらく大丈夫**なのではなく**、完全にMV3に移行しても大丈夫なはずです。そもそも、MV3の大枠が根本的に悪いわけではなく、uBlock Originの作者も全面的に反対しているわけでもありません。[ChromiumのMV3と互換性を維持しながら、ブロッカーの機能への悪影響を抑えたMV3を実装することは十分可能です](https://github.com/uBlockOrigin/uBlock-issues/issues/338#issuecomment-534261690)。本当の問題はChromium MV3がアドオン開発者の声を[十分に聞いて反映するのでなく](https://github.com/uBlockOrigin/uBlock-issues/issues/338#issuecomment-465093102)、あくまでGoogleのペースとロジックで進められており、それでいてプライバシー保護効果への疑問にはちゃんと答えていないことです。[ビジネスパートナーであり](https://github.com/uBlockOrigin/uBlock-issues/issues/338#issuecomment-496009417)、そもそもMV3の影響をそれほど強く受けないeyeo社のような都合のいい声だけ[聴いても](https://blog.chromium.org/2020/12/manifest-v3-now-available-on-m88-beta.html)意味がありません（とはいえ、スクリプトレットインジェクションが実現したのはeyeoやAdGuardの努力のおかげですが）。Mozillaはこれらの問題点を認識しており、また、アドオン開発者の声をしっかり聴いて調整していくことを[約束しています](https://blog.mozilla.org/addons/2022/05/18/manifest-v3-in-firefox-recap-next-steps/)。MozillaのMV3を指揮するRob Wu氏はList Authors Chatという広告ブロックの「現場」にも加わっており、広告ブロック界隈とのつながりが以前より強い人です。仮にブロッカーの機能に一定の制約が出ても、それで実際にプライバシー保護につながるのであればuBlock Originの作者が反対するとは考えられず、どこかで妥協点を探すことになるでしょう。</sup>
 
 （[FAQ A1-4](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q1-4-chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AEmanifest-v3mv3%E7%A7%BB%E8%A1%8C%E3%81%A7%E5%BA%83%E5%91%8A%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E6%8B%A1%E5%BC%B5%E3%81%AF%E4%BD%BF%E3%81%88%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E3%81%A8%E8%81%9E%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F)も参照）
 
