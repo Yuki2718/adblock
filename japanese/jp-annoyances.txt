@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20221001
+! Version: 20221002
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -373,7 +373,7 @@ asobo.com##.banner
 ||autoketing.org/sdk-cdn/sales-pop/$domain=yuzen-official.com
 ||azby.fmworld.net/support/images/img-batteryctrl.
 azby.fmworld.net###popupmsg
-||b-cafe.net/remodal/
+||b-cafe.net/remodal/remodal.js
 ||bauhutte.jp/wp-content/uploads/*/popup
 bauhutte.jp###js-popup
 ||biz.ne.jp/common/img/matome_btm_banner.
@@ -602,6 +602,8 @@ kaitori.bikebros.co.jp##.freetel
 kaitoricollector.com##.footer_contact
 ||keiyaku-watch.jp/dcms_media/image/side_dl.
 keiyaku-watch.jp##.display.side_dl
+||kidsna.com/advertisement/popup/
+kidsna.com###kidsna-job-banner-line
 ||knowledgewing.com/kw/blog/img/bnr_mm.
 knowledgewing.com##.m_linkBox
 ||kracie.co.jp/kampo/kampofullife/wp-content/themes/kampofullife/common/img/side/float_
@@ -1104,7 +1106,8 @@ keyence.co.jp##.fixed_wrapper
 kin8tengoku.com##.active.timesale
 kingsoft.jp##.campaign.footer-wps
 kiwi.com##[class^=Modal__ModalBody]
-kuih.jp###popupBox > div > div.popup-inner-bottom > a.go-to-register:upward(3)
+kuih.jp###popupBox:has(> div > div.popup-inner-bottom > a.go-to-register)
+kujirai-kaikei.com###footer-bottom-space
 kurumaerabi.com##.modal_common.modal_inquiry_easy
 kutikomi.com##.wrap-mailmag
 kyobun.co.jp###pianoj_ribbon
@@ -1832,6 +1835,7 @@ profuture.co.jp##.mailmagazine-box
 pubsonline.informs.org##.ib-green-bg > div.row.separator[data-widget-def="ux3-layout-widget"]
 qiita.com##.apm-Content
 redshift.autodesk.co.jp##.block-newsletter
+reuters.com##div[class^="registration-prompt"]
 reuters.com##div[class^="regular-article-layout__newsletter"]
 sbssupport.jp##.mail_mag
 scientificamerican.com###promo-header
@@ -1889,6 +1893,7 @@ webbu.jp##^#text-7
 ||nli-research.co.jp/files/user/images/sp/common/icon_mailM.png
 ||thesun.co.uk/simwidgets/v1/sim$frame
 
+blog.livedoor.jp##.content > aside.section-box:has(> div.plugin-follow_buttons)
 booking.com##.hide-newsletter-menu-tab
 cnn.co.jp##.line-news-banner
 newsweekjapan.jp###magazine-bnr
@@ -2387,7 +2392,8 @@ sugi9532.com##.c-infoBar
 support.microsoft.com##.RailBanner
 suumo.jp##.addbox--pr
 techacademy.jp##[href^="https://techacademy.jp/briefing-lp-webdesign-s"]
-techtarget.itmedia.co.jp##.cbox > .vendorcontents:upward(1)
+techtarget.itmedia.co.jp###tmplCol2 > div.cbox:has(> .vendorcontents)
+transit.yahoo.co.jp###stanby
 ufret.jp##.btn-lg[href="/signup.php"]
 uqwimax.jp##.uqv2-globalAd
 video.fc2.com##.vod_price_off

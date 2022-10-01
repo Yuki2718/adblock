@@ -5,12 +5,18 @@
 ! Version: 2022XXXX
 
 ! ---------- Ads general ----------
+&subAffId={SUBAFFID}^$subdocument,script,third-party
 /300x250.html?targetUrl=$subdocument
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,third-party
+/assets/jquery/jquery-3.2.min.js?v=2&type=
 /fp-interstitial.js
 /frms/NTV$subdocument,~third-party
 /pub?id=$script,third-party
+?oo=1^$xmlhttprequest,third-party
 _300_250_
+
+! ---------- Cosmetic general ----------
+##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 
 ! ---------- Cosmetic specific: too few visitors ----------
 hana3939.com###text-10
