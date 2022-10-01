@@ -13,7 +13,7 @@ Due to changes in my life, I'm going to unmaintain following lists until late Oc
 - Yuki's uBlock Japanese filters - Annoyances Plus
 - Anti Anti-adblock Enhancer for AdGuard
 
-I approgize for current user and all the contributor of these lists, but it's unavoidable. I hope you can find a good alternatives. I'll create and maintain AdGuard Japanese filter Plus which will to some extent compensate the difference between Yuki's uBlock Japanese filters and AdGuard Japanese filter.
+I apologize to current user and all the contributor of these lists, but it's unavoidable. I hope you can find a good alternatives. I'll create and maintain AdGuard Japanese filter Plus which will to some extent compensate the difference between Yuki's uBlock Japanese filters and AdGuard Japanese filter.
 
 Now Placeholder Hider with no generic hiding is deprecated and removed from this repo.
 
