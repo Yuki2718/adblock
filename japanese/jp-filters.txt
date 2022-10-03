@@ -2,7 +2,7 @@
 ! Expires: 2 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20221003
+! Version: 20221004
 
 ! Temporal
 ||30calclub.sakura.ne.jp/220402_
@@ -352,8 +352,6 @@ secrettalk.me##.week_hot
 -native-ad.
 -popup-ads-$script
 -publicidad.
--rail-ads.
--rail-ads/
 -right-ad.
 -search-ads.
 -sidebar-ad.
@@ -766,6 +764,7 @@ secrettalk.me##.week_hot
 /ads.htm$domain=~games.wkb.jp
 /ads.htm$popup
 /ads/300.
+/ads/bidgear_$frame
 /ads/bott.html
 /ads/bott_up.html
 /ads/bottom.
@@ -1401,6 +1400,7 @@ secrettalk.me##.week_hot
 /pub?id=$script,3p
 /public/ads/*
 /publicidades/*
+/pup-a9-header-bidder/*
 /pushdownAd.
 /pustrck.js
 /px.gif?$image,redirect-rule=1x1.gif
@@ -2391,7 +2391,7 @@ vkcdnservice.appspot.com^$3p
 ||53orz.com^$3p
 ||5551895.com^
 ||555608.com^
-||616182863.com^
+||616182863.com^$3p
 ||6399tp.com^
 ||65686232255.com^
 ||663210.com^
@@ -3056,6 +3056,10 @@ vkcdnservice.appspot.com^$3p
 ||img-ad-nex.com^
 ||img.happymail.co.jp^$3p
 ||img.lovelovemail.com^$3p
+||img.x937.xyz^$3p
+||img.x959.xyz^$3p
+||img.x965.xyz^$3p
+||img.x968.xyz^$3p
 ||imgapp.top^
 ||imglele.xyz^
 ||imglnka.com^$3p
@@ -3838,7 +3842,6 @@ vkcdnservice.appspot.com^$3p
 ||wysyshypti.pro^
 ||wzjs1.oss-accelerate.aliyuncs.com^
 ||x666.io^$3p
-||x937.xyz^
 ||x957.xyz^
 ||xadsmart.com^
 ||xb99.net^$3p
@@ -3965,7 +3968,6 @@ vkcdnservice.appspot.com^$3p
 ||aaaaaco.com^
 ||aamapi.com^$3p
 ||aaxads.com^
-||aaxwall.com^
 ||abdittoan.com^
 ||abdlnkjs.com^
 ||abroodeuripi.com^
@@ -5007,7 +5009,7 @@ vkcdnservice.appspot.com^$3p
 ||juicebarads.com^$3p
 ||juringupstage.com^
 ||justinpressed.com^
-||justpremium.com^$3p
+||justpremium.com^
 ||jxirpyci.com^
 ||jypugepha.pro^
 ||kalauxet.com^
@@ -6912,6 +6914,7 @@ _theme/build/js/script.min.php$domain=clik.pw|genpassword.top
 /adv/skin.$domain=suisan.jp
 /advertisments/*$domain=funker530.com
 /affiliateplus.js$domain=blossom39.com
+/api/ads/*$domain=bookforum.com
 /assets/ads_$domain=uptostream.com
 /b1.png|$domain=ouo.*
 /b2.png|$domain=ouo.*
@@ -6998,6 +7001,7 @@ _ad_frame.$domain=synk-casualgames.com
 ||2conv.com/_next/static/images/mp3studio-banner-
 ||2conv.com/get-rtb-url$xhr,redirect=noop.txt
 ||2game.info/ad/failed_ad_view.js
+||2ip.me/images/luxsite-
 ||2nt.com/h/o/r/horahorazoon/fatez.jpg$domain=horahorazoon.blog.2nt.com
 ||2nt.com/m/a/t/matomate/widget2min.js$domain=matomate.blog.2nt.com
 ||360asp.click/data.php?$3p
@@ -8036,6 +8040,7 @@ _ad_frame.$domain=synk-casualgames.com
 ||hawaii-word.com/banner/
 ||hawkeye.publishing.oath.com/v1/dims?
 ||hayamimi-hobby.com/gen-rss/
+||hbb.afl.rakuten.co.jp^$domain=plaza.rakuten.co.jp
 ||health.joyplot.com/HealthWordsWiki/skin/foradblock.
 ||hearthstone.exp.jp/ads/*-783-90-banner.$image,important,domain=hs-exp.jp
 ||hedge.guide/_wu/*-336%C3%97280.$image,1p
@@ -8796,6 +8801,7 @@ _ad_frame.$domain=synk-casualgames.com
 ||player.ex.co^$script,3p
 ||playwire.com/bolt/js/$script,3p
 ||playwire.com^$domain=megagames.com|mangarock.com|readlightnovel.org|gamrconnect.vgchartz.com|poelab.com|lcpdfr.com
+||plaza.jp.rakuten-static.com/api/Proxy.php?a=http%3A%2F%2Fd-cache.microad.jp
 ||plugmize.jp^*/banner01.png
 ||plugmize.jp^*/tcd-w/banner03.png
 ||pnd.tl/*/320x50$frame
@@ -9051,6 +9057,7 @@ _ad_frame.$domain=synk-casualgames.com
 ||sleepedia.jp/wp-content/themes/sleepedia/img/no1.
 ||slideshare.net/images/scribd/UI.jpg
 ||sm.rakuten.co.jp/js/acEncode.
+||smallseotools.com/*.gif$image
 ||smallseotools.com/webimages/s/$image,1p
 ||smartadserver.com^$3p,domain=~smartadserver.fr|~smartadserver.de
 ||smashop.jp/img/sml/sml-dp.
@@ -9679,7 +9686,7 @@ _ad_frame.$domain=synk-casualgames.com
 .top/*=https://imgair.net/vip/*.html$popup,3p,domain=buzz
 /(?:com|net)\/[0-9a-f]{12}\.js$/$script,1p,domain=imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com
 /(?:com|net)\/[a-z-]{3,10}\.html$/$frame,1p,domain=imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com
-/(?:com|porn|tube|xxx)\/[a-z]{8,12}\/[a-z]{8,12}\.js$/$script,1p,domain=555.porn|bdsmx.tube|blackporn.tube|hclips.com|hdzog.com|hotmovs.com|imzog.com|inporn.com|javdaddy.com|mrgay.tube|porn555.com|pornforrelax.com|porngo.tube|pornj.com|pornl.com|pornq.com|porntop.com|pornzog.com|privatehomeclips.com|puporn.com|see.xxx|senzuri.tube|shemalez.com|sss.xxx|thegay.*|tubepornclassic.com|tuberel.com|txxx.*|txxxporn.tube|upornia.*|vjav.*|voyeurhit.com|vxxx.com|xmilf.com
+/(?:com|porn|tube|xxx)\/[a-z]{8,12}\/[a-z]{8,12}\.js$/$script,1p,domain=555.porn|blackporn.tube|bdsmx.tube|hclips.com|hdzog.com|hotmovs.com|imzog.com|inporn.com|javdaddy.com|mrgay.tube|porn555.com|pornforrelax.com|porngo.tube|pornj.com|pornl.com|pornq.com|porntop.com|pornzog.com|privatehomeclips.com|puporn.com|see.xxx|senzuri.tube|shemalez.com|sss.xxx|thegay.*|tubepornclassic.com|tuberel.com|txxx.*|txxxporn.tube|upornia.*|vjav.*|voyeurhit.com|vxxx.com|xmilf.com
 /\.jp/(?:stevia|\d{7})\./$image,1p,domain=xn--kck2cc2e1dve.jp
 /\.net/(?:ani_|stevia|\d{7}(_[a-c])?)\./$image,1p,domain=xn--u8jm6cyd8028a.net
 /\.com\/202\d{5}\.(?:gif|jpg)$/$image,1p,domain=c9e9.com|u3c3.com
@@ -12284,6 +12291,7 @@ _pop_under.js$domain=souko.pipii.tv
 /ping.gif?$domain=~mega689.com
 /ping?h=
 /pingd?
+/pinterest-pixels.
 /piwik-$domain=~github.com|~matomo.org|~piwik.org|~piwik.pro|~piwikpro.de
 /piwik.$image,script,domain=~matomo.org|~piwik.org|~piwik.pro|~piwikpro.de
 /piwik/*$domain=~github.com|~matomo.org|~piwik.org|~piwik.pro
@@ -12346,6 +12354,7 @@ _pop_under.js$domain=souko.pipii.tv
 /publisher:getClientId?key=
 /pulsario.js
 /pum/*/analytics/*
+/pup-comscore/*
 /putActionData|$xhr
 /pv.php?id=
 /pv?fe=*&elg=
@@ -12377,6 +12386,7 @@ _pop_under.js$domain=souko.pipii.tv
 /record.do?
 /redir.inxmail-commerce.com/r/*$image
 /redis_stats/*
+/referral-tracking.
 /referrer.js
 /renderTimingPixel.
 /resource?zones=
@@ -12765,6 +12775,7 @@ _pop_under.js$domain=souko.pipii.tv
 ://beacon.*/track
 ://blue.*/script.js
 ://cdn.*.com/renderer/renderer.js|$script,3p
+://cognito-identity.
 ://collector.*/event
 ://d.*/track.js
 ://fpa-cdn.*/p.js|$script
@@ -12794,6 +12805,7 @@ _pop_under.js$domain=souko.pipii.tv
 =googleanalytics_
 =pageimpression&
 =eulerian&
+=stats&apiVersion=
 ?action=log_promo_impression
 ?action=saveViewStat&
 ?action=track_visitor&
@@ -12869,6 +12881,7 @@ cgi-bin/counter
 ||a1webstrategy.com^
 ||aamt.msnbc.com^
 ||aamt.nbcnews.com^
+||aaxwall.com^
 ||ab-machine.forbes.com^
 ||ab.blogs.es^
 ||abmr.net^$3p
@@ -13099,7 +13112,6 @@ cgi-bin/counter
 ||appanalysis.banggood.com^
 ||appboycdn.com^$3p
 ||appier.net^$3p
-||applicationinsights.azure.com^$3p
 ||appsflyer.com^$3p
 ||aprtx.com^$3p
 ||apxl.io^
@@ -13240,6 +13252,7 @@ cgi-bin/counter
 ||burpee.xyz^
 ||bvr.ast.snva.jp^
 ||bwb101.goo.ne.jp^
+||c-api-bit.shopeemobile.com^$3p
 ||c-ovn.jp^
 ||c-rings.net^$3p
 ||c.bigmir.net^
@@ -14205,6 +14218,7 @@ cgi-bin/counter
 ||millioncounter.com^$3p
 ||mit.db.com^
 ||mixpanel.com^$3p
+||mktcs.cloudapps.cisco.com^
 ||mktoresp.com^$3p
 ||ml314.com^
 ||mm-api.agency^
@@ -16529,6 +16543,7 @@ _webtrends/$domain=zurichlife-jp.force.com
 ||storage.googleapis.com/afs-prod/tags
 ||store.hpplus.jp/fs/*/karte.js
 ||stripe.com/?event=
+||stripe.com/tracking/
 ||substack.com/api/v1/firehose?
 ||suggest-ai.net/static/js/track.js
 ||supleks.jp/action/log/
@@ -16549,6 +16564,7 @@ _webtrends/$domain=zurichlife-jp.force.com
 ||t.paypal.com^$image
 ||taitaitaiwan.com/public_html/ra/
 ||tag-api.dmm.com^$xhr
+||tag.search.sensefuel.live^$script,3p
 ||tags.news.com.au^$script
 ||takaratomymall.jp/js/ga_event.
 ||talkingdata.com^*/sdk_release.js
@@ -17915,6 +17931,9 @@ alternativeto.net##div[data-testid="alternative-list"] > ul > li:has(span[class^
 am-online.com##.advert-banner
 am-online.com##.mpu-ad
 am-our.com,animageplus.jp,animeanime.jp,asahi.com,autocar.jp,books.j-cast.com,cafend.net,careerconnection.jp,cinemacafe.net,curazy.com,dailyportalz.jp,gamespark.jp,getnavi.jp,hinata.me,iionna.tokyo,inside-games.jp,intojapanwaraku.com,japanese.joins.com,kanaloco.jp,matome.response.jp,mensnonno.jp,moneyforward.com,mynavi.jp,news.nifty.com,news.tv-asahi.co.jp,ryukyushimpo.jp,saitama-np.co.jp,smt.docomo.ne.jp,taishu.jp,uhb.jp,uta-net.com,yamahack.com,yukawanet.com,zigsow.jp##._popIn_infinite_page > li:has(> a[class*=_popIn_recommend_article_ad])
+amachamusic.chagasi.com##.l_sidebar > h2:last-of-type
+amachamusic.chagasi.com##.side_box:last-child > h4
+amachamusic.chagasi.com##div[class^=sponsor]
 amaebi.co##.side > [href="https://xn--0ck7c3c.com/no-deposit-bonus/"]
 amaebi.co##.side--right > .module--free:nth-of-type(-n+2)
 amaebi.co##.side--right > div:last-child
@@ -21608,6 +21627,7 @@ htb.co.jp,saitama-np.co.jp##.ad_response
 html5test.com###footerad
 html5test.com###headerad
 htmq.com###footerpr
+htmq.com##.ad_responsive
 hub.vroid.com##[id^=Model-adView-]
 huffingtonpost.co.uk,huffingtonpost.jp,huffpost.com##.entry__right-rail-width-placeholder
 huffingtonpost.co.uk,huffingtonpost.jp,huffpost.com##.leaderboard-flex-placeholder
@@ -24455,6 +24475,8 @@ playonlinux.com##h1:has-text(Ads)
 plaza.rakuten.co.jp###commonAdsParts
 plaza.rakuten.co.jp###content-side > table:has(div[id*=Rak_Blog_User_SideBanner])
 plaza.rakuten.co.jp###content-side > table:has(a[href^="http://hb.afl."])
+plaza.rakuten.co.jp###content-sticky > table:has(.rcardImg)
+plaza.rakuten.co.jp###content-sticky > table:has(div[id*=Rak_Blog_User_SideBanner])
 plaza.rakuten.co.jp##.headerAdC
 pleasure-hunting.biz##.free-area_before-title
 plgrakudo.blog.fc2.com##.box:has(> div > .plugin-freearea)
@@ -25190,6 +25212,9 @@ shrinke.me,shrinkme.io###imgAddDirectLink
 shrinkforearn.in##.banner-page .box-main > .row
 shrinkforearn.in##.box-main .blog-item
 shrinkme.in##.box-main h3, [hight="250px"]
+shu-naka-blog.com##.ad_table
+shu-naka-blog.com##.side_ad_area
+shu-naka-blog.com##.top_right_area:first-child > .area_ttl:first-child
 shuchi.php.co.jp##.sp_none[style="height: 600px;"]
 shuchi.php.co.jp##div[style*="250px"]
 shufoo.net###bnr1
@@ -25248,9 +25273,8 @@ slreamplay.*,steamplay.*,steanplay.*,streamp1ay.*,stemplay.*,streanplay.*###uver
 sm.ms##.advert_foot
 sm.ms##.advertising_2
 sm.ms##.advertising_3
-smallseotools.com##.px103
+smallseotools.com##.m-auto.text-center:has(.adsbygoogle)
 smallseotools.com##.px303
-smallseotools.com##div.my-3.mx-auto
 smart-flash.jp##.postAds
 smart-flash.jp##div.h250
 smart-flash.jp##div.h600
@@ -25821,6 +25845,7 @@ tobiuo72.blog.fc2.com##.side-heading
 tocana.jp###adEntryBottom
 tocana.jp###adEntryTitleBottom
 tocana.jp###bnr_goSrid
+tofubud.com##.article-ad-container
 togetter.com###ad_overlay
 togetter.com##.ad_custom
 togetter.com##.ad_custom_fluid
@@ -27557,7 +27582,7 @@ all-mode.net##td[width="250"] > div[style^="width:250px;"]
 all-mode.net##td[width="250"] > h2:first-child
 alloldpics.com##.custom-spot
 alloldpics.com##.live-spot
-allpussynow.com,avseesee.com,gaysexaccess.com,gaytail.com,javvin.me,mature.*,milf.*##.happy-under-player
+allpussynow.com,avseesee.com,bestjavporn.com,gaysexaccess.com,gaytail.com,javvin.me,mature.*,milf.*##.happy-under-player
 alotporn.com,sleazyneasy.com###pre-adv
 alphaporno.com##.advertising-bottom
 alphaporno.com##.movies-block > div[style*="text-align:center;"]
@@ -29240,7 +29265,7 @@ new-akiba.com##.amazon-sidelist
 new-akiba.com##.top-column-onsale
 new-akiba.com##.top-column-product
 new-akiba.com##.top-column-sidelist2
-newhalf-dougazou.com,oppai-paipai.com##.ad-head
+newhalf-dougazou.com,oppai-paipai.com,quicksounds.com##.ad-head
 news.dmm.co.jp###side-fixed > .area-ad:first-child
 nhentai.net##.advt
 nightdreambabe.com##.banner_place
@@ -31446,7 +31471,9 @@ aii.sh##+js(aopr, Date.prototype.toUTCString)
 akaryoshka.red##+js(aopr, anOptions)
 akuu-sflin.blogspot.com##+js(acs, matchMedia, Adblocker)
 allcalidad.*,gum-gum-stream.com,jetanimes.*##+js(ra, href, #clickfakeplayer)
+allcryptoz.net,crewbase.net,crewus.net,shinbhu.net,shinchu.net,thumb8.net,thumb9.net,topcryptoz.net,uniqueten.net,ultraten.net##+js(acs, addEventListener, document.getElementById)
 allcryptoz.net,crewbase.net,crewus.net,shinbhu.net,shinchu.net,thumb8.net,thumb9.net,topcryptoz.net,uniqueten.net,ultraten.net##+js(acs, document.getElementById, /\$\('body'\)|\$\("body"\)/)
+allcryptoz.net,crewbase.net,crewus.net,shinbhu.net,shinchu.net,thumb8.net,thumb9.net,topcryptoz.net,uniqueten.net,ultraten.net##+js(aopr, alert)
 allcryptoz.net,crewbase.net,crewus.net,igg-games.com,imgkia.buzz,imgkorle.buzz,imglina.xyz,imgwia.buzz,manga1001.*,shinbhu.net,shinchu.net,thumb8.net,thumb9.net,topcryptoz.net,uniqueten.net,ultraten.net##+js(nostif, _0x)
 allnewshubs.in,apkandroidhub.in,apkmaven.com,arhplyrics.in,askpaccosi.com,babymodz.com,bimo-cash.readi.online,bitefaucet.com,blog-forall.com,blognews.in,choiceappstore.xyz,crdroid.net,crypto4tun.com,cryptoblog24.info,deezloaded.com,dramaworldhd.co,dulichkhanhhoa.net,iptvjournal.com,jpoplist.us,mad.gplpalace.one,noithatmyphu.vn,prepostseo.com,rajsayt.xyz,raky.in,studyis.xyz,technicalatg.*,toolss.net,tudaydeals.com,worldappsstore.xyz##+js(no-fetch-if, googlesyndication)
 allporncomic.com,alotporn.com,anysex.com,babesxworld.com,erofus.com,fapality.com,get-to.link,gottanut.com,hotgirlclub.com,mylust.com,nude-teen-18.com,pornerbros.com,pornrox.com,pornwatchers.com,saradahentai.com,sensualgirls.org,tbib.org,worldsex.com,xcafe.com##+js(aopr, document.dispatchEvent)
@@ -32802,6 +32829,7 @@ newyorker.com,nytimes.com##+js(set, webkitRequestFileSystem, noopFunc)
 _cpm_&campaign_id=$doc,removeparam=campaign_id
 _cpm_&campaign_id=*&click_id=$doc,removeparam=click_id
 _cpm_&utm_medium=$doc,removeparam=/^utm_/
+||adguard.com^*?clid=$doc,removeparam=clid
 ||agoda.com^*&tag=$doc,removeparam=tag
 ||aliexpress.*&aem_p4p_detail$doc,removeparam=aem_p4p_detail
 ||aliexpress.*&afSmartRedirect=$doc,removeparam=afSmartRedirect
@@ -33797,7 +33825,7 @@ $removeparam=/^at_custom/,domain=bbc.com|bbc.co.uk,badfilter
 @@||pagead2.googlesyndication.com/pagead/js/*/slotcar_library_$script,domain=games.wkb.jp|html5.gamedistribution.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=download.pixelexperience.org|games.wkb.jp|lacoste.com|smallseotools.com|tamrieltradecentre.com|teemo.gg
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=exey.io|ff14angler.com|game.goo.ne.jp|html5.gamedistribution.com|kantangame.com|kiktu.com|pasty.*|play.aidungeon.io
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule,domain=heim.jp|leechpremium.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule,domain=amachamusic.chagasi.com|heim.jp|leechpremium.net
 @@||pagead2.googlesyndication.com/pagead/managed/*/show_ads_impl_fy2019.js$domain=html5.gamedistribution.com
 @@||pagead2.googlesyndication.com/pagead/managed/js/$script,domain=tamrieltradecentre.com
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/$script,domain=exey.io|ff14angler.com|kantangame.com
