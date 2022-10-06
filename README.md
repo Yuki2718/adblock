@@ -3,6 +3,8 @@
 
 ### Important Announcement (Sept. 30, 2022) 
 
+Update (Oct. 7, 2022) If nobody complains, I'll also discontinue AdGuard Social media Plus and archive the current adblock repository (related issue: https://github.com/Yuki2718/adblock/issues/67). AdGuard DNS Unbreaker, coming AdGuard Japanese filters Plus, and dynamic ruels for uBlock Origin will be moved to a new repository.
+
 Due to changes in my life, I'm going to unmaintain following lists until late October:
 
 - Yuki's uBlock Japanese filters

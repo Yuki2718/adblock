@@ -4,10 +4,28 @@
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 ! ---------- Ads general ----------
-/^https:\/\/[a-z]{7,16}\.com?\/(?=[+\/a-zA-Z]+\d)(?=[+\/0-9a-z]+[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,3p,match-case,domain=~edu|~gov|~jp
-/^https:\/\/[a-z]{7,16}\.com?\/(?=[+\/a-zA-Z]+\d)(?=[+\/0-9a-z]+[A-Z])[+\/0-9a-zA-Z]{400,}$/$frame,3p,match-case,domain=~edu|~gov|~jp
-/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/(?!api|available)[a-z]{4,}\.json$/$xhr,3p,match-case,domain=~edu|~gov|~jp
 
+! Incompatible with MV3
+/^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
+/^https:\/\/[a-z]{10,14}\.casa\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
+/^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]*\*)(?=[%\*=\?_a-zA-Z]*\d)(?=[%\*=\?_0-9a-z]*[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{10,14}\.fun\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
+/^https:\/\/[a-z]{7,16}\.buzz\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,3p,match-case
+/^https:\/\/[a-z]{7,16}\.buzz\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$frame,3p,match-case
+/^https:\/\/[a-z]{7,16}\.com?\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,3p,match-case,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{7,16}\.com?\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$frame,3p,match-case,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{7,16}\.lol\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,3p,match-case
+/^https:\/\/[a-z]{7,16}\.lol\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$frame,3p,match-case
+/^https:\/\/[a-z]{7,16}\.one\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,3p,match-case
+/^https:\/\/[a-z]{7,16}\.one\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$frame,3p,match-case
+/^https:\/\/[a-z]{7,16}\.xyz\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,3p,match-case
+/^https:\/\/[a-z]{7,16}\.xyz\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$frame,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.com?\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,3p,match-case,domain=~edu|~gov|~jp
+/^https?_:\/\/[a-z]{8,15}\.club\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.fun\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.hair\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,3p,match-case
+/^https?:\/\/[a-z]{8,15}\.work\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,3p
+/^https?:\/\/[a-z]{8,15}\.xyz\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,3p
 
 ! ---------- Cosmetic specific ----------
 
@@ -21,9 +39,4 @@ kidsna.com##.google-ads
 !#endif
 
 ! ---------- Scam & Redirect ----------
-/index.php?main_page=product_info&cPath=$doc,domain=buzz|life|live|site|store|top|xyz
-/index.php?main_page=product_info&products_id=$doc,domain=buzz|life|live|site|store|top|xyz
-/^https:\/\/(?:www\d\.)?[-a-z]{6,}\.(?:com|info|net|org)\/(?=[-_a-zA-Z]{0,42}\d)(?=[-_0-9a-z]{0,42}[A-Z])[-_0-9a-zA-Z]{43}\/\?cid=[-_0-9a-zA-Z]{16,36}(?:&qs\d=\S+)?&sid=[_0-9a-f]{1,32}$/$doc,match-case,domain=com|info|net|org
-/^https:\/\/(?:www\d\.)?[-a-z]{6,}\.(?:com|info|net|org)\/(?=[-_a-zA-Z]{0,42}\d)(?=[-_0-9a-z]{0,42}[A-Z])[-_0-9a-zA-Z]{43}\/\?sid=[_0-9a-f]{1,32}(?:&qs\d=\S+)?&cid=[-_0-9a-zA-Z]{16,36}$/$doc,match-case,domain=com|info|net|org
-/^https?:\/\/((?!www)[a-z]{3,}|\d{2})?\.?[-0-9a-z]{6,}\.[a-z]{2,6}\/(?:[a-z]{6,8}\/)?\/?\?o=[0-9a-z]{7}&u=[0-9a-z]{7}/$doc,frame,match-case,domain=buzz|com|de|fun|guru|info|life|live|mobi|online|pw|site|space|top|us|xyz
-/^https?:\/\/((?!www)[a-z]{3,}|\d{2})?\.?[-0-9a-z]{6,}\.[a-z]{2,6}\/(?:[a-z]{6,8}\/)?\/?\?u=[0-9a-z]{7}&o=[0-9a-z]{7}/$doc,frame,match-case,domain=buzz|com|de|fun|guru|info|life|live|mobi|online|pw|site|space|top|us|xyz
+

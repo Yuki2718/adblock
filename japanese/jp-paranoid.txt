@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20221004
+! Version: 20221007
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -311,6 +311,7 @@ smart-flash.jp##^.adsBlock
 ||affiliate.shopping.yahoo.co.jp^$doc
 ||affiliate.suruga-ya.jp^$doc
 ||affiliateone.jp^
+||alexatracker.com^
 ||api.cxense.com^
 ||asp.m-live.jp^
 ||ba.afl.rakuten.co.jp/items/list?$doc
@@ -411,6 +412,7 @@ smart-flash.jp##^.adsBlock
 /newrelic.js
 /pageviews/*$domain=~pageviews.toolforge.org|~stats.wikimedia.org|~tools.wmflabs.org
 /pixelcounter.$domain=~pixelcounter.co.uk|~pixelcounter.com|~pixelcounter.dev|~pixelcounter.org|~pixelcounters.co.uk|~pixelcounters.uk
+/publishertag.js
 /rtoaster.js$script
 /rum.min.
 /s_code.$domain=4travel.jp|akiba-souken.com|asahibeer.co.jp|daiwa.jp|eiga.com|fontplus.jp|his-j.com|hpplus.jp|lake.jp|magaseek.com|nikon-image.com|nomura.co.jp|nttdocomo.co.jp|orbis.co.jp|peachjohn.co.jp|ponparemall.com|rakuten-bank.co.jp|service.mcafee.com|shop-yukimeg.jp|shopch.jp|smart-j.com|tabelog.com|www.smbc.co.jp|zexy-enmusubi.net
@@ -589,10 +591,11 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||akamaihd.net/nbad/player/*/appmeasurement.js$domain=watch.nba.com
 @@||apc-pli.com/api/tracking/$xhr,1p
 @@||api.cxense.com/document/search?$script,xhr,domain=friday.kodansha.co.jp|ntv.co.jp|tv-tokyo.co.jp
+@@||api.cxense.com/persisted/execute$script,domain=nippon.com
 @@||api.cxense.com/public/widget/click/$domain=api.cxense.com
 @@||api.cxense.com/public/widget/data$script,xhr,domain=cyclestyle.net|friday.gold|friday.kodansha.co.jp|grajapa.shueisha.co.jp|wpb.shueisha.co.jp
 @@||api.cxense.com/public/widget/data?$domain=cinemacafe.net|googirl.jp|marketwatch.com|wsj.com
-@@||api.cxense.com/public/widget/data?$script,domain=mainichi.jp
+@@||api.cxense.com/public/widget/data?$script,domain=mainichi.jp|nippon.com
 @@||api.cxense.com/public/widget/data?*&ctx=https%3A%2F%2Fure.pia.co.jp$script,domain=cdn.cxpublic.com
 @@||api.cxense.com^$script,domain=bizjournals.com|ntv.co.jp
 @@||api.ipify.org^$xhr,domain=equinoxplus.com|offering-flower.com|speedcheck.ky
@@ -650,7 +653,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||s.thebrighttag.com/tag?site=$domain=sephora.com
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
 @@||scdn.cxense.com/cx.cce.js$script,domain=cinemacafe.net|grajapa.shueisha.co.jp|mainichi.jp|rbbtoday.com|wpb.shueisha.co.jp
-@@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|mainichi.jp
+@@||scdn.cxense.com/cx.js$script,domain=cdn.cxpublic.com|cyclestyle.net|mainichi.jp|nippon.com
 @@||sephora-track.inside-graph.com/gtm/$domain=sephora.com
 @@||sephora-track.inside-graph.com/ig.js$domain=sephora.com
 @@||smushcdn.com^*/1.gif$domain=retrounlim.com

@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20221005
+! Version: 20221007
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -52,9 +52,8 @@
 /^https:\/\/[a-z]{6,10}\.com\/script\/n[a-z]su\.js$/$script,third-party
 /^https:\/\/[a-z]{8}\.com\/sdk\.js\?sid=[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/$script,third-party
 /^https:\/\/[a-z]{8}\.xyz\/main\.js$/$script,third-party
-/^https:\/\/[a-z]{10,14}\.ca(?:m|sa)\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{10,14}\.(?:c[ao][ms]a?|fun)\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https:\/\/[a-z]{10,14}\.casa\/tsk\/[\*_0-9a-zA-Z]{600,}$/$image,third-party
-/^https:\/\/[a-z]{10,14}\.fun\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https?:\/\/www\.[0-9a-z]{5,11}\.(?:com|name)\/ok\/ok\.js$/$script,~third-party,match-case
 /^https?:\/\/[-0-9a-z]{4,}\.[a-z]{2,7}(\.[a-z]{2})?\/apis-\d\.js(\?v=\d)?$/$script,~third-party
 /^https?:\/\/[a-z-]{6,16}\.(?:com?|pro|info|xyz)\/[acd][-\.\/_A-Za-z][DHWm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6wyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,xmlhttprequest,third-party,match-case
@@ -457,15 +456,16 @@ _spot_id=*&zone_id=$script,~third-party
 #@#[class^="div-gpt-ad"]
 #@#[id^="div-gpt-ad"]
 
-!!#if (!adguard_ext_chromium)
 /\/nb\/(?=[a-z]{0,9}[A-Z])[a-zA-Z]{10}\.js/$script,~third-party,match-case
 /^https:\/\/[0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,84}[A-Z])(?=[-_a-zA-Z]{0,84}[0-9])[-_0-9a-zA-Z]{54,85}(#\?v=[0-9a-f]{32})?$/$ping,script,xmlhttprequest,third-party,match-case
 /^https:\/\/[a-z]{7,16}\.(?:buzz|com?|lol|one|xyz)\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party,match-case
 /^https:\/\/[a-z]{7,16}\.(?:buzz|com?|lol|one|xyz)\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case
-/^https:\/\/[a-z]{8,16}\.(?:com?|club|fun|hair)\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
+/^https:\/\/[a-z]{8,16}\.(?:com?|club|fun|hair|work|xyz)\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
 /^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]*\*)(?=[%\*=\?_a-zA-Z]*\d)(?=[%\*=\?_0-9a-z]*[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$script,redirect-rule=noopjs
-/^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/(?!api|available)[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case
+/^https?:\/\/[a-z]{5,12}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
+/^https?:\/\/[a-z]{5,12}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
+/^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/(?!api|available)[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$stylesheet,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,third-party,match-case
 @@||crunchyroll.adclixx.net/vast?fg=$script
@@ -487,4 +487,3 @@ _spot_id=*&zone_id=$script,~third-party
 @@||yahoo.adnetasia.com/serv?s=$script
 @@||yahoo.adtrackers.net/serv?s=$script
 @@||yahoo.bannertrack.net/serv?s=$script
-!!#endif

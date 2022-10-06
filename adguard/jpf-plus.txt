@@ -6,12 +6,22 @@
 
 ! ---------- Ads general ----------
 &subAffId={SUBAFFID}^$subdocument,script,third-party
+-960x60.gif|$third-party,image,domain=~edu|~gov|~jp
+.com/script/compatibility.js|$third-party
 /300x250.html?targetUrl=$subdocument
+/300x250.html|$subdocument,third-party
+/960-60.gif|$third-party,image,domain=~edu|~gov|~jp
+/960x120.gif|$third-party,image,domain=~edu|~gov|~jp
+/960X60.gif|$third-party,image,domain=~edu|~gov|~jp
+/^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,third-party
+/assets/jquery/jquery-1.4.3.min.js?v=2&type=
 /assets/jquery/jquery-3.2.min.js?v=2&type=
 /bnr/footer?i=$subdocument,~third-party
 /bnr/list?i=$subdocument,~third-party
 /bnr/top?i=$subdocument,~third-party
+/code/native.js?h=
+/code/pops.js?h=
 /fp-interstitial.js
 /frms/NTV$subdocument,~third-party
 /pub?id=$script,third-party
@@ -20,28 +30,29 @@
 _300_250_
 
 ! Incompatible with MV3
-/^https:\/\/[a-z]{7,16}\.lol\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case
-/^https:\/\/[a-z]{7,16}\.lol\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party,match-case
-/^https:\/\/[a-z]{7,16}\.one\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case
-/^https:\/\/[a-z]{7,16}\.one\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party,match-case
-/^https:\/\/[a-z]{7,16}\.xyz\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case
-/^https:\/\/[a-z]{7,16}\.xyz\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party,match-case
+/^https:\/\/[0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,84}[A-Z])(?=[-_a-zA-Z]{0,84}[0-9])[-_0-9a-zA-Z]{54,85}(#\?v=[0-9a-f]{32})?$/$ping,script,xmlhttprequest,third-party,match-case
+/^https?:\/\/[a-z]{5,12}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
+/^https?:\/\/[a-z]{5,12}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
+/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/(?!api|available)[a-z]{4,}\.json$/$xhr,3p,match-case,domain=~edu|~gov|~jp
 
 ! ---------- Cosmetic general ----------
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 
 ! ---------- Cosmetic specific: too few visitors ----------
-hana3939.com###text-10
-hana3939.com###text-12
-hana3939.com###text-13
-hana3939.com###text-4
 
 ! ---------- Exception: blocking ----------
-/player/stats.php?$image,1p,redirect-rule=1x1.gif
 @@||point-g.rakuten.co.jp/pg_assets/item/contets/*_300_250_$image,~third-party
 
+! Anti anti-adb
 ! Incompatible MV3
+/player/stats.php?$image,1p,redirect-rule=1x1.gif
 ||nessainy.net/favicon.ico$image,redirect-rule=32x32.png
+
+! ---------- Scam & Redirect ----------
+/?r=dir&zoneid=$all
+/jump/next.php?r=$document
+/index.php?main_page=product_info&cPath=$document,domain=buzz|life|live|site|store|top|xyz
+/index.php?main_page=product_info&products_id=$document,domain=buzz|life|live|site|store|top|xyz
 
 !#if adguard
 !#include jpfp-adguard.txt
@@ -49,7 +60,3 @@ hana3939.com###text-4
 !#if ext_ublock
 !#include jpfp-ublock.txt
 !#endif
-
-! ---------- Scam & Redirect ----------
-/?r=dir&zoneid=$all
-/jump/next.php?r=$document
