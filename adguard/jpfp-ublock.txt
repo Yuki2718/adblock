@@ -4,6 +4,7 @@
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 ! ---------- Ads general ----------
+!#if ext_ublock
 /^https:\/\/[a-z]{10,14}\.cam\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
 /^https:\/\/[a-z]{10,14}\.casa\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
 /^https:\/\/[a-z]{10,14}\.fun\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p
@@ -15,11 +16,18 @@
 /^https:\/\/[a-z]{7,16}\.one\/[+\/0-9a-zA-Z]{400,}$/$frame,3p,match-case
 /^https:\/\/[a-z]{7,16}\.xyz\/[+\/0-9a-zA-Z]{140,}$/$image,ping,3p,match-case
 /^https:\/\/[a-z]{7,16}\.xyz\/[+\/0-9a-zA-Z]{400,}$/$frame,3p,match-case
-/^https?_:\/\/[a-z]{8,15}\.club\/[%0-9a-zA-Z]{170,}$/$script,3p,match-case
-/^https?:\/\/[a-z]{8,15}\.fun\/[%0-9a-zA-Z]{170,}$/$script,3p,match-case
-/^https?:\/\/[a-z]{8,15}\.hair\/[%0-9a-zA-Z]{170,}$/$script,3p,match-case
-/^https?:\/\/[a-z]{8,15}\.work\/[%0-9a-zA-Z]{170,}$/$script,3p
-/^https?:\/\/[a-z]{8,15}\.xyz\/[%0-9a-zA-Z]{170,}$/$script,3p
+/^https?:\/\/[a-z]{8,16}\.club\/[%0-9a-zA-Z]{170,}$/$script,3p,match-case
+/^https?:\/\/[a-z]{8,16}\.fun\/[%0-9a-zA-Z]{170,}$/$script,3p,match-case
+/^https?:\/\/[a-z]{8,16}\.hair\/[%0-9a-zA-Z]{170,}$/$script,3p,match-case
+/^https?:\/\/[a-z]{8,16}\.work\/[%0-9a-zA-Z]{170,}$/$script,3p
+/^https?:\/\/[a-z]{8,16}\.xyz\/[%0-9a-zA-Z]{170,}$/$script,3p
+!#endif
+!#if ext_ubol
+/^https:\/\/[a-z]{10,14}\.(?:ca[ms]a?|fun)\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party,match-case,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{8,16}\.(?:club|fun|hair|work|xyz)\/[%0-9a-zA-Z]{170,}$/$script,third-party,match-case,domain=~edu|~gov|~jp
+!#endif
 
 ! Incompatible with MV3
 
