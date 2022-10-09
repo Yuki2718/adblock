@@ -17,6 +17,7 @@
 /^https?:\/\/[a-z]{5,12}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{5,12}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,third-party
+/a/na/js/*?container=$script,third-party
 /assets/jquery/jquery-1.4.3.min.js?v=2&type=
 /assets/jquery/jquery-3.2.min.js?v=2&type=
 /bnr/footer?i=$subdocument,~third-party
@@ -66,6 +67,6 @@ kaigainohannoublog.blog55.fc2.com##.plugin2_outline:last-child
 !#if adguard
 !#include jpfp-adguard.txt
 !#endif
-!#if !adguard
+!#if ext_ublock
 !#include jpfp-ublock.txt
 !#endif
