@@ -183,24 +183,6 @@ A: See the purpose, this list is built to make as few breakage as possible for a
 
 </details>
 
-<details>
-<summary><strong>no_gen_cosm</strong></summary>
-
-### Placeholder Hider with no generic hiding (phhider.txt)
-
-`Ignore generic cosmetic filters` is recommended if you want better performance, less false positive, and less chance to encounter anti-adblock without sacrificing security or privacy. However, you'll notice ugly layout of many websites once you enabled this option<sup>1</sup>. This filter mitigates this on English sites by removing placeholders left as a result of disabling generic cosmetic filters. Useful to those who replaced EasyList with its "without element hiding" version too. I also highly recommend you to add AdGuard Base in uBlock Origin's stock lists not only because it includes many specific cosmetic rules but also many potential problems by my rules are already addressed in the list. This would probably be the first public list utilizing [specific generic filter](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#specific-generic).
-
-Exclusion:
-- Small place holder (e.g. *##.ad-space or *##.ad-area hides placeholders on various WordPress sites but won't be added for the reason.)
-- Placeholders covered by AdGuard Base
-
-<a href="https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt&title=Placeholder%20Hider%20with%20no%20generic%20hiding">Subscribe</a>
-[View List](https://raw.githubusercontent.com/Yuki2718/adblock/master/no_gen_cosm/phhider.txt)
-
-<sub>1: Another side effect is any filter lists that heavily depend on generic cosmetic filters don't work well. An example of such lists is Fanboy Annoyances List.</sub>
-
-</details>
-
 #### Notable users of my lists
 
 [dbl.oisd.nl | Internet's #1 domain blocklist](https://oisd.nl/)
