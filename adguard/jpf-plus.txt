@@ -29,6 +29,8 @@
 /fp-interstitial.js
 /frms/NTV$subdocument,~third-party
 /pub?id=$script,third-party
+/utx?cb=$xmlhttprequest,third-party
+/utx?tid=$xmlhttprequest,third-party
 /vast/?zid=$xmlhttprequest,third-party
 ?oo=1^$xmlhttprequest,third-party
 _300_250_
@@ -42,9 +44,9 @@ _300_250_
 /^https?:\/\/[a-z]{8,16}\.com?\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,3p,match-case,domain=~edu|~gov|~jp
 
 ! ---------- Ads specific - adult ----------
-||majav.org/Pic/
 
 ! ---------- Cosmetic general ----------
+##.vjs-overlayed.size-300x250
 ##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"]
 
 ! ---------- Cosmetic specific: too few visitors ----------
@@ -55,12 +57,17 @@ kaigainohannoublog.blog55.fc2.com##.plugin2_outline:last-child
 @@||point-g.rakuten.co.jp/pg_assets/item/contets/*_300_250_$image,~third-party
 
 ! Anti anti-adb
-! Incompatible MV3
-/player/stats.php?$image,1p,redirect-rule=1x1.gif
-/popunder_$script,redirect-rule=noopjs
 @@/ads-prebid.js$script,~third-party
 @@/prebid-ads.js$script,xmlhttprequest,~third-party
-||nessainy.net/favicon.ico$image,redirect-rule=32x32.png
+||doubleclick.net/tag/js/gpt.js$redirect=googletagservices_gpt.js
+||doubleclick.net^$xmlhttprequest,redirect=nooptext,domain=~d3ward.github.io
+||media.net/dmedianet.js$redirect=noopjs
+||nessainy.net/favicon.ico$image,redirect=32x32.png
+
+! Incompatible with MV3
+/player/stats.php?$image,1p,redirect-rule=1x1.gif
+/popunder_$script,redirect-rule=noopjs
+||google-analytics.com/analytics.js$redirect-rule=google-analytics_analytics.js
 
 ! ---------- Scam & Redirect ----------
 /?r=dir&zoneid=$all
