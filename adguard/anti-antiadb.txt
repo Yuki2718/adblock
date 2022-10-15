@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20221011
+! Version: 20221016
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -329,6 +329,26 @@ _spot_id=*&zone_id=$script,~third-party
 @@/wp-content/plugins/imedia-basic/adserver-$script,~third-party
 @@/wp-content/plugins/quick-adsense-reloaded/assets/js/ads.js
 @@/wp-content/plugins/wordpress-popup/assets/js/adb.min.js?$script,~third-party
+@@||crunchyroll.adclixx.net/vast?fg=$script
+@@||crunchyroll.adnetasia.com/vast?fg=$script
+@@||crunchyroll.adtrackers.net/vast?fg=$script
+@@||crunchyroll.bannertrack.net/vast?fg=$script
+@@||fundingchoicesmessages.google.com^$script,domain=bbc.com|soranews24.com|youpouch.com
+@@||g.adspeed.net/ad.php?do=detectadblocker|$script
+@@||ox-d.adclixx.net/auid=$script
+@@||ox-d.adnetasia.com/auid=$script
+@@||ox-d.adtrackers.net/auid=$script
+@@||ox-d.bannertrack.net/auid=$script
+@@||serve.adclixx.net/promoload?d=$script
+@@||serve.adnetasia.com/promoload?d=$script
+@@||serve.adtrackers.net/promoload?d=$script
+@@||serve.bannertrack.net/promoload?d=$script
+@@||torrentz.adnetasia.com/mgid/ad.js|
+@@||torrentz.adtrackers.net/mgid/ad.js|
+@@||torrentz.bannertrack.net/mgid/ad.js|
+@@||yahoo.adnetasia.com/serv?s=$script
+@@||yahoo.adtrackers.net/serv?s=$script
+@@||yahoo.bannertrack.net/serv?s=$script
 ||a.pub.network^$script,redirect-rule=noopjs
 ||adblockanalytics.com/ads.js$script,redirect-rule=noopjs
 ||ads-api.twitter.com^$xmlhttprequest,redirect-rule=nooptext,domain=~twitter.com
@@ -347,6 +367,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||cloudfront.net/prebid_$script,redirect-rule=noopjs
 ||cloudfront.net/videojs/videojs-contrib-ads.js$script,redirect-rule=noopjs
 ||coinad.org/display/items.php$script,redirect-rule=noopjs
+||coinzillatag.com^$script,redirect-rule=noopjs
 ||connect.facebook.net/en_US/fbevents.js$script,redirect-rule=noopjs
 ||cryptocoinsad.com^$script,redirect-rule=noopjs
 ||cxense.com/cx.js$script,redirect-rule=noopjs
@@ -466,22 +487,3 @@ _spot_id=*&zone_id=$script,~third-party
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/(?!api|available)[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$stylesheet,third-party,match-case
 /^https?:\/\/[a-z]{8,15}\.(?:com|net|top|xyz)\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$image,third-party,match-case
-@@||crunchyroll.adclixx.net/vast?fg=$script
-@@||crunchyroll.adnetasia.com/vast?fg=$script
-@@||crunchyroll.adtrackers.net/vast?fg=$script
-@@||crunchyroll.bannertrack.net/vast?fg=$script
-@@||fundingchoicesmessages.google.com^$script,domain=bbc.com|soranews24.com|youpouch.com
-@@||ox-d.adclixx.net/auid=$script
-@@||ox-d.adnetasia.com/auid=$script
-@@||ox-d.adtrackers.net/auid=$script
-@@||ox-d.bannertrack.net/auid=$script
-@@||serve.adclixx.net/promoload?d=$script
-@@||serve.adnetasia.com/promoload?d=$script
-@@||serve.adtrackers.net/promoload?d=$script
-@@||serve.bannertrack.net/promoload?d=$script
-@@||torrentz.adnetasia.com/mgid/ad.js|
-@@||torrentz.adtrackers.net/mgid/ad.js|
-@@||torrentz.bannertrack.net/mgid/ad.js|
-@@||yahoo.adnetasia.com/serv?s=$script
-@@||yahoo.adtrackers.net/serv?s=$script
-@@||yahoo.bannertrack.net/serv?s=$script

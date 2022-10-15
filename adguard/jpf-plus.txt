@@ -19,6 +19,7 @@
 /^https?:\/\/[a-z]{5,12}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{5,12}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,third-party
+/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party
 /a/na/js/*?container=$script,third-party
 /bnr/footer?i=$subdocument,~third-party
 /bnr/list?i=$subdocument,~third-party
@@ -44,7 +45,13 @@ _300_250_
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/(?!api|available)[a-z]{4,}\.json$/$xhr,3p,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,16}\.com?\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,3p,match-case,domain=~edu|~gov|~jp
 
+! ---------- Ads 3p ----------
+||cloudflare.com/ajax/libs/postscribe/$script,third-party
+
 ! ---------- Ads specific - adult ----------
+
+! ---------- Popup general ----------
+&key=*&adb=y^$popup,third-party
 
 ! ---------- Cosmetic general ----------
 ##.vjs-overlayed.size-300x250
@@ -60,10 +67,7 @@ kaigainohannoublog.blog55.fc2.com##.plugin2_outline:last-child
 ! Anti anti-adb
 @@/ads-prebid.js$script,~third-party
 @@/prebid-ads.js$script,xmlhttprequest,~third-party
-||doubleclick.net/tag/js/gpt.js$redirect=googletagservices_gpt.js
-||doubleclick.net^$xmlhttprequest,redirect=nooptext,domain=~d3ward.github.io
-||media.net/dmedianet.js$redirect=noopjs
-||nessainy.net/favicon.ico$image,redirect=32x32.png
+@@||g.adspeed.net/ad.php?do=detectadblocker|$script
 
 ! Incompatible with MV3
 /player/stats.php?$image,1p,redirect-rule=1x1.gif

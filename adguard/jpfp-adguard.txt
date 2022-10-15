@@ -8,6 +8,7 @@
 /^https:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party,match-case,domain=~edu|~gov|~jp
 /^https:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case,domain=~edu|~gov|~jp
 /^https:\/\/[a-z]{8,16}\.(?:club|fun|hair|work|xyz)\/[%0-9a-zA-Z]{170,}$/$script,third-party,match-case,domain=~edu|~gov|~jp
+/ajax/banner/list?page=$xmlhttprequest,~third-party
 /get/*?zoneid=$script
 /script/atg.js$script,third-party
 
@@ -78,7 +79,13 @@
 ||adnetasia.com^$script,third-party,redirect=prevent-bab2,important
 ||adtrackers.net^$script,third-party,redirect=prevent-bab2,important
 ||bannertrack.net^$script,third-party,redirect=prevent-bab2,important
+||coinzillatag.com^$script,redirect=noopjs
+||doubleclick.net/tag/js/gpt.js$~xmlhttprequest,redirect=googletagservices-gpt
+||doubleclick.net^$xmlhttprequest,redirect=nooptext,domain=~d3ward.github.io
 ||fundingchoicesmessages.google.com^$third-party
+||media.net/dmedianet.js$redirect=noopjs
+||nessainy.net/favicon.ico$image,redirect=32x32-transparent.png
+
 #@##Ad300x250
 #@##Ad728x90
 #@##AdArea
