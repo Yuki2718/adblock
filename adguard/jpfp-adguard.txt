@@ -142,8 +142,11 @@
 ! ---------- Scam & Redirect ----------
 /\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}/$document
 /^https?:\/\/[-0-9a-z]{5,}\.com\/[0-9a-z]{8,10}\?key=[0-9a-f]{32}$/$subdocument,third-party
+/_dating\d\/index\.html\?aref=/$document
 /click?pid=*&sub1=$document
 /click?pid=*&sub1=$popup,third-party
+/index.php?uid=*&code=ad^$document
+/tds/ae?tds_campaign=$document
 /zcvisitor/*?campaignid$document
 ^apb=*&ata=mobilemdots^$document
 ^cep=*&lptoken=$document
