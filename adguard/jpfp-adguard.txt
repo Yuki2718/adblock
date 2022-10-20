@@ -4,17 +4,11 @@
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 ! ---------- Ads general ----------
-/^https:\/\/[a-z]{10,14}\.(?:ca[ms]a?|fun)\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
-/^https:\/\/[a-z]{8,15}\.com\/(?:beta|gamma|omega)\/\d{3,4}$/$xmlhttprequest,third-party
-/^https:\/\/[a-z]{8,16}\.(?:club|fun|hair|work|xyz)\/[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
 /^https?:\/\/[a-z-]{6,16}\.(?:com?|pro|info|xyz)\/[acd][-\.\/_A-Za-z][DHWm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6wyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$script,xmlhttprequest,third-party,match-case
-/^https?:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party
-/^https?:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party
 /ajax/banner/list?page=$xmlhttprequest,~third-party
 /get/*?zoneid=$script
 /script/atg.js$script,third-party
-
-! Incompatible with MV3
+/ts.php?$xmlhttprequest,third-party
 
 ! ---------- Popup general ----------
 &key=*&adb=y$popup,third-party
@@ -148,8 +142,10 @@
 /index.php?uid=*&code=ad^$document
 /tds/ae?tds_campaign=$document
 /zcvisitor/*?campaignid$document
+?bid=0.*&search_referrer_domain=$document
 ^apb=*&ata=mobilemdots^$document
 ^cep=*&lptoken=$document
-! Incompatible with MV3
+!#if !env_mv3
 /^https:\/\/(?:www\d\.)?[-a-z]{6,}\.(?:com|info|net|org)\/(?=[-_a-zA-Z]{0,42}\d)(?=[-_0-9a-z]{0,42}[A-Z])[-_0-9a-zA-Z]{43}\/\?[cs]id=[-_0-9a-zA-Z]{16,36}(?:&qs\d=\S+)?&[cs]id=[_0-9a-f]{1,32}$/$document,match-case
 /^https?:\/\/((?!www)[a-z]{3,}|\d{2})?\.?[-0-9a-z]{6,}\.(?:buzz|com|de|fun|guru|info|li[fv]e|mobi|online|pw|site|space|top|us|xyz)\/(?:[a-z]{6,8}\/)?\/?\?[ou]=[0-9a-z]{7}&[ou]=[0-9a-z]{7}/$document,subdocument,match-case
+!#endif

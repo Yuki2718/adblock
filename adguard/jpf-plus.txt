@@ -14,13 +14,13 @@
 /960x120.gif|$third-party,image,domain=~edu|~gov|~jp
 /960X60.gif|$third-party,image,domain=~edu|~gov|~jp
 /?rb=*&zoneid=$xmlhttprequest,popup,third-party
-/\/assets\/jquery\/jquery-\d\.\d\.(?:\d\.)?min\.js\?(?:v=2)?type=(?:adult|mainstream)$/$script,~third-party
+/\/assets\/jquery\/jquery-\d\.\d\.(?:\d\.)?min\.js\?(?:v=2)?&?type=(?:adult|mainstream)$/$script,~third-party
 /^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
-/^https?:\/\/[a-z]{5,12}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
-/^https?:\/\/[a-z]{5,12}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,third-party
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party
 /a/na/js/*?container=$script,third-party
+/asset/angular.min.js?t=$xmlhttprequest,~third-party
+/asset/jquery/slim-3.2.min.js?*&t=$xmlhttprequest,~third-party
 /bens/vinos*.js?$script,third-party
 /bnr/footer?i=$subdocument,~third-party
 /bnr/list?i=$subdocument,~third-party
@@ -41,13 +41,24 @@
 ?zoneid=*&ab=1|$script,third-party
 _300_250_
 
-! Incompatible with MV3
+!#if !env_mv3
 /^https:\/\/[0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,84}[A-Z])(?=[-_a-zA-Z]{0,84}[0-9])[-_0-9a-zA-Z]{54,85}(#\?v=[0-9a-f]{32})?$/$ping,script,xmlhttprequest,third-party,match-case
+/^https?:\/\/[a-z]{5,12}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
+/^https?:\/\/[a-z]{5,12}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https:\/\/[a-z]{10,14}\.com\/(?=[%=\?_0-9a-zA-Z]*\*)(?=[%\*=\?_a-zA-Z]*\d)(?=[%\*=\?_0-9a-z]*[A-Z])[%\*=\?_0-9a-zA-Z]{1000,}$/$xhr,3p,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{7,16}\.com?\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{7,16}\.com?\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$subdocument,popup,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/(?!api|available)[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,16}\.com?\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case,domain=~edu|~gov|~jp
+!#endif
+!#if env_mv3
+/^https:\/\/[a-z]{10,14}\.(?:ca[ms]a?|fun)\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
+/^https?:\/\/[a-z]{5,12}\.com\/script\/(?:bootstrap|jquery)\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
+/^https:\/\/[a-z]{8,15}\.com\/(?:beta|gamma|omega)\/\d{3,4}$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{8,16}\.(?:club|fun|hair|work|xyz)\/[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
+/^https?:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party
+/^https?:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party
+!#endif
 
 ! ---------- Ads 3p ----------
 ||cloudflare.com/ajax/libs/postscribe/$script,third-party
@@ -65,6 +76,7 @@ _300_250_
 ##iframe[class][scrolling="no"][sandbox="allow-same-origin allow-scripts allow-popups"][style*="z-index: 2147483647; position: fixed"]
 
 ! ---------- Cosmetic specific: too few visitors ----------
+english.mag2.com###text-4 a:not([href="http://www.mag2.com/"])
 kaigainohannoublog.blog55.fc2.com##.plugin1_outline:first-child
 kaigainohannoublog.blog55.fc2.com##.plugin2_outline:last-child
 
@@ -76,10 +88,11 @@ kaigainohannoublog.blog55.fc2.com##.plugin2_outline:last-child
 @@/prebid-ads.js$script,xmlhttprequest,~third-party
 @@||g.adspeed.net/ad.php?do=detectadblocker|$script
 
-! Incompatible with MV3
+!#if !env_mv3
 /player/stats.php?$image,1p,redirect-rule=1x1.gif
 /popunder_$script,redirect-rule=noopjs
 ||google-analytics.com/analytics.js$redirect-rule=google-analytics_analytics.js
+!#endif
 
 ! ---------- Scam & Redirect ----------
 /?r=dir&zoneid=$all
