@@ -2,7 +2,7 @@
 ! Expires: 4 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20221021
+! Version: 20221022
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -400,6 +400,7 @@ smart-flash.jp##^.adsBlock
 /fe_logger?
 /firebase-performance-
 /frosmo.easy.js
+/gb-tracker-
 /geo.php?
 /geoLocationData/v1/*
 /js/access.js$domain=~expocity-mf.com|~smt-cinema.com
@@ -448,6 +449,7 @@ _omniture.$script,domain=mathworks.com
 ||asadcdn.com^$3p
 ||cdn-net.com^$3p
 ||d2wy8f7a9ursnm.cloudfront.net^
+||db-ip.com^$3p
 ||dynatrace-managed.com^$3p
 ||ensighten.com^$3p
 ||extreme-ip-lookup.com^$3p
@@ -621,7 +623,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 @@||collect.igodigital.com/collect.js$domain=enoteca.co.jp
 @@||cxense.com/cx.cce.js$script,domain=googirl.jp
 @@||cxense.com/cx.js$script,domain=cinemacafe.net|googirl.jp|grajapa.shueisha.co.jp|tv-tokyo.co.jp|ure.pia.co.jp
-@@||dashboard.unity.com/dist/udash/app/assets/services/analytics/$1p
+@@||dashboard.unity.com/dist/udash/app/assets/services/analytics/$domain=dashboard.unity.com|dashboard.unity3d.com
 @@||ensighten.com^*/Bootstrap.js$domain=americanexpress.com|britishairways.com|citi.com|dell.com|hp.com|norton.com|t-mobile.com
 @@||ensighten.com^*/code/$script
 @@||ensighten.com^*/scode/$script,domain=norton.com

@@ -25,6 +25,7 @@
 /bnr/footer?i=$subdocument,~third-party
 /bnr/list?i=$subdocument,~third-party
 /bnr/top?i=$subdocument,~third-party
+/ceef/gdt3g0/tbt/*$xmlhttprequest,third-party
 /code/native.js?h=
 /code/pops.js?h=
 /fp-interstitial.js
@@ -36,12 +37,17 @@
 /utx?tid=$xmlhttprequest,third-party
 /vast/?zid=$xmlhttprequest,third-party
 ://a.*/loader?a=$subdocument,third-party
+://ad.*.php?id=$script,~third-party
+://creative.xxx*.com/widgets/$subdocument,third-party
+://notads.*.xyz/$script
 =eyJ.js^$script
 ?oo=1^$xmlhttprequest,third-party
 ?zoneid=*&ab=1|$script,third-party
 _300_250_
 
 !#if !env_mv3
+/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}$/$script,third-party
+/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}$/$script,third-party
 /^https:\/\/[0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,84}[A-Z])(?=[-_a-zA-Z]{0,84}[0-9])[-_0-9a-zA-Z]{54,85}(#\?v=[0-9a-f]{32})?$/$ping,script,xmlhttprequest,third-party,match-case
 /^https?:\/\/[a-z]{5,12}\.com\/script\/bootstrap\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{5,12}\.com\/script\/jquery\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
@@ -52,6 +58,7 @@ _300_250_
 /^https?:\/\/[a-z]{8,16}\.com?\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case,domain=~edu|~gov|~jp
 !#endif
 !#if env_mv3
+/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/40[01]\/\d{7}$/$script,third-party
 /^https:\/\/[a-z]{10,14}\.(?:ca[ms]a?|fun)\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
 /^https?:\/\/[a-z]{5,12}\.com\/script\/(?:bootstrap|jquery)\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https:\/\/[a-z]{8,15}\.com\/(?:beta|gamma|omega)\/\d{3,4}$/$xmlhttprequest,third-party
