@@ -2,7 +2,7 @@
 ! Expires: 3 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20221022
+! Version: 20221023
 
 ! Temporal
 /\.cloudfront.net\/202\d{5}\/(?:bonuscoin-01|sukima_susume72890_\d|202\d{5}_haruden_[_0-9]+)\.(?:jpg|png)$/$image,3p,domain=sukima.me
@@ -346,8 +346,8 @@ naturum.co.jp###js-popup
 ||55truck.com^*/truck/img_banner_gyohan.
 55truck.com##.sideSlideInfo
 ||a-port.asahi.com/top/image/new-start-btn.
-||accounts.google.com/gsi/iframe/select?*&ux_mode=popup&ui_mode=$domain=twitter.com
-twitter.com###credential_picker_container
+||accounts.google.com/gsi/iframe/select?*&ux_mode=popup&ui_mode=$domain=mirror.co.uk|twitter.com
+mirror.co.uk,twitter.com###credential_picker_container
 ||adte.jp/rec/hdd/wp-content/uploads/2021/04/bnr_atMediaBtm03.jpg
 adte.jp##.afc_popup
 ||adultgogo.net/images/top/ad/
@@ -1337,7 +1337,7 @@ urbanoutfitters.com###modal form#email-sign-up-form:upward(#modal)
 urbanoutfitters.com##body[style="overflow: hidden;"]:style(overflow: auto!important;)
 urocca.jp###page_top > a[class$="Block"][href^="#"]
 video.dmkt-sp.jp##.lp_cta_fixed
-video.fc2.com##a[href^="http://fc2information"][data-link][style]:upward(1)
+video.fc2.com,vip-front.video.g.fc2.com##a[href^="http://fc2information"][data-link][style]:upward(1)
 video.laxd.com##.noLoginSticker
 video.tv-tokyo.co.jp###jsiModalOverLayerShare
 video.tv-tokyo.co.jp##.md-question
@@ -1515,16 +1515,19 @@ qiita.com##[id^=logly-lift]
 quora.com##.q-box > div[class^="CssComponent-"][style*="height: 50px;"]
 quora.com##.qu-pt--medium > .q-box[style="box-sizing: border-box;"] > div:not([class]) > div:not([class]) > div.q-box.qu-overflow--hidden[style="box-sizing: border-box;"] > div.qu-borderColor--blue
 r.gnavi.co.jp##.js-appealPointToast
+reddit.com##+js(rc, m-blurred, .m-blurred)
+reddit.com##+js(rc, scroll-disabled, body)
 reddit.com##.XPromoBlockingModal
 reddit.com##.XPromoInFeed
 reddit.com##.XPromoPill
-!reddit.com##.XPromoPopup.m-active
+reddit.com##.XPromoPopup.m-active
 reddit.com##.m-blurred:style(filter: none !important;)
 reddit.com##.xPromoAppStoreFooter
 reddit.com##.xPromoChoiceBanner
 reddit.com##body.scroll-disabled:style(overflow: visible!important; position: static!important;)
 reddit.com##body.scroll-is-blocked:style(overflow: auto !important;)
 reddit.com##div[style^="filter: blur"]:style(filter: none !important;)
+reddit.com##shreddit-async-loader[bundlename="bottom_bar_xpromo"]
 reddit.com##shreddit-experience-tree
 reddit.com##xpromo-nsfw-blocking-modal
 reddit.com##xpromo-untagged-content-blocking-modal
@@ -1874,6 +1877,7 @@ theintercept.com##.NewsletterEmbed-container
 thenextweb.com##.channel-cta
 theregister.com##.newsletter_signup_unit
 theverge.com##.duet--cta--newsletter
+tomsguide.com##div[id^="slice-container-newsletter"]
 tp-link.com##.tp-follow-subscribe
 ubunlog.com##.widget_newsletterwidget
 union-company.jp###mailupdate
@@ -2873,7 +2877,6 @@ gindaco.com##.chakra-fade[style="opacity: 1;"]
 hpplus.jp##+js(set, $.cookie, trueFunc)
 itreview.jp##.blur-contents:style(filter: none!important;pointer-events: auto!important)
 itreview.jp##.float.itr-blur-login
-ironna.jp###side-theme-list
 jma.go.jp###jma_ad_config_button
 live2.nicovideo.jp##[class^=___player-display-header___]
 norton.com##+js(window-close-if, /protect?)
