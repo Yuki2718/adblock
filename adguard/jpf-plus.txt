@@ -18,6 +18,7 @@
 /^https:\/\/www\.[a-z]{8,14}\.com\/[a-z]{1,4}\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$script,third-party
 /a/na/js/*?container=$script,third-party
+/api/spots/*^fill=$xmlhttprequest
 /asset/angular.min.js?t=$xmlhttprequest,~third-party
 /asset/jquery/slim-3.2.min.js?*&t=$xmlhttprequest,~third-party
 /bens/vinos*.js?$script,third-party
@@ -30,6 +31,10 @@
 /fp-interstitial.js
 /frms/NTV$subdocument,~third-party
 /jsa.hh?$script,~third-party
+/player/html.php?aid=start_html&*&referer=$subdocument,~third-party
+/player/html.php?aid=pause_html&*&referer=$subdocument,~third-party
+/player/html.php?aid=pre_roll_html&$subdocument,~third-party
+/player/html.php?aid=post_roll_html^$redirect=noop.html,subdocument,~third-party
 /pub?id=$script,third-party
 /out/b.html#$subdocument,~third-party
 /sc4fr/rwff/f9ef/*$script,xmlhttprequest,third-party
@@ -45,7 +50,7 @@
 ?zoneid=*&ab=1|$script,third-party
 _300_250_
 
-!#if !env_mv3
+! Incompatible with MV3
 /^https:\/\/[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}$/$script,third-party
 /^https:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}$/$script,third-party
 /^https:\/\/[0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,84}[A-Z])(?=[-_a-zA-Z]{0,84}[0-9])[-_0-9a-zA-Z]{54,85}(#\?v=[0-9a-f]{32})?$/$ping,script,xmlhttprequest,third-party,match-case
@@ -56,16 +61,15 @@ _300_250_
 /^https?:\/\/[a-z]{7,16}\.com?\/(?=[+\/a-zA-Z]*\d)(?=[+\/0-9a-z]*[A-Z])[+\/0-9a-zA-Z]{400,}$/$subdocument,popup,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/(?!api|available)[a-z]{4,}\.json$/$xmlhttprequest,third-party,match-case,domain=~edu|~gov|~jp
 /^https?:\/\/[a-z]{8,16}\.com?\/(?=[%a-zA-Z]*\d)(?=[%0-9a-z]*[A-Z])[%0-9a-zA-Z]{170,}$/$script,third-party,match-case,domain=~edu|~gov|~jp
-!#endif
-!#if env_mv3
-/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/40[01]\/\d{7}$/$script,third-party
-/^https:\/\/[a-z]{10,14}\.(?:ca[ms]a?|fun)\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
-/^https?:\/\/[a-z]{5,12}\.com\/script\/(?:bootstrap|jquery)\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
-/^https:\/\/[a-z]{8,15}\.com\/(?:beta|gamma|omega)\/\d{3,4}$/$xmlhttprequest,third-party
-/^https:\/\/[a-z]{8,16}\.(?:club|fun|hair|work|xyz)\/[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
-/^https?:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party
-/^https?:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party
-!#endif
+!!#if env_mv3
+!/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/40[01]\/\d{7}$/$script,third-party
+!/^https:\/\/[a-z]{10,14}\.(?:ca[ms]a?|fun)\/[%\*=\?_0-9a-zA-Z]{1000,}$/$xmlhttprequest,third-party
+!/^https?:\/\/[a-z]{5,12}\.com\/script\/(?:bootstrap|jquery)\.js$/$script,third-party,match-case,domain=~edu|~gov|~jp
+!/^https:\/\/[a-z]{8,15}\.com\/(?:beta|gamma|omega)\/\d{3,4}$/$xmlhttprequest,third-party
+!/^https:\/\/[a-z]{8,16}\.(?:club|fun|hair|work|xyz)\/[%0-9a-zA-Z]{170,}$/$script,third-party,match-case
+!/^https?:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{400,}$/$subdocument,third-party
+!/^https?:\/\/[a-z]{7,16}\.(?:buzz|lol|one|xyz)\/[+\/0-9a-zA-Z]{140,}$/$image,ping,third-party
+!!#endif
 
 ! ---------- Ads 3p ----------
 ||cloudflare.com/ajax/libs/postscribe/$script,third-party
@@ -85,6 +89,7 @@ _300_250_
 
 ! ---------- Cosmetic specific: too few visitors ----------
 english.mag2.com###text-4 a:not([href="http://www.mag2.com/"])
+fortune.auone.jp##.adsense
 kaigainohannoublog.blog55.fc2.com##.plugin1_outline:first-child
 kaigainohannoublog.blog55.fc2.com##.plugin2_outline:last-child
 lper.info##.wpa
@@ -108,15 +113,15 @@ anydebrid.com,colonist.io,downloads.descendant.me,ff14angler.com,game.goo.ne.jp,
 @@/ads-prebid.js$script,~third-party
 @@/prebid-ads.js$script,xmlhttprequest,~third-party
 @@||g.adspeed.net/ad.php?do=detectadblocker|$script
+||doubleclick.net/favicon.ico$image,redirect=32x32.png
 
 ! ---------- Exception: for default lists ----------
 #@#.adsbygoogle
 
-!#if !env_mv3
+! Incompatible with MV3
 /player/stats.php?$image,1p,redirect-rule=1x1.gif
 /popunder_$script,redirect-rule=noopjs
 ||google-analytics.com/analytics.js$redirect-rule=google-analytics_analytics.js
-!#endif
 
 ! ---------- Scam & Redirect ----------
 /?r=dir&zoneid=$all

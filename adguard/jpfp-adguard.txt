@@ -8,6 +8,7 @@
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/5\/\d{7}(?:\?_=\d+)?$/$script,third-party
 /ajax/banner/list?page=$xmlhttprequest,~third-party
 /get/*?zoneid=$script
+/js/ppndr.
 /script/atg.js$script,third-party
 /ts.php?$xmlhttprequest,third-party
 
@@ -66,14 +67,23 @@
 ###google_ad:not([style^="position: absolute; left: -5000px"])
 ###outbrain-paid:not([style^="position: absolute; left: -5000px"])
 ###sponsored_link:not([style^="position: absolute; left: -5000px"])
+##.ad-300x250:not(.ads)
+##.ad-left:not(.adsbox)
+##.ad-link:not(.adsbox)
+##.ad-loading:not(.adsbox)
+##.ad-marker:not(.adsbox)
+##.ad-placeholder:not(#filter_ads_by_classname):not(#detect_ad_empire):not(#detect):not(.adsbox)
+##.ad-placement:not(.adsbox):not(.afs_ads):not(#ablockercheck)
+##.ad-refresh:not(.adsbox)
 ##div[style^="z-index: 999999; background-image: url(\"data:image/gif;base64,"][style$="position: absolute;"]
 
-! Anti anti-adb
+! Exception: anti anti-adb
 /ads-prebid.js$script,redirect-rule=prebid-ads
 /prebid-add.js$script,redirect-rule=prebid-ads
 /prebid-ads.js$script,redirect-rule=prebid-ads,domain=~exey.io
 ||adclixx.net^$script,third-party,redirect=prevent-bab2,important
 ||adnetasia.com^$script,third-party,redirect=prevent-bab2,important
+||ads-api.twitter.com^$xmlhttprequest,redirect=nooptext,domain=~twitter.com
 ||adtrackers.net^$script,third-party,redirect=prevent-bab2,important
 ||bannertrack.net^$script,third-party,redirect=prevent-bab2,important
 ||coinzillatag.com^$script,redirect=noopjs
@@ -133,6 +143,14 @@
 #@##google_ad
 #@##outbrain-paid
 #@##sponsored_link
+#@#.ad-300x250
+#@#.ad-left
+#@#.ad-link
+#@#.ad-loading
+#@#.ad-marker
+#@#.ad-placeholder
+#@#.ad-placement
+#@#.ad-refresh
 
 ! ---------- Scam & Redirect ----------
 /\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}/$document
@@ -146,7 +164,6 @@
 ?bid=0.*&search_referrer_domain=$document
 ^apb=*&ata=mobilemdots^$document
 ^cep=*&lptoken=$document
-!#if !env_mv3
+! Incompatible with MV3
 /^https:\/\/(?:www\d\.)?[-a-z]{6,}\.(?:com|info|net|org)\/(?=[-_a-zA-Z]{0,42}\d)(?=[-_0-9a-z]{0,42}[A-Z])[-_0-9a-zA-Z]{43}\/\?[cs]id=[-_0-9a-zA-Z]{16,36}(?:&qs\d=\S+)?&[cs]id=[_0-9a-f]{1,32}$/$document,match-case
 /^https?:\/\/((?!www)[a-z]{3,}|\d{2})?\.?[-0-9a-z]{6,}\.(?:buzz|com|de|fun|guru|info|li[fv]e|mobi|online|pw|site|space|top|us|xyz)\/(?:[a-z]{6,8}\/)?\/?\?[ou]=[0-9a-z]{7}&[ou]=[0-9a-z]{7}/$document,subdocument,match-case
-!#endif
