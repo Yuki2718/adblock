@@ -2,7 +2,7 @@
 ! Expires: 5 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html)
-! Version: 20221025
+! Version: 20221026
 
 &crc=1|$xmlhttprequest,third-party
 &dev=r&adb=y|$document
@@ -320,6 +320,7 @@ _spot_id=*&zone_id=$script,~third-party
 ||a.pub.network^$script,redirect-rule=noopjs
 ||adblockanalytics.com/ads.js$script,redirect-rule=noopjs
 ||ads-api.twitter.com^$xmlhttprequest,redirect-rule=nooptext,domain=~twitter.com
+||ads-twitter.com/uwt.js$xmlhttprequest,third-party,redirect-rule=nooptext
 ||ads.facebook.com^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||ads.reddit.com^$xmlhttprequest,redirect-rule=nooptext,domain=~d3ward.github.io
 ||ads.sportslocalmedia.com^$script,redirect-rule=noopjs
