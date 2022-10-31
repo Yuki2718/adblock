@@ -1,7 +1,11 @@
+### This repository was archived. We will move to adblock2 repository.
+
 [![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 [![syntax](https://img.shields.io/badge/syntax-uBlock%20Origin-%23c61300.svg)](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
 
-### Important Announcement (Sept. 30, 2022) 
+<details>
+
+<summary>Past announcement (Sept. 30, 2022)</summary>
 
 Update (Oct. 7, 2022) If nobody complains, I'll also discontinue AdGuard Social media Plus and archive the current adblock repository (related issue: https://github.com/Yuki2718/adblock/issues/67). AdGuard DNS Unbreaker, coming AdGuard Japanese filters Plus, and dynamic ruels for uBlock Origin will be moved to a new repository.
 
@@ -18,6 +22,8 @@ Due to changes in my life, I'm going to unmaintain following lists until late Oc
 I apologize to current user and all the contributor of these lists, but it's unavoidable. I hope you can find a good alternatives. I'll create and maintain AdGuard Japanese filter Plus which will to some extent compensate the difference between Yuki's uBlock Japanese filters and AdGuard Japanese filter.
 
 Now Placeholder Hider with no generic hiding is deprecated and removed from this repo.
+
+</details>
 
 # adblock
 

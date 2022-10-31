@@ -1,4 +1,8 @@
-### 重要なお知らせ
+### このレポジトリはアーカイブ化されました。今後はadblock2レポジトリに移行します。
+
+<details>
+
+<summary>過去のお知らせ</summary>
 
 10月7日追記：削除するのでなくアーカイブ化してほしいという[リクエスト](https://github.com/Yuki2718/adblock/issues/67)があったため、今後メンテナンスするものは新レポジトリに移行します。
 
@@ -16,6 +20,8 @@
 です。**AdGuardやuBlock Originのフィルターへの貢献は続けます**が、規模は縮小することになるでしょう。また、AdGuard MV3用にAdGuard Japanese filterの強化パッチを準備中ですが、これの構成を少し変えてuBlock OriginやuBlock Origin Liteでも使えるようにします。したらばの雪フィルタ簡易報告スレッドはアーカイブ化し、メンテナンスを続けるリスト用に新たなスレッドを作る予定です。なお、これらのリストはGPLv3のAnti Anti-adblock Enhancer for AdGuardを除きすべてCC BY-SA 4.0ですので、それぞれのライセンス要件を満たす限り改変、再配布は自由です。これまで貢献いただいた方にはお詫びいたしますとともに、ご理解を願います。質問やご要望等ございましたら、[したらば](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1652115193/)（本来、問題報告用ですがこの件については例外とします）か管理人の[Twitter](https://twitter.com/Yuki27183)にコメントいただければ可能な範囲で対応いたします。
 
 <sub>1: AdGuard Japaneseは単独使用を想定していませんので、内製やEasyListの併用が必要です。</sub>
+
+</details>
 
 ### Chromium Manifest V3（MV3）について
 
@@ -58,34 +64,6 @@ Chrome, Edge上でuBlock Originをご利用の方は、主に４つの選択肢�
  <sup>※ 追記：blocking webRequestを維持するからしばらく大丈夫なのではなく、仮にblocking webRequestを廃止することになっても大丈夫なはずです。[ChromiumのMV3と互換性を維持しながら、ブロッカーの機能への悪影響を抑えたMV3を実装することは十分可能です](https://github.com/uBlockOrigin/uBlock-issues/issues/338#issuecomment-534261690)。本当の問題はChromium MV3がアドオン開発者の声を[十分に聞いて反映するのでなく](https://github.com/uBlockOrigin/uBlock-issues/issues/338#issuecomment-465093102)、あくまでGoogleのペースとロジックで進められており、それでいてプライバシー保護効果への疑問には[ちゃんと答えていない](https://www.eff.org/deeplinks/2019/07/googles-plans-chrome-extensions-wont-really-help-security)ことです。[ビジネスパートナーであり](https://github.com/uBlockOrigin/uBlock-issues/issues/338#issuecomment-496009417)、そもそもMV3の影響をそれほど強く受けないeyeo社のような都合のいい声だけ[聴いても](https://blog.chromium.org/2020/12/manifest-v3-now-available-on-m88-beta.html)意味がありません。Mozillaはアドオン開発者の声をしっかり聴いて調整していくことを[約束して](https://blog.mozilla.org/addons/2022/05/18/manifest-v3-in-firefox-recap-next-steps/)おり、十分な代替がみつかるまではblocking webRequestを維持するとしています。MozillaのMV3を指揮するRob Wu氏はList Authors Chatという広告ブロックの「現場」にも加わっており、広告ブロック界隈とのつながりが以前より強い人です。仮にブロッカーの機能に一定の制約が出ても、それで実際にプライバシー保護につながるのであればuBlock Originの作者が反対するとは考えられず、どこかで妥協点を探すことになるでしょう。</sup>
 
 （[FAQ A1-4](https://github.com/Yuki2718/adblock/wiki/Japanese-FAQ#q1-4-chrome%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%81%AEmanifest-v3mv3%E7%A7%BB%E8%A1%8C%E3%81%A7%E5%BA%83%E5%91%8A%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E6%8B%A1%E5%BC%B5%E3%81%AF%E4%BD%BF%E3%81%88%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E3%81%A8%E8%81%9E%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F)も参照）
-
-### お知らせ（2022年7月27日：Youtube広告および不具合について）
-
-※古いお知らせは随時消していきます。
-
-Youtubeで動画が再生できない不具合がこれまで散発的に報告されてきましたが、特定のプレイヤーサイズおよび/あるいは解像度（かつ特定の動画？）で発生することがわかりました。問題となっているルールを無効化してしまうと広告が出るため、これから対応が検討されると思います<sup>1</sup>。ユーザーの方は当面の間、プレイヤーサイズの変更で対応していただくしかありません<sup>2</sup>。この不具合はAdblock Plus, AdGuard, uBlock Originで共通です（おそらくBraveも）。
-
-Chrome, Edgeなどではブラウザの起動直後はYoutube広告を確実にブロックできません。この問題でお悩みのuBlock Originユーザーは、オプションの「フィルターリスト」下にある「フィルターリストをすべて読み込むまで、ネットワークアクティビティを停止する」にチェックを入れることで対応できます。ただし、[別の問題](https://github.com/uBlockOrigin/uBlock-issues/issues/1973)が起こる可能性もあります。
-
-<sub>1. あるパラメータをURLに付与すると回避できるようですが、パラメータの付与は現在のuBlock Originではできません。もしこれが解決に必須であれば、以前から検討されている「信頼済みリスト」が導入される可能性があると思います。これは特定のリスト、おそらくは内製フィルタのみにリスクの高い特権的な操作を認めるものです。仮定の話ですが、そうなった場合はこれまでのようにYuki's uBlock Japanese filtersの単独使用はもはやおすすめできなくなります。</sub>
-
-<sub>2. 広告が出てもよろしければuBlock Originなら`youtube.com#@#+js(set, ytInitialPlayerResponse.adPlacements, undefined)`を追加、AdGuardなら`youtube.com#@%#//scriptlet('set-constant', 'ytInitialPlayerResponse.adPlacements', 'undefined')`を追加してください。</sub>
-
-<details>
-<summary>（2022年6月12日：4月20日分の追記）</summary>
-
-Braveは以前よりChromiumのManifest V2（MV2）サポート終了後もMV2のサポートを継続すると[明言](https://github.com/brave/brave-browser/issues/20059)していましたが、本当にできるのかはまだわかりません。実際にuBlock Originが2023年1月以降もBraveで利用可能なのであれば、Yuki's uBLock Japanese filtersファミリーでのBraveのサポートは見送るかもしれません。
-
-</details>
-
-<details>
-<summary>（2022年5月10日：Brave Shield不具合簡易報告スレッドの開設）</summary>
-
-[Brave Shield不具合簡易報告スレッド](https://jbbs.shitaraba.net/bbs/read.cgi/internet/25463/1651822005/)を開設いたしました。Yuki's uBLock Japanese filtersファミリーで将来的にBrave組み込みの広告ブロック（Shield）をサポートするための情報収集を兼ねます。改めて強調しますが、**現時点ではサポートしていません**。Brave Shieldはブラウザ組み込みのブロッカーとしてはもっとも高度なものですが、[以前より](https://github.com/brave/brave-browser/issues/9625)uBlock Originでは生じない[固有の問題](https://github.com/brave/adblock-lists/issues/614)が多く（[現在発生中の例](https://github.com/brave/brave-browser/issues/22719)）、uBlock Originの文法解釈も[常に](https://github.com/brave/adblock-lists/pull/775)本家より一歩遅れているため、それによる問題がたびたび発生しています（[最近の例](https://github.com/easylist/easylist/pull/11918)）。現時点でYuki's uBLock Japanese filtersをBraveで利用されても性能を発揮できないばかりか、不具合のもとになります。
-
-3月21日の予告通り、280blocker adblock filter 悪質サイト対策強化パッチは公開停止いたしました。
-
-</details>
 
 ## Yuki's uBlock Japanese filters （雪フィルタ）
 
