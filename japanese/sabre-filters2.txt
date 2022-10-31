@@ -1,8 +1,8 @@
-! Title: Yuki's Cookie Dialogue filters
-! Expires: 3 days
+! Title: [更新終了/Deprecated] Yuki's Cookie Dialogue filters
+! Expires: 30 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20221031
+! Version: 20221101
 
 ! General blocking
 /CookieControl/ShowCookies?
@@ -479,6 +479,7 @@ dlink.com##.ub-emb-bar-frame
 ||smp.sankei.co.jp/js/privacy/cookieconsent
 ||sourcenaturals.com/home/policy/
 ||speedcheckercdn.com/lib/cookieconsent/
+||staging.webtru.io/js/opnWidget.js
 ||staticcontent.fxstreet.com/website/mustache/alerts/cookiesalert_
 ||storage.googleapis.com/app*/js/bottom.js$domain=herokuapp.com
 ||synology.com^*/syno_cookie_
@@ -632,6 +633,7 @@ candeohotels.com##.c-cookie
 canva.com##div[role="dialog"][aria-modal="false"] > h4[id^="__"]:has-text(/cookie/i):upward(1)
 canva.com##div[style="z-index: 1;"] div[aria-live="polite"]:not([role])
 capture.dropbox.com##.dig-Snackbar[role="alert"]
+careers.microsoft.com##.ph-cookie-popup-v2-default-default
 carl-walther.com###cb_settings_alert_extended
 cars.mclaren.com##.n040-cookie-alert
 castbox.fm##.cookies-conf
@@ -961,6 +963,7 @@ minet.jp##.modaal-noscroll:style(overflow: auto !important;)
 minet.jp##.modaal-overlay
 minet.jp##.modaal-wrapper
 minet.jp##html[style="overflow-y: hidden;"]:style(overflow-y: auto !important;)
+minitab.com###cookieToaster
 minitool.com,partitionwizard.jp##.bottom-cookie-wrap
 miroc.co.jp##.modaal-inline
 miroc.co.jp##.modaal-overlay
@@ -1087,7 +1090,7 @@ powercolor.com##.Privacy
 predge.jp##.modal-gdpr__contents
 princesscruises.jp##.cookieAgree
 pronews.jp##.cookieGate
-protocol.com,theblaze.com##.gdpr-cookie:not(html):not(body)
+protocol.com,theblaze.com,worldcrunch.com##.gdpr-cookie:not(html):not(body)
 presc.jp###cookieAgreement
 ps.nikkei.com##.p-box_cookie
 psc-inc.co.jp##.cookie-agreement

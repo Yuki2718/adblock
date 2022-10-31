@@ -1,8 +1,8 @@
-! Title: Yuki's uBlock Japanese filters - Paranoid
-! Expires: 4 days
+! Title: [更新終了/Deprecated] Yuki's uBlock Japanese filters - Paranoid
+! Expires: 40 days
 ! Homepage: https://github.com/Yuki2718/adblock
 ! Licence: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-! Version: 20221027
+! Version: 20221101
 
 ! ---------- LAN ----------
 /^\w+://10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -790,6 +790,7 @@ wpb.shueisha.co.jp##.js-cxense-widget-recommend
 ||nytimes.com^*&user_id=$doc,removeparam=user_id
 ||nytimes.com^*?instance_id=$doc,removeparam=instance_id
 ||pixiv.net/premium/?page=$doc,removeparam=page
+||r.gnavi.co.jp^*?sc_lid=$doc,removeparam=sc_lid
 ||r18.com/videos/vod/*?nats=$doc,removeparam=nats
 ||support.github.com/?tags=$doc,removeparam=tags
 ||townwork.net^*?opf=PR1$doc,removeparam=opf
