@@ -1,4 +1,4 @@
-### This repository was archived. We will move to [adblock2](https://github.com/Yuki2718/adblock2) repository.
+### This repository was archived. We will move to [adblock2](https://github.com/Yuki2718/adblock2) repository. Filters that are not in the new repository will no more be maintainerd.
 
 [![syntax](https://img.shields.io/badge/syntax-AdGuard-%23c61300.svg)](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 [![syntax](https://img.shields.io/badge/syntax-uBlock%20Origin-%23c61300.svg)](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)

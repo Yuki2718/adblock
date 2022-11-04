@@ -1,4 +1,4 @@
-### このレポジトリはアーカイブ化されました。今後は[adblock2](https://github.com/Yuki2718/adblock2)レポジトリに移行します。
+### このレポジトリはアーカイブ化されました。今後は[adblock2](https://github.com/Yuki2718/adblock2)レポジトリに移行します。Yuki's uBlock Japanese filtersファミリーの更新は終了いたしました。
 
 <details>
 
